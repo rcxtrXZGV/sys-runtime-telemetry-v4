@@ -2,21 +2,6 @@
   "total_records": 250,
   "historical_insights": [
     {
-      "timestamp": "2026-11-09T16:33:56.565921+00:00",
-      "type": "DYNAMIC_TARGETING_EVALUATION",
-      "data": {
-        "evaluation_time": "2026-11-09T16:33:56.565921+00:00",
-        "dynamic_market_mode": "Expansion",
-        "active_draw_on_liquidity": "Unmitigated Daily H4 Fair Value Gap overlapping with Previous Day High (PDH)",
-        "dynamic_tp_rationale": "Price has cleanly swept the Asian Session Low and trapped late breakout shorts. Order flow imbalance confirms aggressive institutional expansion towards the upper H4 liquidity pool. Distance to the unmitigated FVG and PDH boundary dictates an optimal mathematical expansion target of 1:9.4 risk-to-reward without premature capping.",
-        "recommended_dynamic_rr": "1:9.4",
-        "verdict": "BUY",
-        "dynamic_sl_pips": 22.4,
-        "dynamic_tp_pips": 210.5,
-        "breakeven_milestone_pips": 15
-      }
-    },
-    {
       "timestamp": "2026-11-09T17:52:11.096400+00:00",
       "type": "DYNAMIC_TARGETING_EVALUATION",
       "data": {
@@ -25053,6 +25038,177 @@
           "profit_securing_threshold_usd": 10.0,
           "projected_rr": "1:3+",
           "god_brain_synthesis": "All 8 agents align on shorting Nasdaq 100 due to synchronized equity weakness, heavy downward velocity, and clean institutional liquidity sweeps. Risk is tightly controlled via 0.01 lot sizing."
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-21T17:10:12.432742+00:00",
+      "type": "TITAN_8_AGENT_ADVERSARIAL_CYCLE",
+      "market_snapshot": {
+        "Gold (XAUUSD)": {
+          "current_price": 3515.4,
+          "momentum_5_candles": -11.3,
+          "recent_5_candle_range": 28.9001,
+          "previous_close": 3535.1001,
+          "net_move": -19.7002
+        },
+        "Silver (XAGUSD)": {
+          "current_price": 41.07,
+          "momentum_5_candles": 0.12,
+          "recent_5_candle_range": 0.285,
+          "previous_close": 41.02,
+          "net_move": 0.05
+        },
+        "Crude Oil (USOIL)": {
+          "current_price": 83.41,
+          "momentum_5_candles": -0.23,
+          "recent_5_candle_range": 0.33,
+          "previous_close": 83.59,
+          "net_move": -0.18
+        },
+        "Nasdaq 100 (NAS100)": {
+          "current_price": 25126.5,
+          "momentum_5_candles": -186.75,
+          "recent_5_candle_range": 236.25,
+          "previous_close": 25300.75,
+          "net_move": -174.25
+        },
+        "US30 (Dow Jones)": {
+          "current_price": 48147.33,
+          "momentum_5_candles": -15.2422,
+          "recent_5_candle_range": 393.1719,
+          "previous_close": 48184.6914,
+          "net_move": -37.3633
+        },
+        "Bitcoin (BTCUSD)": {
+          "current_price": 60070.21,
+          "momentum_5_candles": 62.9023,
+          "recent_5_candle_range": 252.6328,
+          "previous_close": 60076.2617,
+          "net_move": -6.0508
+        },
+        "Ethereum (ETHUSD)": {
+          "current_price": 1683.55,
+          "momentum_5_candles": 1.54,
+          "recent_5_candle_range": 6.71,
+          "previous_close": 1683.37,
+          "net_move": 0.1801
+        },
+        "Solana (SOLUSD)": {
+          "current_price": 70.68,
+          "momentum_5_candles": 0.07,
+          "recent_5_candle_range": 0.28,
+          "previous_close": 70.67,
+          "net_move": 0.01
+        },
+        "EURUSD": {
+          "current_price": 1.0975,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.0975,
+          "net_move": 0.0
+        },
+        "GBPUSD": {
+          "current_price": 1.3082,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.3082,
+          "net_move": 0.0
+        },
+        "USDJPY": {
+          "current_price": 158.512,
+          "momentum_5_candles": -0.092,
+          "recent_5_candle_range": 0.145,
+          "previous_close": 158.56,
+          "net_move": -0.048
+        },
+        "AUDUSD": {
+          "current_price": 0.6619,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 0.6619,
+          "net_move": 0.0
+        },
+        "USDCAD": {
+          "current_price": 1.434,
+          "momentum_5_candles": -0.001,
+          "recent_5_candle_range": 0.0018,
+          "previous_close": 1.434,
+          "net_move": -0.0001
+        }
+      },
+      "rsi_evolution": {
+        "evolution_timestamp": "2026-11-21T17:10:12.432742+00:00",
+        "cycle_iteration": 9,
+        "account_assessment": {
+          "current_balance": 0.89,
+          "growth_plan": "Micro-lot compounding (0.01 lot) targeting 25-pip gains on high-momentum indices like Nasdaq 100 to scale rapidly while protecting the $0.89 floor via tight 15-pip stops."
+        },
+        "eight_agent_syndicate": {
+          "agent_1_macro_soros": {
+            "view": "Equities are under heavy distribution, led by significant downward momentum in Nasdaq 100 (-186.75 points).",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_2_quant_simons": {
+            "view": "5-candle velocity heavily negative on NAS100 with consistent bearish ticks matching historical continuation profiles.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_3_liquidity_tudor": {
+            "view": "Retail longs trapped at previous highs; breakdown below recent range triggers cascading institutional sell orders.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_4_asymmetry_druck": {
+            "view": "Risk-to-reward is phenomenal: 15-pip stop loss against a 25+ pip continuation target yields well over 1:1.6 initial, scaling into wider targets.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_5_regime_volatility": {
+            "view": "ATR expansion confirmed with clean trending impulse on NAS100 rather than choppy consolidation.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_6_correlation_arb": {
+            "view": "US30 and NAS100 both display synchronized downward momentum, confirming broad risk-off equity flow.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_7_red_team_adversary": {
+            "critique_and_challenge": "Is this a late-stage move exhaustion? Range is 236 points, meaning volatility is high. However, continuation pressure remains overwhelmingly intact.",
+            "veto_verdict": "APPROVE"
+          },
+          "agent_8_risk_officer_seykota": {
+            "risk_evaluation": "Account balance is $0.89. A 0.01 lot size on NAS100 requires strict adherence to the 15-pip stop loss to guarantee zero risk of account ruin.",
+            "safety_verdict": "SAFE"
+          }
+        },
+        "supreme_god_verdict": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25126.5,
+          "target_liquidity_pool": 25101.5,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 25.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:1.67",
+          "god_brain_synthesis": "All 8 agents align on shorting Nasdaq 100 following persistent downward velocity and institutional distribution. Red Team challenges are overridden by synchronized macro and quant metrics."
+        },
+        "active_market_bias": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25126.5,
+          "target_liquidity_pool": 25101.5,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 25.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:1.67",
+          "god_brain_synthesis": "All 8 agents align on shorting Nasdaq 100 following persistent downward velocity and institutional distribution. Red Team challenges are overridden by synchronized macro and quant metrics."
         }
       }
     }
