@@ -2,21 +2,6 @@
   "total_records": 250,
   "historical_insights": [
     {
-      "timestamp": "2026-11-10T02:46:08.625191+00:00",
-      "type": "DYNAMIC_TARGETING_EVALUATION",
-      "data": {
-        "evaluation_time": "2026-11-10T02:46:08.625191+00:00",
-        "dynamic_market_mode": "Liquidity Hunt",
-        "active_draw_on_liquidity": "Previous Day High combined with unmitigated H4 Fair Value Gap at 1.08450",
-        "dynamic_tp_rationale": "Price has swept the Asian Session Low, triggering institutional buy-side imbalance. Nearest high-volume resting liquidity pool sits cleanly at the H4 FVG and Previous Day High, offering a structural 1:8.5 risk-to-reward expansion profile without encountering intermediate resistance.",
-        "recommended_dynamic_rr": "1:8.5",
-        "verdict": "BUY",
-        "dynamic_sl_pips": 22.0,
-        "dynamic_tp_pips": 187.0,
-        "breakeven_milestone_pips": 15
-      }
-    },
-    {
       "timestamp": "2026-11-10T03:44:45.016945+00:00",
       "type": "DYNAMIC_TARGETING_EVALUATION",
       "data": {
@@ -26592,6 +26577,177 @@
           "profit_securing_threshold_usd": 10.0,
           "projected_rr": "1:3.33",
           "god_brain_synthesis": "All 8 agents align on shorting Nasdaq 100 based on persistent negative momentum, institutional distribution, and cross-asset confirmation. Red Team and Risk Officer approve the asymmetric 1:3+ setup using minimal margin."
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-22T02:47:27.684909+00:00",
+      "type": "TITAN_8_AGENT_ADVERSARIAL_CYCLE",
+      "market_snapshot": {
+        "Gold (XAUUSD)": {
+          "current_price": 3515.4,
+          "momentum_5_candles": -11.3,
+          "recent_5_candle_range": 28.9001,
+          "previous_close": 3535.1001,
+          "net_move": -19.7002
+        },
+        "Silver (XAGUSD)": {
+          "current_price": 41.07,
+          "momentum_5_candles": 0.12,
+          "recent_5_candle_range": 0.285,
+          "previous_close": 41.02,
+          "net_move": 0.05
+        },
+        "Crude Oil (USOIL)": {
+          "current_price": 83.41,
+          "momentum_5_candles": -0.22,
+          "recent_5_candle_range": 0.33,
+          "previous_close": 83.59,
+          "net_move": -0.18
+        },
+        "Nasdaq 100 (NAS100)": {
+          "current_price": 25126.5,
+          "momentum_5_candles": -186.75,
+          "recent_5_candle_range": 236.25,
+          "previous_close": 25300.75,
+          "net_move": -174.25
+        },
+        "US30 (Dow Jones)": {
+          "current_price": 48147.33,
+          "momentum_5_candles": -15.2422,
+          "recent_5_candle_range": 393.1719,
+          "previous_close": 48184.6914,
+          "net_move": -37.3633
+        },
+        "Bitcoin (BTCUSD)": {
+          "current_price": 59400.97,
+          "momentum_5_candles": -69.9102,
+          "recent_5_candle_range": 416.2617,
+          "previous_close": 59460.8906,
+          "net_move": -59.9219
+        },
+        "Ethereum (ETHUSD)": {
+          "current_price": 1665.0,
+          "momentum_5_candles": -7.4,
+          "recent_5_candle_range": 11.97,
+          "previous_close": 1666.67,
+          "net_move": -1.67
+        },
+        "Solana (SOLUSD)": {
+          "current_price": 69.46,
+          "momentum_5_candles": -0.24,
+          "recent_5_candle_range": 0.57,
+          "previous_close": 69.44,
+          "net_move": 0.02
+        },
+        "EURUSD": {
+          "current_price": 1.0975,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.0975,
+          "net_move": 0.0
+        },
+        "GBPUSD": {
+          "current_price": 1.3082,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.3082,
+          "net_move": 0.0
+        },
+        "USDJPY": {
+          "current_price": 158.512,
+          "momentum_5_candles": -0.092,
+          "recent_5_candle_range": 0.145,
+          "previous_close": 158.56,
+          "net_move": -0.048
+        },
+        "AUDUSD": {
+          "current_price": 0.6619,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 0.6619,
+          "net_move": 0.0
+        },
+        "USDCAD": {
+          "current_price": 1.434,
+          "momentum_5_candles": -0.0009,
+          "recent_5_candle_range": 0.0016,
+          "previous_close": 1.4339,
+          "net_move": 0.0001
+        }
+      },
+      "rsi_evolution": {
+        "evolution_timestamp": "2026-11-22T02:47:27.684909+00:00",
+        "cycle_iteration": 9,
+        "account_assessment": {
+          "current_balance": 0.89,
+          "growth_plan": "Micro-lot compounding (0.01 lot) on high-probability momentum bursts in indices like Nasdaq 100, scaling gains exponentially while capping risk at pennies to protect tiny baseline."
+        },
+        "eight_agent_syndicate": {
+          "agent_1_macro_soros": {
+            "view": "Risk-off sentiment spilling over into equities and commodities as USD holds firm; Nasdaq showing persistent downside momentum.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_2_quant_simons": {
+            "view": "NAS100 5-candle momentum is heavily negative (-186.75) with robust tick velocity confirming sustained downward pricing pressure.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_3_liquidity_tudor": {
+            "view": "Clean breakdown below institutional support, leaving trapped retail longs above current price ready to fuel the next leg down.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_4_asymmetry_druck": {
+            "view": "Clear structure for an asymmetric trade: risk 40 index points to capture 120+ points downward expansion, easily exceeding 1:3 RR.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_5_regime_volatility": {
+            "view": "ATR expansion in progress on NAS100; volatility favors directional trend following over range-bound scalping.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_6_correlation_arb": {
+            "view": "US30 and NAS100 both showing synchronized downward bias, confirming macro index weakness across the board.",
+            "bias": "SELL",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_7_red_team_adversary": {
+            "critique_and_challenge": "Index volatility can trigger sharp mean-reversion whipsaws. However, momentum is too dominant to ignore.",
+            "veto_verdict": "APPROVE"
+          },
+          "agent_8_risk_officer_seykota": {
+            "risk_evaluation": "Account balance is $0.89. 0.01 lot size on NAS100 requires strict adherence to stop loss to prevent margin wipeout.",
+            "safety_verdict": "SAFE"
+          }
+        },
+        "supreme_god_verdict": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25126.5,
+          "target_liquidity_pool": 25000.0,
+          "calculated_sl_pips": 40.0,
+          "calculated_tp_pips": 120.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3+",
+          "god_brain_synthesis": "All 8 agents align on Nasdaq 100 downside continuation. Soros macro risk-off, Simons velocity metrics, and Tudor liquidity sweeps confirm a high-edge short setup."
+        },
+        "active_market_bias": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25126.5,
+          "target_liquidity_pool": 25000.0,
+          "calculated_sl_pips": 40.0,
+          "calculated_tp_pips": 120.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3+",
+          "god_brain_synthesis": "All 8 agents align on Nasdaq 100 downside continuation. Soros macro risk-off, Simons velocity metrics, and Tudor liquidity sweeps confirm a high-edge short setup."
         }
       }
     }
