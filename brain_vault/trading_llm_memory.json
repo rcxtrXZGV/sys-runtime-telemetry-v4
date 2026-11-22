@@ -2,21 +2,6 @@
   "total_records": 250,
   "historical_insights": [
     {
-      "timestamp": "2026-11-11T02:44:16.731446+00:00",
-      "type": "DYNAMIC_TARGETING_EVALUATION",
-      "data": {
-        "evaluation_time": "2026-11-11T02:44:16.731446+00:00",
-        "dynamic_market_mode": "Liquidity Hunt / Expansion",
-        "active_draw_on_liquidity": "Unmitigated Daily/H4 Fair Value Gap overlapping with Previous Day High",
-        "dynamic_tp_rationale": "Price has swept the Asian Low liquidity pool and displaced aggressively with strong institutional volume imbalance. The nearest structural liquidity void aligns with the opposing daily session high at 185 pips away, offering a clean, unobstructed path for expansion.",
-        "recommended_dynamic_rr": "1:8.4",
-        "verdict": "BUY",
-        "dynamic_sl_pips": 22.0,
-        "dynamic_tp_pips": 185.0,
-        "breakeven_milestone_pips": 15.0
-      }
-    },
-    {
       "timestamp": "2026-11-11T03:48:07.308752+00:00",
       "type": "DYNAMIC_TARGETING_EVALUATION",
       "data": {
@@ -28852,6 +28837,149 @@
           "profit_securing_threshold_usd": 10.0,
           "projected_rr": "1:3+",
           "god_brain_synthesis": "All 8 agents align on a high-probability short continuation on US30. Momentum, cross-asset correlation, and liquidity sweeps validate an aggressive sell entry."
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-22T22:08:07.203390+00:00",
+      "type": "TITAN_8_AGENT_ADVERSARIAL_CYCLE",
+      "market_snapshot": {
+        "US30 (Dow Jones)": {
+          "current_price": 48147.33,
+          "momentum_5_candles": -15.2422,
+          "recent_5_candle_range": 393.1719,
+          "previous_close": 48184.6914,
+          "net_move": -37.3633
+        },
+        "Bitcoin (BTCUSD)": {
+          "current_price": 60785.27,
+          "momentum_5_candles": -46.3906,
+          "recent_5_candle_range": 222.4375,
+          "previous_close": 60786.1406,
+          "net_move": -0.8711
+        },
+        "Ethereum (ETHUSD)": {
+          "current_price": 1713.54,
+          "momentum_5_candles": -4.58,
+          "recent_5_candle_range": 9.52,
+          "previous_close": 1713.7,
+          "net_move": -0.1599
+        },
+        "Solana (SOLUSD)": {
+          "current_price": 70.27,
+          "momentum_5_candles": -0.06,
+          "recent_5_candle_range": 0.26,
+          "previous_close": 70.27,
+          "net_move": 0.0
+        },
+        "EURUSD": {
+          "current_price": 1.0975,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.0975,
+          "net_move": 0.0
+        },
+        "GBPUSD": {
+          "current_price": 1.3091,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 1.3082,
+          "net_move": 0.0
+        },
+        "USDJPY": {
+          "current_price": 158.548,
+          "momentum_5_candles": -0.092,
+          "recent_5_candle_range": 0.145,
+          "previous_close": 158.56,
+          "net_move": -0.048
+        },
+        "AUDUSD": {
+          "current_price": 0.6625,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0,
+          "previous_close": 0.6619,
+          "net_move": 0.0
+        },
+        "USDCAD": {
+          "current_price": 1.4342,
+          "momentum_5_candles": -0.001,
+          "recent_5_candle_range": 0.0018,
+          "previous_close": 1.434,
+          "net_move": -0.0001
+        }
+      },
+      "rsi_evolution": {
+        "evolution_timestamp": "2026-11-22T22:08:07.203390+00:00",
+        "cycle_iteration": 9,
+        "account_assessment": {
+          "current_balance": 0.89,
+          "growth_plan": "Micro-lot compounding (0.01 lot) on high-velocity indices like US30 to capture multi-pip expansions, scaling equity aggressively while maintaining rigid stop-losses."
+        },
+        "eight_agent_syndicate": {
+          "agent_1_macro_soros": {
+            "view": "US30 shows persistent downward drift reflecting tightening risk sentiment and capital reallocation away from equities.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_2_quant_simons": {
+            "view": "5-candle momentum is negative (-15.24) with a localized range compression ready for expansion.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_3_liquidity_tudor": {
+            "view": "Price action is sweeping minor intraday highs before resuming the prevailing down-trend sequence.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_4_asymmetry_druck": {
+            "view": "Setting a tight 15-pip SL against a 35-pip downside target yields a prime 2.3:1 to 3:1 asymmetrical structure.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_5_regime_volatility": {
+            "view": "ATR expansion indicates a transition from choppy consolidation to clean trending impulse.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_6_correlation_arb": {
+            "view": "Equity indices (US30) and crypto (BTC) are both exhibiting synchronized downward pressure.",
+            "bias": "SELL",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_7_red_team_adversary": {
+            "critique_and_challenge": "Is this a late-cycle chase after consecutive previous sell signals? False breakouts could trigger a sudden short squeeze.",
+            "veto_verdict": "APPROVE"
+          },
+          "agent_8_risk_officer_seykota": {
+            "risk_evaluation": "With $0.89 balance, 0.01 lot on US30 requires strict margin observation and absolute adherence to the stop loss.",
+            "safety_verdict": "SAFE"
+          }
+        },
+        "supreme_god_verdict": {
+          "prime_asset": "US30 (Dow Jones)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 48147.33,
+          "target_liquidity_pool": 48112.33,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 35.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:2.3+",
+          "god_brain_synthesis": "Unanimous alignment across quantitative velocity, macroeconomic risk-off sentiment, and liquidity sweeps confirms a high-probability short continuation on US30."
+        },
+        "active_market_bias": {
+          "prime_asset": "US30 (Dow Jones)",
+          "verdict": "SELL",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 48147.33,
+          "target_liquidity_pool": 48112.33,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 35.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:2.3+",
+          "god_brain_synthesis": "Unanimous alignment across quantitative velocity, macroeconomic risk-off sentiment, and liquidity sweeps confirms a high-probability short continuation on US30."
         }
       }
     }
