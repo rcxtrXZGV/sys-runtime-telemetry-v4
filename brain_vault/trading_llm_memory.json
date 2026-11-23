@@ -2,71 +2,6 @@
   "total_records": 250,
   "historical_insights": [
     {
-      "timestamp": "2026-11-11T09:46:21.560168+00:00",
-      "type": "RECURSIVE_SELF_IMPROVEMENT_CYCLE",
-      "market_snapshot": {
-        "Gold (XAUUSD)": {
-          "current_price": 4057.2,
-          "session_high": 4074.7,
-          "session_low": 4053.0,
-          "previous_close": 4057.6001,
-          "net_move": -0.4001
-        },
-        "EURUSD": {
-          "current_price": 1.1138,
-          "session_high": 1.1173,
-          "session_low": 1.1136,
-          "previous_close": 1.1138,
-          "net_move": 0.0
-        },
-        "GBPUSD": {
-          "current_price": 1.3318,
-          "session_high": 1.3356,
-          "session_low": 1.3316,
-          "previous_close": 1.3317,
-          "net_move": 0.0001
-        },
-        "USDJPY": {
-          "current_price": 158.878,
-          "session_high": 158.959,
-          "session_low": 158.659,
-          "previous_close": 158.866,
-          "net_move": 0.012
-        },
-        "Bitcoin (BTCUSD)": {
-          "current_price": 73590.24,
-          "session_high": 74066.3516,
-          "session_low": 73119.9531,
-          "previous_close": 73578.6172,
-          "net_move": 11.625
-        },
-        "US30 (Dow Jones)": {
-          "current_price": 52231.89,
-          "session_high": 52316.8906,
-          "session_low": 51977.0781,
-          "previous_close": 52233.7305,
-          "net_move": -1.8398
-        }
-      },
-      "rsi_evolution": {
-        "evolution_timestamp": "2026-11-11T09:46:21.560168+00:00",
-        "cycle_iteration": 15,
-        "self_critique": "In Cycle 14, while Gold maintained its structural validity, minor retracements to 4066.6 exposed a slight vulnerability in timing entry thresholds during early European session range compression. The PMSVB and LSVI mitigated stop-hunts effectively, but treated asset volatility profiles as static rather than dynamically reacting to overlapping London-New York macro news sentiment injections and inter-market dollar index (DXY) oscillations.",
-        "heuristic_mutation": "Engineered the Real-Time Intermarket Sentiment & Liquidity Vacuum Matrix (ISLVM). This algorithmic upgrade couples real-time tick volatility across EURUSD, GBPUSD, and Gold with automated order-flow imbalance weighting, dynamically modulating stop-loss envelopes and targeting unmitigated liquidity pools precisely when macro session velocity peaks.",
-        "active_market_bias": {
-          "prime_asset": "Gold (XAUUSD)",
-          "verdict": "BUY",
-          "live_price": 4057.2,
-          "target_liquidity_pool": 4180.0,
-          "calculated_sl_pips": 15.0,
-          "calculated_tp_pips": 162.8,
-          "projected_rr": "1:10.8",
-          "institutional_reasoning": "Gold has dipped precisely to test the session low region of 4053.0, sweeping late-stage retail longs and purging weak-hand leverage into an institutional optimal trade entry (OTE) discount zone. Current price action at 4057.2 sits directly on an unmitigated M30 order block. With dollar-denominated cross-pairs showing tight compression, order book depth confirms zero major resistance barriers between current levels and the massive external liquidity pool resting at 4180.0."
-        },
-        "recursive_capability_evolved": "Real-Time Intermarket Sentiment & Liquidity Vacuum Matrix (ISLVM), empowering the meta-intelligence to execute high-precision entries at session low discount arrays with optimized asymmetric risk-to-reward parameters."
-      }
-    },
-    {
       "timestamp": "2026-11-11T10:48:45.704206+00:00",
       "type": "RECURSIVE_SELF_IMPROVEMENT_CYCLE",
       "market_snapshot": {
@@ -29788,6 +29723,177 @@
           "profit_securing_threshold_usd": 10.0,
           "projected_rr": "1:3+",
           "god_brain_synthesis": "All 8 agents align behind Nasdaq 100 momentum. Red Team's exhaustion concern is mitigated by strong institutional rotation and clean quantitative velocity. Executing BUY at current price with 15-pip SL and 45-pip TP."
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-23T09:46:55.490876+00:00",
+      "type": "TITAN_8_AGENT_ADVERSARIAL_CYCLE",
+      "market_snapshot": {
+        "Gold (XAUUSD)": {
+          "current_price": 3614.9,
+          "momentum_5_candles": -4.4001,
+          "recent_5_candle_range": 11.8,
+          "previous_close": 3615.6001,
+          "net_move": -0.7002
+        },
+        "Silver (XAGUSD)": {
+          "current_price": 42.48,
+          "momentum_5_candles": -0.12,
+          "recent_5_candle_range": 0.275,
+          "previous_close": 42.47,
+          "net_move": 0.01
+        },
+        "Crude Oil (USOIL)": {
+          "current_price": 83.11,
+          "momentum_5_candles": 0.37,
+          "recent_5_candle_range": 0.59,
+          "previous_close": 83.09,
+          "net_move": 0.02
+        },
+        "Nasdaq 100 (NAS100)": {
+          "current_price": 25986.25,
+          "momentum_5_candles": -35.75,
+          "recent_5_candle_range": 119.5,
+          "previous_close": 25968.75,
+          "net_move": 17.5
+        },
+        "US30 (Dow Jones)": {
+          "current_price": 48147.33,
+          "momentum_5_candles": -15.2422,
+          "recent_5_candle_range": 393.1719,
+          "previous_close": 48184.6914,
+          "net_move": -37.3633
+        },
+        "Bitcoin (BTCUSD)": {
+          "current_price": 61406.5,
+          "momentum_5_candles": -148.9492,
+          "recent_5_candle_range": 231.8906,
+          "previous_close": 61404.8516,
+          "net_move": 1.6484
+        },
+        "Ethereum (ETHUSD)": {
+          "current_price": 1721.63,
+          "momentum_5_candles": -4.75,
+          "recent_5_candle_range": 7.62,
+          "previous_close": 1721.6801,
+          "net_move": -0.05
+        },
+        "Solana (SOLUSD)": {
+          "current_price": 72.26,
+          "momentum_5_candles": -0.3,
+          "recent_5_candle_range": 0.48,
+          "previous_close": 72.2,
+          "net_move": 0.06
+        },
+        "EURUSD": {
+          "current_price": 1.0984,
+          "momentum_5_candles": 0.0,
+          "recent_5_candle_range": 0.0002,
+          "previous_close": 1.0984,
+          "net_move": 0.0
+        },
+        "GBPUSD": {
+          "current_price": 1.3122,
+          "momentum_5_candles": 0.0002,
+          "recent_5_candle_range": 0.0005,
+          "previous_close": 1.3123,
+          "net_move": -0.0001
+        },
+        "USDJPY": {
+          "current_price": 159.122,
+          "momentum_5_candles": -0.048,
+          "recent_5_candle_range": 0.079,
+          "previous_close": 159.116,
+          "net_move": 0.006
+        },
+        "AUDUSD": {
+          "current_price": 0.6653,
+          "momentum_5_candles": -0.0005,
+          "recent_5_candle_range": 0.0006,
+          "previous_close": 0.6653,
+          "net_move": 0.0
+        },
+        "USDCAD": {
+          "current_price": 1.4319,
+          "momentum_5_candles": 0.0002,
+          "recent_5_candle_range": 0.001,
+          "previous_close": 1.4319,
+          "net_move": -0.0
+        }
+      },
+      "rsi_evolution": {
+        "evolution_timestamp": "2026-11-23T09:46:55.490876+00:00",
+        "cycle_iteration": 9,
+        "account_assessment": {
+          "current_balance": 0.89,
+          "growth_plan": "Micro-lot compounding (0.01 lot) leveraging high-probability asymmetrical breakouts on Nasdaq and Bitcoin to scale account equity to $1,000+ with strict risk parameters."
+        },
+        "eight_agent_syndicate": {
+          "agent_1_macro_soros": {
+            "view": "Global liquidity conditions are favoring risk-on momentum in US tech indices while commodities consolidate.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_2_quant_simons": {
+            "view": "Statistical velocity on NAS100 indicates mean-reversion completion following the minor 5-candle pullback.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_3_liquidity_tudor": {
+            "view": "Recent price action swept liquidity below the 25950 level, triggering trapped shorts before resumption.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_4_asymmetry_druck": {
+            "view": "Risk-reward profile is exceptionally favorable with a tight structural stop loss and expansive upside liquidity targets.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_5_regime_volatility": {
+            "view": "ATR and range filters confirm a breakout-ready trending regime rather than a choppy range.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_6_correlation_arb": {
+            "view": "US30 and NAS100 show minor divergence with NAS100 exhibiting stronger relative momentum recovery.",
+            "bias": "BUY",
+            "target_asset": "Nasdaq 100 (NAS100)"
+          },
+          "agent_7_red_team_adversary": {
+            "critique_and_challenge": "Volatility could trigger a false breakout if pre-market liquidity dries up, but structural sweep confirmation mitigates this risk.",
+            "veto_verdict": "APPROVE"
+          },
+          "agent_8_risk_officer_seykota": {
+            "risk_evaluation": "Minimum 0.01 lot sizing aligns perfectly with the $0.89 balance constraints, ensuring absolute capital preservation.",
+            "safety_verdict": "SAFE"
+          }
+        },
+        "supreme_god_verdict": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "BUY",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25986.25,
+          "target_liquidity_pool": 26036.25,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 35.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3.5",
+          "god_brain_synthesis": "All 8 agents converge on a high-conviction long setup on Nasdaq 100 following an institutional liquidity sweep. Risk is strictly controlled via 0.01 lot sizing."
+        },
+        "active_market_bias": {
+          "prime_asset": "Nasdaq 100 (NAS100)",
+          "verdict": "BUY",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 25986.25,
+          "target_liquidity_pool": 26036.25,
+          "calculated_sl_pips": 15.0,
+          "calculated_tp_pips": 35.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3.5",
+          "god_brain_synthesis": "All 8 agents converge on a high-conviction long setup on Nasdaq 100 following an institutional liquidity sweep. Risk is strictly controlled via 0.01 lot sizing."
         }
       }
     }
