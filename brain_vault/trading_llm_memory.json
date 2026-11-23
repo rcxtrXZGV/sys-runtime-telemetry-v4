@@ -2,71 +2,6 @@
   "total_records": 250,
   "historical_insights": [
     {
-      "timestamp": "2026-11-11T06:23:04.737835+00:00",
-      "type": "RECURSIVE_SELF_IMPROVEMENT_CYCLE",
-      "market_snapshot": {
-        "Gold (XAUUSD)": {
-          "current_price": 4064.4,
-          "session_high": 4073.7,
-          "session_low": 4053.0,
-          "previous_close": 4064.3999,
-          "net_move": 0.0
-        },
-        "EURUSD": {
-          "current_price": 1.1162,
-          "session_high": 1.1173,
-          "session_low": 1.1161,
-          "previous_close": 1.1162,
-          "net_move": 0.0
-        },
-        "GBPUSD": {
-          "current_price": 1.3341,
-          "session_high": 1.3356,
-          "session_low": 1.334,
-          "previous_close": 1.3341,
-          "net_move": -0.0001
-        },
-        "USDJPY": {
-          "current_price": 158.812,
-          "session_high": 158.959,
-          "session_low": 158.659,
-          "previous_close": 158.817,
-          "net_move": -0.005
-        },
-        "Bitcoin (BTCUSD)": {
-          "current_price": 73803.67,
-          "session_high": 73923.7578,
-          "session_low": 73119.9531,
-          "previous_close": 73783.0781,
-          "net_move": 20.5938
-        },
-        "US30 (Dow Jones)": {
-          "current_price": 52231.89,
-          "session_high": 52316.8906,
-          "session_low": 51977.0781,
-          "previous_close": 52233.7305,
-          "net_move": -1.8398
-        }
-      },
-      "rsi_evolution": {
-        "evolution_timestamp": "2026-11-11T06:23:04.737835+00:00",
-        "cycle_iteration": 12,
-        "self_critique": "In Cycle 11, the system successfully pivoted to Bitcoin but treated macro asset classes with isolated parameters rather than utilizing cross-market liquidity flow correlations. Specifically, US30 and Gold compression zones were ignored, leaving potential multi-asset arbitrage undetected. Stop-loss parameters also lacked real-time volatility envelope adjustments based on session high/low spreads.",
-        "heuristic_mutation": "Integrated Cross-Asset Liquidity Correlation Matrix (CALCM) and Dynamic ATR-Envelope Stop Scaling. The heuristic now evaluates correlated risk-on inflows (US30 vs. BTCUSD) to validate true institutional expansion versus localized stop-hunts, dynamically scaling stop-loss boundaries to current session volatility ranges.",
-        "active_market_bias": {
-          "prime_asset": "Bitcoin (BTCUSD)",
-          "verdict": "BUY",
-          "live_price": 73803.67,
-          "target_liquidity_pool": 75350.0,
-          "calculated_sl_pips": 150,
-          "calculated_tp_pips": 1546,
-          "projected_rr": "1:10.3",
-          "institutional_reasoning": "Bitcoin is holding firmly above the session low of 73119.95, establishing a higher low structure while US30 consolidates near its highs. The order book reflects a sweeping of early morning retail shorts, leaving a clean, unmitigated imbalance void stretching toward the 75,350 external liquidity pool."
-        },
-        "recursive_capability_evolved": "Cross-Asset Liquidity Correlation Matrix (CALCM) & ATR-Envelope Dynamic Stop Scaling, enabling superior risk mitigation and multi-market validation for high-conviction directional execution."
-      }
-    },
-    {
       "timestamp": "2026-11-11T07:43:32.616258+00:00",
       "type": "RECURSIVE_SELF_IMPROVEMENT_CYCLE",
       "market_snapshot": {
@@ -29498,6 +29433,149 @@
           "profit_securing_threshold_usd": 10.0,
           "projected_rr": "1:1.67",
           "god_brain_synthesis": "All 8 agents align on a continued upside continuation for Nasdaq 100. Momentum, velocity, and institutional liquidity sweeps favor an immediate BUY execution with tightly controlled risk."
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-23T05:00:47.643421+00:00",
+      "type": "TITAN_8_AGENT_ADVERSARIAL_CYCLE",
+      "market_snapshot": {
+        "US30 (Dow Jones)": {
+          "current_price": 48147.33,
+          "momentum_5_candles": -15.2422,
+          "recent_5_candle_range": 393.1719,
+          "previous_close": 48184.6914,
+          "net_move": -37.3633
+        },
+        "Bitcoin (BTCUSD)": {
+          "current_price": 61164.35,
+          "momentum_5_candles": 95.6602,
+          "recent_5_candle_range": 208.1562,
+          "previous_close": 61154.5586,
+          "net_move": 9.793
+        },
+        "Ethereum (ETHUSD)": {
+          "current_price": 1724.7,
+          "momentum_5_candles": 0.6499,
+          "recent_5_candle_range": 5.67,
+          "previous_close": 1724.53,
+          "net_move": 0.1699
+        },
+        "Solana (SOLUSD)": {
+          "current_price": 71.24,
+          "momentum_5_candles": 0.01,
+          "recent_5_candle_range": 0.19,
+          "previous_close": 71.23,
+          "net_move": 0.01
+        },
+        "EURUSD": {
+          "current_price": 1.0984,
+          "momentum_5_candles": 0.0002,
+          "recent_5_candle_range": 0.0004,
+          "previous_close": 1.0984,
+          "net_move": 0.0
+        },
+        "GBPUSD": {
+          "current_price": 1.3109,
+          "momentum_5_candles": 0.0003,
+          "recent_5_candle_range": 0.0005,
+          "previous_close": 1.3109,
+          "net_move": 0.0
+        },
+        "USDJPY": {
+          "current_price": 158.985,
+          "momentum_5_candles": -0.003,
+          "recent_5_candle_range": 0.043,
+          "previous_close": 158.984,
+          "net_move": 0.001
+        },
+        "AUDUSD": {
+          "current_price": 0.6639,
+          "momentum_5_candles": 0.0002,
+          "recent_5_candle_range": 0.0004,
+          "previous_close": 0.6641,
+          "net_move": -0.0002
+        },
+        "USDCAD": {
+          "current_price": 1.433,
+          "momentum_5_candles": -0.0003,
+          "recent_5_candle_range": 0.0009,
+          "previous_close": 1.433,
+          "net_move": 0.0
+        }
+      },
+      "rsi_evolution": {
+        "evolution_timestamp": "2026-11-23T05:00:47.643421+00:00",
+        "cycle_iteration": 9,
+        "account_assessment": {
+          "current_balance": 0.89,
+          "growth_plan": "Micro-lot compounding targeting high probability breakout setups on US30 and Bitcoin, leveraging 1:3 asymmetric structures to build margin safely from $0.89 to $1,000+."
+        },
+        "eight_agent_syndicate": {
+          "agent_1_macro_soros": {
+            "view": "US30 shows structural compression while Bitcoin maintains upward macro resilience despite tight overnight ranges.",
+            "bias": "BUY",
+            "target_asset": "Bitcoin (BTCUSD)"
+          },
+          "agent_2_quant_simons": {
+            "view": "Bitcoin exhibits positive 5-candle velocity (+95.66) with clean mathematical momentum favoring continuation.",
+            "bias": "BUY",
+            "target_asset": "Bitcoin (BTCUSD)"
+          },
+          "agent_3_liquidity_tudor": {
+            "view": "US30 swept local lower boundaries (-37.36 net move) creating a potential exhaustion trap before a reversal bounce.",
+            "bias": "WAIT",
+            "target_asset": "US30 (Dow Jones)"
+          },
+          "agent_4_asymmetry_druck": {
+            "view": "Bitcoin offers clean upside continuation structures with tight risk parameters enabling a 1:3+ risk-to-reward ratio.",
+            "bias": "BUY",
+            "target_asset": "Bitcoin (BTCUSD)"
+          },
+          "agent_5_regime_volatility": {
+            "view": "Volatility is compressed across FX pairs, but crypto assets like Bitcoin show directional impulsions suitable for momentum scalping.",
+            "bias": "BUY",
+            "target_asset": "Bitcoin (BTCUSD)"
+          },
+          "agent_6_correlation_arb": {
+            "view": "Divergence noted between sluggish equity index movement (US30) and steady positive crypto momentum (Bitcoin).",
+            "bias": "BUY",
+            "target_asset": "Bitcoin (BTCUSD)"
+          },
+          "agent_7_red_team_adversary": {
+            "critique_and_challenge": "Bitcoin's recent 5-candle range is relatively narrow, which could lead to whipsaws if volume fails to expand upon breakout.",
+            "veto_verdict": "APPROVE"
+          },
+          "agent_8_risk_officer_seykota": {
+            "risk_evaluation": "With an account balance of $0.89, strict minimum micro-lots (0.01) must be used with a tight stop loss to eliminate ruin risk.",
+            "safety_verdict": "SAFE"
+          }
+        },
+        "supreme_god_verdict": {
+          "prime_asset": "Bitcoin (BTCUSD)",
+          "verdict": "BUY",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 61164.35,
+          "target_liquidity_pool": 61375.0,
+          "calculated_sl_pips": 45.0,
+          "calculated_tp_pips": 150.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3.3",
+          "god_brain_synthesis": "Consensus reached among quantitative velocity and macro agents on Bitcoin. Red Team and Risk Officer approve under strict 0.01 lot constraints. Executing bullish momentum trade."
+        },
+        "active_market_bias": {
+          "prime_asset": "Bitcoin (BTCUSD)",
+          "verdict": "BUY",
+          "trade_style": "Intraday Momentum",
+          "recommended_lot": 0.01,
+          "entry_price": 61164.35,
+          "target_liquidity_pool": 61375.0,
+          "calculated_sl_pips": 45.0,
+          "calculated_tp_pips": 150.0,
+          "profit_securing_threshold_usd": 10.0,
+          "projected_rr": "1:3.3",
+          "god_brain_synthesis": "Consensus reached among quantitative velocity and macro agents on Bitcoin. Red Team and Risk Officer approve under strict 0.01 lot constraints. Executing bullish momentum trade."
         }
       }
     }
