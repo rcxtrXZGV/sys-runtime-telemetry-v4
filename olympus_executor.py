@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-OLYMPUS PURE AUTONOMOUS EXECUTOR
-Listens strictly to the AI Council.
-Fires exact asset, exact direction, exact SL/TP and exact volume mandated by the AI.
+OLYMPUS SOVEREIGN MT5 EXECUTOR
+Listens strictly to the 12-Desk AI Brain.
+Fires exact asset, exact direction, exact SL/TP, and exact volume mandated by the AI.
 Zero human limits. Full AI execution fidelity.
 """
 
@@ -15,12 +15,21 @@ import datetime
 import subprocess
 import MetaTrader5 as mt5
 
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 DECISION_FILE = os.path.join("brain_vault", "active_trade_thesis.json")
 BROKER_LIVE_FILE = os.path.join("brain_vault", "broker_account_live.json")
 
 def log(msg):
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-    print(f"[{ts}] {msg}", flush=True)
+    try:
+        print(f"[{ts}] {msg}", flush=True)
+    except Exception:
+        print(f"[{ts}] {msg.encode('ascii', 'ignore').decode('ascii')}", flush=True)
 
 def kill_terminal_instances():
     try:
@@ -54,7 +63,7 @@ def manage_open_positions(open_positions, thesis):
 
 def main():
     log("==================================================================")
-    log("OLYMPUS SOVEREIGN MT5 EXECUTOR - DISPATCHING AI WILL")
+    log("OLYMPUS SOVEREIGN MT5 EXECUTOR - DISPATCHING AI MANDATE")
     log("==================================================================")
 
     login_str = os.getenv("MT5_LOGIN", "")
@@ -138,7 +147,7 @@ def main():
 
     # If AI decides WAIT -> 100% Zero Trade / Standby
     if verdict not in ["BUY", "SELL"]:
-        log(f"🛡️ [AI STANDBY] AI Brain verdict is '{verdict}'. Keeping capital 100% idle.")
+        log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Keeping capital 100% idle.")
         mt5.shutdown()
         return
 
@@ -190,11 +199,10 @@ def main():
         "type_filling": filling_mode,
     }
 
-    log(f"⚡ Transmitting Sovereign AI Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
+    log(f"Transmitting Sovereign AI Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
     res = mt5.order_send(req)
     if res and res.retcode == mt5.TRADE_RETCODE_DONE:
         log(f"💥💥💥 [AI ORDER EXECUTED LIVE] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
-        # Consume the thesis so duplicate execution does not occur
         if os.path.exists(DECISION_FILE):
             os.remove(DECISION_FILE)
     else:
