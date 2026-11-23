@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 OLYMPUS SUPREME AI BRAIN - 12 ELITE QUANTITATIVE DESKS
-Full sovereign power given to the Gemini Multi-Agent API.
+Powered by Gemini 3.5 Flash & 3.5 Flash Lite (Google GenAI SDK)
 Reads Raw Naked Candlesticks, Multi-Timeframe Highs/Lows, Order Flow & Market Liquidity.
 Zero human limits. Complete AI sovereign decision-making.
 """
@@ -175,17 +175,17 @@ Respond STRICTLY in valid JSON matching this schema:
 }}
 """
 
+    # Highly reliable models confirmed online on this API key:
     models_to_try = [
-        "gemini-3.8-flash",
+        "gemini-3.5-flash-lite",
         "gemini-3.5-flash",
-        "gemini-flash-latest",
-        "gemini-3.1-pro-preview"
+        "gemini-3.8-flash"
     ]
     
     res = None
     for m in models_to_try:
         try:
-            log(f"12-Desk Council convening on model: {m}...")
+            log(f"12-Desk Council convening on verified model: {m}...")
             res = client.models.generate_content(
                 model=m,
                 contents=prompt,
