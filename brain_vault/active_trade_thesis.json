@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T08:18:44.614136+00:00",
+  "timestamp": "2026-11-24T08:20:25.465550+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 1.08795,
   "tp_price": 1.09395,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently range-bound following its recent push upward, with low 15m volatility and overlapping candles. The existing position is managing well, but waiting for a clean breakout or structural retest before deploying fresh capital ensures adherence to high RR intraday momentum rules.",
-  "learning_applied": "Applied the lesson from previous XAUUSD stop-loss sweep by avoiding premature entries during consolidation phases and strictly requiring volume displacement before scaling risk."
+  "intraday_rationale": "EURUSD is currently range-bound following an earlier session sweep, and open positions are already testing minor volatility. Awaiting stronger volume displacement on the 15m/1h horizon before committing further capital.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid entering during low-volume chop and ensure structural distance behind swing extremes."
 }
