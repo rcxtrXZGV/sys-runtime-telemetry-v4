@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:52:41.106089+00:00",
+  "timestamp": "2026-11-24T07:54:18.389750+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.08795,
-  "tp_price": 1.09395,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently range-bound following a minor pullback during the pre-London transition. With an open position already active on EURUSD managing the same structural boundaries, doubling down without a clear liquidity sweep or volume expansion violates risk parameters.",
-  "learning_applied": "Applied lessons from previous XAUUSD stop-out by refusing to over-leverage or force trades inside tight consolidation zones, keeping capital protected until clean session momentum establishes."
+  "intraday_rationale": "EURUSD open position is currently floating a minor drawdown (-$0.64) with price consolidating tightly near 1.0906. There is no clean momentum displacement or structural break on the 15m/1h timeframes to warrant adding new exposure or forcing a trade.",
+  "learning_applied": "Past feedback on XAUUSD showed the danger of tight or premature stops in choppy ranges; adhering strictly to structural levels rather than chasing micro-noise prevents unneeded drawdowns."
 }
