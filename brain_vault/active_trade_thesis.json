@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T21:50:37.449612+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3551.2 level, sandwiched between the intraday low of 3545.4 and session high of 3573.2. Recent 15m volume is drying up significantly (zero volume on the latest candle), indicating a lack of aggressive institutional participation during the late session. Existing open positions on Gold are currently cushioned with tight trailing risk, while DXY remains steady near 103.82.",
+  "trade_thesis": "Given the current low-volume chop and the fact that multiple active positions are already deployed on XAUUSD with established stop-loss levels, the prudent quantitative action is to hold current exposure, refrain from adding fresh risk in a flat consolidation zone, and WAIT for a clear liquidity sweep of session extremes before executing further directional alpha."
+}
