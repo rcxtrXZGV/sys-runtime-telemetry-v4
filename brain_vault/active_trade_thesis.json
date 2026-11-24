@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T19:09:55.895249+00:00",
+  "timestamp": "2026-11-24T19:48:22.295700+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced heavy sell-side liquidity sweeps during the session, pushing down from highs near 3631 down to a low of 3551.89. Recent 15m candles show consolidation near the 3555 level with compressed volume and tight ranges, indicating a momentary absorption phase after a massive impulsive drop.",
-  "trade_thesis": "Given the severe volatility and recent painful stop-outs on long positions during the aggressive downward cascade, capital preservation is paramount. The current structure is consolidating in a narrow range without a clear reversal pattern or validated Fair Value Gap breakout. We mandate WAIT to let the market establish a definitive liquidity sweep and structural shift before deploying new capital."
+  "gold_liquidity_analysis": "XAUUSD is currently hovering around 3557.89 following a sharp intraday selloff from highs near 3622.39. We have an active short position on XAUUSD near 3565 (sl 3550, tp 3595). The 15m candles show low volatility consolidation near the lows (3551.89 low), and recent closed deals indicate painful stop-hunts when chasing momentum too tightly. DXY is stable near 103.81 with minimal directional expansion.",
+  "trade_thesis": "Given the existing open short position on XAUUSD currently experiencing minor drawdown (-7.69) and recent history of aggressive whipsaws on tight stops, the macro framework dictates patience. Volatility has compressed in the current 15m candles, representing noisy sideways chop rather than an immediate high-probability expansion. We maintain absolute autonomy and mandate WAIT to let the current position develop toward our target or allow a clearer structural sweep to form."
 }
