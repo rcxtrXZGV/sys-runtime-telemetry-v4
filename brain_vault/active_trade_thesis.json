@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:54:04.595699+00:00",
+  "timestamp": "2026-11-24T10:55:43.168241+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 30,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Markets are exhibiting mixed cross-asset signals with consolidation candles and lower volumes across major indices and FX pairs. No clear, high-conviction structural breakout or clean volume displacement is present at this moment.",
-  "learning_applied": "Past feedback on tight stop-loss placement prevents premature entry in choppy ranges, prioritizing patience for a structural break."
+  "intraday_rationale": "Gold (XAUUSD) is currently consolidating tightly around 3622.2 with very low momentum volume on the recent 15m candles. Following recent stop-out feedback, structural stops require clear session swing extremes rather than chasing compressed ranges. Await a decisive breakout beyond today's high (3631.10) or low (3606.40) with volume expansion.",
+  "learning_applied": "Applied previous feedback by refusing to enter within tight consolidation ranges where structural stop-losses would be vulnerable to micro-noise whipsaws."
 }
