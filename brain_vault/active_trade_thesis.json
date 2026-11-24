@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:36:34.195828+00:00",
+  "timestamp": "2026-11-24T07:38:12.767031+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with proper structural SL and TP. Monitoring other major pairs like XAUUSD shows low volume and choppy consolidation rather than clean institutional displacement at this hour.",
-  "learning_applied": "Avoiding premature entries without high-conviction 15m/1h structural expansion, respecting past stop-loss lessons by waiting for true breakout confirmation."
+  "intraday_rationale": "Existing EURUSD position is currently open and hovering near entry with a minor drawdown (-$0.85). No new high-conviction displacement or clear volume expansion is present across major pairs to justify compounding risk at this exact moment. Remaining patient for a cleaner London session breakout.",
+  "learning_applied": "Applied lessons from previous XAUUSD stop-loss sweep by avoiding tight, noise-level SL placements and refusing to force secondary entries during choppy consolidation."
 }
