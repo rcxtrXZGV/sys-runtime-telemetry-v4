@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:59:41.712621+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 40,
+  "timestamp": "2026-11-24T08:01:17.769761+00:00",
+  "verdict": "SELL",
+  "symbol": "XAUUSD",
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.08795,
-  "tp_price": 1.09395,
+  "sl_price": 3628.5,
+  "tp_price": 3594.5,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account equity is currently $97.53 with an open EURUSD position already testing structural boundaries. Price action across major pairs shows low volume consolidation during this period. We maintain capital preservation discipline rather than forcing a new setup.",
-  "learning_applied": "Applied lessons from previous XAUUSD tight-stop missteps by avoiding over-leveraging and refusing to enter unconfirmed low-volume intraday ranges."
+  "intraday_rationale": "Gold broke down with strong 15m volume displacement (2680 volume) dropping from 3639.6 to 3612.6. The current pullback to 3624.8 failed to gain buying momentum, coinciding with DXY strength at 104.354. Riding London session bearish momentum towards 3594.5.",
+  "learning_applied": "Placed SL above the structural 15m pullback swing high (3628.50) to give the position room outside micro-noise, targeting a clean 1:3.9 RR move."
 }
