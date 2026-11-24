@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T08:25:05.551969+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 0,
+  "timestamp": "2026-11-24T08:26:31.443623+00:00",
+  "verdict": "SELL",
+  "symbol": "XAUUSD",
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3628.5,
+  "tp_price": 3595.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account equity is currently very small ($98.28) with EURUSD already open and in a floating profit of $0.36. No high-conviction momentum breakout is currently printing across the major indices or FX pairs with sufficient volume displacement to justify opening a second leveraged intraday position.",
-  "learning_applied": "Past feedback on XAUUSD showed that tight SLs without structural protection or proper volume backing can lead to quick stop-outs. Maintaining a defensive posture until a high-RR setup emerges protects the micro-account."
+  "intraday_rationale": "XAUUSD displays strong bearish displacement with expanding sell volume (2680, 2335) from 3641 down to 3612.6, followed by weak lower-high pullbacks capping at 3624.8. Entering short at 3619.9 targeting liquidity sweep at 3595.0 for a 1:2.9 Risk-to-Reward ratio.",
+  "learning_applied": "Past XAUUSD trade suffered from a tight stop loss hit by intraday noise. Today's stop loss is structurally anchored above the session swing high (3628.50) outside noise, protecting account capital."
 }
