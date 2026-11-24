@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T07:02:38.900516+00:00",
+  "timestamp": "2026-11-24T07:04:09.330540+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with proper structural stop-loss and take-profit. Across major pairs, price action shows tight ranges during the pre-London transition, lacking clean volume displacement for new entries. Patience is maintained to preserve existing equity.",
-  "learning_applied": "Past losses on XAUUSD due to tight noise-level stops emphasized the absolute necessity of structural swing protection and avoiding forced entries during low-volume accumulation periods."
+  "intraday_rationale": "Current price action across major pairs and indices shows tight consolidation or lack of clean volume-backed displacement matching our 1:2.5 to 1:4 RR criteria. Maintaining exposure only on existing open positions while awaiting a clear London session opening sweep.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid tight noise-level entries without structural support behind swing highs/lows, keeping us disciplined to wait for optimal setup conditions."
 }
