@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T11:51:19.979872+00:00",
+  "timestamp": "2026-11-24T11:53:03.725301+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently in a steady grind upwards with our existing open position holding well at 1.0954, but current 15m candles show minimal volume and tight consolidation near session highs. No immediate high-conviction breakout or structural pullback offering a clean 1:3 RR setup exists right now.",
-  "learning_applied": "Avoiding premature entries or chasing minor 15m ticks without volume confirmation, protecting open equity and respecting structural session levels as learned from past XAUUSD stop-out."
+  "intraday_rationale": "EURUSD is currently in a steady upward drift, but major indices and pairs show signs of localized consolidation and lack high-volume aggressive displacement on the 15m timeframes to guarantee a clean 1:3 RR run without immediate pullback risks.",
+  "learning_applied": "Avoiding premature entries during low-momentum structural drift to prevent tight stop-loss sweeps, ensuring strict adherence to structural swing invalidation points."
 }
