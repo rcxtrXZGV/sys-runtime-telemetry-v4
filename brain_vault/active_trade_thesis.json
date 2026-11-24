@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T14:20:03.426301+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Gold (XAUUSD) has tested the intraday low near 3612.0 and is consolidating around 3617.8. Multiple open buy positions are already active with tight stops and varied targets, absorbing floating PnL. DXY is drifting lower toward 103.83, but volume has dried up in recent 15m candles.",
+  "trade_thesis": "Given existing active exposure on XAUUSD and mixed short-term price stabilization following the sweep of the 3612 level, market conditions exhibit temporary sideways consolidation. Adhering to quantitative protocols, we mandate WAIT until a definitive liquidity grab or breakout occurs."
+}
