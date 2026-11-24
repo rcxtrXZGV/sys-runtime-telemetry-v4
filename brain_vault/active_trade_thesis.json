@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:38:57.637342+00:00",
+  "timestamp": "2026-11-24T11:40:41.365891+00:00",
   "verdict": "BUY",
-  "symbol": "XAUUSD",
+  "symbol": "GBPUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3616.5,
-  "tp_price": 3662.0,
+  "sl_price": 1.306,
+  "tp_price": 1.3135,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "XAUUSD completed a 15m liquidity sweep at 3606.40 followed by aggressive bullish displacement. The shallow higher-low retest at 3622.50 held firmly on high volume (2,188), confirming intraday buyers driving price toward upper target levels aligned with DXY markdown.",
-  "learning_applied": "Avoided premature tight SL placement like ticket 1700440679 by positioning the SL structurally below the 15m swing base at 3616.50, giving the intraday expansion room to develop."
+  "intraday_rationale": "DXY is experiencing aggressive downward displacement (104.33 down to 104.00), driving a sustained intraday bullish expansion on GBPUSD. The 15m candles show consistent higher highs and higher lows breaking past 1.3070 resistance during London session volume.",
+  "learning_applied": "Applied a wide structural stop-loss behind the recent 15m session consolidation low (1.3060) to avoid premature stop-outs from noise, strictly adhering to a 1:3.7 Risk-Reward ratio."
 }
