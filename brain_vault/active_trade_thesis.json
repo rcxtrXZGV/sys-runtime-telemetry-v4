@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T07:31:51.127092+00:00",
+  "timestamp": "2026-11-24T07:33:25.244577+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with proper structural SL. In the broader matrix, 15m candles show tight consolidation and low volume across major pairs during the pre-London transition. No clean momentum displacement detected warranting additional risk at this moment.",
-  "learning_applied": "Applied lessons from previous XAUUSD tight stop-loss hunt by refusing to force low-quality setups in choppy liquidity zones, prioritizing capital preservation for the core EURUSD position."
+  "intraday_rationale": "EURUSD is currently range-bound within a tight 15-minute band following the Asian session close. Although an open EURUSD position is currently active, no fresh 15m/1h structural displacement or high-conviction breakout pattern meets our strict 1:2.5+ risk-reward requirement right now.",
+  "learning_applied": "Based on previous XAUUSD stop-loss feedback, we strictly avoid forcing trades during low-volatility or ambiguous consolidation phases, ensuring structural SL placement only when clean momentum is confirmed."
 }
