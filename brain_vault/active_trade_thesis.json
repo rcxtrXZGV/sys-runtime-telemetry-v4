@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T22:24:50.121925+00:00",
+  "timestamp": "2026-11-24T22:34:52.605088+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3555 level after sweeping intraday lows near 3545.39. Multiple long positions are already open and currently in profit, testing the upper boundaries of the immediate range while DXY remains tightly bound near 103.83.",
-  "trade_thesis": "Given the existing open exposure in Gold and the current lack of strong directional expansion candles on the 15m timeframe, the market exhibits choppy sideways characteristics. Per the operating doctrine, mandated WAIT is enforced to protect current floating equity until a clean FVG or liquidity sweep presents an asymmetric expansion opportunity."
+  "gold_liquidity_analysis": "XAUUSD swept sell-side liquidity at 3545.4 and printed a bullish rejection wick back to 3555.1. DXY is consolidating near 103.84 while 15-minute trading volume on Gold is drying up dramatically (0-507 ticks) during the late-session transition. Four active long positions are currently running in net positive equity ($78.23 vs $58.72 balance).",
+  "trade_thesis": "Capital preservation and margin management mandate a WAIT verdict. Account holds 4 running Gold long positions (plus 1 EURUSD long), all currently in positive yield. Adding further long exposure at 3555.1 under low late-session volume risks over-leverage. Position management active; awaiting session open liquidity expansion to target 3570.0-3575.0 TP levels."
 }
