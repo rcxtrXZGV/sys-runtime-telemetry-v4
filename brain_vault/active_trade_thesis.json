@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:13:28.447929+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 0,
+  "timestamp": "2026-11-24T09:14:56.398599+00:00",
+  "verdict": "SELL",
+  "symbol": "BTCUSD",
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 60350.0,
+  "tp_price": 58450.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Currently holding an active EURUSD position with a positive floating profit. No immediate high-probability 15m/1h trend expansion setup offering 1:2.5 to 1:4 risk-reward warrants stacking additional exposure right now.",
-  "learning_applied": "Past stop-loss failure on XAUUSD taught us to strictly wait for clear structural session breakout validation rather than forcing trades in choppy ranges."
+  "intraday_rationale": "High-volume institutional breakdown below the key 60,000 psychological support level on the 15m chart. Heavy displacement candle (>1B volume) confirms bearish continuation toward intraday lower liquidity pools.",
+  "learning_applied": "Placed structural SL at 60,350 above the breakdown consolidation high rather than a tight micro-stop, preventing premature stop-out from noise as seen in recent Gold feedback while achieving a 1:2.58 R:R."
 }
