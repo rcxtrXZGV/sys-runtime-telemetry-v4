@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T21:57:01.403135+00:00",
+  "timestamp": "2026-11-24T22:02:02.058967+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3540.0,
   "tp_price": 3570.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3552 level after sweeping intraday lows down to 3545.39. Volume has tapered off significantly in the latest 15m candles (dropping to near zero), indicating low liquidity during the session transition. DXY is hovering flat near 103.82 and US10Y is stable at 4.904, removing clear directional macro catalysts at this exact timestamp.",
-  "trade_thesis": "Given the recent cluster of stopped-out XAUUSD trades and the current low-volume sideways consolidation, deploying fresh capital presents an unfavorable risk-reward profile. Multiple open positions are currently active and floating in profit; capital preservation and patience are mandated until a clear high-volume institutional breakout or liquidity sweep occurs outside the current 3545-3556 range."
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3552.5 level following a minor test of the intraday low at 3545.39. Multiple long positions are already open and running in profit, while DXY remains tightly range-bound near 103.82. Volume has tapered off significantly across recent 15-minute candles, indicating a lack of aggressive institutional distribution at this juncture.",
+  "trade_thesis": "Given the existing cluster of open long positions in XAUUSD and current low-volatility session chop, the optimal risk-adjusted strategy is to wait for further price discovery, liquidity sweeps at session extremes, or a clearer impulse before deploying additional capital."
 }
