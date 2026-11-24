@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:05:44.661698+00:00",
+  "timestamp": "2026-11-24T07:07:22.677457+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 20,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current account equity is at $96.67 with an active EURUSD position. Price action across major pairs is showing extremely low volume and tight ranges during the pre-London transition, offering no clean institutional displacement or asymmetric 1:3 RR setup.",
-  "learning_applied": "Avoiding premature entries and over-leveraging during low-liquidity phases to respect structural stop-losses and protect remaining capital."
+  "intraday_rationale": "Current price action across major pairs shows tight consolidation ahead of major liquidity pools. Existing EURUSD position is active and managing risk; waiting for clean breakout with structural volume displacement before adding new risk.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid tight stops near consolidation noise. Maintaining patience until a clear structural swing high/low appears outside current noise bands."
 }
