@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T17:33:24.598706+00:00",
+  "timestamp": "2026-11-24T17:44:25.147755+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 82,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD swept sell-side liquidity down to 3557.40 following a major intraday sell-off from 3631.30. Price is now consolidating around 3562.70 above the liquidity sweep low. An active XAUUSD buy position (Ticket #2118285162) is already open with SL at 3555.00 and TP at 3595.00 targeting the premium FVG fill.",
-  "trade_thesis": "Current account equity is $86.46 with 2 open positions (EURUSD +$2.99, XAUUSD -$9.41). Opening additional margin exposure on a small balance while holding active XAUUSD and EURUSD positions violates strict risk parameters. We mandate WAIT to allow the active XAUUSD mean-reversion long thesis to reach its defined targets without over-leveraging."
+  "gold_liquidity_analysis": "XAUUSD experienced a sharp sell-off from intraday highs of 3641.4 to a low of 3557.4. The asset is currently consolidating within a tight compression band (3560.3 - 3574.6) on low volume. An active position is already open (ticket 2118285162, SL 3555.0, TP 3595.0). DXY is holding near 103.79, indicating short-term equilibrium. Liquidity sweeps below 3557.4 have not yet triggered a displacement higher.",
+  "trade_thesis": "Capital preservation protocol engaged. With existing open positions on EURUSD and XAUUSD active and total equity at $89.30 USD, adding risk during intraday consolidation at the low of the range offers unfavorable risk-to-reward. We stand by existing positions and await clear structural breakout or liquidity displacement above 3575.0 before committing fresh alpha capital."
 }
