@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T08:58:40.063056+00:00",
+  "timestamp": "2026-11-24T09:00:14.689066+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current intraday price action shows minor sideways consolidation across major instruments following the early session moves. EURUSD already has an open swing position running, and other assets lack clean volume-backed displacement to warrant immediate entry without risking mid-range chop.",
-  "learning_applied": "Applying lessons from previous XAUUSD stop-loss sweep by refusing to force entries in tight consolidation zones, ensuring structural protection is prioritized over over-trading."
+  "intraday_rationale": "Active EURUSD long position already managing open trade at 1.0919 with healthy buffer. Other major indices and currency pairs are in low-volatility tight ranges or lacking clear 1.5M/1H volume expansion to justify new risk exposure.",
+  "learning_applied": "Avoiding over-leveraging and respecting existing open intraday exposure while maintaining structural stop discipline."
 }
