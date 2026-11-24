@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T20:04:28.781872+00:00",
+  "timestamp": "2026-11-24T20:09:51.979581+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 82,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 0.0,
-  "gold_liquidity_analysis": "XAUUSD swept downside liquidity to intraday low 3551.90 under pressure from elevated US10Y yields (4.908%) and strong DXY (103.818). Price is currently consolidating in a tight 15m range (3554 - 3560). Existing buy position #2118453560 remains active with SL 3550.0.",
-  "trade_thesis": "Account equity stands at $63.99 with existing active exposure in Gold and EURUSD. Additional position opening presents unnecessary risk of over-leveraging prior to confirmation of structural reversal above 3565 or defensive SL hit at 3550. Mandating WAIT to preserve capital while waiting for clear liquidity expansion."
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD swept intraday lows down to 3551.90 before entering low-volume compression between 3554.0 and 3559.8. DXY is stable at 103.81, while US10Y holds 4.908%. The 15m candles display diminishing volume (from 4353 down to 645/840) indicating late-session consolidation without clear displacement structure. Existing long position (ticket 2118453560) is currently holding at 3550.0 SL. Equity sits at $65.56.",
+  "trade_thesis": "The fund already maintains open exposure on Gold (buy 0.01 lot) and EURUSD. Current price action on XAUUSD shows low-volatility sideways compression post-liquidation sweep without an immediate bullish displacement confirmation on the 15-minute timeframe. Capital preservation rules mandate holding off on secondary entries until liquidity expands or existing positions reach target/stop levels."
 }
