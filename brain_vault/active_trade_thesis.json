@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:48:03.638950+00:00",
+  "timestamp": "2026-11-24T11:49:43.621588+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently in a steady grind higher but approaching upper intraday session boundaries with compressed momentum. While an existing position is running with a minor profit, opening new risk right now lacks the necessary high-volume displacement and clear structural pullbacks required for a 1:2.5+ R:R continuation setup.",
-  "learning_applied": "Avoiding premature entries or chasing extended price action, ensuring stops are kept strictly behind structural levels as learned from past XAUUSD volatility sweeps."
+  "intraday_rationale": "EURUSD is currently in a steady grind higher but approaching intraday resistance near the 1.0955 high with zero active volume confirmation candles. Given the open EURUSD position already running in profit, scaling in requires a confirmed pullback or clean breakout rather than chasing at highs.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid tight stops during low-liquidity phases and ensure structural placement before deploying additional capital."
 }
