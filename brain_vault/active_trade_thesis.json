@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:30:54.466840+00:00",
+  "timestamp": "2026-11-24T08:32:28.951959+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current intraday sessions show tight ranges and consolidation across major pairs without clear volume displacement for a 1:2.5+ risk-reward setup.",
-  "learning_applied": "Past SL feedback on XAUUSD emphasized avoiding tight, easily swept levels; holding off until clean structural swing points materialize."
+  "intraday_rationale": "EURUSD is currently holding an open position in profit, but the 15-minute candlestick matrices show minimal volatility and tight range consolidation across major pairs ahead of major session liquidity expansion. No clean intraday volume displacement is present to warrant a secondary entry.",
+  "learning_applied": "Applied lessons from past XAUUSD stop-loss breach by refusing to enter positions without clear structural confirmation and volume-backed displacement, protecting current account equity."
 }
