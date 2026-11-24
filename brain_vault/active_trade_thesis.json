@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:08:59.995774+00:00",
+  "timestamp": "2026-11-24T07:10:44.056954+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently range-bound following a minor pullback, with candles showing minimal volume and tight 15-minute consolidation. Awaiting a clear momentum sweep and volume displacement before committing capital.",
-  "learning_applied": "Avoiding premature entries based on recent XAUUSD stop-loss feedback by enforcing strict structural session high/low confirmation prior to order execution."
+  "intraday_rationale": "Account equity ($96.91) is under tight margin constraints with an active EURUSD position already open. The current 15m candle matrices across major forex and indices show low volatility and lack of clean volume-backed momentum runs right now. Maintaining patience until a pristine session sweep occurs.",
+  "learning_applied": "Past XAUUSD stop-loss sweep failure demonstrated the critical need to wait for structural volume expansion rather than chasing muted pre-session chop, preserving capital for high-conviction London/NY overlap windows."
 }
