@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T06:46:05.648226+00:00",
+  "timestamp": "2026-11-24T06:47:49.035148+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 20,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "All major pairs and indices show compressed ranges with zero volume generation during the current early session hour. EURUSD is currently holding an open position with tight consolidation, and no structural breakout or clear momentum displacement is present across the board.",
-  "learning_applied": "Avoiding premature entries during low-volume accumulation phases, honoring strict stop-loss discipline by staying out until clean structural expansion occurs."
+  "intraday_rationale": "All monitored assets are exhibiting extremely tight consolidation ranges with zero significant volume displacement or clean structural breaks necessary for a high-probability 1:2.5+ intraday move.",
+  "learning_applied": "Refusing to force low-conviction entries during choppy conditions, preventing the accumulation of tight stop-loss sweeps seen in previous gold trades."
 }
