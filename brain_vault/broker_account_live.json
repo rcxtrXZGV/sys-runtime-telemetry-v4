@@ -1,7 +1,7 @@
 {
   "balance": 92.3,
-  "equity": 94.58,
-  "free_margin": 86.35,
+  "equity": 95.37,
+  "free_margin": 87.14,
   "open_positions": [
     {
       "ticket": 2116947016,
@@ -9,7 +9,7 @@
       "volume": 0.01,
       "sl": 1.09469,
       "tp": 1.1005,
-      "profit": 2.84
+      "profit": 2.67
     },
     {
       "ticket": 2118285162,
@@ -17,7 +17,7 @@
       "volume": 0.01,
       "sl": 3555.0,
       "tp": 3595.0,
-      "profit": -4.66
+      "profit": -4.18
     },
     {
       "ticket": 2118309540,
@@ -25,7 +25,7 @@
       "volume": 0.01,
       "sl": 3555.0,
       "tp": 3615.0,
-      "profit": 4.1
+      "profit": 4.58
     }
   ]
 }
