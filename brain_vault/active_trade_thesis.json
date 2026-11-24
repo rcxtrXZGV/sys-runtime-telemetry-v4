@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T19:08:14.719423+00:00",
+  "timestamp": "2026-11-24T19:09:55.895249+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 35,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a heavy downside flush toward the 3551.89 intraday low following a strong rejection from the 3631.3 high. Price action is currently consolidating near 3554.7 with declining volume on recent 15-minute candles, indicating exhaustion of the immediate selling pressure but lacking a clean structural reversal pattern or clear liquidity sweep confirmation.",
-  "trade_thesis": "Given recent closed deal feedback showing severe slippage and stop-loss hunting on aggressive counter-trend scalps during high volatility, coupled with an account balance of ~$73, capital preservation is paramount. The current market is exhibiting choppy consolidation following a massive daily range. Maintaining a WAIT posture allows us to observe whether 3550 holds as a major psychological and structural support or if a deeper sweep occurs before deploying fresh risk."
+  "gold_liquidity_analysis": "XAUUSD experienced heavy sell-side liquidity sweeps during the session, pushing down from highs near 3631 down to a low of 3551.89. Recent 15m candles show consolidation near the 3555 level with compressed volume and tight ranges, indicating a momentary absorption phase after a massive impulsive drop.",
+  "trade_thesis": "Given the severe volatility and recent painful stop-outs on long positions during the aggressive downward cascade, capital preservation is paramount. The current structure is consolidating in a narrow range without a clear reversal pattern or validated Fair Value Gap breakout. We mandate WAIT to let the market establish a definitive liquidity sweep and structural shift before deploying new capital."
 }
