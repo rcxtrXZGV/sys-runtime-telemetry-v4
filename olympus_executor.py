@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-OLYMPUS SOVEREIGN MT5 EXECUTOR - RECURSIVE LEARNING ENGINE
-Rule: LEARN -> IMPROVE -> REPEAT
-1. Executes AI Sovereign Mandates on MT5.
-2. Extracts Recent Closed Deals Outcome (Profit, Loss, Slippage, Holding Time).
-3. Evaluates Mistakes & Successes -> Saves into Recursive Learning Memory.
-4. Feeds ground-truth feedback into the AI Council for the next cycle.
+OLYMPUS RECURSIVE SOVEREIGN EXECUTOR - MULTI-ASSET PORTFOLIO ENGINE
+Allows up to 3 diversified non-overlapping asset positions (e.g. 1 Gold + 1 Crypto + 1 FX/Index).
+Never stacks duplicates on the same asset.
+Enforces LEARN -> IMPROVE -> REPEAT on closed deals.
 """
 
 import os
@@ -42,11 +40,6 @@ def kill_terminal_instances():
         pass
 
 def harvest_and_learn_from_deals():
-    """
-    LEARN -> IMPROVE -> REPEAT
-    Analyzes all deals closed in the last 48 hours.
-    Identifies what worked and what failed to feed back into the brain.
-    """
     now = datetime.datetime.now(datetime.timezone.utc)
     from_time = now - datetime.timedelta(days=2)
     deals = mt5.history_deals_get(from_time, now)
@@ -70,7 +63,6 @@ def harvest_and_learn_from_deals():
             })
             
     if closed_deals:
-        # Save exact deal feedback
         with open(DEAL_FEEDBACK_FILE, "w", encoding="utf-8") as f:
             json.dump({"total_closed_analyzed": len(closed_deals), "deals": closed_deals[-20:]}, f, indent=2)
             
@@ -83,8 +75,9 @@ def manage_open_positions(open_positions, thesis):
     trailing_activation = float(thesis.get("trailing_activation_profit", 3.0) or 3.0)
     for p in open_positions:
         is_buy = (p.type == mt5.ORDER_TYPE_BUY)
-        log(f"Position #{p.ticket} ({p.symbol}): Entry={p.price_open}, Cur={p.price_current}, SL={p.sl}, TP={p.tp}, Profit=${p.profit:.2f}")
+        log(f"Managing Position #{p.ticket} ({p.symbol}): Entry={p.price_open}, Cur={p.price_current}, SL={p.sl}, TP={p.tp}, Profit=${p.profit:.2f}")
         
+        # Protect floating profits into guaranteed green
         if p.profit >= trailing_activation and (p.sl < p.price_open if is_buy else (p.sl == 0 or p.sl > p.price_open)):
             buffer = 0.50 if "XAU" in p.symbol else (15.0 if "BTC" in p.symbol else 0.0005)
             new_sl = round(p.price_open + (buffer if is_buy else -buffer), 2 if "XAU" in p.symbol else 5)
@@ -97,11 +90,11 @@ def manage_open_positions(open_positions, thesis):
             }
             res = mt5.order_send(mod_req)
             if res and res.retcode == mt5.TRADE_RETCODE_DONE:
-                log(f"🎯 [AUTONOMOUS PROFIT LOCK] Position #{p.ticket} SL moved to {new_sl} to lock in green run!")
+                log(f"🎯 [AUTONOMOUS PROFIT LOCK] Position #{p.ticket} on {p.symbol} secured at {new_sl}!")
 
 def main():
     log("==================================================================")
-    log("OLYMPUS RECURSIVE SOVEREIGN EXECUTOR (LEARN -> IMPROVE -> REPEAT)")
+    log("OLYMPUS MULTI-ASSET INTRADAY EXECUTOR (GOLD, CRYPTO, FX, INDICES)")
     log("==================================================================")
 
     login_str = os.getenv("MT5_LOGIN", "")
@@ -149,14 +142,16 @@ def main():
 
     log(f"BROKER CONNECTED: {acc.name} | Balance: ${acc.balance:.2f} | Equity: ${acc.equity:.2f}")
 
-    # STEP 1: LEARN (Harvest real closed deals and extract lessons)
+    # STEP 1: LEARN (Harvest real closed deals)
     harvest_and_learn_from_deals()
 
     open_pos = mt5.positions_get()
     pos_list = []
+    active_symbols = []
     if open_pos:
         for p in open_pos:
             pos_list.append({"ticket": p.ticket, "symbol": p.symbol, "volume": p.volume, "sl": p.sl, "tp": p.tp, "profit": round(p.profit, 2)})
+            active_symbols.append(p.symbol)
 
     os.makedirs("brain_vault", exist_ok=True)
     with open(BROKER_LIVE_FILE, "w", encoding="utf-8") as f:
@@ -172,12 +167,16 @@ def main():
 
     # STEP 2: MANAGE ACTIVE POSITIONS
     if open_pos and len(open_pos) > 0:
-        log(f"Active trade detected ({len(open_pos)} open). Managing position according to AI thesis.")
+        log(f"Currently holding {len(open_pos)} active position(s): {active_symbols}. Managing trailing stops.")
         manage_open_positions(open_pos, thesis)
-        mt5.shutdown()
-        return
+        
+        # Max 3 Diversified Assets in Portfolio (e.g. 1 Gold + 1 Crypto + 1 FX)
+        if len(open_pos) >= 3:
+            log(f"Multi-asset portfolio capacity reached ({len(open_pos)}/3). Preserving margin buffer.")
+            mt5.shutdown()
+            return
 
-    # STEP 3: EXECUTE SOVEREIGN MANDATE
+    # STEP 3: EXECUTE MULTI-ASSET SOVEREIGN MANDATE
     verdict = thesis.get("verdict", "WAIT")
     sym = thesis.get("symbol", "XAUUSD")
     lot = float(thesis.get("lot_size", 0.01) or 0.01)
@@ -185,6 +184,14 @@ def main():
     tp_target = float(thesis.get("tp_price", 0.0) or 0.0)
 
     log(f"Received Sovereign AI Mandate: {verdict} on {sym} (Lots: {lot})")
+
+    # Anti-Duplicate Guard: Don't open a second trade on the SAME asset
+    base_sym = "XAU" if "XAU" in sym else ("BTC" if "BTC" in sym else ("EUR" if "EUR" in sym else ("GBP" if "GBP" in sym else sym)))
+    for active_s in active_symbols:
+        if base_sym in active_s:
+            log(f"Already holding active exposure on {active_s}. Skipping duplicate on same asset to maintain diversification.")
+            mt5.shutdown()
+            return
 
     if verdict not in ["BUY", "SELL"]:
         log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Keeping capital 100% idle.")
@@ -211,13 +218,13 @@ def main():
     if sl_target > 0:
         sl = round(sl_target, 2 if ("XAU" in sym or "BTC" in sym) else 5)
     else:
-        dist = 3.50 if "XAU" in sym else (250.0 if "BTC" in sym else 0.0030)
+        dist = 4.00 if "XAU" in sym else (350.0 if "BTC" in sym else 0.0035)
         sl = round(price - dist if is_buy else price + dist, 2 if ("XAU" in sym or "BTC" in sym) else 5)
 
     if tp_target > 0:
         tp = round(tp_target, 2 if ("XAU" in sym or "BTC" in sym) else 5)
     else:
-        dist = 10.00 if "XAU" in sym else (800.0 if "BTC" in sym else 0.0090)
+        dist = 12.00 if "XAU" in sym else (1200.0 if "BTC" in sym else 0.0120)
         tp = round(price + dist if is_buy else price - dist, 2 if ("XAU" in sym or "BTC" in sym) else 5)
 
     order_type = mt5.ORDER_TYPE_BUY if is_buy else mt5.ORDER_TYPE_SELL
@@ -233,15 +240,15 @@ def main():
         "tp": tp,
         "deviation": 50,
         "magic": 777701,
-        "comment": "OLYMPUS_SOVEREIGN",
+        "comment": "OLYMPUS_MULTI_ASSET",
         "type_time": mt5.ORDER_TIME_GTC,
         "type_filling": filling_mode,
     }
 
-    log(f"Transmitting Sovereign AI Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
+    log(f"Transmitting Multi-Asset Intraday Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
     res = mt5.order_send(req)
     if res and res.retcode == mt5.TRADE_RETCODE_DONE:
-        log(f"💥💥💥 [AI ORDER EXECUTED LIVE] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
+        log(f"💥💥💥 [MULTI-ASSET ORDER FILLED] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
         if os.path.exists(DECISION_FILE):
             os.remove(DECISION_FILE)
     else:
