@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T19:48:22.295700+00:00",
+  "timestamp": "2026-11-24T19:52:00.100139+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently hovering around 3557.89 following a sharp intraday selloff from highs near 3622.39. We have an active short position on XAUUSD near 3565 (sl 3550, tp 3595). The 15m candles show low volatility consolidation near the lows (3551.89 low), and recent closed deals indicate painful stop-hunts when chasing momentum too tightly. DXY is stable near 103.81 with minimal directional expansion.",
-  "trade_thesis": "Given the existing open short position on XAUUSD currently experiencing minor drawdown (-7.69) and recent history of aggressive whipsaws on tight stops, the macro framework dictates patience. Volatility has compressed in the current 15m candles, representing noisy sideways chop rather than an immediate high-probability expansion. We maintain absolute autonomy and mandate WAIT to let the current position develop toward our target or allow a clearer structural sweep to form."
+  "gold_liquidity_analysis": "XAUUSD is currently hovering around 3559.0 after testing the intraday low of 3551.8999. Recent 15m candles show low volatility and decreasing volume, indicating a consolidation phase following the aggressive downward sweep from the 3622.3999 high. DXY is stable near 103.802, providing no strong directional tailwinds.",
+  "trade_thesis": "Given the recent closed deal feedback showing severe drawdown on aggressive counter-trend scalps during high-velocity moves, and the current low-volume consolidation on XAUUSD, capital preservation is paramount. The system mandates a WAIT stance until a clean Fair Value Gap or session order block presents a high-asymmetry entry."
 }
