@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T23:49:24.920824+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 3545.0,
+  "tp_price": 3575.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3556.89 region following an intraday low sweep down to 3545.39. We already hold two active long positions on Gold with profits accumulating, while recent closed deals show high vulnerability to tight stop-loss hunting during choppy session transitions. DXY is stabilizing near 103.85, providing neutral macro pressure.",
+  "trade_thesis": "Given that we already have dual XAUUSD long positions active and running profitably in this range, opening additional exposure without a clean breakout of the 3565 resistance or a deeper liquidity grab below 3545 creates unnecessary concentration risk. Mandating WAIT to let current positions develop and protect account equity."
+}
