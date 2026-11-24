@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T17:16:49.446807+00:00",
+  "timestamp": "2026-11-24T17:20:27.944875+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3550.0,
-  "tp_price": 3600.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a sharp multi-candle selloff from intraday highs near 3651 down to the 3557-3567 region, currently stabilizing into low-volume consolidation candles. Recent historical stops on short trades demonstrate high volatility and quick reversals near these local liquidity pools.",
-  "trade_thesis": "Current account balance is near $92.30 with existing open positions in XAUUSD and EURUSD. Following recent stop-outs during aggressive downward impulses, market structure is currently exhibiting consolidation after a major flush. Adhering to strict risk management, we mandate a WAIT stance to let price form a clean institutional order block or sweep before deployment."
+  "gold_liquidity_analysis": "Gold experienced heavy intraday distribution from highs near 3651 down to a low of 3557, followed by a minor corrective bounce back to 3570. The aggressive downside momentum that triggered consecutive stop-losses earlier in the session has decelerated, but a clear equilibrium or reversal liquidity sweep pattern has not fully formed on the current 15m consolidation candles.",
+  "trade_thesis": "Given recent closed deal feedback showing severe slippage and stop-loss hunting on short-term XAUUSD scalps during the sharp downside cascade, capital preservation is paramount. Equity has dropped to $87.49 with an open XAUUSD position currently in drawdown. Mandating WAIT until volatility settles and a pristine institutional order block or sweep of the 3557 low confirms directional continuation or a mean-reversion setup."
 }
