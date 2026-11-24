@@ -1,6 +1,19 @@
 {
-  "balance": 97.96,
-  "equity": 97.96,
-  "free_margin": 97.96,
-  "open_positions": []
+  "account_name": "RAHUL  KUMAR",
+  "balance": 97.92,
+  "equity": 97.76,
+  "margin": 1.09,
+  "free_margin": 96.67,
+  "open_positions": [
+    {
+      "ticket": 2116186149,
+      "symbol": "EURUSD",
+      "volume": 0.01,
+      "open_price": 1.09095,
+      "current_price": 1.09079,
+      "sl": 1.08795,
+      "tp": 1.09395,
+      "profit": -0.16
+    }
+  ]
 }
