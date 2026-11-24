@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T10:29:27.789762+00:00",
+  "timestamp": "2026-11-24T10:31:01.764768+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD already holds an open profitable position (ticket 2116186149) near session highs, while other instruments show consolidating price action post-London open expansion. Maintaining discipline and waiting for a clean retest or new session sweep.",
-  "learning_applied": "Avoiding over-leveraging and respecting existing open exposure by holding off on secondary entries until clear structural expansion forms."
+  "intraday_rationale": "EURUSD is currently holding an open long position near session highs (1.0935) following a clean intraday push, while other key assets like Gold and Indices show mixed or consolidating price action. Given our active position and lack of immediate high-volume displacement at fresh structural extremes, patience is warranted.",
+  "learning_applied": "Past feedback emphasizes avoiding tight micro-noise scalping and safeguarding capital by placing stops outside structural session noise; with an open position already active, stacking correlated exposure without a clean new structural sweep is avoided."
 }
