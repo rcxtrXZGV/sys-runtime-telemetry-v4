@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:49:43.754258+00:00",
+  "timestamp": "2026-11-24T13:51:26.144863+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold has completed a massive liquidity sweep of session highs near 3651.4 and aggressively expanded downward to test intraday lows at 3614.3. Price is currently consolidating around 3620.3. DXY is holding near 103.92 while US10Y yields pulled back to 4.89%. Two active short positions (tickets 2117339435 and 2117428068) are currently floating high profit (+11.06 USD and +7.26 USD) targeting 3615.0 and 3612.0.",
-  "trade_thesis": "Capital preservation and margin management mandate holding off on entering additional positions at current levels. Existing positions are positioned optimally to capture the remainder of the downward expansion toward the 3612.0-3615.0 target zone. Entering a new short at 3620.3 directly above intraday support at 3614.3 presents poor risk-to-reward. We stand by and allow active winning trades to hit their respective take-profit levels."
+  "trailing_activation_profit": 0.0,
+  "gold_liquidity_analysis": "Gold experienced a massive liquidity sweep from intraday high of 3651.40 down to 3614.30 on heavy volume (8895 on break candle). Price is currently testing key support near 3619.80. DXY weakening to 103.916 suggests downside momentum may decelerate near the 3612-3615 key demand block.",
+  "trade_thesis": "Account already holds two active XAUUSD sell positions (tickets 2117339435 & 2117428068) running in strong profit towards TP targets 3615.00 and 3612.00, alongside a profitable EURUSD position. Strict risk management protocol mandates holding existing exposure and avoiding over-leverage on an account balance of $119.44 until TPs are executed."
 }
