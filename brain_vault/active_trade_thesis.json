@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T09:41:02.079371+00:00",
+  "timestamp": "2026-11-24T09:44:28.038008+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding an open position in profit. Price action on major pairs and indices shows compressed ranges and lack of strong volume displacement required for an immediate high-probability continuation setup. Maintaining discipline.",
-  "learning_applied": "Applying lessons from previous tight SL issues by avoiding forced trades during low volatility consolidation phases."
+  "intraday_rationale": "EURUSD is currently holding an open position in profit and testing intraday highs around 1.0922 without decisive new volume displacement or clean structural expansion. Maintaining exposure without stacking correlated risk until a clear continuation pattern forms.",
+  "learning_applied": "Avoiding impulsive entries during tight consolidation phases based on recent XAUUSD stop-loss feedback, ensuring structural risk-reward alignment."
 }
