@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:20:57.165938+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-24T11:22:50.317482+00:00",
+  "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 88,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.092,
-  "tp_price": 1.1025,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD displays a textbook intraday bullish trend aligned with aggressive US Dollar dumping (DXY falling from 104.37 to 104.038). Clean 15m volume expansion on candle breakouts with higher highs and higher lows through 1.0940 resistance.",
-  "learning_applied": "Past stop-loss on Gold was set too tight inside noisy session ranges resulting in premature exit (-$2.85). Structural SL at 1.0920 places risk behind the entire London session swing low, giving trade breathing room for a >1:3 RR move."
+  "intraday_rationale": "EURUSD is currently in a steady upward drift toward session highs, but lacks the explosive volume displacement required for an immediate high-probability breakout entry. Existing EURUSD position remains active and in profit; awaiting a clearer retest of structural support before deploying additional capital.",
+  "learning_applied": "Applying caution from the XAUUSD stop-loss event by refusing to chase overextended moves without structural confirmation and strict stop-loss placement behind recent swing lows."
 }
