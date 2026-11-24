@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T08:41:44.960657+00:00",
+  "timestamp": "2026-11-24T08:43:13.823258+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently drifting higher inside a very narrow range (1.0899 to 1.0922) with minimal volume activity across major forex pairs during the pre-London transition, offering no clean structural displacement or high-conviction 1:2.5 risk-reward setup.",
-  "learning_applied": "Past feedback from XAUUSD showed the danger of tight stops in low-volatility conditions; waiting for clear structural breaks rather than chasing minor currency drift preserves capital."
+  "intraday_rationale": "EURUSD is currently holding an open profitable position (ticket 2116186149) near 1.0917 with an active target at 1.09395 and structural stop at 1.08795. Across the broader matrix, major asset pairs and indices are showing mixed or consolidating candles with subdued volume ahead of major session catalysts. No high-conviction secondary breakout or institutional sweep has materialized to warrant opening an additional risk position.",
+  "learning_applied": "Past feedback from XAUUSD demonstrated the danger of tight stops placed too close to market noise; thus, avoiding premature entries during consolidation prevents unnecessary drawdown."
 }
