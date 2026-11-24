@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:53:47.731970+00:00",
-  "verdict": "BUY",
-  "symbol": "GBPUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T09:56:01.156979+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.3044,
-  "tp_price": 1.3124,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "London session momentum driver: clear bullish expansion on 15m timeframe aligned with DXY falling from 104.40 to 104.24. GBPUSD clean intraday higher-high structure breaking past 1.3055 targeting 1.3124.",
-  "learning_applied": "Applied structural stop-loss placement below the London session breakout base at 1.3044 to avoid premature stop-out noise observed in past XAUUSD trades."
+  "intraday_rationale": "EURUSD is currently in an open profitable position (ticket 2116186149) near session highs, while other instruments show mixed consolidation or lacking sufficient volume displacement to trigger a new high-conviction 1:2.5+ risk-reward trade setup.",
+  "learning_applied": "Applied lessons from previous XAUUSD stop-out by avoiding forced entries during tight consolidations, letting the existing open position run while safeguarding margin."
 }
