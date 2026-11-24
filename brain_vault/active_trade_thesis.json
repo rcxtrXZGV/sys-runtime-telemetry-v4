@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T18:47:07.955696+00:00",
+  "timestamp": "2026-11-24T18:48:32.308054+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 35,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3561-3565 range following a heavy selloff from the 3631 high earlier in the session. Recent 15m candles display tight ranges, low volume contraction, and a lack of aggressive sweep of immediate intraday liquidity pools. DXY is stabilizing near 103.78, removing immediate directional impetus.",
-  "trade_thesis": "Given the recent sequence of stopped-out long positions and the current low-volatility consolidation phase after a sharp intraday drop, market conditions exhibit sideways chop rather than a clear institutional imbalance. Per core operating doctrine, we mandate WAIT to protect capital until a definitive liquidity sweep and structural displacement occur on Gold."
+  "gold_liquidity_analysis": "XAUUSD is currently range-bound near intraday lows (3560.3), consolidating after a aggressive selloff from 3631.3. Volume has dried up significantly in the recent 15m candles, indicating a lack of immediate directional commitment. Existing short position (ticket 2118453560) is currently underwater as price tests local support around the 3557-3560 level.",
+  "trade_thesis": "Given the recent negative feedback from tight stop-outs during high volatility moves and current low-volume chop around key psychological and structural support levels, entering new positions is suboptimal. Mandating a WAIT state to let the market define its next liquidity sweep or breakout structure before deploying additional capital."
 }
