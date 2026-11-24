@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T09:11:47.847416+00:00",
+  "timestamp": "2026-11-24T09:13:28.447929+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 0,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account currently has an active EURUSD position in profitable swing. Existing margin allocation and lack of high-probability new structural expansion setups across instruments dictates patience. No immediate secondary high-RR setups present themselves cleanly.",
-  "learning_applied": "Avoiding over-leveraging and respecting existing open intraday positions to prevent unneeded drawdown and noise trading."
+  "intraday_rationale": "Currently holding an active EURUSD position with a positive floating profit. No immediate high-probability 15m/1h trend expansion setup offering 1:2.5 to 1:4 risk-reward warrants stacking additional exposure right now.",
+  "learning_applied": "Past stop-loss failure on XAUUSD taught us to strictly wait for clear structural session breakout validation rather than forcing trades in choppy ranges."
 }
