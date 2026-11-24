@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:16:33.240268+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-24T10:17:57.649790+00:00",
+  "verdict": "BUY",
   "symbol": "EURUSD",
-  "confidence_score": 45,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 1.0915,
+  "tp_price": 1.0965,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding an open long position successfully, but price action on key pairs indicates low momentum and consolidation during the current sub-session. Awaiting cleaner volume expansion before entering new structural intraday sweeps.",
-  "learning_applied": "Applied lessons from XAUUSD stop-loss sweep by refusing to force low-conviction entries during tight ranges, ensuring structural protection and respecting risk-reward minimums."
+  "intraday_rationale": "EURUSD has established a clean intraday bullish impulse breaking above 1.0924 with structural support confirmed around 1.0922-1.0918. DXY is showing clear weakness breaking down to 104.16, providing strong macro tailwinds for further upside continuation targeting session highs.",
+  "learning_applied": "Past SL feedback on XAUUSD highlighted the importance of placing stops strictly outside immediate market noise and swing boundaries; placing the stop-loss below the key intraday swing low at 1.0915 protects capital against retracement while maintaining a 1:2.5+ risk-reward profile."
 }
