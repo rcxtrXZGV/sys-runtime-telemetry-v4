@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T19:01:44.648150+00:00",
+  "timestamp": "2026-11-24T19:04:53.728653+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3545.0,
+  "tp_price": 3585.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating near session lows at 3556.3 following a heavy liquidation wave from the 3631.3 high. Recent 15m candles show low volatility contraction with wicks failing to establish clear directional bias. DXY is hovering flat around 103.80, lacking strong macro impulse.",
-  "trade_thesis": "Given the recent string of stop-loss hits during aggressive intraday moves and the current price action exhibiting sideways chop following a sharp intraday selloff, risk management dictates standing aside. Await a definitive liquidity sweep of the 3550 handle or a strong rejection structure before initiating fresh exposure."
+  "gold_liquidity_analysis": "Gold (XAUUSD) has compressed near the intraday lows around 3556.8 following a severe liquidation cascade earlier in the session. DXY is rangebound around 103.80, and US10Y is stable near 4.90%. Despite approaching historical sweep zones, price action shows tight consolidation with diminished 15m volume, indicating a lack of immediate expansion momentum.",
+  "trade_thesis": "Recent closed deals demonstrate that chasing aggressive breakouts or tight stops during high volatility expansion legs on Gold leads to slippage and stop hunts. Given the current balance of $73.83 and an open negative position on XAUUSD, capital preservation is paramount. We mandate WAIT until a clear liquidity sweep of the intraday low (3551.9) with an immediate rejection pattern forms before re-engaging."
 }
