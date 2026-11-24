@@ -1,7 +1,7 @@
 {
-  "balance": 133.78,
-  "equity": 140.69,
-  "free_margin": 125.13,
+  "balance": 133.74,
+  "equity": 140.08,
+  "free_margin": 120.9,
   "open_positions": [
     {
       "ticket": 2116947016,
@@ -9,7 +9,7 @@
       "volume": 0.01,
       "sl": 1.092,
       "tp": 1.1005,
-      "profit": 2.91
+      "profit": 2.83
     },
     {
       "ticket": 2117428068,
@@ -17,7 +17,7 @@
       "volume": 0.01,
       "sl": 3626.25,
       "tp": 3612.0,
-      "profit": 10.03
+      "profit": 9.94
     },
     {
       "ticket": 2117553833,
@@ -25,7 +25,7 @@
       "volume": 0.01,
       "sl": 3612.0,
       "tp": 3640.0,
-      "profit": -2.53
+      "profit": -2.49
     },
     {
       "ticket": 2117573036,
@@ -33,7 +33,7 @@
       "volume": 0.01,
       "sl": 3609.5,
       "tp": 3638.0,
-      "profit": 0.58
+      "profit": 0.62
     },
     {
       "ticket": 2117578004,
@@ -41,7 +41,7 @@
       "volume": 0.01,
       "sl": 3608.0,
       "tp": 3635.0,
-      "profit": -1.84
+      "profit": -1.8
     },
     {
       "ticket": 2117586695,
@@ -49,7 +49,15 @@
       "volume": 0.01,
       "sl": 3609.0,
       "tp": 3636.0,
-      "profit": -2.24
+      "profit": -2.2
+    },
+    {
+      "ticket": 2117610978,
+      "symbol": "XAUUSD",
+      "volume": 0.01,
+      "sl": 3608.5,
+      "tp": 3635.0,
+      "profit": -0.56
     }
   ]
 }
