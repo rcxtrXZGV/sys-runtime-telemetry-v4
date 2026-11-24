@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:14:55.390672+00:00",
+  "timestamp": "2026-11-24T10:16:33.240268+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD currently holds an active open profitable position near session highs. Major pairs are showing signs of consolidation following the recent push upward, lacking immediate high-volume displacement required for a new asymmetric entry. Maintaining discipline and monitoring existing position progress.",
-  "learning_applied": "Past SL feedback on XAUUSD emphasized the critical importance of placing stops strictly outside structural noise. With an open EURUSD position already running favorably, over-leveraging or entering new marginal setups without clear session extremes is avoided to protect the equity curve."
+  "intraday_rationale": "EURUSD is currently holding an open long position successfully, but price action on key pairs indicates low momentum and consolidation during the current sub-session. Awaiting cleaner volume expansion before entering new structural intraday sweeps.",
+  "learning_applied": "Applied lessons from XAUUSD stop-loss sweep by refusing to force low-conviction entries during tight ranges, ensuring structural protection and respecting risk-reward minimums."
 }
