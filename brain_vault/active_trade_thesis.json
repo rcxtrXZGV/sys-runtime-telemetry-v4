@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T06:40:09.464468+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 40,
+  "timestamp": "2026-11-24T06:41:40.317478+00:00",
+  "verdict": "SELL",
+  "symbol": "XAUUSD",
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3633.0,
+  "tp_price": 3575.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current price action across primary pairs (EURUSD, GBPUSD) reflects extremely tight intraday ranges with zero volume during the pre-London transition. With an open EURUSD position currently managed and a micro-balance of $97.92, capital preservation dictates waiting for clean London session breakout volume before committing additional risk.",
-  "learning_applied": "Past XAUUSD stop-loss violation taught us to strictly avoid entering assets lacking clear institutional displacement and structural support/resistance buffers. We wait for high-volume session opens."
+  "intraday_rationale": "Gold exhibits strong downward volume displacement on the 15m timeframe (volume surge to 2680) breaking through key intraday support at 3628. The bearish sweep targets lower session liquidity down towards 3575.",
+  "learning_applied": "Past gold loss resulted from placing a tight non-structural SL during high volatility. Structural SL is placed above the recent 15m swing breakdown high at 3633.0 to protect capital while aiming for a 1:3.7 Risk-to-Reward ratio."
 }
