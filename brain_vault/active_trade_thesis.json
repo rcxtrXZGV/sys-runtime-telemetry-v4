@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:18:37.574187+00:00",
+  "timestamp": "2026-11-24T13:20:15.841954+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep to 3651.40 followed by an aggressive institutional rejection candle back down to 3628.60 on elevated volume (4,666 contracts). The current order flow confirms strong supply overhead, aligning with our existing SHORT exposure.",
-  "trade_thesis": "The portfolio already holds optimal short exposure on XAUUSD (2 positions open targeting 3615.0-3616.0) and 1 long EURUSD position. Maintaining discipline and allowing active high-probability trades to run toward target liquidity pools without over-leveraging the account."
+  "gold_liquidity_analysis": "Gold (XAUUSD) recently pushed up to an intraday high of 3651.4 before sharp rejection back down toward 3633.3. Two short XAUUSD positions are currently open and floating in profit (tickets 2117318286 and 2117339435), benefiting from the upper sweep and reversal. DXY continues its downward slide to 103.88, which keeps underlying bullish pressure alive, preventing an aggressive new entry right after a sweep without structural re-accumulation.",
+  "trade_thesis": "Active short positions on Gold are capturing the retracement from the 3651 liquidity sweep. Current price action is consolidating near 3633.3 following high volume sell-side pressure. As the core doctrine prioritizes clear asymmetric edges and avoids noisy consolidation chop, the correct play is to manage existing open positions and WAIT for a cleaner continuation structure or retest of key liquidity pools before deploying fresh capital."
 }
