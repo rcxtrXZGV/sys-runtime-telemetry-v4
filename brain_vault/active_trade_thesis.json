@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:31:01.764768+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 40,
+  "timestamp": "2026-11-24T10:32:25.665415+00:00",
+  "verdict": "BUY",
+  "symbol": "GBPUSD",
+  "confidence_score": 86,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 1.3035,
+  "tp_price": 1.314,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding an open long position near session highs (1.0935) following a clean intraday push, while other key assets like Gold and Indices show mixed or consolidating price action. Given our active position and lack of immediate high-volume displacement at fresh structural extremes, patience is warranted.",
-  "learning_applied": "Past feedback emphasizes avoiding tight micro-noise scalping and safeguarding capital by placing stops outside structural session noise; with an open position already active, stacking correlated exposure without a clean new structural sweep is avoided."
+  "intraday_rationale": "GBPUSD confirmed a clean 15m breakout above 1.3050 resistance with sustained higher-highs during the London open, backed by sharp DXY weakness dropping from 104.37 down to 104.17. Targeting intraday expansion toward 1.3140 for a 1:2.6 RR move.",
+  "learning_applied": "Avoiding tight scalper stops that caused premature Gold stop-out (-$2.85). Structural SL is set safely below the London consolidation low at 1.3035 to allow full intraday room to navigate normal noise."
 }
