@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:13:57.257586+00:00",
+  "timestamp": "2026-11-24T07:15:42.322324+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 30,
+  "confidence_score": 20,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with structural risk defined. Across major FX pairs and indices, price action exhibits tight ranges and low volume chop, lacking the clean momentum displacement required for a high probability 1:2.5+ RR intraday sweep.",
-  "learning_applied": "Avoiding premature entries and micro-noise scalping during consolidation zones, respecting structural stop-loss placements based on prior negative feedback."
+  "intraday_rationale": "Current open position on EURUSD is already active with proper structural stop-loss. Other major instruments are in early session chop or lack clean 15-minute volume displacement to trigger a secondary high-probability intraday run.",
+  "learning_applied": "Avoiding over-leveraging and respecting existing open intraday exposure based on recent negative feedback from tight micro-noise SL triggers."
 }
