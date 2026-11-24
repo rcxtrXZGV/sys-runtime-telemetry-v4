@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T11:24:12.473667+00:00",
+  "timestamp": "2026-11-24T11:25:43.741152+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 45,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD has pushed steadily higher into 1.0952, currently testing intraday highs without a clean structural pullback or high-volume displacement confirmation. Meanwhile, EURUSD position 2116947016 is already active with open profit. Awaiting a clearer session retracement or breakout structure before deploying fresh capital.",
-  "learning_applied": "Applied lessons from XAUUSD stop-loss sweep by avoiding premature entries at extended swing extremes and ensuring strict structural placement rather than chasing momentum."
+  "intraday_rationale": "EURUSD is currently in a steady grind higher but approaching potential session resistance near 1.0953 with zero volume reported across recent candles, signaling a lack of institutional momentum. Awaiting a clear pullback or structural sweep before deploying additional risk.",
+  "learning_applied": "Past XAUUSD loss highlighted the danger of tight stops without proper volume backing; maintaining discipline and avoiding low-volume consolidation entries."
 }
