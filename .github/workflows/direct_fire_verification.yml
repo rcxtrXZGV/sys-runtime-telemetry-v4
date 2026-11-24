@@ -1,0 +1,138 @@
+name: Fire One-Click Live Verification Trade (Manual Trigger)
+
+on:
+  workflow_dispatch:
+    inputs:
+      asset:
+        description: 'Symbol to trade'
+        required: true
+        default: 'EURUSD'
+        type: choice
+        options:
+          - EURUSD
+          - XAUUSD
+          - BTCUSD
+      direction:
+        description: 'Order Direction'
+        required: true
+        default: 'BUY'
+        type: choice
+        options:
+          - BUY
+          - SELL
+
+permissions:
+  contents: write
+
+jobs:
+  fire-verification-deal:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install MetaTrader5
+        run: |
+          pip install MetaTrader5
+
+      - name: High-Speed Cache MT5 Runtime
+        id: cache-mt5
+        uses: actions/cache@v4
+        with:
+          path: |
+            C:\MT5
+            C:\Users\runneradmin\AppData\Roaming\MetaQuotes\Terminal\D0E8209F77C8CF37AD8BF550E51FF075
+          key: titan-mt5-runtime-v1
+
+      - name: 1-Time Restore MT5 if Cache Miss
+        if: steps.cache-mt5.outputs.cache-hit != 'true'
+        shell: powershell
+        run: |
+          $mt5ZipUrl = "https://github.com/rcxtrXZGV/TITAN-LLM-QUANT-BRAIN/releases/download/v1.0.0/mt5_portable.zip"
+          $configZipUrl = "https://github.com/rcxtrXZGV/TITAN-LLM-QUANT-BRAIN/releases/download/v1.0.0/mt5_config.zip"
+          $targetDir = "C:\MT5"
+          $appdataDir = "$env:APPDATA\MetaQuotes\Terminal\D0E8209F77C8CF37AD8BF550E51FF075"
+          
+          Invoke-WebRequest -Uri $mt5ZipUrl -OutFile "$env:TEMP\mt5.zip"
+          Expand-Archive -Path "$env:TEMP\mt5.zip" -DestinationPath $targetDir -Force
+          
+          Invoke-WebRequest -Uri $configZipUrl -OutFile "$env:TEMP\config.zip"
+          New-Item -ItemType Directory -Force -Path $appdataDir | Out-Null
+          Expand-Archive -Path "$env:TEMP\config.zip" -DestinationPath $appdataDir -Force
+
+          Copy-Item -Path "$appdataDir\*" -Destination $targetDir -Recurse -Force
+
+      - name: Execute Live Broker Deal
+        env:
+          MT5_LOGIN: ${{ secrets.MT5_LOGIN }}
+          MT5_PASSWORD: ${{ secrets.MT5_PASSWORD }}
+          MT5_SERVER: ${{ secrets.MT5_SERVER }}
+          TARGET_SYMBOL: ${{ inputs.asset }}
+          TARGET_DIRECTION: ${{ inputs.direction }}
+        run: |
+          python -c "
+          import os, sys, time, tempfile, subprocess
+          import MetaTrader5 as mt5
+
+          login = int(os.getenv('MT5_LOGIN'))
+          password = os.getenv('MT5_PASSWORD')
+          server = os.getenv('MT5_SERVER', 'ICMarketsSC-Demo')
+          sym = os.getenv('TARGET_SYMBOL', 'EURUSD')
+          direction = os.getenv('TARGET_DIRECTION', 'BUY')
+
+          terminal_path = r'C:\MT5\terminal64.exe'
+          if not os.path.exists(terminal_path):
+              terminal_path = r'C:\Program Files\MetaTrader 5\terminal64.exe'
+
+          ini_path = os.path.join(tempfile.gettempdir(), 'mt5_startup.ini')
+          with open(ini_path, 'w') as f:
+              f.write(f'[Common]\nLogin={login}\nPassword={password}\nServer={server}\nNews=false\nEnableAutoTrading=true\n')
+
+          subprocess.Popen([terminal_path, f'/config:{ini_path}'])
+          time.sleep(35)
+          mt5.initialize(path=terminal_path)
+
+          acc = mt5.account_info()
+          print(f'BROKER CONNECTED: {acc.name} | Balance: ${acc.balance:.2f} | Equity: ${acc.equity:.2f}')
+
+          mt5.symbol_select(sym, True)
+          time.sleep(1)
+          tick = mt5.symbol_info_tick(sym)
+
+          is_buy = (direction == 'BUY')
+          price = tick.ask if is_buy else tick.bid
+          order_type = mt5.ORDER_TYPE_BUY if is_buy else mt5.ORDER_TYPE_SELL
+
+          dist = 0.0030 if 'EUR' in sym else (3.50 if 'XAU' in sym else 250.0)
+          sl = round(price - dist if is_buy else price + dist, 2 if 'XAU' in sym else 5)
+          tp = round(price + dist if is_buy else price - dist, 2 if 'XAU' in sym else 5)
+
+          req = {
+              'action': mt5.TRADE_ACTION_DEAL,
+              'symbol': sym,
+              'volume': 0.01,
+              'type': order_type,
+              'price': price,
+              'sl': sl,
+              'tp': tp,
+              'deviation': 50,
+              'magic': 777701,
+              'comment': 'LIVE_PIPELINE_VERIFIED',
+              'type_time': mt5.ORDER_TIME_GTC,
+              'type_filling': mt5.ORDER_FILLING_IOC,
+          }
+
+          print(f'Transmitting Instant Live {direction} Order on {sym} @ {price}...')
+          res = mt5.order_send(req)
+          if res and res.retcode == mt5.TRADE_RETCODE_DONE:
+              print(f'💥💥💥 [LIVE VERIFICATION ORDER EXECUTED] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} FILLED!')
+          else:
+              print(f'Retcode: {getattr(res, \"retcode\", None)} | Comment: {getattr(res, \"comment\", None)}')
+
+          mt5.shutdown()
+          "
