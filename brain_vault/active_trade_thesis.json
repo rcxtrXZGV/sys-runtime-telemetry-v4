@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-24T05:06:09.548375+00:00",
+  "timestamp": "2026-11-24T05:51:16.135567+00:00",
   "verdict": "WAIT",
-  "symbol": "BTCUSD",
-  "confidence_score": 48,
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
   "trade_style": "SCALP",
   "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 0.0,
-  "naked_chart_reading": "BTCUSD is currently trading around 60455.0. Recent 5m candles show a push up to a session high of 61588.8 and a low of 59369.9, followed by choppy consolidation with several zero-volume candle prints (V: 0) near 60455.0. Price is hovering mid-range without a clean mitigation of structural order blocks or aggressive volume expansion.",
-  "trade_thesis": "Although US10Y bond yields are ticking down to 4.918% and minor bullish momentum appeared earlier, current multi-timeframe candle readings reveal contracting volume and indecision wicks. Entering a position without a definitive liquidity sweep of session extremes or a clear Fair Value Gap retest fails to meet the stringent asymmetric risk-reward threshold required.",
-  "red_team_resolution": "Red Team Devil's Advocate highlights that entering mid-range during zero-volume candle periods exposes capital to erratic chop. Capital Preservation Officer mandates holding cash ($97.96 equity) until a high-probability institutional liquidity grab materializes."
+  "naked_chart_reading": "XAUUSD is currently trading at 3633.3, moving within a session range between 3627.2 and 3639.6. Recent 5m candles show mixed wicks and contracting volume, culminating in zero-volume prints (V: 0) on the latest bar at 3633.3 with identical Open, High, Low, and Close values. Price lacks institutional displacement or clean structural expansion.",
+  "trade_thesis": "While macro indicators show DXY at 104.289 and US10Y yields at 4.918% maintaining structural pressure, current price action across multi-timeframe candle readings reveals low volatility and contracting volume. Entering a trade without an explicit liquidity sweep of session extremes or a clean Fair Value Gap mitigation violates asymmetric risk parameters.",
+  "red_team_resolution": "Red Team Devil's Advocate highlights that trading in a stagnant market with zero-volume candle prints invites unnecessary whipsaws and unfavorable execution. Capital Preservation Officer mandates protecting the $97.96 account equity by holding cash until a pristine institutional setup materializes."
 }
