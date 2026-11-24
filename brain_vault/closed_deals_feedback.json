@@ -1,5 +1,5 @@
 {
-  "total_closed_analyzed": 5,
+  "total_closed_analyzed": 6,
   "deals": [
     {
       "ticket": 1700440679,
@@ -55,6 +55,17 @@
       "profit": -0.47,
       "commission": -0.04,
       "comment": "[sl 3634.50]"
+    },
+    {
+      "ticket": 1702855289,
+      "order": 2117336012,
+      "symbol": "BTCUSD",
+      "time": "2026-11-24T15:09:35+00:00",
+      "volume": 0.01,
+      "price": 59844.4,
+      "profit": -5.29,
+      "commission": 0.0,
+      "comment": "[sl 59850.00]"
     }
   ]
 }
