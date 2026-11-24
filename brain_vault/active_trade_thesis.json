@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:14:56.398599+00:00",
-  "verdict": "SELL",
-  "symbol": "BTCUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T09:17:58.940071+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 60350.0,
-  "tp_price": 58450.0,
+  "sl_price": 1.08795,
+  "tp_price": 1.09395,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "High-volume institutional breakdown below the key 60,000 psychological support level on the 15m chart. Heavy displacement candle (>1B volume) confirms bearish continuation toward intraday lower liquidity pools.",
-  "learning_applied": "Placed structural SL at 60,350 above the breakdown consolidation high rather than a tight micro-stop, preventing premature stop-out from noise as seen in recent Gold feedback while achieving a 1:2.58 R:R."
+  "intraday_rationale": "EURUSD is currently holding an open long position with positive momentum, but recent 15-minute candles show tight consolidation near the session highs at 1.0921 without clean volume expansion. Await a proper structural pullback or breakout before adding risk.",
+  "learning_applied": "Past feedback on XAUUSD highlighted the dangers of tight stop-losses in choppy noise; maintaining discipline on structural stop placement means waiting for a cleaner high-conviction setup rather than forcing trades."
 }
