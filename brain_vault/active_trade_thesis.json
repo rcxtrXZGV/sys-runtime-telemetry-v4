@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:11:44.700000+00:00",
+  "timestamp": "2026-11-24T10:13:17.956281+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding open longs with a healthy profit, but recent 15m candles show consolidation near session highs around 1.0937 following the strong push from 1.0924. Await a cleaner retracement or expansion setup before deploying new risk.",
-  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid entering into compressed or overextended ranges without structural confirmation behind session swing points."
+  "intraday_rationale": "EURUSD has an open profitable position currently running nicely (+2.57). Markets are showing quiet transition across major pairs without clean directional displacement or high-volume sweeps to justify adding exposure at this exact moment.",
+  "learning_applied": "Past stop-loss hit on XAUUSD taught us never to enter without clear structural levels and high-conviction volume. Patience preserves the small account balance while open trades run."
 }
