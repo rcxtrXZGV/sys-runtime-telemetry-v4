@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:53:03.725301+00:00",
+  "timestamp": "2026-11-24T11:54:30.785798+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently in a steady upward drift, but major indices and pairs show signs of localized consolidation and lack high-volume aggressive displacement on the 15m timeframes to guarantee a clean 1:3 RR run without immediate pullback risks.",
-  "learning_applied": "Avoiding premature entries during low-momentum structural drift to prevent tight stop-loss sweeps, ensuring strict adherence to structural swing invalidation points."
+  "intraday_rationale": "EURUSD is currently in a steady upward drift with open positions already active, but lacks a clean, high-volume breakout or pullback to structural support necessary for an asymmetric 1:3 RR intraday execution. Pausing new entries until a clearer liquidity sweep occurs.",
+  "learning_applied": "Reflecting on past XAUUSD SL failure where tight volatility trapped the entry, capital is preserved by avoiding chasing extended moves without a confirmed structural pullback."
 }
