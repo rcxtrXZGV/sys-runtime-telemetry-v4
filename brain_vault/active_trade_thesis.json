@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:34:01.804495+00:00",
+  "timestamp": "2026-11-24T13:35:44.029512+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a sharp intraday rejection from the highs near 3651.40 down to test the 3614.30 liquidity pocket before stabilizing around 3630.00. Current open positions on Gold are already nicely in profit (+5.48 and +4.05). Volume spikes on the recent downside flush indicate absorption, but price is currently consolidating in a range with zero-volume candles forming, reflecting indecision.",
-  "trade_thesis": "Given existing active exposure on XAUUSD (two profitable buy positions) and EURUSD, combined with the current consolidation phase following a volatile sweep of intraday extremes, the optimal sovereign strategy is patience. We maintain our current hedged/running posture and wait for a clear institutional breakout or liquidity sweep of the session boundaries before expanding risk."
+  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep to 3651.40 followed by immediate bearish displacement with massive 15m volume expansion (8,896 contracts). Current price of 3627.0 rests in mid-range consolidation while DXY stays heavy at 103.91.",
+  "trade_thesis": "The engine currently holds 3 active short positions on Gold (tickets 2117318286, 2117339435, 2117428068) yielding +$18.12 total unrealized profit towards the 3612-3616 TP zone. Margin utilization across 4 open trades on a $103.56 capital base is optimal. Mandating WAIT to let the current profitable short campaign play out without over-leveraging."
 }
