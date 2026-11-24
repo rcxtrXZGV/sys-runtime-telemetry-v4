@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:17:13.415144+00:00",
+  "timestamp": "2026-11-24T07:21:57.020819+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current session shows major indices and FX pairs hovering within tight ranges without clear volume displacement or impulsive breakout candles. EURUSD is actively managing an open position near parity levels, and waiting for London opening liquidity expansion is paramount.",
-  "learning_applied": "Applied lessons from previous XAUUSD stop-loss sweep by avoiding premature entries in low-volume pre-session chop, enforcing structural SL placement only when clear momentum is verified."
+  "intraday_rationale": "Account equity stands at $97.3 with an open EURUSD position currently drawing a minor floating loss. Markets across major indices and FX pairs are showing mixed session momentum without clean volume-backed displacement to warrant opening new asymmetric risk right now.",
+  "learning_applied": "Past stop-loss feedback emphasizes placing structural stops outside of immediate market noise. Until a clean breakout or trend continuation setup materializes on the 15m/1h timeframe, preserving capital takes absolute priority."
 }
