@@ -1,6 +1,15 @@
 {
-  "balance": 100.89,
-  "equity": 100.89,
-  "free_margin": 100.89,
-  "open_positions": []
+  "balance": 100.85,
+  "equity": 100.96,
+  "free_margin": 99.87,
+  "open_positions": [
+    {
+      "ticket": 2116947016,
+      "symbol": "EURUSD",
+      "volume": 0.01,
+      "sl": 1.092,
+      "tp": 1.1005,
+      "profit": 0.11
+    }
+  ]
 }

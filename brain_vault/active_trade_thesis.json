@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T11:01:26.162696+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 0,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "intraday_rationale": "Recent price action across major assets demonstrates tight consolidation and low volume activity in the current 15m candles (e.g. XAUUSD forming small-bodied candles around 3622). No clean structural break or high-conviction intraday momentum run is present to guarantee an asymmetric 1:2.5+ risk-reward profile.",
+  "learning_applied": "Avoiding tight intraday ranges and premature entries immediately after a recent stop-out to protect our $100.89 balance from whipsaw chop."
+}
