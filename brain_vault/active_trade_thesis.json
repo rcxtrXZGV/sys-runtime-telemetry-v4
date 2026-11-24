@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T17:57:52.488373+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-24T18:06:51.753877+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3550.0,
+  "tp_price": 3595.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD swept sell-side liquidity down to 3557.40 following a steep intraday decline from 3632.0. Price action has entered a compression phase between 3560.0 and 3574.0 with decreasing volume. DXY remains muted around 103.78.",
-  "trade_thesis": "Post-liquidation chop detected on XAUUSD M15 timeframe. Two long positions are currently active (tickets 2118285162 and 2118453560) targeting 3595.0. Account equity sits at $88.07; opening further positions in sideways consolidation would exceed quantitative risk controls. Mandating WAIT until market displays clear displacement above 3575.0 or structural breakdown."
+  "gold_liquidity_analysis": "XAUUSD has swept intraday lows down to 3557.39 and formed a stabilizing base around the 3564 region, showing strong rejection wicks on 15m timeframe candles. DXY is hovering sideways near 103.77, providing a neutral backdrop allowing gold to mean-revert towards institutional liquidity pools.",
+  "trade_thesis": "Following a sharp impulsive drop from the 3632 high, XAUUSD is carving out a local double bottom and sweeping sell-side liquidity beneath 3560. Risk-to-reward is highly asymmetric for a long position targeting a liquidity void fill back toward 3595, maintaining tight risk management with stop-loss protection beneath the session low."
 }
