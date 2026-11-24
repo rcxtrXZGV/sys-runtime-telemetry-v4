@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:37:17.718457+00:00",
+  "timestamp": "2026-11-24T13:39:05.821007+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD completed a buy-side liquidity sweep to 3651.4 followed by a high-volume institutional rejection back to 3624.0. Price is currently pulling back slightly to 3627.5 within the displacement leg while DXY consolidates near 103.91.",
-  "trade_thesis": "The fund already maintains 3 active XAUUSD short positions in positive equity alongside 1 EURUSD long position. Capital preservation rules on a $103.56 account dictate holding existing positions toward their 3612-3616 TP targets rather than compounding leverage mid-structure."
+  "gold_liquidity_analysis": "XAUUSD has experienced a volatile retracement from intraday highs near 3651 down to the 3614 region, currently stabilizing around 3624. Multiple open positions are already actively floating in profit, and the market is showing short-term consolidation after massive volume spikes.",
+  "trade_thesis": "Given existing open exposure in XAUUSD and EURUSD accumulating healthy profits, and the current 15m candles exhibiting localized chop around 3624 with decreasing volume, the optimal institutional posture is to wait for a clean liquidity sweep of either the 3614 intraday low or a retest of 3640 resistance before deploying additional risk capital."
 }
