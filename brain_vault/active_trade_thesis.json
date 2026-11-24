@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T20:47:01.437183+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD has tested the intraday low of 3545.7, currently consolidating near 3547.10. While a sweep of lower liquidity is occurring, recent closed deals show high volatility and vulnerability to tight stop-losses during late session chop.",
+  "trade_thesis": "Maintaining patience and adopting a WAIT posture as the market tests lower daily extremes. Preserving equity while monitoring for a verified reversal pattern before committing new capital."
+}
