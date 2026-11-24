@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T22:36:44.709499+00:00",
+  "timestamp": "2026-11-24T22:38:14.441834+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
-  "sl_price": 3540.0,
-  "tp_price": 3575.0,
+  "lot_size": 0.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold (XAUUSD) is consolidating around the 3555.10 level after sweeping intraday lows down to 3545.39. Multiple active long positions are already open and currently in profit. DXY is stabilizing near 103.84, showing lack of strong directional conviction during the late session.",
-  "trade_thesis": "Given that we already hold multiple active long positions on XAUUSD that are currently capturing positive gains, and the price action is entering a low-liquidity consolidation phase at the end of the session, opening new risk is suboptimal. We maintain a WAIT stance to protect existing equity and let current trades run toward their take-profit targets."
+  "gold_liquidity_analysis": "XAUUSD executed a sell-side liquidity sweep down to $3545.40 before aggressively reclaiming $3555.10. DXY remains firm at 103.844 while 10Y yield holds at 4.904%, causing temporary micro-consolidation around $3555.10.",
+  "trade_thesis": "Account equity is currently well-positioned with 4 active XAUUSD long trades and 1 EURUSD long trade, generating substantial unrealized gain (+$21.56 total open profit). Stacking additional leverage into immediate intraday chop at $3555.10 would breach strict drawdown guardrails. We mandate WAIT to allow existing positions to run toward $3570.00-$3575.00 targets."
 }
