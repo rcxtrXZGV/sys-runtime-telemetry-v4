@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-TITAN-1: PROPRIETARY QUANT DATASET GENERATION FOUNDRY
-Converts raw multi-timeframe candles into institutional Supervised Fine-Tuning (SFT)
-training samples with deep 12-Desk Chain-of-Thought (CoT) reasoning.
+TITAN-1: MULTI-SOURCE INSTITUTIONAL DATA FOUNDRY
+Integrates:
+1. ForexFactory Real-Time High-Impact Economic Calendar (NFP, CPI, Fed, PMI, Rates).
+2. Wikipedia / Encyclopedic Financial & Macro Foundations (Market Microstructure, Monetary Policy, FX Regimes).
+3. Live Multi-Timeframe Naked Price Action (OHLCV, Volume Delta, Imbalances).
+Forges institutional-grade Supervised Fine-Tuning (SFT) training vectors for TITAN-1.
 """
 
 import os
@@ -11,6 +14,7 @@ import json
 import time
 import datetime
 import urllib.request
+import xml.etree.ElementTree as ET
 from google import genai
 from google.genai import types
 
@@ -19,6 +23,62 @@ DATASET_FILE = os.path.join("brain_vault", "titan1_quant_dataset.jsonl")
 def log(msg):
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     print(f"[{ts}] {msg}", flush=True)
+
+def fetch_forex_factory_calendar():
+    """
+    Fetches real-time High & Medium impact macroeconomic news events from ForexFactory.
+    """
+    url = "https://nfs.faireconomy.media/ff_calendar_thisweek.xml"
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    events = []
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            xml_data = resp.read()
+            root = ET.fromstring(xml_data)
+            for event in root.findall('event'):
+                impact = event.find('impact').text if event.find('impact') is not None else ''
+                if impact in ['High', 'Medium']:
+                    title = event.find('title').text if event.find('title') is not None else ''
+                    country = event.find('country').text if event.find('country') is not None else ''
+                    date = event.find('date').text if event.find('date') is not None else ''
+                    time_str = event.find('time').text if event.find('time') is not None else ''
+                    forecast = event.find('forecast').text if event.find('forecast') is not None else ''
+                    previous = event.find('previous').text if event.find('previous') is not None else ''
+                    events.append({
+                        "event": title,
+                        "currency": country,
+                        "impact": impact,
+                        "date": date,
+                        "time": time_str,
+                        "forecast": forecast,
+                        "previous": previous
+                    })
+    except Exception as e:
+        log(f"ForexFactory calendar fetch error: {e}")
+    return events[:10]
+
+def fetch_macro_encyclopedia_concepts():
+    """
+    Fetches institutional macro theory extracts from Wikipedia API.
+    """
+    topics = [
+        "Market_microstructure",
+        "Order_(exchange)",
+        "Monetary_policy",
+        "Inflation",
+        "Foreign_exchange_market"
+    ]
+    concepts = {}
+    for t in topics:
+        try:
+            url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{t}"
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                concepts[t.replace('_', ' ')] = data.get('extract', '')[:300]
+        except Exception:
+            pass
+    return concepts
 
 def fetch_historical_candles(ticker, interval="5m", range_period="5d"):
     try:
@@ -45,29 +105,36 @@ def fetch_historical_candles(ticker, interval="5m", range_period="5d"):
                 })
             return candles
     except Exception as e:
-        log(f"Error fetching {ticker}: {e}")
+        log(f"Error fetching candles for {ticker}: {e}")
         return []
 
-def synthesize_training_sample(client, symbol, window_candles, outcome_candle):
+def synthesize_multi_source_training_sample(client, symbol, window_candles, outcome_candle, news_context, macro_concepts):
     prompt = f"""
 YOU ARE THE CHIEF QUANTITATIVE ARCHITECT TRAINING THE 'TITAN-1' SOVEREIGN TRADING FOUNDATION MODEL.
-Create a high-quality, institutional-grade Supervised Fine-Tuning (SFT) training sample.
+Synthesize multi-source intelligence into an elite institutional Supervised Fine-Tuning (SFT) training sample.
 
-INPUT CANDLESTICK CONTEXT ({symbol} 5-Minute Window):
+DATA SOURCES EMBEDDED:
+1. FOREXFACTORY MACRO CALENDAR:
+{json.dumps(news_context, indent=2)}
+
+2. ENCYCLOPEDIC FINANCIAL KNOWLEDGE BASE:
+{json.dumps(macro_concepts, indent=2)}
+
+3. RAW 15-CANDLE NAKED CHART WINDOW ({symbol} 5-Minute):
 {json.dumps(window_candles[-15:], indent=2)}
 
-ACTUAL SUBSEQUENT OUTCOME:
-Next 5-10 candles moved to: Close={outcome_candle['close']}, High={outcome_candle['high']}, Low={outcome_candle['low']}
+4. ACTUAL SUBSEQUENT OUTCOME:
+Next price trajectory: Close={outcome_candle['close']}, High={outcome_candle['high']}, Low={outcome_candle['low']}
 
 GENERATE A PERFECT INSTRUCTION-RESPONSE SFT PAIR:
-Format your response as a valid JSON object matching the Hugging Face / ShareGPT fine-tuning format:
+Respond STRICTLY in valid JSON matching this schema:
 {{
-  "system": "You are TITAN-1, an institutional quantitative hedge fund foundation model. You analyze raw naked candlestick price action, order flow liquidity, and structural fair value gaps to output asymmetric trading mandates.",
-  "user": "Analyze this 15-candle sequence for {symbol} and formulate the execution thesis:",
-  "thought": "Step-by-step deep chain-of-thought analysis covering: 1. Liquidity sweeps, 2. Fair Value Gaps, 3. Volume delta absorption, 4. Red Team objection.",
+  "system": "You are TITAN-1, an institutional quantitative hedge fund foundation model. You synthesize live macroeconomic calendar releases (ForexFactory), encyclopedic market microstructure theories, and raw naked candlestick price action to output asymmetric trading mandates.",
+  "user": "Synthesize the macroeconomic news schedule, foundational liquidity mechanics, and the 15-candle naked price action for {symbol}:",
+  "thought": "Deep institutional chain-of-thought: 1. ForexFactory macro impact assessment, 2. Microstructure liquidity pool & fair value gap identification, 3. Volume delta absorption, 4. Red Team adversarial stress-test.",
   "response": {{
     "verdict": "BUY" or "SELL" or "WAIT",
-    "rationale": "High-conviction institutional thesis",
+    "rationale": "High-conviction synthesis connecting news catalyst, naked wick dynamics, and institutional order blocks",
     "entry": 0.0,
     "sl": 0.0,
     "tp": 0.0,
@@ -88,6 +155,7 @@ Format your response as a valid JSON object matching the Hugging Face / ShareGPT
             return json.loads(res.text)
     except Exception as e:
         log(f"Synthesis error: {e}")
+        time.sleep(4)
     return None
 
 def build_dataset_batch():
@@ -97,32 +165,40 @@ def build_dataset_batch():
         return
 
     client = genai.Client(api_key=api_key)
-    assets = {"XAUUSD": "GC=F", "BTCUSD": "BTC-USD", "EURUSD": "EURUSD=X"}
+    assets = {"XAUUSD": "GC=F", "BTCUSD": "BTC-USD", "EURUSD": "EURUSD=X", "GBPUSD": "GBPUSD=X"}
 
     os.makedirs("brain_vault", exist_ok=True)
-    total_generated = 0
+    
+    log("Step 1: Fetching ForexFactory high-impact economic calendar events...")
+    news_events = fetch_forex_factory_calendar()
+    log(f"Harvested {len(news_events)} ForexFactory calendar events.")
 
-    log("Starting TITAN-1 Dataset Synthesis Foundry...")
+    log("Step 2: Fetching Encyclopedic Macro & Market Microstructure Foundations...")
+    macro_concepts = fetch_macro_encyclopedia_concepts()
+    log(f"Harvested {len(macro_concepts)} core institutional financial definitions.")
+
+    total_generated = 0
+    log("Step 3: Mining naked candlestick price action & forging multi-source SFT dataset...")
+
     for sym, ticker in assets.items():
-        log(f"Mining historical price sequences for {sym} ({ticker})...")
+        log(f"Mining sequences for {sym} ({ticker})...")
         candles = fetch_historical_candles(ticker, interval="5m", range_period="5d")
         if len(candles) < 30:
             continue
 
-        # Slide through candle windows to build diverse market regimes
-        step = max(10, len(candles) // 15)
+        step = max(10, len(candles) // 12)
         for idx in range(15, len(candles) - 10, step):
             window = candles[idx-15:idx]
             outcome = candles[idx+5]
-            sample = synthesize_training_sample(client, sym, window, outcome)
+            sample = synthesize_multi_source_training_sample(client, sym, window, outcome, news_events, macro_concepts)
             if sample:
                 with open(DATASET_FILE, "a", encoding="utf-8") as f:
                     f.write(json.dumps(sample) + "\n")
                 total_generated += 1
-                log(f"Generated Training Sample #{total_generated} on {sym}!")
-                time.sleep(1)
+                log(f"Forged Multi-Source Training Sample #{total_generated} on {sym}!")
+                time.sleep(4)  # Rate limit safe
 
-    log(f"Foundry Batch Complete. Total SFT samples ready: {total_generated}")
+    log(f"Foundry Batch Complete. Total multi-source SFT samples added: {total_generated}")
 
 if __name__ == "__main__":
     build_dataset_batch()
