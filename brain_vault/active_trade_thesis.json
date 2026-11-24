@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:47:42.269564+00:00",
+  "timestamp": "2026-11-24T07:49:13.633745+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 0,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Currently holding an open EURUSD intraday position. Major pairs and indices are exhibiting tight ranges without clear session-open volume expansion or clean structural displacement to guarantee a 1:2.5+ risk-reward profile.",
-  "learning_applied": "Past SL feedback on XAUUSD highlighted the hazard of chasing noise without a clean volatility expansion. Patience is prioritized over forcing subpar trades."
+  "intraday_rationale": "Currently holding an active EURUSD position. Price action across major pairs is displaying low volatility and range-bound behavior without clear displacement or institutional expansion necessary for an additional high-probability 1:3 RR intraday sweep.",
+  "learning_applied": "Past SL hits on XAUUSD taught us to avoid entering during low-conviction ranges and to wait for clean structural swing breaks with adequate volume."
 }
