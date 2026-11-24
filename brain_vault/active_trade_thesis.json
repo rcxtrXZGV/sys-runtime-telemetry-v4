@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T15:21:37.386497+00:00",
+  "timestamp": "2026-11-24T15:40:50.638178+00:00",
   "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3594.5,
-  "tp_price": 3622.5,
+  "sl_price": 3582.5,
+  "tp_price": 3605.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced a sharp sweep of intraday liquidity down to the session low of 3600.5, tapping key psychological round number support before printing a rejection wick on the 15m timeframe. DXY has simultaneously softened toward 103.85, providing a constructive macro tailwind for a mean reversion bounce on Gold.",
-  "trade_thesis": "Institutional absorption detected at the 3600-3602 level following a aggressive cascading selloff. Price has swept weak longs, clearing stops and opening an asymmetric long opportunity targeting a recovery back toward the 3620-3622 value area."
+  "gold_liquidity_analysis": "XAUUSD completed a violent sell-side liquidity sweep down to 3581.70 on massive volume (9,022 contracts), liquidating late long positions. Volume has dried up on subsequent 15-minute candles showing seller exhaustion at key daily support. Meanwhile, DXY has broken lower to 103.796, creating a strong bullish divergence for Gold.",
+  "trade_thesis": "Capitalizing on the institutional liquidity sweep of intraday lows (3581.70) with DXY weakness confirming a mean-reversion move back toward the 15m Fair Value Gap spanning 3601.50 - 3615.00. Risk is strictly defined below the sweep low at 3582.50 for a >2.5:1 Risk-to-Reward distribution."
 }
