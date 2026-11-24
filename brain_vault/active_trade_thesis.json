@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-24T05:52:48.935696+00:00",
+  "timestamp": "2026-11-24T06:14:11.739526+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 42,
+  "confidence_score": 45,
   "trade_style": "SCALP",
   "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 0.0,
-  "naked_chart_reading": "XAUUSD is currently trading at 3637.5, operating within a tight session range between a low of 3627.2 and a high of 3639.6. Recent 5m candles show contracting volume, highlighted by a zero-volume candle print (V: 0) on the latest bar with identical Open, High, Low, and Close values at 3637.5. Price action lacks structural displacement, impulsive order flow, or clean Fair Value Gap mitigation.",
-  "trade_thesis": "While macro indicators show DXY steady at 104.281 and US10Y yields declining slightly to 4.918%, the multi-timeframe price action across gold reveals indecision wicks and low participation during the inter-session transition. Without a clear liquidity sweep of session extremes (such as the 3639.6 high or 3627.2 low) or an aggressive volume delta expansion, executing a trade violates high-probability asymmetric risk rules and invites unnecessary chop.",
-  "red_team_resolution": "Red Team Devil's Advocate highlights that entering a stagnant, zero-volume market exposes capital to unnecessary spread slippage and whipsaws. Capital Preservation Officer mandates holding cash at the current $97.96 equity balance until a pristine institutional liquidity sweep manifests."
+  "naked_chart_reading": "XAUUSD is currently trading at 3624.0, having pressed down near the session low of 3622.7 after a move from the session high of 3639.6. Recent 5m candles show a sharp impulsive down-wick and aggressive selling pressure into the 3622.7 region, followed by a zero-volume candle print (V: 0) on the latest bar with identical Open, High, Low, and Close values at 3624.0, confirming a temporary stall in active order flow participation.",
+  "trade_thesis": "While macro indicators show DXY at 104.31 and US10Y yields at 4.918% maintaining structural pressure, gold has reached the immediate session low but has not yet formed a clear institutional rejection pattern or swept secondary external liquidity pools. Entering immediately without confirmation risks catching a falling knife or getting trapped in a false breakdown. Asymmetric risk parameters demand waiting for either a definitive sweep below 3622.7 with an immediate reclaim or a clean structural retest before committing capital.",
+  "red_team_resolution": "Red Team Devil's Advocate highlights that entering immediately following a sharp directional push into session lows without a confirmed reversal candle or liquidity grab exposes the account to continuation risk and whipsaws. Capital Preservation Officer mandates holding cash ($97.96 equity) and protecting the balance until an undeniable, high-probability institutional setup materializes."
 }
