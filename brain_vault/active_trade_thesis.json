@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:15:01.026247+00:00",
+  "timestamp": "2026-11-24T13:16:32.667945+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently tested intraday highs near 3651.39 before rejecting sharply down to 3634.60, with active short positions currently managing drawdowns. DXY is breaking lower towards 103.88, which could provide underlying bullish impetus, but current price action shows consolidation and lack of a clean structural sweep.",
-  "trade_thesis": "Existing open positions on XAUUSD are managing risk near recent swing points. Until price either sweeps the intraday low at 3608.10 or confirms a break above the 3651.39 high with strong volume expansion, the market remains in a corrective intermediate chop. Mandating WAIT to protect equity."
+  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep up to 3651.40 before experiencing sharp institutional displacement lower into 3633.90. Two existing XAUUSD short positions (tickets 2117318286 and 2117339435) are actively running in profit toward the 3615.0-3616.0 sell-side liquidity pool.",
+  "trade_thesis": "Account equity stands at $109.63 with 3 open profitable trades active. Adding additional leverage mid-move at 3633.90 offers suboptimal risk-reward compared to entry prices near 3640+. Mandating WAIT to preserve margin and allow active short positions to reach target order blocks near 3615.0."
 }
