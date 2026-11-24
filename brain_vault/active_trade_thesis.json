@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:10:08.197818+00:00",
+  "timestamp": "2026-11-24T08:13:18.064253+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD currently holds an open position with a healthy running profit. The active pairs are exhibiting range-bound characteristics during the pre-London session open transition. While EURUSD is nudging intraday highs, volume metrics indicate consolidation rather than clean institutional expansion. Awaiting a high-conviction breakout or structural pullback before scaling further risk.",
-  "learning_applied": "Incorporated lessons from the XAUUSD stop-loss sweep by avoiding tight, noise-vulnerable stops and refusing to force entries in low-volume consolidation windows."
+  "intraday_rationale": "EURUSD is currently range-bound near 1.0913 following minor London session fluctuations. Existing position remains open with slight positive carry, but immediate 15-minute candles lack clear directional momentum and volume expansion required for a high-probability breakout entry.",
+  "learning_applied": "Applied lessons from previous XAUUSD stop-loss sweep by avoiding premature entries during low-volatility consolidation phases and waiting for structural volume confirmation."
 }
