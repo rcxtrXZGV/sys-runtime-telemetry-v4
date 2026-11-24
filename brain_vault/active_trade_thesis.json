@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:06:03.128230+00:00",
-  "verdict": "BUY",
-  "symbol": "GBPUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T10:08:46.889783+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.3036,
-  "tp_price": 1.3156,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "GBPUSD has established clear London session bullish momentum, breaking out above 1.3050 structural resistance in confluence with a rapid collapse in DXY (104.24 down to 104.15) and US10Y yields. The 15m candles display steady higher highs and higher lows without lower wick rejection, confirming directional displacement for a run toward 1.3150.",
-  "learning_applied": "Past XAUUSD trade suffered from tight stop-loss noise; placing the SL structurally below the pre-breakout consolidation low (1.3036) ensures protection outside noise while delivering a strict 1:3 Risk-to-Reward ratio."
+  "intraday_rationale": "EURUSD is currently in an active winning position (ticket 2116186149) pushing nicely towards its target. Other major indices and currency pairs are exhibiting compressed ranges or lacking clear 15-minute volume displacement to trigger a secondary new position safely right now. Preserving capital and allowing existing runner to develop.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to strictly avoid tight, noisy stop-losses and chasing unconfirmed breakouts. Waiting for pristine session sweep setups."
 }
