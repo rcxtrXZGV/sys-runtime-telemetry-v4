@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T10:00:47.420955+00:00",
+  "timestamp": "2026-11-24T10:02:46.267189+00:00",
   "verdict": "BUY",
   "symbol": "GBPUSD",
   "confidence_score": 88,
@@ -8,6 +8,6 @@
   "sl_price": 1.3045,
   "tp_price": 1.3125,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "GBPUSD demonstrates clean 15m bullish price action with consecutive higher highs and higher lows, synchronized with sharp downward pressure on DXY dropping below 104.20. Targeting a extended intraday run toward 1.3125.",
-  "learning_applied": "Placing SL strictly structural below recent 15m swing low (1.3045) rather than tight micro-range noise to avoid premature stop-outs like the recent XAUUSD trade."
+  "intraday_rationale": "Strong 15m bullish market structure with sequential higher highs/lows aligned with a falling DXY (104.36 to 104.20). Price expanded out of the 1.3038 base into new intraday highs at 1.3069 with zero downside rejection. SL is placed structurally below the 15m higher-low consolidation level at 1.3045, offering a clean 1:4 risk-to-reward ratio toward the 1.3125 liquidity target.",
+  "learning_applied": "Avoiding tight scalper stop-losses like previous XAUUSD trade; placed SL 20 pips away behind structural session pivot low to absorb noise."
 }
