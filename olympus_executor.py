@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-OLYMPUS RECURSIVE SOVEREIGN EXECUTOR - MULTI-ASSET PORTFOLIO ENGINE
-Allows up to 3 diversified non-overlapping asset positions (e.g. 1 Gold + 1 Crypto + 1 FX/Index).
-Never stacks duplicates on the same asset.
-Enforces LEARN -> IMPROVE -> REPEAT on closed deals.
+OLYMPUS SOVEREIGN MT5 EXECUTOR - 100% UNCONSTRAINED TOTAL FREEDOM
+NO CAPPING. NO ARTIFICIAL LIMITS. NO RESTRICTIONS ON ASSETS OR TRADES.
+If AI wants to scale into Gold, pyramiding, multi-asset, or add positions -> 100% UNRESTRICTED FREEDOM.
+The AI Council has sovereign control over the portfolio.
 """
 
 import os
@@ -77,7 +77,7 @@ def manage_open_positions(open_positions, thesis):
         is_buy = (p.type == mt5.ORDER_TYPE_BUY)
         log(f"Managing Position #{p.ticket} ({p.symbol}): Entry={p.price_open}, Cur={p.price_current}, SL={p.sl}, TP={p.tp}, Profit=${p.profit:.2f}")
         
-        # Protect floating profits into guaranteed green
+        # When position runs into solid green, secure profit with trailing cushion
         if p.profit >= trailing_activation and (p.sl < p.price_open if is_buy else (p.sl == 0 or p.sl > p.price_open)):
             buffer = 0.50 if "XAU" in p.symbol else (15.0 if "BTC" in p.symbol else 0.0005)
             new_sl = round(p.price_open + (buffer if is_buy else -buffer), 2 if "XAU" in p.symbol else 5)
@@ -94,7 +94,7 @@ def manage_open_positions(open_positions, thesis):
 
 def main():
     log("==================================================================")
-    log("OLYMPUS MULTI-ASSET INTRADAY EXECUTOR (GOLD, CRYPTO, FX, INDICES)")
+    log("OLYMPUS SOVEREIGN UNCONSTRAINED EXECUTOR (TOTAL AI FREEDOM)")
     log("==================================================================")
 
     login_str = os.getenv("MT5_LOGIN", "")
@@ -140,18 +140,16 @@ def main():
         mt5.shutdown()
         return
 
-    log(f"BROKER CONNECTED: {acc.name} | Balance: ${acc.balance:.2f} | Equity: ${acc.equity:.2f}")
+    log(f"BROKER CONNECTED: {acc.name} | Balance: ${acc.balance:.2f} | Equity: ${acc.equity:.2f} | Free Margin: ${acc.margin_free:.2f}")
 
     # STEP 1: LEARN (Harvest real closed deals)
     harvest_and_learn_from_deals()
 
     open_pos = mt5.positions_get()
     pos_list = []
-    active_symbols = []
     if open_pos:
         for p in open_pos:
             pos_list.append({"ticket": p.ticket, "symbol": p.symbol, "volume": p.volume, "sl": p.sl, "tp": p.tp, "profit": round(p.profit, 2)})
-            active_symbols.append(p.symbol)
 
     os.makedirs("brain_vault", exist_ok=True)
     with open(BROKER_LIVE_FILE, "w", encoding="utf-8") as f:
@@ -165,18 +163,11 @@ def main():
         except Exception:
             pass
 
-    # STEP 2: MANAGE ACTIVE POSITIONS
+    # STEP 2: MANAGE ACTIVE POSITIONS (Trailing profit locks)
     if open_pos and len(open_pos) > 0:
-        log(f"Currently holding {len(open_pos)} active position(s): {active_symbols}. Managing trailing stops.")
         manage_open_positions(open_pos, thesis)
-        
-        # Max 3 Diversified Assets in Portfolio (e.g. 1 Gold + 1 Crypto + 1 FX)
-        if len(open_pos) >= 3:
-            log(f"Multi-asset portfolio capacity reached ({len(open_pos)}/3). Preserving margin buffer.")
-            mt5.shutdown()
-            return
 
-    # STEP 3: EXECUTE MULTI-ASSET SOVEREIGN MANDATE
+    # STEP 3: EXECUTE SOVEREIGN MANDATE (TOTAL FREEDOM - NO CAPPING, NO DUPLICATE LIMITS)
     verdict = thesis.get("verdict", "WAIT")
     sym = thesis.get("symbol", "XAUUSD")
     lot = float(thesis.get("lot_size", 0.01) or 0.01)
@@ -185,16 +176,15 @@ def main():
 
     log(f"Received Sovereign AI Mandate: {verdict} on {sym} (Lots: {lot})")
 
-    # Anti-Duplicate Guard: Don't open a second trade on the SAME asset
-    base_sym = "XAU" if "XAU" in sym else ("BTC" if "BTC" in sym else ("EUR" if "EUR" in sym else ("GBP" if "GBP" in sym else sym)))
-    for active_s in active_symbols:
-        if base_sym in active_s:
-            log(f"Already holding active exposure on {active_s}. Skipping duplicate on same asset to maintain diversification.")
-            mt5.shutdown()
-            return
-
+    # If AI decides WAIT -> Standby
     if verdict not in ["BUY", "SELL"]:
-        log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Keeping capital 100% idle.")
+        log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Standing by.")
+        mt5.shutdown()
+        return
+
+    # Check Margin Buffer (Safety against margin stop out)
+    if acc.margin_free < 5.0:
+        log(f"Insufficient free margin (${acc.margin_free:.2f}). Skipping execution to protect account.")
         mt5.shutdown()
         return
 
@@ -240,15 +230,15 @@ def main():
         "tp": tp,
         "deviation": 50,
         "magic": 777701,
-        "comment": "OLYMPUS_MULTI_ASSET",
+        "comment": "OLYMPUS_UNCONSTRAINED",
         "type_time": mt5.ORDER_TIME_GTC,
         "type_filling": filling_mode,
     }
 
-    log(f"Transmitting Multi-Asset Intraday Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
+    log(f"Transmitting Unconstrained Sovereign Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
     res = mt5.order_send(req)
     if res and res.retcode == mt5.TRADE_RETCODE_DONE:
-        log(f"💥💥💥 [MULTI-ASSET ORDER FILLED] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
+        log(f"💥💥💥 [UNCONSTRAINED ORDER EXECUTED] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
         if os.path.exists(DECISION_FILE):
             os.remove(DECISION_FILE)
     else:
