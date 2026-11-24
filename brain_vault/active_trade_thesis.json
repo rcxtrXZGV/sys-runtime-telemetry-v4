@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:02:59.551899+00:00",
-  "verdict": "BUY",
-  "symbol": "GBPUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T11:05:38.404376+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.305,
-  "tp_price": 1.3135,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "GBPUSD is pushing fresh session highs at 1.3071, aligned with strong DXY selling momentum down to 104.102. 15-minute candles demonstrate clean bullish market structure with sequential higher highs and higher lows.",
-  "learning_applied": "Following previous XAUUSD stop-out from tight range placement, structural SL is placed safely below the 1.3050 15m swing low to absorb minor noise while maintaining a 1:3 Risk-to-Reward ratio."
+  "intraday_rationale": "EURUSD is currently pushing session highs at 1.0948 following a steady intraday climb, but recent 15-minute candles show narrowing ranges and diminishing volatility without a clean structural pullback or liquidity sweep to provide an asymmetric entry.",
+  "learning_applied": "Applied lessons from past XAUUSD stop-loss slippage by refusing to chase extended moves mid-range, prioritizing structural support confirmations instead."
 }
