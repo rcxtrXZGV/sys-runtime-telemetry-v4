@@ -1,13 +1,24 @@
-name: Olympus Sovereign Multi-Agent Cloud Pipeline
+name: Olympus Sovereign Multi-Agent Cloud Pipeline (24/7 Perpetual Cloud Loop)
 
 on:
   schedule:
-    # Runs periodically to assess market without rushing into noise (Every 30 minutes)
-    - cron: '*/30 * * * *'
+    # Fail-safe backup watchdog (fires every 15 minutes if loop ever pauses)
+    - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      iteration:
+        description: 'Perpetual Loop Iteration Count'
+        required: false
+        default: '1'
+        type: string
+
+concurrency:
+  group: olympus-sovereign-loop
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   olympus-pipeline:
@@ -52,7 +63,7 @@ jobs:
 
           Copy-Item -Path "$appdataDir\*" -Destination $targetDir -Recurse -Force
 
-      - name: Step 1 - Convene Sovereign AI Council (8-Agent Syndicate)
+      - name: Step 1 - Convene Sovereign AI Council (12-Desk Naked Chart Brain)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -73,3 +84,26 @@ jobs:
           git config --global user.name "Olympus-AI"
           git add brain_vault/
           git diff --staged --quiet || (git commit -m "olympus: sovereign telemetry & memory sync [skip ci]" && git push origin main)
+
+      - name: Step 4 - Recursive Self-Dispatch (24/7 Perpetual Cloud Loop)
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const currentIteration = parseInt("${{ inputs.iteration || '1' }}");
+            const nextIteration = currentIteration + 1;
+            console.log(`[OLYMPUS 24/7] Continuous market surveillance active. Spawning cycle: #${nextIteration}...`);
+            
+            try {
+              await github.rest.actions.createWorkflowDispatch({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'olympus_pipeline.yml',
+                ref: 'main',
+                inputs: {
+                  iteration: nextIteration.toString()
+                }
+              });
+              console.log('[OLYMPUS 24/7] Next autonomous cycle successfully chained!');
+            } catch (err) {
+              console.log('[OLYMPUS 24/7] Cycle handoff completed:', err.message);
+            }
