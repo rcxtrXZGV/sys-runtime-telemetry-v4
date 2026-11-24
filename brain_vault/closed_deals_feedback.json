@@ -1,0 +1,16 @@
+{
+  "total_closed_analyzed": 1,
+  "deals": [
+    {
+      "ticket": 1700440679,
+      "order": 2114359085,
+      "symbol": "XAUUSD",
+      "time": "2026-11-23T18:58:42+00:00",
+      "volume": 0.01,
+      "price": 3670.31,
+      "profit": -2.85,
+      "commission": -0.04,
+      "comment": "[sl 3670.50]"
+    }
+  ]
+}
