@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-24T06:17:17.627827+00:00",
-  "verdict": "WAIT",
-  "symbol": "XAUUSD",
-  "confidence_score": 47,
-  "trade_style": "SCALP",
-  "lot_size": 0.0,
+  "timestamp": "2026-11-24T06:30:00.210312+00:00",
+  "verdict": "BUY",
+  "symbol": "EURUSD",
+  "confidence_score": 99,
+  "trade_style": "VERIFICATION_TEST",
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 0.0,
-  "naked_chart_reading": "XAUUSD is currently trading at 3622.7, having printed a new session low of 3617.2 following the drop from the 3639.6 session high. Recent 5m candle bars reflect contracting momentum and zero-volume prints (V: 0) directly at the lows, indicating a temporary halt in aggressive selling without an immediate impulsive reversal or liquidity reclamation.",
-  "trade_thesis": "While macro indicators show DXY at 104.293 and US10Y bond yields stabilizing near 4.918%, gold is currently testing the direct boundary of its session low. Although a liquidity sweep has occurred, the lack of an immediate structural reclaim or aggressive volume expansion means entering now carries unmitigated continuation risk. Asymmetric risk parameters dictate waiting for a confirmed institutional reversal pattern before committing capital.",
-  "red_team_resolution": "Red Team Devil's Advocate argues that entering immediately after a sweep of session lows without a confirmed bullish reaction candle risks catching a continuation move lower. Capital Preservation Officer strictly mandates holding cash ($97.96 equity) until an undeniable structural shift confirms direction."
+  "trailing_activation_profit": 1.0,
+  "learning_from_past_trades": "User requested immediate end-to-end live pipeline verification order.",
+  "naked_chart_reading": "Instant live order test initiated on EURUSD to verify cloud broker execution pipeline.",
+  "trade_thesis": "End-to-end pipeline verification test."
 }
