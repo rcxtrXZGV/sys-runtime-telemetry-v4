@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T18:22:43.690350+00:00",
+  "timestamp": "2026-11-24T18:27:39.844980+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3550.0,
+  "tp_price": 3595.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3563 level after a strong intraday selloff from 3631. Price action is forming a tight range between 3560 and 3574 on lower timeframe 15m candles with declining volume. DXY is stable near 103.77, offering no immediate directional catalyst.",
-  "trade_thesis": "Existing open positions in XAUUSD are currently floating minor drawdowns while testing structural support zones. Given the absence of clear liquidity sweeps or expanding volume in the current consolidation block, the quantitative brain mandates waiting for a definitive breakout or retest of major intraday liquidity pools before deploying fresh capital."
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating in a narrow range around 3562.39 after a steep intraday decline from highs near 3631.3. Price action shows reduced volatility on recent 15m candles with tight ranges (3560-3568), indicating a lack of impulsive directional commitment following the liquidity sweep of the Asian/London sessions.",
+  "trade_thesis": "Current market conditions display choppy, sideways consolidation on XAUUSD following heavy downward pressure. With open positions already testing patience and low volatility in the current candle cluster, expanding the risk profile is suboptimal. Mandating WAIT until a definitive liquidity grab and structural break of the 3575 resistance or 3557 support occurs."
 }
