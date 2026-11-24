@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:03:43.555465+00:00",
+  "timestamp": "2026-11-24T09:05:20.142504+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Currently holding an open EURUSD position with positive floating profit and a well-defined structural SL/TP. Across other primary assets like XAUUSD, BTCUSD, and USTEC, price action is currently consolidating within tight ranges following recent moves without a definitive volume-backed momentum breakout. Maintaining discipline and waiting for a cleaner London/NY session overlap setup.",
-  "learning_applied": "Applied lessons from previous XAUUSD stop-loss hit by avoiding premature entries in low-volume consolidation zones and protecting existing open trade structural parameters."
+  "intraday_rationale": "Open position on EURUSD is already running nicely in profit. Other markets like XAUUSD and BTCUSD are currently experiencing choppy retracements without a clean structural confirmation or high-volume displacement at session boundaries. Maintaining capital preservation.",
+  "learning_applied": "Avoiding premature entries after a prior stopped-out trade, adhering strictly to structural swing highs/lows and confirmed momentum."
 }
