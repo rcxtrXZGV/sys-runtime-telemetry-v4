@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:35:03.204249+00:00",
+  "timestamp": "2026-11-24T10:36:36.109543+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD open position is already favorably floating with profit and approaching initial targets near 1.09395. Current 15m candles show consolidation near highs after the strong push up, lacking clean new momentum displacement for a fresh entry right now.",
-  "learning_applied": "Refrained from over-trading or forcing secondary positions while an active correlated trade is already working toward its structural target, honoring proper risk management."
+  "intraday_rationale": "Account equity is currently fully engaged with an open EURUSD position showing positive floating profit. Sticking to strict intraday risk parameters means avoiding over-leveraging or opening concurrent correlated positions while margin allocation is constrained.",
+  "learning_applied": "Past gold short stopped out due to tight noise placement; keeping capital protected and avoiding over-exposure."
 }
