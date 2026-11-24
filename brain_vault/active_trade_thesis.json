@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-11-24T06:31:00.725458+00:00",
+  "timestamp": "2026-11-24T06:38:38.568744+00:00",
   "verdict": "WAIT",
-  "symbol": "XAUUSD",
-  "confidence_score": 48,
-  "trade_style": "SCALP",
-  "lot_size": 0.0,
+  "symbol": "EURUSD",
+  "confidence_score": 40,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 0.0,
-  "learning_from_past_trades": "Maintaining strict adherence to capital preservation by avoiding trades in zero-volume consolidation zones and refusing to enter without an authenticated structural reclaim after session liquidity sweeps.",
-  "naked_chart_reading": "XAUUSD is currently trading at 3627.3999, oscillating within a session range defined by a low of 3617.2 and a high of 3639.6001. Recent 5m candles demonstrate choppy price action and a zero-volume print (V: 0) on the latest bar with identical Open, High, Low, and Close values at 3627.3999, signifying a complete stall in aggressive institutional participation and lack of directional displacement.",
-  "trade_thesis": "While macro indicators show DXY at 104.294 and US10Y yields at 4.918% maintaining structural pressure, gold has recovered slightly from its 3617.2 session low back toward 3627.4 without an impulsive volume expansion or clean structural break. Without a definitive liquidity sweep followed by an immediate reversal confirmation, initiating a position exposes capital to unnecessary chop and spread friction. Capital Preservation Officer mandates holding cash ($97.96 equity) until a pristine high-probability setup materializes."
+  "trailing_activation_profit": 5.0,
+  "intraday_rationale": "EURUSD is currently in an active open position with well-defined structural parameters. Other instruments such as XAUUSD and BTCUSD are consolidating or showing choppy minor ranges without clean breakout volume displacement on the 15-minute timeframe. Awaiting better London session momentum.",
+  "learning_applied": "Applied lesson from recent XAUUSD stop-out by avoiding forced scalps in low-volume or tight ranges, respecting existing open positions and strict risk-reward thresholds."
 }
