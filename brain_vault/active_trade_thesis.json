@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:49:08.062758+00:00",
-  "verdict": "SELL",
-  "symbol": "BTCUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T10:51:03.112704+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 59980.0,
-  "tp_price": 58200.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Bitcoin expanded downward with major volume spikes, breaching the key 60,000 psychological zone to print a fresh intraday low at 59,523. Continuous lower highs on the 15m chart favor a clean London session trend continuation towards 58,200 structural target.",
-  "learning_applied": "Past XAUUSD deal hit SL due to tight micro-noise placement. Applying a wide structural stop-loss above the previous 15-minute swing high (59,980.0) ensures the trade avoids noise while keeping risk strictly capped on $100 equity."
+  "intraday_rationale": "EURUSD is currently pushing near session highs at 1.0941 with an open position already active. Without a clear impulsive pullback and volume expansion away from resistance, entering a new continuation or reversal setup lacks high-probability asymmetric reward.",
+  "learning_applied": "Past feedback highlighted the danger of tight SL placement without structural confluence; maintaining a disciplined wait avoids overleveraging while an open EURUSD trade is successfully floating in profit."
 }
