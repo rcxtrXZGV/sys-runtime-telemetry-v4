@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:25:16.336565+00:00",
+  "timestamp": "2026-11-24T07:28:57.976911+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 0,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account equity ($97.66) and margin are already committed to an active EURUSD position (ticket 2116186149). Per strict risk management protocols and given low volatility across core forex pairs during the current pre-London transition, no new positions should be opened to prevent over-leveraging.",
-  "learning_applied": "Applied lessons from past XAUUSD stop-loss slippage by avoiding forced entries during consolidation and respecting existing open capital allocations."
+  "intraday_rationale": "Current open position on EURUSD is already active with minor drawdown, and major pairs are exhibiting low volatility and range-bound price action ahead of the core European/London session liquidity sweeps. Awaiting a clear structural break and volume expansion before committing additional capital.",
+  "learning_applied": "Avoiding premature entries during low-volume pre-session chop, protecting account balance from tight range noise following recent XAUUSD slippage."
 }
