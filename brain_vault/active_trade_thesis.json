@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T11:05:38.404376+00:00",
+  "timestamp": "2026-11-24T11:07:15.747960+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently pushing session highs at 1.0948 following a steady intraday climb, but recent 15-minute candles show narrowing ranges and diminishing volatility without a clean structural pullback or liquidity sweep to provide an asymmetric entry.",
-  "learning_applied": "Applied lessons from past XAUUSD stop-loss slippage by refusing to chase extended moves mid-range, prioritizing structural support confirmations instead."
+  "intraday_rationale": "EURUSD is currently pushing near session highs at 1.0948 with an active winning position already open. However, current 15m candles show a lack of high-volume displacement or a clean pullback structure to add risk. It is prudent to let the existing position run towards its target rather than forcing a new entry without a structural pullback.",
+  "learning_applied": "Past stop-loss failure on XAUUSD taught us to avoid tight, micro-noise stops and wait for clear structural levels. Since no optimal structural stop is currently formed for a fresh EURUSD entry, remaining patient protects our capital."
 }
