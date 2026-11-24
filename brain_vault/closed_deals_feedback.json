@@ -1,5 +1,5 @@
 {
-  "total_closed_analyzed": 6,
+  "total_closed_analyzed": 7,
   "deals": [
     {
       "ticket": 1700440679,
@@ -66,6 +66,17 @@
       "profit": -5.29,
       "commission": 0.0,
       "comment": "[sl 59850.00]"
+    },
+    {
+      "ticket": 1702970950,
+      "order": 2117469418,
+      "symbol": "XAUUSD",
+      "time": "2026-11-24T15:45:01+00:00",
+      "volume": 0.01,
+      "price": 3616.06,
+      "profit": 15.92,
+      "commission": -0.04,
+      "comment": "[tp 3616.00]"
     }
   ]
 }
