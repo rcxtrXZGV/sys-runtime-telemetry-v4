@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T07:07:22.677457+00:00",
+  "timestamp": "2026-11-24T07:08:59.995774+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current price action across major pairs shows tight consolidation ahead of major liquidity pools. Existing EURUSD position is active and managing risk; waiting for clean breakout with structural volume displacement before adding new risk.",
-  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid tight stops near consolidation noise. Maintaining patience until a clear structural swing high/low appears outside current noise bands."
+  "intraday_rationale": "EURUSD is currently range-bound following a minor pullback, with candles showing minimal volume and tight 15-minute consolidation. Awaiting a clear momentum sweep and volume displacement before committing capital.",
+  "learning_applied": "Avoiding premature entries based on recent XAUUSD stop-loss feedback by enforcing strict structural session high/low confirmation prior to order execution."
 }
