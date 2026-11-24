@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:12:43.937993+00:00",
+  "timestamp": "2026-11-24T13:15:01.026247+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep up to intraday high 3651.40, precisely testing upper supply before sharply rejecting down to 3634.10. Existing stop losses at 3652.50 remained intact. DXY softening toward 103.88 creates brief intraday consolidation.",
-  "trade_thesis": "The fund currently maintains two open short positions in XAUUSD (tickets 2117318286 and 2117339435) with take-profit targets set at 3616.0 and 3615.0. To preserve equity ($94.71) and maintain strict risk parameters, additional position expansion is paused while waiting for current short order flow to expand downward following the 3651 liquidity sweep rejection."
+  "gold_liquidity_analysis": "XAUUSD recently tested intraday highs near 3651.39 before rejecting sharply down to 3634.60, with active short positions currently managing drawdowns. DXY is breaking lower towards 103.88, which could provide underlying bullish impetus, but current price action shows consolidation and lack of a clean structural sweep.",
+  "trade_thesis": "Existing open positions on XAUUSD are managing risk near recent swing points. Until price either sweeps the intraday low at 3608.10 or confirms a break above the 3651.39 high with strong volume expansion, the market remains in a corrective intermediate chop. Mandating WAIT to protect equity."
 }
