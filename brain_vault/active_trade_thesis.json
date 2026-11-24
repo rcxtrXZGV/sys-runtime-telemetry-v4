@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:46:19.697616+00:00",
+  "timestamp": "2026-11-24T08:47:59.055718+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently range-bound following a minor push to session highs (1.0922). Although we hold a profitable open position on EURUSD, the 15-minute price action lacks strong directional volume displacement to justify adding new risk at this exact moment. Awaiting a clearer structural breakout or retest of session liquidity.",
-  "learning_applied": "Avoiding premature entries and tight scalps; respecting structural stop-loss zones and waiting for high-conviction displacement before opening new intraday scale positions."
+  "intraday_rationale": "EURUSD currently holds an open profitable position (+0.26 USD) with structural protection in place. Across major pairs and indices, price action displays range-bound behavior without sufficient London breakout volume displacement to justify adding new risk.",
+  "learning_applied": "Past feedback on XAUUSD highlighted the hazard of tight stops in volatile whipsaws; maintaining discipline and avoiding forced entries during consolidation preserves account equity."
 }
