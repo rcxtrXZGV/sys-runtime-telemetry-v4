@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:00:14.689066+00:00",
+  "timestamp": "2026-11-24T09:02:00.994543+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 0,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Active EURUSD long position already managing open trade at 1.0919 with healthy buffer. Other major indices and currency pairs are in low-volatility tight ranges or lacking clear 1.5M/1H volume expansion to justify new risk exposure.",
-  "learning_applied": "Avoiding over-leveraging and respecting existing open intraday exposure while maintaining structural stop discipline."
+  "intraday_rationale": "EURUSD currently holds an open profitable position (ticket 2116186149) near 1.0919. Price action across major pairs exhibits tight range compression without aggressive volume expansion during this specific intraday window. Preserving capital while monitoring structural breakout limits.",
+  "learning_applied": "Past XAUUSD tight-stop hit (-$2.85) taught us to avoid entering thin liquidity ranges without clear structural swing confirmation, prioritizing wider structural SL placement outside immediate market noise."
 }
