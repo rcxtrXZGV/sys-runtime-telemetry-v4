@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T14:07:12.834426+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 85,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD completed a high-liquidity sweep at 3651.40 followed by sharp institutional sell-off down to 3613.40. An active XAUUSD sell position (ticket 2117428068) is currently floating in +$7.39 profit approaching target TP of 3612.00. DXY consolidates at 103.88. Price is presently sitting at intraday support.",
+  "trade_thesis": "We are actively holding a highly profitable short trade on XAUUSD targeting 3612.00. Chasing a new position at the extreme intraday low (3615.20) without a pullback into a premium Fair Value Gap presents unfavorable risk-reward. Mandating WAIT to protect equity and let existing positions (EURUSD +$2.71, XAUUSD +$7.39) reach full target completion."
+}
