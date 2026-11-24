@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:49:07.530771+00:00",
+  "timestamp": "2026-11-24T09:50:35.036169+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently pushing near session highs at 1.0929 with an open position already running, while other major instruments show tight consolidation or choppy price action without clean breakout volume displacement on the 15m/1h timeframes.",
-  "learning_applied": "Refusing to force low-probability entries; previous stop-loss feedback emphasized keeping structural stops far outside immediate noise, so we wait for a definitive structural retest before entering new setups."
+  "intraday_rationale": "EURUSD is currently in an open long position moving favorably (+1.76 profit). Across other assets, price action shows tight ranges or lacks clear impulsive 15-minute volume displacement required for an asymmetric intraday setup, warranting patience.",
+  "learning_applied": "Applied lessons from the XAUUSD stop-loss sweep by avoiding tight or arbitrary SL placement and refusing to force suboptimal setups without high-conviction structural confirmation."
 }
