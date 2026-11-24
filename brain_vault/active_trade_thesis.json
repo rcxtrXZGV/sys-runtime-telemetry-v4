@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:35:27.328717+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-24T11:37:13.076396+00:00",
+  "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 88,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.091,
-  "tp_price": 1.103,
+  "sl_price": 1.092,
+  "tp_price": 1.1005,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD displays strong upward momentum, continuously printing higher highs and higher lows on the 15-minute timeframe alongside a steady decline in DXY. Current price is breaking session highs with strong structural support below at 1.0910, providing an exceptional 1:3+ risk-to-reward ratio targeting the 1.1030 liquidity pool.",
-  "learning_applied": "Past failure on XAUUSD due to a tight scalp SL taught us to look past micro-noise and place stops structurally behind session swing lows (1.0910) rather than immediate ticks."
+  "intraday_rationale": "EURUSD is currently in an open winning position holding nicely above 1.0950, while DXY continues its steady intraday decline down to 104.008. However, recent 15m candles show flattening momentum and narrow ranges as price stalls near the intraday high of 1.0953. To respect our strict rules against chasing micro-noise without fresh structural displacement, we remain on hold and let the existing EURUSD trade develop.",
+  "learning_applied": "Avoiding premature scalping entries or over-leveraging while an open position is already successfully capturing the primary trend and protected by a structural stop."
 }
