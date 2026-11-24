@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 OLYMPUS SUPREME AI BRAIN - 12 ELITE QUANTITATIVE DESKS
-Powered by Gemini 3.5 Flash & 3.5 Flash Lite (Google GenAI SDK)
-Reads Raw Naked Candlesticks, Multi-Timeframe Highs/Lows, Order Flow & Market Liquidity.
-Zero human limits. Complete AI sovereign decision-making.
+Core Architecture: LEARN -> IMPROVE -> REPEAT
+Reads:
+1. Raw Naked Candlesticks, Multi-Timeframe Highs/Lows, Order Flow & Market Liquidity.
+2. Real-Time Feedback from Closed Deals (Actual Profit, Loss, Slippage, Execution Mistakes).
+3. Adapts & evolves decisions dynamically to prevent repeating past errors.
 """
 
 import os
@@ -24,6 +26,7 @@ if sys.platform.startswith('win'):
 DECISION_FILE = os.path.join("brain_vault", "active_trade_thesis.json")
 BROKER_LIVE_FILE = os.path.join("brain_vault", "broker_account_live.json")
 MEMORY_FILE = os.path.join("brain_vault", "olympus_learning_memory.json")
+DEAL_FEEDBACK_FILE = os.path.join("brain_vault", "closed_deals_feedback.json")
 
 def log(msg):
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -33,10 +36,6 @@ def log(msg):
         print(f"[{ts}] {msg.encode('ascii', 'ignore').decode('ascii')}", flush=True)
 
 def fetch_naked_chart_data():
-    """
-    Pulls high-fidelity naked price-action candles:
-    Open, High, Low, Close, Volume across multiple timeframes.
-    """
     tickers = {
         "XAUUSD": "GC=F",
         "BTCUSD": "BTC-USD",
@@ -65,7 +64,6 @@ def fetch_naked_chart_data():
                 closes = [c for c in quotes.get('close', []) if c is not None]
                 volumes = [v for v in quotes.get('volume', []) if v is not None]
                 
-                # Structure last 15 naked candles for price action reading
                 naked_candles = []
                 count = min(15, len(closes))
                 for i in range(-count, 0):
@@ -90,7 +88,7 @@ def fetch_naked_chart_data():
 
 def convene_supreme_council():
     log("==================================================================")
-    log("OLYMPUS SUPREME AI BRAIN: 12 ELITE QUANTITATIVE DESKS CONVENED")
+    log("OLYMPUS SUPREME AI BRAIN: LEARN -> IMPROVE -> REPEAT CYCLE")
     log("==================================================================")
     
     api_key = os.getenv("GEMINI_API_KEY")
@@ -116,47 +114,45 @@ def convene_supreme_council():
         except Exception:
             pass
 
+    # RECURSIVE FEEDBACK: Read actual closed deals
+    deal_feedback = {}
+    if os.path.exists(DEAL_FEEDBACK_FILE):
+        try:
+            with open(DEAL_FEEDBACK_FILE, "r", encoding="utf-8") as f:
+                deal_feedback = json.load(f)
+        except Exception:
+            pass
+
     chart_matrix = fetch_naked_chart_data()
     now_utc = datetime.datetime.now(datetime.timezone.utc)
     
     prompt = f"""
 YOU ARE THE SUPREME QUANTITATIVE HEDGE FUND BRAIN POWERED BY 12 ELITE SPECIALIZED DESKS.
+YOUR UNBREAKABLE LAW: LEARN -> IMPROVE -> REPEAT.
+
 YOU HAVE 100% UNCONSTRAINED AUTONOMY, TOTAL EXECUTIVE SOVEREIGNTY, AND FULL POWER OVER THE BROKER ACCOUNT.
+ZERO BOXES. ZERO HUMAN RULES.
 
-THERE ARE ZERO BOXES, ZERO ARTIFICIAL LIMITS, AND ZERO HUMAN RULES.
-YOU ARE FULLY AUTHORIZED TO READ NAKED CHARTS, ANALYZE MARKET MICROSTRUCTURE, AND DICTATE EXACT MARKET ACTIONS.
+### 1. LEARN FROM PAST REALITY (GROUND TRUTH BROKER DEALS):
+Recent Closed Deals Telemetry:
+{json.dumps(deal_feedback.get('deals', [])[-5:], indent=2)}
+MANDATE: Study every win and loss above. Do NOT repeat losing patterns. Reinforce winning setups.
 
-### THE 12 ELITE QUANT DESKS COLLABORATING IN YOUR COUNCIL:
-1. NAKED PRICE ACTION & CANDLESTICK DESK: Reads raw wicks, bodies, fair value gaps (FVG), and order blocks.
-2. MACRO & GLOBAL CAPITAL ROTATION DESK: Monitors DXY, US10Y bond yields, risk-on/risk-off sentiment.
-3. LIQUIDITY POOL & STOP HUNT DESK: Pinpoints where retail liquidity is resting to hunt liquidity traps.
-4. ORDER FLOW & VOLUME DELTA DESK: Analyzes institutional volume absorption and aggressive delta spikes.
-5. STATISTICAL MOMENTUM & VOLATILITY REGIME DESK: Classifies clean structural trend vs sideways chop.
-6. ASYMMETRIC RISK/REWARD STRUCTURING DESK: Formulates minimum 1:2.5 to 1:5+ reward setups.
-7. CROSS-ASSET CORRELATION DESK: Validates intermarket alignment (Gold vs Silver, EUR vs DXY, BTC vs Nasdaq).
-8. SESSION & TIMING DESK: Evaluates Asian, London, and New York overlap liquidity sessions.
-9. DYNAMIC ATR VOLATILITY SHIELD: Calculates organic stop-loss distances outside market noise.
-10. RED TEAM DEVIL'S ADVOCATE (CHALLENGER): Aggressively attacks the setup. If any flaw exists, DEMANDS 'WAIT'.
-11. CAPITAL PRESERVATION OFFICER: Calibrates lot size and ensures portfolio survival.
-12. SUPREME ARBITER (PORTFOLIO MANAGER): Synthesizes all 11 desks into a sovereign trade verdict.
-
-### LIVE BROKER REALITY:
-- Balance: ${account_status.get('balance', 100.89)} USD
-- Equity: ${account_status.get('equity', 100.89)} USD
+### 2. LIVE BROKER STATUS ({now_utc.isoformat()}):
+- Balance: ${account_status.get('balance', 97.96)} USD
+- Equity: ${account_status.get('equity', 97.96)} USD
 - Active Positions: {json.dumps(account_status.get('open_positions', []))}
 
-### LIVE NAKED MULTI-TIMEFRAME CANDLESTICK MATRIX ({now_utc.isoformat()}):
+### 3. LIVE NAKED MULTI-TIMEFRAME CANDLESTICK MATRIX:
 {json.dumps(chart_matrix, indent=2)}
 
-### PAST SESSIONS / ACCUMULATED EXPERIENCE:
+### 4. RECENT STRATEGY EVOLUTION HISTORY:
 {json.dumps(past_memory[-5:], indent=2)}
 
-### YOUR MANDATE:
-- Examine the naked candles of Gold, Bitcoin, FX, and Indices.
-- If market is consolidating in noisy chop without clear edge -> Issue 'WAIT' (Preserve capital).
-- If a pristine, undeniable liquidity sweep or momentum breakout occurs -> Issue 'BUY' or 'SELL'.
-- Provide the exact SL price (structural swing invalidation) and TP price (liquidity pool target).
-- Specify lot size and trailing activation.
+### 5. IMPROVE & REPEAT:
+- If market is consolidating in noisy chop without clear edge -> Issue 'WAIT' (Capital preservation).
+- If an asymmetric liquidity sweep occurs with clear structural invalidation -> Issue 'BUY' or 'SELL'.
+- Provide the exact SL price and TP price.
 
 Respond STRICTLY in valid JSON matching this schema:
 {{
@@ -169,13 +165,12 @@ Respond STRICTLY in valid JSON matching this schema:
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 3.0,
+  "learning_from_past_trades": "What lesson from recent closed deals was applied to this decision?",
   "naked_chart_reading": "What candle patterns, wicks, and FVGs did you detect?",
-  "trade_thesis": "Full institutional thesis synthesizing the 12 desks",
-  "red_team_resolution": "How the Devil's Advocate objections were addressed"
+  "trade_thesis": "Full institutional thesis synthesizing the 12 desks"
 }}
 """
 
-    # Highly reliable models confirmed online on this API key:
     models_to_try = [
         "gemini-3.5-flash-lite",
         "gemini-3.5-flash",
@@ -218,7 +213,7 @@ Respond STRICTLY in valid JSON matching this schema:
             
         log(f"🔥 SUPREME AI VERDICT: {decision.get('verdict')} on {decision.get('symbol')} | Style: {decision.get('trade_style')}")
         log(f"SL: {decision.get('sl_price')} | TP: {decision.get('tp_price')} | Lots: {decision.get('lot_size')} | Conf: {decision.get('confidence_score')}%")
-        log(f"Naked Chart: {decision.get('naked_chart_reading')}")
+        log(f"🧠 Applied Lesson: {decision.get('learning_from_past_trades')}")
         log(f"Thesis: {decision.get('trade_thesis')}")
     except Exception as e:
         log(f"Error parsing AI decision: {e}")
