@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T17:54:28.460829+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 3550.0,
+  "tp_price": 3595.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Gold (XAUUSD) has experienced a sharp corrective wave down from highs near 3641 to test liquidity zones around 3557. Current price action shows stabilization and consolidation in the 3560-3575 range with declining volume on 15m candles, reflecting exhaustion of the sell-side sweep. DXY is flat around 103.80, and US10Y holds steady near 4.91%. We already hold two active XAUUSD positions and one EURUSD position, and equity is tight ($84.79).",
+  "trade_thesis": "Given the open positions, drawdown on current XAUUSD longs, and lack of strong directional momentum in the immediate 15m structure, capital preservation and patience are mandated. No new aggressive exposure until price confirms a definitive break and retest of the 3575 structure or sweeps the 3555 liquidity pool cleanly."
+}
