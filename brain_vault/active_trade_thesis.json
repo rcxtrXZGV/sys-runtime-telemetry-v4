@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T08:49:43.813751+00:00",
+  "timestamp": "2026-11-24T08:51:11.940504+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 0,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "We currently hold an active long position on EURUSD (Ticket: 2116186149) with a structural SL at 1.08795 and TP at 1.09395, currently showing a modest profit. With capital hovering near $98, maintaining open margin and waiting for clean London/NY session displacement before deploying additional risk is the optimal quantitative path.",
-  "learning_applied": "Applied lessons from previous XAUUSD failure where tight stop-loss placement without sufficient structural cushion led to premature trapping; holding existing disciplined parameters on EURUSD and avoiding over-leveraging."
+  "intraday_rationale": "Current open position on EURUSD is progressing positively, but broader asset classes show mixed signals and consolidation patterns without clean volume displacement to justify opening new risk under strict risk-reward criteria.",
+  "learning_applied": "Applied lessons from previous XAUUSD stop-loss sweep by exercising extreme patience, avoiding over-leveraging while current equity is constrained, and waiting for undeniable structural confirmation."
 }
