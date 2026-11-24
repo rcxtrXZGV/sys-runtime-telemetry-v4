@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T17:00:53.070176+00:00",
+  "timestamp": "2026-11-24T17:16:49.446807+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "lot_size": 0.01,
+  "sl_price": 3550.0,
+  "tp_price": 3600.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD swept sell-side liquidity at 3557.40 after a sharp drop from 3630+. DXY is holding near 103.87. We currently hold two active XAUUSD long positions (SL 3555.0, TP 3595/3615). Account equity is $83.61 USD; adding further exposure prior to structure confirmation would exceed risk thresholds.",
-  "trade_thesis": "Capital preservation doctrine mandates WAIT. Existing XAUUSD positions are active near the 3557-3568 demand region. Awaiting full recovery confirmation above 3575 or SL resolution before taking new trades."
+  "gold_liquidity_analysis": "XAUUSD has experienced a sharp multi-candle selloff from intraday highs near 3651 down to the 3557-3567 region, currently stabilizing into low-volume consolidation candles. Recent historical stops on short trades demonstrate high volatility and quick reversals near these local liquidity pools.",
+  "trade_thesis": "Current account balance is near $92.30 with existing open positions in XAUUSD and EURUSD. Following recent stop-outs during aggressive downward impulses, market structure is currently exhibiting consolidation after a major flush. Adhering to strict risk management, we mandate a WAIT stance to let price form a clean institutional order block or sweep before deployment."
 }
