@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:35:44.029512+00:00",
+  "timestamp": "2026-11-24T13:37:17.718457+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep to 3651.40 followed by immediate bearish displacement with massive 15m volume expansion (8,896 contracts). Current price of 3627.0 rests in mid-range consolidation while DXY stays heavy at 103.91.",
-  "trade_thesis": "The engine currently holds 3 active short positions on Gold (tickets 2117318286, 2117339435, 2117428068) yielding +$18.12 total unrealized profit towards the 3612-3616 TP zone. Margin utilization across 4 open trades on a $103.56 capital base is optimal. Mandating WAIT to let the current profitable short campaign play out without over-leveraging."
+  "gold_liquidity_analysis": "XAUUSD completed a buy-side liquidity sweep to 3651.4 followed by a high-volume institutional rejection back to 3624.0. Price is currently pulling back slightly to 3627.5 within the displacement leg while DXY consolidates near 103.91.",
+  "trade_thesis": "The fund already maintains 3 active XAUUSD short positions in positive equity alongside 1 EURUSD long position. Capital preservation rules on a $103.56 account dictate holding existing positions toward their 3612-3616 TP targets rather than compounding leverage mid-structure."
 }
