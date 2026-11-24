@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:54:10.344431+00:00",
+  "timestamp": "2026-11-24T08:55:44.635046+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently in an active open position and showing tight, low-volatility range movement across recent 15-minute candles without strong structural displacement. Await a clear session breakout or liquidity sweep before deploying additional capital.",
-  "learning_applied": "Past feedback on XAUUSD highlighted the risk of tight structural stop placements during chop; maintaining strict discipline to only enter on verified momentum rather than forcing trades."
+  "intraday_rationale": "Current price action across primary instruments is exhibiting a tight consolidation range on the 15-minute charts ahead of major volume expansion catalysts. EURUSD is currently holding an open position in profit, but no new structural sweep or clean momentum displacement has formed to justify doubling down on risk.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid entering trades without clear structural swing protection. We refuse to chase choppy mid-range price action and maintain strict risk discipline until a high-probability breakout occurs."
 }
