@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:39:05.821007+00:00",
+  "timestamp": "2026-11-24T13:40:53.963566+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a volatile retracement from intraday highs near 3651 down to the 3614 region, currently stabilizing around 3624. Multiple open positions are already actively floating in profit, and the market is showing short-term consolidation after massive volume spikes.",
-  "trade_thesis": "Given existing open exposure in XAUUSD and EURUSD accumulating healthy profits, and the current 15m candles exhibiting localized chop around 3624 with decreasing volume, the optimal institutional posture is to wait for a clean liquidity sweep of either the 3614 intraday low or a retest of 3640 resistance before deploying additional risk capital."
+  "gold_liquidity_analysis": "XAUUSD completed an institutional liquidity sweep above 3650.0 reaching 3651.4 before sharp downside expansion driven by institutional order flow (volumes exceeding 8,800 contracts). Price is currently digesting near 3628.7 after printing a low of 3623.3. DXY weakened to 103.895 while US10Y fell to 4.892%, providing short-term consolidation for Gold.",
+  "trade_thesis": "The quantitative brain currently holds 3 active XAUUSD short positions totaling +$25.80 in floating profit, along with 1 EURUSD long position. Maximum margin allocation for a $103.56 balance has been reached. Mandating WAIT to preserve equity, avoid over-leveraging, and allow existing high-probability shorts to target the 3612.0 - 3616.0 key liquidity pool."
 }
