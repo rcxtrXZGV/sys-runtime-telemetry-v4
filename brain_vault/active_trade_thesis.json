@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T06:44:36.605054+00:00",
+  "timestamp": "2026-11-24T06:46:05.648226+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 20,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently range-bound in tight 15-minute consolidation with negligible volume as we await the main London session liquidity sweep. Existing position is being managed.",
-  "learning_applied": "Avoiding impulsive trades during quiet hours based on prior XAUUSD loss feedback, ensuring structural stops and high RR setups are respected."
+  "intraday_rationale": "All major pairs and indices show compressed ranges with zero volume generation during the current early session hour. EURUSD is currently holding an open position with tight consolidation, and no structural breakout or clear momentum displacement is present across the board.",
+  "learning_applied": "Avoiding premature entries during low-volume accumulation phases, honoring strict stop-loss discipline by staying out until clean structural expansion occurs."
 }
