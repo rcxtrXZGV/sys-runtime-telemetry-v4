@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:34:07.938025+00:00",
+  "timestamp": "2026-11-24T08:35:37.056294+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding an open position making steady progress, while other major intraday assets lack high-conviction volume expansion or clear structural displacement outside tight ranges. Remaining disciplined and avoiding over-leveraging given account equity constraints.",
-  "learning_applied": "Past feedback on XAUUSD highlighted the critical necessity of avoiding tight or micro-noise structural entries without sufficient breakout volume confirmation. Preserving capital while monitoring active EURUSD position."
+  "intraday_rationale": "EURUSD is currently in a minor upward grind holding an open profitable position, but recent 15m candles show shallow consolidation without high-volume directional displacement. Preserving margin and waiting for a cleaner London/NY overlap breakout.",
+  "learning_applied": "Avoiding premature entries or chasing minor ticks. Past feedback on XAUUSD stop-loss sweep emphasizes keeping exposure strictly aligned with high-conviction structural breaks."
 }
