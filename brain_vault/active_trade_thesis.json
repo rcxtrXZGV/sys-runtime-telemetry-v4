@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T13:16:32.667945+00:00",
+  "timestamp": "2026-11-24T13:18:37.574187+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 85,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep up to 3651.40 before experiencing sharp institutional displacement lower into 3633.90. Two existing XAUUSD short positions (tickets 2117318286 and 2117339435) are actively running in profit toward the 3615.0-3616.0 sell-side liquidity pool.",
-  "trade_thesis": "Account equity stands at $109.63 with 3 open profitable trades active. Adding additional leverage mid-move at 3633.90 offers suboptimal risk-reward compared to entry prices near 3640+. Mandating WAIT to preserve margin and allow active short positions to reach target order blocks near 3615.0."
+  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep to 3651.40 followed by an aggressive institutional rejection candle back down to 3628.60 on elevated volume (4,666 contracts). The current order flow confirms strong supply overhead, aligning with our existing SHORT exposure.",
+  "trade_thesis": "The portfolio already holds optimal short exposure on XAUUSD (2 positions open targeting 3615.0-3616.0) and 1 long EURUSD position. Maintaining discipline and allowing active high-probability trades to run toward target liquidity pools without over-leveraging the account."
 }
