@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-24T16:54:26.598205+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD experienced a sharp sell-off from the intraday high of 3651.4 down to a low of 3557.4, forming a sweep of major liquidity pools before stabilizing near 3570.3. Currently consolidating in a narrow range after high-volume liquidation waves.",
+  "trade_thesis": "Given the active XAUUSD short position holding at 3555.0 SL / 3595.0 TP and recent market volatility, the current price action displays tight consolidation on low volume. With balance under $100, risk controls dictate waiting for a confirmed retest and rejection of session supply zones before deploying additional capital."
+}
