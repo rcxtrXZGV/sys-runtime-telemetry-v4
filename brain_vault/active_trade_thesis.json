@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:21:12.009094+00:00",
+  "timestamp": "2026-11-24T09:23:00.714075+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD currently holds an open profitable position (ticket 2116186149) near recent highs, while major indices and forex pairs show mixed 15m volume compression and lack clear impulsive displacement necessary for immediate high-probability entry.",
-  "learning_applied": "Past stop-loss hits on XAUUSD taught us to avoid entering low-volume consolidation ranges and to ensure structural placement before deploying risk."
+  "intraday_rationale": "EURUSD is currently up with an open profitable position, but price action across major pairs shows gentle meandering without high-conviction volume expansion or structural sweep suitable for an immediate new trade entry.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid tight stops in volatile noise; waiting for a clean structural break and proper RR setup protects our current equity of $98.77."
 }
