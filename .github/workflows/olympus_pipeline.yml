@@ -82,6 +82,7 @@ jobs:
         run: |
           git config --global user.email "olympus-ai@quant.fund"
           git config --global user.name "Olympus-AI"
+          git pull --rebase origin main || true
           git add brain_vault/
           git diff --staged --quiet || (git commit -m "olympus: sovereign telemetry & memory sync [skip ci]" && git push origin main)
 
