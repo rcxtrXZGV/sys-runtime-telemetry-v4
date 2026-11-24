@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:51:11.940504+00:00",
+  "timestamp": "2026-11-24T08:52:44.253871+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is progressing positively, but broader asset classes show mixed signals and consolidation patterns without clean volume displacement to justify opening new risk under strict risk-reward criteria.",
-  "learning_applied": "Applied lessons from previous XAUUSD stop-loss sweep by exercising extreme patience, avoiding over-leveraging while current equity is constrained, and waiting for undeniable structural confirmation."
+  "intraday_rationale": "EURUSD is currently in a narrow tight consolidation range between 1.0910 and 1.0920 during pre-London/early session hours with minimal momentum and zero volume stats reported. No clear displacement breakout yet to justify new risk deployment alongside the existing open position.",
+  "learning_applied": "Past XAUUSD stop-loss sweep failure taught us to avoid entering structural ranges without a clean volume surge and definitive break of session extremes."
 }
