@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:10:49.808318+00:00",
+  "timestamp": "2026-11-24T13:12:43.937993+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD completed a buy-side liquidity sweep to 3651.40 before aggressively rejecting down to 3638.20. Active short position (ticket 2117318286) is currently running in profit (+1.91) targeting the 3616.00 session liquidity pool. DXY consolidation at 103.891 creates brief intraday stabilization.",
-  "trade_thesis": "Both active positions (XAUUSD short and EURUSD long) are currently floating in positive yield (+4.05 total). Account equity of $107.69 is appropriately leveraged across these active trades. Mandating WAIT to prevent over-exposure and allow current order flow momentum to deliver into existing take-profit targets."
+  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep up to intraday high 3651.40, precisely testing upper supply before sharply rejecting down to 3634.10. Existing stop losses at 3652.50 remained intact. DXY softening toward 103.88 creates brief intraday consolidation.",
+  "trade_thesis": "The fund currently maintains two open short positions in XAUUSD (tickets 2117318286 and 2117339435) with take-profit targets set at 3616.0 and 3615.0. To preserve equity ($94.71) and maintain strict risk parameters, additional position expansion is paused while waiting for current short order flow to expand downward following the 3651 liquidity sweep rejection."
 }
