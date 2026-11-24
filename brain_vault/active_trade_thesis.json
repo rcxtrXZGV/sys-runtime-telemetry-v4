@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:21:50.226422+00:00",
+  "timestamp": "2026-11-24T13:23:28.781770+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold recently spiked to an intraday high of 3651.4 before aggressively retracing back down to 3636.5, sweeping liquidity above the recent highs and leaving heavy selling wicks on the 15-minute timeframe. Meanwhile, DXY is weakening towards 103.86, creating conflicting short-term signals.",
-  "trade_thesis": "Currently holding two XAUUSD short positions tracking towards lower targets. With the recent sweep of intraday liquidity at 3651 and subsequent sharp rejection, price is stabilizing near the 3636 midpoint. Waiting for clear consolidation or a retest of structural resistance before deploying fresh capital to avoid choppy range noise."
+  "gold_liquidity_analysis": "XAUUSD executed a buy-side liquidity sweep to 3651.40 followed by sharp institutional distribution down to 3624.30 on elevated volume (8,520 contracts). DXY is weakening towards 103.866 and US10Y yield dropped to 4.918%, signaling potential support around the 3615-3620 liquidity pool.",
+  "trade_thesis": "The portfolio currently holds two active XAUUSD short positions targeting 3615.0\u20133616.0 (both in profit) alongside a profitable EURUSD long position. Initiating a third XAUUSD short at 3629.40 mid-impulse exposes the account ($109.58 equity) to drawdown risk from a potential retracement into the 15m Fair Value Gap (3635\u20133641). Holding existing positions to target and maintaining capital discipline mandates a WAIT status."
 }
