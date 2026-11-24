@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T09:05:20.142504+00:00",
+  "timestamp": "2026-11-24T09:06:51.462225+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 0,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Open position on EURUSD is already running nicely in profit. Other markets like XAUUSD and BTCUSD are currently experiencing choppy retracements without a clean structural confirmation or high-volume displacement at session boundaries. Maintaining capital preservation.",
-  "learning_applied": "Avoiding premature entries after a prior stopped-out trade, adhering strictly to structural swing highs/lows and confirmed momentum."
+  "intraday_rationale": "Account equity is currently $98.49 with EURUSD position 2116186149 already active and in profit (+0.57). No new high-conviction momentum displacement meets the 1:2.5 to 1:4 risk-reward threshold across major pairs at this exact moment, hence preserving capital with WAIT.",
+  "learning_applied": "Past SL failure on XAUUSD taught us to avoid tight noise-level stops and wait for structural confirmation before deploying fresh capital."
 }
