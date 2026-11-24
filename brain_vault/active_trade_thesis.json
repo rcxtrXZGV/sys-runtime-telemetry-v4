@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:21:57.020819+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 0,
+  "timestamp": "2026-11-24T07:23:26.151928+00:00",
+  "verdict": "BUY",
+  "symbol": "USDJPY",
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 158.88,
+  "tp_price": 160.18,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account equity stands at $97.3 with an open EURUSD position currently drawing a minor floating loss. Markets across major indices and FX pairs are showing mixed session momentum without clean volume-backed displacement to warrant opening new asymmetric risk right now.",
-  "learning_applied": "Past stop-loss feedback emphasizes placing structural stops outside of immediate market noise. Until a clean breakout or trend continuation setup materializes on the 15m/1h timeframe, preserving capital takes absolute priority."
+  "intraday_rationale": "USDJPY displays sustained bullish intraday momentum aligned with DXY expanding higher. After sweeping up to 159.36, price is offering a shallow retracement into 159.27 support, offering a high-probability continuation run toward key psychological resistance at 160.18.",
+  "learning_applied": "Placed structural SL strictly below the intraday low (158.891) to insulate against micro-noise wicks, respecting risk parameters and preserving account equity."
 }
