@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T18:11:33.045261+00:00",
+  "timestamp": "2026-11-24T18:15:17.485967+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3550.0,
+  "tp_price": 3595.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD swept downside liquidity to 3557.3999 following a strong intraday sell-off from 3631.3. Price is now compressing in a narrow tight range between 3561.0 and 3574.6 with dropping volume (104-1826 range), indicating low volatility chop. DXY is stable at 103.77. Two XAUUSD long positions are already active.",
-  "trade_thesis": "Capital preservation mandate activated. Gold is consolidating in noisy sideways chop post-liquidity sweep. With three live positions open and broker equity currently at $83.54 USD, opening additional leverage into low-volume compression is suboptimal. Waiting for a confirmed breakout or Fair Value Gap retest before deploying next order."
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating in a tight range between 3560 and 3574 following a sharp intraday selloff from 3631. Volume has dried up significantly on recent 15m candles, indicating a temporary equilibrium after aggressive liquidations. DXY is stable near 103.76.",
+  "trade_thesis": "Given recent closed trades showing vulnerability to tight stop-losses during high volatility sweeps and current low-volume sideways chop on XAUUSD, market conditions mandate a WAIT posture to let liquidity expand before deploying fresh capital."
 }
