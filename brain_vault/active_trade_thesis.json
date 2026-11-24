@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T07:30:27.543509+00:00",
+  "timestamp": "2026-11-24T07:31:51.127092+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with proper structural stop-loss. Other major indices and currency pairs are currently in tight morning/pre-London session ranges without sufficient momentum or displacement to justify opening a new speculative position.",
-  "learning_applied": "Avoiding over-leveraging and respecting existing open position risk while preserving capital until clear session volume triggers structural breakouts."
+  "intraday_rationale": "Current open position on EURUSD is already active with proper structural SL. In the broader matrix, 15m candles show tight consolidation and low volume across major pairs during the pre-London transition. No clean momentum displacement detected warranting additional risk at this moment.",
+  "learning_applied": "Applied lessons from previous XAUUSD tight stop-loss hunt by refusing to force low-quality setups in choppy liquidity zones, prioritizing capital preservation for the core EURUSD position."
 }
