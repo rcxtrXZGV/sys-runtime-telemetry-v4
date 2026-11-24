@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:31:29.954428+00:00",
-  "verdict": "BUY",
-  "symbol": "GBPUSD",
-  "confidence_score": 88,
+  "timestamp": "2026-11-24T09:34:24.733969+00:00",
+  "verdict": "WAIT",
+  "symbol": "EURUSD",
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.3038,
-  "tp_price": 1.3122,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "GBPUSD is executing a clean London session momentum expansion, breaking out higher as the US Dollar Index (DXY) drops below 104.26 and US10Y yields decline. 15-minute candle structure displays clear higher highs and higher lows.",
-  "learning_applied": "Refusing tight noise-level stop-losses on volatile assets like Gold; placing a structural stop below the session breakout base (1.3038) to capture a solid 1:3+ Risk-to-Reward intraday run."
+  "intraday_rationale": "EURUSD is currently holding an open profitable position (ticket 2116186149) with proper structural SL and TP already in place. Across other major assets, price action shows tight ranges or mixed momentum without a clean, high-volume displacement matching our strict 1:2.5 to 1:4 risk-reward mandate. Conserving capital and waiting for optimal London/NY session overlap expansion.",
+  "learning_applied": "Avoiding premature entries and micro-noise scalping based on previous gold stop-out feedback, ensuring strict structural placement before capital allocation."
 }
