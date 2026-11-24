@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T20:30:10.749269+00:00",
+  "timestamp": "2026-11-24T20:37:02.650561+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 0.0,
-  "gold_liquidity_analysis": "XAUUSD swept recent intraday lows down to 3551.2 following a strong distribution from the 3574 level. DXY remains firm at 103.80 while US10Y yields hover at 4.908%, maintaining downside pressure on Gold. An existing long position (SL 3550.0) is currently active. 15-minute volume has dropped significantly (V=184) as session liquidity dries up.",
-  "trade_thesis": "With equity at $62.97 and an active XAUUSD long trade currently managing drawdowns near key support (3550.0), quantitative risk controls mandate WAIT. Adding exposure in a low-volume, late-session consolidation zone increases account drawdowns unnecessarily. Capital preservation requires waiting for key level resolution or a high-displacement reversal pattern."
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD extended its aggressive bearish expansion down to the intraday low of 3551.2. The latest 15m candle shows zero volume (V=0) at 20:37 UTC, signaling severe late-session liquidity depletion and potential spread widening. DXY remains muted around 103.80.",
+  "trade_thesis": "Capital preservation protocol engaged. Late NY session volume exhaustion near intraday lows lacks fresh institutional displacement. Account equity ($61.48) requires strict risk management; waiting for Asian/London session order block setup and liquidity sweep."
 }
