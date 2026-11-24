@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T20:24:46.413351+00:00",
+  "timestamp": "2026-11-24T20:26:49.044987+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently completed a liquidity sweep down to 3551.20 and is stabilizing around 3556.60. An active long order is already open at 3566.78 with SL set at 3550.00. DXY trades flat near 103.79 while US10Y yields hold steady at 4.908%.",
-  "trade_thesis": "Strict risk management protocols prohibit compounding exposure on a $66.16 equity account while two positions (EURUSD & XAUUSD) remain active. Market structure is currently retesting demand following the 3551 liquidity grab. Stand by to allow existing open trades to reach resolution."
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3555.7 level after pressing intraday lows near 3551.2. The recent 15m candles show extremely low volume and tight ranges, indicating a temporary cessation of aggressive directional flow following earlier selloffs. DXY is stable near 103.797 and US10Y is flat around 4.908.",
+  "trade_thesis": "Given the active short position in XAUUSD currently holding at an unrealized loss, and the current low-volume consolidation chop, forcing a new trade right now violates risk parameters. Mandating WAIT until a clear liquidity sweep of either the intraday low (3551.2) or a test of resistance provides an asymmetric entry."
 }
