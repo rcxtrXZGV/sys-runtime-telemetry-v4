@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
-OLYMPUS SUPREME AI BRAIN - INTRADAY INSTITUTIONAL SNIPER
-Mode: STRICT INTRADAY TRADING (No 1-Minute Micro Noise, No Multi-Day Swings)
-Horizon: 15-Minute & 1-Hour Intraday Sweeps, London & New York Session Momentum.
-Rules:
-1. Target: Clean Intraday Targets ($10 to $25 profit runs on Gold, Forex, Crypto).
-2. Noise Shield: Stop-Loss placed strictly outside intraday session wicks.
-3. Learn -> Improve -> Repeat active across every single session.
+OLYMPUS SUPREME AI BRAIN - GOLD & MULTI-ASSET INTRADAY SNIPER
+PRIMARY HUNTING GROUND: Gold (XAUUSD) - The King of Volatility & Asymmetric Swings.
+Secondary: Bitcoin (BTCUSD), Nasdaq (USTEC), EURUSD, GBPUSD.
+MANDATE: Gold ko top priority par continuously scan aur hunt karega without needing any manual reminder.
 """
 
 import os
@@ -38,20 +35,17 @@ def log(msg):
 
 def fetch_intraday_chart_data():
     """
-    Pulls 15-Minute (M15) and 1-Hour (H1) intraday structure.
-    Eliminates 1-minute noise completely.
+    Pulls real-time 15m/1h candle geometry, placing GOLD (XAUUSD) at the top of the matrix.
     """
     tickers = {
-        "XAUUSD": "GC=F",
-        "BTCUSD": "BTC-USD",
-        "EURUSD": "EURUSD=X",
+        "XAUUSD": "GC=F",       # Priority #1: Gold
+        "BTCUSD": "BTC-USD",    # Priority #2: Bitcoin
+        "USTEC": "NQ=F",        # Priority #3: Nasdaq
+        "EURUSD": "EURUSD=X",   # Priority #4: Forex
         "GBPUSD": "GBPUSD=X",
         "USDJPY": "USDJPY=X",
-        "USTEC": "NQ=F",
-        "US30": "YM=F",
-        "USOIL": "CL=F",
-        "DXY": "DX-Y.NYB",
-        "US10Y": "^TNX"
+        "DXY": "DX-Y.NYB",      # Dollar Index Pressure
+        "US10Y": "^TNX"         # 10Y Yields Pressure
     }
     
     chart_matrix = {}
@@ -93,7 +87,7 @@ def fetch_intraday_chart_data():
 
 def convene_supreme_council():
     log("==================================================================")
-    log("OLYMPUS INTRADAY SNIPER BRAIN - 15M/1H INSTITUTIONAL EXECUTION")
+    log("OLYMPUS GOLD (XAUUSD) & MULTI-ASSET AUTONOMOUS SNIPER COUNCIL")
     log("==================================================================")
     
     api_key = os.getenv("GEMINI_API_KEY")
@@ -103,7 +97,7 @@ def convene_supreme_council():
         
     client = genai.Client(api_key=api_key)
     
-    account_status = {"balance": 97.96, "equity": 97.96, "open_positions": []}
+    account_status = {"balance": 100.85, "equity": 102.31, "open_positions": []}
     if os.path.exists(BROKER_LIVE_FILE):
         try:
             with open(BROKER_LIVE_FILE, "r", encoding="utf-8") as f:
@@ -123,45 +117,43 @@ def convene_supreme_council():
     now_utc = datetime.datetime.now(datetime.timezone.utc)
     
     prompt = f"""
-YOU ARE THE OLYMPUS INTRADAY QUANTITATIVE HEDGE FUND BRAIN.
-YOUR EXCLUSIVE MANDATE: STRICT INTRADAY TRADING (NO MICRO-NOISE SCALPING, NO MULTI-DAY SWINGS).
+YOU ARE THE OLYMPUS SOVEREIGN QUANTITATIVE HEDGE FUND BRAIN.
 
-CORE PHILOSOPHY:
-- Timeframe Horizon: 15-Minute & 1-Hour Intraday Sweeps.
-- Target: Ride clean intraday momentum runs (London session open, New York overlap) targeting $10 to $25 profit moves.
-- Stop-Loss: MUST be structural, placed behind key session swing highs/lows (outside noise).
-- Risk-Reward: Target minimum 1:2.5 to 1:4 RR.
+### CORE OPERATING DOCTRINE:
+1. PRIMARY ASSET FOCUS: GOLD (XAUUSD).
+   - Gold is the primary alpha generator ($10 to $25 intraday price swings).
+   - Prioritize Gold (XAUUSD) opportunities first in every cycle.
+   - Secondary hunting grounds: Bitcoin (BTCUSD), Nasdaq (USTEC), EURUSD, GBPUSD.
+2. ABSOLUTE AUTONOMY - NO USER PROMPTING NEEDED:
+   - You NEVER require human input or reminders.
+   - You autonomously detect Gold liquidity sweeps, Fair Value Gaps, and session order blocks.
+   - When an asymmetric intraday edge exists on Gold (or secondary assets) -> Execute BUY or SELL immediately.
+   - If market is in noisy sideways chop -> Mandate WAIT.
 
 LIVE BROKER STATUS:
-- Balance: ${account_status.get('balance', 97.96)} USD
-- Equity: ${account_status.get('equity', 97.96)} USD
+- Balance: ${account_status.get('balance', 100.85)} USD
+- Equity: ${account_status.get('equity', 102.31)} USD
 - Open Positions: {json.dumps(account_status.get('open_positions', []))}
 
 RECENT CLOSED DEALS FEEDBACK (LEARN -> IMPROVE):
 {json.dumps(deal_feedback.get('deals', [])[-5:], indent=2)}
 
-LIVE 15-MINUTE INTRADAY CANDLESTICK MATRIX ({now_utc.isoformat()}):
+LIVE INTRADAY CANDLESTICK MATRIX (GOLD & GLOBAL ASSETS) ({now_utc.isoformat()}):
 {json.dumps(chart_matrix, indent=2)}
-
-DIRECTIONS:
-1. Identify the single best INTRADAY trade setup across Gold, Bitcoin, EUR, GBP, JPY, or Nasdaq.
-2. If the intraday trend is confirmed with volume displacement -> Output 'BUY' or 'SELL'.
-3. If all assets are in tight lunchtime consolidation -> Output 'WAIT'.
-4. Provide exact SL and TP prices for intraday execution.
 
 Respond STRICTLY in valid JSON matching this schema:
 {{
   "timestamp": "{now_utc.isoformat()}",
   "verdict": "BUY" or "SELL" or "WAIT",
-  "symbol": "XAUUSD" or "BTCUSD" or "EURUSD" or "GBPUSD" or "USDJPY" or "USTEC",
+  "symbol": "XAUUSD" or "BTCUSD" or "USTEC" or "EURUSD" or "GBPUSD",
   "confidence_score": 0 to 100,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Why this 15m/1h intraday setup offers asymmetric reward",
-  "learning_applied": "How past feedback protected capital for this intraday trade"
+  "gold_liquidity_analysis": "Detailed reading of XAUUSD order flow, wicks, and DXY correlation",
+  "trade_thesis": "Full institutional thesis for this trade"
 }}
 """
 
@@ -174,7 +166,7 @@ Respond STRICTLY in valid JSON matching this schema:
     res = None
     for m in models_to_try:
         try:
-            log(f"Intraday Council convening via model: {m}...")
+            log(f"Gold Sniper Council convening via model: {m}...")
             res = client.models.generate_content(
                 model=m,
                 contents=prompt,
@@ -184,7 +176,7 @@ Respond STRICTLY in valid JSON matching this schema:
                 )
             )
             if res and res.text:
-                log(f"Intraday deliberation successful via {m}!")
+                log(f"Council deliberation successful via {m}!")
                 break
         except Exception as e:
             log(f"Model {m} error: {e}. Trying next...")
@@ -200,11 +192,12 @@ Respond STRICTLY in valid JSON matching this schema:
         with open(DECISION_FILE, "w", encoding="utf-8") as f:
             json.dump(decision, f, indent=2)
             
-        log(f"🔥 INTRADAY VERDICT: {decision.get('verdict')} on {decision.get('symbol')} | Style: INTRADAY")
+        log(f"🔥 SOVEREIGN VERDICT: {decision.get('verdict')} on {decision.get('symbol')} | Style: INTRADAY")
         log(f"SL: {decision.get('sl_price')} | TP: {decision.get('tp_price')} | Lots: {decision.get('lot_size')} | Conf: {decision.get('confidence_score')}%")
-        log(f"Intraday Rationale: {decision.get('intraday_rationale')}")
+        log(f"Gold Reading: {decision.get('gold_liquidity_analysis')}")
+        log(f"Thesis: {decision.get('trade_thesis')}")
     except Exception as e:
-        log(f"Error parsing Intraday decision: {e}")
+        log(f"Error parsing decision: {e}")
 
 if __name__ == "__main__":
     convene_supreme_council()
