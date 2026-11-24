@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:17:57.649790+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-24T10:19:36.838847+00:00",
+  "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 85,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.0915,
-  "tp_price": 1.0965,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD has established a clean intraday bullish impulse breaking above 1.0924 with structural support confirmed around 1.0922-1.0918. DXY is showing clear weakness breaking down to 104.16, providing strong macro tailwinds for further upside continuation targeting session highs.",
-  "learning_applied": "Past SL feedback on XAUUSD highlighted the importance of placing stops strictly outside immediate market noise and swing boundaries; placing the stop-loss below the key intraday swing low at 1.0915 protects capital against retracement while maintaining a 1:2.5+ risk-reward profile."
+  "intraday_rationale": "EURUSD currently holds an active open position in profit (+2.41), while the current 15m price candles show tight consolidation near session highs around 1.0936 following the strong impulse move. No clean secondary momentum breakout or structural pullback offering the required 1:2.5 to 1:4 risk-reward ratio is present at this moment.",
+  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid entering in choppy/consolidating regions without structural buffer zones, ensuring we only deploy capital on high-probability momentum expansions."
 }
