@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:12:15.729864+00:00",
+  "timestamp": "2026-11-24T07:13:57.257586+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 30,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Currently holding an active EURUSD short position (ticket 2116186149) near session lows. While DXY is pushing upward, the 15-minute candles show narrowing ranges and low volume across major pairs ahead of the primary London liquidity injection. No new asymmetric setups qualify for an immediate secondary allocation.",
-  "learning_applied": "Applied lessons from prior XAUUSD premature tight-stop failure by avoiding over-leveraging into flat consolidation zones and respecting structural session boundaries."
+  "intraday_rationale": "Current open position on EURUSD is already active with structural risk defined. Across major FX pairs and indices, price action exhibits tight ranges and low volume chop, lacking the clean momentum displacement required for a high probability 1:2.5+ RR intraday sweep.",
+  "learning_applied": "Avoiding premature entries and micro-noise scalping during consolidation zones, respecting structural stop-loss placements based on prior negative feedback."
 }
