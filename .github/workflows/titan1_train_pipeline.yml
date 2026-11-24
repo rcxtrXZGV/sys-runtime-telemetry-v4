@@ -1,0 +1,39 @@
+name: TITAN-1 World-Class Autonomous LLM Training Foundry (0 Cost Pipeline)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs automated continuous dataset distillation (Every 4 hours)
+    - cron: '0 */4 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  forge-dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Quant Dependencies
+        run: |
+          pip install google-genai yfinance requests
+
+      - name: Forge World-Class Institutional Distillation Dataset
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python titan1_dataset_foundry.py
+
+      - name: Commit Generated Training Vectors
+        run: |
+          git config --global user.email "titan-forge@quant.ai"
+          git config --global user.name "Titan-Foundry"
+          git add brain_vault/titan1_quant_dataset.jsonl
+          git diff --staged --quiet || (git commit -m "forge: distilled institutional quant training vectors [skip ci]" && git push origin main)
