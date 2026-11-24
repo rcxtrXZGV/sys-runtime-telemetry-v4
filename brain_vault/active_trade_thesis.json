@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T09:10:10.148730+00:00",
+  "timestamp": "2026-11-24T09:11:47.847416+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 0,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Existing long position in EURUSD is currently active with minor profit. Across major pairs and indices, price action shows tight range consolidation right after early session sweeps without strong impulsive volume displacement to justify immediate additional risk exposure.",
-  "learning_applied": "Past SL feedback on XAUUSD taught us to avoid entering thin liquidity conditions or tight ranges without structural confirmation, preserving capital while existing positions run."
+  "intraday_rationale": "Account currently has an active EURUSD position in profitable swing. Existing margin allocation and lack of high-probability new structural expansion setups across instruments dictates patience. No immediate secondary high-RR setups present themselves cleanly.",
+  "learning_applied": "Avoiding over-leveraging and respecting existing open intraday positions to prevent unneeded drawdown and noise trading."
 }
