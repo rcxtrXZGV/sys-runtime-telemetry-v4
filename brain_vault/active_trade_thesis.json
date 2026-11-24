@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T22:02:02.058967+00:00",
+  "timestamp": "2026-11-24T22:13:03.427578+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3540.0,
-  "tp_price": 3570.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3552.5 level following a minor test of the intraday low at 3545.39. Multiple long positions are already open and running in profit, while DXY remains tightly range-bound near 103.82. Volume has tapered off significantly across recent 15-minute candles, indicating a lack of aggressive institutional distribution at this juncture.",
-  "trade_thesis": "Given the existing cluster of open long positions in XAUUSD and current low-volatility session chop, the optimal risk-adjusted strategy is to wait for further price discovery, liquidity sweeps at session extremes, or a clearer impulse before deploying additional capital."
+  "gold_liquidity_analysis": "Gold (XAUUSD) is consolidating around the 3555 level following a sharp intraday swing from a high of 3570.2 down to 3545.4. Current 15-minute candles show low volatility and subdued volume as the session winds down. Existing open positions on gold are currently in profit, requiring careful monitoring rather than aggressive new risk deployment.",
+  "trade_thesis": "Market conditions reflect late-session chop and sideways consolidation across primary assets. With several open XAUUSD positions already absorbing margin and showing positive floating PnL, risk parameters dictate patience. Awaiting a clear institutional liquidity sweep of session extremes before deploying additional capital."
 }
