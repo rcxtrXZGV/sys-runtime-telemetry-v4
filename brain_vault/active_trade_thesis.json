@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T20:26:49.044987+00:00",
+  "timestamp": "2026-11-24T20:30:10.749269+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around the 3555.7 level after pressing intraday lows near 3551.2. The recent 15m candles show extremely low volume and tight ranges, indicating a temporary cessation of aggressive directional flow following earlier selloffs. DXY is stable near 103.797 and US10Y is flat around 4.908.",
-  "trade_thesis": "Given the active short position in XAUUSD currently holding at an unrealized loss, and the current low-volume consolidation chop, forcing a new trade right now violates risk parameters. Mandating WAIT until a clear liquidity sweep of either the intraday low (3551.2) or a test of resistance provides an asymmetric entry."
+  "trailing_activation_profit": 0.0,
+  "gold_liquidity_analysis": "XAUUSD swept recent intraday lows down to 3551.2 following a strong distribution from the 3574 level. DXY remains firm at 103.80 while US10Y yields hover at 4.908%, maintaining downside pressure on Gold. An existing long position (SL 3550.0) is currently active. 15-minute volume has dropped significantly (V=184) as session liquidity dries up.",
+  "trade_thesis": "With equity at $62.97 and an active XAUUSD long trade currently managing drawdowns near key support (3550.0), quantitative risk controls mandate WAIT. Adding exposure in a low-volume, late-session consolidation zone increases account drawdowns unnecessarily. Capital preservation requires waiting for key level resolution or a high-displacement reversal pattern."
 }
