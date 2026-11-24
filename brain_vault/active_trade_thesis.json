@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T09:19:35.356198+00:00",
+  "timestamp": "2026-11-24T09:21:12.009094+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with profit. Other markets like USTEC and XAUUSD show strong volatility, but lack a pristine structural pullback entry matching the required 1:2.5 to 1:4 risk-reward ratio without being caught in local noise.",
-  "learning_applied": "Avoiding premature entries following previous stop-out feedback by demanding strict session swing confirmation before deploying additional capital."
+  "intraday_rationale": "EURUSD currently holds an open profitable position (ticket 2116186149) near recent highs, while major indices and forex pairs show mixed 15m volume compression and lack clear impulsive displacement necessary for immediate high-probability entry.",
+  "learning_applied": "Past stop-loss hits on XAUUSD taught us to avoid entering low-volume consolidation ranges and to ensure structural placement before deploying risk."
 }
