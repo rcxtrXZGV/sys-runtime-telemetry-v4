@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T08:44:45.473219+00:00",
+  "timestamp": "2026-11-24T08:46:19.697616+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD currently holds an open position with a healthy unrealized profit, while major indices and forex pairs show minimal directional volume expansion in the early European session. Waiting for clear structural breakout confirmation before deploying new risk.",
-  "learning_applied": "Avoiding premature entries and tight scalping noise by waiting for clean session sweep momentum as per previous stop-loss feedback."
+  "intraday_rationale": "EURUSD is currently range-bound following a minor push to session highs (1.0922). Although we hold a profitable open position on EURUSD, the 15-minute price action lacks strong directional volume displacement to justify adding new risk at this exact moment. Awaiting a clearer structural breakout or retest of session liquidity.",
+  "learning_applied": "Avoiding premature entries and tight scalps; respecting structural stop-loss zones and waiting for high-conviction displacement before opening new intraday scale positions."
 }
