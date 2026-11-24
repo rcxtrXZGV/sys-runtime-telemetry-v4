@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T19:53:41.134855+00:00",
+  "timestamp": "2026-11-24T20:04:28.781872+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 55,
+  "confidence_score": 78,
   "trade_style": "INTRADAY",
   "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 0.0,
-  "gold_liquidity_analysis": "XAUUSD recently swept sell-side liquidity down to 3551.90, extending a sharp intraday decline from the 3622.40 high. A small rebound occurred up to 3563.80 before price began consolidating around 3557.00. US10Y yields remain elevated at 4.91% and DXY at 103.81, capping immediate upside momentum.",
-  "trade_thesis": "Two open positions are currently active on the account (including XAUUSD long ticket 2118453560 with SL 3550.0), drawing down equity to $69.74 against a $73.83 balance. Market structure on Gold reflects low-volume consolidation following the liquidity sweep at 3551.90. To enforce strict risk management and avoid over-leveraging, the quantitative brain mandates WAIT while managing existing open exposure."
+  "gold_liquidity_analysis": "XAUUSD swept downside liquidity to intraday low 3551.90 under pressure from elevated US10Y yields (4.908%) and strong DXY (103.818). Price is currently consolidating in a tight 15m range (3554 - 3560). Existing buy position #2118453560 remains active with SL 3550.0.",
+  "trade_thesis": "Account equity stands at $63.99 with existing active exposure in Gold and EURUSD. Additional position opening presents unnecessary risk of over-leveraging prior to confirmation of structural reversal above 3565 or defensive SL hit at 3550. Mandating WAIT to preserve capital while waiting for clear liquidity expansion."
 }
