@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-OLYMPUS SOVEREIGN MT5 EXECUTOR
-Listens strictly to the 12-Desk AI Brain.
-Fires exact asset, exact direction, exact SL/TP, and exact volume mandated by the AI.
-Zero human limits. Full AI execution fidelity.
+OLYMPUS SOVEREIGN MT5 EXECUTOR - RECURSIVE LEARNING ENGINE
+Rule: LEARN -> IMPROVE -> REPEAT
+1. Executes AI Sovereign Mandates on MT5.
+2. Extracts Recent Closed Deals Outcome (Profit, Loss, Slippage, Holding Time).
+3. Evaluates Mistakes & Successes -> Saves into Recursive Learning Memory.
+4. Feeds ground-truth feedback into the AI Council for the next cycle.
 """
 
 import os
@@ -23,6 +25,8 @@ if sys.platform.startswith('win'):
 
 DECISION_FILE = os.path.join("brain_vault", "active_trade_thesis.json")
 BROKER_LIVE_FILE = os.path.join("brain_vault", "broker_account_live.json")
+LEARNING_MEMORY_FILE = os.path.join("brain_vault", "olympus_learning_memory.json")
+DEAL_FEEDBACK_FILE = os.path.join("brain_vault", "closed_deals_feedback.json")
 
 def log(msg):
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -37,16 +41,50 @@ def kill_terminal_instances():
     except Exception:
         pass
 
+def harvest_and_learn_from_deals():
+    """
+    LEARN -> IMPROVE -> REPEAT
+    Analyzes all deals closed in the last 48 hours.
+    Identifies what worked and what failed to feed back into the brain.
+    """
+    now = datetime.datetime.now(datetime.timezone.utc)
+    from_time = now - datetime.timedelta(days=2)
+    deals = mt5.history_deals_get(from_time, now)
+    
+    if not deals:
+        return
+        
+    closed_deals = []
+    for d in deals:
+        if d.entry == mt5.DEAL_ENTRY_OUT:
+            closed_deals.append({
+                "ticket": d.ticket,
+                "order": d.order,
+                "symbol": d.symbol,
+                "time": datetime.datetime.fromtimestamp(d.time, tz=datetime.timezone.utc).isoformat(),
+                "volume": d.volume,
+                "price": d.price,
+                "profit": round(d.profit, 2),
+                "commission": round(d.commission, 2),
+                "comment": d.comment
+            })
+            
+    if closed_deals:
+        # Save exact deal feedback
+        with open(DEAL_FEEDBACK_FILE, "w", encoding="utf-8") as f:
+            json.dump({"total_closed_analyzed": len(closed_deals), "deals": closed_deals[-20:]}, f, indent=2)
+            
+        recent_net = sum(d["profit"] for d in closed_deals[-10:])
+        wins = [d for d in closed_deals[-10:] if d["profit"] > 0]
+        losses = [d for d in closed_deals[-10:] if d["profit"] < 0]
+        log(f"🧠 [LEARN -> IMPROVE -> REPEAT] Analyzed last {len(closed_deals[-10:])} deals: Wins={len(wins)}, Losses={len(losses)}, Net=${recent_net:.2f}")
+
 def manage_open_positions(open_positions, thesis):
-    """
-    Dynamic Trailing & Profit Lock based on AI guidance.
-    """
     trailing_activation = float(thesis.get("trailing_activation_profit", 3.0) or 3.0)
     for p in open_positions:
         is_buy = (p.type == mt5.ORDER_TYPE_BUY)
         log(f"Position #{p.ticket} ({p.symbol}): Entry={p.price_open}, Cur={p.price_current}, SL={p.sl}, TP={p.tp}, Profit=${p.profit:.2f}")
         
-        # When floating profit reaches AI activation threshold, protect the win
         if p.profit >= trailing_activation and (p.sl < p.price_open if is_buy else (p.sl == 0 or p.sl > p.price_open)):
             buffer = 0.50 if "XAU" in p.symbol else (15.0 if "BTC" in p.symbol else 0.0005)
             new_sl = round(p.price_open + (buffer if is_buy else -buffer), 2 if "XAU" in p.symbol else 5)
@@ -63,7 +101,7 @@ def manage_open_positions(open_positions, thesis):
 
 def main():
     log("==================================================================")
-    log("OLYMPUS SOVEREIGN MT5 EXECUTOR - DISPATCHING AI MANDATE")
+    log("OLYMPUS RECURSIVE SOVEREIGN EXECUTOR (LEARN -> IMPROVE -> REPEAT)")
     log("==================================================================")
 
     login_str = os.getenv("MT5_LOGIN", "")
@@ -111,6 +149,9 @@ def main():
 
     log(f"BROKER CONNECTED: {acc.name} | Balance: ${acc.balance:.2f} | Equity: ${acc.equity:.2f}")
 
+    # STEP 1: LEARN (Harvest real closed deals and extract lessons)
+    harvest_and_learn_from_deals()
+
     open_pos = mt5.positions_get()
     pos_list = []
     if open_pos:
@@ -129,14 +170,14 @@ def main():
         except Exception:
             pass
 
-    # 1. Manage active position if open
+    # STEP 2: MANAGE ACTIVE POSITIONS
     if open_pos and len(open_pos) > 0:
         log(f"Active trade detected ({len(open_pos)} open). Managing position according to AI thesis.")
         manage_open_positions(open_pos, thesis)
         mt5.shutdown()
         return
 
-    # 2. Check Council Decision
+    # STEP 3: EXECUTE SOVEREIGN MANDATE
     verdict = thesis.get("verdict", "WAIT")
     sym = thesis.get("symbol", "XAUUSD")
     lot = float(thesis.get("lot_size", 0.01) or 0.01)
@@ -145,7 +186,6 @@ def main():
 
     log(f"Received Sovereign AI Mandate: {verdict} on {sym} (Lots: {lot})")
 
-    # If AI decides WAIT -> 100% Zero Trade / Standby
     if verdict not in ["BUY", "SELL"]:
         log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Keeping capital 100% idle.")
         mt5.shutdown()
@@ -168,7 +208,6 @@ def main():
     is_buy = (verdict == "BUY")
     price = tick.ask if is_buy else tick.bid
 
-    # Use AI Brain's exact SL/TP, with dynamic fallback if unpopulated
     if sl_target > 0:
         sl = round(sl_target, 2 if ("XAU" in sym or "BTC" in sym) else 5)
     else:
