@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T13:20:15.841954+00:00",
+  "timestamp": "2026-11-24T13:21:50.226422+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold (XAUUSD) recently pushed up to an intraday high of 3651.4 before sharp rejection back down toward 3633.3. Two short XAUUSD positions are currently open and floating in profit (tickets 2117318286 and 2117339435), benefiting from the upper sweep and reversal. DXY continues its downward slide to 103.88, which keeps underlying bullish pressure alive, preventing an aggressive new entry right after a sweep without structural re-accumulation.",
-  "trade_thesis": "Active short positions on Gold are capturing the retracement from the 3651 liquidity sweep. Current price action is consolidating near 3633.3 following high volume sell-side pressure. As the core doctrine prioritizes clear asymmetric edges and avoids noisy consolidation chop, the correct play is to manage existing open positions and WAIT for a cleaner continuation structure or retest of key liquidity pools before deploying fresh capital."
+  "gold_liquidity_analysis": "Gold recently spiked to an intraday high of 3651.4 before aggressively retracing back down to 3636.5, sweeping liquidity above the recent highs and leaving heavy selling wicks on the 15-minute timeframe. Meanwhile, DXY is weakening towards 103.86, creating conflicting short-term signals.",
+  "trade_thesis": "Currently holding two XAUUSD short positions tracking towards lower targets. With the recent sweep of intraday liquidity at 3651 and subsequent sharp rejection, price is stabilizing near the 3636 midpoint. Waiting for clear consolidation or a retest of structural resistance before deploying fresh capital to avoid choppy range noise."
 }
