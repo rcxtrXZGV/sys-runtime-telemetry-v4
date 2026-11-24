@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:52:39.423851+00:00",
+  "timestamp": "2026-11-24T10:54:04.595699+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 30,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Markets are exhibiting mixed cross-asset signals with DXY sliding into support while indices chop. Without a clean, high-volume breakout or displacement pattern on 15-minute structures matching our 1:2.5 RR requirement, patience is warranted.",
-  "learning_applied": "Reflecting on previous premature execution that led to a structural stop-loss breach, we now strictly wait for validated displacement rather than chasing mid-range congestion."
+  "intraday_rationale": "Markets are exhibiting mixed cross-asset signals with consolidation candles and lower volumes across major indices and FX pairs. No clear, high-conviction structural breakout or clean volume displacement is present at this moment.",
+  "learning_applied": "Past feedback on tight stop-loss placement prevents premature entry in choppy ranges, prioritizing patience for a structural break."
 }
