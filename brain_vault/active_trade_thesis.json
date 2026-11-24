@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T10:36:36.109543+00:00",
+  "timestamp": "2026-11-24T10:38:02.587472+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 0,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Account equity is currently fully engaged with an open EURUSD position showing positive floating profit. Sticking to strict intraday risk parameters means avoiding over-leveraging or opening concurrent correlated positions while margin allocation is constrained.",
-  "learning_applied": "Past gold short stopped out due to tight noise placement; keeping capital protected and avoiding over-exposure."
+  "intraday_rationale": "EURUSD is currently holding an open profitable position (+1.95) with structural protection in place. Across available pairs, price action on 15m/1h timeframes shows overlapping consolidation without high-conviction volume displacement required for an immediate second entry.",
+  "learning_applied": "Past stop-loss failure on XAUUSD taught us to avoid entering low-volatility ranges without structural confirmation; maintaining capital discipline by waiting for a clean breakout."
 }
