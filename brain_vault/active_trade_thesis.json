@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:17:54.020917+00:00",
+  "timestamp": "2026-11-24T11:19:26.014209+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently holding an open profitable position (ticket 2116947016) targeting 1.1005 with SL at 1.0920. Other instruments such as XAUUSD, BTCUSD, and USTEC are showing mixed candles and consolidation following recent moves, lacking clean high-conviction structural displacement for a new entry at this exact moment.",
-  "learning_applied": "Keeping exposure disciplined and avoiding over-leveraging while an open swing position is running in favor, respecting structural stop-loss zones to prevent premature noise shakeouts."
+  "intraday_rationale": "EURUSD is currently pushing near session highs at 1.0948 with an open position already active. Most indices and majors are showing slowing volatility or consolidation candles, failing to provide a high-conviction clean 1:3 RR displacement setup at this exact juncture. Patience required for a structural pullback.",
+  "learning_applied": "Refusing to force low-quality setups after recent tight-stop losses on gold, keeping capital safe until an ideal session liquidity sweep materializes."
 }
