@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T11:56:05.756421+00:00",
-  "verdict": "WAIT",
-  "symbol": "EURUSD",
-  "confidence_score": 40,
+  "timestamp": "2026-11-24T11:57:41.099909+00:00",
+  "verdict": "BUY",
+  "symbol": "BTCUSD",
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 1.092,
-  "tp_price": 1.1005,
-  "trailing_activation_profit": 5.0,
-  "intraday_rationale": "EURUSD is currently grinding upward inside a steady intraday channel with an open position already active. Given current price action and the absence of a high-volume breakout or pullback to a structural liquidity pool, maintaining the current position and waiting for a cleaner 1h displacement is optimal.",
-  "learning_applied": "Applied lessons from past XAUUSD stop-loss slippage by avoiding forced entries during slow consolidation blocks and respecting structural risk management."
+  "sl_price": 59850.0,
+  "tp_price": 61500.0,
+  "trailing_activation_profit": 10.0,
+  "intraday_rationale": "BTCUSD shows strong 15-minute intraday bullish continuation following a massive volume surge (597M+ units) off the session low at 59316.98. Price has broken out above previous 15m resistance levels, establishing clear momentum towards the 61,000+ liquidity pool with high volume confirmation.",
+  "learning_applied": "Applied lessons from prior structural stops by placing the stop-loss well below the recent swing low cluster at 59,850 to avoid premature noise-hunting and ensure a robust 1:3+ risk-to-reward ratio."
 }
