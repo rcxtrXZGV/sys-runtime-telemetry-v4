@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T19:52:00.100139+00:00",
+  "timestamp": "2026-11-24T19:53:41.134855+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 55,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
-  "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently hovering around 3559.0 after testing the intraday low of 3551.8999. Recent 15m candles show low volatility and decreasing volume, indicating a consolidation phase following the aggressive downward sweep from the 3622.3999 high. DXY is stable near 103.802, providing no strong directional tailwinds.",
-  "trade_thesis": "Given the recent closed deal feedback showing severe drawdown on aggressive counter-trend scalps during high-velocity moves, and the current low-volume consolidation on XAUUSD, capital preservation is paramount. The system mandates a WAIT stance until a clean Fair Value Gap or session order block presents a high-asymmetry entry."
+  "trailing_activation_profit": 0.0,
+  "gold_liquidity_analysis": "XAUUSD recently swept sell-side liquidity down to 3551.90, extending a sharp intraday decline from the 3622.40 high. A small rebound occurred up to 3563.80 before price began consolidating around 3557.00. US10Y yields remain elevated at 4.91% and DXY at 103.81, capping immediate upside momentum.",
+  "trade_thesis": "Two open positions are currently active on the account (including XAUUSD long ticket 2118453560 with SL 3550.0), drawing down equity to $69.74 against a $73.83 balance. Market structure on Gold reflects low-volume consolidation following the liquidity sweep at 3551.90. To enforce strict risk management and avoid over-leveraging, the quantitative brain mandates WAIT while managing existing open exposure."
 }
