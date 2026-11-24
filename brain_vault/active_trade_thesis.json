@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T07:55:54.107375+00:00",
+  "timestamp": "2026-11-24T07:59:41.712621+00:00",
   "verdict": "WAIT",
   "symbol": "EURUSD",
   "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 1.08795,
+  "tp_price": 1.09395,
   "trailing_activation_profit": 5.0,
-  "intraday_rationale": "Current open position on EURUSD is already active with existing risk. Across other major asset classes (Gold, Bitcoin, Indices), candles show mixed consolidation ranges and low volume expansion on the 15-minute timeframe, failing to provide the required clean momentum run and 1:2.5+ risk-reward setup.",
-  "learning_applied": "Avoiding premature entries during low volume consolidation phases and respecting account margin limitations by not stacking secondary risk while an open position is managing a drawdown."
+  "intraday_rationale": "Account equity is currently $97.53 with an open EURUSD position already testing structural boundaries. Price action across major pairs shows low volume consolidation during this period. We maintain capital preservation discipline rather than forcing a new setup.",
+  "learning_applied": "Applied lessons from previous XAUUSD tight-stop missteps by avoiding over-leveraging and refusing to enter unconfirmed low-volume intraday ranges."
 }
