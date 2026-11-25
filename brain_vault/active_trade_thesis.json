@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T11:00:36.976543+00:00",
+  "timestamp": "2026-11-25T11:02:16.401870+00:00",
   "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3548.5,
-  "tp_price": 3575.0,
+  "sl_price": 3549.5,
+  "tp_price": 3572.5,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has successfully swept morning liquidity down to 3551.10 and formed a higher low structure on the recent 15m candles. Volume expansion during the impulsive push to 3567 shows heavy institutional accumulation, while current consolidation around 3558 represents a reaccumulation phase above the local Fair Value Gap. DXY is ticking down towards intraday lows at 103.95, providing strong tailwinds for gold.",
-  "trade_thesis": "Following the aggressive liquidity purge and break of structure, price is stabilizing within a bullish order block. Existing open longs are already in profit or neutralizing drawdown, and adding a third strategic position at 3558 targets a continuation toward the 3575 session liquidity pool."
+  "gold_liquidity_analysis": "XAUUSD executed a massive institutional expansion from 3530.2 to 3567.4 backed by 20,361 volume units. The market pulled back into an intraday order block at 3550.8 and has formed a tight bullish consolidation above 3555. Concurrently, DXY is breaking down to new session lows at 103.957, confirming US Dollar weakness and fueling Gold bullish momentum.",
+  "trade_thesis": "Capitalizing on the strong bullish displacement and subsequent higher-low consolidation above 3550.8. Weakness in DXY confirms institutional flow back into XAUUSD. Position targets a liquidity sweep of the 3567.4 intraday high with a target set at 3572.5, keeping a structured SL beneath the key 3550 demand zone."
 }
