@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T10:43:27.220104+00:00",
+  "timestamp": "2026-11-25T10:45:10.000124+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 50,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a massive expansion from 3511.3 to 3567.3999, followed by mean-reverting consolidation around 3559.7. Open positions are currently floating positive ($12.89 and -$2.44), locking in overall profit near current levels. Price is consolidating within the range without clear liquidity sweeps or aggressive directional momentum at present.",
-  "trade_thesis": "Given existing open XAUUSD positions and the recent high-volatility spike and subsequent consolidation, market structure is currently in a localized equilibrium phase. Premature execution risks being caught in sideways chop. Olympus Sovereign dictates managing open inventory and waiting for a clean liquidity sweep of the recent highs or lows before deploying new capital."
+  "gold_liquidity_analysis": "XAUUSD just experienced a massive expansion sweep up to an intraday high of 3567.3999 followed by a sharp mean-reversion phase consolidating around 3557.39. Open positions are currently floating a net positive profit, and the market is digesting the impulse liquidity sweep with contracting volume candles.",
+  "trade_thesis": "Given the recent aggressive volatility sweep and current sideways consolidation following the sharp breakout, the quantitative brain mandates WAIT to avoid chasing extended price action and let the market form a clean structural order block or fair value gap."
 }
