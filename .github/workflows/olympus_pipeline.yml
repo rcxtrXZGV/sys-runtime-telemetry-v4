@@ -63,13 +63,19 @@ jobs:
 
           Copy-Item -Path "$appdataDir\*" -Destination $targetDir -Recurse -Force
 
-      - name: Step 1 - Convene Sovereign AI Council (12-Desk Naked Chart Brain)
+      - name: Step 1 - Run 24/7 Dual-Agent Self-Improvement Engine (Agent 1 Forensic + Agent 2 Architect)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python olympus_rsi_improver.py
+
+      - name: Step 2 - Convene Sovereign AI Council (12-Desk Naked Chart Brain + Sentinel)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python olympus_brain.py
 
-      - name: Step 2 - Execute Sovereign AI Mandate on MT5
+      - name: Step 3 - Execute Sovereign AI Mandate on MT5
         env:
           MT5_LOGIN: ${{ secrets.MT5_LOGIN }}
           MT5_PASSWORD: ${{ secrets.MT5_PASSWORD }}
@@ -77,16 +83,16 @@ jobs:
         run: |
           python olympus_executor.py
 
-      - name: Step 3 - Commit AI Memory & Live Telemetry
+      - name: Step 4 - Commit AI Memory & Live Telemetry
         shell: bash
         run: |
           git config --global user.email "olympus-ai@quant.fund"
           git config --global user.name "Olympus-AI"
           git pull --rebase origin main || true
           git add brain_vault/
-          git diff --staged --quiet || (git commit -m "olympus: sovereign telemetry & memory sync [skip ci]" && git push origin main)
+          git diff --staged --quiet || (git commit -m "olympus: sovereign telemetry, memory & RSI rules sync [skip ci]" && git push origin main)
 
-      - name: Step 4 - Recursive Self-Dispatch (24/7 Perpetual Cloud Loop)
+      - name: Step 5 - Recursive Self-Dispatch (24/7 Perpetual Cloud Loop)
         uses: actions/github-script@v7
         with:
           script: |
