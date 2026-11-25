@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute ban on sequential scaling into the same directional leg within a 120-second rolling window to prevent correlated liquidation loops.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory multi-timeframe ATR volatility envelope validation; entries prohibited if current candle spread exceeds 2.5x 20-period moving average ATR.",
-  "profit_harvest_threshold": "Initiate trailing profit locks at +$4.00 to prevent green evaporation, scaling out 50% of volume at +$10.00 and trailing the remainder toward a +$20.00 to +$30.00 target."
+  "pyramiding_rule": "Strict prohibition of consecutive grid entries or averaging down; any subsequent order on the same asset requires a minimum +$8.00 unrealized profit buffer on the initial tranche.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero order execution allowed within +/- 3 minutes of high-impact macroeconomic data releases and without multi-timeframe ATR expansion confirmation.",
+  "profit_harvest_threshold": "Initiate automated partial profit-taking at +$10.00 and hard trail remaining exposure to lock in a minimum +$4.00 net gain."
 }

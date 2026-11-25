@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T22:35:58.462401+00:00",
+  "timestamp": "2026-11-25T22:41:07.140906+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "Zero active open positions on broker. Sentinel standing by with full capital preservation protocol engaged.",
-  "trade_thesis": "XAUUSD has undergone an aggressive parabolic extension (+980 pips intraday from 3519.8 to 3617.8) and is currently pressing daily highs at 3617.8 during the 22:00-23:00 UTC interbank rollover window. Entering long at the absolute peak in ultra-thin late-session liquidity carries severe spread expansion, slippage, and exhaustion trap risks, while shorting against unbroken momentum lacks a confirmed structural top. With equity at $49.25, the quant desk mandates capital preservation: wait for the rollover window to pass and observe Asian session open liquidity to establish a high-asymmetry retest or confirmed liquidity sweep."
+  "reversal_sentinel_assessment": "No open positions currently active on the broker account. Sentinel standing by for active position monitoring.",
+  "trade_thesis": "Gold (XAUUSD) has pushed aggressively to a fresh intraday high of 3617.8 following a strong momentum leg. However, the latest 15-minute candles show a lack of volume expansion at the highs and potential consolidation after the sharp impulsive run. Given recent tight stop-loss sweeps on prior XAUUSD trades, we maintain sovereign discipline and output WAIT until a cleaner liquidity sweep and structural continuation pattern confirms the next high-asymmetric compounding entry."
 }
