@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:45:53.065728+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T09:47:28.563039+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3545.0,
-  "tp_price": 3575.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold underwent a massive liquidity sweep down to 3511.3 before aggressively expanding upward on a volume spike of 20,361 contracts. Current price action is consolidating near 3554.1 within a defined fair value gap, holding above the institutional support block around 3550.8.",
-  "trade_thesis": "Following the aggressive supply-side sweep and sharp impulsive recovery, XAUUSD is exhibiting bullish continuation structure on the 15-minute timeframe. With two open long positions already running in net positive equity dynamics, adding an intraday continuation long at support aligns with sovereign order flow momentum targeting the prior intraday high of 3567.4 and extending to 3575.0."
+  "gold_liquidity_analysis": "XAUUSD experienced an explosive liquidity expansion from 3530.2 to an intraday high of 3567.4 with institutional volume spiking to 20,361 contracts. Following the impulse, price is undergoing natural mean-reversion rebalancing into 3552-3558. DXY is steady at 104.047 while US10Y holds at 4.904%.",
+  "trade_thesis": "The account currently holds two active 0.01 XAUUSD positions. Adding leverage during post-impulse price consolidation risks over-exposure on a $82.48 account balance. We mandate WAIT to allow open position trailing stops and targets to manage existing exposure while waiting for the next clean Fair Value Gap or liquidity sweep confirmation."
 }
