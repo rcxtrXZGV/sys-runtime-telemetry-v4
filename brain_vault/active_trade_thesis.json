@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-24T23:55:47.219284+00:00",
+  "timestamp": "2026-11-25T00:01:58.179060+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3538.0,
+  "tp_price": 3568.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD is currently consolidating around 3552.4 after sweeping the session low at 3545.39 and testing the 3566.8 high earlier. Volume has dropped off significantly near the close of the session, indicating a low-liquidity chop phase with candles tightening into a narrow 3551-3553 range.",
-  "trade_thesis": "Recent closed deals demonstrate strict vulnerability to tight stop-losses during low-volatility consolidation intervals. With current volume flatlining and price hovering in an uncommitted mid-range, immediate execution presents suboptimal asymmetry. Mandate WAIT until a clear liquidity grab outside the 3545-3566 range materializes in the next session."
+  "gold_liquidity_analysis": "Gold (XAUUSD) is currently consolidating around 3547.7 after testing intraday lows near 3545.39. Recent 15m candles show low volatility and zero volume readings on the most recent bars, indicating an illiquid late-session or early Asian transition chop. DXY is stable near 103.84, showing no aggressive directional push.",
+  "trade_thesis": "Following recent stop-outs on XAUUSD shorts and longs during high-volatility swings, current price action lacks a definitive structural liquidity sweep or expansion FVG. To protect the remaining account equity of ~$60, the quantitative brain mandates a WAIT stance until a clear breakout above 3560 or flush below 3540 occurs."
 }
