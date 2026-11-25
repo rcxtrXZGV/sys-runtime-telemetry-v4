@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential entries (ticket clustering at 21123016852/16855) within a 5-point range; enforce a 15-point structural breakout distance before adding size.",
+  "pyramiding_rule": "Absolute ban on sequential scaling into the same directional leg within a 120-second rolling window to prevent correlated liquidation loops.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 1-minute candle close beyond the moving average expansion band AND zero high-impact macroeconomic news in a 15-minute window prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$5.00 unrealized profit to guarantee a minimum $4.00 net lock-in, forcing runners to reach the $15.00-$30.00 target."
+  "new_mandatory_entry_filter": "Mandatory multi-timeframe ATR volatility envelope validation; entries prohibited if current candle spread exceeds 2.5x 20-period moving average ATR.",
+  "profit_harvest_threshold": "Initiate trailing profit locks at +$4.00 to prevent green evaporation, scaling out 50% of volume at +$10.00 and trailing the remainder toward a +$20.00 to +$30.00 target."
 }
