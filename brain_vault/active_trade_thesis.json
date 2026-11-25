@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T20:51:25.375113+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 88,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 3605.5,
+  "tp_price": 3565.0,
+  "trailing_activation_profit": 5.0,
+  "reversal_sentinel_assessment": "Active position #2123308919 is short with SL 3605.5 and TP 3565.0, currently floating at -$3.81. The position is not in profit, ruling out CLOSE_PROFIT. Reversal Sentinel confirms that the high-volume exhaustion candle at 3615.2 swept buying liquidity and closed down hard at 3596.0, showing dominant seller pressure. Yields (US10Y at 4.848) and DXY (103.677) continue printing session highs, supporting bearish gold trajectory. Maintain position.",
+  "trade_thesis": "Gold printed a severe upper-wick rejection at 3615.2, closing back down under 3600 into 3596.0. Simultaneously, DXY has broken into new session highs at 103.677 alongside US10Y surging to 4.848%, creating significant headwinds for Gold. The hedge fund desk already holds an active 0.01 short position aligned with this liquidity sweep. Given the current balance of $53.82 and active market exposure, optimal quant governance mandates WAIT to avoid overleveraging and permit the active short trade to traverse downward toward 3565.0."
+}
