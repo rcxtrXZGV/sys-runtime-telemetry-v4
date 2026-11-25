@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:11:07.314679+00:00",
+  "timestamp": "2026-11-25T08:12:50.217112+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has successfully swept intraday lows down to 3511.3 and is currently mean-reverting around 3524.3, consolidating within the recent 15m range. Existing long positions (tickets 2120357875 and 2120361701) are already in favorable profit territory ($5.69 and $6.41) with predefined protective structures.",
-  "trade_thesis": "Given that two active XAUUSD long positions are currently open and performing well following the liquidity sweep at the 3511-3515 support zone, adding new risk here would violate optimal exposure limits. We mandate WAIT to let existing positions run toward their target zones while monitoring DXY stability around 104.05."
+  "gold_liquidity_analysis": "Gold (XAUUSD) is consolidating around the 3519.5 level following an early session sweep down to the intraday low of 3511.3. Multiple open long positions are currently active and capturing positive floating profits. DXY is hovering around 104.04 with mild upward drift, limiting immediate directional expansion.",
+  "trade_thesis": "Given that we already hold three open positions in Gold with aggregate positive performance and the price is currently consolidating in a narrow band following recent volatility, opening new exposure presents unnecessary marginal risk. Mandating WAIT to allow current positions to test their targets."
 }
