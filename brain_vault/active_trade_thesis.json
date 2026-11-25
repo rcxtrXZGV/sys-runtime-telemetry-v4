@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T11:04:11.085326+00:00",
+  "timestamp": "2026-11-25T11:41:18.664569+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 40,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced an aggressive expansion to highs around 3567.4 followed by a mean-reversion consolidation phase hovering near 3558.8. Open positions are currently absorbing minor pullbacks while DXY stabilizes near 103.97. Volume has temporarily tapered off in the recent 15m intervals.",
-  "trade_thesis": "Market is exhibiting short-term consolidation after a major structural breakout. Following core doctrine to avoid noisy sideways chop and protect existing open positioning, the quantitative brain mandates a WAIT stance until a clear liquidity sweep or structural re-test of support/resistance offers a high-conviction asymmetric edge."
+  "gold_liquidity_analysis": "Gold (XAUUSD) has experienced massive intraday expansion with a high of 3567.39 and low of 3513.00. Price is currently consolidating around 3543.90 after testing liquidity pools on both ends. Open positions are already active and absorbing recent volatility.",
+  "trade_thesis": "Given the wide range expansion and ongoing active positions currently managing floating PnL, market structure is entering a consolidation phase. Prudent risk management mandates holding current positions and waiting for a cleaner liquidity sweep or structural break before adding new exposure."
 }
