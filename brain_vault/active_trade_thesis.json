@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T23:54:56.247014+00:00",
+  "timestamp": "2026-11-25T23:56:37.711219+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active. Sentinel stands ready to monitor upcoming entries for immediate peak profit harvesting.",
-  "trade_thesis": "Gold (XAUUSD) has shown extreme volatility recently with multiple failed breakout attempts and tight stop-loss hits during prior sessions. Current price action shows consolidation around the 3612 level following a test of intraday highs near 3619.8. Volatility contraction and lack of clear directional volume suggest a 'WAIT' stance to preserve capital and avoid immediate chop."
+  "reversal_sentinel_assessment": "No open positions currently active. Monitoring market conditions for liquidity sweeps.",
+  "trade_thesis": "Recent price action in XAUUSD exhibits choppy consolidation between 3595 and 3612 following the recent high-volatility sweep. Desks advise patience to avoid repeated stop-loss hits experienced earlier. Await a definitive breakout above 3619.8 or a clean test of support near 3595 before committing capital."
 }
