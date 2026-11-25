@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:36:35.961359+00:00",
+  "timestamp": "2026-11-25T09:38:19.456576+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3540.0,
+  "tp_price": 3575.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold executed a massive institutional expansion from $3,529.3 to $3,567.4 on extreme volume (20,361 contracts). Current price at $3,555.0 represents a post-liquidity sweep retracement into the upper FVG demand zone. DXY is stable at 104.03. Existing open trades are active.",
-  "trade_thesis": "Following a massive $38 intraday rally and liquidity grab at $3,567.4, price is currently digesting gains and seeking equilibrium. With two open positions already in play and equity at $82.45, optimal capital preservation dictates holding for price stabilization above $3,550 before adding fresh exposure."
+  "gold_liquidity_analysis": "Gold experienced an explosive impulse reaching an intraday high of 3567.3999, followed by mean-reversion consolidation currently sitting around 3554.5. Volume has significantly cooled off on the last 15m candles after the liquidity sweep above 3560. Two open long positions are currently managed with tighter stops and favorable open profits.",
+  "trade_thesis": "Given the recent sharp expansion and subsequent retracement/consolidation phase, markets are exhibiting transitional chop. We maintain existing open XAUUSD positions and withhold new exposure until a clear structural liquidity grab or retest of key order blocks occurs."
 }
