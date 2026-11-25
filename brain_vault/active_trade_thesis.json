@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:33:07.276854+00:00",
+  "timestamp": "2026-11-25T09:34:54.483605+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed an institutional liquidity sweep reaching an intraday high of 3567.40 on exceptional volume (20,361 ticks). Price is currently retracing from the overextended high into the 15m Fair Value Gap zone (3530.30 - 3553.60) while DXY consolidates near 104.04.",
-  "trade_thesis": "Chasing the market post a $37 vertical impulse move offers poor risk-to-reward. Two active buy positions remain open on the account. Mandating WAIT allows price to complete its intraday mean-reversion into key demand FVG levels (3540-3545) before establishing new alpha positioning."
+  "gold_liquidity_analysis": "XAUUSD completed an aggressive upward liquidity expansion from 3530.2 to 3567.4 (+37.2 points) driven by high institutional volume (20,361 ticks). Current price is consolidating around 3556.10. DXY remains range-bound between 103.98 and 104.08, while US10Y yields are elevated at 4.904%. The immediate liquidity sweep high at 3567.4 has been taken, leaving potential fair value gaps below near 3535-3545.",
+  "trade_thesis": "Following a vertical 37-dollar expansion on Gold, executing new market entries at the top of the spike presents unfavorable risk-reward. Additionally, two open positions (0.02 total lots) are already active on an equity base of $78.17. Capital preservation mandates standing by for current positions to resolve or waiting for a structural pull-back into the 3535-3545 displacement FVG before initiating fresh exposure."
 }
