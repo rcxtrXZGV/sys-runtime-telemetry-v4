@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T03:20:34.885467+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 40,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Gold (XAUUSD) recently tested intraday extremes, sweeping liquidity around the 3532.40 low before bouncing toward the 3558.0 current level. Recent 15m candles show consolidation after a sharp rally from the lows, with DXY firming near 103.90 and US10Y hovering around 4.904%. Price action is currently chopping in a tight range without a clear institutional displacement vector.",
+  "trade_thesis": "Given the recent string of micro-scalps and a recent stopped-out trade (-$0.97), combined with the current sideways consolidation on XAUUSD, market conditions do not present an optimal, high-probability asymmetric edge right now. Mandating WAIT until a clean liquidity sweep of the 3550-3560 range develops with volume confirmation."
+}
