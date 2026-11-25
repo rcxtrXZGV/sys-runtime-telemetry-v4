@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:38:28.676752+00:00",
+  "timestamp": "2026-11-25T10:40:01.729979+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold recently swept highs up to 3567.39 and is currently consolidating around 3558.70. Two active long positions are already open (tickets 2120357875 and 2120434934) with cumulative floating profit. DXY is testing lower bounds near 103.96 while US10Y yields remain elevated around 4.904.",
-  "trade_thesis": "Existing exposure to XAUUSD is already hedged with two long tickets. Price is currently range-bound following the massive volume expansion candle earlier in the session. A WAIT verdict is mandated until a clear continuation or structural retest of the 3550-3552 fair value gap occurs before deploying additional risk."
+  "gold_liquidity_analysis": "XAUUSD recently tested liquidity highs up to 3567.39 and has since pulled back into a consolidation range around 3558.0. Open positions are already managing risk with existing targets at 3545.0, while DXY is range-bound near 103.96.",
+  "trade_thesis": "Market is currently exhibiting consolidation following a major expansion higher. With two open long positions running and price hovering in a mid-range equilibrium, initiating new exposure offers a poor risk-reward ratio. Mandating WAIT until a cleaner liquidity sweep or structural retest occurs."
 }
