@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T19:50:02.501401+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during sharp XAUUSD intraday liquidations, notably tickets 1705772492 (-$20.56) and 1704056547 (-$14.91), caused by holding positions through volatile micro-trend breakdowns instead of utilizing trailing structural stops.",
-        "risk_asymmetry_flaw": "Losses averaged -$10.14 while winners averaged +$3.77, resulting in a negative risk-reward ratio due to premature micro-profit cutting (micro-scalping for <$1.00) while allowing losers to reach up to -$20.56.",
-        "market_regime_mismatch": "Operating counter-trend or holding static positions during high-velocity directional impulses in Gold, where stop-losses were placed too close to aggressive liquidity sweep zones."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to positions when floating unrealized loss exceeds 0.5 ATR or when price action penetrates local structural support/resistance.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory multi-timeframe momentum convergence confirmation via RSI/MACD histogram and ATR volatility filter before execution; absolute ban on entering within 15 minutes of tier-1 macro news wicks.",
-        "profit_harvest_threshold": "Initiate automated partial profit-taking at +$5.00 with a trailing stop locking in breakeven, permitting the remainder to runner up to +$15.00-$30.00."
-      },
-      "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on all XAUUSD orders and eliminate premature micro-profits to restore positive mathematical asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-25T19:51:55.717848+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped drawdown exposure on volatile XAUUSD downward impulse sweeps, exemplified by ticket 1705772492 causing a massive -$20.56 loss due to a lagging or non-existent hard structural stop-loss boundary.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume with a strict dynamic ATR trailing stop to capture +$15.00 to +$30.00 asymmetric tails."
       },
       "synthesis_directive": "Enforce strict risk symmetry by capping max loss strictly between $4-$6, letting winning runs scale past $15 via dynamic trailing stops, and forbidding micro-scalping during high-volatility expansions."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T22:46:13.783796+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive stop-loss distance on high-volatility XAUUSD swings combined with rapid-fire multi-ticket entry clustering during micro-trend exhaustion.",
+        "risk_asymmetry_flaw": "Losses reached up to -$20.56 because stops were set too wide relative to target harvests, while recent wins were prematurely clipped at micro-gains of under +$0.60.",
+        "market_regime_mismatch": "Executing continuous entries into volatile London/New York session overlap wicks without filtering out local noise impulses."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening multiple sequential tickets in the same directional wave within a 5-minute rolling window.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a validated ATR expansion and higher-timeframe order block confirmation before authorizing a 0.01 lot order.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$12.00 to guarantee asymmetric outcomes of $15 to $30+."
+      },
+      "synthesis_directive": "Enforce a hard max stop-loss of $5.00 on XAUUSD, eliminate clustered entries, and let winning trades run to a minimum $15.00 target."
     }
   ]
 }
