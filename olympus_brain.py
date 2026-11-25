@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-OLYMPUS SUPREME AI BRAIN - GOLD & MULTI-ASSET INTRADAY SNIPER
-PRIMARY HUNTING GROUND: Gold (XAUUSD) - The King of Volatility & Asymmetric Swings.
-Secondary: Bitcoin (BTCUSD), Nasdaq (USTEC), EURUSD, GBPUSD.
-MANDATE: Gold ko top priority par continuously scan aur hunt karega without needing any manual reminder.
+OLYMPUS SUPREME AI BRAIN - 12 ELITE QUANTITATIVE DESKS
+Enhanced with: AUTONOMOUS REVERSAL SENTINEL (HARVEST GUARDIAN)
+MANDATE:
+1. Complete unconstrained freedom: No rigid caps, no pressure, full horizon freedom ($100 -> $1,000+).
+2. Priority Asset: Gold (XAUUSD) + Multi-asset opportunities.
+3. Sentinel Role: When positions are in solid green profit and an exhaustion / reversal wick occurs,
+   sovereignly issue an 'EMERGENCY_PROFIT_HARVEST' to pocket peak gains before market reverses.
 """
 
 import os
@@ -34,18 +37,15 @@ def log(msg):
         print(f"[{ts}] {msg.encode('ascii', 'ignore').decode('ascii')}", flush=True)
 
 def fetch_intraday_chart_data():
-    """
-    Pulls real-time 15m/1h candle geometry, placing GOLD (XAUUSD) at the top of the matrix.
-    """
     tickers = {
         "XAUUSD": "GC=F",       # Priority #1: Gold
         "BTCUSD": "BTC-USD",    # Priority #2: Bitcoin
         "USTEC": "NQ=F",        # Priority #3: Nasdaq
-        "EURUSD": "EURUSD=X",   # Priority #4: Forex
+        "EURUSD": "EURUSD=X",
         "GBPUSD": "GBPUSD=X",
         "USDJPY": "USDJPY=X",
-        "DXY": "DX-Y.NYB",      # Dollar Index Pressure
-        "US10Y": "^TNX"         # 10Y Yields Pressure
+        "DXY": "DX-Y.NYB",
+        "US10Y": "^TNX"
     }
     
     chart_matrix = {}
@@ -87,7 +87,7 @@ def fetch_intraday_chart_data():
 
 def convene_supreme_council():
     log("==================================================================")
-    log("OLYMPUS GOLD (XAUUSD) & MULTI-ASSET AUTONOMOUS SNIPER COUNCIL")
+    log("OLYMPUS SUPREME COUNCIL & AUTONOMOUS REVERSAL SENTINEL")
     log("==================================================================")
     
     api_key = os.getenv("GEMINI_API_KEY")
@@ -97,13 +97,15 @@ def convene_supreme_council():
         
     client = genai.Client(api_key=api_key)
     
-    account_status = {"balance": 100.85, "equity": 102.31, "open_positions": []}
+    account_status = {"balance": 62.23, "equity": 62.23, "open_positions": []}
     if os.path.exists(BROKER_LIVE_FILE):
         try:
             with open(BROKER_LIVE_FILE, "r", encoding="utf-8") as f:
                 account_status = json.load(f)
         except Exception:
             pass
+
+    open_positions = account_status.get("open_positions", [])
 
     deal_feedback = {}
     if os.path.exists(DEAL_FEEDBACK_FILE):
@@ -117,34 +119,38 @@ def convene_supreme_council():
     now_utc = datetime.datetime.now(datetime.timezone.utc)
     
     prompt = f"""
-YOU ARE THE OLYMPUS SOVEREIGN QUANTITATIVE HEDGE FUND BRAIN.
+YOU ARE THE OLYMPUS SOVEREIGN QUANTITATIVE HEDGE FUND BRAIN WITH FULL UNCONSTRAINED AUTONOMY.
+THERE ARE ZERO RIGID CAPS, ZERO BOXES, AND ZERO PRESSURE.
 
-### CORE OPERATING DOCTRINE:
-1. PRIMARY ASSET FOCUS: GOLD (XAUUSD).
-   - Gold is the primary alpha generator ($10 to $25 intraday price swings).
-   - Prioritize Gold (XAUUSD) opportunities first in every cycle.
-   - Secondary hunting grounds: Bitcoin (BTCUSD), Nasdaq (USTEC), EURUSD, GBPUSD.
-2. ABSOLUTE AUTONOMY - NO USER PROMPTING NEEDED:
-   - You NEVER require human input or reminders.
-   - You autonomously detect Gold liquidity sweeps, Fair Value Gaps, and session order blocks.
-   - When an asymmetric intraday edge exists on Gold (or secondary assets) -> Execute BUY or SELL immediately.
-   - If market is in noisy sideways chop -> Mandate WAIT.
+YOU OPERATE WITH 12 SPECIALIZED DESKS + A DEDICATED AUTONOMOUS REVERSAL SENTINEL.
 
-LIVE BROKER STATUS:
-- Balance: ${account_status.get('balance', 100.85)} USD
-- Equity: ${account_status.get('equity', 102.31)} USD
-- Open Positions: {json.dumps(account_status.get('open_positions', []))}
+### DUAL MANDATE:
+1. NEW OPPORTUNITY HUNTING:
+   - Primary hunting asset: Gold (XAUUSD). Secondary: Bitcoin, Nasdaq, Forex.
+   - Look for high-asymmetric momentum breakouts & liquidity sweeps toward $1,000+ compounding.
+   - If clean setup: Output 'BUY' or 'SELL'. If choppy consolidation: Output 'WAIT'.
+
+2. REVERSAL SENTINEL (HARVEST GUARDIAN) FOR ACTIVE OPEN TRADES:
+   - Current Open Positions on Broker: {json.dumps(open_positions, indent=2)}
+   - If open positions are in profit and you detect an imminent momentum exhaustion, top wick rejection, or reversal trap:
+     YOU HAVE FULL SOVEREIGN AUTHORITY TO OUTPUT "CLOSE_PROFIT" to instantly harvest peak cash before the market takes it back!
+   - If the trend remains strong, let it run freely without interference.
+
+LIVE BROKER STATUS ({now_utc.isoformat()}):
+- Balance: ${account_status.get('balance', 62.23)} USD
+- Equity: ${account_status.get('equity', 62.23)} USD
+- Active Positions: {len(open_positions)}
 
 RECENT CLOSED DEALS FEEDBACK (LEARN -> IMPROVE):
 {json.dumps(deal_feedback.get('deals', [])[-5:], indent=2)}
 
-LIVE INTRADAY CANDLESTICK MATRIX (GOLD & GLOBAL ASSETS) ({now_utc.isoformat()}):
+LIVE 15-MINUTE CANDLE MATRIX (GOLD & GLOBAL ASSETS):
 {json.dumps(chart_matrix, indent=2)}
 
 Respond STRICTLY in valid JSON matching this schema:
 {{
   "timestamp": "{now_utc.isoformat()}",
-  "verdict": "BUY" or "SELL" or "WAIT",
+  "verdict": "BUY" or "SELL" or "WAIT" or "CLOSE_PROFIT",
   "symbol": "XAUUSD" or "BTCUSD" or "USTEC" or "EURUSD" or "GBPUSD",
   "confidence_score": 0 to 100,
   "trade_style": "INTRADAY",
@@ -152,8 +158,8 @@ Respond STRICTLY in valid JSON matching this schema:
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Detailed reading of XAUUSD order flow, wicks, and DXY correlation",
-  "trade_thesis": "Full institutional thesis for this trade"
+  "reversal_sentinel_assessment": "Analysis of open positions: is trend continuing or is reversal imminent?",
+  "trade_thesis": "Full sovereign reasoning"
 }}
 """
 
@@ -166,7 +172,7 @@ Respond STRICTLY in valid JSON matching this schema:
     res = None
     for m in models_to_try:
         try:
-            log(f"Gold Sniper Council convening via model: {m}...")
+            log(f"Council & Sentinel deliberating via {m}...")
             res = client.models.generate_content(
                 model=m,
                 contents=prompt,
@@ -176,7 +182,7 @@ Respond STRICTLY in valid JSON matching this schema:
                 )
             )
             if res and res.text:
-                log(f"Council deliberation successful via {m}!")
+                log(f"Deliberation successful via {m}!")
                 break
         except Exception as e:
             log(f"Model {m} error: {e}. Trying next...")
@@ -192,9 +198,9 @@ Respond STRICTLY in valid JSON matching this schema:
         with open(DECISION_FILE, "w", encoding="utf-8") as f:
             json.dump(decision, f, indent=2)
             
-        log(f"🔥 SOVEREIGN VERDICT: {decision.get('verdict')} on {decision.get('symbol')} | Style: INTRADAY")
-        log(f"SL: {decision.get('sl_price')} | TP: {decision.get('tp_price')} | Lots: {decision.get('lot_size')} | Conf: {decision.get('confidence_score')}%")
-        log(f"Gold Reading: {decision.get('gold_liquidity_analysis')}")
+        log(f"🔥 SOVEREIGN VERDICT: {decision.get('verdict')} on {decision.get('symbol')}")
+        log(f"Sentinel Assessment: {decision.get('reversal_sentinel_assessment')}")
+        log(f"SL: {decision.get('sl_price')} | TP: {decision.get('tp_price')} | Conf: {decision.get('confidence_score')}%")
         log(f"Thesis: {decision.get('trade_thesis')}")
     except Exception as e:
         log(f"Error parsing decision: {e}")
