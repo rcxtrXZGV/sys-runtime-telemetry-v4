@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:19:27.342921+00:00",
+  "timestamp": "2026-11-25T10:21:00.117976+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced an aggressive expansion rally from the 3511 low up to 3567, fueled by a massive volume spike (20,361 contracts). Currently consolidating in a tight range between 3550 and 3564. Open positions are already established in gold and floating favorably; managing existing inventory rather than adding exposure during mid-range chop is optimal.",
-  "trade_thesis": "Market is absorbing heavy intraday gains following a massive impulse wave. Wait for a clear retracement to liquidity pools or a confirmed order block retest before deploying fresh capital."
+  "gold_liquidity_analysis": "Gold executed a massive institutional sweep at the 3511.3 intraday low followed by an aggressive impulse up to 3567.4 on high volume (20,361 ticks). Current price of 3562.9 is consolidating near top-of-range resistance while DXY remains subdued at 104.004. A Fair Value Gap exists between 3530 and 3550.",
+  "trade_thesis": "Following a $37 parabolic intraday expansion, entering new long positions at the local high creates poor risk-to-reward metrics. Account margin is currently supporting active trades. We mandate WAIT to allow open trades to run to targets or manage trailing stops, while awaiting a high-probability retracement into the 3545-3550 order block."
 }
