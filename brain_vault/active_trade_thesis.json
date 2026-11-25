@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T21:59:00.908641+00:00",
+  "timestamp": "2026-11-25T22:00:30.312812+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Monitoring execution history to avoid past tight stop-loss clustering errors.",
-  "trade_thesis": "Gold (XAUUSD) has experienced a sharp intraday expansion up to 3617.10 followed by minor consolidation near 3608.7. Volume has dried up significantly in recent 15m intervals (0 to 127 volume), indicating a temporary liquidity void and indecision after the strong bullish impulse. To prevent the premature stop-loss harvesting observed in recent closed trades, desks recommend patience for a clearer retest or structural sweep before deploying capital."
+  "reversal_sentinel_assessment": "Zero active positions currently on the broker. No active trade management or emergency harvest required.",
+  "trade_thesis": "Capital preservation protocol active at 22:00 UTC interbank rollover. Gold (XAUUSD) printed an intraday liquidity sweep at 3617.10 followed by upper-wick rejection, but 15m volume has evaporated (from 3,292 to 268 contracts) into the New York cash close. Concurrently, DXY holds firm at 103.70 while US10Y yields press 4.848%. Initiating new risk during the daily rollover spread-expansion window with an account equity of $49.25 exposes the fund to severe spread slippage. Standing down to await clean structural expansion and liquidity return in the upcoming Asian session."
 }

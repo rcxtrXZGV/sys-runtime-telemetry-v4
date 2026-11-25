@@ -1,5 +1,5 @@
 {
-  "total_cycles": 46,
+  "total_cycles": 47,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -736,6 +736,22 @@
         "profit_harvest_threshold": "Scale-out half the position at +$10.00 and trail the remainder with a hard structural lock to capture target runs between $15.00 and $30.00."
       },
       "synthesis_directive": "Enforce a strict maximum loss cap of $5.00 per trade on XAUUSD while blocking all clustered entries, ensuring risk-reward asymmetry heavily favors asymmetric runs of $15.00 to $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T22:00:26.003356+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses during volatile XAUUSD liquidity sweeps (notably ticket 1705772492 resulting in a -$20.56 drawdown) combined with micro-scalping wins that failed to offset tail-risk blowups.",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max) vastly exceeded individual winning trades (+~$0.55), inverting the required $15-$30 reward-to-risk asymmetry due to premature micro-profit cutting and late stop executions.",
+        "market_regime_mismatch": "Entering during high-frequency European/US session overlap liquidity wicks without adapting volatility-based ATR stop bands, causing structural stop-hunting collisions."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions (anti-martingale/no falling knife averaging) until the initial position achieves a +$10 floating profit cushion and structural break-even activation.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory 3-factor confirmation: Zero high-impact red-folder news within +/- 15 minutes, order flow delta alignment, and ATR-normalized micro-channel breakout validation.",
+        "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trail remainder with a dynamic ATR tight trailing stop to capture $15-$30+ tail runs."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade on XAUUSD while scaling winning execution targets to achieve a minimum 3:1 reward-to-risk asymmetry."
     }
   ]
 }
