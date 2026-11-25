@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions (averaging down/falling knife pyramiding) until price confirms a structural higher-low on the 5-minute timeframe with volume expansion.",
+  "pyramiding_rule": "Strict prohibition of adding to positions during active drawdown; scaling in only permitted on confirmed momentum continuation after a 2R profit buffer is locked.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "No order execution permitted unless ATR(14) volatility expansion is below the 80th percentile and order flow imbalance confirms momentum direction.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and hard trail the remainder to lock in minimum +$15.00 gains."
+  "new_mandatory_entry_filter": "Zero entry allowed unless the ATR(14) expansion ratio exceeds 1.2 and multi-timeframe directional bias aligns across M5 and M15.",
+  "profit_harvest_threshold": "Initiate dynamic trailing stops once open profit hits $5.00, scaling out partial volume at $15.00 and letting runners stretch to $30.00."
 }
