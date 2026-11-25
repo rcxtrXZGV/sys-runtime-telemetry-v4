@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:57:04.235126+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-25T10:58:58.516240+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3545.0,
-  "tp_price": 3570.0,
+  "sl_price": 3550.0,
+  "tp_price": 3585.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has experienced a massive expansion higher up to 3567.3999 followed by localized consolidation around 3557.3999. Current volume has dried up (0 on the latest bar), and two active positions are already managing risk against the recent upside swing.",
-  "trade_thesis": "Given the existing open positions in XAUUSD which are already exposed to the volatile range following the sharp liquidity sweep to highs, the mandate is to hold current exposure, monitor price action for structural retest of fair value gaps below, and exercise patience. No new immediate asymmetric entry is required until clear volume-backed confirmation materializes."
+  "gold_liquidity_analysis": "Gold experienced an explosive impulse earlier from the 3511.3 low, touching 3567.3999, followed by a controlled mean-reversion and consolidation phase around the 3559.0 level. DXY is drifting lower toward 103.97, removing headwinds. Volume profile confirms aggressive institutional accumulation during the expansion leg with minimal selling pressure on the pullback.",
+  "trade_thesis": "The market structure on XAUUSD remains firmly bullish following a major liquidity sweep of morning lows. Price is holding a higher-low consolidation above 3550 following the breakout impulse. We are scaling into continuation long exposure targeting a retest and break of the 3567 intraday high, extending toward 3585.00."
 }
