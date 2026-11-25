@@ -1,5 +1,5 @@
 {
-  "total_cycles": 19,
+  "total_cycles": 20,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -304,6 +304,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and lock remaining volume at breakeven plus trailing structural ATR."
       },
       "synthesis_directive": "Enforce a hard absolute loss cap of $5.00 per trade across all instruments while forcing profit runs to target $15.00-$30.00 via trailing structural liquidity stops."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:53:41.774446+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses reaching up to -$20.56 during volatile XAUUSD retracements, combined with premature micro-scalp exits that restricted winners to sub-$0.50.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile where max losses (-$20.56) vastly exceeded max wins (+$0.55), violating the absolute requirement to keep losses constrained between $4-$6 while letting winners run to $15-$30+.",
+        "market_regime_mismatch": "Entering high-momentum institutional liquidity zones without volatility-adjusted trailing stops, causing positions to absorb full-amplitude counter-trend shocks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to losing positions or pyramiding within 3 ticks of high-impact session opens to eliminate falling-knife exposure.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated ATR-based volatility contraction breakout and a 3-period volume delta confirmation prior to order execution.",
+        "profit_harvest_threshold": "Initiate automated trailing profit locks via hard partial scale-outs once floating profit crosses +$10.00, forcing execution toward the $15-$30+ target zone."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 on all XAUUSD positions while deploying aggressive trailing profit triggers to ensure winners expand to the $15-$30+ band."
     }
   ]
 }

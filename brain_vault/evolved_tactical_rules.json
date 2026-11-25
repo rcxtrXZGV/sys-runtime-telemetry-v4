@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to losing positions; multi-tier entries require confirmed structural break and positive unrealized buffer on previous tranche.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR-based volatility cap and order-book imbalance check to block entries during high-impact spread widening and liquidity wicks.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and lock remaining volume at breakeven plus trailing structural ATR."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions or pyramiding within 3 ticks of high-impact session opens to eliminate falling-knife exposure.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a validated ATR-based volatility contraction breakout and a 3-period volume delta confirmation prior to order execution.",
+  "profit_harvest_threshold": "Initiate automated trailing profit locks via hard partial scale-outs once floating profit crosses +$10.00, forcing execution toward the $15-$30+ target zone."
 }
