@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T08:02:55.744459+00:00",
+  "verdict": "BUY",
+  "symbol": "XAUUSD",
+  "confidence_score": 88,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 3514.5,
+  "tp_price": 3538.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD swept intraday liquidity down to the 3511.3 low, tapping into a heavy buyer volume concentration zone before aggressively rejecting lower prices. Price has recovered back above 3523.0 with an expansion candle on rising volume, showing clear absorption of sell-side liquidity.",
+  "trade_thesis": "Following a successful liquidity sweep of the Asian session low at 3511.3, Gold is displaying impulsive recovery behavior. The downside momentum has completely stalled, and institutional order flow is shifting back to the upside as stops below 3515 have been fully cleared. Entering long with a tight stop below the sweep wick targets an immediate mean-reversion toward the 3538 resistance level."
+}
