@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:50:37.845272+00:00",
+  "timestamp": "2026-11-25T08:52:27.339264+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced an aggressive institutional liquidity expansion upward from $3530.2 to $3564.4 on massive volume (19,526). This move swept buyside liquidity above the $3548-$3550 structural highs. DXY is holding around 104.05, showing slight divergence against the Gold surge.",
-  "trade_thesis": "Following a vertical $34 price expansion in a single 15-minute candle, entering long at $3561.3 represents chasing price into fresh intraday highs without discount positioning. Furthermore, 5 open long positions are active and deep in profit. Sovereign risk protocol mandates WAIT to allow open positions to clear or wait for a retracement into the 15m Fair Value Gap ($3535-$3545) before initiating fresh capital risk."
+  "gold_liquidity_analysis": "XAUUSD experienced an violent intraday bullish expansion from 3530.2 to 3567.4 on immense volume (19,829 ticks). A massive Fair Value Gap (FVG) now exists between 3530.3 and 3563.6. Open positions established near lower liquidity sweeps (3514 - 3533) are fully in profit. Entering fresh market orders at the high of a parabolic spike presents unfavorable risk/reward due to impending FVG rebalancing.",
+  "trade_thesis": "Capital preservation doctrine mandates withholding new entries after an extreme $37 vertical impulse. Standard institutional execution dictates waiting for liquidity retracement into the newly formed M15 FVG order block (3540-3548 region) before adding exposure. Portfolio margin is currently locked in 5 winning longs."
 }
