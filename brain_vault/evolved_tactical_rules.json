@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions during high-velocity momentum expansions; pyramiding is limited to pullback entries confirmed by volume profile nodes.",
+  "pyramiding_rule": "Absolute prohibition against pyramiding into losing positions or adding volume during high-volatility price discovery zones.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry authorized unless Order Book Imbalance exceeds 65% and multi-timeframe ATR expansion matches a micro-structure breakout trigger.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance to capture structural targets between +$15.00 and +$30.00."
+  "new_mandatory_entry_filter": "Require a validated multi-timeframe volume-weighted momentum alignment and a confirmed 3-bar consolidation pattern prior to order execution.",
+  "profit_harvest_threshold": "Dynamic trailing profit-lock activation starting at +$5.00 with scaled scale-outs to ensure target winners reach the $15-$30+ asymmetry band."
 }

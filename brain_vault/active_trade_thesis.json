@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T20:58:14.903613+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-25T21:00:03.768684+00:00",
+  "verdict": "SELL",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3580.0,
-  "tp_price": 3650.0,
+  "sl_price": 3615.5,
+  "tp_price": 3540.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active on broker. Reversal sentinel standing by.",
-  "trade_thesis": "Gold (XAUUSD) recently pushed up to an intraday high of 3615.2 before pulling back and consolidating around the 3599.0 level. The 15-minute candles display declining volume on recent bars following the sharp impulse, indicating a short-term consolidation phase after a powerful liquidity sweep. As per mandate, during choppy consolidation periods, we hold sovereign discipline and output WAIT until a clean asymmetric breakout setup emerges."
+  "reversal_sentinel_assessment": "No open positions currently active on the broker balance. Clean slate ready for tactical asymmetric entry.",
+  "trade_thesis": "Gold (XAUUSD) has rejected the upper psychological boundary near the 3615.2 intraday high, printing consecutive lower highs and fading back toward 3599.3. The 15m candles display momentum exhaustion on the buying side with a top wick rejection sweep, providing a high-probability asymmetric short setup targeting liquidity pools below 3550."
 }

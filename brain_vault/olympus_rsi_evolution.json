@@ -1,5 +1,5 @@
 {
-  "total_cycles": 23,
+  "total_cycles": 24,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -368,6 +368,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance to capture structural targets between +$15.00 and +$30.00."
       },
       "synthesis_directive": "Enforce a strict maximum $5.00 hard stop-loss on all XAUUSD trades while forcing winners to run to a minimum $15.00 target via aggressive trailing mechanisms."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T20:59:53.863211+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic stop-loss sizing failures on XAUUSD during high-velocity directional sweeps, compounded by premature micro-harvesting of wins (+$0.39 to +$0.55) versus letting losses run up to -$20.56.",
+        "risk_asymmetry_flaw": "Inverted risk-reward ratio: average winning trades captured minimal tick value (~$0.46), while uncontrolled stopouts suffered massive drawdowns exceeding the strict $4-$6 safety mandate (reaching -$11.66, -$7.72, and -$20.56).",
+        "market_regime_mismatch": "Entering counter-trend or chasing breakout exhaustion during high-volatility institutional sessions without accounting for intraday spread widening and liquidity gaps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute prohibition against pyramiding into losing positions or adding volume during high-volatility price discovery zones.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated multi-timeframe volume-weighted momentum alignment and a confirmed 3-bar consolidation pattern prior to order execution.",
+        "profit_harvest_threshold": "Dynamic trailing profit-lock activation starting at +$5.00 with scaled scale-outs to ensure target winners reach the $15-$30+ asymmetry band."
+      },
+      "synthesis_directive": "Enforce a strict maximum dollar loss cap of $5.00 per trade while widening profit capture mechanics to ensure wins achieve a minimum 3:1 reward-to-risk ratio."
     }
   ]
 }
