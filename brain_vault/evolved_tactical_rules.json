@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of consecutive grid entries or averaging down; any subsequent order on the same asset requires a minimum +$8.00 unrealized profit buffer on the initial tranche.",
+  "pyramiding_rule": "Strictly prohibit adding positions into failing momentum or high-impact news wicks; pyramiding is limited to 1 scaled addition only after price confirms structural break-even plus 1.5 ATR in profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within +/- 3 minutes of high-impact macroeconomic data releases and without multi-timeframe ATR expansion confirmation.",
-  "profit_harvest_threshold": "Initiate automated partial profit-taking at +$10.00 and hard trail remaining exposure to lock in a minimum +$4.00 net gain."
+  "new_mandatory_entry_filter": "Require minimum 14-period ADX > 25 and volume profile confirmation above VWAP prior to order placement to eliminate low-conviction chop entries.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume with a strict dynamic ATR trailing stop to capture +$15.00 to +$30.00 asymmetric tails."
 }
