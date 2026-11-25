@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:26:05.249022+00:00",
+  "timestamp": "2026-11-25T10:27:45.696911+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3550.0,
-  "tp_price": 3580.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced an aggressive liquidity sweep to an intraday high of 3567.39 before consolidating near 3560.89. Open positions are currently active with favorable floating profit, suggesting a brief pause in directional momentum.",
-  "trade_thesis": "Given existing open XAUUSD positions and current consolidation inside a high-volume range following the sharp impulsive sweep, the optimal risk protocol mandates holding existing exposure and waiting for a clearer retest of institutional support before adding new capital."
+  "gold_liquidity_analysis": "XAUUSD recently experienced a massive upside expansion wave to 3567.39, followed by minor consolidation and mean reversion testing around the 3560.8 level. Volume has dropped off significantly on recent 15m candles after the liquidity surge, indicating a temporary localized equilibrium. Existing open positions are already leveraged on XAUUSD, so adding additional exposure right here without a confirmed structural pullback into a fresh Fair Value Gap or session order block presents unnecessary short-term risk.",
+  "trade_thesis": "Market is currently digesting the previous aggressive breakout. Existing trades (tickets 2120357875 and 2120434934) are properly hedged with defined risk parameters. Mandating a WAIT state to observe if price sweeps lower liquidity toward the 3550 support or resumes trend continuation."
 }
