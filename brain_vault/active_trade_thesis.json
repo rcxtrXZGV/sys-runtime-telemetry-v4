@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T06:04:02.313417+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 40,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD just experienced a sharp selloff from the 3573.89 intraday high down to a low of 3522.40, currently stabilizing near 3526.0. DXY is firming near 104.01 and US10Y holds elevated near 4.904%, creating headwinds for precious metals. Recent stop losses hit on aggressive long attempts indicate lingering volatility.",
+  "trade_thesis": "Market is currently digesting a major downside impulse wave. Although a potential liquidity sweep of recent lows has occurred around 3522.40, momentum lacks clear confirmation for an immediate reversal. Standing aside to monitor for a structural higher low or institutional accumulation pattern before deploying capital."
+}
