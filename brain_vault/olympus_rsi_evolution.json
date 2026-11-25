@@ -1,5 +1,5 @@
 {
-  "total_cycles": 13,
+  "total_cycles": 14,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -208,6 +208,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-locks as soon as floating profit exceeds $12.00 to guarantee a $15-$30+ payout profile."
       },
       "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade on XAUUSD and mandate algorithmic profit harvesting between $15 and $30 to reverse negative risk asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:38:42.663429+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic stop-loss distance expansion combined with trailing drawdown slippage during high-velocity directional liquidations on XAUUSD, resulting in unhedged tail losses up to -$20.56.",
+        "risk_asymmetry_flaw": "Risk-to-reward inversion: Losses (-$60.85 total across 6 trades) severely outpaced wins (+$52.81 total across 14 trades) because stop-losses were set wider than realized structural volatility while micro-wins were clipped prematurely by tight trailing stops.",
+        "market_regime_mismatch": "Executing micro-scalps directly into strong trend continuation wicks and liquidity sweeps during late-night and London open sessions without accounting for intraday ATR spikes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute prohibition against averaging down or adding volume into a moving market adverse to position bias; scale-ins restricted strictly to confirmed momentum extensions.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require Volume Profile delta confirmation and 5-period EMA slope alignment prior to order submission; block entries within 15 minutes of high-impact macroeconomic data releases.",
+        "profit_harvest_threshold": "Initiate dynamic profit locking via partial scale-outs when floating profits exceed $12.00, ensuring runner targets extend toward $25.00-$30.00."
+      },
+      "synthesis_directive": "Hard-cap individual Gold stop-losses at exactly $5.00 maximum while enforcing a minimum 3:1 reward-to-risk asymmetry on every single execution."
     }
   ]
 }
