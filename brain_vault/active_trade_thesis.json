@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T23:35:03.253042+00:00",
+  "timestamp": "2026-11-25T23:48:09.266339+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Reversal sentinel monitoring standby mode.",
-  "trade_thesis": "Gold (XAUUSD) has shown extreme intraday volatility with a high of 3619.8 and a subsequent pullback toward 3605.6. Recent closed deals reflect tight stop-loss hunts during choppy consolidation around the upper ranges. Awaiting a cleaner liquidity sweep and structural breakout confirmation before deploying new capital."
+  "reversal_sentinel_assessment": "No active open positions detected on broker. Sentinel is on standby with zero market exposure.",
+  "trade_thesis": "Market is currently in the late-session rollover window (23:48 UTC), characterized by widening broker spreads and thin interbank liquidity. XAUUSD executed a liquidity sweep to 3619.80 before printing a sharp rejection back down to 3598.00, entering low-volume compression around 3602.90. Entering new positions ahead of the midnight settlement presents adverse risk-to-reward for a $49.25 account. Standing aside to preserve dry powder for clean Asian/London session continuation setups."
 }

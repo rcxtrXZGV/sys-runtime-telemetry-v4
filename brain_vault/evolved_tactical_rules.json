@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into active drawdowns or unstructured volatility zones; secondary scaling is strictly prohibited unless primary position achieves +$10.00 floating profit and locks break-even.",
+  "pyramiding_rule": "Strictly prohibit entering secondary orders unless primary position is locked in guaranteed profit of at least +$3.00.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated multi-timeframe structural volume imbalance or order book liquidity sweep confirmation before any entry ticket is generated.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$8.00 and execute tranche harvesting once profit hits +$15.00 to guarantee asymmetric $15-$30+ upside."
+  "new_mandatory_entry_filter": "Require dynamic 5-period ATR volatility expansion check and enforce minimum 5-minute cooldown between consecutive entries on the same symbol.",
+  "profit_harvest_threshold": "Enable dynamic trailing stop at +$3.00 unrealized profit and enforce partial harvest (50%) at +$6.00 to allow remaining exposure to target $15.00+."
 }
