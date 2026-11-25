@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T08:52:27.339264+00:00",
+  "timestamp": "2026-11-25T08:54:15.204554+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 85,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced an violent intraday bullish expansion from 3530.2 to 3567.4 on immense volume (19,829 ticks). A massive Fair Value Gap (FVG) now exists between 3530.3 and 3563.6. Open positions established near lower liquidity sweeps (3514 - 3533) are fully in profit. Entering fresh market orders at the high of a parabolic spike presents unfavorable risk/reward due to impending FVG rebalancing.",
-  "trade_thesis": "Capital preservation doctrine mandates withholding new entries after an extreme $37 vertical impulse. Standard institutional execution dictates waiting for liquidity retracement into the newly formed M15 FVG order block (3540-3548 region) before adding exposure. Portfolio margin is currently locked in 5 winning longs."
+  "gold_liquidity_analysis": "XAUUSD experienced an explosive institutional expansion candle printing a +$34 swing from $3530.2 to $3567.4 with high volume (20,335). DXY is consolidating near 104.01. The violent upside sweep left a massive 15m Fair Value Gap (FVG) spanning 3530 to 3560. Current price at 3564.3 is directly at buy-side liquidity targets.",
+  "trade_thesis": "Capital preservation doctrine strictly forbids chasing parabolic momentum into major buy-side liquidity sweeps. With 3 active long positions already securing substantial unrealized yield and price extended near the intraday high ($3567.4), risk-reward for new entry is unfavorable. We mandate WAIT to allow existing positions to harvest profit and await a retest/mitigation of the 3545-3550 imbalance zone."
 }
