@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:15:52.782327+00:00",
+  "timestamp": "2026-11-25T09:17:45.747305+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3550.0,
+  "tp_price": 3580.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced a massive intraday bullish expansion from $3530.2 to $3567.4 with spike volume reaching 20,361 contracts. Subsequent 15m volume collapsed dramatically to 1,647 and 240 contracts, indicating immediate volume exhaustion at the $3563-$3567 buy-side liquidity pool. DXY remains muted at 104.003 while US10Y yield holds near 4.904%.",
-  "trade_thesis": "Three open long positions are currently active and benefiting from the upside surge. With account balance at $82.08 USD and price currently consolidating near session highs following extreme volume exhaustion, opening additional exposure at peak expansion presents unfavorable risk-reward. Mandating WAIT to allow price to either retrace into the $3535-$3545 Fair Value Gap for re-entry or establish a clean consolidation base."
+  "gold_liquidity_analysis": "Gold recently surged from the 3511.3 low with heavy volume (20361 contracts on the breakout candle) up to 3567.3999, effectively sweeping prior sell-side liquidity and creating a strong bullish displacement. Price is currently consolidating in a tight range around 3561.2 with diminishing volume, absorbing recent gains.",
+  "trade_thesis": "The market has experienced a massive impulsive expansion upward and is currently exhibiting short-term consolidation/chop following the liquidity sweep. Existing open long positions are already in profit targeting 3545.0+. Opening new positions right at this consolidation high without a clear retracement to an untested Fair Value Gap or order block presents sub-optimal risk-to-reward. Mandating WAIT until a cleaner pullback or structural continuation pattern forms."
 }
