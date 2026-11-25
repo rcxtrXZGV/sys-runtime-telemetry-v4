@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding positions (averaging down or scaling into falling momentum) within 3 minutes of a prior stop-loss event.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order-flow imbalance filter: entry requires localized volume delta confirmation and a tight ATR-bounded volatility cap of max 4.5 dollars.",
-  "profit_harvest_threshold": "Trigger trailing take-profit steps starting at +$12.00 unrealized profit to guarantee a minimum +$15.00 to +$30.00 capture on directional expansions."
+  "pyramiding_rule": "Strict prohibition of consecutive grid layering or pyramiding within a 10-pip window; subsequent orders require a validated structural breakout confirmation and a minimum +$10 floating profit cushion on the lead position.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory multi-timeframe volume profile delta confirmation and zero-spread high-impact news blackout window 10 minutes prior and after tier-1 macro prints.",
+  "profit_harvest_threshold": "Dynamic scaling exits starting at +$15.00 with trailing stop activation locking in break-even plus commissions the moment price moves +$5.00 in favor."
 }
