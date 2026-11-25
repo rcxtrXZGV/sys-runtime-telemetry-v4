@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:31:01.608983+00:00",
+  "timestamp": "2026-11-25T09:33:07.276854+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 78,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently tested intraday extremes, sweeping liquidity up to 3567.39 before consolidating around 3557.20. Open positions are currently active, and the market is undergoing a minor consolidation phase following high volume expansion.",
-  "trade_thesis": "Given existing open XAUUSD positions and current consolidation near the midpoint of the recent range, holding off on new risk exposure until a clearer liquidity sweep or institutional order block confirmation materializes is the optimal risk-adjusted strategy."
+  "gold_liquidity_analysis": "XAUUSD executed an institutional liquidity sweep reaching an intraday high of 3567.40 on exceptional volume (20,361 ticks). Price is currently retracing from the overextended high into the 15m Fair Value Gap zone (3530.30 - 3553.60) while DXY consolidates near 104.04.",
+  "trade_thesis": "Chasing the market post a $37 vertical impulse move offers poor risk-to-reward. Two active buy positions remain open on the account. Mandating WAIT allows price to complete its intraday mean-reversion into key demand FVG levels (3540-3545) before establishing new alpha positioning."
 }
