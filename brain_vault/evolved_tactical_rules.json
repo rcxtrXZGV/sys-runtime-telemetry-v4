@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit entering secondary orders unless primary position is locked in guaranteed profit of at least +$3.00.",
+  "pyramiding_rule": "Absolute prohibition against opening multiple sequential tickets in the same direction within a 120-second window to prevent stacked liquidation clusters.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require dynamic 5-period ATR volatility expansion check and enforce minimum 5-minute cooldown between consecutive entries on the same symbol.",
-  "profit_harvest_threshold": "Enable dynamic trailing stop at +$3.00 unrealized profit and enforce partial harvest (50%) at +$6.00 to allow remaining exposure to target $15.00+."
+  "new_mandatory_entry_filter": "ATR(14) volatility expansion coefficient must exceed 1.2 x baseline, and Order Book bid-ask imbalance must favor direction by >65% prior to execution.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, lock remaining volume at breakeven +$2.00, and enforce hard trailing stop until target +$25.00 is reached."
 }
