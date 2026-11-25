@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:35:31.073606+00:00",
+  "timestamp": "2026-11-25T08:37:06.797947+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold (XAUUSD) is currently consolidating around the 3527.20 level after dropping from the intraday high of 3556.60 and testing lows near 3511.30. Multiple open positions are already active in the portfolio with a collective positive floating profit, capturing the prior downside sweep. DXY is stabilizing around 104.04, showing minimal directional expansion currently.",
-  "trade_thesis": "Given that we already hold 4 active fractional XAUUSD positions floating in profit and price is stabilizing in a mid-range consolidation between recent lows and the session high, the optimal systematic choice is to WAIT for a clean liquidity sweep of either the 3518 support or 3532 resistance before deploying additional margin."
+  "gold_liquidity_analysis": "XAUUSD successfully swept sell-side liquidity at 3511.30 and printed a bullish displacement back above 3525. Four existing long positions are active and delivering cumulative floating profits of +$35.20 toward the 3538-3545 buy-side liquidity targets.",
+  "trade_thesis": "Risk management doctrine dictates waiting while holding four high-probability long positions from key order block levels (3514-3528). Adding further exposure on a $107.03 equity balance would exceed safe leverage parameters. Preserving capital while riding open winners to TP."
 }
