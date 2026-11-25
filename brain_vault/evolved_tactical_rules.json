@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to losing or flat positions; pyramiding is only authorized after an open position achieves at least +$15.00 in floating profit with a trailing stop locking in +$5.00.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero execution permitted during high-impact structural wick zones; entry requires confirmation via multi-timeframe order flow imbalance and a realized volatility contraction filter.",
-  "profit_harvest_threshold": "Aggressive scaling out: take 50% profit at +$10.00, move stop-loss to entry at +$15.00, and trail remaining position to capture $25.00-$30.00 asymmetry targets."
+  "pyramiding_rule": "Strict prohibition against adding positions during high-velocity momentum expansions; pyramiding is limited to pullback entries confirmed by volume profile nodes.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero entry authorized unless Order Book Imbalance exceeds 65% and multi-timeframe ATR expansion matches a micro-structure breakout trigger.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance to capture structural targets between +$15.00 and +$30.00."
 }

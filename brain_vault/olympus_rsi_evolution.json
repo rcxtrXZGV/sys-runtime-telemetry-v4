@@ -1,5 +1,5 @@
 {
-  "total_cycles": 22,
+  "total_cycles": 23,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -352,6 +352,22 @@
         "profit_harvest_threshold": "Aggressive scaling out: take 50% profit at +$10.00, move stop-loss to entry at +$15.00, and trail remaining position to capture $25.00-$30.00 asymmetry targets."
       },
       "synthesis_directive": "Enforce absolute hard stops at $5.00 maximum loss per trade while forcing profit targets to run past $15.00, completely eliminating sub-$1 micro-clipping."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T20:56:10.268975+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unbounded tail-risk exposure during trend continuation where stop-losses were set too wide relative to institutional micro-structure volatility (-$20.56 and -$14.91 losses), combined with premature profit clipping on winning micro-scalps (+-$0.40 average wins).",
+        "risk_asymmetry_flaw": "Inverted payoff profile: average losses (-$10.14) drastically outweighed average wins (+$3.77), violating the asymmetric return mandate ($4-$6 cap vs $15-$30 target).",
+        "market_regime_mismatch": "Executing counter-trend entries and lagging momentum breakouts during high-velocity directional liquidations in XAUUSD, causing orders to get trapped in liquidity sweeps before hitting wide stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions during high-velocity momentum expansions; pyramiding is limited to pullback entries confirmed by volume profile nodes.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero entry authorized unless Order Book Imbalance exceeds 65% and multi-timeframe ATR expansion matches a micro-structure breakout trigger.",
+        "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance to capture structural targets between +$15.00 and +$30.00."
+      },
+      "synthesis_directive": "Enforce a strict maximum $5.00 hard stop-loss on all XAUUSD trades while forcing winners to run to a minimum $15.00 target via aggressive trailing mechanisms."
     }
   ]
 }
