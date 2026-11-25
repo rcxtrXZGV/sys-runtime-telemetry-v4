@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); pyramiding into winners is only authorized after a confirmed 1.5R move with trailing stops locked at breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility contraction filter combined with order book imbalance confirmation; absolute ban on entering during top-tier high-impact news wicks.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remainder dynamically via 5-period EMA to capture extended $15-$30+ macro runs."
+  "pyramiding_rule": "Strict prohibition against adding positions during aggressive trend acceleration or falling knife conditions.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require 3-factor confirmation (Order Flow Imbalance + Volume Delta + Volatility Band Breakout) before order authorization.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining remainder to lock in $15-$30+ asymmetry."
 }
