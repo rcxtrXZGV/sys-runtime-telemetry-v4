@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions or pyramiding within 3 ticks of high-impact session opens to eliminate falling-knife exposure.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated ATR-based volatility contraction breakout and a 3-period volume delta confirmation prior to order execution.",
-  "profit_harvest_threshold": "Initiate automated trailing profit locks via hard partial scale-outs once floating profit crosses +$10.00, forcing execution toward the $15-$30+ target zone."
+  "pyramiding_rule": "Strict prohibition against adding to losing positions; zero pyramiding permitted unless the base position has locked in positive trailing profit exceeding $10.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory structural volume and order book delta confirmation; no entries allowed during 15-minute high-impact economic news windows or when ATR exceeds 3x the 20-period moving average.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit hits $15, scaling out 50% of the volume at $20 and letting the remainder run to $30+."
 }

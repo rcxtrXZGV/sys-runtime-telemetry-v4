@@ -1,5 +1,5 @@
 {
-  "total_cycles": 20,
+  "total_cycles": 21,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -320,6 +320,22 @@
         "profit_harvest_threshold": "Initiate automated trailing profit locks via hard partial scale-outs once floating profit crosses +$10.00, forcing execution toward the $15-$30+ target zone."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 on all XAUUSD positions while deploying aggressive trailing profit triggers to ensure winners expand to the $15-$30+ band."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T20:43:57.021476+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked execution during high-volatility XAUUSD structural liquidation wicks, combined with static micro-stop placements that triggered immediately upon normal market noise.",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max) vastly outstripped wins (+~$0.50 micro-scalps) due to premature micro-profit harvesting paired with wide, unhedged holding of losing positions.",
+        "market_regime_mismatch": "System engaged in counter-trend knife-catching during heavy directional intraday momentum drops (e.g., dropping from 3549 to 3514)."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding to losing positions; zero pyramiding permitted unless the base position has locked in positive trailing profit exceeding $10.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory structural volume and order book delta confirmation; no entries allowed during 15-minute high-impact economic news windows or when ATR exceeds 3x the 20-period moving average.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit hits $15, scaling out 50% of the volume at $20 and letting the remainder run to $30+."
+      },
+      "synthesis_directive": "Enforce a strict $5 maximum loss cap on XAUUSD, eliminate sub-dollar micro-harvesting, and ban all counter-trend entries during high ATR expansion regimes."
     }
   ]
 }
