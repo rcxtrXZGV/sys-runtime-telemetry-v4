@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:00:19.972002+00:00",
+  "timestamp": "2026-11-25T09:01:54.442409+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 82,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed an aggressive institutional expansion candle from 3530.20 to 3567.40 on exceptional volume (20,361 contracts). Current price is hovering at 3566.30 near the intraday high. DXY exhibits mild downward pressure near 103.99, confirming dollar weakness driving gold strength. However, price is currently extended above the 15m Fair Value Gap (3535.00-3550.00).",
-  "trade_thesis": "The fund already maintains 3 open positions capturing this upward rally. Buying at the extreme peak of a +$37 impulse move without a retracement violates risk-reward parameters. Strategic capital preservation dictates waiting for price to retest the 15m order block / FVG zone around 3545.00-3550.00 for a high-probability re-entry or letting existing trades hit their profit targets."
+  "gold_liquidity_analysis": "XAUUSD recently experienced a massive bullish liquidity expansion, surging +$37 from 3530.2 to an intraday high of 3567.3999 on 20,361 volume. Price left a significant 15m Fair Value Gap (FVG) between 3530.3 and 3561.5. DXY is stabilizing around 103.997 while US10Y holds at 4.904%.",
+  "trade_thesis": "Executing a BUY at the extreme high of a $37 parabolic 15m expansion carries low risk-to-reward asymmetry. Three existing long positions are active and deeply in profit. Capital preservation protocol mandates waiting for a structural pull-back into the 3540-3548 FVG zone or a consolidation pattern before deploying additional margin."
 }
