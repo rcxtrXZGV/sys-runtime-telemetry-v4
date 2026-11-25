@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:53:55.696084+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T10:55:31.173474+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3550.0,
-  "tp_price": 3575.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD underwent a massive impulsive expansion from the 3511.3 low up to 3567.3999, followed by a controlled retracement/consolidation near 3558.10. Volume profile shows heavy institutional accumulation during the breakout candle (20361 volume). Price is holding above the intraday value area with DXY softening towards 103.97, providing tailwinds for further continuation.",
-  "trade_thesis": "Institutional order flow indicates that the liquidity sweep below 3520 has fully completed, triggering aggressive impulsive buying. The current consolidation around 3558 forms a bull flag continuation pattern following the morning expansion. Entering a BUY here targets a retest and break of the 3567.4 intraday high, extending towards the 3575 psychological handle while managing risk below the local 3550 structural support."
+  "gold_liquidity_analysis": "Gold experienced an impulsive high-volume liquidity sweep up to 3567.39 before mean-reverting and consolidating in a tight 3555-3560 range. Current candle volume has dropped to zero as the market absorbs previous aggressive expansion.",
+  "trade_thesis": "With two open long positions currently running and price consolidating after a massive impulse leg, immediate expansion is subdued. Waiting for a retest of key institutional discount blocks or clear breakout confirmation before deploying additional capital."
 }
