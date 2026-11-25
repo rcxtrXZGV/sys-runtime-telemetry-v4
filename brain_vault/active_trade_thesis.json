@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:06:29.873164+00:00",
+  "timestamp": "2026-11-25T09:12:24.084281+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced a massive institutional expansion candle surging from 3530.2 to an intraday high of 3567.4 with over 20,300 tick volume. This vertical impulse swept all buy-side liquidity above 3548-3550. Current price at 3561.2 is overextended and resting above a large Fair Value Gap (3530-3550). DXY remains subdued at 103.984 while US10Y holds 4.904%.",
-  "trade_thesis": "We already hold three active open BUY positions on XAUUSD in substantial profit. Chasing a new position at the peak of a vertical $37 impulse wick creates unfavorable risk-to-reward due to high probability of a mean-reversion pull-back into the 3540-3545 FVG zone. Execution mandate requires standing down (WAIT) to manage current profit equity and await price re-accumulation."
+  "gold_liquidity_analysis": "XAUUSD recently experienced a massive volume expansion candle reaching an intraday high of 3567.3999, followed by consolidation near 3559.7. Open buy positions are currently holding healthy profits as price tests local micro-structures.",
+  "trade_thesis": "Given the aggressive upside displacement and massive volume surge in recent 15m intervals, existing long positions should be managed for target realization while observing if price forms a sustainable continuation flag or requires a deeper retracement into liquidity before new exposure is warranted. Maintaining WAIT until volatility stabilizes."
 }
