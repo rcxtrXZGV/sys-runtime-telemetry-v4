@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T22:50:06.235491+00:00",
+  "timestamp": "2026-11-25T22:51:31.417118+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3600.0,
-  "tp_price": 3650.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active. Sentinel is on standby to monitor incoming order fills.",
-  "trade_thesis": "Gold (XAUUSD) has surged aggressively to test the 3617.8 high on strong momentum candles, following earlier choppy consolidation and multiple failed breakout attempts that resulted in stop-losses. Given the vertical extension of the recent candles without a clean pullback or liquidity sweep to build a high-probability asymmetric setup, the desks advise patience. Standing by for a retest or consolidation phase before deploying capital."
+  "reversal_sentinel_assessment": "Zero active open positions on broker. Sentinel confirms empty portfolio; no harvest intervention required.",
+  "trade_thesis": "XAUUSD has extended parabolically into fresh intraday highs at 3617.80 on noticeably diminishing 15m candle volume (V=963 vs peak breakout V=3292). At 22:51 UTC, markets are entering the daily settlement and rollover window where institutional liquidity thins and spreads widen drastically. Entering long at the extreme peak of an exhausted rally or fading momentum short into the rollover exposes our $49.25 balance to high slippage and false break risk. Prudent capital preservation demands WAIT until fresh Asian liquidity establishes clean directional structure."
 }
