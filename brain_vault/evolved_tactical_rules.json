@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into high-velocity momentum wicks; only add exposure on confirmed volatility compression breakouts.",
+  "pyramiding_rule": "Strict prohibition on adding to losing positions; pyramiding is authorized only after price moves in favor by 2x ATR with the previous entry stop-loss locked at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macro news wicks and without an explicit multi-timeframe ATR confirmation filter.",
-  "profit_harvest_threshold": "Instantly initiate trailing lock protocols when floating profit reaches +$10.00 to prevent erosion into negative outcomes."
+  "new_mandatory_entry_filter": "Mandatory multi-timeframe RSI and EMA slope alignment check to block entries during high-impact counter-trend momentum candles.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop-loss compression once open trade profit reaches +$12.00 to lock in the $15-$30+ asymmetric target zone."
 }
