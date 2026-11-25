@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T12:48:51.105807+00:00",
+  "timestamp": "2026-11-25T12:52:06.840830+00:00",
   "verdict": "BUY",
   "symbol": "XAUUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3544.0,
-  "tp_price": 3566.5,
+  "sl_price": 3538.5,
+  "tp_price": 3565.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Aggressive sell-side liquidity sweep occurred down to 3511.8, followed by a massive institutional v-reversal absorption candle (volume 5,372) breaking back above 3540. DXY showing simultaneous intraday weakness dropping to 103.92, providing macro tailwind for Gold.",
-  "trade_thesis": "Market swept liquidity below previous session lows at 3511.8 and instantly printed strong bullish displacement back to 3554+. The recent 15m pullback held above the 3545 support area. Entering BUY to target the liquidity pool residing near intraday highs at 3566.5."
+  "gold_liquidity_analysis": "XAUUSD swept the intraday liquidity low down to 3511.8 before aggressive institutional absorption and volume expansion (5372 and 3395 contracts) drove a strong recovery back to 3547.6. DXY is showing intraday weakness pushing down towards 103.94, supporting further precious metals upside.",
+  "trade_thesis": "Following a classic liquidity sweep of the session lows and subsequent impulsive reclamation of the 3540 level, order flow has shifted heavily bullish. The market is positioned to retest the upper session highs around 3565 as trapped shorts provide fuel for a continuation rally."
 }
