@@ -1,5 +1,5 @@
 {
-  "total_cycles": 40,
+  "total_cycles": 41,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -640,6 +640,22 @@
         "profit_harvest_threshold": "Dynamic scaling exits starting at +$15.00 with trailing stop activation locking in break-even plus commissions the moment price moves +$5.00 in favor."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade while prohibiting sub-dollar micro-exits, forcing all winning runs to target $15.00-$30.00 asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:43:28.632266+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop losses were placed too tightly within micro-volatility noise (e.g. ticket 1705772492 losing -$20.56 due to excessive slippage and tight range wicks), compounded by uncontrolled multi-ticket execution clustering at identical pivot zones.",
+        "risk_asymmetry_flaw": "Losses averaged -$9.01 while wins averaged a meager +$0.46, representing a broken 20:1 negative risk-reward ratio caused by premature profit-clipping and letting stops get run.",
+        "market_regime_mismatch": "Executing scalar entries during high-frequency XAUUSD structural liquidity sweeps where market makers hunt clustered micro-stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into active high-frequency pullbacks; strictly prohibit secondary order stacking within 50 pips of an existing losing position.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order-flow imbalance filter and ATR volatility expansion check before execution; block entries when spread exceeds 35% of the average 5-candle range.",
+        "profit_harvest_threshold": "Dynamic trailing stop activation at +$4.00 unrealized profit, forcing the engine to scale out portions and allow winners to stretch toward the $15.00-$30.00 objective."
+      },
+      "synthesis_directive": "Enforce a rigid $5 hard dollar cap on all stop-losses while mandating trailing activation at +$4 to reverse the negative risk-reward skew immediately."
     }
   ]
 }
