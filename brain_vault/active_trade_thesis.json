@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:13:54.854990+00:00",
+  "timestamp": "2026-11-25T09:15:52.782327+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced a massive institutional liquidity sweep from 3530.20 up to 3567.40 (+37.20 points) on heavy volume (20,361). This violent expansion left a prominent 15m Fair Value Gap (FVG) spanning 3530.20 to 3557.89. Price is currently consolidating at 3561.40 while DXY remains subdued at 104.019.",
-  "trade_thesis": "With three existing active XAUUSD positions riding the upward move and price entering a post-impulse consolidation zone, taking a new position here carries high risk of buying the extended premium peak right before a corrective retest into the 15m FVG zone. Mandating WAIT to protect account equity and allow existing positions to maximize returns."
+  "gold_liquidity_analysis": "Gold experienced a massive intraday bullish expansion from $3530.2 to $3567.4 with spike volume reaching 20,361 contracts. Subsequent 15m volume collapsed dramatically to 1,647 and 240 contracts, indicating immediate volume exhaustion at the $3563-$3567 buy-side liquidity pool. DXY remains muted at 104.003 while US10Y yield holds near 4.904%.",
+  "trade_thesis": "Three open long positions are currently active and benefiting from the upside surge. With account balance at $82.08 USD and price currently consolidating near session highs following extreme volume exhaustion, opening additional exposure at peak expansion presents unfavorable risk-reward. Mandating WAIT to allow price to either retrace into the $3535-$3545 Fair Value Gap for re-entry or establish a clean consolidation base."
 }
