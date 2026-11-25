@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute prohibition against pyramiding or adding concurrent orders within a 3-minute window when floating profit is under $10, preventing cascade failures like tickets 1707578236 and 1707578239.",
+  "pyramiding_rule": "Strictly prohibit sequential entries (ticket clustering at 21123016852/16855) within a 5-point range; enforce a 15-point structural breakout distance before adding size.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 14-period ATR volatility normalization filter and an institutional volume confirmation spike before order execution on XAUUSD.",
-  "profit_harvest_threshold": "Initiate trailing profit capture or scale-out execution as soon as an open position hits +$12, locking in gains before retracements occur."
+  "new_mandatory_entry_filter": "Require a 1-minute candle close beyond the moving average expansion band AND zero high-impact macroeconomic news in a 15-minute window prior to execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$5.00 unrealized profit to guarantee a minimum $4.00 net lock-in, forcing runners to reach the $15.00-$30.00 target."
 }
