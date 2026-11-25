@@ -1,5 +1,5 @@
 {
-  "total_cycles": 6,
+  "total_cycles": 7,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -96,6 +96,22 @@
         "profit_harvest_threshold": "Scale out 50% of volume at +$6.00 profit and trail remaining position with a hard breakeven plus trailing stop to guarantee a $15-$30+ asymmetric payout."
       },
       "synthesis_directive": "Enforce a rigid $5.00 maximum risk cap per trade on XAUUSD, mandate trailing profit harvesting starting at +$6.00, and ban entries during high-volatility session opens."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:21:46.778765+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unbounded stop-losses breaching the maximum risk envelope during high-velocity volatility expansions, specifically ticket 1705772492 resulting in a catastrophic -$20.56 loss.",
+        "risk_asymmetry_flaw": "Losses heavily outpaced wins ($60.85 across 6 losses vs $52.81 across 14 wins) due to tight profit-taking micro-scaling combined with trailing stops that failed to lock down open liquidity.",
+        "market_regime_mismatch": "Executing micro-scalps into aggressive XAUUSD trend continuation wicks without utilizing volume-weighted dynamic exit corridors, resulting in premature profit evaporation and late stop hunting."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions during active drawdown wicks; pyramiding is authorized only after the primary position has achieved a secured trailing stop in profitable territory.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandate an institutional order-flow liquidity sweep validation combined with a 5-period EMA momentum confirmation before any order execution is unlocked.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop tightening or scale-out partial harvesting the moment floating profit hits +$15.00 to prevent erosion into red closes."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD and mandate immediate structural profit harvesting when positions cross +$15.00 to restore asymmetric return distribution."
     }
   ]
 }
