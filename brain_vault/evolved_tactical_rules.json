@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding allowed unless the initial position is in-the-money by at least 1.5x the maximum risk unit and trailing stop is locked at breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 3-timeframe alignment filter (M1, M5, M15) combined with volume delta confirmation before firing any order to prevent high-impact wick entrapment.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remaining balance aggressively using ATR-based trailing stops to capture $15-$30+ runs."
+  "pyramiding_rule": "Strict prohibition of multiple simultaneous entries in the same price cluster; no scaling into positions when unrealized variance expands beyond 1.5 ATR.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a validated 5-minute order block mitigation combined with an RSI mean-reversion extreme confirmation before any market execution is permitted.",
+  "profit_harvest_threshold": "Initiate automated trailing stops once floating profit hits +$10.00 to guarantee a minimum +$5.00 capture, eliminating premature exits and zero-bound reversals."
 }
