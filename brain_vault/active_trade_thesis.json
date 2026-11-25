@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:50:35.055697+00:00",
+  "timestamp": "2026-11-25T09:53:22.321164+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 62,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold executed an aggressive expansion candle sweeping buy-side liquidity up to 3567.40 on a massive volume surge (20k contracts). Price is currently retracing into the 15m Fair Value Gap / Order Block zone between 3550.00 and 3554.00. DXY remains stable around 104.05.",
-  "trade_thesis": "We already maintain active intraday exposure on Gold (2 open positions). To maintain optimal risk management on an equity base of $85.47, we hold off on adding further leverage while price digests the recent 35-dollar surge and retests the institutional demand zone."
+  "gold_liquidity_analysis": "XAUUSD experienced a sharp impulsive expansion to an intraday high of 3567.39 followed by a measured retracement back into the 3552-3554 zone. Volume has cooled off significantly on the recent 15-minute candles after the massive volume spike at 3563.8. DXY is consolidating tightly around 104.04.",
+  "trade_thesis": "Currently managing two open XAUUSD positions with active exposure. Price is consolidating in a tight range after the aggressive liquidity sweep higher. Maintaining a WAIT posture to let price dictate whether a continuation of the bullish impulse or a deeper retracement toward the 3540 equilibrium block will manifest."
 }
