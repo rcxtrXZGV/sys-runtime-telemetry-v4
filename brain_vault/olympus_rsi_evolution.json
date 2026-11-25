@@ -1,5 +1,5 @@
 {
-  "total_cycles": 41,
+  "total_cycles": 42,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -656,6 +656,22 @@
         "profit_harvest_threshold": "Dynamic trailing stop activation at +$4.00 unrealized profit, forcing the engine to scale out portions and allow winners to stretch toward the $15.00-$30.00 objective."
       },
       "synthesis_directive": "Enforce a rigid $5 hard dollar cap on all stop-losses while mandating trailing activation at +$4 to reverse the negative risk-reward skew immediately."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:45:15.600723+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked high-frequency scalping entries into high-volatility XAUUSD liquidity sweeps, compounded by structural stop-loss placement errors that let a single adverse move drain up to -$20.56 while profit takes clipped micro-gains of under $0.55.",
+        "risk_asymmetry_flaw": "Inverted reward-to-risk profile; average losses (-$6.75) vastly exceeded average wins (+~$4.32), violating the $4-$6 loss cap mandate due to wide manual or lagging stops during sharp expansion wicks.",
+        "market_regime_mismatch": "Operating mean-reversion and high-frequency grid-style entries during London/NY crossover structural impulse runs, resulting in rapid stop-out cascades and failed pyramiding attempts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions or opening multi-ticket clusters within a 5-second execution window during high ATR expansion regimes.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order dispatch unless the 14-period ATR is below the 50-period median and the order flow imbalance confirms direction via tick volume delta.",
+        "profit_harvest_threshold": "Instant trailing stop lock-in at +$4.00, with scaling partial exits starting at +$15.00 and final liquidation before +$30.00."
+      },
+      "synthesis_directive": "Enforce a hard structural stop-loss ceiling of $5.00 on all XAUUSD trades and ban clustered micro-entries during high-velocity impulses to permanently eliminate catastrophic outliers."
     }
   ]
 }

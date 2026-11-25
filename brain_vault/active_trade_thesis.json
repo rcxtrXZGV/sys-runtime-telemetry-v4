@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T21:43:33.882581+00:00",
+  "timestamp": "2026-11-25T21:45:23.711350+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Reversal sentinel monitoring mode standing by.",
-  "trade_thesis": "Recent closed deals demonstrate vulnerability to tight stop losses during choppy consolidation around the 3550-3600 level on XAUUSD. Current 15m price action shows a minor top wick rejection near the 3617 intraday high, followed by compression into 3605. In light of recent drawdowns from premature breakout entries, desks recommend patience. Awaiting a cleaner liquidity sweep or impulsive expansion before deployment."
+  "reversal_sentinel_assessment": "No open positions currently active on the broker. Reversal sentinel monitoring idle state.",
+  "trade_thesis": "Gold (XAUUSD) has shown powerful intraday expansion reaching a high of 3617.10 before consolidating into a tight range around 3603.0. Recent history indicates tight stops getting hunted during volatile range transitions. Awaiting clear directional momentum breakout above 3612 or a deeper sweep toward support before deploying capital."
 }
