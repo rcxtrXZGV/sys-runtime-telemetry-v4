@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T23:09:10.907865+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T23:10:44.473606+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3595.0,
-  "tp_price": 3660.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active. Zero risk of drawdown. Clean slate for fresh asymmetric momentum hunting.",
-  "trade_thesis": "XAUUSD shows aggressive bullish expansion reaching an intraday high of 3617.8 with strong follow-through on recent 15m candles. Pullbacks are shallow and immediately bought up, signaling institutional continuation. Entering long with a tight calculated stop-loss below the recent consolidation base at 3595.0 to capture further upside toward 3660.0."
+  "reversal_sentinel_assessment": "Zero active positions detected on the broker. Reversal Sentinel remains in defensive observation mode with full capital protected.",
+  "trade_thesis": "Execution halted due to the 23:00-00:00 UTC daily session rollover window, characterized by zero tick volume across FX and Gold, and sharp institutional spread expansion. Gold reached an intraday peak of 3619.80 before printing rejection wicks down to 3614.60 in drying volume, signaling momentum stalling. With account equity at $49.25, forcing entries into illiquid rollover markets creates asymmetric negative expected value via spread slippage. High-probability setups will resume once the Tokyo open injects legitimate liquidity and directional follow-through."
 }
