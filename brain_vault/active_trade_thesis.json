@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:31:10.700130+00:00",
+  "timestamp": "2026-11-25T10:32:45.587402+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold (XAUUSD) has experienced a massive impulsive expansion upward from the 3511 lows up to 3567, followed by a consolidation phase around the 3559 level. Open long positions are already active and currently floating profits. With high volatility and a recent aggressive sweep of liquidity to the upside, price is consolidating within a narrow range on lower timeframes.",
-  "trade_thesis": "Given that we already hold two active XAUUSD positions with existing exposure and profit/loss fluctuations, and the market is currently digesting the recent explosive move in a tight range, opening new leverage without a clear retest of liquidity pools or a confirmed structural break would introduce unnecessary risk. Mandating WAIT to protect current equity and let the market form a reliable continuation or reversal pattern."
+  "gold_liquidity_analysis": "XAUUSD has experienced a massive expansion higher earlier in the session, printing an intraday high at 3567.40 before consolidating into a range between 3550 and 3562. Current open positions are already leveraged on XAUUSD (tickets 2120357875 and 2120434934) with tight risk parameters. DXY is hovering flat around 104.00, showing no strong directional impulse.",
+  "trade_thesis": "Given active positions already exposed to Gold and the current price action exhibiting consolidation near recent highs rather than a clear liquidity sweep or structural break, discretion dictates maintaining current exposure and waiting for a cleaner continuation pattern or retracement toward deeper value areas."
 }
