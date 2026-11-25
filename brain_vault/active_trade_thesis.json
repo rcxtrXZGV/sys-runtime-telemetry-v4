@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T19:53:50.434225+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T20:37:08.994344+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3550.0,
-  "tp_price": 3610.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active. Zero risk of drawdown. Clean state for executing fresh accumulation entry.",
-  "trade_thesis": "Gold (XAUUSD) has formed a robust higher-low consolidation pattern following the recent intraday push to $3,585.2. Recent candles demonstrate strong support holding around the $3,565-3,567 psychological zone with decreasing selling pressure on minor pullbacks. The DXY remains subdued near 103.63, providing a supportive macroeconomic backdrop. Asymmetric risk-reward favors a continuation breakout toward the $3,600+ liquidity pool."
+  "reversal_sentinel_assessment": "Zero active positions currently open. No capital at immediate exposure. Sentinel standing by to harvest future open runs.",
+  "trade_thesis": "Gold (XAUUSD) has executed an extended +142-point rally from intraday lows of 3465.4 up to 3608.9, but volume is rapidly declining into the 20:37 UTC New York twilight session. Additionally, US10Y yields have printed fresh session highs at 4.848% alongside a rising DXY (103.67), presenting negative macro divergence. With account equity at $53.86 and the daily rollover/spread widening window approaching, initiating an aggressive breakout chase at extreme resistance offers unfavorable asymmetric risk. Prudence dictates waiting for an Asian liquidity sweep or an explicit pull-back structural base."
 }
