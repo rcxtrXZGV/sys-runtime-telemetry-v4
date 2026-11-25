@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:55:31.173474+00:00",
+  "timestamp": "2026-11-25T10:57:04.235126+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3545.0,
+  "tp_price": 3570.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced an impulsive high-volume liquidity sweep up to 3567.39 before mean-reverting and consolidating in a tight 3555-3560 range. Current candle volume has dropped to zero as the market absorbs previous aggressive expansion.",
-  "trade_thesis": "With two open long positions currently running and price consolidating after a massive impulse leg, immediate expansion is subdued. Waiting for a retest of key institutional discount blocks or clear breakout confirmation before deploying additional capital."
+  "gold_liquidity_analysis": "XAUUSD has experienced a massive expansion higher up to 3567.3999 followed by localized consolidation around 3557.3999. Current volume has dried up (0 on the latest bar), and two active positions are already managing risk against the recent upside swing.",
+  "trade_thesis": "Given the existing open positions in XAUUSD which are already exposed to the volatile range following the sharp liquidity sweep to highs, the mandate is to hold current exposure, monitor price action for structural retest of fair value gaps below, and exercise patience. No new immediate asymmetric entry is required until clear volume-backed confirmation materializes."
 }
