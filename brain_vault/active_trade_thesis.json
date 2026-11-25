@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:16:10.019592+00:00",
+  "timestamp": "2026-11-25T08:17:36.433007+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has swept intraday lows down to 3511.3 and is currently consolidating around 3515.2. With three open long positions currently active and holding marginal floating profits/losses, adding further exposure right now presents elevated concentration risk during this range-bound chop.",
-  "trade_thesis": "Given the existing open long inventory in XAUUSD and lack of a clean impulsive breakout above the 3525 resistance zone or a confirmed retest of lower liquidity pools, protocol mandates patience. We await clearer order block displacement before committing to additional capital deployment."
+  "gold_liquidity_analysis": "XAUUSD completed a sell-side liquidity sweep to 3511.30 after declining from the 3556.60 intraday high. Price is currently stabilizing around 3516.20 while DXY consolidates at 104.051. Three active positions are already managing this lower liquidity pool.",
+  "trade_thesis": "Account risk parameters dictate holding position count at 3 active trades (0.03 lots aggregate volume) on a $55.57 account balance. Standard risk protocols mandate waiting for open trades to hit targets or clear key liquidity thresholds before committing further margin."
 }
