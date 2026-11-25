@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:46:45.577795+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T10:48:34.383053+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 78,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3549.5,
-  "tp_price": 3575.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD has demonstrated aggressive expansion from the 3511.3 intraday low, sweeping sell-side liquidity before printing massive bullish volume. Current price action consolidates near 3558.10 after testing upper limits near 3567.40. DXY is softening towards 103.98, providing robust tailwinds for further precious metals continuation.",
-  "trade_thesis": "Institutional order flow shows persistent accumulation following the morning sweep of lows. Existing positions are already in profit, confirming the directional bias. Entering a continuation long position off the recent local pullback with a tight risk footprint to target the 3575 liquidity pool."
+  "gold_liquidity_analysis": "XAUUSD underwent an explosive liquidity sweep from the 3530.00 base up to the intraday peak at 3567.40 on an institutional volume spike of 20,361 contracts. Following this expansion, price entered an intraday equilibrium band between 3550.80 and 3565.00, characterised by declining tick volume (averaging ~1,200 contracts) and alternating compression wicks. DXY remains muted around 103.98, failing to provide directional divergence.",
+  "trade_thesis": "The engine already manages two active XAUUSD positions within a restricted equity base of $89.29. Opening a third exposure inside the mid-range of post-expansion chop (3556.60) yields an asymmetric negative risk-to-reward ratio. Mandate WAIT until liquidity sweeps either the session high at 3567.40 or retests the fair value gap support near 3540.00-3545.00 before deploying fresh capital."
 }
