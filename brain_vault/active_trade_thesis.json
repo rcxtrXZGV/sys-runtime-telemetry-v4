@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T09:34:54.483605+00:00",
+  "timestamp": "2026-11-25T09:36:35.961359+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 85,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD completed an aggressive upward liquidity expansion from 3530.2 to 3567.4 (+37.2 points) driven by high institutional volume (20,361 ticks). Current price is consolidating around 3556.10. DXY remains range-bound between 103.98 and 104.08, while US10Y yields are elevated at 4.904%. The immediate liquidity sweep high at 3567.4 has been taken, leaving potential fair value gaps below near 3535-3545.",
-  "trade_thesis": "Following a vertical 37-dollar expansion on Gold, executing new market entries at the top of the spike presents unfavorable risk-reward. Additionally, two open positions (0.02 total lots) are already active on an equity base of $78.17. Capital preservation mandates standing by for current positions to resolve or waiting for a structural pull-back into the 3535-3545 displacement FVG before initiating fresh exposure."
+  "gold_liquidity_analysis": "Gold executed a massive institutional expansion from $3,529.3 to $3,567.4 on extreme volume (20,361 contracts). Current price at $3,555.0 represents a post-liquidity sweep retracement into the upper FVG demand zone. DXY is stable at 104.03. Existing open trades are active.",
+  "trade_thesis": "Following a massive $38 intraday rally and liquidity grab at $3,567.4, price is currently digesting gains and seeking equilibrium. With two open positions already in play and equity at $82.45, optimal capital preservation dictates holding for price stabilization above $3,550 before adding fresh exposure."
 }
