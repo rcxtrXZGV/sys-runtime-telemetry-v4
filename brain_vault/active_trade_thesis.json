@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:27:45.696911+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-25T10:29:18.441208+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3549.5,
+  "tp_price": 3578.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently experienced a massive upside expansion wave to 3567.39, followed by minor consolidation and mean reversion testing around the 3560.8 level. Volume has dropped off significantly on recent 15m candles after the liquidity surge, indicating a temporary localized equilibrium. Existing open positions are already leveraged on XAUUSD, so adding additional exposure right here without a confirmed structural pullback into a fresh Fair Value Gap or session order block presents unnecessary short-term risk.",
-  "trade_thesis": "Market is currently digesting the previous aggressive breakout. Existing trades (tickets 2120357875 and 2120434934) are properly hedged with defined risk parameters. Mandating a WAIT state to observe if price sweeps lower liquidity toward the 3550 support or resumes trend continuation."
+  "gold_liquidity_analysis": "Massive institutional buying volume (20,361 contracts) swept range highs up to 3567.4. Retracements cleanly respected the 3550.8-3555.1 demand zone, leaving higher lows. Inverse correlation with DXY dropping to 104.003 confirms sustained upside momentum.",
+  "trade_thesis": "Following a high-volume impulse break out of the 3511-3530 accumulation block, XAUUSD is maintaining a bullish market structure above key intraday demand. Entering a continuation long position during this 15m reaccumulation phase targets a sweep of buy-side liquidity above 3567.4 towards the 3578.0 expansion target."
 }
