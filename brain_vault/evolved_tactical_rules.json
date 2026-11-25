@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on sequential batch averaging or pyramiding into correlated loss vectors within a 5-minute rolling window.",
+  "pyramiding_rule": "Strict prohibition of consecutive scaling into identical price nodes within a 60-second window to prevent runaway multi-ticket liquidation.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR(14) volatility normalization check and order-flow imbalance filter before any XAUUSD ticket execution.",
-  "profit_harvest_threshold": "Initiate automated partial profit locking at +$4.00 and trail breakeven aggressively to prevent floating gains from evaporating into zero or negative prints."
+  "new_mandatory_entry_filter": "Mandatory 3-bar structural rejection candle close and zero-spread confirmation prior to order execution on XAUUSD.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit crosses +$10.00 to guarantee the $15-$30+ win target."
 }
