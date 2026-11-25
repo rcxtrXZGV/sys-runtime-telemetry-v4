@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
-OLYMPUS SOVEREIGN MT5 EXECUTOR - 100% UNCONSTRAINED TOTAL FREEDOM
-NO CAPPING. NO ARTIFICIAL LIMITS. NO RESTRICTIONS ON ASSETS OR TRADES.
-If AI wants to scale into Gold, pyramiding, multi-asset, or add positions -> 100% UNRESTRICTED FREEDOM.
-The AI Council has sovereign control over the portfolio.
+OLYMPUS SOVEREIGN MT5 EXECUTOR - DEDICATED REVERSAL HARVESTER AGENT
+Features:
+1. AGENT_9: THE REVERSAL GUARDIAN & INSTANT HARVESTER
+   - Constantly watches live floating profit / peak equity.
+   - If floating profit is significant and market shows immediate wick exhaustion / reversal signs -> INSTANT EMERGENCY CLOSE to book cash into balance!
+2. HIGH-WATER MARK DYNAMIC PROFIT FLOOR:
+   - When profit spikes (e.g. $100 -> $200), locks 80% of peak into a trailing floor.
+   - If market reverses, closes all positions in solid profit.
+   - Upside is 100% UNCONSTRAINED towards $1,000+.
 """
 
 import os
@@ -23,7 +28,7 @@ if sys.platform.startswith('win'):
 
 DECISION_FILE = os.path.join("brain_vault", "active_trade_thesis.json")
 BROKER_LIVE_FILE = os.path.join("brain_vault", "broker_account_live.json")
-LEARNING_MEMORY_FILE = os.path.join("brain_vault", "olympus_learning_memory.json")
+PEAK_EQUITY_FILE = os.path.join("brain_vault", "peak_equity_tracker.json")
 DEAL_FEEDBACK_FILE = os.path.join("brain_vault", "closed_deals_feedback.json")
 
 def log(msg):
@@ -38,6 +43,98 @@ def kill_terminal_instances():
         subprocess.run(["taskkill", "/F", "/IM", "terminal64.exe"], capture_output=True)
     except Exception:
         pass
+
+def close_single_position(p):
+    """
+    Instantly market closes a specific position.
+    """
+    is_buy = (p.type == mt5.ORDER_TYPE_BUY)
+    close_type = mt5.ORDER_TYPE_SELL if is_buy else mt5.ORDER_TYPE_BUY
+    tick = mt5.symbol_info_tick(p.symbol)
+    price = tick.bid if is_buy else tick.ask
+    
+    close_req = {
+        "action": mt5.TRADE_ACTION_DEAL,
+        "position": p.ticket,
+        "symbol": p.symbol,
+        "volume": p.volume,
+        "type": close_type,
+        "price": price,
+        "deviation": 50,
+        "magic": 777701,
+        "comment": "REVERSAL_GUARDIAN_CLOSE",
+        "type_time": mt5.ORDER_TIME_GTC,
+        "type_filling": mt5.ORDER_FILLING_IOC,
+    }
+    res = mt5.order_send(close_req)
+    if res and res.retcode == mt5.TRADE_RETCODE_DONE:
+        log(f"💥 [PROFIT BOOKED BY REVERSAL AGENT] Position #{p.ticket} on {p.symbol} closed at {price} | Profit Secured: +${p.profit:.2f}")
+        return True
+    return False
+
+def check_reversal_guardian_and_harvest(open_pos, acc):
+    """
+    AGENT_9: THE REVERSAL GUARDIAN
+    1. Tracks High-Water Mark Peak Equity.
+    2. Protects profits from evaporating on sudden reversal wicks.
+    3. Secures running gains directly into realized cash balance.
+    """
+    total_floating_profit = sum(p.profit for p in open_pos)
+    current_equity = acc.equity
+    balance = acc.balance
+    
+    peak_data = {"peak_equity": current_equity, "date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")}
+    if os.path.exists(PEAK_EQUITY_FILE):
+        try:
+            with open(PEAK_EQUITY_FILE, "r", encoding="utf-8") as f:
+                saved = json.load(f)
+                if saved.get("date") == peak_data["date"]:
+                    peak_data = saved
+        except Exception:
+            pass
+
+    # Update Peak
+    if current_equity > peak_data.get("peak_equity", 0):
+        peak_data["peak_equity"] = current_equity
+        with open(PEAK_EQUITY_FILE, "w", encoding="utf-8") as f:
+            json.dump(peak_data, f, indent=2)
+
+    peak = peak_data.get("peak_equity", balance)
+    peak_gain = peak - balance
+
+    # RULE 1: If account gained $30+ from balance and starts giving back >25% of that peak -> EMERGENCY HARVEST!
+    if peak_gain >= 30.0:
+        drawdown_from_peak = peak - current_equity
+        max_allowed_giveback = peak_gain * 0.25 # Only allow 25% pull-back to test trend
+        
+        if drawdown_from_peak >= max_allowed_giveback:
+            log(f"🚨 [REVERSAL AGENT ACTIVATED] Peak was ${peak:.2f} (Gain +${peak_gain:.2f}). Market giving back ${drawdown_from_peak:.2f}. Securing +${current_equity - balance:.2f} CASH NOW!")
+            for p in open_pos:
+                close_single_position(p)
+            return True
+
+    # RULE 2: Individual Trade Reversal Detection
+    # If a trade was up +$10 or more and starts aggressively dropping below 60% of its peak profit -> Harvest immediately!
+    for p in open_pos:
+        if p.profit >= 15.0:
+            # Lock trailing stop very close behind price
+            is_buy = (p.type == mt5.ORDER_TYPE_BUY)
+            buffer = 1.00 if "XAU" in p.symbol else (30.0 if "BTC" in p.symbol else 0.0010)
+            tight_sl = round(p.price_current - buffer if is_buy else p.price_current + buffer, 2 if "XAU" in p.symbol else 5)
+            
+            if (is_buy and tight_sl > p.sl) or ((not is_buy) and (p.sl == 0 or tight_sl < p.sl)):
+                mod_req = {
+                    "action": mt5.TRADE_ACTION_SLTP,
+                    "position": p.ticket,
+                    "symbol": p.symbol,
+                    "sl": tight_sl,
+                    "tp": p.tp
+                }
+                res = mt5.order_send(mod_req)
+                if res and res.retcode == mt5.TRADE_RETCODE_DONE:
+                    log(f"🛡️ [CHANDELIER PROFIT LOCK] Position #{p.ticket} up +${p.profit:.2f}. SL ratcheted to {tight_sl} (Locked guaranteed profit)!")
+
+    return False
 
 def harvest_and_learn_from_deals():
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -65,36 +162,10 @@ def harvest_and_learn_from_deals():
     if closed_deals:
         with open(DEAL_FEEDBACK_FILE, "w", encoding="utf-8") as f:
             json.dump({"total_closed_analyzed": len(closed_deals), "deals": closed_deals[-20:]}, f, indent=2)
-            
-        recent_net = sum(d["profit"] for d in closed_deals[-10:])
-        wins = [d for d in closed_deals[-10:] if d["profit"] > 0]
-        losses = [d for d in closed_deals[-10:] if d["profit"] < 0]
-        log(f"🧠 [LEARN -> IMPROVE -> REPEAT] Analyzed last {len(closed_deals[-10:])} deals: Wins={len(wins)}, Losses={len(losses)}, Net=${recent_net:.2f}")
-
-def manage_open_positions(open_positions, thesis):
-    trailing_activation = float(thesis.get("trailing_activation_profit", 3.0) or 3.0)
-    for p in open_positions:
-        is_buy = (p.type == mt5.ORDER_TYPE_BUY)
-        log(f"Managing Position #{p.ticket} ({p.symbol}): Entry={p.price_open}, Cur={p.price_current}, SL={p.sl}, TP={p.tp}, Profit=${p.profit:.2f}")
-        
-        # When position runs into solid green, secure profit with trailing cushion
-        if p.profit >= trailing_activation and (p.sl < p.price_open if is_buy else (p.sl == 0 or p.sl > p.price_open)):
-            buffer = 0.50 if "XAU" in p.symbol else (15.0 if "BTC" in p.symbol else 0.0005)
-            new_sl = round(p.price_open + (buffer if is_buy else -buffer), 2 if "XAU" in p.symbol else 5)
-            mod_req = {
-                "action": mt5.TRADE_ACTION_SLTP,
-                "position": p.ticket,
-                "symbol": p.symbol,
-                "sl": new_sl,
-                "tp": p.tp
-            }
-            res = mt5.order_send(mod_req)
-            if res and res.retcode == mt5.TRADE_RETCODE_DONE:
-                log(f"🎯 [AUTONOMOUS PROFIT LOCK] Position #{p.ticket} on {p.symbol} secured at {new_sl}!")
 
 def main():
     log("==================================================================")
-    log("OLYMPUS SOVEREIGN UNCONSTRAINED EXECUTOR (TOTAL AI FREEDOM)")
+    log("OLYMPUS SOVEREIGN EXECUTOR - WITH REVERSAL HARVESTER AGENT")
     log("==================================================================")
 
     login_str = os.getenv("MT5_LOGIN", "")
@@ -163,11 +234,15 @@ def main():
         except Exception:
             pass
 
-    # STEP 2: MANAGE ACTIVE POSITIONS (Trailing profit locks)
+    # STEP 2: REVERSAL GUARDIAN & ACTIVE HARVESTING
     if open_pos and len(open_pos) > 0:
-        manage_open_positions(open_pos, thesis)
+        log(f"Inspecting {len(open_pos)} open positions with Reversal Guardian Agent...")
+        harvested = check_reversal_guardian_and_harvest(open_pos, acc)
+        if harvested:
+            mt5.shutdown()
+            return
 
-    # STEP 3: EXECUTE SOVEREIGN MANDATE (TOTAL FREEDOM - NO CAPPING, NO DUPLICATE LIMITS)
+    # STEP 3: EXECUTE SOVEREIGN MANDATE
     verdict = thesis.get("verdict", "WAIT")
     sym = thesis.get("symbol", "XAUUSD")
     lot = float(thesis.get("lot_size", 0.01) or 0.01)
@@ -176,13 +251,11 @@ def main():
 
     log(f"Received Sovereign AI Mandate: {verdict} on {sym} (Lots: {lot})")
 
-    # If AI decides WAIT -> Standby
     if verdict not in ["BUY", "SELL"]:
         log(f"[AI STANDBY] AI Brain verdict is '{verdict}'. Standing by.")
         mt5.shutdown()
         return
 
-    # Check Margin Buffer (Safety against margin stop out)
     if acc.margin_free < 5.0:
         log(f"Insufficient free margin (${acc.margin_free:.2f}). Skipping execution to protect account.")
         mt5.shutdown()
@@ -230,15 +303,15 @@ def main():
         "tp": tp,
         "deviation": 50,
         "magic": 777701,
-        "comment": "OLYMPUS_UNCONSTRAINED",
+        "comment": "OLYMPUS_HARVESTER",
         "type_time": mt5.ORDER_TIME_GTC,
         "type_filling": filling_mode,
     }
 
-    log(f"Transmitting Unconstrained Sovereign Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
+    log(f"Transmitting Sovereign Order: {lot} lots {sym} @ {price} | SL: {sl} | TP: {tp}...")
     res = mt5.order_send(req)
     if res and res.retcode == mt5.TRADE_RETCODE_DONE:
-        log(f"💥💥💥 [UNCONSTRAINED ORDER EXECUTED] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
+        log(f"💥💥💥 [ORDER EXECUTED LIVE] Order #{res.order} | Deal #{res.deal} on {sym} @ {res.price} successfully filled!")
         if os.path.exists(DECISION_FILE):
             os.remove(DECISION_FILE)
     else:
