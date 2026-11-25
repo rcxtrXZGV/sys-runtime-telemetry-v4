@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:58:25.865862+00:00",
+  "timestamp": "2026-11-25T10:02:53.413328+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 78,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold executed a violent bullish expansion from 3530.2 to an intraday high of 3567.4 with over 20k volume units, sweeping buy-side liquidity above previous session highs. Price is currently consolidating in a post-impulse retracement phase near 3553.4, with DXY stabilizing around 104.05.",
-  "trade_thesis": "Two open XAUUSD positions are currently active in the account. After a $37 intraday rally and subsequent micro-consolidation, adding further leverage to an $87.93 equity account presents suboptimal risk-reward. We mandate WAIT to allow existing order flow and running positions to reach strategic targets without over-leveraging."
+  "gold_liquidity_analysis": "XAUUSD executed an aggressive institutional liquidity sweep up to 3567.40 on massive volume (20k+ contracts), followed by a pullback into the 3550-3555 Fair Value Gap (FVG). DXY consolidates near 104.05 while US10Y remains range-bound at 4.904%.",
+  "trade_thesis": "Account has 2 active XAUUSD positions open on an $88.01 equity base. Maximum risk allocation protocol mandates waiting for current positions to play out or structural confirmation after FVG mitigation before introducing additional leverage."
 }
