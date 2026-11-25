@@ -1,5 +1,5 @@
 {
-  "total_cycles": 12,
+  "total_cycles": 13,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -192,6 +192,22 @@
         "profit_harvest_threshold": "Initiate trailing stops or scale-out execution automatically once floating profit reaches $15.00 to guarantee asymmetric $15-$30+ wins."
       },
       "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade on XAUUSD while locking in asymmetric profit targets between $15.00 and $30.00 via dynamic trailing stops."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:36:57.915652+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stops placed too tightly within the local institutional noise band on XAUUSD, causing premature stop-outs followed by adverse maximum drawdown events up to -$20.56.",
+        "risk_asymmetry_flaw": "Losses heavily outscaled wins due to micro-scalping winning positions for cents while allowing losing positions to absorb unhedged downside volatility up to -$20.56.",
+        "market_regime_mismatch": "Entering during high-velocity momentum sweeps without accounting for wide tick-spreads and liquidity wicks on XAUUSD."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into active drawdown candles; add to positions only on confirmed structural higher-low/lower-high retests.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a 3-period volume-weighted confirmation candle close beyond the primary volatility band before order authorization.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop-locks as soon as floating profit exceeds $12.00 to guarantee a $15-$30+ payout profile."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade on XAUUSD and mandate algorithmic profit harvesting between $15 and $30 to reverse negative risk asymmetry."
     }
   ]
 }
