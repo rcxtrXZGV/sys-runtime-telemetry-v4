@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:19:23.672688+00:00",
+  "timestamp": "2026-11-25T09:21:22.157491+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
-  "lot_size": 0.0,
+  "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced an aggressive institutional liquidity expansion from $3530.20 to $3567.40 (+37.2 pips intraday surge) accompanied by massive volume (20,361). Price is currently consolidating near $3562.60 following the sweep of buy-side liquidity above $3565. A Fair Value Gap (FVG) remains unfilled below between $3535.00 and $3550.00. DXY sits stabilized at 104.01.",
-  "trade_thesis": "Following an extreme vertical expansion and liquidity sweep into 3567.40, entering new orders at the high of the move presents an unfavorable risk-reward profile. Additionally, the account already maintains 3 open long positions capitalizing on the upward trend. Autonomous mandate dictates WAIT for price to either retest the 15m FVG demand zone around 3545-3550 or establish a clear structural market shift before deploying further capital."
+  "gold_liquidity_analysis": "Gold experienced massive expansion to the upside with a volume spike up to 3567.39 before consolidating near 3560.70. With three open profitable XAUUSD buy positions currently running towards the 3545 TP levels, market structure is currently digesting the impulsive liquidity sweep. DXY remains stable around 104.00.",
+  "trade_thesis": "Open positions are currently managing risk and capturing the structural push upwards. Due to the high volatility expansion and lack of an immediate clear re-accumulation block, market state dictates holding current exposure and mandating WAIT for fresh setups."
 }
