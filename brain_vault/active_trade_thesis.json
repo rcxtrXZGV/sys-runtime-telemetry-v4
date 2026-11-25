@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T12:53:55.992030+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T18:57:41.059231+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3543.5,
-  "tp_price": 3562.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced a steep liquidity sweep down to the 3511.80 intraday low, aggressively trapping breakout shorts before printing a high-volume recovery candle (5,372 volume) reclaiming the 3540 handle. Price is currently consolidating near 3549.90, supported by DXY retreating from 104.084 down to 103.936.",
-  "trade_thesis": "Institutional absorption is evident following the aggressive shakeout to 3511.80. The swift V-reversal and high volume on the recovery indicate strong institutional demand. Entering long on the retest of the value area with a tight risk-defined stop below the consolidation shelf targets the prior liquidity pool at the 3562-3567 range."
+  "reversal_sentinel_assessment": "No active open positions currently on the broker. Capital is 100% liquid at $62.23 equity. Sentinel monitors liquidity and volume exhaustion without active harvest requirements.",
+  "trade_thesis": "Gold (XAUUSD) has experienced an extreme +120-dollar intraday parabolic expansion from 3453.8 to 3575.4. While the macro trend is intensely bullish aided by DXY softness at 103.61, the 15-minute volume has precipitously dropped from 9,882 contracts to merely 792 on the latest test of the 3575.4 high as New York session liquidity dries up past 18:50 UTC. Chasing long at the absolute intraday peak with decelerating volume creates severe asymmetric drawdown risk for a $62 account, while shorting against this runaway momentum lacks a confirmed lower-high structural breakdown. Prudence dictates waiting for an orderly pullback towards the 3550-3555 liquidity shelf or a clear volume-backed breakout above 3576 before deploying capital."
 }
