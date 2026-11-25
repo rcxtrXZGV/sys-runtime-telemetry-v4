@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:44:15.771412+00:00",
+  "timestamp": "2026-11-25T09:45:53.065728+00:00",
   "verdict": "BUY",
   "symbol": "XAUUSD",
   "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3546.5,
-  "tp_price": 3572.0,
+  "sl_price": 3545.0,
+  "tp_price": 3575.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced a major institutional liquidity sweep downwards to 3511.3 before aggressively reversing upwards with high volume (20,361 on the impulsive breakout candle). Current price action shows a healthy pullback/consolidation around 3554.1 after tagging an intraday high of 3567.4. Lower timeframes show strong buying pressure supporting any dip below 3550, while DXY remains tightly bound near 104.07, providing a stable macro backdrop for gold continuation.",
-  "trade_thesis": "Following the aggressive liquidity purge of early session lows, institutional order flow has shifted firmly bullish on XAUUSD. The asset has established a higher-low structure on the 15-minute timeframe. Entering on the minor pullback towards 3554 aligns with continuation momentum targeting the previous intraday high and liquidity pools resting above 3570."
+  "gold_liquidity_analysis": "Gold underwent a massive liquidity sweep down to 3511.3 before aggressively expanding upward on a volume spike of 20,361 contracts. Current price action is consolidating near 3554.1 within a defined fair value gap, holding above the institutional support block around 3550.8.",
+  "trade_thesis": "Following the aggressive supply-side sweep and sharp impulsive recovery, XAUUSD is exhibiting bullish continuation structure on the 15-minute timeframe. With two open long positions already running in net positive equity dynamics, adding an intraday continuation long at support aligns with sovereign order flow momentum targeting the prior intraday high of 3567.4 and extending to 3575.0."
 }
