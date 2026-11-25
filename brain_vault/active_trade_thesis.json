@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T06:04:02.313417+00:00",
+  "timestamp": "2026-11-25T06:44:10.757715+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD just experienced a sharp selloff from the 3573.89 intraday high down to a low of 3522.40, currently stabilizing near 3526.0. DXY is firming near 104.01 and US10Y holds elevated near 4.904%, creating headwinds for precious metals. Recent stop losses hit on aggressive long attempts indicate lingering volatility.",
-  "trade_thesis": "Market is currently digesting a major downside impulse wave. Although a potential liquidity sweep of recent lows has occurred around 3522.40, momentum lacks clear confirmation for an immediate reversal. Standing aside to monitor for a structural higher low or institutional accumulation pattern before deploying capital."
+  "gold_liquidity_analysis": "Gold (XAUUSD) has experienced a heavy downside impulse from the 3573.9 intraday high down to testing the 3514.89 low, currently consolidating around 3521.10. While recent 15-minute candles show deceleration and minor stabilization near the lows, DXY is holding firm near 104.05 and US10Y yields remain elevated at 4.904%, offering strong headwinds to an immediate bullish reversal. Recent stops hit on sell positions indicate volatile two-way sweeping.",
+  "trade_thesis": "Following a sharp impulsive flush on XAUUSD and consecutive stopped-out trades during chaotic early-session volatility, risk management protocol dictates standing aside. A clearer liquidity sweep and structural market shift (MSB) above 3535 is required before deploying capital on long positions, or a retest of 3540 for continuation shorts. Currently in chop territory; mandate WAIT to preserve equity."
 }
