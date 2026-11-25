@@ -1,5 +1,5 @@
 {
-  "total_cycles": 29,
+  "total_cycles": 30,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -464,6 +464,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation once floating profit hits +$10.00 to capture $15-$30+ asymmetric runs."
       },
       "synthesis_directive": "Enforce a strict $5 max dollar stop-loss on Gold while forbidding micro-exits to ensure winners run to the $15-$30+ target zone."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:19:11.246381+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight stop-losses placed inside local noise bands combined with catastrophic averaging/pyramiding into high-volatility Wicks (e.g., ticket 1705772492 losing -$20.56).",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max) vastly exceeded micro-wins (+$0.39 to +$0.55), inverted from the target $15-$30 win profile.",
+        "market_regime_mismatch": "Executing micro-scalping orders during London/New York session overlap expansions without adjusting structural stops for wide XAUUSD range expansion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds of a previous loss or inside a 10-pip ATR expansion wick.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require 15-second order flow imbalance confirmation and zero Tier-1 macroeconomic news impact windows before execution.",
+        "profit_harvest_threshold": "Trigger trailing stops instantly when floating profit reaches $10, forcing winners to run toward the $15-$30 target."
+      },
+      "synthesis_directive": "Enforce a hard ceiling of $5.00 max stop-loss on XAUUSD, ban high-frequency pyramiding into moving wicks, and force profit-taking triggers to lock in $15-$30 runners."
     }
   ]
 }
