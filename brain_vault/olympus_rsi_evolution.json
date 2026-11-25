@@ -1,5 +1,5 @@
 {
-  "total_cycles": 42,
+  "total_cycles": 43,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -672,6 +672,22 @@
         "profit_harvest_threshold": "Instant trailing stop lock-in at +$4.00, with scaling partial exits starting at +$15.00 and final liquidation before +$30.00."
       },
       "synthesis_directive": "Enforce a hard structural stop-loss ceiling of $5.00 on all XAUUSD trades and ban clustered micro-entries during high-velocity impulses to permanently eliminate catastrophic outliers."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:46:56.719876+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped loss allowance (e.g., ticket 1705772492 losing -$20.56 on 0.01 lot) combined with concurrent multi-ticket order execution during high-volatility wicks.",
+        "risk_asymmetry_flaw": "Severe inverted Risk-Reward ratio where winning trades were micro-harvested at +$0.39 to +$0.55, while losing trades were allowed to drift up to -$20.56.",
+        "market_regime_mismatch": "Executing fixed-pip or wide dynamic stops during volatile breakout regimes without adapting to short-term ATR volatility spikes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict ban on adding to losing positions; secondary position scaling is permitted only when primary position stop-loss is moved to Breakeven + 1.5 ATR.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require pre-trade validation enforcing maximum risk <= $5.00 per 0.01 lot and block entries if M5 ATR exceeds 2.5x the baseline.",
+        "profit_harvest_threshold": "Activate Breakeven lock at +$3.00 profit and trigger trailing stop algorithm aiming for a minimum 1:3 R:R reward ($15.00+)."
+      },
+      "synthesis_directive": "Cap XAUUSD loss per 0.01 lot at $5.00 max, ban same-second multi-ticket entry stacking, and cease micro-harvesting winners below a 1:3 Risk-Reward ratio."
     }
   ]
 }
