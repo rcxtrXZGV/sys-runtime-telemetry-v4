@@ -1,5 +1,5 @@
 {
-  "total_cycles": 32,
+  "total_cycles": 33,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -512,6 +512,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit lock at +$10.00 to ensure winning trades reach the $15.00-$30.00 asymmetric payout target."
       },
       "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade on XAUUSD and mandate immediate structural profit-locking when positions enter green zones."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:30:00.000000+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution during high-volatility liquidity sweeps where tight stop-losses ($0.50-$2.00) were continuously hunted by institutional market makers, compounded by duplicate ticket entries (e.g., tickets 1707578236 and 1707578239) firing simultaneously into falling/rising wicks.",
+        "risk_asymmetry_flaw": "Inverted risk-to-reward ratio: losses reached up to -$20.56 (Ticket 1705772492) while winning deals were prematurely clipped for micro-profits (+$$0.39 to +$0.55), violating the absolute requirement for asymmetric $15-$30+ wins.",
+        "market_regime_mismatch": "Entering range-bound or high-noise micro-structures on XAUUSD during London/New York session overlaps without confirming structural momentum, resulting in premature stop-out chains before major trend initialization."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on multi-ticket entry clustering within a 60-second window; subsequent scale-in orders are blocked unless the initial entry has traveled at least +$10 in profit and moved to break-even.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 3-bar structural volume and ATR expansion breakout confirmation over the 15-minute moving average before placing any order, completely banning raw touching-limit stop entries.",
+        "profit_harvest_threshold": "Dynamic trailing stop initialization at +$5.00 profit, locking in minimum +$3.00, while scaling out partial volume to guarantee target asymmetric expansion toward +$15.00 to +$30.00."
+      },
+      "synthesis_directive": "Enforce a hard absolute dollar cap of $5.00 on all XAUUSD stop losses while demanding structural ATR expansion confirmation to prevent premature wicking and secure asymmetric wins."
     }
   ]
 }
