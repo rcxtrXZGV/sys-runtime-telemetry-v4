@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T08:07:44.633282+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Gold recently swept intraday lows down to 3511.3 before bouncing back toward the 3523.7 handle. We currently hold an open short position at ticket 2120357875 (volume 0.01, SL 3515.0, TP 3545.0) which is slightly underwater at -0.59 profit as price hovers near support/reaccumulation zones. DXY is holding firm around 104.047, while US10Y yields remain elevated near 4.904%.",
+  "trade_thesis": "Given that an open XAUUSD short position is already active with its stop-loss tightly placed at 3515.0 (just above the recent sweep low of 3511.3) and a take-profit target at 3545.0, opening new directional risk at this juncture violates risk management parameters. The market is currently consolidating around 3523 following a sharp selloff from 3556. Therefore, the mandate is WAIT to allow the existing position to develop or for a clearer secondary liquidity sweep structure to form."
+}
