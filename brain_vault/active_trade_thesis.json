@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T08:42:01.482601+00:00",
+  "timestamp": "2026-11-25T08:43:46.984858+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 88,
@@ -8,6 +8,6 @@
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD delivered a strong bullish expansion sweep reaching 3560.40, invalidating local buy-side liquidity pools. DXY remains stable at 104.03, while 10-year yields hold at 4.90%. Currently, 5 open long positions are in heavy floating profit.",
-  "trade_thesis": "Risk management policy dictates maintaining current active long positions as price accelerates toward session profit targets. Adding further exposure at the peak of a vertical liquidity sweep risks buying the local high. Standing by until existing trades close or structural retest occurs."
+  "gold_liquidity_analysis": "Gold executed a massive vertical liquidity expansion from 3530.2 to 3561.9 on high volume (18,593), sweeping buy-side liquidity above intraday highs. A prominent Fair Value Gap (FVG) now exists between 3532.5 and 3560.0. DXY stabilized around 104.05. Entering long at the peak of an extended impulse presents severe bad fill and mean-reversion risk.",
+  "trade_thesis": "The quantitative brain currently holds 5 active long XAUUSD positions in substantial floating profit. Following the sudden $30+ upward impulse to 3560.60, market structure requires a temporary pause to allow for profit realization on open positions and to observe whether price respects the 3560 level or retraces to fill the newly formed 15m Fair Value Gap. Risk protocol dictates WAIT to preserve equity growth."
 }
