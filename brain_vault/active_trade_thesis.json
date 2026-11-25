@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:45:36.213373+00:00",
+  "timestamp": "2026-11-25T08:47:17.255026+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced a massive bullish liquidity expansion up to 3562.90 with high volume (18,813). Price has swept session buy-side liquidity and reached intraday highs. DXY is stable at 104.05.",
-  "trade_thesis": "With 5 open BUY positions already active on XAUUSD capturing this upward surge, opening new positions at the extreme intraday high of 3562.90 presents poor risk-reward due to potential mean-reversion pullbacks. Mandating WAIT while current long positions harvest alpha."
+  "gold_liquidity_analysis": "Gold (XAUUSD) has experienced a massive impulsive expansion candle up to 3564.39 with extreme volume spike (18,995), sweeping prior session highs and creating potential short-term overextension. Current open positions are already safely scaling in profit towards TP 3545.0.",
+  "trade_thesis": "Given the massive volatility spike and existing basket of profitable open long positions on XAUUSD, market structure is currently experiencing high-frequency chasing behavior. We mandate WAIT to let price consolidate, establish a new Fair Value Gap or order block, and prevent over-leveraging our current equity position."
 }
