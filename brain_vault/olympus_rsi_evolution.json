@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T19:53:41.774446+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses reaching up to -$20.56 during volatile XAUUSD retracements, combined with premature micro-scalp exits that restricted winners to sub-$0.50.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile where max losses (-$20.56) vastly exceeded max wins (+$0.55), violating the absolute requirement to keep losses constrained between $4-$6 while letting winners run to $15-$30+.",
-        "market_regime_mismatch": "Entering high-momentum institutional liquidity zones without volatility-adjusted trailing stops, causing positions to absorb full-amplitude counter-trend shocks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions or pyramiding within 3 ticks of high-impact session opens to eliminate falling-knife exposure.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a validated ATR-based volatility contraction breakout and a 3-period volume delta confirmation prior to order execution.",
-        "profit_harvest_threshold": "Initiate automated trailing profit locks via hard partial scale-outs once floating profit crosses +$10.00, forcing execution toward the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 on all XAUUSD positions while deploying aggressive trailing profit triggers to ensure winners expand to the $15-$30+ band."
-    },
-    {
       "evolution_timestamp": "2026-11-25T20:43:57.021476+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked execution during high-volatility XAUUSD structural liquidation wicks, combined with static micro-stop placements that triggered immediately upon normal market noise.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial scale-out once floating profit hits $15.00 to prevent gains from evaporating."
       },
       "synthesis_directive": "Enforce a strict risk-reward floor where single-trade losses are hard-capped at $5.00 while allowing winning trajectories to expand unhindered toward the $15.00-$30.00 objective."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T23:05:00.000000+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of entries into high-volatility liquidity sweeps without adequate structural confirmation, compounded by wide stop-losses during aggressive XAUUSD trend expansions resulting in a catastrophic -$20.56 single-trade drawdown.",
+        "risk_asymmetry_flaw": "Inverted payoff ratio where losing trades (-$20.56 max) severely dwarf winning trades (+$0.55 max), indicating premature profit-taking on winners and delayed cutting of losers.",
+        "market_regime_mismatch": "System attempted counter-trend scalping and unstructured multi-entry execution during high-momentum directional impulses on XAUUSD, triggering cascading stop-outs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into active pullbacks; consecutive orders prohibited unless confirmed by multi-timeframe momentum alignment and existing position is deeply in-the-money with break-even stop locked.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Strict volatility-band filter: No entry authorized during ATR expansion spikes unless order book imbalance exceeds 75% in the direction of the trade.",
+        "profit_harvest_threshold": "Immediate partial scale-out at +$5.00 with trailing stop activation to ensure green runs reach the $15-$30+ asymmetry target."
+      },
+      "synthesis_directive": "Strictly cap individual stop-losses at $5.00 maximum and mandate trailing profit locks to eliminate outsized drawdowns while letting winners run to $15+."
     }
   ]
 }
