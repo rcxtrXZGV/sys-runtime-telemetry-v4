@@ -1,5 +1,5 @@
 {
-  "total_cycles": 38,
+  "total_cycles": 39,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -608,6 +608,22 @@
         "profit_harvest_threshold": "Initiate trailing profit locks dynamically at +$10.00 unrealized to ensure winners reach the target $15-$30+ asymmetry band."
       },
       "synthesis_directive": "Enforce strict volatility-adjusted stop-loss minimums under $5 while banning clustered entries to eliminate over-leverage and force asymmetric risk-reward capture."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:37:25.886167+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic stop-loss placement on high-volatility XAUUSD wicks, notably ticket 1705772492 resulting in a -$20.56 drawdown due to excessive distance before execution.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile where micro-wins capped at +$0.55 are vastly outweighed by unchecked losses running to -$20.56, violating the $4-$6 target boundary.",
+        "market_regime_mismatch": "Entering high-velocity breakout candles without liquidity exhaustion confirmation, causing immediate stop-hunts during London/New York overlap sessions."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of adding positions (averaging down or scaling into falling momentum) within 3 minutes of a prior stop-loss event.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order-flow imbalance filter: entry requires localized volume delta confirmation and a tight ATR-bounded volatility cap of max 4.5 dollars.",
+        "profit_harvest_threshold": "Trigger trailing take-profit steps starting at +$12.00 unrealized profit to guarantee a minimum +$15.00 to +$30.00 capture on directional expansions."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD and mandate progressive profit harvesting to lock in asymmetric $15-$30 returns."
     }
   ]
 }
