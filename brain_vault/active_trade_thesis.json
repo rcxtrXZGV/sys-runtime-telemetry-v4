@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:39:43.801277+00:00",
+  "timestamp": "2026-11-25T09:41:09.946083+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3535.0,
-  "tp_price": 3570.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold recently surged to an intraday high of 3567.39 and is now consolidating around 3550.8. We currently hold two open positions (one profitable, one in a minor drawdown) targeting 3545.0. Volume has normalized after the aggressive expansion candle, indicating a short-term consolidation phase within the broader structure.",
-  "trade_thesis": "Given active exposure on XAUUSD with overlapping profit and loss parameters, adding new directional risk right now violates optimal risk management parameters. The fund mandates WAIT until existing positions complete their cycle or a fresh liquidity sweep of the intraday range manifests."
+  "gold_liquidity_analysis": "XAUUSD recently experienced a massive expansion sweep to the upside reaching 3567.399, followed by a mean-reversion pullback into the 3552.8 range. Volume has sharply dropped off in the latest 15m candles (V=0 to V=58), indicating consolidation and exhaustion after the impulsive run. Currently holding two active long positions in profit/slight drawdown, neutralizing the need to force fresh directional exposure.",
+  "trade_thesis": "Market is transitioning into a localized consolidation range after an aggressive liquidity sweep on Gold. Existing open positions are already leveraged around key structural levels. Prudence dictates waiting for a clear rejection or a tested Fair Value Gap before deploying additional margin. Maintaining stance until price breaks out of the current 3550-3560 equilibrium."
 }
