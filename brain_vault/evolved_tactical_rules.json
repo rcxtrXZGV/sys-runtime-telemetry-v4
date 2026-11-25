@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute prohibition against averaging down or scaling into an active losing position; pyramiding is strictly restricted to momentum bursts where the initial trade is in at least +$8.00 floating profit and the stop-loss is locked at breakeven.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact Tier-1 macro releases, and mandatory ATR(14) volatility expansion confirmation before entry.",
-  "profit_harvest_threshold": "Initiate automated partial scale-outs (50%) at +$10.00 profit and trail remaining position aggressively to lock in minimum +$5.00 net."
+  "pyramiding_rule": "Zero pyramiding authorized until initial position demonstrates a minimum realized profit of $15.00 with the stop-loss locked at breakeven.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Volume and order flow delta must confirm directional momentum via 3 consecutive micro-candles before execution; no fading active wicks.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining half to capture runners up to +$30.00."
 }

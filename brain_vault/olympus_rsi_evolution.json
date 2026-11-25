@@ -1,5 +1,5 @@
 {
-  "total_cycles": 27,
+  "total_cycles": 28,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -432,6 +432,22 @@
         "profit_harvest_threshold": "Initiate automated partial scale-outs (50%) at +$10.00 profit and trail remaining position aggressively to lock in minimum +$5.00 net."
       },
       "synthesis_directive": "Enforce a hard absolute loss cap of $5.00 per trade on XAUUSD and mandate immediate breakeven stops once floating profit reaches +$5.00 to eliminate inverted risk asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:15:55.555336+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unbounded stop-losses during high volatility regimes causing catastrophic individual drawdowns up to -$20.56, completely destroying the asymmetric edge.",
+        "risk_asymmetry_flaw": "Losses (-$54.07 across 8 trades) heavily outweighed wins (+$51.89 across 12 trades) due to micro-profit clipping and oversized stop buffers on XAUUSD.",
+        "market_regime_mismatch": "Entering positions during chaotic London/New York session overlap wicks without filtering out micro-structural noise, leading to immediate stop-hunt triggers."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding authorized until initial position demonstrates a minimum realized profit of $15.00 with the stop-loss locked at breakeven.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Volume and order flow delta must confirm directional momentum via 3 consecutive micro-candles before execution; no fading active wicks.",
+        "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining half to capture runners up to +$30.00."
+      },
+      "synthesis_directive": "Enforce a hard maximum stop-loss cap of $5.00 on all XAUUSD instruments and prohibit micro-scalping out of winning trades before reaching the $15-$30 target asymmetry."
     }
   ]
 }
