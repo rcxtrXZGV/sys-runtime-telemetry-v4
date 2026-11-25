@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of averaging down or adding to losing positions; pyramiding is only authorized after a minimum +$10.00 floating profit with trailing stops locked at breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry execution permitted within 15 minutes of high-impact macroeconomic data releases and without multi-timeframe order book imbalance confirmation.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remainder dynamically to capture +$15.00 to +$30.00+ runs."
+  "pyramiding_rule": "Strict prohibition of adding to positions when floating unrealized losses or when momentum oscillators show divergence on the 1m/5m charts.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory order block confirmation combined with volume delta exhaustion before any entry is authorized; zero trades during initial 15-minute session opens.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$6.00 profit and trail remaining position with a hard breakeven plus trailing stop to guarantee a $15-$30+ asymmetric payout."
 }

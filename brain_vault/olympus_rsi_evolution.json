@@ -1,5 +1,5 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 6,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -80,6 +80,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remainder dynamically to capture +$15.00 to +$30.00+ runs."
       },
       "synthesis_directive": "Hard-cap maximum loss strictly at $5.00 via hard order placement and force profit targets to run past $15.00 before full liquidation."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:17:48.350620+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped directional exposure during high-volatility trend continuation, compounded by arbitrary stop-loss placement directly into high-liquidity structural wicks (e.g., ticket 1705772492 resulting in -$20.56 loss).",
+        "risk_asymmetry_flaw": "Losses averaged -$10.14 while winners averaged a meager +$3.77; the engine is cutting winners too early on micro-pullbacks while letting losers hit wider structural stops.",
+        "market_regime_mismatch": "Executing micro-scalping stop losses inside wide XAUUSD directional impulses without accounting for expanding ATR and session-open liquidity sweeps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of adding to positions when floating unrealized losses or when momentum oscillators show divergence on the 1m/5m charts.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory order block confirmation combined with volume delta exhaustion before any entry is authorized; zero trades during initial 15-minute session opens.",
+        "profit_harvest_threshold": "Scale out 50% of volume at +$6.00 profit and trail remaining position with a hard breakeven plus trailing stop to guarantee a $15-$30+ asymmetric payout."
+      },
+      "synthesis_directive": "Enforce a rigid $5.00 maximum risk cap per trade on XAUUSD, mandate trailing profit harvesting starting at +$6.00, and ban entries during high-volatility session opens."
     }
   ]
 }
