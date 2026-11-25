@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions (no scaling into falling knives); scale-ins only permitted after price moves +$15 in favorable direction with break-even lock.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); pyramiding into winners is only authorized after a confirmed 1.5R move with trailing stops locked at breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 3-bar multi-timeframe volume confirmation and local ATR-based buffer before order placement to avoid micro-wick stop outs.",
-  "profit_harvest_threshold": "Aggressively scale out or tighten trailing stops once unrealized profit reaches +$15.00, ensuring maximum win size stretches to +$30.00."
+  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility contraction filter combined with order book imbalance confirmation; absolute ban on entering during top-tier high-impact news wicks.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remainder dynamically via 5-period EMA to capture extended $15-$30+ macro runs."
 }
