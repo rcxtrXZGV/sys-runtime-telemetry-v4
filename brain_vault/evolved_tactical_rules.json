@@ -1,0 +1,7 @@
+{
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Strict prohibition against adding volume into a moving sequence when open position unrealized P&L is negative or when ATR exceeds the 20-period moving average by > 1.5x.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a validated 3-bar structural volume confirmation and an Order Flow Imbalance (OFI) delta > +0.65 prior to executing any directional entry.",
+  "profit_harvest_threshold": "Scale out 50% of the position at +$10.00 and trail the remainder with a tight ATR-based structural stop to protect against profit evaporation."
+}
