@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of multi-ticket stacking within a 50-point price band; exactly ONE position per structural pivot.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero orders authorized during the first 15 minutes of major hourly candles and without a confirmed ATR-based liquidity exhaustion print.",
-  "profit_harvest_threshold": "Aggressively secure partial profits at +$10.00 and trail stops to break-even immediately to protect against floating profit evaporation."
+  "pyramiding_rule": "Strict prohibition on stacking multiple orders (e.g., tickets 2123016852/2123016855) within a $0.50 price band during high-volatility regimes.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a validated 3-bar structural volume delta confirmation and a minimum 1.5 ATR buffer before order execution to avoid noise wicks.",
+  "profit_harvest_threshold": "Initiate trailing stop locking at +$4.00 profit, forcing the engine to scale out incrementally up to the +$15.00 to +$30.00 target window."
 }
