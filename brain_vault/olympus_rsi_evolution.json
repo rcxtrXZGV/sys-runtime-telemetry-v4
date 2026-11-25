@@ -1,5 +1,5 @@
 {
-  "total_cycles": 15,
+  "total_cycles": 16,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -240,6 +240,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume dynamically to capture +$15.00 to +$30.00 runs."
       },
       "synthesis_directive": "Hard-cap maximum loss per trade strictly between $4.00 and $6.00 by enforcing tight structural stops, and ban micro-clipping to let asymmetric winners run up to $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:41:52.417515+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked tail-risk volatility exposure during Asian-to-London session transitions, causing stops to be hunted out up to -$20.56 per deal.",
+        "risk_asymmetry_flaw": "Losses heavily outscaled wins because micro-scalps (+0.39 to +0.55) were prematurely harvested while outliers (-20.56, -14.91) were permitted to violate the $4-$6 risk containment envelope.",
+        "market_regime_mismatch": "Executing fixed tight mechanical stops inside erratic XAUUSD spread widening and liquidity wicks without accounting for local ATR expansion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute prohibition of adding to positions during active drawdown or within 15 minutes of a prior stopped-out ticket.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Volume-weighted MACD histogram divergence confirmation combined with zero-spread spread check and ATR filter > 2.5 on XAUUSD 1-minute blocks.",
+        "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume with a strict 30-period exponential moving average band."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on every single XAUUSD ticket while banning micro-harvesting to guarantee asymmetry where winners reach $15-$30+."
     }
   ]
 }
