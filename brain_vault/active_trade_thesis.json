@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T04:42:37.542461+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "XAUUSD is currently consolidating near 3548.89 after a strong rejection from the 3573.89 intraday high and a sweep of lower liquidity down to 3532.39. Volume has dropped off significantly on the last few 15-minute candles, indicating a temporary equilibrium state following recent high-volatility moves. DXY is ticking upward slightly towards 103.968, capping immediate upside momentum for gold.",
+  "trade_thesis": "Market structure shows a minor compression in price action with very low volume on the most recent candles, signaling noisy sideways chop after the earlier expansion. Following the core operating doctrine, when the market enters low-volume consolidation without a clear liquidity sweep or Fair Value Gap trigger, we mandate WAIT to protect capital and await a cleaner structural displacement."
+}
