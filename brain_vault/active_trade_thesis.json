@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:01:54.442409+00:00",
+  "timestamp": "2026-11-25T09:04:02.215999+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 85,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
+  "lot_size": 0.0,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently experienced a massive bullish liquidity expansion, surging +$37 from 3530.2 to an intraday high of 3567.3999 on 20,361 volume. Price left a significant 15m Fair Value Gap (FVG) between 3530.3 and 3561.5. DXY is stabilizing around 103.997 while US10Y holds at 4.904%.",
-  "trade_thesis": "Executing a BUY at the extreme high of a $37 parabolic 15m expansion carries low risk-to-reward asymmetry. Three existing long positions are active and deeply in profit. Capital preservation protocol mandates waiting for a structural pull-back into the 3540-3548 FVG zone or a consolidation pattern before deploying additional margin."
+  "gold_liquidity_analysis": "Gold experienced a massive institutional expansion spike from 3530.20 to 3567.40 accompanied by heavy volume (20,361 ticks). This vertical impulse left an unmitigated 15m Fair Value Gap between 3530.30 and 3557.80. DXY pulled back to 103.99, supporting the precious metals rally.",
+  "trade_thesis": "The fund currently holds 3 active XAUUSD positions capitalizing on the upward expansion. Initiating a new entry at 3558.50 immediately following a $37 vertical candle carries unfavorable risk-reward. Mandating WAIT for price to retest the 3542.00-3548.00 FVG order block before adding fresh exposure."
 }
