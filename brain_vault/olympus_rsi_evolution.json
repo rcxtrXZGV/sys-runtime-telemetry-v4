@@ -1,5 +1,5 @@
 {
-  "total_cycles": 16,
+  "total_cycles": 17,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -256,6 +256,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume with a strict 30-period exponential moving average band."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on every single XAUUSD ticket while banning micro-harvesting to guarantee asymmetry where winners reach $15-$30+."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T19:47:08.724689+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessively wide initial stop-losses on 0.01 lot XAUUSD positions, allowing drawdowns up to -$20.56 (2050 points) during rapid intraday sell-offs.",
+        "risk_asymmetry_flaw": "Severe payoff inversion: taking micro-profits ($0.39\u2013$0.55) while absorbing deep single losses (-$11.66, -$14.91, -$20.56) that destroy overall system profitability.",
+        "market_regime_mismatch": "Executing counter-trend long entries during strong bearish momentum regimes without waiting for structural volatility stabilization."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict ban on adding volume to drawdown positions; pyramiding is authorized only when open orders hold +1.5x ATR in profit.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require multi-timeframe EMA alignment (M15/H1) and dynamic ATR volatility filter before order release.",
+        "profit_harvest_threshold": "Lock Breakeven+$0.50 at +$3.00 profit; execute dynamic trailing stop to capture runners up to +$15.00-$30.00."
+      },
+      "synthesis_directive": "Hard-cap all XAUUSD losses at $5.00 maximum per 0.01 lot and terminate micro-scalp profit exits to restore asymmetric mathematical expectancy."
     }
   ]
 }
