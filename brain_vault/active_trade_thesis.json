@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T22:22:44.051910+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T22:24:31.123379+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3605.0,
-  "tp_price": 3645.0,
+  "sl_price": 3590.0,
+  "tp_price": 3650.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions to manage. Sovereign desks clear for new execution.",
-  "trade_thesis": "Gold (XAUUSD) has shown powerful intraday momentum expansion, sweeping highs and firmly establishing above 3600 with strong impulsive candles closing near highs at 3617.8. The prior minor consolidations are being absorbed cleanly. Entering a breakout continuation long position to leverage ongoing upward momentum."
+  "reversal_sentinel_assessment": "No active open positions on broker. Monitoring market structure for breakout continuation or liquidity sweep exhaustion.",
+  "trade_thesis": "Gold (XAUUSD) has pushed aggressively to intraday highs around 3617.8 following recent volatility and prior tight stop-loss sweeps. While upward momentum remains strong, candles show slight compression at the absolute high. To protect our compounding capital from immediate wick rejections and repeat stop-hunts observed in previous sessions, the desks recommend holding execution ('WAIT') until a clean structural pullback or expansion confirmation manifests."
 }

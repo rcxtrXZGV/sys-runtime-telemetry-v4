@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against averaging down or pyramiding into consecutive losses within a 15-minute window; scaling in is only permitted when existing positions are at least +$10 in open profit.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory 5-minute ATR volatility filter and structural liquidity sweep confirmation before order execution; no market entries during the first 5 minutes of high-impact macro data releases.",
-  "profit_harvest_threshold": "Immediate partial profit booking (50%) at +$10, moving the remaining stop-loss to breakeven + commission to strictly eliminate downside exposure on winning trades."
+  "pyramiding_rule": "Strict prohibition of scaling into consecutive orders within a 3-minute window to eliminate clustered micro-losses during high-velocity whipsaws.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macro news releases; requires a verified ATR-expansion breakout confirmation rather than resting limit fills.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop-lock once floating profit hits $4.00 to prevent asymmetric decay."
 }
