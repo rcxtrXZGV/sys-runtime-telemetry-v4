@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T21:16:05.973776+00:00",
+  "timestamp": "2026-11-25T21:17:40.873514+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 42,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Monitoring liquidity pools and order flow.",
-  "trade_thesis": "Recent high-frequency stop hunts around 3550-3552 resulted in consecutive minor losses due to tight stops during high volatility. Gold surged to an intraday high of 3615.2 before pulling back and consolidating tightly around the 3598 level. Volume has dropped off significantly on the most recent 15-minute candles, indicating choppy consolidation rather than a clean directional breakout. Standing aside to let the market establish a clear directional bias before deploying capital."
+  "reversal_sentinel_assessment": "No open positions currently active on broker. Reversal sentinel monitoring standby.",
+  "trade_thesis": "Following recent stop-loss sweeps around the 3550 level and a sharp impulse up to 3615 followed by mean reversion toward 3605, XAUUSD is currently consolidating in a tighter range. Previous small-volume failures mandate caution and a 'WAIT' posture until a clean liquidity sweep confirms the next asymmetric directional bias."
 }
