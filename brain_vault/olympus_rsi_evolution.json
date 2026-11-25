@@ -1,5 +1,5 @@
 {
-  "total_cycles": 24,
+  "total_cycles": 25,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -384,6 +384,22 @@
         "profit_harvest_threshold": "Dynamic trailing profit-lock activation starting at +$5.00 with scaled scale-outs to ensure target winners reach the $15-$30+ asymmetry band."
       },
       "synthesis_directive": "Enforce a strict maximum dollar loss cap of $5.00 per trade while widening profit capture mechanics to ensure wins achieve a minimum 3:1 reward-to-risk ratio."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:01:32.763349+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic stop-loss placement failures on XAUUSD, where erratic micro-volatility wicks hunted tight tactical stops (-$20.56 and -$14.91) while failing to capture macro trend continuation.",
+        "risk_asymmetry_flaw": "Losses exceeded the max allowed threshold ($20.56 max loss vs $0.55 max win), completely violating the asymmetric risk-reward ratio requirement of $4-$6 loss capping versus $15-$30+ win targets.",
+        "market_regime_mismatch": "Entering high-frequency counter-trend or tight scalp positions during high-velocity directional impulses in XAUUSD without acknowledging structural volatility expansion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into high-velocity momentum wicks; only add exposure on confirmed volatility compression breakouts.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macro news wicks and without an explicit multi-timeframe ATR confirmation filter.",
+        "profit_harvest_threshold": "Instantly initiate trailing lock protocols when floating profit reaches +$10.00 to prevent erosion into negative outcomes."
+      },
+      "synthesis_directive": "Hard-cap all individual trade losses at $5.00 via strict algorithmic stops and force a minimum 3:1 reward-to-risk capture ratio on all XAUUSD executions."
     }
   ]
 }
