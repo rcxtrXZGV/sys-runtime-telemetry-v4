@@ -1,5 +1,5 @@
 {
-  "total_cycles": 30,
+  "total_cycles": 31,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -480,6 +480,22 @@
         "profit_harvest_threshold": "Trigger trailing stops instantly when floating profit reaches $10, forcing winners to run toward the $15-$30 target."
       },
       "synthesis_directive": "Enforce a hard ceiling of $5.00 max stop-loss on XAUUSD, ban high-frequency pyramiding into moving wicks, and force profit-taking triggers to lock in $15-$30 runners."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:30:00.000000+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Micro-stop hunting and over-leveraged clustering during high-volatility liquidity sweeps on XAUUSD, where stops placed within $0.50-$1.00 of entry were easily clipped by standard spread widening and market noise.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile: average losses (-$6.75) vastly exceeded average wins (+$4.32), driven by premature micro-profit scalps while letting adverse moves test wider structural stop levels.",
+        "market_regime_mismatch": "Executing mean-reversion and tight-stop entries during strong directional momentum and London/New York session overlap volatility, leading to repeated stop-outs (-$20.56 max loss) followed by immediate continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions within 15 seconds or $1.00 of a prior stop-out; cumulative risk per asset cluster must never exceed $5.00 total exposure.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a confirmed 3-bar order-flow imbalance candle close beyond the 20-period VWAP band alongside zero high-impact macro news releases within a +/- 15-minute window before executing orders.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$8.00 profit, scaling out 50% of volume at +$15.00 and letting remaining volume run to target +$30.00."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar loss per trade while mandating asymmetric profit runs toward $15.00-$30.00 by eliminating micro-scalping and widening structural stop placements away from noise wicks."
     }
   ]
 }
