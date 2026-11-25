@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:45:10.000124+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-25T10:46:45.577795+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3549.5,
+  "tp_price": 3575.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD just experienced a massive expansion sweep up to an intraday high of 3567.3999 followed by a sharp mean-reversion phase consolidating around 3557.39. Open positions are currently floating a net positive profit, and the market is digesting the impulse liquidity sweep with contracting volume candles.",
-  "trade_thesis": "Given the recent aggressive volatility sweep and current sideways consolidation following the sharp breakout, the quantitative brain mandates WAIT to avoid chasing extended price action and let the market form a clean structural order block or fair value gap."
+  "gold_liquidity_analysis": "XAUUSD has demonstrated aggressive expansion from the 3511.3 intraday low, sweeping sell-side liquidity before printing massive bullish volume. Current price action consolidates near 3558.10 after testing upper limits near 3567.40. DXY is softening towards 103.98, providing robust tailwinds for further precious metals continuation.",
+  "trade_thesis": "Institutional order flow shows persistent accumulation following the morning sweep of lows. Existing positions are already in profit, confirming the directional bias. Entering a continuation long position off the recent local pullback with a tight risk footprint to target the 3575 liquidity pool."
 }
