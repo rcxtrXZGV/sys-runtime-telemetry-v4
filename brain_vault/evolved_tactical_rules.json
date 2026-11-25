@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds or 2 points of a previous stop-out to eliminate falling-knife accumulation.",
+  "pyramiding_rule": "Absolute prohibition against pyramiding or executing clustered consecutive orders within a 5-minute window during active volatility expansions.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume delta and institutional spread imbalance must confirm momentum for at least 2 consecutive candles before order placement.",
-  "profit_harvest_threshold": "Disable micro-scaling exits below $15.00 unless a macro reversal pattern triggers an emergency liquidity grab."
+  "new_mandatory_entry_filter": "Require a minimum 3-bar structural volume confirmation and an institutional spread filter before order placement; zero entries permitted during macro data release windows.",
+  "profit_harvest_threshold": "Scale-out half the position at +$10.00 and trail the remainder with a hard structural lock to capture target runs between $15.00 and $30.00."
 }
