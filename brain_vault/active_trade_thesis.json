@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:29:28.166928+00:00",
+  "timestamp": "2026-11-25T09:31:01.608983+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD completed a high-volume institutional expansion from 3530.2 to 3567.4 with over 20,300 volume units on the 15m timeframe. Current price at 3558.7 represents post-expansion consolidation above the prior liquidity sweep. DXY remains muted at 104.014.",
-  "trade_thesis": "Risk management doctrine dictates holding off on fresh entries immediately following a $37 vertical surge. Three XAUUSD positions are already actively managed in the portfolio. Entering at current levels carries unfavorable asymmetry; awaiting a retracement into the 3545-3550 FVG or letting running positions hit targets is the optimal quantitative decision."
+  "gold_liquidity_analysis": "XAUUSD recently tested intraday extremes, sweeping liquidity up to 3567.39 before consolidating around 3557.20. Open positions are currently active, and the market is undergoing a minor consolidation phase following high volume expansion.",
+  "trade_thesis": "Given existing open XAUUSD positions and current consolidation near the midpoint of the recent range, holding off on new risk exposure until a clearer liquidity sweep or institutional order block confirmation materializes is the optimal risk-adjusted strategy."
 }
