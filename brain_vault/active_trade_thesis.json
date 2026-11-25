@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:02:53.413328+00:00",
+  "timestamp": "2026-11-25T10:04:50.354970+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 78,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed an aggressive institutional liquidity sweep up to 3567.40 on massive volume (20k+ contracts), followed by a pullback into the 3550-3555 Fair Value Gap (FVG). DXY consolidates near 104.05 while US10Y remains range-bound at 4.904%.",
-  "trade_thesis": "Account has 2 active XAUUSD positions open on an $88.01 equity base. Maximum risk allocation protocol mandates waiting for current positions to play out or structural confirmation after FVG mitigation before introducing additional leverage."
+  "gold_liquidity_analysis": "Gold experienced an aggressive expansion leg earlier from the 3511 lows up to 3567, followed by a mean-reversion consolidation into the 3550-3558 value area. Current volume has dried up in recent 15m intervals as price stabilizes between active open long positions.",
+  "trade_thesis": "Two open XAUUSD positions are already actively participating in the current intraday structure (one in profit, one near breakeven). With price currently chopping inside a narrow consolidation range following the massive volatility spike, the quantitative risk profile dictates patience. No high-conviction sweep or liquidity grab is present at the extremes. Mandating WAIT until a clear liquidity sweep of the 3550 support or 3560 resistance develops."
 }
