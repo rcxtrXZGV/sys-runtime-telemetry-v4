@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T21:11:41.399677+00:00",
+  "timestamp": "2026-11-25T21:14:11.271770+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 75,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No active open positions on broker. Reversal sentinel in monitoring mode.",
-  "trade_thesis": "XAUUSD experienced a sharp momentum expansion up to 3615.2 followed by a top-wick rejection and volume exhaustion down to 3601.5. Entering immediately following a high-volatility spike during consolidation presents unfavourable risk-reward. Standard protocol dictates waiting for a clear structural retest or liquidity sweep."
+  "reversal_sentinel_assessment": "No open positions currently active. Sentinel standing by to protect future capital upon execution.",
+  "trade_thesis": "Gold (XAUUSD) has experienced a strong upward expansion to an intraday high of 3615.2 before pulling back into a tight consolidation range around 3602.0. Recent 15m candles show shrinking volume (down to 310 and 0) and small-bodied candles indicating indecision and lack of immediate momentum continuation following the sweep. To protect our $49.25 balance and avoid the choppy consolidation trap that triggered previous stop-losses, we remain on the sidelines (WAIT) until a cleaner high-asymmetric breakout or liquidity sweep manifests."
 }

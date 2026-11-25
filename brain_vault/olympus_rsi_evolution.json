@@ -1,5 +1,5 @@
 {
-  "total_cycles": 26,
+  "total_cycles": 27,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -416,6 +416,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-loss compression once open trade profit reaches +$12.00 to lock in the $15-$30+ asymmetric target zone."
       },
       "synthesis_directive": "Hard-cap every trade risk strictly between $4.00 and $6.00 using immediate hard stops while enforcing a dynamic trailing profit capture mechanism to scale winners up to $15-$30+."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:14:06.081731+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped drawdown escalation during high-volatility XAUUSD momentum extensions, notably tickets 1705772492 (-$20.56) and 1704839468 (-$11.66), where stop-losses failed to honor strict capital ceilings.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile: average losses (-$8.04) drastically outweighed average wins (~+$3.77), driven by micro-scalped wins prematurely cut off while losses were permitted to drift beyond the $5.00 absolute risk boundary.",
+        "market_regime_mismatch": "Entering counter-trend or late-stage breakout wicks during London/NY crossover hours without accounting for liquidity sweeps, causing immediate stop-loss hits or severe slippage."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute prohibition against averaging down or scaling into an active losing position; pyramiding is strictly restricted to momentum bursts where the initial trade is in at least +$8.00 floating profit and the stop-loss is locked at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact Tier-1 macro releases, and mandatory ATR(14) volatility expansion confirmation before entry.",
+        "profit_harvest_threshold": "Initiate automated partial scale-outs (50%) at +$10.00 profit and trail remaining position aggressively to lock in minimum +$5.00 net."
+      },
+      "synthesis_directive": "Enforce a hard absolute loss cap of $5.00 per trade on XAUUSD and mandate immediate breakeven stops once floating profit reaches +$5.00 to eliminate inverted risk asymmetry."
     }
   ]
 }
