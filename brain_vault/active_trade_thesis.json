@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T00:01:58.179060+00:00",
+  "timestamp": "2026-11-25T00:03:27.460298+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3538.0,
-  "tp_price": 3568.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold (XAUUSD) is currently consolidating around 3547.7 after testing intraday lows near 3545.39. Recent 15m candles show low volatility and zero volume readings on the most recent bars, indicating an illiquid late-session or early Asian transition chop. DXY is stable near 103.84, showing no aggressive directional push.",
-  "trade_thesis": "Following recent stop-outs on XAUUSD shorts and longs during high-volatility swings, current price action lacks a definitive structural liquidity sweep or expansion FVG. To protect the remaining account equity of ~$60, the quantitative brain mandates a WAIT stance until a clear breakout above 3560 or flush below 3540 occurs."
+  "gold_liquidity_analysis": "Gold (XAUUSD) is currently consolidating tightly near the 3548.90 region after a corrective pullback from intraday highs around 3566.80. Volume has dropped off significantly across recent 15m intervals, indicating range-bound chop during the late session transition. DXY is holding relatively stable around 103.85, offering no strong directional catalyst.",
+  "trade_thesis": "Given the recent string of stop-loss hits on XAUUSD during erratic session moves and the current low-volume sideways compression, market conditions dictate patience. Preserving current account equity ($60.88) while an open EURUSD position remains active is optimal. We await a definitive liquidity sweep of the intraday extremes before deploying capital on Gold."
 }
