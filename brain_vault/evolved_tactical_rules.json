@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); pyramiding into profitable trends is permitted only after the primary trade achieves a +$10.00 floating gain and moves stop-loss to breakeven.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution during 5-minute ATR expansions exceeding 2.5x the 20-period moving average, coupled with mandatory multi-timeframe order block confirmation.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop-lock or partial scale-out when floating profit reaches +$15.00, ensuring maximum target capture up to +$30.00 while completely locking out retracement evaporation."
+  "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds or 2 points of a previous stop-out to eliminate falling-knife accumulation.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Volume delta and institutional spread imbalance must confirm momentum for at least 2 consecutive candles before order placement.",
+  "profit_harvest_threshold": "Disable micro-scaling exits below $15.00 unless a macro reversal pattern triggers an emergency liquidity grab."
 }
