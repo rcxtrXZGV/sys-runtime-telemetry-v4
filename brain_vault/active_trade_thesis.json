@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T11:02:16.401870+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T11:04:11.085326+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 40,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3549.5,
-  "tp_price": 3572.5,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD executed a massive institutional expansion from 3530.2 to 3567.4 backed by 20,361 volume units. The market pulled back into an intraday order block at 3550.8 and has formed a tight bullish consolidation above 3555. Concurrently, DXY is breaking down to new session lows at 103.957, confirming US Dollar weakness and fueling Gold bullish momentum.",
-  "trade_thesis": "Capitalizing on the strong bullish displacement and subsequent higher-low consolidation above 3550.8. Weakness in DXY confirms institutional flow back into XAUUSD. Position targets a liquidity sweep of the 3567.4 intraday high with a target set at 3572.5, keeping a structured SL beneath the key 3550 demand zone."
+  "gold_liquidity_analysis": "XAUUSD experienced an aggressive expansion to highs around 3567.4 followed by a mean-reversion consolidation phase hovering near 3558.8. Open positions are currently absorbing minor pullbacks while DXY stabilizes near 103.97. Volume has temporarily tapered off in the recent 15m intervals.",
+  "trade_thesis": "Market is exhibiting short-term consolidation after a major structural breakout. Following core doctrine to avoid noisy sideways chop and protect existing open positioning, the quantitative brain mandates a WAIT stance until a clear liquidity sweep or structural re-test of support/resistance offers a high-conviction asymmetric edge."
 }
