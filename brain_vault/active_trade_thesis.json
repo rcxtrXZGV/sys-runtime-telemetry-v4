@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:48:52.891498+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-25T08:50:37.845272+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 92,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3545.0,
-  "tp_price": 3585.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD demonstrated a heavy liquidity sweep down to the 3511.3 intraday low, trapping early breakout shorts before printing an aggressive massive-volume displacement candle reclaiming 3559.0. Order flow shows institutional accumulation following the sweep of overnight sell-stops.",
-  "trade_thesis": "Following a classic institutional liquidity purge below previous swing lows, Gold has initiated a powerful expansion phase with surging volume. Multiple open positions are already in profit and running towards our higher targets. Adding a structured continuation long with a tightly managed risk-to-reward ratio capitalizes on the ongoing momentum shift towards the 3585.0 liquidity pool."
+  "gold_liquidity_analysis": "Gold experienced an aggressive institutional liquidity expansion upward from $3530.2 to $3564.4 on massive volume (19,526). This move swept buyside liquidity above the $3548-$3550 structural highs. DXY is holding around 104.05, showing slight divergence against the Gold surge.",
+  "trade_thesis": "Following a vertical $34 price expansion in a single 15-minute candle, entering long at $3561.3 represents chasing price into fresh intraday highs without discount positioning. Furthermore, 5 open long positions are active and deep in profit. Sovereign risk protocol mandates WAIT to allow open positions to clear or wait for a retracement into the 15m Fair Value Gap ($3535-$3545) before initiating fresh capital risk."
 }
