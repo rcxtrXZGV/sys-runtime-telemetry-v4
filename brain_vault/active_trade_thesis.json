@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-25T00:41:03.732758+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 45,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Gold (XAUUSD) has compressed into a tight range following the sweep of intraday lows around 3537.89, currently oscillating near 3543.7. Volume across the recent 15-minute candles has dried up significantly (V=0 to V=88), indicating a lack of immediate institutional participation. DXY is stable near 103.848 with minimal momentum.",
+  "trade_thesis": "Recent closed deals demonstrate that chasing tight breakouts or entering without clear expansion candles on Gold results in consecutive stop-out losses due to intraday noise. Given the low volume profile and consolidation following the session sweep, patience is mandated. We await a definitive liquidity grab and volume expansion before risking capital."
+}
