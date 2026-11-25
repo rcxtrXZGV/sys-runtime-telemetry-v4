@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T11:42:55.087856+00:00",
-  "verdict": "SELL",
+  "timestamp": "2026-11-25T12:48:51.105807+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 86,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3549.5,
-  "tp_price": 3532.0,
-  "trailing_activation_profit": 4.0,
-  "gold_liquidity_analysis": "Liquidity sweep executed above 3567.0 climax high followed by immediate volume exhaustion and rejection. 15-minute market structure shift confirmed with aggressive displacement below 3555 and 3546 support levels. DXY stability at 104.02 and US10Y at 4.904% reinforce downward pressure on Gold.",
-  "trade_thesis": "Capitalizing on post-sweep institutional distribution. Following the failed push to 3567, Gold is repricing downward to rebalance lower Fair Value Gaps and capture sell-side liquidity pooled around 3530-3532. Initiating intraday SHORT with 1:2.4 R:R targeting 3532.0."
+  "sl_price": 3544.0,
+  "tp_price": 3566.5,
+  "trailing_activation_profit": 5.0,
+  "gold_liquidity_analysis": "Aggressive sell-side liquidity sweep occurred down to 3511.8, followed by a massive institutional v-reversal absorption candle (volume 5,372) breaking back above 3540. DXY showing simultaneous intraday weakness dropping to 103.92, providing macro tailwind for Gold.",
+  "trade_thesis": "Market swept liquidity below previous session lows at 3511.8 and instantly printed strong bullish displacement back to 3554+. The recent 15m pullback held above the 3545 support area. Entering BUY to target the liquidity pool residing near intraday highs at 3566.5."
 }
