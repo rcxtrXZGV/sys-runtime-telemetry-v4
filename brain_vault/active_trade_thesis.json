@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T10:04:50.354970+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-25T10:06:22.719991+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 40,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3545.0,
+  "tp_price": 3575.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold experienced an aggressive expansion leg earlier from the 3511 lows up to 3567, followed by a mean-reversion consolidation into the 3550-3558 value area. Current volume has dried up in recent 15m intervals as price stabilizes between active open long positions.",
-  "trade_thesis": "Two open XAUUSD positions are already actively participating in the current intraday structure (one in profit, one near breakeven). With price currently chopping inside a narrow consolidation range following the massive volatility spike, the quantitative risk profile dictates patience. No high-conviction sweep or liquidity grab is present at the extremes. Mandating WAIT until a clear liquidity sweep of the 3550 support or 3560 resistance develops."
+  "gold_liquidity_analysis": "XAUUSD experienced an aggressive expansion leg up to 3567.39 following a major liquidity sweep of morning lows around 3511.3. Current price is consolidating constructively in a bullish flag/micro fair value gap between 3550 and 3556, holding well above key structural order blocks. DXY remains range-bound near 104.07, providing a stable macroeconomic backdrop for gold to sustain higher levels.",
+  "trade_thesis": "The institutional order flow on XAUUSD shows clear bullish intent after absorbing sell-side liquidity earlier in the session. With open positions already capturing healthy profits, compounding into this structural continuation provides an optimal asymmetric reward-to-risk ratio targeting the 3575 session high extension."
 }
