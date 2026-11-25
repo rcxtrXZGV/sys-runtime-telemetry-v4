@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T08:54:15.204554+00:00",
+  "timestamp": "2026-11-25T08:58:35.066699+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 85,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD experienced an explosive institutional expansion candle printing a +$34 swing from $3530.2 to $3567.4 with high volume (20,335). DXY is consolidating near 104.01. The violent upside sweep left a massive 15m Fair Value Gap (FVG) spanning 3530 to 3560. Current price at 3564.3 is directly at buy-side liquidity targets.",
-  "trade_thesis": "Capital preservation doctrine strictly forbids chasing parabolic momentum into major buy-side liquidity sweeps. With 3 active long positions already securing substantial unrealized yield and price extended near the intraday high ($3567.4), risk-reward for new entry is unfavorable. We mandate WAIT to allow existing positions to harvest profit and await a retest/mitigation of the 3545-3550 imbalance zone."
+  "gold_liquidity_analysis": "XAUUSD just experienced a massive impulsive expansion candle to 3567.39 with high volume (20361), sweeping previous intraday liquidity highs. Price is currently consolidating near 3565.20, absorbing selling pressure. Existing open positions are already safely in profit and well-hedged with trailing stops protecting downside risk.",
+  "trade_thesis": "Following an aggressive vertical expansion and sweep of liquidity, Gold is forming a localized micro-consolidation range. Opening new directional risk immediately after a vertical spike carries high chase-risk. We mandate WAIT to allow the market to form a clean intraday pullback or fair value gap retest before deploying fresh capital."
 }
