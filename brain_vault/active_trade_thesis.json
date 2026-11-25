@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:12:24.084281+00:00",
+  "timestamp": "2026-11-25T09:13:54.854990+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "XAUUSD recently experienced a massive volume expansion candle reaching an intraday high of 3567.3999, followed by consolidation near 3559.7. Open buy positions are currently holding healthy profits as price tests local micro-structures.",
-  "trade_thesis": "Given the aggressive upside displacement and massive volume surge in recent 15m intervals, existing long positions should be managed for target realization while observing if price forms a sustainable continuation flag or requires a deeper retracement into liquidity before new exposure is warranted. Maintaining WAIT until volatility stabilizes."
+  "gold_liquidity_analysis": "XAUUSD experienced a massive institutional liquidity sweep from 3530.20 up to 3567.40 (+37.20 points) on heavy volume (20,361). This violent expansion left a prominent 15m Fair Value Gap (FVG) spanning 3530.20 to 3557.89. Price is currently consolidating at 3561.40 while DXY remains subdued at 104.019.",
+  "trade_thesis": "With three existing active XAUUSD positions riding the upward move and price entering a post-impulse consolidation zone, taking a new position here carries high risk of buying the extended premium peak right before a corrective retest into the 15m FVG zone. Mandating WAIT to protect account equity and allow existing positions to maximize returns."
 }
