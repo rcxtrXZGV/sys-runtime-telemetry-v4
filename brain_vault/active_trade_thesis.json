@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-25T09:17:45.747305+00:00",
+  "timestamp": "2026-11-25T09:19:23.672688+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
-  "lot_size": 0.01,
-  "sl_price": 3550.0,
-  "tp_price": 3580.0,
+  "lot_size": 0.0,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "gold_liquidity_analysis": "Gold recently surged from the 3511.3 low with heavy volume (20361 contracts on the breakout candle) up to 3567.3999, effectively sweeping prior sell-side liquidity and creating a strong bullish displacement. Price is currently consolidating in a tight range around 3561.2 with diminishing volume, absorbing recent gains.",
-  "trade_thesis": "The market has experienced a massive impulsive expansion upward and is currently exhibiting short-term consolidation/chop following the liquidity sweep. Existing open long positions are already in profit targeting 3545.0+. Opening new positions right at this consolidation high without a clear retracement to an untested Fair Value Gap or order block presents sub-optimal risk-to-reward. Mandating WAIT until a cleaner pullback or structural continuation pattern forms."
+  "gold_liquidity_analysis": "XAUUSD experienced an aggressive institutional liquidity expansion from $3530.20 to $3567.40 (+37.2 pips intraday surge) accompanied by massive volume (20,361). Price is currently consolidating near $3562.60 following the sweep of buy-side liquidity above $3565. A Fair Value Gap (FVG) remains unfilled below between $3535.00 and $3550.00. DXY sits stabilized at 104.01.",
+  "trade_thesis": "Following an extreme vertical expansion and liquidity sweep into 3567.40, entering new orders at the high of the move presents an unfavorable risk-reward profile. Additionally, the account already maintains 3 open long positions capitalizing on the upward trend. Autonomous mandate dictates WAIT for price to either retest the 15m FVG demand zone around 3545-3550 or establish a clear structural market shift before deploying further capital."
 }
