@@ -1,5 +1,5 @@
 {
-  "total_cycles": 35,
+  "total_cycles": 36,
   "cycles": [
     {
       "evolution_timestamp": "2026-11-25T19:07:29.734505+00:00",
@@ -560,6 +560,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing or scale-out actions immediately upon hitting +$12.00 floating profit to ensure the $15-$30+ asymmetry target."
       },
       "synthesis_directive": "Enforce absolute $5.00 hard stop limits on XAUUSD while widening profit targets to a minimum 3:1 reward-to-risk ratio, completely eliminating sub-dollar scalps."
+    },
+    {
+      "evolution_timestamp": "2026-11-25T21:32:31.086273+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unbounded stop-losses during high volatility regimes combined with micro-scalping winning exits (+<$1) versus wide tail-risk losing exits (-$20.56).",
+        "risk_asymmetry_flaw": "Inverted payout ratio where maximum losses vastly exceeded maximum winners due to premature profit-taking and static, unmanaged trailing stops.",
+        "market_regime_mismatch": "Executing micro-scalping logic during aggressive structural breakouts in XAUUSD, resulting in repeated stop-hunting wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions into adverse momentum or executing multi-ticket entries within the same 5-minute liquidity cluster.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Multi-timeframe ATR expansion confirmation and structural liquidity sweep verification before order execution.",
+        "profit_harvest_threshold": "Initiate dynamic partial profit-taking at +$10 and enforce hard trailing locks at +$15 to ensure wins scale to the $15-$30 target band."
+      },
+      "synthesis_directive": "Hard-cap maximum risk at $5.00 per trade while strictly prohibiting micro-exits on winning positions to enforce an asymmetric 1:3 risk-reward profile."
     }
   ]
 }
