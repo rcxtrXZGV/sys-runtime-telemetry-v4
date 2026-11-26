@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:46:47.521260+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-loss slippage during high-volatility XAUUSD liquidity sweeps (ticket 1705772492 resulting in -$20.56 loss) and premature clipping of micro-winners (+$0.39 to +$5.02) failing to offset outsized tail risks.",
-        "risk_asymmetry_flaw": "Losses reached up to -$20.56, catastrophically violating the risk boundary parameters, while winning trades were prematurely aborted before reaching the $15-$30 target band.",
-        "market_regime_mismatch": "Executing micro-scalping orders into high-frequency institutional liquidity hunts around psychological 3500+ gold handles without structural volatility gating."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of secondary entries or pyramiding when floating drawdown exceeds 1.5 ATR on the primary position; zero additions into falling knives.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Volume delta confirmation and zero-latency spread thresholding (< 30 pips) required prior to order execution to avoid news wick entrapment.",
-        "profit_harvest_threshold": "Dynamic trailing stop activation at +$10.00 floating profit, locking in guaranteed floors while permitting runner scaling up to the $15-$30 objective window."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate algorithmic trailing profit capture to secure $15-$30 asymmetric wins."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:48:48.163582+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unhedged volatility wicks and wide trailing distance on XAUUSD caused massive -$20.56 drawdowns, alongside premature micro-profit closures that capped gains below $5.50.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops once open profit hits +$12.00, securing absolute minimum +$8.00 to force asymmetric $15-$30 payouts."
       },
       "synthesis_directive": "Enforce a rigid $5.00 maximum dollar loss cap per trade while locking in trailing profit sweeps to ensure average winners permanently eclipse average losses."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:41:05.219915+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked execution slippage and wide discretionary stops during high-volatility XAUUSD momentum extensions, notably ticket 1705772492 which resulted in a -$20.56 outlier loss due to structural stop-distance failure.",
+        "risk_asymmetry_flaw": "Losses exceeded winning run profiles because micro-scalp profits (+0.39 to +5.02) were cut too early while trailing stop controls permitted outlier losses to reach -$20.56, violating the $4-$6 absolute risk ceiling.",
+        "market_regime_mismatch": "Executing counter-trend micro-positions or unhedged entries during rapid liquidity shifts, causing premature stop-outs followed by aggressive adverse continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding position volume during high-velocity directional wicks or when floating drawdown exceeds 1.5x ATR.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated 3-period Volume-Weighted Average Price (VWAP) cross and an order-book imbalance confirmation before market entry authorization.",
+        "profit_harvest_threshold": "Instantly initiate trailing lock-in when unrealized profit hits +$12.00 to guarantee a final distribution between $15.00 and $30.00."
+      },
+      "synthesis_directive": "Enforce a hard structural stop ceiling of $5.00 maximum risk per trade on all XAUUSD orders while activating aggressive trailing profit harvests at +$12.00."
     }
   ]
 }
