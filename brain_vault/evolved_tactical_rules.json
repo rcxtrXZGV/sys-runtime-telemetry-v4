@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window; scale-ins are forbidden unless the initial position has achieved a minimum 1.5R floating profit.",
+  "pyramiding_rule": "Strict prohibition of secondary entries or pyramiding when floating drawdown exceeds 1.5 ATR on the primary position; zero additions into falling knives.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order-flow imbalance check and ATR expansion filter; no entry allowed if spread exceeds 3x median or if entering into a high-impact session opening wick.",
-  "profit_harvest_threshold": "Aggressively trigger trailing profit locks or partial closes once floating profit touches $12.00 to guarantee minimum $15-$30+ win distribution."
+  "new_mandatory_entry_filter": "Volume delta confirmation and zero-latency spread thresholding (< 30 pips) required prior to order execution to avoid news wick entrapment.",
+  "profit_harvest_threshold": "Dynamic trailing stop activation at +$10.00 floating profit, locking in guaranteed floors while permitting runner scaling up to the $15-$30 objective window."
 }
