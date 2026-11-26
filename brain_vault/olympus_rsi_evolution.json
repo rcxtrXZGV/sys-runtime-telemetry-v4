@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T08:02:41.719611+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked expansion of stop-losses beyond hard limits (e.g., -$20.56 loss on ticket 1705772492) and premature micro-scalping that clipped potential wins while letting adverse wicks destroy capital.",
-        "risk_asymmetry_flaw": "The average loss per stopped deal exceeded the target $4-$6 ceiling due to wide discretionary stops, whereas winners were prematurely cut or truncated by tight trailing exits.",
-        "market_regime_mismatch": "Entering high-volatility XAUUSD nodes without filtering institutional liquidity sweeps, causing sequential entries (tickets 1707578236 and 1707578239) to get caught in localized whipsaws."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Prohibit grid-style averaging or adding positions within 15 seconds of a prior stop-out; only pyramid when existing open positions demonstrate at least +$10.00 floating profit.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandate a 3-period exponential moving average (EMA) slope confirmation combined with zero high-impact macroeconomic news releases within a +/- 10-minute window before order execution.",
-        "profit_harvest_threshold": "Trigger partial scaling or aggressive breakeven lock once floating profit hits +$12.00 to prevent evaporation, allowing the remainder to run toward the +$15.00 to +$30.00 target."
-      },
-      "synthesis_directive": "Enforce absolute $5.00 maximum stop-loss boundaries on every XAUUSD trade while prohibiting multi-entry compounding during high-volatility liquidity wicks."
-    },
-    {
       "evolution_timestamp": "2026-11-26T08:04:16.228010+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked slippage and structural stop placement during high volatility wicks, notably ticket 1705772492 resulting in a -$20.56 drawdown which completely wiped out multiple small wins.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trail stop-loss to breakeven once floating profit hits +$4.00, securing scale-outs at +$15.00 to +$30.00."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade on XAUUSD while mandating trailing stops to lock in asymmetric +$15.00 to +$30.00 wins."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T12:49:32.734860+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-loss placement on volatile XAUUSD impulses and untimely secondary scaling into moving price nodes resulting in a -$20.56 outlier loss.",
+        "risk_asymmetry_flaw": "Losses ($58.60 total across 9 deals) heavily outperformed winning gains ($56.10 across 11 deals) due to premature micro-profit closing ($0.39-$0.55) while letting adverse selections expand beyond the target $4-$6 risk band.",
+        "market_regime_mismatch": "High-frequency breakout chasing during aggressive London/New York session crossovers where liquidity wicks easily triggered structural stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against scaling into positions during high-volatility impulses; consecutive entries on the same asset must maintain a minimum 15-pip separation and verified trend acceleration.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero order execution permitted unless the multi-timeframe structural momentum score exceeds 85% and the spread-to-ATR ratio is below 0.12.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$4.00 floating profit to guarantee retention of $15-$30+ targets without round-tripping."
+      },
+      "synthesis_directive": "Enforce absolute hard stops at $5.00 maximum risk per trade while prohibiting sub-dollar micro-exits to restore strict positive mathematical expectancy."
     }
   ]
 }
