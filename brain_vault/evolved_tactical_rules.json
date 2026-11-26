@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); allow scaling into winners only after a verified 150% ATR breakout confirmation.",
+  "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing positions within a 1.00 ATR window; pyramiding is exclusively permitted after the primary trade achieves a +$10.00 unrealized profit buffer and breaks even.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe volume-weighted momentum alignment + maximum 14-period ATR volatility threshold ceiling to block high-impact noise wicks.",
-  "profit_harvest_threshold": "Instantly initiate trailing lock-ins and partial profit harvest once floating profit touches +$15.00 to guarantee asymmetric $15-$30+ payouts."
+  "new_mandatory_entry_filter": "Require a confirmed 3-period volume spike and an order-flow imbalance ratio > 1.6 in the direction of the trade on the M1 timeframe before order execution.",
+  "profit_harvest_threshold": "Trigger trailing micro-harvest locks at +$12.00 profit and enforce hard profit scaling targets starting at +$15.00 up to +$30.00."
 }
