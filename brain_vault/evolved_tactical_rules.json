@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into positions when running drawdown exceeds $2.00; mandatory correlation filter required before consecutive ticket execution.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility expansion check combined with order-book imbalance confirmation prior to order dispatch.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 floating profit to ensure asymmetric $15-$30+ distribution."
+  "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into correlated positions within a 10-pip window; mandatory minimum +$10 floating profit on foundational layer before scaling.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "ATR(14) volatility expansion filter coupled with Order Flow Imbalance confirmation to prevent entry into low-liquidity sweep wicks.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10, trail remainder with a tighter structural step-stop to capture asymmetric $15-$30+ runs."
 }
