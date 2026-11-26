@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T09:28:06.056024+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked volatility expansion during London/NY overlap triggered wide stop losses, notably causing a -$20.56 catastrophe on ticket 1705772492 due to a lagging stop execution.",
-        "risk_asymmetry_flaw": "Losses (-$20.56 max) drastically violated the risk ceiling while wins were choked early for micro-profits (+0.39 to +5.02), inverting the required $4-$6 loss versus $15-$30 win asymmetry.",
-        "market_regime_mismatch": "Entering XAUUSD during high momentum liquidity sweeps without macro-volatility filters led to immediate stop-outs and micro-scalps getting caught in widening spreads."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into active pullbacks or high-impact wicks; subsequent entries prohibited until existing order is break-even + secured profit.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "ATR-based volatility ceiling check and order-flow imbalance confirmation required before execution; block trades if spread exceeds 30 pips on XAUUSD.",
-        "profit_harvest_threshold": "Initiate dynamic trailing locks at +$10.00 profit to aggressively secure green runs and scale out towards the +$15.00-$30.00 target."
-      },
-      "synthesis_directive": "Strictly enforce a hard $5.00 maximum stop-loss dollar cap on every trade and lock in trailing execution thresholds at +$10.00 to guarantee asymmetric $15-$30 wins."
-    },
-    {
       "evolution_timestamp": "2026-11-26T09:29:33.037525+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-loss dispersion on volatile XAUUSD wicks reaching up to -$20.56, combined with premature micro-scalp exits on winners (+<$1.00) while letting losers run past the structural limit.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail remaining volume dynamically to target +$20.00 to +$30.00."
       },
       "synthesis_directive": "Enforce a hard absolute dollar stop-loss ceiling of $5.00 on every ticket while locking in trailing profit gates to guarantee asymmetric $15-$30+ wins."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T13:15:26.520933+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly clustered orders during high volatility intervals leading to compounding stop-loss hits, combined with an oversized drawdown (-$20.56) on ticket 1705772492 due to a delayed exit.",
+        "risk_asymmetry_flaw": "Inverted reward-to-risk ratio; while wins were micro-clipped for under $5, losses were allowed to expand up to -$20.56, violating the $4-$6 maximum loss containment mandate.",
+        "market_regime_mismatch": "Entering counter-trend or chasing breakout wicks on XAUUSD without accounting for high-frequency liquidity sweeps and intraday mean-reversion spikes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against pyramiding or adding concurrent tickets within 5 minutes of a prior entry in the same directional bias.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated ATR-based volatility buffer and volume confirmation filter prior to market order authorization to avoid liquidity wicks.",
+        "profit_harvest_threshold": "Aggressively lock in gains once floating profit reaches +$15.00 using trailing micro-stops, preventing wins from evaporating."
+      },
+      "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 per trade and scale out winning runs aggressively between $15.00 and $30.00 to guarantee structural positive asymmetry."
     }
   ]
 }
