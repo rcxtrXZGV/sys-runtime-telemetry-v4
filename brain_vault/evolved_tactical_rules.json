@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a prior entry or when existing floating profit is negative.",
+  "pyramiding_rule": "Strict prohibition against adding volume into negative floating positions; scaling in is only permitted after the initial position has achieved a +$10.00 unrealized profit buffer and the stop-loss is locked at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated ATR volatility contraction check and zero Tier-1 macroeconomic news events within a +/- 15-minute window before execution.",
-  "profit_harvest_threshold": "Instantly lock in trailing stop-loss to breakeven + commission at +$3.00 and execute scaling partial exits at +$10.00 to prevent profit evaporation."
+  "new_mandatory_entry_filter": "Require confirmation of order book imbalance via localized tick-volume delta spikes before execution, rejecting entries within 15 minutes of major high-impact macro news windows.",
+  "profit_harvest_threshold": "Initiate automated partial scale-outs or trailing lock-ins the moment an open position crosses +$15.00, ensuring maximum asymmetric runner capture up to +$30.00+."
 }
