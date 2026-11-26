@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing positions; additions permitted only after a verified +$10 unrealized move in the primary trend direction.",
+  "pyramiding_rule": "Strictly prohibit scaling into consecutive directional positions within a 15-minute rolling window to prevent cumulative cascade losses.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory 15-minute order book imbalance and ATR expansion threshold check prior to market order execution.",
-  "profit_harvest_threshold": "Initiate trailing stop-lock once floating profits cross +$8.00 to prevent evaporation down to micro-cents."
+  "new_mandatory_entry_filter": "Volume and order-book imbalance must confirm directional momentum via a 3-bar moving average envelope crossover before execution.",
+  "profit_harvest_threshold": "Initiate trailing stop-loss protection immediately upon hitting +$4.00 unrealized profit to secure asymmetric gains."
 }
