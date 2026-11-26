@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:33:55.074086+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and over-leveraged micro-pyramiding into aggressive counter-trend wicks.",
-        "risk_asymmetry_flaw": "Losses reached up to -$20.56 while winners were cut prematurely via tight trailing noise exits, violating the $15-$30+ asymmetry requirement.",
-        "market_regime_mismatch": "Entering during volatile price expansion phases without confirming institutional order book depth, causing immediate stop-hunting hits."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding positions within 5 minutes or 2 dollars of an active loss; scale-in only permitted after the initial trade achieves +$10 unrealized profit.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory order block validation and spread normalization check (< 30 pips) prior to execution; absolute ban on entries during top-tier high-impact news windows.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$10 profit, scaling out fractional lots to guarantee the $15-$30+ win target."
-      },
-      "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 across all assets while forcing profitable runs to expand past $15.00 through dynamic trailing lockouts."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:35:37.893921+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped drawdown on ticket 2120879695 (-$20.56) combined with premature exit of winning runs caused a negative expectancy ratio where losses heavily outweighed wins.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate automated trailing profit locks at +$10.00 and execute full dynamic harvest triggers between +$15.00 and +$30.00."
       },
       "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade while locking asymmetric profit harvesting triggers between $15.00 and $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T19:35:17.496007+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped initial stop-losses combined with aggressive scaling into high-volatility liquidity sweeps caused outsized drawdowns (e.g., ticket 1705772492 losing -$20.56), violating the $4-$6 risk ceiling.",
+        "risk_asymmetry_flaw": "Losses exceeded the $4-$6 target envelope due to wide stop placements during volatile sessions, while winning trades were closed prematurely for fractional gains (+\u20ac0.39 to +\u20ac0.55), inverting the desired risk-to-reward ratio.",
+        "market_regime_mismatch": "Executing fixed-stop orders during high-velocity XAUUSD liquidity wicks without micro-structural volume filters led to whipsaw stop-hunting."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions within 15 minutes of a prior entry or when existing floating profit is negative; scale-ins only permitted after a +$10 confirmed runner.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 3-standard-deviation volume spike rejection candle combined with an order book imbalance delta before opening any XAUUSD order.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop-lock once a trade achieves +$12.00 in floating profit to secure outcomes inside the $15-$30+ target bracket."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on Gold with an automated trailing stop activation at +$12.00 to guarantee correct mathematical asymmetry."
     }
   ]
 }
