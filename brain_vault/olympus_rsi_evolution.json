@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:37:18.105706+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked expansion of stop-losses during high-volatility XAUUSD liquidity sweeps, alongside premature exits on marginal winners (+0.39 to +0.55) while letting a single catastrophic loss run to -$20.56.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile; losing trades drastically outsized winning trades due to loose stop-loss placement (-$20.56 max loss vs +$5.02 max win), violating the core $4-$6 loss constraint.",
-        "market_regime_mismatch": "System entered positions directly into high-impact New York session volatility wicks and attempted blind multi-ticket averaging/pyramiding into falling knives around 3549.83."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding consecutive volume blocks into moving price anomalies; pyramiding is locked unless the initial trade has secured at least +$10 in floating profit and pulled stop-loss to breakeven.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero execution permitted within 15 minutes before or after high-impact macro news releases; requires a verified 5-period ATR expansion breakout filter combined with order-book imbalance confirmation.",
-        "profit_harvest_threshold": "Initiate trailing profit harvest lock-ins dynamically when open profit reaches +$12.00, ensuring wins systematically achieve the target $15-$30+ asymmetry band."
-      },
-      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD, eliminate multi-ticket averaging during volatility spikes, and force all winning profiles to target an asymmetric $15-$30+ payout."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:39:23.483909+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and over-leveraged scale-ins into a plunging trend (ticket 1705772492 losing -$20.56 due to structural SL drift).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation or scale-out execution as soon as floating profit crosses +$15.00 to prevent gains from evaporating."
       },
       "synthesis_directive": "Enforce a hard $5.00 maximum risk ceiling per transaction and lock in asymmetric profit harvesting at +$15.00+ while banning all anti-martingale averaging down."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T19:47:47.966725+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight stops during high-volatility XAUUSD expansion, compounded by an outlier -$20.56 loss where the stop-loss was placed too wide relative to normal risk parameters.",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max) significantly outscaled winners (mostly +$0.39 to +$5.02), violating the asymmetric requirement of keeping losses capped at $4-$6 while letting winners run to $15-$30+.",
+        "market_regime_mismatch": "Entering during aggressive high-impact wicks and premature pyramiding into localized reversals without sufficient volatility-adjusted buffer space."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of adding positions within 15 minutes of a previous loss or during expanding volatility wicks; scale-ins only allowed after a confirmed 2R continuation.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order block and volume-weighted average price (VWAP) convergence check before entry; no execution allowed during high-impact spread-expansion intervals.",
+        "profit_harvest_threshold": "Initiate trailing stops or scale-out partial profits aggressively once floating profit hits +$15.00 to guarantee asymmetric win-to-loss ratios."
+      },
+      "synthesis_directive": "Hard-cap every individual trade stop-loss strictly between $4.00 and $5.00 and force immediate trailing profit harvest triggers once floating gains exceed $15.00."
     }
   ]
 }

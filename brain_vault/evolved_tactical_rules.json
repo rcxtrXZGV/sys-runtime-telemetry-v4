@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to losing positions; pyramiding only permitted in the direction of the primary trend after a minimum +$10.00 unrealized profit cushion is locked on the core trade.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory 14-period ATR volatility normalization filter combined with a 5-minute volume profile delta check to prevent entry during liquidity void wicks.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or scale-out execution as soon as floating profit crosses +$15.00 to prevent gains from evaporating."
+  "pyramiding_rule": "Strict prohibition of adding positions within 15 minutes of a previous loss or during expanding volatility wicks; scale-ins only allowed after a confirmed 2R continuation.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory order block and volume-weighted average price (VWAP) convergence check before entry; no execution allowed during high-impact spread-expansion intervals.",
+  "profit_harvest_threshold": "Initiate trailing stops or scale-out partial profits aggressively once floating profit hits +$15.00 to guarantee asymmetric win-to-loss ratios."
 }
