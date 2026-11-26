@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T23:51:26.512862+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by holding a losing position through expanding volatility wicks without dynamic volatility-based structural stop-loss enforcement.",
-        "risk_asymmetry_flaw": "Win-to-loss asymmetry is inverted; micro-wins (+0.39 to +0.55) are being clipped prematurely by ultra-tight trailing exits while losses are permitted to breach $20.00 limits.",
-        "market_regime_mismatch": "Entering high-frequency scalp orders during active London/New York transition liquidity voids where spread widening and rapid tick reversals easily hunt static micro-stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute prohibition against opening multiple sequential tickets in the same direction within a 120-second window to prevent stacked liquidation clusters.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "ATR(14) volatility expansion coefficient must exceed 1.2 x baseline, and Order Book bid-ask imbalance must favor direction by >65% prior to execution.",
-        "profit_harvest_threshold": "Scale out 50% of position at +$10.00, lock remaining volume at breakeven +$2.00, and enforce hard trailing stop until target +$25.00 is reached."
-      },
-      "synthesis_directive": "Enforce a hard dollar stop-loss ceiling of $5.00 on every XAUUSD ticket instantly upon fill, and prohibit micro-scalping exits that yield sub-dollar returns."
-    },
-    {
       "evolution_timestamp": "2026-11-25T23:59:44.991235+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked slippage and excessive volatility expansion during high-impact session overlaps led to catastrophic outlier losses up to -$20.56, while profitable exits prematurely clipped gains around +$0.39 to +$0.55.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing volatility stops immediately upon reaching +$10.00 profit, locking in guaranteed minimums while letting runners scale to the $15-$30+ target zone."
       },
       "synthesis_directive": "Enforce a hard $5.00 absolute stop-loss ceiling per trade with mandatory trailing activation at +$10.00 to guarantee risk-asymmetry ratios exceeding 3:1."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T11:45:05.812747+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly clustered stop-losses in high-volatility XAUUSD regimes, combined with severe tail-risk leakage reaching -$20.56 on unhedged momentum continuations.",
+        "risk_asymmetry_flaw": "Inverted payoff profile where multiple small wins (+$0.39 to +$5.02) were obliterated by a massive outlier loss (-$20.56), violating the $4-$6 risk cap parameter.",
+        "market_regime_mismatch": "Entering counter-trend or late-stage breakout wicks without verifying local liquidity voids, causing immediate stop-hunting hits followed by reversion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window; scale-ins are forbidden unless the initial position has achieved a minimum 1.5R floating profit.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order-flow imbalance check and ATR expansion filter; no entry allowed if spread exceeds 3x median or if entering into a high-impact session opening wick.",
+        "profit_harvest_threshold": "Aggressively trigger trailing profit locks or partial closes once floating profit touches $12.00 to guarantee minimum $15-$30+ win distribution."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses while mandating that winning trades capture at least a 3:1 payout ratio before exit."
     }
   ]
 }

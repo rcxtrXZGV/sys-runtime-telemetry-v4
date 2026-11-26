@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into positions during expanding ATR or high-impact session opens; all consecutive entries must demonstrate a minimum +$8.00 floating profit cushion on the primary tranche.",
+  "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window; scale-ins are forbidden unless the initial position has achieved a minimum 1.5R floating profit.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume delta and tick-level imbalance confirmation with mandatory micro-structure break filter across 1m and 5m charts prior to execution.",
-  "profit_harvest_threshold": "Trigger trailing volatility stops immediately upon reaching +$10.00 profit, locking in guaranteed minimums while letting runners scale to the $15-$30+ target zone."
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance check and ATR expansion filter; no entry allowed if spread exceeds 3x median or if entering into a high-impact session opening wick.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit locks or partial closes once floating profit touches $12.00 to guarantee minimum $15-$30+ win distribution."
 }
