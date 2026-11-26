@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:45:05.812747+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution of tightly clustered stop-losses in high-volatility XAUUSD regimes, combined with severe tail-risk leakage reaching -$20.56 on unhedged momentum continuations.",
-        "risk_asymmetry_flaw": "Inverted payoff profile where multiple small wins (+$0.39 to +$5.02) were obliterated by a massive outlier loss (-$20.56), violating the $4-$6 risk cap parameter.",
-        "market_regime_mismatch": "Entering counter-trend or late-stage breakout wicks without verifying local liquidity voids, causing immediate stop-hunting hits followed by reversion."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window; scale-ins are forbidden unless the initial position has achieved a minimum 1.5R floating profit.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory order-flow imbalance check and ATR expansion filter; no entry allowed if spread exceeds 3x median or if entering into a high-impact session opening wick.",
-        "profit_harvest_threshold": "Aggressively trigger trailing profit locks or partial closes once floating profit touches $12.00 to guarantee minimum $15-$30+ win distribution."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses while mandating that winning trades capture at least a 3:1 payout ratio before exit."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:46:47.521260+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-loss slippage during high-volatility XAUUSD liquidity sweeps (ticket 1705772492 resulting in -$20.56 loss) and premature clipping of micro-winners (+$0.39 to +$5.02) failing to offset outsized tail risks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing profit harvest lock-ins dynamically when open profit reaches +$12.00, ensuring wins systematically achieve the target $15-$30+ asymmetry band."
       },
       "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD, eliminate multi-ticket averaging during volatility spikes, and force all winning profiles to target an asymmetric $15-$30+ payout."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:39:23.483909+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and over-leveraged scale-ins into a plunging trend (ticket 1705772492 losing -$20.56 due to structural SL drift).",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) heavily outpaced winning gains (+`$56.10 total across 11 deals) because micro-wins were clipped at pennies (+`$0.39 to +$0.55) while stop-losses lacked hard dollar caps.",
+        "market_regime_mismatch": "Entering XAUUSD mean-reversion systems during aggressive directional breakout wicks, causing premature stop-outs followed by unharvested floating profits."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding to a losing position; scale-ins are only permitted when the initial position has achieved at least +$10 in floating profit and the structural stop-loss is moved to break-even.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "No order execution allowed unless order book imbalance exceeds 65% and ATR-normalized volatility is below the 20-period moving average.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once open profit hits +$12.00, securing absolute minimum +$8.00 to force asymmetric $15-$30 payouts."
+      },
+      "synthesis_directive": "Enforce a rigid $5.00 maximum dollar loss cap per trade while locking in trailing profit sweeps to ensure average winners permanently eclipse average losses."
     }
   ]
 }
