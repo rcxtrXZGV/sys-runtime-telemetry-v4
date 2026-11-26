@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:30:05.687223+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked slippage and volatility expansion during high-impact sessions caused stop-losses like ticket 1705772492 (-$20.56) to over-widen past structural invalidation points, breaching risk thresholds.",
-        "risk_asymmetry_flaw": "Losses exceeded the $4-$6 target cap because clustered entries (e.g., tickets 1707575809, 1707578236, 1707578239) acted as accidental pyramiding into unfavorable local price pivots before momentum fully materialized.",
-        "market_regime_mismatch": "Executing micro-scalps during chaotic XAUUSD liquidity transitions without filtering out short-term micro-wicks led to premature stop-out cascades."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of secondary entries within 3 pips/dollars of an existing active position; sequential scaling only permitted after a 1R locked-in profit threshold.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution unless the current 1-minute Average True Range (ATR) expansion ratio is below 1.5 and order book imbalance exceeds 65% directional bias.",
-        "profit_harvest_threshold": "Instantly initiate trailing stops or partial profit closure when floating profit hits +$15.00 to guarantee asymmetric outcomes ($15-$30+)."
-      },
-      "synthesis_directive": "Enforce a hard $5 max risk ceiling per trade on XAUUSD, ban unhedged clustered micro-entries, and mandate immediate profit scaling once floating gains reach +$15."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:33:24.211942+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly clustered orders during high-volatility micro-pullbacks resulted in cascading stop-loss hits (e.g., ticket 1705772492 losing -$20.56) and over-leveraged micro-entries.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing harvest when position reaches +$15.00, targeting an asymmetric exit window between $15.00 and $30.00."
       },
       "synthesis_directive": "Enforce a rigid $5.00 hard stop-loss ceiling on all XAUUSD orders while letting winning trades expand to $15-$30+ without premature micro-trimming."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:30:33.358521+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-loss placement on volatile XAUUSD spikes (e.g., ticket 1705772492 resulting in -$20.56 loss) alongside clustered micro-entries failing during aggressive retracements.",
+        "risk_asymmetry_flaw": "Losses ($20.56 max loss) severely outpaced winning execution profiles ($5.02 max win), violating the core asymmetric return mandate.",
+        "market_regime_mismatch": "Entering during high-velocity liquidity wicks without sufficient ATR buffer caused premature stop-outs followed by immediate trend continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of grid/basket accumulation within a 150-pip range; scale-ins only permitted after 1.5 ATR continuation confirmation.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Multi-timeframe EMA slope alignment combined with an absolute ban on entries inside 10 minutes of high-impact macroeconomic news releases.",
+        "profit_harvest_threshold": "Initiate trailing-stop compression at +$10.00 floating profit and execute hard profit sweeps at +$15.00 to +$30.00."
+      },
+      "synthesis_directive": "Enforce a strict $5.00 maximum risk ceiling on all XAUUSD positions and force asymmetric profit capture starting at +$15.00."
     }
   ]
 }
