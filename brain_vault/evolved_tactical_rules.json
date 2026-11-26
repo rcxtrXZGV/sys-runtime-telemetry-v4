@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding to positions (pyramiding) within 30 minutes of a prior stopped order; scale-ins only permitted after price confirms a 2x ATR impulse in favor.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions (no falling knives); limit scale-ins to max 2 tranches only when the first tranche is in profit and trailing stop covers breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order block and volume-weighted average price (VWAP) cross validation before entry; block all trades when spread exceeds 35% of the 14-period ATR.",
-  "profit_harvest_threshold": "Initiate automated partial profit harvesting at +$10.00 and dynamic trailing lockdown at +$15.00 to guarantee asymmetric win-to-loss ratios."
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation using Delta volume or ATR expansion filter before any XAUUSD execution.",
+  "profit_harvest_threshold": "Aggressively trail stop-loss to lock in profit once a position reaches +$6.00 to prevent floating gains from evaporating."
 }
