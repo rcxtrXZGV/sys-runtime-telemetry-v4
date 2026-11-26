@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry scaling is banned unless the initial position is already at break-even + 1R profit.",
+  "pyramiding_rule": "Strict prohibition of scaling into losing positions or opening multiple sub-optimal fills within a 30-minute window.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news releases and when micro-volatility exceeds 2.5x the 20-period ATR.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit reaches $12, securing a mandatory minimum $15-$30 payout on winning runs."
+  "new_mandatory_entry_filter": "Zero order execution permitted unless the Average True Range (ATR) expansion coefficient is below the 80th percentile and volume profile confirms institutional order flow bias.",
+  "profit_harvest_threshold": "Aggressively lock in scaling profits via dynamic trailing stops once floating returns reach +$10.00 to eliminate premature evaporation of edge."
 }
