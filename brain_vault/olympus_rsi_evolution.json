@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:33:24.211942+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution of tightly clustered orders during high-volatility micro-pullbacks resulted in cascading stop-loss hits (e.g., ticket 1705772492 losing -$20.56) and over-leveraged micro-entries.",
-        "risk_asymmetry_flaw": "Losses (-$20.56 max) violated the strict $4-$6 risk threshold due to delayed slippage on tight stops during impulsive XAUUSD liquidity sweeps.",
-        "market_regime_mismatch": "Algorithm failed to dynamically widen or step away during aggressive order-book imbalances around round psychological handle 3514-3519, triggering premature stops followed by directional continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit sequential multi-entry stacking within a 5-second window. Minimum 300-second dispersion and a proven +$10 float on prior tranches required before scaling volume.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero entry authorized within 15 pips of institutional liquidity clusters without an explicit volume-weighted order flow delta confirmation.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$8.00 floating profit to guarantee asymmetric $15-$30 payouts and prevent evaporations."
-      },
-      "synthesis_directive": "Enforce a hard structural cap of $5.00 maximum risk per trade on XAUUSD, ban rapid-fire entry duplication, and mandate dynamic profit trailing once green thresholds are breached."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:38:30.057167+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked runaway volatility spikes during the 13:36 session led to a catastrophic -$20.56 loss because the stop-loss was set too wide (0.50 pts) while minor entries suffered from premature micro-stop-outs.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing-stop compression at +$10.00 floating profit and execute hard profit sweeps at +$15.00 to +$30.00."
       },
       "synthesis_directive": "Enforce a strict $5.00 maximum risk ceiling on all XAUUSD positions and force asymmetric profit capture starting at +$15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:32:19.567701+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution during high-volatility news wicks and premature breakout chasing leading to a catastrophic -$20.56 outlier loss on ticket 1705772492.",
+        "risk_asymmetry_flaw": "Stop-losses were positioned too wide relative to target volatility parameters on major sessions, while winning exits clipped micro-gains prematurely (+ $0.39 to + $0.55), violating the required $15-$30 asymmetric return profile.",
+        "market_regime_mismatch": "Attempting tight scalping and dense scaling into ranging/reversing XAUUSD nodes without filtering out microsecond liquidity sweeps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into losing positions; subsequent entries on XAUUSD require confirmed price displacement and prior position in structural profit > +$5.00.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory ATR expansion confirmation and 5-period Volume Moving Average crossover above baseline before opening any liquidity-node order.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops and partial scale-outs when floating profit reaches +$12.00, ensuring runners extend freely toward the $15-$30 target envelope."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on Gold while prohibiting premature micro-exits to lock in the target asymmetric $15-$30 win profile."
     }
   ]
 }
