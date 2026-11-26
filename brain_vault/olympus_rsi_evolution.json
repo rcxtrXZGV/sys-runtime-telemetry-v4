@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:10:16.468306+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked micro-stop volatility wicks and runaway outlier loss (-$20.56) caused by placing tight fixed-point stops inside institutional liquidity sweeps.",
-        "risk_asymmetry_flaw": "Losses (-$20.56, -$7.72) drastically violated the $4-$6 ceiling due to delayed exit execution and high slippage during volatile XAUUSD expansions.",
-        "market_regime_mismatch": "Entering during high-frequency mean-reversion sessions without volatility-adjusted ATR buffers, causing consecutive tick-level stop hunting."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding authorized until initial position achieves a minimum 1:1 risk-reward lock and volatility contracts below the 14-period ATR median.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Volume imbalance confirmation via order book delta combined with a mandatory 5-pip buffer beyond local liquidity pools before execution.",
-        "profit_harvest_threshold": "Instantly initiate trailing breakeven stops once floating profit hits +$6.00, securing asymmetric expansion toward $15-$30 targets."
-      },
-      "synthesis_directive": "Enforce a strict $5.00 maximum dollar stop-loss limit on all XAUUSD orders and require a +$6.00 trailing profit lock to eliminate outsized drawdowns."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:14:17.873915+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic unmitigated outlier loss (ticket 1705772492 at -$20.56) caused by stop-loss slippage/expansion, combined with rapid multi-order entry clustering into adverse moves (tickets 1707578236 & 1707578239 executed simultaneously at 21:14:10).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing partial profit secures once floating gain reaches +$4.00 to prevent evaporation."
       },
       "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on XAUUSD and mandate immediate trailing profit grabs at +$4.00 to eliminate asymmetrical drawdowns."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T13:47:53.750619+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "High-impact news wicks and micro-reversals triggering tight trailing stops combined with a single catastrophic -$20.56 outlier caused by inadequate slippage protection during high volatility.",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) heavily outpaced wins (+$56.10 across 11 deals) because winning trades were micro-clipped for cents (+$0.39 to +$5.02) while losing positions absorbed up to -$20.56 due to late exit execution.",
+        "market_regime_mismatch": "The trading engine attempted to scalp volatile XAUUSD ranges during rapid structural expansions, getting caught on the wrong side of micro-pullbacks that penetrated static stop-loss boundaries."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions (no falling knife scaling) within 15 minutes of a prior stopped-out order on the same instrument.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require an institutional volume-weighted delta confirmation and 5-period EMA slope alignment before order dispatch to filter out random high-frequency market wicks.",
+        "profit_harvest_threshold": "Initiate automated partial profit-taking and tighten trailing stops once floating profit reaches +$6.00 to prevent gains from evaporating back to negative outcomes."
+      },
+      "synthesis_directive": "Enforce a strict risk-reward floor where no stop-loss can exceed $5.00 and winning runs must be aggressively harvested between $15.00 and $30.00."
     }
   ]
 }
