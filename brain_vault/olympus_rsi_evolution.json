@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:46:02.989041+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked volatility expansion during London-to-New York session overlaps led to a catastrophic -$20.56 outlier loss, driven by structural stop-loss placement errors and unauthorized scale-ins.",
-        "risk_asymmetry_flaw": "Losses heavily outpaced wins ($58.60 loss sum vs $56.10 win sum) due to premature micro-profit closures ($0.39 - $0.55) while allowing stop-losses to absorb disproportionately massive drawdowns.",
-        "market_regime_mismatch": "Entering into high-velocity micro-reversals without volatility-adjusted stop-bands caused repetitive triggering of tight manual stop-losses followed by immediate price recovery."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of scaling into losing positions or opening multiple sub-optimal fills within a 30-minute window.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution permitted unless the Average True Range (ATR) expansion coefficient is below the 80th percentile and volume profile confirms institutional order flow bias.",
-        "profit_harvest_threshold": "Aggressively lock in scaling profits via dynamic trailing stops once floating returns reach +$10.00 to eliminate premature evaporation of edge."
-      },
-      "synthesis_directive": "Enforce an unyielding hard cap of $5.00 maximum dollar loss per trade on XAUUSD while widening win targets to a minimum $15.00 payout ratio."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:47:38.468372+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unwarranted wide stop-loss placement on volatile XAUUSD wicks reaching -$20.56, compounded by tight early exits on winners (+$0.39 to +$0.55) truncating the asymmetric reward profile.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$4.00 profit, with mechanical scale-out triggers scaling at +$10.00 and full structural harvest at +$25.00+."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate trailing profit protection once a position crosses the +$4.00 threshold to eliminate adverse asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T20:01:54.880373+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of counter-trend micro-scalps into high-momentum institutional volatility wicks, combined with excessive stop-loss spacing on outlier trade ticket 2120879695 causing a -$20.56 drawdown.",
+        "risk_asymmetry_flaw": "Losses heavily outscaled wins because the engine allowed manual/unmonitored negative drift to expand to -$20.56 while cutting winning trades prematurely at sub-$1.00 levels.",
+        "market_regime_mismatch": "Entering positions during London/New York session overlaps without confirming structural liquidity sweeps, resulting in immediate stop-hunts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening multiple sequential tickets in the same direction within a 60-second window during high ATR expansions.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory 5-period EMA slope confirmation and zero high-impact macroeconomic news release windows (+/- 15 minutes).",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation the instant floating profit crosses +$4.00 to guarantee net positive retention."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk cap of $5.00 per trade across all assets and lock in trailing mechanics immediately upon crossing positive thresholds to eliminate outlier drawdowns."
     }
   ]
 }
