@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding consecutive volume on micro-price intervals during high-volatility expansions; minimum 15-pip structural clearance required between layers.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero execution permitted within 15 minutes of high-impact macroeconomic data releases and without confirmed volume-weighted order block validation.",
-  "profit_harvest_threshold": "Initiate automated trailing profit harvest lock-ins immediately upon reaching +$15.00 floating gain to ensure winners achieve the targeted $15-$30+ asymmetry envelope."
+  "pyramiding_rule": "Strict prohibition against adding positions within 15 minutes of a prior stopped order; absolute cap of 1 layer per trend pulse.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Volume delta and order book imbalance must exceed 1.5 standard deviations in favor of the breakout direction before order placement.",
+  "profit_harvest_threshold": "Trigger trailing take-profit lock-in as soon as floating profit touches +$15.00 to guarantee asymmetric win capture."
 }
