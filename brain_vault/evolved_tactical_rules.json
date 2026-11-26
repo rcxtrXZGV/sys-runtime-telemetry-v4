@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of secondary entries within 120 seconds of initial fill; scaling in authorized only when active position holds > +2.0 ATR floating profit with stop moved to lock breakeven.",
+  "pyramiding_rule": "Strict prohibition on adding contracts to a position experiencing negative floating drawdowns; pyramiding is limited to trades already in +$10.00 profit with trailing stops locked at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 15-minute ATR compression filter and 10-pip minimum spread safety check prior to authorizing any entry order.",
-  "profit_harvest_threshold": "Mandatory hold until minimum +$6.00 float profit with dynamic ATR trailing step; lock 50% volume at +$12.00 to guarantee minimum 3:1 reward-to-risk ratio."
+  "new_mandatory_entry_filter": "Mandatory multi-timeframe ATR volatility check: no order execution allowed if current 5-minute candle range exceeds 2.5x the 20-period average true range without volume confirmation.",
+  "profit_harvest_threshold": "Trigger partial profit closure (50%) at +$12.00 and initiate aggressive trailing stops to lock in a minimum +$6.00 floor on all runners targeting +$15.00 to +$30.00."
 }
