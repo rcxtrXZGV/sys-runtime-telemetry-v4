@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into positions unless the initial tranche has traversed a minimum of 2.5x the maximum risk envelope in open profit.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero execution permitted during candles showing upper/lower wicks exceeding 40% of total range; require confirmed volume delta divergence.",
-  "profit_harvest_threshold": "Initiate trailing profit capture or scale-out execution automatically once floating profit crosses +$15.00 to prevent evaporation."
+  "pyramiding_rule": "Strict prohibition against adding positions into an active drawdown or during high-volatility expansion candles; pyramiding is limited to scale-ins only after a position achieves +$10 floating profit and breaks even.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation combined with a 3-period ATR volatility check; no entry allowed if spread exceeds 30% of average range or within 15 minutes of high-impact news.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$8.00 and execute tiered profit harvesting starting at +$15.00, prohibiting manual exits under +$5.00."
 }

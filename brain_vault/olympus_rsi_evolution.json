@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T12:02:59.604401+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked momentum chase and stop placement within high-frequency institutional liquidity sweeps, resulting in isolated catastrophic drawdowns like -$20.56.",
-        "risk_asymmetry_flaw": "Stops were placed too wide or failed to trigger early during adverse volatility expansions, causing losses ($58.60 total loss sum across 9 trades) to eclipse winning momentum trades ($56.10 total win sum across 11 trades).",
-        "market_regime_mismatch": "Entering during high-volatility micro-pullbacks on XAUUSD without filtering out high-noise counter-trend wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-entry scalping must only occur via independent non-correlated ticks with a hard cap of 1 concurrent trade per directional bias.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe order-flow imbalance score above 75% and zero high-impact liquidity sweeps within the immediate 5-minute window before order execution.",
-        "profit_harvest_threshold": "Aggressively lock in green trades once floating profit hits +$15.00 via trailing dynamic stops, preventing profits from evaporating into minor wins or losses."
-      },
-      "synthesis_directive": "Enforce a strict maximum loss ceiling of $5.00 per trade on XAUUSD while scaling winning runs dynamically to $15.00-$30.00 using asymmetric trailing stops."
-    },
-    {
       "evolution_timestamp": "2026-11-26T12:47:51.340256+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-losses during high-volatility XAUUSD liquidity sweeps (-$20.56) and clustered scaling into micro-reversals.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing profit capture or scale-out execution automatically once floating profit crosses +$15.00 to prevent evaporation."
       },
       "synthesis_directive": "Hard-cap maximum dollar loss per trade strictly below $5.00 while enforcing asymmetric profit expansion toward the $15.00-$30.00 band."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:54:28.524086+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stops set too tightly within market noise bands combined with runaway adverse volatility excursions (-$20.56 outlier), exacerbated by premature scalping of winners (+0.39 to +0.55) while letting losers expand beyond the $4-$6 risk envelope.",
+        "risk_asymmetry_flaw": "Inverted risk-reward ratio: average losses (-$6.51) significantly exceeded average wins (+$1.60), caused by micro-target take-profits and delayed stop executions during high-liquidity sweeps.",
+        "market_regime_mismatch": "Executing fixed-pip stops during high-impact XAUUSD liquidity hunts and expansion wicks where institutional sweep algorithms target tight retail resting orders."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions into an active drawdown or during high-volatility expansion candles; pyramiding is limited to scale-ins only after a position achieves +$10 floating profit and breaks even.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation combined with a 3-period ATR volatility check; no entry allowed if spread exceeds 30% of average range or within 15 minutes of high-impact news.",
+        "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$8.00 and execute tiered profit harvesting starting at +$15.00, prohibiting manual exits under +$5.00."
+      },
+      "synthesis_directive": "Enforce a hard maximum dollar loss of $5.00 per trade via strict volatility-adjusted stops while widening profit capture targets to a minimum $15.00 threshold to restore positive risk asymmetry."
     }
   ]
 }
