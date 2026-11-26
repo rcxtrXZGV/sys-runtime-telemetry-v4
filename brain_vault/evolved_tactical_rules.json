@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding units to losing sequences; pyramiding allowed only after primary position hits +$10.00 unearned profit threshold.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "ATR(14) expansion ratio must be below 1.5 relative to the 50-period mean to prevent high-impact news wick entry.",
-  "profit_harvest_threshold": "Initiate scaling out and trailing stops aggressively the moment open profit crosses +$15.00 to lock in asymmetric gains."
+  "pyramiding_rule": "Strict prohibition of adding to positions during high-frequency volatility clusters; pyramiding is limited to strictly verified momentum continuation phases.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Volume and order-book imbalance confirmation required within the 1-minute microstructure before order dispatch, strictly blocking trades during news-wick formations.",
+  "profit_harvest_threshold": "Instantaneous partial close at +$5.00 with trailing stop activation to lock in gains and prevent floating profits from evaporating."
 }
