@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid multi-ticket entry clusters within 60-second windows (e.g., ticket 1707578236/1707578239) to prevent localized overexposure during high-impact wicks.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require an order flow imbalance confirmation and ATR volatility compression filter before opening any XAUUSD position.",
-  "profit_harvest_threshold": "Instantly initiate trailing locks once open profit hits +$4.00 to guarantee asymmetric win capture between $15 and $30+."
+  "pyramiding_rule": "Strict prohibition of adding to positions during momentum deceleration or inside micro-range breakouts to eliminate falling-knife losses.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require minimum 1.5x ATR confirmation and institutional order flow imbalance before order execution.",
+  "profit_harvest_threshold": "Initiate trailing stop protection and partial scaling once floating profit reaches +$10.00 to guarantee wins hit the $15-$30+ target zone."
 }
