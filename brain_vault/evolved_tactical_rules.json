@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions or pyramiding inside a 5-minute counter-trend wick; scale-ins are only permitted after a confirmed 15-minute structural breakout with +$10 floating profit.",
+  "pyramiding_rule": "Strictly prohibit sequential scaling or adding positions within 30 seconds to prevent localized clustered liquidations during high-velocity wicks.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact tier-1 USD/Gold data releases; confirmation via multi-timeframe volume-weighted momentum alignment is required.",
-  "profit_harvest_threshold": "Initiate automated trailing profit locks at +$10.00 and enforce hard scale-out targets between +$15.00 and +$30.00 to guarantee asymmetric payouts."
+  "new_mandatory_entry_filter": "Zero-entry during Tier-1 macroeconomic volatility windows; require an institutional order-flow imbalance score > 0.75 alongside volume confirmation.",
+  "profit_harvest_threshold": "Initiate aggressive trailing profit-locking at +$10.00 to guarantee capturing the target $15-$30 win asymmetry without evaporation."
 }
