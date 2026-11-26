@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of grid/multi-entry averaging during active drawdown windows; additions permitted only after a minimum of +$10 unrealized profit and confirmed structural breakout.",
+  "pyramiding_rule": "Strict prohibition against stacking entries within a 1-dollar price band to prevent cascading drawdowns during sudden wicks.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR volatility filter combined with order book imbalance check; no entry allowed when 1-minute spread exceeds historical median by >150%.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit reaches +$8.00 to lock in a minimum +$4.00 baseline."
+  "new_mandatory_entry_filter": "Require a minimum 3-candle momentum confirmation alongside an institutional order flow imbalance score > 0.65 prior to trade authorization.",
+  "profit_harvest_threshold": "Initiate automated scaling and trailing lock at +$10.00 profit to guarantee target runs between +$15.00 and +$30.00 without evaporation."
 }
