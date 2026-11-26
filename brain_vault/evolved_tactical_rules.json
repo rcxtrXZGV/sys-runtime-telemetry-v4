@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute ban on multi-ticket clustering within a 2-pip band; stacking identical volume entries during peak velocity is strictly prohibited.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "ATR(14) expansion confirmation and Order Book imbalance filter exceeding 65% prior to market order execution.",
-  "profit_harvest_threshold": "Initiate trailing stop lock-in at +$4.00 floating profit to guarantee asymmetric win capture between $15 and $30+."
+  "pyramiding_rule": "Strict prohibition of grid averaging or adding positions into moving market wicks; pyramiding is only authorized if the initial position is in profit by at least 1.5R and volatility is compressing.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero execution permitted within 15 minutes of high-impact macroeconomic news releases, and order entry requires simultaneous multi-timeframe ATR expansion confirmation.",
+  "profit_harvest_threshold": "Instant trailing stop activation at +$5.00 unrealized profit to guarantee a minimum risk-reward profile and prevent green runs from evaporating."
 }

@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T08:26:50.719495+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and over-leveraged micro-scalp clustering near key psychological figures.",
-        "risk_asymmetry_flaw": "Losses such as ticket 1705772492 reached -$20.56 because stops were placed too wide or failed to trail dynamically during sharp counter-trend expansions, violating the $4-$6 loss ceiling.",
-        "market_regime_mismatch": "Entering during high-frequency volatility wicks without verifying structural order-book depth, causing immediate stop-loss hunting on XAUUSD."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding positions within 50 ticks of an existing active cluster; multi-ticket entries are banned unless the primary trade is secured at break-even + commission.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero order authorization without confirmation from both order-book imbalance velocity and 14-period ATR volatility expansion filters.",
-        "profit_harvest_threshold": "Aggressively trigger trailing profit locks at +$10.00 to prevent erosion of floating gains toward negative outcomes."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on all XAUUSD orders and auto-lock profits at +$10.00 to eliminate asymmetrical drawdown events."
-    },
-    {
       "evolution_timestamp": "2026-11-26T09:22:55.443966+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked expansion of stop-loss distance during high-volatility XAUUSD surges (notably ticket 1705772492 resulting in -$20.56) combined with tight trailing on winning positions that prematurely cut gains before reaching the $15-$30 target asymmetric zone.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stop lock-in at +$4.00 floating profit to guarantee asymmetric win capture between $15 and $30+."
       },
       "synthesis_directive": "Enforce strict risk caps with a hard ceiling of $5.00 on all XAUUSD stop-losses while deploying aggressive trailing triggers to lock in multi-dollar winning trajectories."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T13:10:14.352677+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled slippage and oversized volatility wicks during London/New York session overlaps, compounding losses up to -$20.56 when initial stop-loss parameters were breached.",
+        "risk_asymmetry_flaw": "Failure to hard-cap maximum drawdown per trade at $5.00, allowing outlier losses (-$20.56) to completely wipe out accumulated gains from multiple micro-wins (+0.39 to +5.02).",
+        "market_regime_mismatch": "Entering mean-reversion trades during high-momentum trending phases on XAUUSD, resulting in structural stop-loss hunts and premature profit evaporation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of grid averaging or adding positions into moving market wicks; pyramiding is only authorized if the initial position is in profit by at least 1.5R and volatility is compressing.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero execution permitted within 15 minutes of high-impact macroeconomic news releases, and order entry requires simultaneous multi-timeframe ATR expansion confirmation.",
+        "profit_harvest_threshold": "Instant trailing stop activation at +$5.00 unrealized profit to guarantee a minimum risk-reward profile and prevent green runs from evaporating."
+      },
+      "synthesis_directive": "Enforce a rigid $5.00 maximum stop-loss ceiling and immediately lock in trailing profits at +$5.00 to eliminate outlier drawdowns on XAUUSD."
     }
   ]
 }
