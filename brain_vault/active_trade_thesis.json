@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T13:17:11.691004+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-26T13:19:06.630990+00:00",
+  "verdict": "SELL",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 83,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3610.0,
-  "tp_price": 3635.0,
+  "sl_price": 3628.0,
+  "tp_price": 3604.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active. Monitoring market conditions for a clear momentum breakout.",
-  "trade_thesis": "Gold (XAUUSD) has pulled back slightly from its intraday high of 3634.7 to 3620.4 after a strong upward expansion. The latest 15m candles indicate indecision and minor retracement following rejection near the highs. Given the choppy consolidation and lack of a clean sweep or continuation trigger, the desks recommend holding off and waiting for a definitive breakout structure before deploying capital."
+  "reversal_sentinel_assessment": "No active open positions on broker. Reversal sentinel on standby mode.",
+  "trade_thesis": "XAUUSD rejected strongly from intraday highs at 3634.70 and subsequently printed a lower-high rejection wick at 3626.70. With DXY pushing higher toward 103.81 and US 10-Year yields surging to 4.848%, gold faces strong bearish cross-asset pressure. Entering short targeting liquid demand near 3604.00."
 }
