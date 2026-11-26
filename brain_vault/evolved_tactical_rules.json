@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of secondary entries or scaling into an active position unless the primary trade has achieved a minimum of 2.5R floating profit and moved SL to breakeven.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution during 15-minute windows prior to and following high-impact news wicks, confirmed by multi-timeframe order book imbalance metrics.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit locks via Sentinel Peak Harvest once position profit touches +$15.00 to prevent evaporation."
+  "pyramiding_rule": "Strict prohibition against stacking multiple sequential orders within a 500ms window; mandatory minimum 15-second time delta and confirmed structural sweep between fills.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero-entry during top-tier high-impact macro news windows (+/- 15 mins) and require multi-timeframe order book imbalance confirmation.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized gains cross +$10.00, prohibiting any reversion below +$5.00."
 }
