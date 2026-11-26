@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into losing positions; subsequent entries on XAUUSD require confirmed price displacement and prior position in structural profit > +$5.00.",
+  "pyramiding_rule": "Strict prohibition of adding positions within 5 minutes or 2 dollars of an active loss; scale-in only permitted after the initial trade achieves +$10 unrealized profit.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR expansion confirmation and 5-period Volume Moving Average crossover above baseline before opening any liquidity-node order.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial scale-outs when floating profit reaches +$12.00, ensuring runners extend freely toward the $15-$30 target envelope."
+  "new_mandatory_entry_filter": "Mandatory order block validation and spread normalization check (< 30 pips) prior to execution; absolute ban on entries during top-tier high-impact news windows.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$10 profit, scaling out fractional lots to guarantee the $15-$30+ win target."
 }
