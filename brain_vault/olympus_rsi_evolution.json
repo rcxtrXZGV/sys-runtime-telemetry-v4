@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:39:23.483909+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and over-leveraged scale-ins into a plunging trend (ticket 1705772492 losing -$20.56 due to structural SL drift).",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) heavily outpaced winning gains (+`$56.10 total across 11 deals) because micro-wins were clipped at pennies (+`$0.39 to +$0.55) while stop-losses lacked hard dollar caps.",
-        "market_regime_mismatch": "Entering XAUUSD mean-reversion systems during aggressive directional breakout wicks, causing premature stop-outs followed by unharvested floating profits."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to a losing position; scale-ins are only permitted when the initial position has achieved at least +$10 in floating profit and the structural stop-loss is moved to break-even.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "No order execution allowed unless order book imbalance exceeds 65% and ATR-normalized volatility is below the 20-period moving average.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stops once open profit hits +$12.00, securing absolute minimum +$8.00 to force asymmetric $15-$30 payouts."
-      },
-      "synthesis_directive": "Enforce a rigid $5.00 maximum dollar loss cap per trade while locking in trailing profit sweeps to ensure average winners permanently eclipse average losses."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:41:05.219915+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked execution slippage and wide discretionary stops during high-volatility XAUUSD momentum extensions, notably ticket 1705772492 which resulted in a -$20.56 outlier loss due to structural stop-distance failure.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stops or scale-out partial profits aggressively once floating profit hits +$15.00 to guarantee asymmetric win-to-loss ratios."
       },
       "synthesis_directive": "Hard-cap every individual trade stop-loss strictly between $4.00 and $5.00 and force immediate trailing profit harvest triggers once floating gains exceed $15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T19:51:42.386591+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Widened stop-losses during high volatility regimes caused catastrophic individual drawdowns up to -$20.56, completely overwhelming minor wins.",
+        "risk_asymmetry_flaw": "Losses averaged nearly -$9.76 per failed ticket while wins averaged a negligible +$1.60, directly inverting the required $15-$30 target profile.",
+        "market_regime_mismatch": "System entered during high-impact news wicks and volatile counter-trend surges without enforcing mandatory structural volatility filters."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding permitted unless the base position has already achieved a floating profit of at least $10.00 and trailing stop is secured at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Strict order authorization requires volume-weighted momentum alignment across two higher timeframes with zero high-impact macroeconomic news releases within +/- 15 minutes.",
+        "profit_harvest_threshold": "Aggressively secure green runs via trailing stop locks once floating profit reaches $15.00 to eliminate evaporation."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all initial stop-losses while mandating that profit targets and trailing mechanisms capture $15.00+ on winning runs."
     }
   ]
 }

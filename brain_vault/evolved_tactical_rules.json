@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding positions within 15 minutes of a previous loss or during expanding volatility wicks; scale-ins only allowed after a confirmed 2R continuation.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order block and volume-weighted average price (VWAP) convergence check before entry; no execution allowed during high-impact spread-expansion intervals.",
-  "profit_harvest_threshold": "Initiate trailing stops or scale-out partial profits aggressively once floating profit hits +$15.00 to guarantee asymmetric win-to-loss ratios."
+  "pyramiding_rule": "Zero pyramiding permitted unless the base position has already achieved a floating profit of at least $10.00 and trailing stop is secured at breakeven.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Strict order authorization requires volume-weighted momentum alignment across two higher timeframes with zero high-impact macroeconomic news releases within +/- 15 minutes.",
+  "profit_harvest_threshold": "Aggressively secure green runs via trailing stop locks once floating profit reaches $15.00 to eliminate evaporation."
 }
