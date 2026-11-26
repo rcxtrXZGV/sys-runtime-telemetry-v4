@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T22:32:37.858332+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unbounded stop-losses during high-volatility XAUUSD momentum spikes, notably ticket 1705772492 which resulted in a massive -$20.56 drawdown. Entries were caught directly in aggressive trend continuations without structural volatility buffers.",
-        "risk_asymmetry_flaw": "The system permitted a catastrophic loss-to-win ratio where the largest loss (-$20.56) completely wiped out multiple fractional wins (+0.39 to +$0.55), failing the core mandate of keeping max losses bounded to $4-$6.",
-        "market_regime_mismatch": "Executing micro-scalps and tight stops into aggressive London/New York session liquidity sweeps, causing the engine to get whipsawed by high-impact wicks before intended targets could materialize."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute prohibition against pyramiding or adding concurrent orders within a 3-minute window when floating profit is under $10, preventing cascade failures like tickets 1707578236 and 1707578239.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a 14-period ATR volatility normalization filter and an institutional volume confirmation spike before order execution on XAUUSD.",
-        "profit_harvest_threshold": "Initiate trailing profit capture or scale-out execution as soon as an open position hits +$12, locking in gains before retracements occur."
-      },
-      "synthesis_directive": "Enforce strict hard-capped stops at $5.00 maximum on every XAUUSD trade and ban rapid-fire clustered scaling into volatile liquidity sweeps."
-    },
-    {
       "evolution_timestamp": "2026-11-25T22:34:14.772496+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked accumulation of trailing losses and entering directly into high-volatility liquidity sweeps without structural confirmations.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing structural stops once floating profit hits +$10.00 to prevent erosion to negative outcomes."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on Gold with mandatory trailing stop activation upon reaching $10.00 in unrealized profit."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T11:06:29.424489+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly clustered stop-losses during high-volatility liquidity sweeps and over-leveraged entries without structural width, evidenced by ticket 1705772492 losing -$20.56 while winning deals capped out prematurely at +$5.02.",
+        "risk_asymmetry_flaw": "Inverted payoff matrix: average losses exceeded optimal risk parameters while winning positions were cut off by micro-trailing stops before achieving the mandated $15-$30+ structural targets.",
+        "market_regime_mismatch": "System entered counter-trend micro-pullbacks during aggressive expansion phases on XAUUSD, getting trapped in standard market noise and spread widening during session overlaps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into active retracements or falling knives; additional volume scaling is strictly forbidden unless the initial position has achieved +$10.00 floating profit and structural break-even.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "No execution allowed unless the 14-period ATR confirms volatility expansion and order book imbalance exceeds 65% directional bias on the 5-minute time frame.",
+        "profit_harvest_threshold": "Initiate aggressive trailing harvest triggers at +$10.00 profit to lock in gains and prevent erosion down to micro-scalp levels, while letting runner fractions scale to +$25.00+."
+      },
+      "synthesis_directive": "Enforce strict $5.00 hard stop limits on all XAUUSD orders while letting winning trades expand to the $15-$30 target zone via dynamic trailing profit locks."
     }
   ]
 }
