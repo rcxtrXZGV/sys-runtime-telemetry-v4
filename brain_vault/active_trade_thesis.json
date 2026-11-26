@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T13:30:32.901476+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-26T13:32:23.482690+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 83,
+  "confidence_score": 55,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3613.5,
-  "tp_price": 3632.0,
+  "sl_price": 3610.0,
+  "tp_price": 3645.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Harvest Guardian in standby mode while opportunity desk triggers execution.",
-  "trade_thesis": "Gold maintains a clear sequence of higher lows (3581.6 -> 3601.4 -> 3616.7) following a powerful impulse sweep to 3634.7. The pullback to 3620.4 presents an optimal asymmetric long entry targeting liquidity above 3632.0, with stop loss protected under structural support at 3613.5."
+  "reversal_sentinel_assessment": "No open positions active on broker. Monitoring liquidity sweeps and potential consolidation around 3620.",
+  "trade_thesis": "Gold (XAUUSD) has pulled back slightly from its recent local high of 3634.7 to 3620.39. While the broader intraday bias remains upward, the most recent 15m candles show a minor rejection wick and contracting volume. Given previous tight stop-loss sweeps, the 12 desks advise waiting for a clearer momentum breakout above 3630 or a deeper retest of support before deploying capital."
 }
