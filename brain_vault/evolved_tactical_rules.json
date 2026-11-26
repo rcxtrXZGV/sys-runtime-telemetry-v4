@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry scalping is banned if aggregate risk exceeds $5.00 per asset node.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory structural liquidity sweep confirmation and 5-minute ATR volatility capping before order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit harvest triggers once floating profits cross +$15.00 to capture upside runs up to +$30.00."
+  "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing nodes; pyramiding is limited strictly to momentum expansion phase after trade has achieved +$10.00 floating profit.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero order execution during 5-minute ATR expansion spikes exceeding 3x the 20-period moving average unless confirmed by a volume-weighted order block retest.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop locking once profit reaches +$12.00, ensuring absolute floor at +$6.00 to prevent positive drift evaporation."
 }

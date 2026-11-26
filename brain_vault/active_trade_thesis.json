@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T18:46:57.740393+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-26T18:48:32.214262+00:00",
+  "verdict": "SELL",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3605.0,
-  "tp_price": 3645.0,
+  "sl_price": 3626.5,
+  "tp_price": 3602.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active on the broker ledger. Reversal sentinel standing by.",
-  "trade_thesis": "Gold (XAUUSD) recently pushed up toward the 3634.7 intraday high before pulling back into the 3620 range, with the latest 15-minute candles exhibiting slight deceleration and consolidation. Given recent volatility and strict risk management following past stop-outs, the desks advise remaining on the sidelines in a 'WAIT' posture until a clearer directional liquidity sweep develops."
+  "reversal_sentinel_assessment": "No open positions currently active on broker. Monitoring for fresh entry opportunities with clean momentum.",
+  "trade_thesis": "Gold (XAUUSD) has pushed into the intraday upper boundaries, hitting an intraday high of 3634.7 before retracing back down to 3620.39. The most recent 15m candles show topping wicks and bearish absorption after testing local resistance near 3626-3630. DXY is firming up near 103.81 and US10Y yields are elevated at 4.848%, presenting strong macro headwinds for gold bulls. Initiating a high-asymmetric short position targeting liquidity sweeps back toward the 3602 support zone, with tight risk management."
 }
