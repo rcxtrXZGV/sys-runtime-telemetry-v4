@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:35:37.893921+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped drawdown on ticket 2120879695 (-$20.56) combined with premature exit of winning runs caused a negative expectancy ratio where losses heavily outweighed wins.",
-        "risk_asymmetry_flaw": "Stop-losses were positioned too loosely during high-volatility XAUUSD liquidity sweeps, letting single positions bleed up to $20.56 while wins were clipped prematurely under $5.00.",
-        "market_regime_mismatch": "The engine entered breakouts during choppy institutional rebalance windows without verifying local order-book depth, resulting in immediate stop hunts."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding position volume to consecutive losing or stalling nodes; scale-ins are permitted only after a verified +$10.00 floating impulse.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory ATR-based volatility cap and multi-timeframe liquidity sweep confirmation before order placement.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop locking when floating profits cross +$12.00 to guarantee terminal payout targets of $15.00 to $30.00+."
-      },
-      "synthesis_directive": "Hard-cap all individual XAUUSD losses strictly at $5.00 or lower while enforcing asymmetric trailing profit locks for all green runs targeting $15.00+."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:37:18.105706+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked expansion of stop-losses during high-volatility XAUUSD liquidity sweeps, alongside premature exits on marginal winners (+0.39 to +0.55) while letting a single catastrophic loss run to -$20.56.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-lock once a trade achieves +$12.00 in floating profit to secure outcomes inside the $15-$30+ target bracket."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on Gold with an automated trailing stop activation at +$12.00 to guarantee correct mathematical asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T19:39:12.929708+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked micro-lot pyramiding during volatile range expansions led to outsized single-event drawdowns (-$20.56) when stop losses were breached.",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) heavily outpaced wins (+$56.10 total across 11 deals), driven by letting losing trades absorb excessive adverse excursion while clipping winners prematurely under +$1.00.",
+        "market_regime_mismatch": "Executing continuous entries into rapid XAUUSD liquidity sweeps without filtering for institutional order-block retests caused high-impact wicks to trigger tight stops repeatedly."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; pyramiding only permitted in the direction of the primary trend after a minimum +$10.00 unrealized profit cushion is locked on the core trade.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory 14-period ATR volatility normalization filter combined with a 5-minute volume profile delta check to prevent entry during liquidity void wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or scale-out execution as soon as floating profit crosses +$15.00 to prevent gains from evaporating."
+      },
+      "synthesis_directive": "Enforce a hard $5.00 maximum risk ceiling per transaction and lock in asymmetric profit harvesting at +$15.00+ while banning all anti-martingale averaging down."
     }
   ]
 }
