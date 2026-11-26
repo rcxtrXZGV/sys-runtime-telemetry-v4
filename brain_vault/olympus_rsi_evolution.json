@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:48:48.163582+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unhedged volatility wicks and wide trailing distance on XAUUSD caused massive -$20.56 drawdowns, alongside premature micro-profit closures that capped gains below $5.50.",
-        "risk_asymmetry_flaw": "Losses heavily outscaled wins because the engine allowed outlier losses (up to -$20.56) while cutting winning runs prematurely, violating the required $15-$30+ asymmetry.",
-        "market_regime_mismatch": "Entries during high-frequency noise bands in XAUUSD triggered stop-losses prematurely and suffered from cascading fills during liquidity vacuums."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding positions within 15 seconds of a prior entry or into accelerating volatility wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Volume-weighted momentum divergence confirmation across a 3-candle rolling window before order execution.",
-        "profit_harvest_threshold": "Aggressive trailing activation once unrealized profit crosses $10.00, securing a minimum floor of $4.00."
-      },
-      "synthesis_directive": "Hard-cap individual stop losses strictly between $4.00 and $5.00 while expanding profit targets to run past $15.00 through dynamic volatility trailing."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:50:38.155780+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution into volatile XAUUSD micro-wicks with overly tight stops that induced premature liquidation, combined with an outlier catastrophic loss (-$20.56) where the stop loss was placed too wide relative to normal volatility bands.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Instantly initiate trailing lock-in when unrealized profit hits +$12.00 to guarantee a final distribution between $15.00 and $30.00."
       },
       "synthesis_directive": "Enforce a hard structural stop ceiling of $5.00 maximum risk per trade on all XAUUSD orders while activating aggressive trailing profit harvests at +$12.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:42:45.373833+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked tail-risk during high-volatility XAUUSD momentum expansions where stop-losses were placed too close to micro-structural liquidity nodes, coupled with massive outlier drawdowns like ticket 1705772492 (-$20.56) exceeding the normal risk envelope.",
+        "risk_asymmetry_flaw": "Inverted payoff profile: winning trades were clipped for cents (+0.39 to +5.02) while losing trades expanded up to -$20.56, violating the fundamental risk-reward mandate of keeping losses capped to $4-$6 and letting winners run to $15-$30+.",
+        "market_regime_mismatch": "Entering counter-trend or late into session-open liquidity sweeps without filtering out high-impact news wicks, resulting in repeated stop-hunting before structural continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against multiple entries within a tight price band (seen in tickets 2123013996 and 2123016852/2123016855); scaling in is only authorized if the initial position is in a minimum of +$10.00 floating profit and secured by a breakeven stop.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero order execution permitted during the first 15 minutes of major hourly liquidity openings or when ATR(14) expands 2.5x above the 20-period moving average without an established multi-timeframe structural sweep confirmation.",
+        "profit_harvest_threshold": "Initiate automated trailing profit locks or split-scaling the moment XAUUSD reaches +$12.00, ensuring runners are aggressively managed to target the $15-$30+ zone instead of premature micro-harvesting."
+      },
+      "synthesis_directive": "Enforce a hard absolute maximum loss ceiling of $5.00 per trade on Gold with an automated dynamic profit-lock trigger at +$12.00 to strictly enforce asymmetric expectancy."
     }
   ]
 }

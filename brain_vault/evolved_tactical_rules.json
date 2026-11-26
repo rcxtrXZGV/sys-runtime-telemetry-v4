@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding position volume during high-velocity directional wicks or when floating drawdown exceeds 1.5x ATR.",
+  "pyramiding_rule": "Strict prohibition against multiple entries within a tight price band (seen in tickets 2123013996 and 2123016852/2123016855); scaling in is only authorized if the initial position is in a minimum of +$10.00 floating profit and secured by a breakeven stop.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated 3-period Volume-Weighted Average Price (VWAP) cross and an order-book imbalance confirmation before market entry authorization.",
-  "profit_harvest_threshold": "Instantly initiate trailing lock-in when unrealized profit hits +$12.00 to guarantee a final distribution between $15.00 and $30.00."
+  "new_mandatory_entry_filter": "Zero order execution permitted during the first 15 minutes of major hourly liquidity openings or when ATR(14) expands 2.5x above the 20-period moving average without an established multi-timeframe structural sweep confirmation.",
+  "profit_harvest_threshold": "Initiate automated trailing profit locks or split-scaling the moment XAUUSD reaches +$12.00, ensuring runners are aggressively managed to target the $15-$30+ zone instead of premature micro-harvesting."
 }
