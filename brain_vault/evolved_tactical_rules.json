@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into active pullbacks; subsequent entries only allowed upon confirmed micro-structural break in the direction of the macro trend.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "ATR expansion filter must be below 1.5x baseline and order book imbalance must exceed 65% in trade direction.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit crosses +$10.00 and execute hard structural scaling at +$15.00."
+  "pyramiding_rule": "Strict prohibition of adding positions within 15 seconds of a previous fill or into an unconfirmed directional velocity vector.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Order execution requires an order-book imbalance ratio > 1.8 and a confirmed 5-tick momentum delta matching the entry vector, completely blocking counter-wick entries.",
+  "profit_harvest_threshold": "Initiate trailing stop protection at +$8.00 and execute tiered profit harvesting starting at +$15.00 to force asymmetric distributions."
 }
