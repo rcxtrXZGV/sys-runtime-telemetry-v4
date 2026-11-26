@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into unconfirmed momentum; secondary entries strictly prohibited unless the primary trade is secured at breakeven + commission.",
+  "pyramiding_rule": "Zero pyramiding into active pullbacks; consecutive entries within a 5-minute window are strictly prohibited to prevent compounding into falling/rising knife traps.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR(14) volatility contraction check combined with order book imbalance confirmation before order authorization to prevent entry during high-impact expansion wicks.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits $15.00, securing a minimum $12.00 lock-in to achieve the targeted $15-$30 asymmetric win distribution."
+  "new_mandatory_entry_filter": "Mandatory structural liquidity sweep check and ATR volatility cap filter before order placement to avoid high-impact spread widening wicks.",
+  "profit_harvest_threshold": "Aggressively secure trailing stops or execute partial scaling once floating profit hits +$10.00 to ensure wins run toward the $15-$30+ target zone."
 }
