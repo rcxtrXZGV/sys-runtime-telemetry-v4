@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T22:00:26.003356+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during volatile XAUUSD liquidity sweeps (notably ticket 1705772492 resulting in a -$20.56 drawdown) combined with micro-scalping wins that failed to offset tail-risk blowups.",
-        "risk_asymmetry_flaw": "Losses (-$20.56 max) vastly exceeded individual winning trades (+~$0.55), inverting the required $15-$30 reward-to-risk asymmetry due to premature micro-profit cutting and late stop executions.",
-        "market_regime_mismatch": "Entering during high-frequency European/US session overlap liquidity wicks without adapting volatility-based ATR stop bands, causing structural stop-hunting collisions."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions (anti-martingale/no falling knife averaging) until the initial position achieves a +$10 floating profit cushion and structural break-even activation.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory 3-factor confirmation: Zero high-impact red-folder news within +/- 15 minutes, order flow delta alignment, and ATR-normalized micro-channel breakout validation.",
-        "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trail remainder with a dynamic ATR tight trailing stop to capture $15-$30+ tail runs."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade on XAUUSD while scaling winning execution targets to achieve a minimum 3:1 reward-to-risk asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-25T22:03:30.467486+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly-clustered entries during volatile sessions with stop-losses positioned directly within local high-frequency liquidity wicks, compounded by a catastrophic -$20.56 outlier loss.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic trailing stop-loss (ATR x 1.5) as soon as position profit hits +$12.00 to guarantee asymmetric retention of $15-$30+ targets."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade while locking in trailing profit triggers at +$12.00 to force an asymmetric 1:3+ risk-to-reward return profile."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T08:25:18.790796+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessively tight initial stop-losses in high-volatility XAUUSD regimes triggering immediate market-maker stop hunts, alongside an outsized -$20.56 loss indicating poor sizing/slippage handling during momentum breakouts.",
+        "risk_asymmetry_flaw": "The loss distribution violated strict risk containment: losses reached up to -$20.56 while the maximum recorded win was only +$5.02, completely inverting the target $4-$6 loss to $15-$30+ win asymmetry.",
+        "market_regime_mismatch": "Entering during frantic late-session or news-driven micro-swings (e.g., 21:13-22:55 UTC) where spread widening and wick volatility violated mean-reversion and structural breakout assumptions."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on scaling into consecutive losing ticks or adding positions within 5 minutes of a previous stop-out; only pyramid when existing open positions show a minimum unrealized profit of +$10.00.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory 15-minute ATR volatility filter and order-book imbalance check; block all entries if spread exceeds 35% of the average 14-period bar range or during high-impact macro news windows.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops or partial profit scaling the moment an open trade crosses +$12.00, locking in a guaranteed floor to prevent profit evaporation."
+      },
+      "synthesis_directive": "Enforce an absolute hard cap of $5.00 on all individual stop-losses while mandating immediate profit-locking protocols once trades exceed +$12.00 to guarantee asymmetric risk-reward ratios."
     }
   ]
 }
