@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into active retracements or falling knives; additional volume scaling is strictly forbidden unless the initial position has achieved +$10.00 floating profit and structural break-even.",
+  "pyramiding_rule": "Zero pyramiding authorized until initial position achieves a minimum 1:1 risk-reward lock and volatility contracts below the 14-period ATR median.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "No execution allowed unless the 14-period ATR confirms volatility expansion and order book imbalance exceeds 65% directional bias on the 5-minute time frame.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest triggers at +$10.00 profit to lock in gains and prevent erosion down to micro-scalp levels, while letting runner fractions scale to +$25.00+."
+  "new_mandatory_entry_filter": "Volume imbalance confirmation via order book delta combined with a mandatory 5-pip buffer beyond local liquidity pools before execution.",
+  "profit_harvest_threshold": "Instantly initiate trailing breakeven stops once floating profit hits +$6.00, securing asymmetric expansion toward $15-$30 targets."
 }
