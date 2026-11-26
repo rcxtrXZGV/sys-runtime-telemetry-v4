@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute prohibition against opening multiple sequential tickets in the same direction within a 120-second window to prevent stacked liquidation clusters.",
+  "pyramiding_rule": "Strictly prohibit averaging down or stacking micro-entries within a 1-dollar band; all subsequent orders require a confirmed structural break and minimum 2.5x volatility spacing.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "ATR(14) volatility expansion coefficient must exceed 1.2 x baseline, and Order Book bid-ask imbalance must favor direction by >65% prior to execution.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, lock remaining volume at breakeven +$2.00, and enforce hard trailing stop until target +$25.00 is reached."
+  "new_mandatory_entry_filter": "Zero order execution permitted within +/- 15 minutes of high-impact tier-1 news releases and without confirmed order-book imbalance metrics favoring the entry vector.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit locking when floating gains cross +$8.00, escalating to aggressive trailing stops to capture $15-$30+ tails."
 }
