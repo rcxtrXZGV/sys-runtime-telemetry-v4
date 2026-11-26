@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T23:05:00.000000+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution of entries into high-volatility liquidity sweeps without adequate structural confirmation, compounded by wide stop-losses during aggressive XAUUSD trend expansions resulting in a catastrophic -$20.56 single-trade drawdown.",
-        "risk_asymmetry_flaw": "Inverted payoff ratio where losing trades (-$20.56 max) severely dwarf winning trades (+$0.55 max), indicating premature profit-taking on winners and delayed cutting of losers.",
-        "market_regime_mismatch": "System attempted counter-trend scalping and unstructured multi-entry execution during high-momentum directional impulses on XAUUSD, triggering cascading stop-outs."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into active pullbacks; consecutive orders prohibited unless confirmed by multi-timeframe momentum alignment and existing position is deeply in-the-money with break-even stop locked.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Strict volatility-band filter: No entry authorized during ATR expansion spikes unless order book imbalance exceeds 75% in the direction of the trade.",
-        "profit_harvest_threshold": "Immediate partial scale-out at +$5.00 with trailing stop activation to ensure green runs reach the $15-$30+ asymmetry target."
-      },
-      "synthesis_directive": "Strictly cap individual stop-losses at $5.00 maximum and mandate trailing profit locks to eliminate outsized drawdowns while letting winners run to $15+."
-    },
-    {
       "evolution_timestamp": "2026-11-25T23:01:19.414661+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked execution slippage and oversized stop-loss distance on high-volatility XAUUSD spikes, compounded by premature exits on micro-wins (+0.39 to +0.55) and deep negative drawdowns on rogue outliers (-$20.56).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Instant partial harvest at +$10.00 floating with trailing lock at breakeven +$2.00 to prevent profit evaporation."
       },
       "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD and mandate automatic partial profit capture before floating gains decay."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T11:26:45.710533+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-loss expansion on high-volatility XAUUSD momentum pushes (e.g., ticket 1705772492 losing -$20.56), combined with premature profit cutting on winning micro-runs (+0.39 to +0.55).",
+        "risk_asymmetry_flaw": "The loss-to-win ratio inverted due to holding losing trades past the strict $4-$6 risk threshold while scaling out of winners too early.",
+        "market_regime_mismatch": "Entering breakout orders during low-liquidity session overlaps without confirming structural volume expansion, causing sudden mean-reversion wicks to trigger stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; pyramiding only permitted after the initial position has traveled +$10.00 in profit with stop-loss locked at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a 3-bar structural volume divergence confirmation and zero high-impact macroeconomic news releases within +/- 15 minutes before executing an order.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit harvest when open PnL hits +$15.00, ensuring full exit before retracement destroys gains."
+      },
+      "synthesis_directive": "Enforce absolute $5.00 maximum stop-loss on all XAUUSD orders and require multi-bar volume confirmation to prevent catastrophic outlier losses."
     }
   ]
 }
