@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T02:16:47.089673+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility XAUUSD momentum expansions (e.g., ticket 1705772492 causing a -$20.56 drawdown) paired with over-clustered micro-entries getting sequentially wiped out.",
-        "risk_asymmetry_flaw": "Losses severely outweighed wins because micro-scalps were exited prematurely for fractions of a dollar (+0.39 to +0.55), while losing positions were allowed to bleed far beyond the target $4-$6 ceiling.",
-        "market_regime_mismatch": "The engine executed mean-reversion entries during explosive directional breakout sessions, resulting in rapid stop-loss hits and failed scaling attempts into falling/rising momentum wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to positions within 15 seconds of a prior fill; scaling is only permitted after price has moved a minimum of +$10.00 in favorable direction with locked breakeven stops.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order placement allowed unless the local order book imbalance exceeds 65% and ATR(14) is below the 95th percentile, preventing high-impact news wick entries.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$15.00, forcing complete liquidation if retracement exceeds 35% of the maximum unrealized peak."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar ceiling of $5.00 on all XAUUSD stop-losses while prohibiting premature micro-harvesting to ensure an asymmetric risk-reward ratio of at least 1:4."
-    },
-    {
       "evolution_timestamp": "2026-11-26T02:22:00.742822+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and wider-than-expected retracements, notably ticket 2120879695 resulting in a -$20.56 drawdown.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing profit locks at +$10.00 and execute tranche-based scale-outs at +$15.00, +$22.00, and +$30.00 to prevent floating gains from evaporating."
       },
       "synthesis_directive": "Enforce absolute $5.00 maximum stop-loss boundaries on every single XAUUSD transaction while deploying aggressive scaling-out triggers for all winners moving past $10."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T12:01:17.291113+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-loss slippage and manual/sentinel interference during high-volatility XAUUSD micro-pullbacks, leading to outlier losses like -$20.56.",
+        "risk_asymmetry_flaw": "Losses ($20.56, -$7.72) exceeded wins ($5.02 max) because stops were placed too far or manually dragged during erratic market wicks, violating the $4-$6 loss constraint.",
+        "market_regime_mismatch": "Trading during high-frequency noise windows where micro-breakouts were immediately reversed, triggering tight stop losses or premature sentinel overrides."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry scalps are capped at maximum 2 concurrent lots per directional node with an absolute unified hard stop.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Multi-timeframe momentum convergence via 14-period RSI and 3-period EMA slope agreement before order execution.",
+        "profit_harvest_threshold": "Trigger trailing stop lock-in the moment floating profit reaches +$12.00, ensuring complete capture of the $15-$30 asymmetric win target."
+      },
+      "synthesis_directive": "Enforce a hard mathematical ceiling of $5.00 on all XAUUSD stop losses and mandate trailing profit triggers at +$12.00 to guarantee structural asymmetry."
     }
   ]
 }
