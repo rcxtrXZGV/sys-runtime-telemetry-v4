@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding to positions within a 15-minute window following a volatility expansion candle; mandatory structural confirmation required.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "ATR(14) volatility expansion filter must be below the 85th percentile, and order flow delta must align with the primary M5 trend before execution.",
-  "profit_harvest_threshold": "Initiate trailing stop-loss locking once floating profit reaches $8.00, targeting asymmetric expansion to $15-$30+."
+  "pyramiding_rule": "Zero pyramiding into active pullbacks or high-impact wicks; subsequent entries prohibited until existing order is break-even + secured profit.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "ATR-based volatility ceiling check and order-flow imbalance confirmation required before execution; block trades if spread exceeds 30 pips on XAUUSD.",
+  "profit_harvest_threshold": "Initiate dynamic trailing locks at +$10.00 profit to aggressively secure green runs and scale out towards the +$15.00-$30.00 target."
 }
