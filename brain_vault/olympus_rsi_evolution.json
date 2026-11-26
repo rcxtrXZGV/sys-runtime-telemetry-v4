@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:49:19.208100+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unbounded stop-losses during high volatility regimes (e.g., ticket 1705772492 losing -$20.56) combined with premature profit clipping on winning iterations.",
-        "risk_asymmetry_flaw": "Losses exceeded the maximum risk parameters due to trailing stop slippage and lagging exit execution during momentum acceleration.",
-        "market_regime_mismatch": "Entering during aggressive high-impact expansion wicks in XAUUSD without acknowledging localized liquidity sweeps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against scaling into losing positions or adding volume during high-velocity price retracements.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation prior to order placement.",
-        "profit_harvest_threshold": "Aggressively trigger trailing profit locks once position reaches +$12.00 to prevent evaporation into negative territory."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all individual stop-losses while mandating asymmetric profit targets of $15.00+."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:52:43.246423+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-loss placement on volatile XAUUSD liquidity sweeps, notably Ticket 1705772492 reaching -$20.56 due to excessive spatial distance from execution price.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing stop lock-in at +$8.00 profit to protect gains and ensure asymmetrical $15-$30+ runners."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per ticket on XAUUSD while disabling all micro-profit exits to force structural holding toward $15-$30 targets."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T20:07:07.412397+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked accumulation during high-volatility liquidity sweeps and over-wide manual stops causing outsized -$20.56 drawdowns.",
+        "risk_asymmetry_flaw": "Averaging losses while prematurely clipping winners kept the win-to-loss dollar ratio severely inverted.",
+        "market_regime_mismatch": "Executing micro-scalps directly into expansion wicks without verifying local order-book depth."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into active pullbacks; subsequent entries only allowed upon confirmed micro-structural break in the direction of the macro trend.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "ATR expansion filter must be below 1.5x baseline and order book imbalance must exceed 65% in trade direction.",
+        "profit_harvest_threshold": "Initiate trailing stops once profit crosses +$10.00 and execute hard structural scaling at +$15.00."
+      },
+      "synthesis_directive": "Enforce a strict $5.00 hard stop-loss ceiling on every ticket and ban all position averaging during high-impact liquidity wicks."
     }
   ]
 }

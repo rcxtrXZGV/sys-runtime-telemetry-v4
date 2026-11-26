@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into positions unless the initial trade has moved past +$10.00 in profit and the stop-loss is locked at breakeven plus commission.",
+  "pyramiding_rule": "Zero pyramiding into active pullbacks; subsequent entries only allowed upon confirmed micro-structural break in the direction of the macro trend.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory structural sweep confirmation via volume-weighted average price (VWAP) deviation band rejection before order placement.",
-  "profit_harvest_threshold": "Trigger trailing stop lock-in at +$8.00 profit to protect gains and ensure asymmetrical $15-$30+ runners."
+  "new_mandatory_entry_filter": "ATR expansion filter must be below 1.5x baseline and order book imbalance must exceed 65% in trade direction.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit crosses +$10.00 and execute hard structural scaling at +$15.00."
 }
