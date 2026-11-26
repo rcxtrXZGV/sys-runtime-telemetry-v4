@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against opening multiple correlated orders within a 3-pip band; no scaling into floating losses.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation and zero high-impact liquidity sweeps within the past 120 seconds before execution.",
-  "profit_harvest_threshold": "Initiate trailing stop locking at +$4.00 profit to ensure every winning run hits the $15.00-$30.00 asymmetric target tier."
+  "pyramiding_rule": "Strict prohibition of scaling into consecutive failing orders or adding to positions within 15 minutes of a prior stop-loss event.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a confirmed volume delta divergence and a 5-minute candle close outside the immediate 20-period Donchian channel before order dispatch.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops or tranche-locking once floating profit reaches +$10.00 to guarantee asymmetric risk-reward."
 }
