@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding permitted unless the base position has already achieved a floating profit of at least $10.00 and trailing stop is secured at breakeven.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict order authorization requires volume-weighted momentum alignment across two higher timeframes with zero high-impact macroeconomic news releases within +/- 15 minutes.",
-  "profit_harvest_threshold": "Aggressively secure green runs via trailing stop locks once floating profit reaches $15.00 to eliminate evaporation."
+  "pyramiding_rule": "Strictly prohibit adding positions within 15 minutes of a prior execution or during expanding ATR volatility bands to avoid falling-knife accumulation.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation combined with a 5-period EMA slope alignment before market execution.",
+  "profit_harvest_threshold": "Initiate trailing stops immediately once profit reaches +$6.00 to lock in gains and ensure asymmetric $15-$30+ runs."
 }
