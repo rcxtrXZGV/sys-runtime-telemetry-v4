@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T22:07:01.673606+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop losses were placed too tight in micro-volatility noise (e.g., ticket 1705772492 losing -$20.56 due to structural slippage and immediate liquidity grabs), combined with rapid over-leveraged batch entries near key psychological handles.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile where winning trades were micro-clipped for under $0.50 while losses scaled up to -$20.56, completely destroying the mathematical expectation of the engine.",
-        "market_regime_mismatch": "Entering high-frequency scalp positions during active XAUUSD structural trend expansions without accounting for wider spread expansion and aggressive wick sweeps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential batch averaging or pyramiding into correlated loss vectors within a 5-minute rolling window.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory ATR(14) volatility normalization check and order-flow imbalance filter before any XAUUSD ticket execution.",
-        "profit_harvest_threshold": "Initiate automated partial profit locking at +$4.00 and trail breakeven aggressively to prevent floating gains from evaporating into zero or negative prints."
-      },
-      "synthesis_directive": "Enforce strict $5.00 maximum hard stop-loss limits on XAUUSD, eliminate micro-scalping exits under $1.00, and halt all high-frequency batch stacking during expansion wicks."
-    },
-    {
       "evolution_timestamp": "2026-11-25T22:08:52.627411+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly clustered stop-losses during high-volatility XAUUSD liquidity sweeps, compounded by premature micro-scalp exits on winners (+0.39 to +0.55) while letting losses run to -$20.56.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic partial profit locking when floating profit crosses +$8.00, trailing the remaining stake to lock in baseline green while letting runners target +$15.00 to +$30.00."
       },
       "synthesis_directive": "Hard-cap absolute risk per trade at exactly $5.00 maximum while enforcing asymmetric trail execution to guarantee winners scale beyond +$15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T09:24:34.736759+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked wide stop-losses on high-volatility XAUUSD surges (reaching -$20.56) combined with premature micro-scalp exits on winning trades (+0.39 to +0.55), inverted risk-reward ratios.",
+        "risk_asymmetry_flaw": "Losses exceeded maximum risk parameters due to lagging dynamic adjustment during aggressive session liquidity shifts (e.g., ticket 1705772492), violating the strict $4-$6 loss ceiling.",
+        "market_regime_mismatch": "Executing multi-entry formations during high-frequency breakout wicks without verifying micro-structural order book imbalance, causing sequential stop-outs on tightly clustered orders."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of adding to positions within a 15-minute window following a volatility expansion candle; mandatory structural confirmation required.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "ATR(14) volatility expansion filter must be below the 85th percentile, and order flow delta must align with the primary M5 trend before execution.",
+        "profit_harvest_threshold": "Initiate trailing stop-loss locking once floating profit reaches $8.00, targeting asymmetric expansion to $15-$30+."
+      },
+      "synthesis_directive": "Enforce a hard structural cap limiting all XAUUSD risk strictly to $5.00 while aggressively trailing winning positions to achieve a minimum 3:1 reward-to-risk asymmetry."
     }
   ]
 }

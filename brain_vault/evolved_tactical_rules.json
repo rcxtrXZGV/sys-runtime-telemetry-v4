@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against opening multiple concurrent orders in the same directional vector within a 60-second window to prevent correlated stacking into sudden reversal wicks.",
+  "pyramiding_rule": "Strict prohibition of adding to positions within a 15-minute window following a volatility expansion candle; mandatory structural confirmation required.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory integration of an ATR-based volatility filter and order-flow imbalance score; no entry permitted unless the calculated reward-to-risk ratio on structural highs/lows mathematically exceeds 4:1.",
-  "profit_harvest_threshold": "Initiate dynamic partial profit locking when floating profit crosses +$8.00, trailing the remaining stake to lock in baseline green while letting runners target +$15.00 to +$30.00."
+  "new_mandatory_entry_filter": "ATR(14) volatility expansion filter must be below the 85th percentile, and order flow delta must align with the primary M5 trend before execution.",
+  "profit_harvest_threshold": "Initiate trailing stop-loss locking once floating profit reaches $8.00, targeting asymmetric expansion to $15-$30+."
 }
