@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into positions during expanding volatility regimes; no adding to losing positions ever.",
+  "pyramiding_rule": "Strict prohibition against adding to losing positions or placing multiple correlated tickets within a 5-pip range during active trend continuation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-bar structural liquidity sweep and structural displacement confirmation before order authorization.",
-  "profit_harvest_threshold": "Aggressively secure green runs starting at +$15.00 via trailing micro-stops, locking in asymmetric win profiles."
+  "new_mandatory_entry_filter": "Zero entry authorized unless the 14-period ATR volatility expansion filter is confirmed and order book imbalance exceeds 65% in the direction of the trade.",
+  "profit_harvest_threshold": "Initiate trailing stop-loss locking once open profit reaches +$12.00, targeting asymmetrical exits in the +$15.00 to +$30.00 range."
 }
