@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T22:22:35.629095+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unfiltered stop-hunting wicks during volatile XAUUSD liquidity sweeps, compounded by premature micro-scalp exits on winning runs (+0.39 to +0.55) while allowing losses to bleed up to -$20.56.",
-        "risk_asymmetry_flaw": "Inverted Risk-Reward Ratio: Wins averaged ~$4.32 while losses scaled up to -$20.56 due to lack of hard trailing profit stops and rigid adherence to wide, static stop losses.",
-        "market_regime_mismatch": "Executing aggressive counter-trend entries directly into London/New York session open liquidity spikes, triggering tight structural stop-losses on high-frequency noise."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against averaging down or pyramiding into consecutive losses within a 15-minute window; scaling in is only permitted when existing positions are at least +$10 in open profit.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory 5-minute ATR volatility filter and structural liquidity sweep confirmation before order execution; no market entries during the first 5 minutes of high-impact macro data releases.",
-        "profit_harvest_threshold": "Immediate partial profit booking (50%) at +$10, moving the remaining stop-loss to breakeven + commission to strictly eliminate downside exposure on winning trades."
-      },
-      "synthesis_directive": "Enforce a strict risk-reward floor of 1:3 by capping maximum individual trade losses at $5.00 while dynamically trailing profit lock-ins once positions exceed $10.00."
-    },
-    {
       "evolution_timestamp": "2026-11-25T22:24:21.789374+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-stop harvesting during high-volatility liquidity sweeps, evidenced by ticket 1705772492 losing -$20.56 while multiple parallel tickets at 21:14 (e.g., 1707578236 and 1707578239) exposed the account to unhedged concurrent slippage.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% of volume at +$10 floating profit and trail the remaining position tightly to capture asymmetric $15 to $30+ runs."
       },
       "synthesis_directive": "Strictly enforce a maximum absolute dollar risk of $5.00 per trade with automated multi-tier profit harvesting to structurally lock in positive asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T10:44:04.789558+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked volatility expansion during London-NY crossover resulting in a massive -$20.56 outlier loss due to an unadapted stop-loss placement.",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 trades) heavily outweighed wins (+$56.10 total across 11 trades) because micro-scalp wins were choked at pennies (+\u00a30.39 to +\u00a30.55) while adverse excursions breached wide mental stops.",
+        "market_regime_mismatch": "Entering high-beta XAUUSD breakouts without volatility-adjusted ATR stops, causing the system to get chopped up by micro-pullbacks and whipsaws."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of secondary entries or scaling into an active position unless the primary trade has achieved a minimum of 2.5R floating profit and moved SL to breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution during 15-minute windows prior to and following high-impact news wicks, confirmed by multi-timeframe order book imbalance metrics.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit locks via Sentinel Peak Harvest once position profit touches +$15.00 to prevent evaporation."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss per Gold trade and mandate aggressive trailing profit harvesting at +$15.00 to reverse loss asymmetry."
     }
   ]
 }
