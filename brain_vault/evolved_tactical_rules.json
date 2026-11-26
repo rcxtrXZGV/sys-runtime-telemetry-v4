@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-entry scalping must only occur via independent non-correlated ticks with a hard cap of 1 concurrent trade per directional bias.",
+  "pyramiding_rule": "Strictly prohibited to scale into positions within 5 minutes of a prior entry or against a momentum acceleration wick.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated multi-timeframe order-flow imbalance score above 75% and zero high-impact liquidity sweeps within the immediate 5-minute window before order execution.",
-  "profit_harvest_threshold": "Aggressively lock in green trades once floating profit hits +$15.00 via trailing dynamic stops, preventing profits from evaporating into minor wins or losses."
+  "new_mandatory_entry_filter": "Zero order placement allowed unless order-flow imbalance exceeds 2.5x standard deviation and spread is under 35 points.",
+  "profit_harvest_threshold": "Aggressively trail stop-loss to breakeven once floating profit hits +$4.00, securing scale-outs at +$15.00 to +$30.00."
 }
