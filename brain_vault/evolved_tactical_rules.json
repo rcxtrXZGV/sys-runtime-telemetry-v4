@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute ban on adding positions within 300 seconds of an active trade; zero pyramiding permitted while net floating profit is negative.",
+  "pyramiding_rule": "Absolute ban on multi-ticket clustering within a 2-pip band; stacking identical volume entries during peak velocity is strictly prohibited.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require live ATR (14) structural alignment on M15 frame and hard-cap maximum order risk at $5.00 inclusive of broker commission and spread.",
-  "profit_harvest_threshold": "Lock dynamic breakeven + $1.00 at +$3.00 unrealized gain; execute 50% partial harvest at +$7.50 and trail remaining position at 1.5 ATR."
+  "new_mandatory_entry_filter": "ATR(14) expansion confirmation and Order Book imbalance filter exceeding 65% prior to market order execution.",
+  "profit_harvest_threshold": "Initiate trailing stop lock-in at +$4.00 floating profit to guarantee asymmetric win capture between $15 and $30+."
 }
