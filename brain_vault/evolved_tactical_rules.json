@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding positions into falling or rising knives; pyramiding is authorized only after the initial position has achieved a minimum +$8.00 floating profit and a breakeven stop lock.",
+  "pyramiding_rule": "Strict prohibition against multiple scaling orders within a 5-minute window; exactly one primary entry per directional impulse.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation using 3-period ATR expansion coupled with zero high-impact macroeconomic news releases within a 15-minute window.",
-  "profit_harvest_threshold": "Initiate automated trailing stops once profit exceeds +$10.00 and execute aggressive partial or full harvest triggers when momentum oscillators hit extreme overbought/oversold boundaries to lock in $15-$30+ returns."
+  "new_mandatory_entry_filter": "Zero-order execution during the first 15 minutes of any hourly candle open and mandatory ATR-based spread normalization check.",
+  "profit_harvest_threshold": "Instant partial harvest at +$10.00 floating with trailing lock at breakeven +$2.00 to prevent profit evaporation."
 }
