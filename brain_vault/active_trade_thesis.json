@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T00:01:45.688434+00:00",
+  "timestamp": "2026-11-26T00:15:46.473900+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3585.0,
+  "tp_price": 3635.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "Zero active broker positions detected. Harvest guardian standing down; capital preserved at $49.25.",
-  "trade_thesis": "Market is currently undergoing 00:00-00:15 UTC interbank rollover liquidity vacuum, evidenced by zero tick volume across FX and Commodities. XAUUSD exhibits exhaustion after failing at the 3619.80 intraday high and is currently consolidating around 3610.50 with wide rollover spread risk. Executing at rollover open with an account balance under $50 invites unnecessary spread slippage. Standing aside until Asian session establishes clear order flow and spread normalizes."
+  "reversal_sentinel_assessment": "No open positions currently active on broker. Monitoring potential liquidity sweeps.",
+  "trade_thesis": "Recent closed deals show continuous stop-loss hits on tight XAUUSD entries around key psychological and structural zones. Price action on XAUUSD is currently hovering near 3601.5 in a consolidating range following a test of intraday highs near 3619.8. Desks recommend waiting for a definitive breakout or liquidity sweep below 3590 or above 3620 before committing risk capital."
 }
