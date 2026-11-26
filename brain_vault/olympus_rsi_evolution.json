@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:47:38.468372+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unwarranted wide stop-loss placement on volatile XAUUSD wicks reaching -$20.56, compounded by tight early exits on winners (+$0.39 to +$0.55) truncating the asymmetric reward profile.",
-        "risk_asymmetry_flaw": "Losses exceeded maximum risk parameters (reaching -$20.56 when target loss was $4-$6), while winning trades were closed prematurely at fractional gains instead of running to the intended $15-$30+ zone.",
-        "market_regime_mismatch": "Entering positions during high-noise, low-liquidity session transitions where intraday micro-trend reversals easily trigger structural stop-loss zones."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of scaling into losing positions; subsequent entries only permitted after the primary position achieves a minimum +$10.00 floating profit and shifts stop-loss to breakeven.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero order entry permitted unless the 14-period ATR expansion confirms directional momentum and the order book imbalance exceeds 65% in the direction of the trade.",
-        "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position with an aggressive volatility-adjusted step-stop to capture the full +$15.00 to +$30.00 tail."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade on XAUUSD, eliminate micro-skimming of wins, and force runners to hit $15.00+ profit targets."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:49:19.208100+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unbounded stop-losses during high volatility regimes (e.g., ticket 1705772492 losing -$20.56) combined with premature profit clipping on winning iterations.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation the instant floating profit crosses +$4.00 to guarantee net positive retention."
       },
       "synthesis_directive": "Enforce a hard maximum risk cap of $5.00 per trade across all assets and lock in trailing mechanics immediately upon crossing positive thresholds to eliminate outlier drawdowns."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T20:05:25.276694+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped drawdown exposure during high-volatility expansion wicks, compounded by micro-scalping tiny wins (+0.39 to +0.55) while allowing stop losses to stretch up to -$20.56.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile where winners were cut prematurely via tight trailing or breakeven triggers, while losers absorbed severe slippage and wide structural stop hits.",
+        "market_regime_mismatch": "Entering XAUUSD momentum continuations during liquidity voids without filtering for local order-book imbalances, resulting in instant stop-hunting wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into positions unless the initial trade has moved past +$10.00 in profit and the stop-loss is locked at breakeven plus commission.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory structural sweep confirmation via volume-weighted average price (VWAP) deviation band rejection before order placement.",
+        "profit_harvest_threshold": "Trigger trailing stop lock-in at +$8.00 profit to protect gains and ensure asymmetrical $15-$30+ runners."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per ticket on XAUUSD while disabling all micro-profit exits to force structural holding toward $15-$30 targets."
     }
   ]
 }
