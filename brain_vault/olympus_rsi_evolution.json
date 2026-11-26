@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:50:38.155780+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution into volatile XAUUSD micro-wicks with overly tight stops that induced premature liquidation, combined with an outlier catastrophic loss (-$20.56) where the stop loss was placed too wide relative to normal volatility bands.",
-        "risk_asymmetry_flaw": "Losses (-$20.56 max) heavily outweighed typical wins (+$0.39 to +$5.02) because early small wins were prematurely closed while losing positions suffered slippage or expanded stop zones.",
-        "market_regime_mismatch": "Entering during high-velocity directional sweeps without confirming multi-timeframe order book liquidity imbalances, triggering stop-hunts on tight 0.01-volume scalps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of averaging down or clustering multiple entries within a 1-dollar price band during high-velocity market impulses.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a 3-bar volume-weighted average price (VWAP) confirmation and zero high-impact news impulses within a +/- 15-minute window before order dispatch.",
-        "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling whenever floating profit reaches $10.00 to prevent erosion back to negative territory."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum loss per trade on XAUUSD, eliminate clustered entry stacking, and require multi-timeframe VWAP confirmation prior to execution."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:52:14.173629+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked slippage and over-extended stops during volatile micro-pullbacks, combined with fragmented high-frequency entries getting caught in whipsaws.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate automated trailing profit locks or split-scaling the moment XAUUSD reaches +$12.00, ensuring runners are aggressively managed to target the $15-$30+ zone instead of premature micro-harvesting."
       },
       "synthesis_directive": "Enforce a hard absolute maximum loss ceiling of $5.00 per trade on Gold with an automated dynamic profit-lock trigger at +$12.00 to strictly enforce asymmetric expectancy."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:44:23.010454+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD during New York session overlap, highlighted by ticket 1705772492 resulting in a -$20.56 drawdown due to a delayed stop-loss reaction.",
+        "risk_asymmetry_flaw": "Losses exceeded winning trades significantly because stop-losses were placed too wide ($20+) while profit targets were cut short under $5, in direct violation of the $4-$6 loss constraint.",
+        "market_regime_mismatch": "Entering during high-frequency micro-wicks and liquidity sweeps without checking current Average True Range (ATR) expansion coefficients."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry scaling is banned unless the initial position is already at break-even + 1R profit.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news releases and when micro-volatility exceeds 2.5x the 20-period ATR.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit reaches $12, securing a mandatory minimum $15-$30 payout on winning runs."
+      },
+      "synthesis_directive": "Hard-cap every single trade risk at precisely $5.00 maximum while forcing all winning trajectories to run past the $15.00 threshold."
     }
   ]
 }
