@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding authorized until initial position achieves a minimum 1:1 risk-reward lock and volatility contracts below the 14-period ATR median.",
+  "pyramiding_rule": "Strict zero-tolerance for same-timestamp order duplication; subsequent entries require minimum +1.5 ATR floating profit on initial order and structural trend continuation confirmation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Volume imbalance confirmation via order book delta combined with a mandatory 5-pip buffer beyond local liquidity pools before execution.",
-  "profit_harvest_threshold": "Instantly initiate trailing breakeven stops once floating profit hits +$6.00, securing asymmetric expansion toward $15-$30 targets."
+  "new_mandatory_entry_filter": "Block all new entries if spread/ATR ratio exceeds 0.20 or within 15 minutes of major news events; require minimum 1:3 structural R:R prior to signal authorization.",
+  "profit_harvest_threshold": "Lock hard break-even at +$3.00 floating gain; initiate dynamic trailing sentinel to lock 60% of peak floating equity once position hits +$10.00 profit."
 }
