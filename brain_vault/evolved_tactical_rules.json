@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding to positions during high-frequency volatility clusters; pyramiding is limited to strictly verified momentum continuation phases.",
+  "pyramiding_rule": "Strict prohibition of scaling into positions within 30 seconds of an existing fill or inside a 1-dollar liquidity cluster to prevent cumulative slippage on falling/rising knives.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume and order-book imbalance confirmation required within the 1-minute microstructure before order dispatch, strictly blocking trades during news-wick formations.",
-  "profit_harvest_threshold": "Instantaneous partial close at +$5.00 with trailing stop activation to lock in gains and prevent floating profits from evaporating."
+  "new_mandatory_entry_filter": "Volume and order book imbalance check: require a minimum 3.2x delta footprint confirmation before market execution on XAUUSD.",
+  "profit_harvest_threshold": "Instant partial scale-out when floating profit crosses +$12.00, securing baseline gains and locking trailing stops to breakeven + spread."
 }
