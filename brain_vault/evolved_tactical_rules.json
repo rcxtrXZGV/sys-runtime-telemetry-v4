@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no falling knives); limit scale-ins to max 2 tranches only when the first tranche is in profit and trailing stop covers breakeven.",
+  "pyramiding_rule": "Strict prohibition on adding to losing positions or executing multiple orders within a 3-pip band to prevent compounding drawdowns during flash wicks.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation using Delta volume or ATR expansion filter before any XAUUSD execution.",
-  "profit_harvest_threshold": "Aggressively trail stop-loss to lock in profit once a position reaches +$6.00 to prevent floating gains from evaporating."
+  "new_mandatory_entry_filter": "Order execution is strictly blocked unless the order book imbalance confirms directional momentum and ATR expansion exceeds the 14-period moving average.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps as soon as the trade reaches +$15.00, ensuring winners naturally run to the $15-$30+ target zone."
 }
