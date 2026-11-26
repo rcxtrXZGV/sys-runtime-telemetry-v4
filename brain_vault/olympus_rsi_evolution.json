@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T21:35:00.000000+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution of tightly clustered orders during high-volatility sessions (06:00, 10:05, 13:36) resulted in compounding losses up to -$20.56 due to micro-range breakout whipsaws tripping aggressive stop losses.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile: Average wins were micro-scalps (+-$0.45) while individual losses scaled to -$20.56, violating the $4-$6 loss ceiling constraint.",
-        "market_regime_mismatch": "Attempting tight-stop mean-reversion tactics inside expanding XAUUSD liquidity sweeps, leading to consecutive stop-hunting hits within seconds."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing or flat positions within a 5-minute window; sequence entries only after confirmed structural break with a maximum of 1 active tranche per direction.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a minimum 15-second multi-timeframe volume delta confirmation and absolute spread boundaries before order placement to avoid news wicks.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$4.00 floating profit to lock in green runs before retracement, targeting a $15-$30 asymmetric pay-off."
-      },
-      "synthesis_directive": "Enforce a strict $5.00 dollar-loss cap per trade across all instruments while widening profit-harvest targets to force asymmetry into the statistical distribution."
-    },
-    {
       "evolution_timestamp": "2026-11-25T21:30:45.597673+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Tight stop-losses placed directly inside institutional micro-liquidity zones on XAUUSD, getting hunted by algorithmic wicks during London and US session transitions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$15.00, forcing complete liquidation if retracement exceeds 35% of the maximum unrealized peak."
       },
       "synthesis_directive": "Enforce a hard absolute dollar ceiling of $5.00 on all XAUUSD stop-losses while prohibiting premature micro-harvesting to ensure an asymmetric risk-reward ratio of at least 1:4."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T02:22:00.742822+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and wider-than-expected retracements, notably ticket 2120879695 resulting in a -$20.56 drawdown.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile where winning trades were micro-scalps (+0.39 to +0.55) while losing trades breached the target ceiling, reaching up to -$20.56.",
+        "market_regime_mismatch": "Entering high-frequency mean-reversion scalp orders during aggressive XAUUSD trend expansion and session open overlap spikes, causing instant stop-loss hits."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into losing positions or moving average convergence zones; scale-ins are strictly prohibited unless the initial position is already at +1R floating profit with stop-loss locked at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 14-period ATR volatility normalization filter and absolute block on entries within 15 minutes of high-impact macroeconomic news wicks.",
+        "profit_harvest_threshold": "Trigger partial profit scaling at +$10.00 and full trailing execution before floating profits degrade by more than 30% from peak."
+      },
+      "synthesis_directive": "Enforce a strict maximum loss ceiling of $5.00 per trade while widening win targets to $15-$30 through trailing structural liquidity stops."
     }
   ]
 }
