@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T13:42:25.438034+00:00",
+  "timestamp": "2026-11-26T13:44:15.874795+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3610.0,
-  "tp_price": 3645.0,
+  "tp_price": 3640.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No active open positions on broker. Monitoring liquidity pools.",
-  "trade_thesis": "Gold (XAUUSD) has pulled back from intraday highs near 3634.7 to 3620.39, forming a short-term consolidation range after testing previous resistance clusters. While the macro trend remains constructive, current 15m price action exhibits indecision with lower volume on recent down candles. Awaiting a clearer liquidity sweep or momentum break above 3630 before committing capital."
+  "reversal_sentinel_assessment": "No open positions to manage; market is consolidating between 3616 and 3626 after an attempted push toward the intraday high of 3634.7.",
+  "trade_thesis": "Gold is currently showing short-term indecision on the 15-minute timeframe following a rejection near the 3634.7 intraday high. Volume has spiked slightly on the latest lower close (3620.4), indicating mixed order flow. Sovereign desks advise holding off on fresh directional exposure until a decisive liquidity sweep and breakout confirmation materializes."
 }
