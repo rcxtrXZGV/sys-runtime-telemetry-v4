@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding positions within 50 ticks of an existing active cluster; multi-ticket entries are banned unless the primary trade is secured at break-even + commission.",
+  "pyramiding_rule": "Strict prohibition against opening multiple concurrent orders in the same directional vector within a 60-second window to prevent correlated stacking into sudden reversal wicks.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order authorization without confirmation from both order-book imbalance velocity and 14-period ATR volatility expansion filters.",
-  "profit_harvest_threshold": "Aggressively trigger trailing profit locks at +$10.00 to prevent erosion of floating gains toward negative outcomes."
+  "new_mandatory_entry_filter": "Mandatory integration of an ATR-based volatility filter and order-flow imbalance score; no entry permitted unless the calculated reward-to-risk ratio on structural highs/lows mathematically exceeds 4:1.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit locking when floating profit crosses +$8.00, trailing the remaining stake to lock in baseline green while letting runners target +$15.00 to +$30.00."
 }
