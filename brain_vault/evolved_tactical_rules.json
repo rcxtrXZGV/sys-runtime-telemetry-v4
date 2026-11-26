@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute prohibition against pyramiding or adding sequential tickets within 5 minutes of a prior entry or inside an unconfirmed consolidation range.",
+  "pyramiding_rule": "Strict prohibition on opening correlated secondary positions within 300 seconds of an initial entry; scaling is banned entirely unless the primary trade is breakeven-locked.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory multi-timeframe volume-weighted momentum confirmation and a verified order-block rejection wick before order placement is authorized.",
-  "profit_harvest_threshold": "Initiate automated partial profit locks and tighten trailing parameters strictly once a position reaches +$12.00 floating gain to secure asymmetric distribution."
+  "new_mandatory_entry_filter": "Zero order execution allowed if ATR(14) on the 5-minute timeframe exceeds 150% of its 50-period moving average unless confirmed by a volume divergence spike.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps instantly once floating gains reach +$10.00, ensuring all winners target the $15-$30+ structural band."
 }
