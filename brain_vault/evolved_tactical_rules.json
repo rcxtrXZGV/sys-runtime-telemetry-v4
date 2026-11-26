@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against averaging down or scaling into trades in the direction of an active adverse wick; new scale-ins require confirmed momentum breakout on 5M closing prices.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory Average True Range (ATR) expansion filter and Order Flow Imbalance (OFI) check: block entries if volume is below the 20-period moving average.",
-  "profit_harvest_threshold": "Trigger trailing stops instantly when open profit hits +$10.00 to prevent floating gains from evaporating into broker commissions and negative finishes."
+  "pyramiding_rule": "Absolute ban on adding positions within 300 seconds of an active trade; zero pyramiding permitted while net floating profit is negative.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require live ATR (14) structural alignment on M15 frame and hard-cap maximum order risk at $5.00 inclusive of broker commission and spread.",
+  "profit_harvest_threshold": "Lock dynamic breakeven + $1.00 at +$3.00 unrealized gain; execute 50% partial harvest at +$7.50 and trail remaining position at 1.5 ATR."
 }

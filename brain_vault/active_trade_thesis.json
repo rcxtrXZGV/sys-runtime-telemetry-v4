@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T13:04:40.108284+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-26T13:06:50.963794+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 87,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3610.0,
-  "tp_price": 3634.5,
+  "tp_price": 3635.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No active broker positions present. Harvest Guardian in standby mode.",
-  "trade_thesis": "XAUUSD defended its key intraday support level at $3601.4 following a pull-back from $3634.7. The latest 15m expansion candle pushed from $3617.0 to $3626.4 with strong buyer influx, forming a higher-low continuation structure. Going long aiming for a retest of the $3634.5 liquidity pool with risk defined below $3610.0."
+  "reversal_sentinel_assessment": "No open positions to manage; portfolio equity is flat at $54.19.",
+  "trade_thesis": "Gold (XAUUSD) has pulled back from its intraday high of 3634.70 to 3620.39, forming a localized rejection wick on the latest 15-minute candle. Recent closed trade feedback shows tight stop-losses are easily triggered during high-volatility sweeps around these psychological levels. Await a cleaner liquidity sweep or impulsive momentum confirmation before deploying capital."
 }
