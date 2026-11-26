@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T13:38:47.862636+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unbounded slippage and oversized stop-losses on high-impact micro-wicks in XAUUSD (reaching -$20.56), combined with premature micro-scalp exits on winners (+0.39 to +0.55).",
-        "risk_asymmetry_flaw": "The loss-to-win ratio inverted severely because outlier losses (-$20.56) vastly exceeded max winning caps (+$5.02), breaking the required $4-$6 loss vs $15-$30 win profile.",
-        "market_regime_mismatch": "Entering during high-volatility expansion phases without volatility-adjusted dynamic stops, resulting in structural stop-hunting sweeps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit sequential scaling or adding positions within 30 seconds to prevent localized clustered liquidations during high-velocity wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero-entry during Tier-1 macroeconomic volatility windows; require an institutional order-flow imbalance score > 0.75 alongside volume confirmation.",
-        "profit_harvest_threshold": "Initiate aggressive trailing profit-locking at +$10.00 to guarantee capturing the target $15-$30 win asymmetry without evaporation."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar cap of $5.00 on all XAUUSD stop-losses while locking in trailing profit sweeps to guarantee asymmetric $15-$30 outcomes."
-    },
-    {
       "evolution_timestamp": "2026-11-26T13:42:20.156399+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on XAUUSD caused by placing stop-losses inside high-frequency volatility micro-channels during London/NY crossover.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing harvest when floating profit reaches $10.00 to guarantee minimum asymmetric returns of $15-$30+."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses while immediately widening profit targets to lock in $15-$30 asymmetric wins."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T18:53:22.350161+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly-clustered entries during high volatility intervals (e.g., ticket 1705772492 resulting in -$20.56 loss) exposed the account to severe local slippage and stop-hunting wicks, while multiple rapid entries at similar price nodes (tickets 1707578236 and 1707578239) created unintended stacking into adverse price momentum.",
+        "risk_asymmetry_flaw": "The loss-to-win distribution is severely inverted; maximum losses reached -$20.56 while the primary winning cluster yielded fractional gains between +$0.39 and +$5.02, violating the $15-$30 asymmetric return objective.",
+        "market_regime_mismatch": "The trading engine attempted mean-reversion and tight-stop scalping during expanding directional volatility in Gold (XAUUSD), causing stop-losses to be repeatedly clipped right before structural continuations."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to losing positions or placing secondary entries within 50 pips of an existing open order in the same direction; pyramiding is limited exclusively to trades showing a minimum of +$10.00 floating profit.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "No order execution is authorized unless the multi-timeframe ATR expansion ratio is below the 90th percentile, and order flow imbalance confirms zero high-impact liquidity sweeps on the 5-minute candle close.",
+        "profit_harvest_threshold": "Initiate automated trailing stops once floating profit hits +$12.00, securing minimum wins at +$15.00 and allowing runners to target the +$30.00 structural boundary."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 max risk per Gold trade, eliminate correlated duplicate entries, and lock in asymmetric wins via automated trailing triggers at +$15.00."
     }
   ]
 }
