@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T00:18:59.522619+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unwarranted wide stop-loss placement on volatile XAUUSD liquidity sweeps (-$20.56 loss) combined with premature scalping exits on winning trades that yielded sub-dollar profits.",
-        "risk_asymmetry_flaw": "Losses exceeded targets due to lack of hard dollar-cap enforcement on individual tickets and overlapping entries during adverse retracements.",
-        "market_regime_mismatch": "Executing breakout and continuation orders during high-frequency volatility expansion phases without confirming institutional volume deltas."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding positions within 0.1% of an existing stop-loss zone; zero tolerance for falling-knife averaging.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require minimum 3-sigma volume confirmation and zero high-impact macroeconomic news in a +/- 15 minute window prior to order dispatch.",
-        "profit_harvest_threshold": "Initiate trailing stop protection immediately at +$10.00 floating profit to ensure runners reach the $15-$30+ asymmetric target band."
-      },
-      "synthesis_directive": "Enforce strict $5.00 maximum dollar-risk per trade on XAUUSD while blocking all entries during high-volatility wicks to let asymmetric winners expand to $15-$30."
-    },
-    {
       "evolution_timestamp": "2026-11-26T00:22:16.871776+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-stop volatility hunts and holding trades into high-impact liquidity sweeps, evidenced by ticket 1705772492 taking a disproportionate -$20.56 drawdown because the stop was placed too wide relative to immediate micro-structure invalidation points.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressive trailing activation once unrealized profit crosses $10.00, securing a minimum floor of $4.00."
       },
       "synthesis_directive": "Hard-cap individual stop losses strictly between $4.00 and $5.00 while expanding profit targets to run past $15.00 through dynamic volatility trailing."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T11:50:38.155780+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution into volatile XAUUSD micro-wicks with overly tight stops that induced premature liquidation, combined with an outlier catastrophic loss (-$20.56) where the stop loss was placed too wide relative to normal volatility bands.",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max) heavily outweighed typical wins (+$0.39 to +$5.02) because early small wins were prematurely closed while losing positions suffered slippage or expanded stop zones.",
+        "market_regime_mismatch": "Entering during high-velocity directional sweeps without confirming multi-timeframe order book liquidity imbalances, triggering stop-hunts on tight 0.01-volume scalps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of averaging down or clustering multiple entries within a 1-dollar price band during high-velocity market impulses.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 3-bar volume-weighted average price (VWAP) confirmation and zero high-impact news impulses within a +/- 15-minute window before order dispatch.",
+        "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling whenever floating profit reaches $10.00 to prevent erosion back to negative territory."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum loss per trade on XAUUSD, eliminate clustered entry stacking, and require multi-timeframe VWAP confirmation prior to execution."
     }
   ]
 }
