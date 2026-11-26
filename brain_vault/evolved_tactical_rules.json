@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding authorized unless the primary position has reached a minimum unrealized profit of +$15.00 with trailing stops locked at breakeven.",
+  "pyramiding_rule": "Strict prohibition against averaging down or scaling into localized liquidity clusters; scale-ins permitted only on verified structural breakouts with positive drift.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict order execution lockout during 1-minute ATR spikes exceeding 300% of the 20-period moving average; mandatory confirmation via multi-timeframe structural volume imbalance.",
-  "profit_harvest_threshold": "Initiate automated scale-out triggers when open profit hits +$15.00, securing remainder via aggressive trailing stops to target +$30.00."
+  "new_mandatory_entry_filter": "Mandatory ATR-based volatility envelope check and zero-order execution during 1-minute high-impact price dispersion wicks.",
+  "profit_harvest_threshold": "Initiate trailing profit locks at +$10.00 with a hard scale-out target of +$15.00 to +$30.00."
 }
