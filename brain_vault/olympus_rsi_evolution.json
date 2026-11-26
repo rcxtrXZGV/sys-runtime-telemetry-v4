@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T13:04:30.783932+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during volatile liquidity sweeps (specifically ticket 1705772492 resulting in a -$20.56 drawdown) combined with premature micro-scalp exits on winning trades.",
-        "risk_asymmetry_flaw": "Maximum losses (-$20.56) severely outpaced maximum wins (+$5.02), violating the fundamental 3:1 reward-to-risk ratio requirement.",
-        "market_regime_mismatch": "Entering breakout positions during low-volume micro-structures where algorithmic spread widening and news wicks trigger tight stops immediately before trend continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against averaging down or scaling into trades in the direction of an active adverse wick; new scale-ins require confirmed momentum breakout on 5M closing prices.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory Average True Range (ATR) expansion filter and Order Flow Imbalance (OFI) check: block entries if volume is below the 20-period moving average.",
-        "profit_harvest_threshold": "Trigger trailing stops instantly when open profit hits +$10.00 to prevent floating gains from evaporating into broker commissions and negative finishes."
-      },
-      "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade while extending profit targets to a minimum of $15.00 to guarantee asymmetric positive expectancy."
-    },
-    {
       "evolution_timestamp": "2026-11-26T13:06:33.975441+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic stop-loss overhang (-$20.56 loss on 0.01 lot ticket 1705772492) paired with simultaneous duplicate order execution (tickets 1707578236 and 1707578239 at 21:14:10) into aggressive downward momentum wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps the moment open trade equity hits +$15.00 to guarantee asymmetric +$15 to +$30 runs."
       },
       "synthesis_directive": "Enforce a rigid $4-$6 max stop-loss cap on all XAUUSD transactions while forcing green runs to scale freely past $15.00 via dynamic trailing stops."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T16:37:43.928675+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked volatility expansion during London-NY transition caused stop-loss hunting on XAUUSD, resulting in an outlier loss of -$20.56.",
+        "risk_asymmetry_flaw": "Stops were positioned inside high-frequency noise bands rather than behind structural volatility pivots, and multi-ticket layering caused compounding risk.",
+        "market_regime_mismatch": "Executing mean-reversion entries during high momentum expansion regimes, leading to immediate stop breaches."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on scaling into positions within 15 minutes of a prior entry or when previous tickets are floating negative.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory ATR expansion and multi-timeframe volume confirmation before order placement to filter out micro-wicks.",
+        "profit_harvest_threshold": "Trigger aggressive trailing stops or partial scaling immediately upon crossing +$15.00 floating profit to lock in asymmetry."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on all XAUUSD orders and require multi-timeframe ATR validation to eliminate out-of-bounds drawdown events."
     }
   ]
 }

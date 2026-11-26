@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of grid or martingale scaling into losing positions; additions only permitted on confirmed breakout momentum with positive floating equity.",
+  "pyramiding_rule": "Strict prohibition on scaling into positions within 15 minutes of a prior entry or when previous tickets are floating negative.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order entry allowed within 5 minutes of high-impact macro news wicks and without an explicit ATR-based multi-timeframe confirmation filter.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps the moment open trade equity hits +$15.00 to guarantee asymmetric +$15 to +$30 runs."
+  "new_mandatory_entry_filter": "Mandatory ATR expansion and multi-timeframe volume confirmation before order placement to filter out micro-wicks.",
+  "profit_harvest_threshold": "Trigger aggressive trailing stops or partial scaling immediately upon crossing +$15.00 floating profit to lock in asymmetry."
 }
