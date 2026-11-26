@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T13:42:20.156399+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on XAUUSD caused by placing stop-losses inside high-frequency volatility micro-channels during London/NY crossover.",
-        "risk_asymmetry_flaw": "Inverted risk-to-reward profile: average winners were prematurely clipped under +$5.00 while losses like ticket 1705772492 breached -$20.00, violating the $4-$6 risk cap.",
-        "market_regime_mismatch": "Entering mid-range consolidation wicks without filter validation, resulting in tight stop-losses being cleanly hunted before trend continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing positions; pyramiding is authorized only after the initial position has achieved +$10.00 floating profit and moved to break-even.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero entry execution unless the order book imbalance exceeds 65% and multi-timeframe ATR expansion confirms directional momentum away from liquidity pools.",
-        "profit_harvest_threshold": "Initiate trailing profit capture when unrealized gains hit +$12.00, locking in minimum +$8.00 to force asymmetric $15-$30+ wins."
-      },
-      "synthesis_directive": "Enforce a rigid $5.00 absolute hard stop on XAUUSD and mandate algorithmic profit-letting past +$12.00 to eliminate oversized losses and achieve true statistical asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-26T13:44:09.851215+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked accumulation of positions during high-volatility liquidity sweeps combined with oversized stop distances (-$20.56 outlier) violating risk boundaries.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate automated trailing stops once floating profit hits +$12.00, securing minimum wins at +$15.00 and allowing runners to target the +$30.00 structural boundary."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 max risk per Gold trade, eliminate correlated duplicate entries, and lock in asymmetric wins via automated trailing triggers at +$15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T18:55:00.454667+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide (3514.50) while concurrent multiple entries (Tickets 1707578236 and 1707578239) exposed the account to unhedged clustered risk during high-volatility XAUUSD momentum wicks.",
+        "risk_asymmetry_flaw": "Losses heavily outscaled wins due to premature micro-profit closures (+0.39 to +0.55) clipping right-tail expansion, while losing positions were allowed to bleed up to -$20.56 instead of capping strictly within the $4-$6 architectural ceiling.",
+        "market_regime_mismatch": "The trading engine attempted to counter-trend scalp or scale into rapid expansion impulses on XAUUSD around 3514-3550 levels, triggering continuous stop-outs during institutional liquidity sweeps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into consecutive orders within a 5-pip range; zero pyramiding allowed until the initial position has achieved a minimum +$10 floating profit and moved stop-loss to breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "No XAUUSD order execution is authorized unless the 14-period ATR volatility expansion filter aligns with the order direction and order book imbalance exceeds 65% in favor of the entry.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit scaling the exact microsecond floating profit hits +$12.00 to guarantee asymmetric retention targeting +$15 to +$30 runs."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade while locking in trailing profit triggers at +$12.00 to permanently eliminate oversized tail losses and force asymmetric win-to-loss ratios."
     }
   ]
 }
