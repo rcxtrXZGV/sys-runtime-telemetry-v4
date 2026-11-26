@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T13:30:24.605091+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by placing stop-losses too wide relative to normal market noise, allowing adverse slippage and momentum sweeps to destroy capital before structural reversal.",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total) severely outweighed wins (+$56.10 total) due to premature micro-scalp profit harvesting (e.g., +$0.39 to +$0.55) while letting failed positions bleed out past the hard $4-$6 risk threshold.",
-        "market_regime_mismatch": "Executing blind limit/market orders during high-volatility XAUUSD liquidity sweeps without checking short-term order book imbalance or microsecond momentum exhaustion."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding to losing positions; multi-ticket entries (such as tickets 1707578236 and 1707578239) are banned unless the initial entry has already secured a 1R trailing stop-loss.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated 3-tick volume delta confirmation and zero high-impact macroeconomic news in the preceding/succeeding 15-minute window before order execution.",
-        "profit_harvest_threshold": "Aggressively trigger trailing stop activation once floating profit hits +$6.00 to lock in the asymmetric target range of $15-$30+."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar loss per trade while widening profit capture mechanics to ensure winners consistently scale past $15.00."
-    },
-    {
       "evolution_timestamp": "2026-11-26T13:32:09.644768+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked execution slippage and excessively wide bracket placement during high-volatility liquidity sweeps, evidenced by ticket 1705772492 resulting in a -$20.56 drawdown on a single 0.01 lot due to a delayed structural stop.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial scale-out once floating profit hits +$10.00 to prevent multi-dollar runbacks into negative territory."
       },
       "synthesis_directive": "Enforce a hard structural cap of $5.00 max loss per trade on XAUUSD while deploying rapid trailing locks to force winning distributions into the $15-$30 corridor."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T18:44:54.557466+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility sessions (e.g., ticket 1705772492 resulting in -$20.56) and clustering entries without spread-aware buffers.",
+        "risk_asymmetry_flaw": "Losses exceeded maximum risk parameters due to lagging exit triggers on sudden impulsive wicks, while winning trades were cut prematurely for cents.",
+        "market_regime_mismatch": "Entering mean-reversion or tight-stop grids during aggressive trend expansion phases, leading to repeated stop-outs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on averaging down or adding size in the direction of an active adverse price excursion; scale-in only permitted after the initial position has achieved +$10 in floating profit.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Order execution requires an absolute multi-timeframe volatility and spread delta filter, banning entries when Average True Range exceeds 3x the 20-period median.",
+        "profit_harvest_threshold": "Initiate dynamic trailing stop protection once floating profit crosses +$8.00 to guarantee asymmetric $15-$30+ payouts."
+      },
+      "synthesis_directive": "Hard-cap every individual trade risk at exactly $5.00 maximum while enforcing aggressive trailing locks to expand winner payloads past $15.00."
     }
   ]
 }
