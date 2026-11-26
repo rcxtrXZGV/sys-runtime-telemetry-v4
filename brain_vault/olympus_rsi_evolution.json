@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:14:17.873915+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic unmitigated outlier loss (ticket 1705772492 at -$20.56) caused by stop-loss slippage/expansion, combined with rapid multi-order entry clustering into adverse moves (tickets 1707578236 & 1707578239 executed simultaneously at 21:14:10).",
-        "risk_asymmetry_flaw": "Negative risk-reward asymmetry where winning trades were micro-harvested prematurely (averaging +$0.39 to +$0.55) while single losing trades were allowed to bleed up to -$20.56 (4x the acceptable max risk threshold).",
-        "market_regime_mismatch": "Trading during high-volatility liquidity sweeps and session transitions without dynamic ATR-based gap buffers, causing tight stops to get swept while wider stops suffered massive drawdown."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict zero-tolerance for same-timestamp order duplication; subsequent entries require minimum +1.5 ATR floating profit on initial order and structural trend continuation confirmation.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Block all new entries if spread/ATR ratio exceeds 0.20 or within 15 minutes of major news events; require minimum 1:3 structural R:R prior to signal authorization.",
-        "profit_harvest_threshold": "Lock hard break-even at +$3.00 floating gain; initiate dynamic trailing sentinel to lock 60% of peak floating equity once position hits +$10.00 profit."
-      },
-      "synthesis_directive": "Hard-cap maximum XAUUSD loss at $5.00 per 0.01 lot, prohibit multi-position compounding into drawdown, and enforce trailing profit locks to guarantee positive expectancy."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:17:05.814510+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked runaway drawdown on high-volatility XAUUSD wicks, notably ticket 1705772492 resulting in a -$20.56 loss due to an unconstrained stop-loss placement.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate automated partial profit-taking and tighten trailing stops once floating profit reaches +$6.00 to prevent gains from evaporating back to negative outcomes."
       },
       "synthesis_directive": "Enforce a strict risk-reward floor where no stop-loss can exceed $5.00 and winning runs must be aggressively harvested between $15.00 and $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T13:49:35.816718+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) combined with clustered micro-entries near local volatility peaks causing cascading failures.",
+        "risk_asymmetry_flaw": "The largest loss (-$20.56) heavily violated the target risk boundary of $4-$6, while winning trades were prematurely clipped between +$0.39 and +$5.02.",
+        "market_regime_mismatch": "High-velocity momentum wicks triggered tight stop-losses during market session transitions, while correlated multi-ticket entries compounded losses in a whipsaw regime."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding positions within 0.10% of a prior active losing ticket; require confirmed structural break before scaling.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require Volume Profile delta confirmation and 5-period ATR expansion check prior to order execution to filter out low-liquidity micro-wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$12.00 to guarantee terminal capture between $15.00 and $30.00."
+      },
+      "synthesis_directive": "Enforce absolute hard stop-loss limits at $5.00 on all XAUUSD instruments and lock in profit capture thresholds to prevent positive trades from bleeding into losses."
     }
   ]
 }
