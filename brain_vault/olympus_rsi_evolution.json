@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T02:22:00.742822+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and wider-than-expected retracements, notably ticket 2120879695 resulting in a -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile where winning trades were micro-scalps (+0.39 to +0.55) while losing trades breached the target ceiling, reaching up to -$20.56.",
-        "market_regime_mismatch": "Entering high-frequency mean-reversion scalp orders during aggressive XAUUSD trend expansion and session open overlap spikes, causing instant stop-loss hits."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into losing positions or moving average convergence zones; scale-ins are strictly prohibited unless the initial position is already at +1R floating profit with stop-loss locked at breakeven.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a minimum 14-period ATR volatility normalization filter and absolute block on entries within 15 minutes of high-impact macroeconomic news wicks.",
-        "profit_harvest_threshold": "Trigger partial profit scaling at +$10.00 and full trailing execution before floating profits degrade by more than 30% from peak."
-      },
-      "synthesis_directive": "Enforce a strict maximum loss ceiling of $5.00 per trade while widening win targets to $15-$30 through trailing structural liquidity stops."
-    },
-    {
       "evolution_timestamp": "2026-11-26T08:00:59.557915+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD, evidenced by ticket 1705772492 resulting in a -$20.56 drawdown due to an overly permissive stop placement and lack of immediate volatility clamping.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing stop lock-in the moment floating profit reaches +$12.00, ensuring complete capture of the $15-$30 asymmetric win target."
       },
       "synthesis_directive": "Enforce a hard mathematical ceiling of $5.00 on all XAUUSD stop losses and mandate trailing profit triggers at +$12.00 to guarantee structural asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T12:02:59.604401+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked momentum chase and stop placement within high-frequency institutional liquidity sweeps, resulting in isolated catastrophic drawdowns like -$20.56.",
+        "risk_asymmetry_flaw": "Stops were placed too wide or failed to trigger early during adverse volatility expansions, causing losses ($58.60 total loss sum across 9 trades) to eclipse winning momentum trades ($56.10 total win sum across 11 trades).",
+        "market_regime_mismatch": "Entering during high-volatility micro-pullbacks on XAUUSD without filtering out high-noise counter-trend wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-entry scalping must only occur via independent non-correlated ticks with a hard cap of 1 concurrent trade per directional bias.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a validated multi-timeframe order-flow imbalance score above 75% and zero high-impact liquidity sweeps within the immediate 5-minute window before order execution.",
+        "profit_harvest_threshold": "Aggressively lock in green trades once floating profit hits +$15.00 via trailing dynamic stops, preventing profits from evaporating into minor wins or losses."
+      },
+      "synthesis_directive": "Enforce a strict maximum loss ceiling of $5.00 per trade on XAUUSD while scaling winning runs dynamically to $15.00-$30.00 using asymmetric trailing stops."
     }
   ]
 }

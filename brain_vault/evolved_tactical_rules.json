@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry scalps are capped at maximum 2 concurrent lots per directional node with an absolute unified hard stop.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe momentum convergence via 14-period RSI and 3-period EMA slope agreement before order execution.",
-  "profit_harvest_threshold": "Trigger trailing stop lock-in the moment floating profit reaches +$12.00, ensuring complete capture of the $15-$30 asymmetric win target."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-entry scalping must only occur via independent non-correlated ticks with a hard cap of 1 concurrent trade per directional bias.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a validated multi-timeframe order-flow imbalance score above 75% and zero high-impact liquidity sweeps within the immediate 5-minute window before order execution.",
+  "profit_harvest_threshold": "Aggressively lock in green trades once floating profit hits +$15.00 via trailing dynamic stops, preventing profits from evaporating into minor wins or losses."
 }
