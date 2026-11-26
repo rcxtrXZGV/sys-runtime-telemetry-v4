@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T13:25:02.722267+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution clustering during high-volatility XAUUSD momentum shifts resulted in severe outlier losses (-$20.56) due to delayed exits and unadjusted tight stops catching news wicks.",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total) outpaced wins (+$56.10 total) because micro-wins were prematurely truncated via micro-trailing stops while outlier losses were allowed to breach the -$5.00 safety ceiling.",
-        "market_regime_mismatch": "The trading engine attempted counter-trend scaling and tight stops during aggressive multi-dollar structural breakouts in Gold, triggering multiple consecutive stop-loss orders."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding to positions (pyramiding) within 30 minutes of a prior stopped order; scale-ins only permitted after price confirms a 2x ATR impulse in favor.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory order block and volume-weighted average price (VWAP) cross validation before entry; block all trades when spread exceeds 35% of the 14-period ATR.",
-        "profit_harvest_threshold": "Initiate automated partial profit harvesting at +$10.00 and dynamic trailing lockdown at +$15.00 to guarantee asymmetric win-to-loss ratios."
-      },
-      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD and mandate immediate structural profit harvesting when positions cross +$15.00."
-    },
-    {
       "evolution_timestamp": "2026-11-26T13:26:55.069073+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped exposure during high-volatility liquidity sweeps and over-leveraged scale-ins into impulsive trend continuations (Ticket 1705772492 resulting in -$20.56 loss).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stop protection at +$4.00 and execute aggressive partial or full harvest whenever profit reaches the +$15.00 to +$30.00 asymmetry band."
       },
       "synthesis_directive": "Enforce absolute hard stops at $5.00 maximum drawdown per trade while forcing winners to scale past $15.00 via dynamic trailing bands."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T18:39:53.748172+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) caused by a wide structural stop-loss in high-volatility XAUUSD momentum shifts, compounding losses while winning trades were clipped prematurely for negligible cents.",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) vastly overwhelmed wins (+$56.10 across 11 deals) due to micro-profit clipping and holding losing trades past optimal structural invalidation points.",
+        "market_regime_mismatch": "System entered into high-velocity liquidity sweeps around key institutional round numbers (3514-3550 levels) where rapid wicks triggered structural stop-losses before momentum could follow through."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on scaling into a position when the original entry is experiencing floating drawdown; scaling is only permitted after the initial position has achieved a 1:1 risk-to-reward ratio and moved the stop-loss to breakeven.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated 3-tick volume-weighted imbalance confirmation and a zero-cross on the short-term MACD momentum oscillator before order execution to avoid false breakout wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing exits and partial profit captures the moment unrealized gains cross $12.00 to guarantee the $15-$30+ asymmetry target."
+      },
+      "synthesis_directive": "Enforce a hard absolute dollar cap of $5.00 on all initial stop-losses for Gold while dynamically widening profit targets to a minimum $15.00 threshold to re-engineer positive expectancy."
     }
   ]
 }
