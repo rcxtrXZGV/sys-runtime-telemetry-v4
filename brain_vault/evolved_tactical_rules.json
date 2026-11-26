@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding authorized unless the foundational position has traversed at least 3x ATR in profit and trailing stop is locked at break-even.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "No XAUUSD order shall execute unless the order book imbalance exceeds 65% and spread is under 25 points, verified via multi-timeframe micro-structure momentum check.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest steps starting at +$8.00 floating profit, locking in minimum +$4.00 to force wins into the $15-$30+ distribution."
+  "pyramiding_rule": "Strictly prohibit adding to positions (pyramiding) into falling knives or unconfirmed breakout spikes; consecutive entries must be spaced by a minimum ATR threshold.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero order execution permitted within 15 minutes of high-impact USD macro news releases; volume confirmation via tick imbalance required.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps when floating profit hits +$12.00 to guarantee lock-in toward the $15-$30 target profile."
 }
