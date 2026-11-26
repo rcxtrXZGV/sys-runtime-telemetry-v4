@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit grid-style averaging or adding positions within 15 seconds of a prior stop-out; only pyramid when existing open positions demonstrate at least +$10.00 floating profit.",
+  "pyramiding_rule": "Strictly prohibit sequential entries (such as tickets 2123013996 and 2123016852) within a 5-minute window on the same asset to avoid pyramiding into falling knives.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandate a 3-period exponential moving average (EMA) slope confirmation combined with zero high-impact macroeconomic news releases within a +/- 10-minute window before order execution.",
-  "profit_harvest_threshold": "Trigger partial scaling or aggressive breakeven lock once floating profit hits +$12.00 to prevent evaporation, allowing the remainder to run toward the +$15.00 to +$30.00 target."
+  "new_mandatory_entry_filter": "Require an instantaneous ATR-normalized volatility filter and an order-book imbalance check before executing any order, bypassing trades during spread expansions.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit lock-ins once a position reaches +$10.00 to prevent floating gains from evaporating into negative territory."
 }
