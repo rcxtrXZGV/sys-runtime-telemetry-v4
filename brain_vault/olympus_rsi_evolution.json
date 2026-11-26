@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-25T21:19:11.246381+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight stop-losses placed inside local noise bands combined with catastrophic averaging/pyramiding into high-volatility Wicks (e.g., ticket 1705772492 losing -$20.56).",
-        "risk_asymmetry_flaw": "Losses (-$20.56 max) vastly exceeded micro-wins (+$0.39 to +$0.55), inverted from the target $15-$30 win profile.",
-        "market_regime_mismatch": "Executing micro-scalping orders during London/New York session overlap expansions without adjusting structural stops for wide XAUUSD range expansion."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds of a previous loss or inside a 10-pip ATR expansion wick.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require 15-second order flow imbalance confirmation and zero Tier-1 macroeconomic news impact windows before execution.",
-        "profit_harvest_threshold": "Trigger trailing stops instantly when floating profit reaches $10, forcing winners to run toward the $15-$30 target."
-      },
-      "synthesis_directive": "Enforce a hard ceiling of $5.00 max stop-loss on XAUUSD, ban high-frequency pyramiding into moving wicks, and force profit-taking triggers to lock in $15-$30 runners."
-    },
-    {
       "evolution_timestamp": "2026-11-25T21:30:00.000000+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Micro-stop hunting and over-leveraged clustering during high-volatility liquidity sweeps on XAUUSD, where stops placed within $0.50-$1.00 of entry were easily clipped by standard spread widening and market noise.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stop protection immediately at +$10.00 floating profit to ensure runners reach the $15-$30+ asymmetric target band."
       },
       "synthesis_directive": "Enforce strict $5.00 maximum dollar-risk per trade on XAUUSD while blocking all entries during high-volatility wicks to let asymmetric winners expand to $15-$30."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T00:22:16.871776+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked micro-stop volatility hunts and holding trades into high-impact liquidity sweeps, evidenced by ticket 1705772492 taking a disproportionate -$20.56 drawdown because the stop was placed too wide relative to immediate micro-structure invalidation points.",
+        "risk_asymmetry_flaw": "Wins were micro-scalps (+0.39 to +0.55) choked off too early by premature trailing, while losses were allowed to expand up to -$20.56, completely inverting the target $4-$6 risk vs. $15-$30 reward parameter.",
+        "market_regime_mismatch": "Executing blind breakout entries during high-frequency XAUUSD session overlap wicks where order book imbalances trigger immediate mean-reversion spikes right through tight structural stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-ticket entries (such as tickets 1707578236 and 1707578239) are banned within a 3-pip window to prevent compounding directional error during false breakouts.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero entry allowed within 5 minutes of high-impact macroeconomic data releases and without confirmed volume delta divergence on the 1-minute order book.",
+        "profit_harvest_threshold": "Initiate aggressive trailing and scale out 50% of volume at +$10.00 profit, locking remaining runners to break-even to guarantee asymmetry."
+      },
+      "synthesis_directive": "Enforce absolute hard stops capped at $5.00 maximum per ticket on XAUUSD and mandate that floating profits must never reverse into a net loss once +$8.00 is achieved."
     }
   ]
 }
