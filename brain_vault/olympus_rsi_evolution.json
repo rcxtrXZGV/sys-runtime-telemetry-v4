@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T11:41:36.893507+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-loss placements and high-frequency noise volatility sweeps (e.g., ticket 1705772492 losing -$20.56 due to excessive structural width and lack of micro-timeframe volatility capping).",
-        "risk_asymmetry_flaw": "Inverted reward-to-risk distribution: average losses (-$6.51) heavily exceeded average wins (+$5.10), driven by premature profit-taking on micro-scalps while allowing losers to bleed past the $5.00 ceiling.",
-        "market_regime_mismatch": "Executing blind market entries during localized high-velocity liquidity sweeps without verifying order book depth imbalances or multi-timeframe ATR expansion boundaries."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of scaling into positions during expanding ATR or high-impact session opens; all consecutive entries must demonstrate a minimum +$8.00 floating profit cushion on the primary tranche.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Volume delta and tick-level imbalance confirmation with mandatory micro-structure break filter across 1m and 5m charts prior to execution.",
-        "profit_harvest_threshold": "Trigger trailing volatility stops immediately upon reaching +$10.00 profit, locking in guaranteed minimums while letting runners scale to the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Enforce a hard $5.00 absolute stop-loss ceiling per trade with mandatory trailing activation at +$10.00 to guarantee risk-asymmetry ratios exceeding 3:1."
-    },
-    {
       "evolution_timestamp": "2026-11-26T11:45:05.812747+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly clustered stop-losses in high-volatility XAUUSD regimes, combined with severe tail-risk leakage reaching -$20.56 on unhedged momentum continuations.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop locking when floating profits cross +$12.00 to guarantee terminal payout targets of $15.00 to $30.00+."
       },
       "synthesis_directive": "Hard-cap all individual XAUUSD losses strictly at $5.00 or lower while enforcing asymmetric trailing profit locks for all green runs targeting $15.00+."
+    },
+    {
+      "evolution_timestamp": "2026-11-26T14:37:18.105706+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked expansion of stop-losses during high-volatility XAUUSD liquidity sweeps, alongside premature exits on marginal winners (+0.39 to +0.55) while letting a single catastrophic loss run to -$20.56.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile; losing trades drastically outsized winning trades due to loose stop-loss placement (-$20.56 max loss vs +$5.02 max win), violating the core $4-$6 loss constraint.",
+        "market_regime_mismatch": "System entered positions directly into high-impact New York session volatility wicks and attempted blind multi-ticket averaging/pyramiding into falling knives around 3549.83."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding consecutive volume blocks into moving price anomalies; pyramiding is locked unless the initial trade has secured at least +$10 in floating profit and pulled stop-loss to breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero execution permitted within 15 minutes before or after high-impact macro news releases; requires a verified 5-period ATR expansion breakout filter combined with order-book imbalance confirmation.",
+        "profit_harvest_threshold": "Initiate trailing profit harvest lock-ins dynamically when open profit reaches +$12.00, ensuring wins systematically achieve the target $15-$30+ asymmetry band."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD, eliminate multi-ticket averaging during volatility spikes, and force all winning profiles to target an asymmetric $15-$30+ payout."
     }
   ]
 }
