@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-26T08:25:26.183969+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-26T08:26:57.696497+00:00",
+  "verdict": "SELL",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3610.0,
-  "tp_price": 3635.0,
+  "sl_price": 3628.5,
+  "tp_price": 3605.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active. Zero exposure currently managed on broker account.",
-  "trade_thesis": "Gold (XAUUSD) has pulled back slightly from the local intraday high of 3634.7 to 3620.39. Recent 15m candles display a minor consolidation/retracement wick rejection following a sharp expansion phase. With equity at $54.19 and recent losses from tight stops, the desks advise patience until a cleaner liquidity sweep and structural confirmation present themselves."
+  "reversal_sentinel_assessment": "No open positions active. Free to deploy capital on high-probability reversal setup.",
+  "trade_thesis": "XAUUSD has pushed into the intraday high region near 3626-3634, printing a top wick rejection on the latest 15-minute candle (open 3626.39, high 3626.7, close 3620.39). DXY is firming up around 103.81 and US10Y yields are pressing highs at 4.848, presenting a strong macro headwind for gold bulls. Initiating a short position targeting liquidity sweep back toward the 3605 support."
 }

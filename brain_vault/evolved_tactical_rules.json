@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on scaling into consecutive losing ticks or adding positions within 5 minutes of a previous stop-out; only pyramid when existing open positions show a minimum unrealized profit of +$10.00.",
+  "pyramiding_rule": "Strict prohibition on adding positions within 50 ticks of an existing active cluster; multi-ticket entries are banned unless the primary trade is secured at break-even + commission.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory 15-minute ATR volatility filter and order-book imbalance check; block all entries if spread exceeds 35% of the average 14-period bar range or during high-impact macro news windows.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops or partial profit scaling the moment an open trade crosses +$12.00, locking in a guaranteed floor to prevent profit evaporation."
+  "new_mandatory_entry_filter": "Zero order authorization without confirmation from both order-book imbalance velocity and 14-period ATR volatility expansion filters.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit locks at +$10.00 to prevent erosion of floating gains toward negative outcomes."
 }
