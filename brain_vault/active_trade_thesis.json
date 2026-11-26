@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-26T04:59:50.063622+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 88,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "reversal_sentinel_assessment": "The active XAUUSD short position (ticket 2124308150) is currently in profit ($2.52). The most recent 15-minute candle printed a massive top-wick rejection from 3626.7 back down to 3620.4 on elevated volume (1847), re-establishing heavy selling pressure right below our 3627.0 stop loss. DXY and US10Y yields continue to push upward, confirming downside momentum is expanding rather than reversing.",
+  "trade_thesis": "Gold swept buy-side liquidity up to 3626.7 before encountering swift institutional distribution. With DXY breaking towards 103.80+ and US10Y yields ascending to 4.848%, macro tailwinds remain strongly aligned with our short bias towards 3592. We allow the existing short position to run unhindered."
+}
