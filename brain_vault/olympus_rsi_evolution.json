@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T19:12:05.141098+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) combined with tight noise-level exits on winning micro-scalps (+0.39 to +0.55) created an inverted payoff matrix where a single loss wiped out over 30 wins.",
-        "risk_asymmetry_flaw": "Stop-losses on high-volatility XAUUSD swings were placed too wide relative to account risk tolerance (e.g., allowing a $20.56 single loss), while winning runs were cut prematurely by erratic micro-trailing stops before reaching the $15-$30 target envelope.",
-        "market_regime_mismatch": "Entering during aggressive XAUUSD institutional liquidity sweeps without a localized volatility expansion filter triggered premature stop-outs during normal retracement wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening sequential positions within 2 points of an existing trade during high-velocity moves to eliminate clustered compounding losses.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a confirmed multi-timeframe ATR expansion breakout candle with zero immediate wick rejection before committing fractional volume.",
-        "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position with a hard structural stop to guarantee asymmetric capture up to +$25.00."
-      },
-      "synthesis_directive": "Hard-cap every individual trade stop-loss at exactly $5.00 maximum risk while forcing winning trajectories to run past $15.00 via dynamic scaling."
-    },
-    {
       "evolution_timestamp": "2026-11-26T19:13:36.106800+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and premature micro-scalping exits on winning runs.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing stop activation or partial harvest once a position crosses +$15.00 floating profit to ensure wins securely hit the +$15 to +$30 band."
       },
       "synthesis_directive": "Enforce a strict maximum dollar loss ceiling of $5.00 per trade on XAUUSD, utilize high-sensitivity structural confirmation filters, and never let winning positions revert into losses."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:34:22.782264+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly clustered entries on XAUUSD during high-volatility expansion wicks, resulting in multiple simultaneous stop-outs and one outlier loss of -$20.56 due to an ill-calibrated structural stop-loss.",
+        "risk_asymmetry_flaw": "Loss magnitude (-$20.56 max loss) severely exceeded max win magnitude (+$5.34 max win), violating the asymmetric return objective of keeping losses at $4-$6 while letting winners run to $15-$30+.",
+        "market_regime_mismatch": "Entering breakout orders during localized micro-reversals where spreads and micro-wicks hunting liquidity cleanly triggered tight stops before trend continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening correlated micro-tickets within 30 seconds of an existing position; max 1 scale-in allowed only after price confirms structural break by at least 1.5x ATR.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory order block validation using 5-period volume-weighted average price (VWAP) cross confirmation combined with zero high-impact scheduled macroeconomic news releases within +/- 15 minutes.",
+        "profit_harvest_threshold": "Trigger partial harvest at +$10.00 and aggressive trailing stop lock-in at +$15.00 to ensure winners achieve the $15-$30+ structural objective."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar loss per trade while scaling profit targets dynamically to capture $15.00-$30.00+ payouts through trailing structural stops."
     }
   ]
 }
