@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within a 15-minute window of a previous stopped-out order; no pyramiding into high-velocity liquidity wicks.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require an ATR(14) volatility contraction confirmation and institutional volume delta alignment before order execution on XAUUSD.",
-  "profit_harvest_threshold": "Aggressively secure profits via trailing stops or partial closes once floating profit hits +$15.00 to prevent evaporation."
+  "pyramiding_rule": "Strict prohibition against adding consecutive volume (scaling in) within a 5-minute window or near key liquidity nodes to prevent cascading multi-ticket losses like tickets 2123016852 and 2123016855.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic data releases; entry requires confluence of structural micro-breakout and multi-timeframe order book imbalance.",
+  "profit_harvest_threshold": "Initiate automated trailing profit locks or Sentinel Peak Harvesting the moment a position reaches +$15.00 to prevent unrealized gains from fully evaporating."
 }
