@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.0,
-  "pyramiding_rule": "Strictly prohibit opening multiple orders on the same asset within a 60-second window to prevent accidental scaling into a collapsing price wick.",
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Strictly prohibit simultaneous duplicate order entry within 60 seconds; secondary scaling into an active position is only authorized after a minimum +$4.00 unrealized profit cushion and a confirmed structural higher-low/lower-high.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and zero high-impact calendar events within +/- 15 minutes before executing any market order.",
-  "profit_harvest_threshold": "Initiate trailing stops once floating profit hits +$4.00 to guarantee wins lock in between $5.00 and $30.00."
+  "new_mandatory_entry_filter": "Mandate a multi-timeframe ATR volatility filter and order-flow imbalance check; block execution if spread exceeds 0.35 and enforce a mandatory 5-pip buffer away from exact integer psychological handle levels for stop placement.",
+  "profit_harvest_threshold": "Aggressively trigger trailing sentinel harvests once floating profit crosses +$5.00 to prevent erosion back to breakeven or minor loss."
 }

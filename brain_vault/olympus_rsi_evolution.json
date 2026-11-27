@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T13:19:48.470395+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and structural volatility spikes on XAUUSD, highlighted by a catastrophic -$20.56 loss due to a wide stop placement failing under high momentum, combined with over-leveraged consecutive entry clusters around 3549.83.",
-        "risk_asymmetry_flaw": "Losses (-$33.22) severely outstripped wins (+$11.24) because the engine allowed a single rogue loss to reach -$20.56 while cutting winning runs short at +$5.02 and +$5.34 instead of scaling to the required $15-$30+ target.",
-        "market_regime_mismatch": "The engine executed tight-stop trades directly into high-frequency liquidity sweeps and news wicks on Gold, resulting in premature stop-outs followed by immediate price reversals or cascading sequence entries."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening multiple sequential orders within a 5-point range (no adding to losing positions or clustering during high volatility sweeps).",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution allowed during ATR expansion spikes exceeding 2.5x the 20-period moving average unless confirmed by a volume-weighted MACD cross.",
-        "profit_harvest_threshold": "Initiate partial profit trailing stops immediately upon reaching +$8.00 floating gain to guarantee asymmetric expansion toward the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar loss cap of $5.00 per trade on XAUUSD and mandate dynamic profit trailing to force winners to achieve the $15-$30+ asymmetry threshold."
-    },
-    {
       "evolution_timestamp": "2026-11-27T13:21:50.689085+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the initial stop-loss was placed too wide relative to institutional scalping volatility and failed to cut the position before runaway slippage. Subsequent losses (tickets 1707575809 and 1707578236/39) exposed lethal clustering and reactive micro-pyramiding into adverse liquidity wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stops once floating profit hits +$4.00 to guarantee wins lock in between $5.00 and $30.00."
       },
       "synthesis_directive": "Enforce strict anti-clustering execution limits and cap max risk per trade at exactly $4.00 while letting winning momentum run past +$5.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T16:58:21.427838+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop-losses placed immediately around psychological round numbers (e.g., 3550.00) combined with split-ticket duplicate executions during high-frequency volatility wicks.",
+        "risk_asymmetry_flaw": "Simultaneous multiple entries (tickets 1707578236 and 1707578239) effectively doubled risk exposure on a single directional breakdown, causing cumulative loss (-$5.82 combined) to exceed standard single-win distributions.",
+        "market_regime_mismatch": "Entering short-term mean-reversion trades during strong momentum expansion phases in XAUUSD, resulting in premature stop-outs followed by uncaptured continuation moves."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strictly prohibit simultaneous duplicate order entry within 60 seconds; secondary scaling into an active position is only authorized after a minimum +$4.00 unrealized profit cushion and a confirmed structural higher-low/lower-high.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandate a multi-timeframe ATR volatility filter and order-flow imbalance check; block execution if spread exceeds 0.35 and enforce a mandatory 5-pip buffer away from exact integer psychological handle levels for stop placement.",
+        "profit_harvest_threshold": "Aggressively trigger trailing sentinel harvests once floating profit crosses +$5.00 to prevent erosion back to breakeven or minor loss."
+      },
+      "synthesis_directive": "Enforce strict single-ticket execution limits per directional bias and eliminate stop placements directly on round-number psychological handles to completely eradicate clustered stop-run losses."
     }
   ]
 }
