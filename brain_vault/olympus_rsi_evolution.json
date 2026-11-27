@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:29:23.219206+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight manual or algorithmic stop-losses on high-volatility XAUUSD wicks, notably ticket 1705772492 causing a disproportionate -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) severely outweighed wins (+$38.51 aggregate) due to outsized individual loss spikes bleeding past the target -$4 to -$6 risk parameter.",
-        "market_regime_mismatch": "Entering positions during high-frequency liquidity sweeps without checking localized order book depth, leading to immediate slippage and stop-hunting."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of consecutive grid layering or averaging down into micro-reversals (e.g., tickets 2123013996 and 2123016852 clustering). Additions only permitted after a verified 15-pip structural breakout.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero execution within 3 minutes of high-impact macroeconomic print windows and mandatory ATR volatility filter validation exceeding the 14-period median.",
-        "profit_harvest_threshold": "Aggressively secure green runs and lock trailing stops to breakeven once floating profit hits +$10.00 to prevent evaporation."
-      },
-      "synthesis_directive": "Enforce absolute hard stops at $5.00 maximum risk per trade on XAUUSD and instantly lock trailing stops at breakeven upon touching +$10.00 floating profit to eliminate outsized drawdowns."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:31:03.536761+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked volatility spikes during the 13:36 session caused a severe -$20.56 drawdown because the stop-loss was placed too wide relative to institutional order-flow liquidation zones, compounded by clustering multiple small entries that breached local structural bounds.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing profit secures and partial scaling once unrealized profit reaches +$12.00 to prevent floating gains from evaporating into minor wins or losses."
       },
       "synthesis_directive": "Enforce an absolute hard cap of $5.00 on all XAUUSD stop-losses while mandating strict asymmetry where profit harvests activate dynamically above +$12.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:09:01.119341+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped initial stop-loss placement on ticket 1705772492 resulting in a -$20.56 drawdown, coupled with consecutive clustering entries during high-volatility expansions.",
+        "risk_asymmetry_flaw": "Losses ($33.22 total) heavily outweighed wins ($11.68 total) because the engine permitted massive outsized stop-outs while prematurely cutting or micro-scalping winning positions.",
+        "market_regime_mismatch": "Entering XAUUSD without volatility contraction filters during high-impact liquidity wicks, triggering structural stop-outs and micro-drawdowns."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions; multi-entry stacking is only permitted when existing positions are at least +$5.00 in floating profit with a trailing breakeven stop.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "ATR-based volatility expansion filter and mandatory session liquidity validation before trade authorization.",
+        "profit_harvest_threshold": "Secure 50% of positions at +$10.00 and aggressively trail remaining runners to lock in wins between $15.00 and $30.00."
+      },
+      "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade on XAUUSD while blocking any secondary entry attempts unless the initial allocation is secured in profit."
     }
   ]
 }
