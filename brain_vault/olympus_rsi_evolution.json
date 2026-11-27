@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T20:10:38.822671+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution trapped during volatile momentum wicks with static stops placed too tight ($20.56 loss outlier on ticket 1705772492) and premature exits on small gains.",
-        "risk_asymmetry_flaw": "Losses exceeded wins because stops were hit on high-noise micro-reversals while winning positions were clipped early (+0.39 to +5.02) without letting tails run to the target $15-$30+ range.",
-        "market_regime_mismatch": "Entering counter-trend or late into expansion phases of XAUUSD without filtering for instantaneous micro-volatility, causing whipsaws into stop zones."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding positions within 15 seconds of a previous fill or into an unconfirmed directional velocity vector.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Order execution requires an order-book imbalance ratio > 1.8 and a confirmed 5-tick momentum delta matching the entry vector, completely blocking counter-wick entries.",
-        "profit_harvest_threshold": "Initiate trailing stop protection at +$8.00 and execute tiered profit harvesting starting at +$15.00 to force asymmetric distributions."
-      },
-      "synthesis_directive": "Enforce a rigid $5.00 hard stop cap on XAUUSD, ban entries during high-impact noise wicks, and mandate trailing profit locks at +$8.00 to guarantee wins scale to $15-$30+."
-    },
-    {
       "evolution_timestamp": "2026-11-26T20:28:05.816765+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-stop volatility wicks hitting tight stop-losses while allowing outlier losses like -$20.56 due to trailing lags.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing structural stops or trigger partial harvesting the moment floating profit crosses $10.00 to prevent unrealized gains from evaporating back to breakeven or micro-losses."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and immediately lock in partial profits once trades exceed $10.00 to guarantee net positive expectancy."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:04:14.105811+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked volatility expansion in XAUUSD caused stop-loss hunting, highlighted by ticket 1705772492 incurring a severe -$20.56 loss due to an overly wide, unmanaged stop relative to normal structural parameters.",
+        "risk_asymmetry_flaw": "Losses (-$40.94 across 6 trades) severely outpaced wins (+$38.51 across 9 trades) because catastrophic outlier losses like -$20.56 breached the target risk bracket ($4-$6) while winners were prematurely truncated.",
+        "market_regime_mismatch": "Clustered entries at 21:14 (tickets 1707578236 and 1707578239) indicate unauthorized multi-threading / pyramiding into high-volatility closing wicks, violating non-correlation constraints."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of secondary entries within 30 minutes of a prior position on the same asset to eliminate correlated drawdowns.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "ATR-based volatility ceiling: Reject all entries if the current 5-minute candle range exceeds 2.5x the 20-period average true range.",
+        "profit_harvest_threshold": "Initiate aggressive trailing or partial harvest whenever open profit crosses +$12.00 to guarantee asymmetric +$15 to +$30 runs."
+      },
+      "synthesis_directive": "Enforce a hard absolute dollar cap of $5.00 on all individual stop-losses and lock in trailing profit triggers at +$12.00 to restore structural mathematical asymmetry."
     }
   ]
 }
