@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions during active price retracements; pyramiding is only authorized after a confirmed 1R profit break-even lock on the primary tranche.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry authorization unless the 5-minute ATR ratio confirms expansion and the orderbook imbalance exceeds a 2.5x delta threshold.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops when unrealized profit hits $10.00 to guarantee net wins fall strictly within the $15-$30+ target bracket."
+  "pyramiding_rule": "Strict prohibition of scaling into positions when price action exhibits high-frequency oscillations or counter-trend momentum wicks; zero averaging down into falling knives.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Multi-timeframe volume profile and order book imbalance check must confirm directional momentum before order placement; absolute ban on entries within 15 minutes of major high-impact news releases.",
+  "profit_harvest_threshold": "Aggressively secure open profits as soon as trade hits the +$15.00 mark via trailing activation steps to prevent green runs from evaporating."
 }

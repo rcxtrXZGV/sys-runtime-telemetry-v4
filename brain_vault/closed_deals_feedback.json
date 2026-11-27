@@ -1,28 +1,6 @@
 {
-  "total_closed_analyzed": 25,
+  "total_closed_analyzed": 18,
   "deals": [
-    {
-      "ticket": 1704258804,
-      "order": 2119032611,
-      "symbol": "XAUUSD",
-      "time": "2026-11-25T01:50:37+00:00",
-      "volume": 0.01,
-      "price": 3548.95,
-      "profit": 0.55,
-      "commission": -0.04,
-      "comment": "[sl 3548.90]"
-    },
-    {
-      "ticket": 1704376002,
-      "order": 2119174937,
-      "symbol": "XAUUSD",
-      "time": "2026-11-25T02:39:56+00:00",
-      "volume": 0.01,
-      "price": 3549.28,
-      "profit": -0.97,
-      "commission": -0.04,
-      "comment": "[sl 3549.50]"
-    },
     {
       "ticket": 1704666152,
       "order": 2119530022,

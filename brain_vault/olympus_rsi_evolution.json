@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T14:57:44.000428+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unbounded slippage and wide discretionary stops during high-volatility XAUUSD momentum pushes, specifically ticket 2120879695 causing a -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses heavily outscaled average wins because micro-scalps closed prematurely for <$1.00 while outliers dragged down the balance by up to -$20.56.",
-        "market_regime_mismatch": "Entering counter-trend or late into exhaustion moves during London/New York session crossovers where liquidity wicks hunt tight structural stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute ban on averaging down or sequential order stacking within a 2-pip window; enforce minimum 15-pip spatial distribution between stacked fills.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero execution permitted during the initial 15-minute window of high-impact macro data releases; order book imbalance must exceed 65% in favor of the trade direction.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit hits $4.00 to prevent positive expectancy from decaying into negative territory."
-      },
-      "synthesis_directive": "Hard-cap maximum loss per individual ticket at $5.00 via strict programmatic stops and enforce a minimum 3:1 reward-to-risk ratio on all newly authorized executions."
-    },
-    {
       "evolution_timestamp": "2026-11-26T14:59:28.772500+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unbounded slippage and wide stop-losses during high-volatility liquidity sweeps in XAUUSD (reaching up to -$20.56), combined with premature profit clipping on small gains.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops when unrealized profit hits $10.00 to guarantee net wins fall strictly within the $15-$30+ target bracket."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 on all initial stop-losses while prohibiting any exit that captures less than $15.00 on winning structural runs."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T02:57:30.296909+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and cascading orders on XAUUSD, highlighted by ticket 1705772492 resulting in a -$20.56 drawdown.",
+        "risk_asymmetry_flaw": "Losses (-$58.60 total across losses, with individual drops up to -$20.56) vastly exceeded winning trade realizations (+$56.10 total, with typical wins scaling around +$0.39 to +$5.02), violating the $4-$6 loss ceiling mandate.",
+        "market_regime_mismatch": "Entering during volatile session overlaps (e.g., 13:36 UTC) without accounting for micro-structural stop-hunts, allowing noise wicks to breach widened stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into positions when price action exhibits high-frequency oscillations or counter-trend momentum wicks; zero averaging down into falling knives.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Multi-timeframe volume profile and order book imbalance check must confirm directional momentum before order placement; absolute ban on entries within 15 minutes of major high-impact news releases.",
+        "profit_harvest_threshold": "Aggressively secure open profits as soon as trade hits the +$15.00 mark via trailing activation steps to prevent green runs from evaporating."
+      },
+      "synthesis_directive": "Enforce a hard absolute stop-loss ceiling of $5.00 on every single XAUUSD trade while mandating immediate profit trailing once unrealized gains exceed $15.00."
     }
   ]
 }
