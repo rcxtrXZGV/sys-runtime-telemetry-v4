@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit duplicate ticket entries within a 1.0-point price band; sequential scaling requires a verified 3.0 ATR price displacement in favor of the trade.",
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Absolute ban on opening multiple tickets on the same asset within a 120-second window; maximum 1 open micro-lot per directional bias.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require order execution only when the 5-period Exponential Moving Average aligns with the micro-structural liquidity sweep and the current spread is below 0.35 points.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest lock-ins immediately upon reaching +$4.00 floating profit to ensure net captures consistently clear the $15-$30 asymmetric return target."
+  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility expansion filter combined with order-flow imbalance confirmation before any order execution.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit locks starting at +$8.00 to force wins toward the $15-$30 target zone."
 }
