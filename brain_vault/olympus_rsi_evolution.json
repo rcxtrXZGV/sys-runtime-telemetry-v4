@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:46:22.987119+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-loss expansion on ticket 1705772492 causing a -$20.56 drawdown, breaching the strict $4-$6 risk containment threshold.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) severely outpaced wins (+$38.51 aggregate) due to letting a single high-impact volatility spike breach normal structural defensive parameters.",
-        "market_regime_mismatch": "Entry models attempted micro-scalps during frantic XAUUSD liquidity sweeps, getting caught in wide wicks that bypassed tight initial stops before triggering structural liquidations."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute prohibition on adding to losing positions; multi-ticket entries (e.g., 2123016852 and 2123016855) are restricted to single non-correlated triggers per impulse vector.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution permitted during high-impact volume expansion wicks; ATR volatility expansion multiplier must be below 1.8x baseline before entry authorization.",
-        "profit_harvest_threshold": "Aggressively harvest via SENTINEL_PEAK_HARVEST when floating profit reaches $15.00 to prevent evaporation back to break-even or negative."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade on XAUUSD and immediately lock in profits when the $15.00 threshold is breached to restore absolute asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:48:43.944892+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked accumulation of positions near volatile inflection points and wide initial stops on XAUUSD, peaking in a -$20.56 single-order catastrophic drawdown.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Immediate partial harvest activation upon reaching +$15.00 unrealized profit with trailing stop locked to breakeven + spread."
       },
       "synthesis_directive": "Hard-cap all individual trade risk strictly between $4.00 and $6.00 while enforcing aggressive trailing execution to let winners run to $15.00+."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:22:24.591649+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, combined with consecutive entries around 2123016852/2123016855 acting as micro-pyramiding into adverse wicks.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.68 total) due to holding losing positions too long and failing to enforce the $4-$6 maximum hard risk threshold on the largest outlier trade.",
+        "market_regime_mismatch": "XAUUSD high-frequency liquidity sweeps triggered tight trailing structures and premature stop-outs, while manual/sentinel interventions failed to lock in floating green before reversals."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of consecutive multi-ticket entries in the same direction within a 60-second window to prevent illegal scaling into falling or rising knives.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Multi-timeframe Order Book Imbalance and ATR-normalized micro-breakout confirmation required before executing any XAUUSD volume.",
+        "profit_harvest_threshold": "Instant scale-out or breakeven lock once unrealized PnL hits +$10.00 to prevent floating profits from evaporating below +$5.00."
+      },
+      "synthesis_directive": "Enforce a rigid hard cap of $5.00 maximum stop-loss on every individual ticket and require immediate aggressive profit harvesting when gains cross the +$10.00 threshold."
     }
   ]
 }
