@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding positions within 60 seconds of a prior entry or inside high-volatility liquidity wicks.",
+  "pyramiding_rule": "Strict prohibition against adding positions (no averaging down or pyramiding) within 60 seconds of a prior entry on the same symbol.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require institutional volume-weighted momentum confirmation and ATR-based volatility bounding prior to order execution.",
-  "profit_harvest_threshold": "Aggressively secure green runs starting at +$15.00 with trailing micro-locks to guarantee asymmetric capture up to +$30.00."
+  "new_mandatory_entry_filter": "Mandatory order block confirmation combined with a 5-period ATR volatility check before trade execution.",
+  "profit_harvest_threshold": "Aggressively secure profits via trailing stops once a minimum of +$15.00 is reached on XAUUSD."
 }
