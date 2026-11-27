@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into losing positions; subsequent entries on the same asset require a minimum +$3.00 unhedged floating profit on the primary tranche.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict volatility-band filter: block all trades if ATR(14) exceeds 2.5x the 50-period average unless confirming breakout volume.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$10.00 profit to ensure capture of the $15-$30+ target window."
+  "pyramiding_rule": "Zero pyramiding into falling knives; subsequent orders are strictly forbidden unless the initial position is break-even protected with realized partial harvest.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a confirmed 3-bar multi-timeframe liquidity sweep and volume delta confirmation prior to order execution on XAUUSD.",
+  "profit_harvest_threshold": "Instantly initiate dynamic trailing profit-lock once floating profit crosses +$15.00, enforcing a strict $15-$30+ asymmetric reward capture."
 }
