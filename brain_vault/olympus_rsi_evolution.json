@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:21:24.582671+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by holding a losing position through a structural market shift, compounded by tight clustered re-entries (-$2.31, -$3.96, -$1.86) that attempted to catch falling knives without volatility expansion filters.",
-        "risk_asymmetry_flaw": "The largest single loss (-$20.56) completely violated the risk envelope, exceeding the maximum intended -$4 to -$6 threshold fourfold due to a lagging stop-loss execution and lack of hard intraday circuit breakers.",
-        "market_regime_mismatch": "Entering XAUUSD trend-continuation setups during low-liquidity or high-noise momentum wicks, resulting in immediate stop-out on both sides of the spread."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening sequential orders within 5 points of a recent stop-out; no averaging down into falling or rising momentum wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Volume-weighted average spread check and mandatory ATR-based volatility boundary confirmation prior to order dispatch.",
-        "profit_harvest_threshold": "Secure 50% of floating profits automatically upon reaching +$10, trailing the remainder tightly to capture extended +$15 to +$30 tails."
-      },
-      "synthesis_directive": "Enforce absolute dollar-cap risk limits of $5.00 per trade and ban sequential micro-scalp re-entries after consecutive stops."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:23:05.944967+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by entering directly into high-volatility news wicks with stop-losses set too far wide in a turbulent liquidity vacuum.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate partial profit harvesting and trail stops to break-even immediately upon reaching a floating gain of $12.00."
       },
       "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade on XAUUSD and mandate immediate structural profit locks on any momentum expansion exceeding $12.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:49:33.967514+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide in a high-volatility liquidity sweep, violating the strict -$6 loss ceiling. Furthermore, tickets 1707575809 and 1707578236 demonstrate clustered high-frequency re-entries into a moving chop zone without spacing.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total across 5 deals) heavily outpaced wins (+$11.24 total across 4 deals), driven by outlier loss spikes and premature profit-taking on micro-scalps before reaching the $15-$30+ asymmetry target.",
+        "market_regime_mismatch": "The engine executed multiple entries during late-session XAUUSD liquidity contraction periods, resulting in aggressive wick-hunting against tight trailing stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding allowed within 30 pips of a prior failed trade; consecutive entries must be spaced by a minimum ATR volatility threshold.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory structural rejection of liquidity wicks: entries are blocked if the asset has moved more than 1.5 ATR in the last 3 candles without a volume confirmation node.",
+        "profit_harvest_threshold": "Aggressive trailing activation once floating profit hits +$8.00 to lock in wins and systematically prevent degradation into sub-$1 closures."
+      },
+      "synthesis_directive": "Enforce a hard absolute dollar stop-loss ceiling of $5.00 on every individual ticket while locking in trailing profits dynamically to ensure asymmetric $15-$30+ win outcomes."
     }
   ]
 }

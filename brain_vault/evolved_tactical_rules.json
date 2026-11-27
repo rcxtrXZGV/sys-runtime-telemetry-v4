@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of adding positions within 10 ticks of an existing active order to eliminate falling knife pyramiding.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 3-bar structural volume confirmation and an absolute spread filter below 30 points prior to order execution.",
-  "profit_harvest_threshold": "Initiate partial profit harvesting and trail stops to break-even immediately upon reaching a floating gain of $12.00."
+  "pyramiding_rule": "Zero pyramiding allowed within 30 pips of a prior failed trade; consecutive entries must be spaced by a minimum ATR volatility threshold.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory structural rejection of liquidity wicks: entries are blocked if the asset has moved more than 1.5 ATR in the last 3 candles without a volume confirmation node.",
+  "profit_harvest_threshold": "Aggressive trailing activation once floating profit hits +$8.00 to lock in wins and systematically prevent degradation into sub-$1 closures."
 }
