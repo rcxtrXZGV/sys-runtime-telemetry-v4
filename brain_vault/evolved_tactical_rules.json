@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions into high-velocity counter-trend wicks or falling knives; limit correlation stacking to max 1 active per direction.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order block confirmation combined with volume delta exhaustion prior to execution on XAUUSD.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00, trail remainder tightly to guarantee lock-in between +$15.00 and +$30.00."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries are only allowed in sequence when the prior ticket has secured a minimum trailing profit lock.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance filter and ATR-based volatility cap to block entries within 15 minutes of major macroeconomic news wicks.",
+  "profit_harvest_threshold": "Instantly harvest or lock breakeven + trailing stop the moment open profit reaches +$5.00 to guarantee a $15-$30 target trajectory."
 }
