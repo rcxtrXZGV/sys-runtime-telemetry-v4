@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strict prohibition of multiple entries within the same 5-minute interval; exactly one position per structural node until profit crosses +$5.00 and trailing stop is activated.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 14-period ATR expansion confirmation and zero proximity to round psychological handles (+/- 1.50 buffer) before order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial harvest at +$5.00 to guarantee risk-free asymmetric skew targeting +$15.00 to +$30.00."
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Prohibit duplicate timestamp scaling; subsequent entries require a minimum $3.00 favorable price displacement and a confirmed structural liquidity sweep.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero entry execution within 15 minutes of high-impact macro data windows; require multi-timeframe ATR-based volatility expansion confirmation.",
+  "profit_harvest_threshold": "Initiate aggressive trailing or partial close once floating profit hits +$10.00 to guarantee asymmetric $15-$30 target capture."
 }
