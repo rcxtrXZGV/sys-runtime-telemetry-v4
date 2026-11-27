@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T13:21:50.689085+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the initial stop-loss was placed too wide relative to institutional scalping volatility and failed to cut the position before runaway slippage. Subsequent losses (tickets 1707575809 and 1707578236/39) exposed lethal clustering and reactive micro-pyramiding into adverse liquidity wicks.",
-        "risk_asymmetry_flaw": "The loss sum (-$33.22) heavily outstripped the win sum (+$11.24) because large outlier losses breached the risk boundary while winning positions were clipped too early by micro-stop adjustments.",
-        "market_regime_mismatch": "High-velocity XAUUSD sessions produced aggressive breakout wicks that trapped stagnant limit entries and triggered tight micro-stops before trend continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions (micro-pyramiding) within 60 seconds of a prior entry or inside an unconfirmed breakout wick.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated 3-bar structural volume divergence and zero high-impact calendar spread within +/- 15 minutes before executing any XAUUSD order.",
-        "profit_harvest_threshold": "Trigger trailing sentinel harvest rigidly at +$15.00 to lock down asymmetric gains and prevent unrealized profits from decaying."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade while strictly banning correlated pyramiding to guarantee pristine risk-reward asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T13:23:25.127070+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to an unconstrained stop-loss during high-velocity XAUUSD liquidity sweeps.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing sentinel harvests once floating profit crosses +$5.00 to prevent erosion back to breakeven or minor loss."
       },
       "synthesis_directive": "Enforce strict single-ticket execution limits per directional bias and eliminate stop placements directly on round-number psychological handles to completely eradicate clustered stop-run losses."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T17:06:29.654607+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop-losses placed immediately around micro-pivot wicks during high-frequency XAUUSD liquidity sweeps, compounded by premature manual intervention.",
+        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded average target profits due to trailing stop lag and failure to lock in micro-gains during volatile session overlaps.",
+        "market_regime_mismatch": "Entering breakout orders during low-liquidity transition candles where mean-reversion wicks instantly hunt tight 15-20 pip protective stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition of pyramiding within 30 seconds of prior order placement; require a verified 1.5 ATR extension before scaling into continuation.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero-entry during high-impact spread-widening windows; require volume delta confirmation exceeding 2.0x standard deviation prior to execution.",
+        "profit_harvest_threshold": "Trigger trailing lock-step protection the moment open profit hits +$3.50 to guarantee asymmetry."
+      },
+      "synthesis_directive": "Enforce strict volatility-adjusted stop distances capped under $4.50 while deploying aggressive trailing triggers to lock in wins between $15 and $30."
     }
   ]
 }
