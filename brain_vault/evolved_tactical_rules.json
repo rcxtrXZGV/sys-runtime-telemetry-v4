@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on sequential order stacking within a 50-point window unless the initial trade has secured at least +$3.00 in floating profit and moved to break-even.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order execution permitted without an ATR-normalized volatility filter and confirmation of order book imbalance away from high-impact liquidity pools.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit harvest once a trade achieves +$15.00 to guarantee asymmetric win profiles ($15-$30+)."
+  "pyramiding_rule": "Strict prohibition on sequential order stacking within 60 seconds or within a $1.00 price band to eliminate correlated cluster losses.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require Volume Delta confirmation and an ATR-based volatility threshold check before order execution to avoid thin liquidity wicks.",
+  "profit_harvest_threshold": "Trigger trailing stops or aggressive scale-out protocols once unrealized profit hits +$15.00 to guarantee asymmetric outcomes."
 }

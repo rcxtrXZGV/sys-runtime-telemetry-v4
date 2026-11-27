@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:31:59.848251+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide in a high-volatility liquidity sweep, violating the strict $4-$6 risk ceiling.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to unconstrained single-trade drawdowns and premature profit clipping on small positive runs.",
-        "market_regime_mismatch": "Clustered entries (tickets 1707575809, 1707578236, 1707578239) demonstrated dangerous pyramiding into a falling knife during localized XAUUSD trend reversals."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to losing positions; zero pyramiding permitted unless the initial trade is safely moved to break-even + commission.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter: block all entries when 5-minute spread or tick velocity exceeds 2.5x the 20-period moving average.",
-        "profit_harvest_threshold": "Aggressively trigger SENTINEL_PEAK_HARVEST at +$15.00 to +$30.00, eliminating hesitation and preventing floating profits from evaporating."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade, completely ban averaging down into losing positions, and instantly lock in profits once +$15.00 is reached."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:33:42.090190+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to a lagging stop-loss placement combined with aggressive market volatility, alongside clustered entries (tickets 2123013996 & 2123016852) that amplified drawdowns during adverse XAUUSD price swings.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit harvest once a trade achieves +$15.00 to guarantee asymmetric win profiles ($15-$30+)."
       },
       "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on all instruments while mandating structural profit extension to $15-$30+ before harvest execution."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:53:00.652638+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by a wide stop-loss reacting poorly to an explosive liquidity sweep, compounded by rapid-fire entry clustering (tickets 1707575809, 1707578236, 1707578239) entering the exact same choppy Gold price zone within seconds.",
+        "risk_asymmetry_flaw": "Losses averaged -$6.64 while wins averaged +$2.81, completely inverting the required $15-$30 target profile due to premature cutting of micro-profits and runaway outlier stop-losses.",
+        "market_regime_mismatch": "Executing micro-scalp entries during high-velocity institutional price discovery phases in XAUUSD without volatility expansion filters, leading to immediate stop-hunting and whipsaws."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on sequential order stacking within 60 seconds or within a $1.00 price band to eliminate correlated cluster losses.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require Volume Delta confirmation and an ATR-based volatility threshold check before order execution to avoid thin liquidity wicks.",
+        "profit_harvest_threshold": "Trigger trailing stops or aggressive scale-out protocols once unrealized profit hits +$15.00 to guarantee asymmetric outcomes."
+      },
+      "synthesis_directive": "Enforce a strict $5.00 max risk cap per trade with zero clustering, ensuring winners expand past $15.00 through dynamic trailing while aborting low-conviction micro-entries."
     }
   ]
 }
