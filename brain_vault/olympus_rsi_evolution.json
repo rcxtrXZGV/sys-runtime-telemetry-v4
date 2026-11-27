@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:26:13.638565+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution during high-volatility liquidity sweeps caused massive slippage, breaching the intended stop-loss threshold on ticket 1705772492 (-$20.56), while secondary entries at the exact same liquidity nodes suffered from premature clustering and rapid stop-outs.",
-        "risk_asymmetry_flaw": "The largest loss (-$20.56) exceeded the upper win target ($5.34) by nearly 4x, directly violating the target asymmetric risk-reward ratio due to an unconstrained holding period during a macro impulse wick.",
-        "market_regime_mismatch": "The engine attempted mean-reversion strategies during a violent directional expansion phase in XAUUSD, triggering cascading stop-losses across clustered orders placed within a 2-pip range."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit entering multiple orders within a 3-pip spatial band or during high-impact expansion candles to eliminate correlated cluster failures.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a validated structural volume delta and a 1-minute candle close outside the multi-period Bollinger Band before any market order execution is authorized.",
-        "profit_harvest_threshold": "Aggressively trail and harvest floating profits via SENTINEL_PEAK_HARVEST once unrealized gains cross +$15.00 to prevent win evaporation."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD, ban clustered order entry during volatility expansions, and mandate aggressive profit harvesting at +$15.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:27:51.410916+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps (e.g., ticket 1705772492 losing -$20.56) combined with immediate consecutive re-entries into falling knives.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit harvest once open position profit crosses +$10.00 to prevent floating gains from evaporating."
       },
       "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on all XAUUSD positions and require a minimum +$15.00 profit target runway to strictly correct the risk-reward asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:05:46.484390+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped single-ticket volatility blowout reaching -$20.56 on XAUUSD, alongside clustered micro-entries near local tops that accumulated unnecessary cumulative slippage and losses.",
+        "risk_asymmetry_flaw": "Max loss of -$20.56 vastly exceeded the highest win of +$5.34, in direct violation of the required $4-$6 loss / $15-$30+ win distribution.",
+        "market_regime_mismatch": "Entering during high-momentum breakout intervals without instant trailing stop-locks caused floating profits to evaporate and immediate stop-out activation during sudden mean-reversion wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit sequential entry clustering within 2.0 price points on XAUUSD; zero additional scaling into active drawdowns.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require confirmed volume expansion and order-flow imbalance via multi-timeframe confirmation before order placement.",
+        "profit_harvest_threshold": "Instantly initiate aggressive trailing mitigation once a trade reaches +$8.00 floating profit to guarantee progression toward the $15-$30+ target zone."
+      },
+      "synthesis_directive": "Enforce an absolute hard stop-loss cap of $5.00 across every XAUUSD ticket while deploying dynamic trailing mechanisms to force winning trades past the $15.00 profit threshold."
     }
   ]
 }
