@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:16:51.039312+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by entering directly into high-volatility liquidity sweeps without adequate stop buffers, combined with clustered micro-losses (-$3.96, -$1.86) from premature pyramiding into tight consolidation wicks.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily dwarfed wins (+$11.24 total) due to an inverted risk-reward ratio, where stop-losses exceeded profit harvest triggers on negative outcomes.",
-        "market_regime_mismatch": "System entered aggressively during active XAUUSD session transitions where algorithmic stop-hunting sweeps easily clipped tight static stops placed inside institutional volatility bands."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding positions within 5 minutes or 2 points of a prior losing entry to prevent cascading drawdowns on falling knives.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic data releases; entries require confirmation via an ATR-weighted volume breakout filter.",
-        "profit_harvest_threshold": "Instantly lock in floating profits via trailing stops once gains reach +$15.00 to eliminate premature profit evaporation."
-      },
-      "synthesis_directive": "Enforce strict asymmetric risk parameters capping maximum loss per trade at $5.00 while expanding winning targets to a minimum of $15.00 through dynamic ATR trailing stops."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:18:26.042896+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by a massive high-impact news wick on XAUUSD that plowed through an insufficient local stop-loss, alongside clustered failed breakout re-entries.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Move SL to breakeven +$1.00 at +$4.00 profit; aggressively lock trailing peak harvest at 50% peak drawdown once profit exceeds +$8.00."
       },
       "synthesis_directive": "Eliminate multi-ticket order stacking, enforce hard temporal filters for low-liquidity hours, and guarantee minimum $5.00 risk ceiling per micro-lot."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:57:32.156080+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop-losses placed precisely at liquidity sweep zones on XAUUSD, coupled with multiple executions (tickets 1707578236 and 1707578239) triggering a pseudo-pyramiding trap into local volatility spikes.",
+        "risk_asymmetry_flaw": "Losses reached up to -$4.53 while win averages were compressed due to premature micro-exits, failing to satisfy the mandatory $15-$30 reward-to-risk asymmetry target.",
+        "market_regime_mismatch": "High-frequency mean-reversion entries executed directly into aggressive micro-trend continuation wicks, resulting in stop-outs followed by immediate moves in the intended direction."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of secondary entries within 30 seconds or 1.0 ATR of an existing open position to prevent accidental cascading into falling/rising micro-knives.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Volume-weighted order block confirmation combined with a mandatory spread-adjusted buffer before firing market orders on XAUUSD.",
+        "profit_harvest_threshold": "Initiate trailing stop-lock or partial harvest once floating profit crosses +$10.00 to guarantee asymmetric $15-$30 outcomes."
+      },
+      "synthesis_directive": "Enforce strict anti-pyramiding spacing and widen structural stop-losses beyond high-frequency liquidity pools while dynamically scaling profit targets to achieve $15-$30 asymmetric payoffs."
     }
   ]
 }

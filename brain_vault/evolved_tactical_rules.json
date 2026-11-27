@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict anti-clustering protocol: enforce a minimum 300-second cooldown between orders and prohibit multi-position entries within the same M5 candle.",
+  "pyramiding_rule": "Strict prohibition of secondary entries within 30 seconds or 1.0 ATR of an existing open position to prevent accidental cascading into falling/rising micro-knives.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 23:00 UTC and require M5 ATR expansion > 1.2x prior to trade authorization.",
-  "profit_harvest_threshold": "Move SL to breakeven +$1.00 at +$4.00 profit; aggressively lock trailing peak harvest at 50% peak drawdown once profit exceeds +$8.00."
+  "new_mandatory_entry_filter": "Volume-weighted order block confirmation combined with a mandatory spread-adjusted buffer before firing market orders on XAUUSD.",
+  "profit_harvest_threshold": "Initiate trailing stop-lock or partial harvest once floating profit crosses +$10.00 to guarantee asymmetric $15-$30 outcomes."
 }
