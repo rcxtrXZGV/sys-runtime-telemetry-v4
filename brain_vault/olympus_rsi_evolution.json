@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T15:01:14.060974+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD during New York close and mid-day sessions, resulting in a severe -$20.56 outlier loss due to structural stop-loss placement errors.",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total) heavily outweighed wins (+$56.10 total) because micro-profits (+ $0.39 to +$5.02) were clipped too early, while high-impact stop losses were allowed to expand up to -$20.56, violating the $4-$6 loss constraint.",
-        "market_regime_mismatch": "Executing micro-scalps during high-momentum mean-reversion phases caused premature stop hunts and unfortunate pyramiding into localized trend reversals (e.g., tickets 2123013996 and 2123016852)."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding authorized unless the foundational position has traversed at least 3x ATR in profit and trailing stop is locked at break-even.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "No XAUUSD order shall execute unless the order book imbalance exceeds 65% and spread is under 25 points, verified via multi-timeframe micro-structure momentum check.",
-        "profit_harvest_threshold": "Initiate aggressive trailing harvest steps starting at +$8.00 floating profit, locking in minimum +$4.00 to force wins into the $15-$30+ distribution."
-      },
-      "synthesis_directive": "Strictly hard-cap all XAUUSD stop losses at $5.00 maximum and ruthlessly extend winning trades toward $15-$30+ by eliminating premature micro-exits."
-    },
-    {
       "evolution_timestamp": "2026-11-26T15:03:00.856172+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked momentum entry into high-volatility XAUUSD expansions caused catastrophic stop hits, notably ticket 1705772492 losing -$20.56 due to a macro liquidity sweep exceeding tight structural bounds.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Lock 50% volume at +$5.00 profit per 0.01 lot, trailing remainder with a 15-pip dynamic step up to target +$15.00-$30.00."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 max loss per 0.01 lot on XAUUSD and eliminate simultaneous duplicate order triggers."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T03:02:40.961591+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked volatility expansion during London-NY crossover and late-session sweeps, causing stops to be breached by up to -$20.56 due to fixed pip-based stops that failed to adapt to high-ATR XAUUSD micro-spikes.",
+        "risk_asymmetry_flaw": "Inverted risk-reward profile where premature micro-profit closures (+0.39 to +5.02) contrasted with large, unmanaged tail-risk drawdowns (-20.56), failing the strict $4-$6 loss ceiling.",
+        "market_regime_mismatch": "Entering mean-reversion short/long structures during high-momentum breakout wicks and aggressive clustered entries (ticket 1707578236/2123016855) that acted as self-inflicted pyramiding into falling knives."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute ban on multi-ticket clustering within a 30-second window; subsequent scale-in orders require a confirmed 15-pip structural breakout and positive floating profit on the primary tranche.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news wicks, verified via instantaneous ATR expansion filters exceeding 2.5x standard deviation.",
+        "profit_harvest_threshold": "Dynamic trailing stop activation at +$5.00 profit, forcing partial liquidation at +$15.00 and full runner trailing at +$30.00 to guarantee asymmetric win capture."
+      },
+      "synthesis_directive": "Enforce a hard $5.00 maximum stop-loss limit on all XAUUSD positions and activate aggressive trailing profit locks to guarantee asymmetrical $15-$30 returns."
     }
   ]
 }

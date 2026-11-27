@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute ban on opening multiple trades within 300 seconds of an active order on the same symbol; minimum distance between add-ons locked to +1.5x ATR.",
+  "pyramiding_rule": "Absolute ban on multi-ticket clustering within a 30-second window; subsequent scale-in orders require a confirmed 15-pip structural breakout and positive floating profit on the primary tranche.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Reject all market entries if 1-minute ATR exceeds $2.50 or if spread widens beyond 30 pips on XAUUSD.",
-  "profit_harvest_threshold": "Lock 50% volume at +$5.00 profit per 0.01 lot, trailing remainder with a 15-pip dynamic step up to target +$15.00-$30.00."
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news wicks, verified via instantaneous ATR expansion filters exceeding 2.5x standard deviation.",
+  "profit_harvest_threshold": "Dynamic trailing stop activation at +$5.00 profit, forcing partial liquidation at +$15.00 and full runner trailing at +$30.00 to guarantee asymmetric win capture."
 }
