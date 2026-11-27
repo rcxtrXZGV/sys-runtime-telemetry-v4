@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:05:42.811415+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "A catastrophic -$20.56 outlier loss on ticket 1705772492 caused by an un-optimized static stop loss placed too far into volatility expansion zones, coupled with multiple rapid-fire entries during high-noise market fluctuations.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) because macro-volatility on XAUUSD easily breached wide stops while profit triggers cut small wins prematurely before hitting asymmetric $15-$30 targets.",
-        "market_regime_mismatch": "System attempted counter-trend scaling and tight scalping inside aggressive XAUUSD momentum extensions without accounting for immediate liquidity sweeps and wide spread wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly forbid adding positions within 60 seconds of a prior entry or during high-volatility spread expansion wicks to prevent cascading losses.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require dynamic ATR volatility confirmation and zero high-impact macroeconomic news window within +/- 15 minutes before executing any order.",
-        "profit_harvest_threshold": "Aggressively lock in scaling profits starting at +$10.00 while trailing stops tightly to ensure wins run toward the $15-$30 target envelope."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate trailing stop activation once positions cross +$10.00 profit."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:07:21.419804+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Major outlier loss (-$20.56 on ticket 1705772492) caused by a delayed stop-loss reaction or wide gap during high-volatility XAUUSD momentum pushes, combined with repeated clustered entries right before stop-outs.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized gains exceed +$3.50 to guarantee asymmetry toward the $15-$30 target profile."
       },
       "synthesis_directive": "Enforce strict spatial separation between entries and round-number liquidity pools, capping max drawdown strictly to $5.00 while escalating profitable runs via trailing sentinel locks."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:41:44.535418+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop-losses placed precisely at predictable liquidity pools were hunted by micro-wicks, compounded by simultaneous multiple orders (tickets 1707578236 and 1707578239) triggering near-instantaneous aggregate losses.",
+        "risk_asymmetry_flaw": "Losses reached up to -$4.53 while baseline wins (excluding outliers) remained capped or prematurely exited, creating a negative expectancy skew.",
+        "market_regime_mismatch": "Entering into high-velocity XAUUSD expansion regimes with micro-stops caused premature stop-outs followed by immediate trend continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding permitted within a 60-second window; scaling into positions requires confirmed 3-bar structural continuation and a minimum 1.50 profit buffer on prior tranches.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory Order Flow Imbalance (OFI) confirmation and spread check (< 30 pts) prior to execution, completely blocking entries during high-frequency volatility clusters.",
+        "profit_harvest_threshold": "Aggressively trigger trailing stop activation and partial harvesting at +$10.00 to ensure profit retention and prevent evaporation."
+      },
+      "synthesis_directive": "Enforce strict atomic order spacing and dynamic volatility-adjusted stop buffers to eliminate clustered liquidity hunts and protect asymmetric return targets."
     }
   ]
 }

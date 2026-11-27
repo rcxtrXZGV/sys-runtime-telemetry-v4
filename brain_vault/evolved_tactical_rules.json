@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit entering multiple concurrent positions within a 2-point price bracket to prevent correlated simultaneous stop-outs.",
+  "pyramiding_rule": "Zero pyramiding permitted within a 60-second window; scaling into positions requires confirmed 3-bar structural continuation and a minimum 1.50 profit buffer on prior tranches.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution within 15 minutes of round-number psychological thresholds unless confirmed by an aggressive order-flow delta surge.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized gains exceed +$3.50 to guarantee asymmetry toward the $15-$30 target profile."
+  "new_mandatory_entry_filter": "Mandatory Order Flow Imbalance (OFI) confirmation and spread check (< 30 pts) prior to execution, completely blocking entries during high-frequency volatility clusters.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation and partial harvesting at +$10.00 to ensure profit retention and prevent evaporation."
 }
