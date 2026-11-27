@@ -1,17 +1,6 @@
 {
-  "total_closed_analyzed": 6,
+  "total_closed_analyzed": 5,
   "deals": [
-    {
-      "ticket": 1707834658,
-      "order": 2123326463,
-      "symbol": "XAUUSD",
-      "time": "2026-11-25T22:55:25+00:00",
-      "volume": 0.01,
-      "price": 3575.59,
-      "profit": -4.53,
-      "commission": -0.04,
-      "comment": "SENTINEL_PEAK_HARVEST"
-    },
     {
       "ticket": 1708637423,
       "order": 2124355046,
