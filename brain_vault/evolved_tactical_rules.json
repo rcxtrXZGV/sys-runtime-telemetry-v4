@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strict prohibition of pyramiding within 30 seconds of prior order placement; require a verified 1.5 ATR extension before scaling into continuation.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero-entry during high-impact spread-widening windows; require volume delta confirmation exceeding 2.0x standard deviation prior to execution.",
-  "profit_harvest_threshold": "Trigger trailing lock-step protection the moment open profit hits +$3.50 to guarantee asymmetry."
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "PROHIBIT adding new positions within 60 seconds of an active signal or when floating unrealized profit is negative.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require minimum 15-minute ATR volatility confirmation and zero high-impact news window within 15 minutes prior to trade execution.",
+  "profit_harvest_threshold": "Lock dynamic trailing stop at +$3.00 unrealized profit and force full SENTINEL exit upon a 25% giveback from peak unrealized high."
 }
