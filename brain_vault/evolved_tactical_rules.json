@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries must only trigger on confirmed momentum breakout bars with a minimum 2.5 ATR distance between tranches.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume and order book imbalance confirmation combined with 15-minute ATR expansion filter prior to order dispatch.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds $8.00, targeting scale-out distributions at $15.00, $22.00, and $30.00."
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Prohibit stacking duplicate tickets within 2.00 price handles of an active position; require a minimum 3-ATR impulse confirmation before scaling in.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require Order Flow Imbalance (OFI) confirmation > 65% and zero high-impact macroeconomic news releases within a +/- 15-minute window before order submission.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$4.00 to lock in gains and eliminate evaporation risk."
 }
