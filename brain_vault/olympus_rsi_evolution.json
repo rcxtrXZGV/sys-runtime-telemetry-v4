@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:28:47.787055+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and lagging stop-loss execution during high-volatility momentum bursts, exemplified by ticket 1705772492 causing a -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses exceeded winning profits due to unconstrained holding of losing positions while micro-profits were prematurely clipped, failing the required $4-$6 loss vs $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "Entering breakout orders during low liquidity windows without accounting for spread widening, causing aggressive stop hunts right past tight stop levels."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into high-velocity counter-trend wicks; new entries only permitted upon confirmed structural liquidity sweep.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "ATR-based volatility expansion filter combined with order-book imbalance confirmation prior to execution",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$10.00 floating profit to ensure payouts scale into the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Hard-cap all individual trade risk strictly at $5.00 while enforcing a dynamic trailing lock to capture multi-dollar extension runs."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:30:23.755827+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to an unhedged wide stop-loss execution during extreme XAUUSD momentum volatility, compounding smaller losses from tight micro-stop churning.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit reaches +$12.00 to lock in $15-$30+ symmetric payouts."
       },
       "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per trade on XAUUSD and mandate strict profit trailing once trades cross +$12.00 to eliminate catastrophic outlier losses."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:49:48.419795+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped initial risk on ticket 1705772492 (-$20.56) caused by a wide structural stop-loss failing to account for immediate high-volatility momentum bursts in XAUUSD.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to micro-profit exits cutting winners prematurely at +$0.39 to +$5.34 while allowing outlier losses to expand beyond the intended $4-$6 envelope.",
+        "market_regime_mismatch": "Clustered entries on 2026-11-25 (tickets 1707575809, 1707578236, 1707578239) demonstrate destructive pyramiding into tight consolidation wicks without waiting for structural trend confirmation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of adding to positions within 30 minutes of a prior entry or inside the same price consolidation band; second-tranche entries require a verified structural breakout and minimum +$10 floating profit on the primary trade.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Volume-weighted average spread and localized ATR filter must confirm directional momentum before order execution; no entries allowed during 1-minute candle ranges exceeding 2.5x the 20-period average ATR.",
+        "profit_harvest_threshold": "Initiate trailing stops once a trade reaches +$8.00 and execute mandatory partial or full scale-out if momentum stalls below the +$15.00 to +$30.00 target zone."
+      },
+      "synthesis_directive": "Enforce strict $5.00 maximum hard stop-loss limits on all XAUUSD orders, eliminate premature micro-exits, and ban undisciplined pyramiding into active consolidation wicks."
     }
   ]
 }
