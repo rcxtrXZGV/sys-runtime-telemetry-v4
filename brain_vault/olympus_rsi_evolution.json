@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:13:36.966627+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) due to holding past the structural volatility threshold during a violent liquidity sweep.",
-        "risk_asymmetry_flaw": "Maximum loss (-$20.56) exceeded the upper bound of the target win profile ($15-$30+) due to failure of hard stop execution on high-velocity retracements.",
-        "market_regime_mismatch": "Entering during high-frequency micro-volatility impulses without accounting for expanded spread and wick sweeps in XAUUSD."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to positions when floating profit is negative or within 30 seconds of a prior stop-out sequence.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum before the 0.01 lot order is dispatched.",
-        "profit_harvest_threshold": "Aggressively harvest profits at +$5.00 to +$10.00 via trailing micro-stops to prevent peak evaporation."
-      },
-      "synthesis_directive": "Enforce a strict $5.00 hard stop-loss ceiling on all XAUUSD positions and lock in green runs immediately upon reaching initial +$5.00 thresholds."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:15:10.679706+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-loss extensions leading to a massive -$20.56 drawdown outlier, alongside clustering entries during high-frequency volatility pulses.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing volatility stops or partial harvests immediately upon reaching +$15.00 floating profit to lock down asymmetric win capture up to +$30.00."
       },
       "synthesis_directive": "Enforce an absolute hard stop-loss ceiling of $5.00 per trade on all assets and immediately abort multi-ticket entry clustering during high-volatility XAUUSD regimes."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T10:52:00.547358+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD resulting in a massive -$20.56 outlier loss due to an excessively wide stop-loss, coupled with rapid sequential over-leveraging into moving momentum wicks.",
+        "risk_asymmetry_flaw": "Losses ($33.22 across 5 trades) heavily outweighed wins ($12.69 across 7 trades) because stops were allowed to drift past structural invalidation points while profit targets were clipped prematurely.",
+        "market_regime_mismatch": "Entering during high-velocity NY open and late-night liquidity shifts where price compressed sharply before hunting tight cluster stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit entering multiple sequential orders (pyramiding) within a 60-second window on XAUUSD; maximum 1 active position per directional impulse.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a confirmed 5-minute ATR breakout candle closing past the micro-structure key level before triggering market orders, avoiding fakeouts.",
+        "profit_harvest_threshold": "Aggressively trigger trailing stop-lock or partial harvesting when floating profit crosses +$8.00 to prevent positive runs from evaporating."
+      },
+      "synthesis_directive": "Enforce hard risk caps restricting every single trade maximum loss to $5.00 while expanding winning targets to a minimum $15.00 asymmetry profile."
     }
   ]
 }
