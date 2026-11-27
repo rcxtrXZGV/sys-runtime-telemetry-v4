@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:04:02.018831+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was placed too loose or lagged behind volatility expansion during a high-velocity momentum thrust, while duplicate entries at 2123016852 and 2123016855 proved that the engine engaged in toxic pyramiding into a falling/rising knife.",
-        "risk_asymmetry_flaw": "The average loss per failed transaction exceeded the target risk parameters due to unconstrained slippage on wider stops, completely inverting the desired $4-$6 loss ceiling against $15-$30 win targets.",
-        "market_regime_mismatch": "Executing trades during high-impact liquidity wicks on XAUUSD caused immediate stop-loss hunting before trend continuation could materialize."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding positions within 15 seconds or 2.0 dollars of an existing struggling trade; zero tolerance for averaging down into wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated ATR volatility contraction breakout filter and absolute confirmation that spread + ATR do not exceed the $5 risk envelope before order placement.",
-        "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once floating profit hits +$15.00 to prevent erosion back to breakeven."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar ceiling of $5.00 per stop-loss on XAUUSD and ban all correlated pyramiding during high-volatility liquidity wicks."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:05:42.811415+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "A catastrophic -$20.56 outlier loss on ticket 1705772492 caused by an un-optimized static stop loss placed too far into volatility expansion zones, coupled with multiple rapid-fire entries during high-noise market fluctuations.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Instantly initiate trailing stop locks once profit exceeds +$5.00 to guarantee asymmetric $15-$30 payouts."
       },
       "synthesis_directive": "Enforce strict ATR-based stop padding on XAUUSD to eliminate liquidity hunting, locking down losses under $5 while scaling winners past $15."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:40:18.067483+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution too close to psychological round numbers (e.g., 3550.00, 3552.00) resulting in tight stop-hunting and wick cleanouts, combined with aggressive execution during high-volatility session transition wicks.",
+        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded average baseline winners due to premature profit-taking on micro-movements while holding through adverse retracements until strict stop levels hit.",
+        "market_regime_mismatch": "Attempting mean-reversion counter-trend entries in a high-momentum expanding range regime without accounting for liquidity sweep spikes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit entering multiple concurrent positions within a 2-point price bracket to prevent correlated simultaneous stop-outs.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution within 15 minutes of round-number psychological thresholds unless confirmed by an aggressive order-flow delta surge.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized gains exceed +$3.50 to guarantee asymmetry toward the $15-$30 target profile."
+      },
+      "synthesis_directive": "Enforce strict spatial separation between entries and round-number liquidity pools, capping max drawdown strictly to $5.00 while escalating profitable runs via trailing sentinel locks."
     }
   ]
 }
