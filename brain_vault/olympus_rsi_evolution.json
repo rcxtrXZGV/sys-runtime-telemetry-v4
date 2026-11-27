@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T19:51:42.386591+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Widened stop-losses during high volatility regimes caused catastrophic individual drawdowns up to -$20.56, completely overwhelming minor wins.",
-        "risk_asymmetry_flaw": "Losses averaged nearly -$9.76 per failed ticket while wins averaged a negligible +$1.60, directly inverting the required $15-$30 target profile.",
-        "market_regime_mismatch": "System entered during high-impact news wicks and volatile counter-trend surges without enforcing mandatory structural volatility filters."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding permitted unless the base position has already achieved a floating profit of at least $10.00 and trailing stop is secured at breakeven.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Strict order authorization requires volume-weighted momentum alignment across two higher timeframes with zero high-impact macroeconomic news releases within +/- 15 minutes.",
-        "profit_harvest_threshold": "Aggressively secure green runs via trailing stop locks once floating profit reaches $15.00 to eliminate evaporation."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all initial stop-losses while mandating that profit targets and trailing mechanisms capture $15.00+ on winning runs."
-    },
-    {
       "evolution_timestamp": "2026-11-26T19:53:22.866515+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and volatile wick penetrations during New York afternoon and crossover sessions, exemplified by ticket 1705772492 resulting in a -$20.56 drawdown due to an unadjusted trailing stop reacting to micro-noise.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stop-lock or partial harvest dynamically when unrealized profit reaches +$12.00 to prevent evaporation of gains."
       },
       "synthesis_directive": "Enforce a hard absolute ceiling of $5.00 loss per ticket with zero tolerance for manual override, while automating immediate profit harvesting once positions cross +$12.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:52:24.244964+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled slippage and oversized initial stop-losses on high-volatility XAUUSD wicks, notably ticket 1705772492 resulting in a severe -$20.56 drawdown.",
+        "risk_asymmetry_flaw": "Losses (-$40.94 total) significantly outweighed wins (+$38.51 total) due to holding losing positions into widening spreads while prematurely cutting winners.",
+        "market_regime_mismatch": "Entering during aggressive high-impact liquidity sweeps where micro-pullbacks triggered tight stops followed immediately by continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions (anti-martingale) within a 15-minute window following any prior stop-loss execution on the same asset.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require dynamic ATR expansion confirmation and zero high-impact news windows (\u00b115 minutes) prior to order execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit reaches +$5.00 to lock in gains and prevent evaporation."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and immediately activate trailing stop-locks on any position crossing +$5.00 floating profit."
     }
   ]
 }
