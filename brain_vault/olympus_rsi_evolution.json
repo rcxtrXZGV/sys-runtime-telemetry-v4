@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:15:37.606866+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncontrolled slippage and high-impact volatility wicks on XAUUSD triggering tight stops at -$20.56, coupled with ill-timed rapid-fire scaling into a directional whip-saw.",
-        "risk_asymmetry_flaw": "Losses reached -$20.56 while optimal wins were capped around +$5.34, in direct violation of the required $4-$6 loss / $15-$30+ win distribution.",
-        "market_regime_mismatch": "Entering high-beta breakout positions during volatile news wicks without accounting for micro-spread expansion and liquidity vacuums."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute prohibition against averaging down or initiating multiple entries within a 3-minute window during high volatility intervals.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated ATR volatility contraction filter and confirmed order book imbalance before ticket execution to avoid wick traps.",
-        "profit_harvest_threshold": "Aggressively secure partial/full profit when the position reaches +$15.00 to prevent evaporation down to fractional gains."
-      },
-      "synthesis_directive": "Enforce strict hard-stop capping at $5.00 maximum loss per trade and mandate profit-taking triggers at $15.00+ to achieve positive mathematical asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:17:08.857172+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution entry overlap during high-volatility sessions (e.g., ticket 1705772492 losing -$20.56) caused by unconstrained stop-loss spacing and premature scaling into micro-pullbacks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Harvest 50% lot size upon reaching +$10.00 unrealized gain, trailing the residual position with a 1.0x ATR dynamic stop; prohibit premature scratch closures under +$2.00 unless structural reversal triggers."
       },
       "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per 0.01 lot on XAUUSD, eliminate duplicate concurrent executions, and suppress micro-profit harvesting to achieve a minimum 1:3 Risk-Reward ratio."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:37:39.193033+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight algorithmic stop-losses during high-volatility XAUUSD momentum expansions, compounded by a severe -$20.56 outlier failure where the stop placement failed to account for localized spread and liquidity vacuum wicks.",
+        "risk_asymmetry_flaw": "Losses (-$20.56 max loss) drastically violated the risk-reward mandate because winning trades were cut short prematurely (+0.39 to +5.34), resulting in a negative expectancy profile where a single massive loss wiped out multiple wins.",
+        "market_regime_mismatch": "Executing counter-trend or late breakout entries during erratic XAUUSD liquidity sweeps where structural high-impact wicks instantly hunted tight stop-loss parameters set too close to immediate price action."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on sequential micro-entries (grid/martingale stacking) within a narrow 2-dollar band; zero additional tickets allowed if an open trade is currently in a drawdown.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution during 1-minute ATR spikes exceeding 3.5x baseline; require confirmed micro-structure break and momentum volume confirmation before pulling the trigger.",
+        "profit_harvest_threshold": "Aggressively trigger SENTINEL_PEAK_HARVEST at +$15.00 to +$30.00 unrealized gain, locking in profits instantly via trailing ATR steps rather than waiting for arbitrary fixed price targets."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar loss per trade while forcing winners to run up to $15-$30 through dynamic trailing stop adjustments."
     }
   ]
 }
