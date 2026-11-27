@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 180 seconds or 2.0 ATR of a previous loss or in the direction of a liquidity wick.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory multi-timeframe volume-weighted spread and order-book imbalance confirmation; reject all trades if ATR exceeds the 20-period median by >1.8x.",
-  "profit_harvest_threshold": "Aggressively trigger trailing stop-locks once floating profit hits +$15.00 to guarantee asymmetric retention toward the +$30.00 target window."
+  "pyramiding_rule": "Strict prohibition of opening multiple scale-in orders on XAUUSD within a 10-minute window to eliminate falling knife pyramiding.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "ATR volatility contraction check combined with directional momentum filter via 14-period EMA alignment prior to order dispatch.",
+  "profit_harvest_threshold": "Initiate aggressive trailing or partial profit-taking at $15.00 floating gain to guarantee asymmetric 3R+ outcomes."
 }
