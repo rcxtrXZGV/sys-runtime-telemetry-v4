@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential entry clustering within 2.0 price points on XAUUSD; zero additional scaling into active drawdowns.",
+  "pyramiding_rule": "Strictly prohibit adding to positions (no pyramiding) within 30 minutes of a prior stop-out or during expanding Average True Range (ATR) spike regimes on XAUUSD.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmed volume expansion and order-flow imbalance via multi-timeframe confirmation before order placement.",
-  "profit_harvest_threshold": "Instantly initiate aggressive trailing mitigation once a trade reaches +$8.00 floating profit to guarantee progression toward the $15-$30+ target zone."
+  "new_mandatory_entry_filter": "Require a multi-timeframe volume-weighted momentum confirmation and a maximum allowable spread filter before any order execution is authorized.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit secures and partial scaling once unrealized profit reaches +$12.00 to prevent floating gains from evaporating into minor wins or losses."
 }
