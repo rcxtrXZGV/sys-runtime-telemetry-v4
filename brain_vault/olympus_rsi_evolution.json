@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:59:14.293015+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a severe -$20.56 drawdown because the stop-loss was placed too wide relative to institutional volatility thresholds, allowing unfavorable price excursion to expand before liquidation.",
-        "risk_asymmetry_flaw": "Loss magnitude ($33.22 total) heavily outweighed win magnitude ($11.68 total), violating the $4-$6 loss / $15-$30+ win asymmetry mandate.",
-        "market_regime_mismatch": "Clustered losses on XAUUSD during late session hours indicated entering against micro-momentum wicks without proper structural confirmation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of multiple entries within a 5-point range to prevent premature scaling into losing momentum moves.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a confirmed multi-timeframe liquidity sweep and volume exhaustion signature before opening any position.",
-        "profit_harvest_threshold": "Trigger trailing stops instantly when profit reaches +$12.00 to lock in gains targeting the $15-$30+ profile."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade while aggressively trailing profits at +$12.00 to guarantee asymmetric win-to-loss ratios."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:01:01.474406+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and lagging stop-loss execution during high-volatility XAUUSD momentum bursts, notably ticket 1705772492 resulting in a catastrophic -$20.56 drawdown.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing and partial profit-taking once floating profits hit +$15.00 to prevent evaporation, allowing the remaining runner to target +$30.00+."
       },
       "synthesis_directive": "Enforce strict risk caps under $5.00 per trade, completely ban averaging down into losing XAUUSD wicks, and mandate aggressive profit protection once trades turn green."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:20:04.677714+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide static stop-loss interacting with volatile XAUUSD liquidity sweeps, alongside premature micro-profit closing.",
+        "risk_asymmetry_flaw": "Losses exceeded wins because max drawdown reached -$20.56 while max wins were capped at +$5.34, completely inverting the target $4-$6 loss vs $15-$30+ win asymmetry.",
+        "market_regime_mismatch": "Entering during high-momentum session opens without structural volatility checks, resulting in stop-losses being breached or trailing stops choking out profitable runs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against multi-entry scaling within a 2-pip window (preventing clustered losses like tickets 2123013996 and 2123016852); pyramiding only allowed after a confirmed 15-pip structural breakout with break-even lock.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero entry allowed during top-tier high-impact USD/Gold news windows; mandatory ATR expansion filter and order-book imbalance confirmation required prior to execution.",
+        "profit_harvest_threshold": "Dynamic scaling trigger at +$10.00 floating profit with trailing lock, forcing wins to run toward the $15-$30+ target zone rather than premature closure."
+      },
+      "synthesis_directive": "Hard-cap all individual losses at exactly $5.00 via strict ATR-bounded stops and enforce asymmetric target expansion to let winners reach $15-$30+ without manual interference."
     }
   ]
 }
