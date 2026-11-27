@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential scaling or adding positions within a 10-pip range of an existing active trade to eliminate compounding drawdown on false breakouts.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated multi-timeframe volume-weighted average price (VWAP) cross combined with an institutional order book imbalance confirmation prior to order execution.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks as soon as floating profits hit +$12.00 to guarantee terminal capture within the $15-$30+ target bracket."
+  "pyramiding_rule": "Zero pyramiding authorized within 50 pips or 15 minutes of a prior entry; block multi-ticket clustering to prevent correlated cascade failures.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a validated ATR-based volatility envelope breakout confirmation and zero high-impact calendar news within a 15-minute window before executing orders.",
+  "profit_harvest_threshold": "Aggressively lock in gains via dynamic trailing stops once floating profit crosses +$10.00 to prevent evaporation into negative closures."
 }
