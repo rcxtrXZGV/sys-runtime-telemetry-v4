@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T15:06:03.482432+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during volatility spikes (e.g., ticket 1705772492 hitting -$20.56) combined with tight exits on winning trades truncating asymmetry.",
-        "risk_asymmetry_flaw": "The largest loss (-$20.56) severely dwarfed the largest win (+-$5.02), inverting the required $4-$6 loss to $15-$30+ win structural ratio.",
-        "market_regime_mismatch": "Entering counter-trend or during high liquidity wicks in XAUUSD without volatility-adjusted stop barriers, causing premature stops followed by immediate trend continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of averaging down or pyramiding into correlated positions within a 10-pip window; mandatory minimum +$10 floating profit on foundational layer before scaling.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "ATR(14) volatility expansion filter coupled with Order Flow Imbalance confirmation to prevent entry into low-liquidity sweep wicks.",
-        "profit_harvest_threshold": "Scale out 50% of position at +$10, trail remainder with a tighter structural step-stop to capture asymmetric $15-$30+ runs."
-      },
-      "synthesis_directive": "Enforce a hard dollar stop-loss cap of $5.00 on all XAUUSD positions while dynamically scaling targets to lock in $15-$30+ asymmetric payouts."
-    },
-    {
       "evolution_timestamp": "2026-11-26T15:23:27.242859+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) due to an excessively wide stop-loss placed in high-volatility XAUUSD liquidity sweeps, coupled with premature micro-scalp exits on winning trades (+0.39 to +0.55) that destroyed the loss-to-win asymmetry.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Move stop to breakeven + commission at +$3.00 floating profit; activate aggressive peak trailing harvest once floating PnL exceeds +$10.00 to target $15-$30 expansions."
       },
       "synthesis_directive": "Strictly restrict XAUUSD loss exposure to a hard $5.00 limit per trade, enforce a 300-second re-entry delay, and trail profits dynamically to achieve a positive asymmetric payoff."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T03:42:04.163916+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of entries into high-volatility liquidity wicks during late NY and early Asian transitions, compounded by over-tight initial stops that were immediately hunted by market makers.",
+        "risk_asymmetry_flaw": "Losses like ticket 1705772492 (-$20.56) significantly breached the target risk bracket due to slippage during rapid momentum extensions, while winning trades closed prematurely for micro-gains (+$0.39 to +$5.02), inverting the required $1:3 risk-to-reward ratio.",
+        "market_regime_mismatch": "System attempted mean-reversion and rigid grid-style scalping inside aggressive trend expansion regimes on XAUUSD, resulting in consecutive stop-out cascades."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding allowed within 0.25 ATR of immediate micro-support/resistance nodes; absolute ban on adding to positions showing negative unrealized drift.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 3-bar structural volume confirmation and a Bollinger Band width expansion filter before order generation, prohibiting entries within 15 minutes of high-impact macroeconomic data windows.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation via SENTINEL_PEAK_HARVEST once unrealized profit crosses +$10.00 to prevent evaporation of floating gains."
+      },
+      "synthesis_directive": "Enforce a hard maximum dollar loss ceiling of $5.00 per trade while locking in trailing profit triggers at +$10.00 to guarantee asymmetric $1:3 risk-reward realization."
     }
   ]
 }
