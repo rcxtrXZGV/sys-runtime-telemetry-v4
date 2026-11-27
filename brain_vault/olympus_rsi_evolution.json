@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:10:29.592008+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped single-trade catastrophic tail risk (-$20.56 on ticket 1705772492) paired with simultaneous duplicate order execution at identical timestamps (tickets 1707578236 and 1707578239 at 21:14:10).",
-        "risk_asymmetry_flaw": "Negative R:R asymmetry where winning trades were micro-harvested prematurely (+$0.39, +$0.49) while bad entries were allowed to bleed beyond the $5.00 systemic threshold, wiping out 9 cumulative wins with 1-2 unchecked losses.",
-        "market_regime_mismatch": "Attempting counter-trend or high-frequency re-entries during volatile late-session expansion wicks without dynamic volatility-adjusted ATR buffers."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Enforce a mandatory 180-second execution cooldown between tickets on XAUUSD; prohibit same-timestamp cloning; additions are only permitted when existing position is secured at +1.5 ATR breakeven.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Reject trade authorization if XAUUSD 5-minute ATR > $3.50 or if open risk exceeds $5.00 per 0.01 lot micro-contract.",
-        "profit_harvest_threshold": "Lock 50% profit at +$6.00 gain and activate dynamic trailing sentinel step to secure minimum +$3.00 run profit on remaining volume."
-      },
-      "synthesis_directive": "Hard-cap maximum risk to $5.00 per 0.01 lot with zero dual-order cloning, letting profitable runs reach $15-$30 via trailing ATR step."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:12:31.030982+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to immediate micro-volatility, coupled with delayed exit tracking. Furthermore, consecutive short-interval entries (tickets 1707575809, 1707578236, 1707578239) exposed the engine to rapid-fire cluster stop-outs during adverse XAUUSD wick spikes.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-lock whenever floating profit crosses +$12.00 to guarantee terminal exit between $15.00 and $30.00."
       },
       "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on all XAUUSD orders while expanding profit harvest triggers to capture asymmetric $15-$30+ runners."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:40:03.902179+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive slippage and over-leveraged volatility exposure during high-velocity breakout wicks on XAUUSD, highlighted by a single -$20.56 catastrophe that wiped out multiple gains.",
+        "risk_asymmetry_flaw": "Losses ($33.22 total) heavily outpaced wins ($11.24 total) because stops were placed too wide relative to structural volatility bounds, and consecutive entries near identical price levels acted as unauthorized pyramiding into a falling knife.",
+        "market_regime_mismatch": "System entered into choppy, news-driven liquidity sweeps without checking higher-timeframe ATR expansion coefficients, causing stops to be triggered immediately after execution."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on opening secondary positions within 3.0 ATR of an existing losing ticket to eliminate compounding falling knife exposure.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero-entry during 15-minute high-impact volatility compression bands; require volume delta confirmation and order book imbalance > 65% prior to execution.",
+        "profit_harvest_threshold": "Aggressively lock in gains when floating profit reaches $15.00 via trailing micro-steps, preventing profitable runs from collapsing back to breakeven or minor losses."
+      },
+      "synthesis_directive": "Enforce a strict $5.00 hard stop-loss cap on all XAUUSD orders and immediately halt pyramiding whenever consecutive micro-losses breach the daily drawdown envelope."
     }
   ]
 }
