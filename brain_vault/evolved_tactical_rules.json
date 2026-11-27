@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit duplicate timestamp scaling; subsequent entries require a minimum $3.00 favorable price displacement and a confirmed structural liquidity sweep.",
+  "gold_max_allowed_sl_dollars": 4.0,
+  "pyramiding_rule": "Strictly prohibit opening multiple orders on the same asset within a 60-second window to prevent accidental scaling into a collapsing price wick.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry execution within 15 minutes of high-impact macro data windows; require multi-timeframe ATR-based volatility expansion confirmation.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial close once floating profit hits +$10.00 to guarantee asymmetric $15-$30 target capture."
+  "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and zero high-impact calendar events within +/- 15 minutes before executing any market order.",
+  "profit_harvest_threshold": "Initiate trailing stops once floating profit hits +$4.00 to guarantee wins lock in between $5.00 and $30.00."
 }
