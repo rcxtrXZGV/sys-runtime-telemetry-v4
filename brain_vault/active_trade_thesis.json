@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-27T17:13:36.810785+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 85,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "reversal_sentinel_assessment": "No open positions currently active. Sentinel in active surveillance mode.",
+  "trade_thesis": "XAUUSD recently expanded rapidly from 3601 to an intraday high of 3672.5 before entering a mid-range consolidation between 3645 and 3662. Volume has tapered off on the 15-minute timeframe while DXY consolidates near 103.98. Entering inside mid-range chop presents unfavorable risk-to-reward. Preserving capital ($61.18 USD) until a clear liquidity sweep or high-momentum breakout occurs beyond key intraday levels."
+}
