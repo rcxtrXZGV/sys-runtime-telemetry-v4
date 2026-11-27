@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:36:02.297998+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-loss expansion on ticket 1705772492 causing an isolated -$20.56 loss (61.8% of total loss sum) combined with simultaneous order stacking/pyramiding into adverse motion at 21:14:10.",
-        "risk_asymmetry_flaw": "Negative expectancy caused by premature profit-cutting (micro-wins of +$0.39 and +$0.49) while permitting single trade drawdowns to reach -$20.56 on 0.01 lot sizes.",
-        "market_regime_mismatch": "Executing breakouts during high-volatility expansion spikes (XAUUSD $3514\u2013$3575 range) without spread/ATR expansion buffers, leading to execution slippage and reverse stop-hunts."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly forbid opening concurrent or multi-ticket positions on XAUUSD within a 30-minute window; zero adding to unrealized negative float.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Hard cap max risk per 0.01 lot to <= $5.00 (50 pips XAUUSD) at order placement, with automatic rejection if high-impact news event is within +/- 15 minutes.",
-        "profit_harvest_threshold": "Initiate 50% partial close at +$5.00 floating profit and trail remaining position using a strict 1.5x ATR dynamic trailing stop."
-      },
-      "synthesis_directive": "Enforce a hard hard-stop limit of $5.00 per trade and ban multi-ticket entry stacking to guarantee minimum 1:3 risk-to-reward asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:38:24.969434+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to immediate volatility, and rapid sequence entries (Tickets 1707575809 & 1707578239) created a micro-pyramiding trap into local counter-trend wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively secure profits via trailing stops once a minimum of +$15.00 is reached on XAUUSD."
       },
       "synthesis_directive": "Hard-cap every single trade risk strictly between $4.00 and $6.00 while expanding profit targets to secure $15.00 to $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:02:33.387300+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide (0.42 dollars away on XAUUSD scale translated to an outsized cash loss), while subsequent tickets showed clustering during high-volatility wicks.",
+        "risk_asymmetry_flaw": "The loss-to-win ratio was inverted; average losses were weighed down by a severe outlier (-$20.56) while wins capped out prematurely around +$5.00 to +$5.34, failing to reach the mandatory $15-$30 asymmetric return profile.",
+        "market_regime_mismatch": "Entering positions during rapid XAUUSD high-impact news wicks without volatility-adjusted structural stops resulted in immediate stop-hunting and premature capital erosion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition on sequential order stacking (ticket clusters like 2123016852 and 2123016855) within a 5-second window to prevent falling knife over-exposure.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 3-bar structural volume divergence confirmation and zero high-impact tier-1 macro news releases within a +/- 15-minute window prior to order execution.",
+        "profit_harvest_threshold": "Aggressively trigger trailing locks once floating profit hits +$12.00 to force wins into the $15-$30+ asymmetry band."
+      },
+      "synthesis_directive": "Enforce absolute $4.50 hard dollar loss caps on every XAUUSD ticket and require multi-tier profit trailing to scale winners toward the $30 asymmetric target."
     }
   ]
 }
