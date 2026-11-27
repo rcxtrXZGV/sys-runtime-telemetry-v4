@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into losing positions within a 15-minute rolling window; subsequent lots require a minimum +$4.00 unrealized profit cushion on the primary tranche.",
+  "pyramiding_rule": "Strict prohibition against averaging down or adding sequential tickets (such as tickets 1707578236 and 1707578239) into an unconfirmed trend reversal.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution during 5-minute ATR expansions exceeding 2.5x the 20-period moving average unless confirmed by volume delta divergence.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial profit scaling as soon as open trades cross +$12.00 to guarantee net positive skew towards the $15-$30+ target."
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic data releases and without an explicit ATR-normalized expansion filter.",
+  "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once floating profit hits +$10.00 to guarantee asymmetric $15-$30+ payouts."
 }
