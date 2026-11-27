@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T09:57:09.615225+00:00",
+  "timestamp": "2026-11-27T10:00:25.960040+00:00",
   "verdict": "SELL",
   "symbol": "XAUUSD",
   "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3628.5,
-  "tp_price": 3602.0,
-  "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "Zero active broker positions currently open. Sentinel Guardian active in observation mode for potential early exit execution upon fill.",
-  "trade_thesis": "XAUUSD printed a clear liquidity sweep at intraday high 3634.7 followed by a lower high rejection at 3626.7 with elevated volume (1893) on the latest 15m candle. Concurrently, DXY is breaking out to 103.81 and US10Y yields are climbing to session highs of 4.848%, providing strong macro confirmation for a bearish leg back down toward the 3602 support zone."
+  "sl_price": 3627.5,
+  "tp_price": 3605.0,
+  "trailing_activation_profit": 4.5,
+  "reversal_sentinel_assessment": "No active open positions currently in the broker portfolio. Reversal Sentinel standing by for newly dispatched trades.",
+  "trade_thesis": "XAUUSD printed a clear lower-high rejection at 3626.70 following the earlier exhaustion liquidity sweep to 3634.70. Macro desks confirm strong cross-asset headwinds with DXY surging to 103.81 and US10Y yields pushing toward intraday highs of 4.848%. Intraday momentum favors a short leg down toward the 3605.00 key demand zone."
 }

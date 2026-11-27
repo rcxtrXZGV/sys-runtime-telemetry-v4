@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding allowed within 30 seconds of an existing position or within a $2.00 price band on XAUUSD to prevent cascading stop-out sequences.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require verified order-book imbalance confirmation and a minimum 3-pip ATR expansion buffer before committing volume on XAUUSD.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 profit to secure green runs and force an asymmetric $15-$30+ reward-to-risk profile."
+  "pyramiding_rule": "Strict prohibition of duplicate or scale-in order execution within 120 seconds of an existing position; zero additions permitted to drawdown legs.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Hard maximum SL distance set to $5.00 equity risk per 0.01 lot with mandatory 15-minute high-impact news blackout window.",
+  "profit_harvest_threshold": "Initiate aggressive breakeven lock at +$3.00 floating profit and secure trailing lock at 50% retracement once floating profit hits +$10.00."
 }
