@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T09:51:11.257055+00:00",
-  "verdict": "WAIT",
+  "timestamp": "2026-11-27T09:53:31.652314+00:00",
+  "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3613.5,
+  "tp_price": 3633.5,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Monitoring for liquidity sweep entry.",
-  "trade_thesis": "Gold (XAUUSD) has pulled back from the intraday high of 3634.70 and is consolidating around 3620.39 with choppy candle behavior on the 15-minute timeframe. Awaiting a cleaner asymmetric breakout or liquidity sweep toward previous highs before deployment."
+  "reversal_sentinel_assessment": "Zero open positions on broker. Sentinel actively monitoring market for clean order flow entry without drawdown risk.",
+  "trade_thesis": "XAUUSD displays strong intraday bullish structure after breaking out to 3634.7 and forming a higher low at 3601.4. The recent momentum leg pushed to 3626.7 with a shallow pullback to 3620.4. Entering long on the pullback targeting a retest of intraday highs."
 }
