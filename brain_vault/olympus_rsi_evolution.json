@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T16:44:06.452968+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped drawdown slippage on XAUUSD high-volatility wicks, notably ticket 1705772492 resulting in a -$20.56 loss due to placing stop-losses too far out or failing to exit early micro-reversals.",
-        "risk_asymmetry_flaw": "Losses heavily outpaced wins because small winning scalps (+-$0.50 to +$5.02) were clipped prematurely while outlier losses stretched up to -$20.56, violating the $4-$6 loss constraint.",
-        "market_regime_mismatch": "Entering breakout orders during erratic high-impact news wicks where tight stop-losses were hunted instantly before trend continuation or mean-reversion occurred."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into active pullbacks; consecutive entries within a 5-minute window are strictly prohibited to prevent compounding into falling/rising knife traps.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory structural liquidity sweep check and ATR volatility cap filter before order placement to avoid high-impact spread widening wicks.",
-        "profit_harvest_threshold": "Aggressively secure trailing stops or execute partial scaling once floating profit hits +$10.00 to ensure wins run toward the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar stop-loss cap of $5.00 on all XAUUSD trades and mandate aggressive partial profit locking to eliminate catastrophic outlier losses."
-    },
-    {
       "evolution_timestamp": "2026-11-26T17:36:49.234921+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled slippage and oversized volatility wicks breaching tight stops, compounded by entering counter-trend pullbacks during aggressive market expansions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing stop activation once profit reaches +$15.00 to guarantee wins scale up to the +$30.00 target bracket."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate structural profit locks at +$15.00 to restore absolute risk-reward asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:09:16.613824+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked volatility expansion in XAUUSD caused stop-loss hunting on tight 11-pip to 50-pip ranges, culminating in a catastrophic -$20.56 outlier loss due to structural slippage and lag during a liquidity vacuum.",
+        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) outpaced wins (+$38.51 aggregate) because trailing stop protections failed to lock in micro-profits quickly enough, and a large single loss severely distorted the expectancy matrix.",
+        "market_regime_mismatch": "Entering during erratic high-frequency reversion wicks without verifying real-time order book depth led to premature stop-outs and failed pyramiding clusters."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into losing positions within a 15-minute rolling window; subsequent lots require a minimum +$4.00 unrealized profit cushion on the primary tranche.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution during 5-minute ATR expansions exceeding 2.5x the 20-period moving average unless confirmed by volume delta divergence.",
+        "profit_harvest_threshold": "Initiate aggressive trailing or partial profit scaling as soon as open trades cross +$12.00 to guarantee net positive skew towards the $15-$30+ target."
+      },
+      "synthesis_directive": "Enforce a hard risk ceiling of $5.00 per trade on XAUUSD and mandate immediate structural profit locks once open equity reaches +$12.00."
     }
   ]
 }
