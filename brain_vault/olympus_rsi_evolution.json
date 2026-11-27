@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:10:34.728720+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide relative to tick volatility, and multiple entries were executed into a tight consolidation range resulting in clustered failures.",
-        "risk_asymmetry_flaw": "The largest loss (-$20.56) severely dwarfed the largest win (+$5.34), violating the asymmetric return target of keeping maximum losses under $5 while allowing winners to scale to $15-$30+.",
-        "market_regime_mismatch": "High-frequency micro-wicks during late-session XAUUSD price discovery triggered static stop-loss brackets before algorithmic trend confirmation could materialize."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding positions into falling or rising knives; pyramiding is only authorized after a confirmed 1R structural breakout with trailing stops locked at breakeven.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a multi-timeframe ATR volatility expansion filter and zero high-impact macroeconomic news window presence within +/- 15 minutes of execution.",
-        "profit_harvest_threshold": "Aggressively secure floating profits using dynamic trailing stops once a position crosses +$6.00 to prevent erosion back to negative territory."
-      },
-      "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 across all XAUUSD orders and require aggressive trailing profit locks at +$6.00 to guarantee positive asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:12:21.185826+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) driven by an unconstrained stop-loss placed too wide during high-volatility XAUUSD momentum expansion, compounded by correlated cluster entries (tickets 1707575809, 1707578236, 1707578239) entering into micro-retracements.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Instantly lock in partials or trigger trailing stops once floating profit reaches +$5.00 to prevent gains from evaporating back to zero."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on all XAUUSD orders and immediately terminate any multi-ticket pyramiding when volatility expands."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:31:39.093383+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was misplaced and allowed adverse price migration far beyond institutional risk thresholds. Furthermore, multiple entries (Tickets 1707575809, 1707578236, 1707578239) within minutes of each other indicate unauthorized pyramiding/grid stacking into high-volatility XAUUSD momentum wicks.",
+        "risk_asymmetry_flaw": "Total loss sum (-$33.22) vastly outweighed total win sum (+$11.24) due to a catastrophic failure in risk-reward enforcement; large outsized losses were combined with premature micro-profits exiting between +$0.39 and +$5.34.",
+        "market_regime_mismatch": "The engine triggered entries during high-frequency retail liquidity sweeps and news-driven price expansion phases without confirming institutional order-flow continuation, causing stop-losses to be hunted repeatedly."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions or opening multiple tickets within a 15-minute window; maximum 1 active trade per instrument unless the existing position has already locked in trailing profits.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a 3-standard-deviation volume-weighted momentum confirmation combined with an institutional spread filter before any XAUUSD order is executed.",
+        "profit_harvest_threshold": "Aggressively trigger trailing locks as soon as open profit hits +$10.00, ensuring winners naturally stretch toward the $15-$30+ asymmetry target."
+      },
+      "synthesis_directive": "Hard-cap every individual trade risk strictly below $5.00 while disabling rapid-fire position stacking to enforce absolute mathematical asymmetry."
     }
   ]
 }
