@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T19:39:12.929708+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked micro-lot pyramiding during volatile range expansions led to outsized single-event drawdowns (-$20.56) when stop losses were breached.",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total across 9 deals) heavily outpaced wins (+$56.10 total across 11 deals), driven by letting losing trades absorb excessive adverse excursion while clipping winners prematurely under +$1.00.",
-        "market_regime_mismatch": "Executing continuous entries into rapid XAUUSD liquidity sweeps without filtering for institutional order-block retests caused high-impact wicks to trigger tight stops repeatedly."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to losing positions; pyramiding only permitted in the direction of the primary trend after a minimum +$10.00 unrealized profit cushion is locked on the core trade.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory 14-period ATR volatility normalization filter combined with a 5-minute volume profile delta check to prevent entry during liquidity void wicks.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or scale-out execution as soon as floating profit crosses +$15.00 to prevent gains from evaporating."
-      },
-      "synthesis_directive": "Enforce a hard $5.00 maximum risk ceiling per transaction and lock in asymmetric profit harvesting at +$15.00+ while banning all anti-martingale averaging down."
-    },
-    {
       "evolution_timestamp": "2026-11-26T19:47:47.966725+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight stops during high-volatility XAUUSD expansion, compounded by an outlier -$20.56 loss where the stop-loss was placed too wide relative to normal risk parameters.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation as soon as unrealized profit hits +$10.00 to prevent evaporation of gains."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD risk exposures and halt consecutive entries following any stop-out event."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:49:04.484649+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked micro-pullbacks breaching overly rigid tight stops, compounded by an outlier -$20.56 loss (Ticket 1705772492) where volatility expansion bypassed normal risk boundaries.",
+        "risk_asymmetry_flaw": "Losses (-$40.94) severely outweighed wins (+$38.51) due to letting a single high-impact XAUUSD downside spike swell to -$20.56, while profit harvests triggered too early on micro-wins.",
+        "market_regime_mismatch": "Entering during localized liquidity sweeps in high-beta XAUUSD price action without accounting for rapid spread widening and institutional stop-hunting wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit entering multiple simultaneous correlated tranches within a 5-minute window; exactly one position per structural node unless existing position is at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require order book imbalance confirmation and a minimum 3-ATR impulse break of the local micro-range before execution, bypassing low-volume noise wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$6.00 profit to protect gains and ensure asymmetrical win-to-loss ratios of $15.00+."
+      },
+      "synthesis_directive": "Enforce a hard maximum stop-loss ceiling of $5.00 per trade and ban multi-tranche bunching during high-beta XAUUSD liquidity sweeps."
     }
   ]
 }

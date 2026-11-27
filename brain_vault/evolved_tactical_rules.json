@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential entries within 5 minutes of a previous stop-out; no scaling into high-velocity wicks.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum before limit or market orders are triggered.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation as soon as unrealized profit hits +$10.00 to prevent evaporation of gains."
+  "pyramiding_rule": "Strictly prohibit entering multiple simultaneous correlated tranches within a 5-minute window; exactly one position per structural node unless existing position is at breakeven.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require order book imbalance confirmation and a minimum 3-ATR impulse break of the local micro-range before execution, bypassing low-volume noise wicks.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$6.00 profit to protect gains and ensure asymmetrical win-to-loss ratios of $15.00+."
 }
