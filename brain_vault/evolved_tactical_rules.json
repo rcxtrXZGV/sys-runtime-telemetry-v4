@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to positions within 50 pips of an existing active stop-loss to eliminate cascading drawdown blocks.",
+  "pyramiding_rule": "Strict prohibition of scaling into consecutive orders within a 3-minute window; subsequent entries require a verified structural higher-low or lower-high confirmation plus positive open trade equity.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry authorization during top-tier high-impact macro news wicks and mandatory ATR compression checks prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial close once floating profits reach +$15.00 to prevent evaporation into negative closures."
+  "new_mandatory_entry_filter": "Order execution is strictly blocked unless the localized order-book imbalance exceeds 1.6x and the 14-period ATR filter confirms volatility is within normal operating bounds.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit lock-downs or full trailing stop activation the absolute moment open profit reaches +$12.00 to guarantee asymmetric $15-$30+ outcomes while capping drawdowns."
 }
