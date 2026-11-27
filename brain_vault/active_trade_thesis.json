@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T19:04:36.037013+00:00",
+  "timestamp": "2026-11-27T19:52:46.807913+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 82,
+  "confidence_score": 85,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 0.0,
   "tp_price": 0.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "Zero active open positions on broker. No open risk to harvest or defend. Standing down harvest triggers.",
-  "trade_thesis": "XAUUSD experienced an aggressive momentum thrust from 3655.0 to an intraday high of 3682.3, but the latest 15m candle closed back at 3674.2 with an 8.1-dollar upper wick rejection on contracting volume (1817 vs 3489 previous), indicating buy-side liquidity absorption and exhaustion at the peak. Simultaneously, DXY sits at intraday highs (104.027) and US10Y yields remain elevated at 4.936%, presenting clear intermarket divergence against gold's spike. Entering long at the current level risks chasing an exhausted liquidity sweep, while immediate shorting opposes the strong impulse structure without lower-timeframe breakdown confirmation. Late NY session liquidity decline (19:04 UTC) warrants disciplined capital preservation. Standing aside to await a clean retest and structural base formation around the 3660-3665 zone."
+  "reversal_sentinel_assessment": "Zero active positions currently open. Sentinel standing by with full monitoring bandwidth.",
+  "trade_thesis": "Gold (XAUUSD) printed an aggressive momentum expansion from 3659.4 into an intraday high of 3682.3, but the latest 15m candle displays an 8-dollar upper rejection wick with volume tapering from 3,489 to 1,817 contracts. Concurrently, DXY is holding firm above 104.02 and US10Y yields remain elevated at 4.936%. With Friday late-session liquidity drying up toward weekend close (19:52 UTC), chasing this extended spike into liquidity resistance presents an unfavorable asymmetric risk profile. Standing aside to preserve capital until structural consolidation or a confirmed pullback retest forms."
 }
