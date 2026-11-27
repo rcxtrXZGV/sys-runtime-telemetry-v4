@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing or flat positions within a 120-second window; zero micro-pyramiding permitted when spread exceeds 35 pips on XAUUSD.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory structural liquidity sweep check and ATR volatility normalization filter before order authorization.",
-  "profit_harvest_threshold": "Aggressively secure green runs starting at +$15.00 via trailing micro-steps to guarantee asymmetric +$15 to +$30 payoffs."
+  "pyramiding_rule": "Strict prohibition against cluster-adding to losing positions or executing secondary entries within 50 pips of an existing active trade without a confirmed momentum structural shift.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero order execution allowed during high-impact spread expansion phases; mandatory multi-timeframe ATR volatility check to ensure entry buffers exceed noise thresholds.",
+  "profit_harvest_threshold": "Initiate aggressive trailing and partial profit locks as soon as floating profit reaches +$12.00 to guarantee minimum asymmetric execution into the $15-$30+ target zone."
 }
