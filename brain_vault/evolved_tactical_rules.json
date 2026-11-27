@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions within 60 seconds of a previous loss or inside a $2.00 price band.",
+  "pyramiding_rule": "Prohibit adding to positions within 15 minutes of a prior entry; require a validated 1.5 ATR continuation signal before any scale-in.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 3-standard-deviation volume confirmation and zero high-impact macroeconomic news window within 15 minutes prior to entry.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit lock at $15.00 unrealized gain, forcing exits before profit evaporation occurs."
+  "new_mandatory_entry_filter": "Mandate order book depth imbalance > 65% and multi-timeframe RSI non-exhaustion before executing any XAUUSD order.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation the exact millisecond floating profit hits +$8.00 to lock in $15-$30+ runners."
 }
