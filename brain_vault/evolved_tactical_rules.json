@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential scaling into the same directional leg within a 60-second window (preventing clustered losses seen in tickets 1707575809, 1707578236, and 1707578239).",
+  "pyramiding_rule": "Zero pyramiding allowed within 30 seconds of an existing position or within a $2.00 price band on XAUUSD to prevent cascading stop-out sequences.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 3-pip spread buffer away from recent liquidity pools before executing any XAUUSD order.",
-  "profit_harvest_threshold": "Aggressively trigger SENTINEL_PEAK_HARVEST at +$15.00 floating profit to lock in asymmetric risk-reward ratios."
+  "new_mandatory_entry_filter": "Require verified order-book imbalance confirmation and a minimum 3-pip ATR expansion buffer before committing volume on XAUUSD.",
+  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 profit to secure green runs and force an asymmetric $15-$30+ reward-to-risk profile."
 }
