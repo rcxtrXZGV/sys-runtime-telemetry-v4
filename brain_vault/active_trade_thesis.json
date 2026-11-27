@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T12:16:55.418467+00:00",
+  "timestamp": "2026-11-27T12:18:34.344518+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 55,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3610.0,
   "tp_price": 3645.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions to manage; current broker equity is flat with 0 active positions.",
-  "trade_thesis": "Gold (XAUUSD) has pushed up to intraday highs near 3634.70 earlier but is currently showing a minor retracement on the last 15-minute candles down to 3620.39. Volume has tapered off after the recent impulse waves, and price action is consolidating within a tight range. DXY is showing mild upward drift while US10Y yields are firming up near 4.848. This creates a choppy, consolidating environment lacking a pristine breakout or liquidity sweep setup. Maintaining discipline and waiting for a cleaner high-asymmetric setup."
+  "reversal_sentinel_assessment": "No open positions active on broker. Monitoring liquidity sweeps and breakout structures.",
+  "trade_thesis": "XAUUSD recently retraced from intraday highs of 3634.7 down to 3620.39. The latest 15m candles display choppy consolidation following the earlier peak harvest. DXY is ticking upward towards 103.81, exerting short-term pressure. Desks advise waiting for a definitive momentum sweep or retest of key support before deploying capital to protect the $59.86 equity baseline."
 }
