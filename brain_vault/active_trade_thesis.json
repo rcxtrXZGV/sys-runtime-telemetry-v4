@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-27T03:50:47.414469+00:00",
+  "verdict": "WAIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 50,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 0.0,
+  "tp_price": 0.0,
+  "trailing_activation_profit": 5.0,
+  "reversal_sentinel_assessment": "No open positions currently active. Monitoring market conditions for liquidity sweeps.",
+  "trade_thesis": "Gold (XAUUSD) has experienced an impulsive push toward intraday highs of 3634.7, followed by a minor pullback and consolidation around 3620.39. While the structural macro trend remains bullish, the immediate 15-minute price action shows a short-term rejection wick at the highs and choppy consolidation. To protect our account and compound properly, we await a cleaner sweep and structural confirmation before deploying capital."
+}
