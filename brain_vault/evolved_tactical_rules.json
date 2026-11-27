@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); allow scaling into winners only after a verified 1:1 R:R structural break.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero execution allowed during high-impact news windows and within 30 minutes of daily session closes; require an ATR volatility normalization threshold before entry.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial profit harvesting once floating profit hits +$15.00 to prevent unrealized gains from evaporating."
+  "pyramiding_rule": "Zero pyramiding into falling knives or expanding volatility bands; secondary entries are strictly prohibited unless the primary position has locked in positive trailing profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory 15-minute ATR volatility expansion filter and order book imbalance check before any XAUUSD execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop-lock and partial profit harvesting the exact moment floating profit touches $15.00 to guarantee asymmetric win capture."
 }

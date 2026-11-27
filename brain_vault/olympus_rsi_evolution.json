@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:23:57.577496+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncontrolled outlier loss on ticket 1705772492 (-$20.56) caused by a wide and unmanaged stop loss during high volatility expansion on XAUUSD, destroying the statistical edge accumulated by multiple smaller wins.",
-        "risk_asymmetry_flaw": "Inverted payoff matrix: average losses (-$6.64) exceeded average wins (+$2.34) due to premature micro-profit trimming (scratches under +$0.50) and holding losers into structural expansion wicks.",
-        "market_regime_mismatch": "Executing sequential entries into tight clusters (tickets 2123013996 and 2123016852) during localized trend exhaustion, treating high-frequency whipsaws as continuation breakouts."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of scaling into positions within 15 pips of a prior entry; require a verified 1R favorable excursion and structural break before adding risk.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution during high-impact volume spikes unless order-flow imbalance exceeds 75% delta and price clears the 5-period ATR envelope.",
-        "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 profit to ensure wins achieve the mandatory $15-$30+ target asymmetric skew."
-      },
-      "synthesis_directive": "Hard-cap individual trade risk at $5.00 absolute max while enforcing dynamic trailing stops to capture $15.00+ expansion runs."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:25:38.675376+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive drawdown on ticket 1705772492 (-$20.56) caused by a wide stop-loss placement combined with aggressive continuation entries during macro volatility wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing or partial profit harvesting once floating profit hits +$15.00 to prevent unrealized gains from evaporating."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD, ban session-close clustering, and mandate multi-tier profit harvesting to keep winning payouts between $15.00 and $30.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:44:39.392683+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, and multiple entries (Tickets 1707575809 and 1707578236) clustered into adverse high-velocity wicks without rapid profit protection.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to an inverted risk-reward profile where outsized stop-outs exceeded micro-harvested gains.",
+        "market_regime_mismatch": "XAUUSD high-impact session transitions triggered premature execution loops and momentum chases during liquidity voids, causing floating profits to evaporate before reaching optimal harvest gates."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into falling knives or expanding volatility bands; secondary entries are strictly prohibited unless the primary position has locked in positive trailing profit.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory 15-minute ATR volatility expansion filter and order book imbalance check before any XAUUSD execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop-lock and partial profit harvesting the exact moment floating profit touches $15.00 to guarantee asymmetric win capture."
+      },
+      "synthesis_directive": "Strictly cap maximum risk per trade at $5.00, ban all counter-trend averaging, and force aggressive profit locking at +$15.00+ to reverse the loss-to-win asymmetry."
     }
   ]
 }
