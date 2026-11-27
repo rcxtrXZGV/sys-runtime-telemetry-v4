@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:07:21.419804+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Major outlier loss (-$20.56 on ticket 1705772492) caused by a delayed stop-loss reaction or wide gap during high-volatility XAUUSD momentum pushes, combined with repeated clustered entries right before stop-outs.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) because the engine allowed a single catastrophic loss to exceed 4x the target max loss threshold of $5.00, violating strict capital preservation boundaries.",
-        "market_regime_mismatch": "Entering during aggressive liquidity sweeps and institutional news wicks on Gold without confirming microsecond order-book imbalances, causing immediate structural stop-hunting."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute ban on adding positions within 15 seconds or 2.00 points of a previous failed entry; strictly prohibit averaging down into falling or rising momentum knives.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated structural liquidity sweep and volume delta divergence confirmation on the 1-second timeframe prior to executing any order.",
-        "profit_harvest_threshold": "Aggressively trigger trailing profit lock-in via SENTINEL_PEAK_HARVEST the moment unrealized profit hits +$15.00 to prevent gains from evaporating back to scratch."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar stop-loss cap of $5.00 per trade with zero tolerance for slippage expansion, and mandate immediate profit harvesting on all runs reaching +$15.00 or higher."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:08:55.146009+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled outlier drawdown on ticket 1705772492 resulting in a -$20.56 loss due to a lagging stop-loss placement during a volatile liquidity sweep.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing stop activation and partial harvesting at +$10.00 to ensure profit retention and prevent evaporation."
       },
       "synthesis_directive": "Enforce strict atomic order spacing and dynamic volatility-adjusted stop buffers to eliminate clustered liquidity hunts and protect asymmetric return targets."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:43:23.051873+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Consecutive micro-scalp executions on XAUUSD near structural liquidity pockets caused multiple tight stop losses and a larger sweep during a peak harvest failure.",
+        "risk_asymmetry_flaw": "Stop losses were placed too close to aggressive entry triggers without structural confirmation, resulting in premature clipping while winners were cut short or capped below $5.50.",
+        "market_regime_mismatch": "Algorithmic entry triggers fired directly into micro-volatility wicks and consolidation mid-ranges without filtering for local order book imbalance."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition on opening multiple concurrent micro-lots in the same direction within a 120-second window to prevent stacked liquidation clusters.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a minimum 3-tick directional displacement backed by volume delta or a structural sweep confirmation prior to order execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or tranche profit capture the moment floating profit hits +$12.00 to guarantee a $15-$30+ distribution."
+      },
+      "synthesis_directive": "Enforce strict spatial separation between entries and absolute adherence to the $4-$6 loss cap while scaling dynamic profit targets toward the $15-$30 regime."
     }
   ]
 }
