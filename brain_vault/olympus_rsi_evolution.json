@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:25:11.361120+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD during the 13:36 session caused a severe -$20.56 drawdown because the stop-loss distance expanded beyond acceptable risk thresholds, coupled with clustered micro-entries (tickets 2123013996 and 2123016852) that acted as premature scaling into high-frequency retracements.",
-        "risk_asymmetry_flaw": "The largest single loss (-$20.56) completely wiped out the positive expectancy accumulated across multiple wins due to a failure to clamp down maximum dollar risk per trade, violating the $4-$6 absolute risk ceiling.",
-        "market_regime_mismatch": "Executing trades into erratic high-velocity momentum wicks without a macro volatility dampener, causing stop-losses to be clipped on standard market noise."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding consecutive volume on the same asset within a 60-second window to prevent inadvertent averaging into falling or rising knives.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe order block confirmation and ATR-based volatility filter before order authorization, absolutely forbidding entries during sub-minute expansion wicks.",
-        "profit_harvest_threshold": "Instantly lock in trailing profits via Sentinel Peak Harvest once a position achieves +$10.00 floating profit to ensure the $15-$30+ asymmetric win profile."
-      },
-      "synthesis_directive": "Enforce a rigid $5.00 maximum dollar risk per trade across all assets and trigger aggressive Sentinel Peak Harvest on all winning legs at +$10.00 to eliminate outsized tail losses."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:26:47.011766+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution during high-volatility liquidity sweeps where stop-losses were placed inside micro-structural noise bands, compounded by a severe outlier loss (-$20.56) caused by a lagging stop adjustment.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Secure 50% of floating profits instantly upon reaching +$8.00, trailing the remaining position dynamically to capture asymmetric runs up to +$30.00."
       },
       "synthesis_directive": "Enforce a hard $5.00 absolute loss ceiling per trade and ban correlated clustering to eliminate outlier drawdowns instantly."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:50:21.780793+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive SL tolerance on ticket 1705772492 (-$20.56 on 0.01 lot) combined with concurrent duplicate order execution at 21:14:10 during high-volatility expansion.",
+        "risk_asymmetry_flaw": "Average win size ($4.27) was capped while catastrophic out-of-bounds losses ($20.56) were allowed due to static wide distance SL settings under news spikes.",
+        "market_regime_mismatch": "Attempted trend-following entries during severe micro-structure liquidity squeezes and late-session volatility spikes without ATR dynamic buffering."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict zero-tolerance on same-second multi-entry execution; new positions require min +1.5 ATR floating profit on previous position before adding size.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require 15-minute ATR compression confirmation and minimum 1:3 Risk-to-Reward clearance before order authorization.",
+        "profit_harvest_threshold": "Lock 50% position size at +$7.50 floating profit and trail remaining SL tight at 1.0x ATR."
+      },
+      "synthesis_directive": "Enforce hard $5.00 max hard stop per 0.01 lot on XAUUSD and ban simultaneous order firing to guarantee positive expectancy."
     }
   ]
 }
