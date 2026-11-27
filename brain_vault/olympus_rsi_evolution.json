@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:52:24.244964+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncontrolled slippage and oversized initial stop-losses on high-volatility XAUUSD wicks, notably ticket 1705772492 resulting in a severe -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 total) significantly outweighed wins (+$38.51 total) due to holding losing positions into widening spreads while prematurely cutting winners.",
-        "market_regime_mismatch": "Entering during aggressive high-impact liquidity sweeps where micro-pullbacks triggered tight stops followed immediately by continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions (anti-martingale) within a 15-minute window following any prior stop-loss execution on the same asset.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require dynamic ATR expansion confirmation and zero high-impact news windows (\u00b115 minutes) prior to order execution.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit reaches +$5.00 to lock in gains and prevent evaporation."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and immediately activate trailing stop-locks on any position crossing +$5.00 floating profit."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:53:57.206687+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight stop-losses during high volatility on XAUUSD, coupled with an outlier catastrophic loss (-$20.56 on ticket 1705772492) caused by a wide stop-loss that failed to isolate risk.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger immediate partial or full SENTINEL_PEAK_HARVEST when floating profit hits the +$15 to +$30 band to prevent profit evaporation."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade on XAUUSD, completely vetoing news-window entries and locking in profits instantly upon reaching the +$15 target band."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T10:24:50.147152+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "A single catastrophic outlier loss (-$20.56 on ticket 1705772492) dwarfed all gains, caused by a catastrophic stop-loss placement failure relative to localized volatility, combined with consecutive micro-scalp stops taken during tight ranging consolidation.",
+        "risk_asymmetry_flaw": "Risk management failed on high-volatility XAUUSD surges, allowing a single trade to lose over $20 while winners were prematurely truncated between $0.39 and $5.34, failing the $15-$30 target ratio.",
+        "market_regime_mismatch": "The engine engaged multiple rapid positions during high-impact liquidity wicks without waiting for order-flow confirmation, trapping positions immediately against structural noise."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding consecutive volume (scaling in) within a 50-pip window during high volatility; all subsequent entries require a proven 1R profit lock on the pioneer trade.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory structural sweep confirmation via volume-weighted order block divergence before order execution on XAUUSD.",
+        "profit_harvest_threshold": "Trigger trailing stop execution instantly upon reaching +$8.00 floating profit, securing a minimum +$5.00 harvest to prevent run evaporation."
+      },
+      "synthesis_directive": "Hard-cap absolute maximum risk per trade strictly at $5.00 and enforce aggressive profit locking at +$8.00 to guarantee asymmetric win-to-loss ratios."
     }
   ]
 }

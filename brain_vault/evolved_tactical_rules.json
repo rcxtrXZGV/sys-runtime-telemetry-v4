@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions or placing multiple correlated tickets within a 10-pip range during high-frequency volatility regimes.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 5 minutes prior to and following tier-1 macro news releases; volume-weighted momentum confirmation required on the 1M chart.",
-  "profit_harvest_threshold": "Trigger immediate partial or full SENTINEL_PEAK_HARVEST when floating profit hits the +$15 to +$30 band to prevent profit evaporation."
+  "pyramiding_rule": "Strict prohibition against adding consecutive volume (scaling in) within a 50-pip window during high volatility; all subsequent entries require a proven 1R profit lock on the pioneer trade.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory structural sweep confirmation via volume-weighted order block divergence before order execution on XAUUSD.",
+  "profit_harvest_threshold": "Trigger trailing stop execution instantly upon reaching +$8.00 floating profit, securing a minimum +$5.00 harvest to prevent run evaporation."
 }
