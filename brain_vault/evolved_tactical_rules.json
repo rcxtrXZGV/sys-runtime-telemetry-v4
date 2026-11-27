@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a prior execution or during elevated high-impact ATR expansion candles to prevent compounding into falling/rising wicks.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require institutional order-flow imbalance confirmation combined with a minimum 3-ATR buffer away from immediate structural liquidity pools prior to order entry.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit locks at +$10.00 floating profit to ensure winners consistently scale into the +$15.00 to +$30.00 target bracket."
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Strict prohibition of additional position building unless existing position is locked at minimum +1.5x ATR trailing profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 00:00 UTC and enforce a minimum 15-second debouncing window to prevent concurrent multi-ticket orders.",
+  "profit_harvest_threshold": "Initiate dynamic trailing stop to lock +$3.00 immediately once floating profit reaches +$5.00, allowing uncapped expansion to $15-$30 targets."
 }

@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:44:39.392683+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, and multiple entries (Tickets 1707575809 and 1707578236) clustered into adverse high-velocity wicks without rapid profit protection.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to an inverted risk-reward profile where outsized stop-outs exceeded micro-harvested gains.",
-        "market_regime_mismatch": "XAUUSD high-impact session transitions triggered premature execution loops and momentum chases during liquidity voids, causing floating profits to evaporate before reaching optimal harvest gates."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into falling knives or expanding volatility bands; secondary entries are strictly prohibited unless the primary position has locked in positive trailing profit.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory 15-minute ATR volatility expansion filter and order book imbalance check before any XAUUSD execution.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop-lock and partial profit harvesting the exact moment floating profit touches $15.00 to guarantee asymmetric win capture."
-      },
-      "synthesis_directive": "Strictly cap maximum risk per trade at $5.00, ban all counter-trend averaging, and force aggressive profit locking at +$15.00+ to reverse the loss-to-win asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:46:21.622418+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to an excessively wide stop-loss placement combined with adverse volatility expansion during high-impact session transitions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit locks at +$10.00 floating profit to ensure winners consistently scale into the +$15.00 to +$30.00 target bracket."
       },
       "synthesis_directive": "Enforce structural distance filters on all XAUUSD entries to keep hard risk strictly capped below $5.00 while expanding trailing harvest triggers to capture $15-$30 payouts."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:50:14.798005+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Simultaneous duplicate order execution (tickets 1707578236 & 1707578239 at 21:14:10) during illiquid late-session wicks, creating double risk exposure into momentum reversals.",
+        "risk_asymmetry_flaw": "Take-profits capped wins at +$5.00-$5.34 while unhedged multi-ticket clustering allowed combined losses to hit -$5.82, capping the reward-to-risk ratio below 1:1.",
+        "market_regime_mismatch": "Entering breakout orders during late-NY session chop (21:00-23:00 UTC) when volume decay causes wide spread expansion and rapid stop runs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition of additional position building unless existing position is locked at minimum +1.5x ATR trailing profit.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 00:00 UTC and enforce a minimum 15-second debouncing window to prevent concurrent multi-ticket orders.",
+        "profit_harvest_threshold": "Initiate dynamic trailing stop to lock +$3.00 immediately once floating profit reaches +$5.00, allowing uncapped expansion to $15-$30 targets."
+      },
+      "synthesis_directive": "Enforce strict single-ticket entry debouncing and scale trailing stops dynamically to ensure minimum 1:2.5 risk-to-reward ratio on all XAUUSD positions."
     }
   ]
 }
