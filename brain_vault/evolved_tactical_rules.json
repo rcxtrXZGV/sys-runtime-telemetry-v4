@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit sequential scaling into losing positions within a 120-second window to prevent runaway micro-drawdowns.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require institutional volume delta confirmation and 5-period ATR normalization before order execution to avoid high-impact liquidity wicks.",
-  "profit_harvest_threshold": "Trigger trailing stops or scale out partials immediately upon reaching +$15.00 to ensure asymmetry matches the $15-$30+ target profile."
+  "pyramiding_rule": "Strict prohibition against adding positions (no falling knife scaling) within 15 minutes of a prior stopped order on the same instrument.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Volume-weighted order block confirmation and ATR expansion threshold check required prior to entry execution.",
+  "profit_harvest_threshold": "Immediate partial harvest activation upon reaching +$15.00 unrealized profit with trailing stop locked to breakeven + spread."
 }

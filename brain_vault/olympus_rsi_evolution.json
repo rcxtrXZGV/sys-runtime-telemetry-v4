@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:44:47.508334+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked volatility expansion caused stop-loss hunting on XAUUSD, peaking with a single catastrophic loss of -$20.56 due to an overly wide, unmanaged trailing stop during a high-velocity impulsive directional shift.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) severely outweighed wins (+$38.51 aggregate) because the system allowed a catastrophic outlier loss (-$20.56) while cutting winning trades prematurely before reaching the optimal $15-$30 asymmetric target band.",
-        "market_regime_mismatch": "Entering positions during high-frequency liquidity sweeps without checking micro-structural imbalances, leading to immediate stop-loss hits or trapped multi-entry tickets (e.g., ticket cluster 2123016) during falling-knife corrections."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding consecutive volume (no grid or averaging down) into an active drawdown; pyramiding is only authorized after existing positions have hit breakeven plus a +$5.00 trailing buffer.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory ATR-based volatility cap and volume profile imbalance check; entry is blocked if price action is within 10 pips of an unmitigated high-impact liquidity wick or if the calculated stop-loss exceeds $5.00.",
-        "profit_harvest_threshold": "Aggressively trigger partial profit locks at +$10.00 and full trailing stops at +$15.00 to guarantee asymmetric win capture between $15.00 and $30.00."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade with zero tolerance for unmanaged drawdown spikes, while forcing winning trades to run past the $15.00 threshold through dynamic trailing harvest triggers."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:46:22.987119+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped stop-loss expansion on ticket 1705772492 causing a -$20.56 drawdown, breaching the strict $4-$6 risk containment threshold.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing stops or scale out partials immediately upon reaching +$15.00 to ensure asymmetry matches the $15-$30+ target profile."
       },
       "synthesis_directive": "Enforce a hard maximum stop-loss ceiling of $5.00 per trade on XAUUSD and mandate aggressive profit harvesting between $15.00 and $30.00 while banning manual holding of losses beyond the safety threshold."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:20:42.447099+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by a fixed stop-loss placed too far into volatility expansion zones during a high-impact liquidity sweep, combined with improper multi-entry clustering.",
+        "risk_asymmetry_flaw": "Losses (-$33.22) severely outweighed wins (+$11.68) because the engine allowed adverse drawdowns to expand up to $20.56 while cutting winning trades prematurely for negligible gains like +$0.39.",
+        "market_regime_mismatch": "Executing sequential entries during choppy micro-reversals in XAUUSD without filtering out high-frequency liquidity wicks, resulting in multiple consecutive stop-out events."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions (no falling knife scaling) within 15 minutes of a prior stopped order on the same instrument.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Volume-weighted order block confirmation and ATR expansion threshold check required prior to entry execution.",
+        "profit_harvest_threshold": "Immediate partial harvest activation upon reaching +$15.00 unrealized profit with trailing stop locked to breakeven + spread."
+      },
+      "synthesis_directive": "Hard-cap all individual trade risk strictly between $4.00 and $6.00 while enforcing aggressive trailing execution to let winners run to $15.00+."
     }
   ]
 }
