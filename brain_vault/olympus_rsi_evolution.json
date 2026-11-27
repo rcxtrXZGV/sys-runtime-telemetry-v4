@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:34:09.442530+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-loss distance on ticket 1705772492 causing an unacceptable -$20.56 drawdown (50% of total loss budget), compounded by redundant simultaneous multi-order entries at 21:14:10 UTC.",
-        "risk_asymmetry_flaw": "Asymmetric payoff inversion: premature trailing of winners resulted in micro-wins (+$0.39, +$0.49) while bad fills and wide initial stops allowed individual losses to reach up to -$20.56.",
-        "market_regime_mismatch": "Executing trend-following breakout orders during volatile liquidity-seeking expansion wicks without ATR-adjusted volatility entry filters."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "STRICT_PROHIBITION: No secondary entries permitted within 15 minutes of an open position or until the primary position achieves at least +1.5x ATR in floating profit.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require M5 ATR volatility contraction below 1.2x median prior to breakout execution; auto-reject order generation during high-impact news windows.",
-        "profit_harvest_threshold": "Harvest 50% lot size upon reaching +$10.00 unrealized gain, trailing the residual position with a 1.0x ATR dynamic stop; prohibit premature scratch closures under +$2.00 unless structural reversal triggers."
-      },
-      "synthesis_directive": "Enforce a hard absolute risk cap of $5.00 per 0.01 lot on XAUUSD, eliminate duplicate concurrent executions, and suppress micro-profit harvesting to achieve a minimum 1:3 Risk-Reward ratio."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:37:39.193033+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked micro-pullbacks triggering tight algorithmic stop-losses during high-volatility XAUUSD momentum expansions, compounded by a severe -$20.56 outlier failure where the stop placement failed to account for localized spread and liquidity vacuum wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in via SENTINEL_PEAK_HARVEST once unrealized gain hits +$15.00 to prevent profit evaporation."
       },
       "synthesis_directive": "Enforce a hard absolute stop-loss ceiling of $5.00 per trade across all instruments with zero tolerance for manual override or wider placement."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:14:15.212736+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by unconstrained volatility expansion and inadequate initial stop-loss enforcement during high-momentum XAUUSD breakout waves.",
+        "risk_asymmetry_flaw": "Risk-reward profile inverted because average losses (-$6.64) heavily outweighed average wins (+$2.34), driven by premature profit harvesting on marginal gains while allowing bad trades to breach the optimal -$5.00 threshold.",
+        "market_regime_mismatch": "System entered during high-impact liquidity sweeps and momentum wicks, leading to immediate stop-hunting and consecutive clustered entries that exacerbated drawdowns."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 180 seconds or 2.0 ATR of a previous loss or in the direction of a liquidity wick.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory multi-timeframe volume-weighted spread and order-book imbalance confirmation; reject all trades if ATR exceeds the 20-period median by >1.8x.",
+        "profit_harvest_threshold": "Aggressively trigger trailing stop-locks once floating profit hits +$15.00 to guarantee asymmetric retention toward the +$30.00 target window."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses and lock in trailing mechanics at +$15.00 to permanently eliminate outlier losses and enforce positive risk asymmetry."
     }
   ]
 }
