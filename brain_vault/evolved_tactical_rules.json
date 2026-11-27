@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; new entries on the same asset require a minimum 1.5 ATR spatial separation and a 3-bar momentum confirmation.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero entry authorized within 15 minutes of high-impact macroeconomic data windows; must verify order-book imbalance via multi-timeframe volume profile delta.",
-  "profit_harvest_threshold": "Lock in trailing stop-loss to breakeven + commission once floating profit hits +$3.50, and scale out 50% of volume at +$10.00 to guarantee asymmetric $15-$30 payouts."
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Strictly prohibit opening multiple entries within a 3-minute window (no concurrent micro-stacking into potential wicks); subsequent scale-ins require a minimum 3.0 point verified trend displacement.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory order block and volume delta confirmation filter: deny all entries if the 1-minute ATR exceeds 2.5x the 20-period moving average.",
+  "profit_harvest_threshold": "Trigger partial scaling or aggressive breakeven locking the moment floating profit hits +$4.00 to prevent evaporation, allowing the remainder to run to +$15.00-$30.00."
 }
