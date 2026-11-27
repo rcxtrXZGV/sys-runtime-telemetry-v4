@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of consecutive orders within 5 pips of a prior losing position; mandatory confirmation of momentum shift before any scale-in.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume and ATR expansion filter must confirm directional momentum before order dispatch, entirely blocking trades during low-liquidity micro-consolidation ranges.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit hits $12.00, ensuring absolute lock-in of the $15-$30+ asymmetric win target."
+  "pyramiding_rule": "Absolute prohibition against averaging down or initiating multiple entries within a 3-minute window during high volatility intervals.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a validated ATR volatility contraction filter and confirmed order book imbalance before ticket execution to avoid wick traps.",
+  "profit_harvest_threshold": "Aggressively secure partial/full profit when the position reaches +$15.00 to prevent evaporation down to fractional gains."
 }
