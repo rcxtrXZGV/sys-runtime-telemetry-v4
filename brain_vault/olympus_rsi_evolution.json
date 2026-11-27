@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:05:46.484390+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped single-ticket volatility blowout reaching -$20.56 on XAUUSD, alongside clustered micro-entries near local tops that accumulated unnecessary cumulative slippage and losses.",
-        "risk_asymmetry_flaw": "Max loss of -$20.56 vastly exceeded the highest win of +$5.34, in direct violation of the required $4-$6 loss / $15-$30+ win distribution.",
-        "market_regime_mismatch": "Entering during high-momentum breakout intervals without instant trailing stop-locks caused floating profits to evaporate and immediate stop-out activation during sudden mean-reversion wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit sequential entry clustering within 2.0 price points on XAUUSD; zero additional scaling into active drawdowns.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require confirmed volume expansion and order-flow imbalance via multi-timeframe confirmation before order placement.",
-        "profit_harvest_threshold": "Instantly initiate aggressive trailing mitigation once a trade reaches +$8.00 floating profit to guarantee progression toward the $15-$30+ target zone."
-      },
-      "synthesis_directive": "Enforce an absolute hard stop-loss cap of $5.00 across every XAUUSD ticket while deploying dynamic trailing mechanisms to force winning trades past the $15.00 profit threshold."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:07:29.220485+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and lagging exit execution during high-momentum Gold breakouts, specifically highlighted by ticket 1705772492 resulting in a -$20.56 drawdown due to a delayed stop-loss structure.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate automated trailing profit locks immediately upon crossing +$10.00 to guarantee minimum asymmetric returns of $15-$30+."
       },
       "synthesis_directive": "Enforce hard structural stop-loss limits at $5.00 maximum per ticket on XAUUSD and immediately scale out of winning positions once +$15.00 is realized."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:26:44.741659+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to volatility, allowing adverse price action to expand. Furthermore, clustered orders at 2123013996 and 2123016852 indicate premature pyramiding into choppy Gold liquidity wicks.",
+        "risk_asymmetry_flaw": "Losses averaged -$6.64 while wins averaged only +$2.81, severely violating the $4-$6 loss versus $15-$30+ win asymmetry mandate due to tight profit-taking and wide, unconstrained stop-outs.",
+        "market_regime_mismatch": "The trading engine attempted to scale into micro-trend pullbacks during high-velocity XAUUSD expansion regimes, triggering immediate SL hits on standard 0.01 lots."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly forbidden to stack multiple entries within a 2-pip window; mandatory minimum spacing of 15 pips and proven positive drift on prior tranches before adding volume.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require 3-bar structural volume exhaustion confirmation and zero high-impact news window 15 minutes prior to execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing and partial profit locks when floating profit hits +$15.00 to guarantee the $15-$30+ win distribution."
+      },
+      "synthesis_directive": "Hard-cap all XAUUSD risk strictly below $5.00 while enforcing a minimum +$15.00 profit harvest lock to restore mathematical asymmetry."
     }
   ]
 }
