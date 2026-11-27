@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict block on duplicate timestamps; additional positions authorized only if existing trade floating profit >= +$3.00 with stop-loss locked at break-even.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require 15-minute ATR volatility expansion and spread < 25 cents on XAUUSD; enforce absolute trading ban during high-impact macro news windows.",
-  "profit_harvest_threshold": "Lock 50% lot volume at +$5.00 floating gain and engage trailing stop pegged to 1.5x M5 ATR to target $15-$30 runner extensions."
+  "pyramiding_rule": "Absolute prohibition against pyramiding or placing multiple consecutive counter-trend or tight-cluster orders within a 5-minute window; scale-ins only permitted after a verified 15-pip structural breakout.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero execution permitted during ATR expansion spikes exceeding 2.5x the 20-period moving average unless confirmed by a multi-timeframe liquidity sweep.",
+  "profit_harvest_threshold": "Disable premature micro-exits and enforce a minimum profit threshold trigger of +$15.00 before scaling out, utilizing a dynamic trailing stop that locks in gains only after crossing the asymmetric $15 boundary."
 }

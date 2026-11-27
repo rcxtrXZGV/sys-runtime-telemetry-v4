@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:43:04.912322+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and poorly bracketed structural stop-losses during high-momentum volatility wicks on XAUUSD, highlighted by a single catastrophic -$20.56 loss dwarfing the average win.",
-        "risk_asymmetry_flaw": "Inverted risk-to-reward profile caused by entering consecutive positions into declining structural liquidity without hard-capped downside caps, allowing losses to breach the -$4 to -$6 ceiling while wins capped out at +$5.34.",
-        "market_regime_mismatch": "Engaging in clustered micro-scalping during chaotic session transition wicks where spread expansion and liquidity voids easily trigger tight manual or programmatic stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of grid averaging or scaling into losing positions within a 15-minute rolling window; subsequent entries require confirmed structural breakout and positive floating PnL on prior legs.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution permitted during high-impact spread dilation bands; require absolute volume-weighted average price (VWAP) convergence and a 3-bar structural rejection wick.",
-        "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once a position achieves +$15.00, ensuring winners consistently hit the +$15 to +$30 target corridor."
-      },
-      "synthesis_directive": "Enforce a strict hard stop-loss ceiling of $5.00 on all XAUUSD orders and ban consecutive loss-chasing entries to guarantee positive expectancy."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:44:36.400057+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide stop-loss combined with high-impact momentum ignition wicks on XAUUSD, followed by clustered execution failures during rapid reversals.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Lock 50% lot volume at +$5.00 floating gain and engage trailing stop pegged to 1.5x M5 ATR to target $15-$30 runner extensions."
       },
       "synthesis_directive": "Enforce mandatory absolute $5.00 hard SL ceiling per 0.01 lot on Gold, ban instant duplicate order stacking, and mandate a 1:3 minimum risk-reward profile."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:05:55.310107+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "The massive -$20.56 loss on ticket 1705772492 indicates a catastrophic stop-loss width violation and entry during high-volatility micro-structural expansion, whereas subsequent losses were clustered rapid-fire entries during sideways noise.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total across 5 deals, with a single outlier at -$20.56) vastly outpaced win magnitude (+$11.24 total across 4 deals, max single win +$5.34), violating the strict risk-reward mandate of keeping losses under $6 while letting winners run to $30+.",
+        "market_regime_mismatch": "Entering XAUUSD without filtering out high-impact structural wicks led to immediate stop-loss hunting on tight bracket orders, while trailing and sentinel mechanisms prematurely choked out small profits rather than expanding to the $15-$30 target range."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute prohibition against pyramiding or placing multiple consecutive counter-trend or tight-cluster orders within a 5-minute window; scale-ins only permitted after a verified 15-pip structural breakout.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero execution permitted during ATR expansion spikes exceeding 2.5x the 20-period moving average unless confirmed by a multi-timeframe liquidity sweep.",
+        "profit_harvest_threshold": "Disable premature micro-exits and enforce a minimum profit threshold trigger of +$15.00 before scaling out, utilizing a dynamic trailing stop that locks in gains only after crossing the asymmetric $15 boundary."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade while strictly prohibiting clustered entries and mandating structural profit runs toward the $15-$30 target bracket."
     }
   ]
 }
