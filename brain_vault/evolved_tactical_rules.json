@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of opening multiple scale-in orders on XAUUSD within a 10-minute window to eliminate falling knife pyramiding.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "ATR volatility contraction check combined with directional momentum filter via 14-period EMA alignment prior to order dispatch.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial profit-taking at $15.00 floating gain to guarantee asymmetric 3R+ outcomes."
+  "pyramiding_rule": "Strict prohibition on adding consecutive positions within 30 seconds of an initial entry to prevent falling knife pyramiding during liquidity sweeps.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news releases and without confirmed order-book imbalance confirmation.",
+  "profit_harvest_threshold": "Aggressively secure green runs when floating profit touches +$15.00 using trailing micro-stops to protect gains from evaporating."
 }
