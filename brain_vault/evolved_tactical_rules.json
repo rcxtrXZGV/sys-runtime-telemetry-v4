@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds or 1.5 ATR of a preceding stop-loss event; zero falling knife pyramiding allowed.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require confirmation of order flow imbalance via tick volume delta and structural rejection of round-number liquidity pools prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or Sentinel Peak Harvest as soon as floating profit crosses +$5.00 to lock in positive asymmetry."
+  "pyramiding_rule": "Strictly prohibited to execute multiple orders on the same symbol within a 60-second window; second-stage entries require a confirmed 15-pip structural breakout past the initial entry's favorable MFE zone.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "ATR(14) expansion ratio must exceed 1.2 relative to its 50-period moving average, and order flow imbalance must show institutional delta confirmation before market execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing lock-in at +$10.00 profit, ensuring minimum realized capture of +$5.00 on all winning vectors."
 }

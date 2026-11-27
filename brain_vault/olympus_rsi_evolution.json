@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:23:32.283698+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) driven by an unconstrained stop-loss during high volatility, alongside rapid-fire consecutive entry failures during high-impact structural wicks.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 across 5 trades) heavily outweighed wins (+$11.24 across 4 trades) due to wide stop-losses on initial scaling attempts and premature closing of green runs, failing to respect the $4-$6 loss constraint.",
-        "market_regime_mismatch": "System attempted to trade counter-trend or added positions into sudden liquidity cascades (pyramiding into falling knives/spikes), triggering clustered stop-outs."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to positions within 30 seconds of a prior entry or during active expansion wicks to prevent compounding losses.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Multi-timeframe liquidity sweep confirmation plus zero high-impact scheduled macroeconomic releases within 15 minutes of execution.",
-        "profit_harvest_threshold": "Trigger trailing stops instantly once floating profit hits +$15.00 to lock in asymmetric rewards of +$15 to +$30."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD, ban consecutive rapid-fire entries, and mandate aggressive profit harvesting for gains over $15."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:25:01.645492+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped initial risk exposure on ticket 1705772492 (-$20.56) combined with rapid multi-entry clustering (tickets 2123013996 and 2123016852) during high-velocity volatility expansions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation or Sentinel Peak Harvest as soon as floating profit crosses +$5.00 to lock in positive asymmetry."
       },
       "synthesis_directive": "Never place stop-losses on exact round numbers and lock in profit aggressively at +$5.00 to ensure asymmetric $4 risk vs $15+ reward profiles."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:07:03.904355+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Multiple concurrent entries (tickets 1707578236 and 1707578239) executed at identical price points indicating undisciplined pyramiding into micro-volatility wicks, compounded by a wide trailing stop failure resulting in a -$4.53 loss on ticket 1707834658.",
+        "risk_asymmetry_flaw": "Loss magnitude averaging -$3.17 exceeded win magnitude excluding outliers, while fractional wins like +$0.49 exposed premature tightening of stops into normal noise bands.",
+        "market_regime_mismatch": "Executing micro-scalping orders during high-velocity XAUUSD expansion regimes without volatility-adjusted structural buffer bands caused stop hunts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strictly prohibited to execute multiple orders on the same symbol within a 60-second window; second-stage entries require a confirmed 15-pip structural breakout past the initial entry's favorable MFE zone.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "ATR(14) expansion ratio must exceed 1.2 relative to its 50-period moving average, and order flow imbalance must show institutional delta confirmation before market execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing lock-in at +$10.00 profit, ensuring minimum realized capture of +$5.00 on all winning vectors."
+      },
+      "synthesis_directive": "Enforce strict anti-clustering execution limits on XAUUSD, capping maximum risk at $4.50 while demanding structural momentum confirmation for all entries."
     }
   ]
 }
