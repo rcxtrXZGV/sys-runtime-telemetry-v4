@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:45:25.462204+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped initial stop-loss placement on ticket 1705772492 resulting in a catastrophic -$20.56 drawdown, coupled with duplicate entries during high-velocity retail exhaustion wicks.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$12.69 total) due to holding losing positions while prematurely micro-scalping winning runs for cents.",
-        "market_regime_mismatch": "Aggressive counter-trend entries during high-impact expansion candles where spreads widened and volatility swept micro-stops before reversing."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to losing positions; zero pyramiding allowed unless the prior entry has achieved a minimum +$10.00 locked profit and structural breakout confirmation.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory structural liquidity sweep identification and multi-timeframe MACD/RSI divergence alignment prior to order submission.",
-        "profit_harvest_threshold": "Initiate dynamic trailing stop protection at +$8.00 and execute full harvest protocol if momentum divergence triggers between +$15.00 and +$30.00."
-      },
-      "synthesis_directive": "Enforce a rigid $5.00 maximum stop-loss cap on all XAUUSD executions while letting winning trades expand to the $15-$30 asymmetric target zone."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:47:05.998140+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to a wide stop-loss execution combined with high-impact volatility wicks, compounded by micro-lot cluster stacking (tickets 1707575809 and 1707578239) entering into micro-pullbacks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively lock in scaling profits starting at +$10.00 while trailing stops tightly to ensure wins run toward the $15-$30 target envelope."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate trailing stop activation once positions cross +$10.00 profit."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:07:21.419804+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Major outlier loss (-$20.56 on ticket 1705772492) caused by a delayed stop-loss reaction or wide gap during high-volatility XAUUSD momentum pushes, combined with repeated clustered entries right before stop-outs.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) because the engine allowed a single catastrophic loss to exceed 4x the target max loss threshold of $5.00, violating strict capital preservation boundaries.",
+        "market_regime_mismatch": "Entering during aggressive liquidity sweeps and institutional news wicks on Gold without confirming microsecond order-book imbalances, causing immediate structural stop-hunting."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Absolute ban on adding positions within 15 seconds or 2.00 points of a previous failed entry; strictly prohibit averaging down into falling or rising momentum knives.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a validated structural liquidity sweep and volume delta divergence confirmation on the 1-second timeframe prior to executing any order.",
+        "profit_harvest_threshold": "Aggressively trigger trailing profit lock-in via SENTINEL_PEAK_HARVEST the moment unrealized profit hits +$15.00 to prevent gains from evaporating back to scratch."
+      },
+      "synthesis_directive": "Enforce a hard absolute dollar stop-loss cap of $5.00 per trade with zero tolerance for slippage expansion, and mandate immediate profit harvesting on all runs reaching +$15.00 or higher."
     }
   ]
 }

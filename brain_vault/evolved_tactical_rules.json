@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid adding positions within 60 seconds of a prior entry or during high-volatility spread expansion wicks to prevent cascading losses.",
+  "pyramiding_rule": "Absolute ban on adding positions within 15 seconds or 2.00 points of a previous failed entry; strictly prohibit averaging down into falling or rising momentum knives.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require dynamic ATR volatility confirmation and zero high-impact macroeconomic news window within +/- 15 minutes before executing any order.",
-  "profit_harvest_threshold": "Aggressively lock in scaling profits starting at +$10.00 while trailing stops tightly to ensure wins run toward the $15-$30 target envelope."
+  "new_mandatory_entry_filter": "Require a validated structural liquidity sweep and volume delta divergence confirmation on the 1-second timeframe prior to executing any order.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit lock-in via SENTINEL_PEAK_HARVEST the moment unrealized profit hits +$15.00 to prevent gains from evaporating back to scratch."
 }
