@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions (no falling knives); limit scale-ins to confirmed momentum legs with trailing breakeven stops.",
+  "pyramiding_rule": "Strictly prohibit adding positions within 50 ticks of an existing cluster; require a validated micro-pullback confirmation on lower timeframes before scaling.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Block all entries during 5-minute ATR expansions exceeding 2.5x the 20-period baseline unless aligned with the higher-timeframe order flow.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit grabs as soon as floating profit crosses +$10.00 to prevent evaporation."
+  "new_mandatory_entry_filter": "Require zero high-impact macroeconomic news releases within +/- 15 minutes and mandatory order-flow imbalance confirmation via volume profile delta.",
+  "profit_harvest_threshold": "Trigger trailing stop lock-in at +$5.00 profit and execute scale-out harvests on any momentum deceleration candle."
 }
