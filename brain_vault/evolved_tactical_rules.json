@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of consecutive grid layering or averaging down into micro-reversals (e.g., tickets 2123013996 and 2123016852 clustering). Additions only permitted after a verified 15-pip structural breakout.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero execution within 3 minutes of high-impact macroeconomic print windows and mandatory ATR volatility filter validation exceeding the 14-period median.",
-  "profit_harvest_threshold": "Aggressively secure green runs and lock trailing stops to breakeven once floating profit hits +$10.00 to prevent evaporation."
+  "pyramiding_rule": "Zero pyramiding allowed within a 60-second window; subsequent entries require a proven 3-pip favorable displacement and a clean retest of localized VWAP.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "No order execution during top-tier high-impact news windows, and strictly require an ATR-based volume confirmation filter before market engagement.",
+  "profit_harvest_threshold": "Instantly initiate trailing stop-locks when floating profit reaches +$10 to secure asymmetric risk profiles targeting +$15 to +$30+ wins."
 }
