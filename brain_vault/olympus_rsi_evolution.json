@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:05:52.412660+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution timing during high-volatility liquidity sweeps caused catastrophic stop-loss breaches, notably ticket 1705772492 losing -$20.56 due to a lagging stop placement and wide spread slippage.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) severely outweighed wins (+$38.51 aggregate) because individual loss spikes breached the $5.00 limit while winning trades were clipped prematurely by tight trailing micro-stops.",
-        "market_regime_mismatch": "Entering XAUUSD during erratic momentum shifts and clustered low-volume micro-entries resulted in over-leveraged clustering and high drawdown hits before trend persistence could actualize."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential order stacking within 5 pips of a prior loss; zero averaging down or adding to floating negative positions.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Volume and spread velocity must remain below 1.5x the 20-period moving average; zero entries permitted during high-impact news candle wicks.",
-        "profit_harvest_threshold": "Initiate aggressive trailing harvest when floating profit crosses +$12.00 to lock gains before retracements trigger."
-      },
-      "synthesis_directive": "Enforce an absolute $5.00 hard stop ceiling on all Gold orders and immediately throttle entries during high-velocity spread expansions."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:08:56.849672+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by holding a losing position against strong XAUUSD volatility without hard ceiling enforcement, combined with consecutive micro-scalp re-entries ('revenge' style grouping) hitting tight trailing stops.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger immediate partial or full scale-out (SENTINEL_PEAK_HARVEST) when floating profit reaches +$15.00 to strictly enforce the $15-$30 asymmetric win profile."
       },
       "synthesis_directive": "Enforce a hard maximum risk cap of $5.00 per trade on XAUUSD and mandate algorithmic profit harvesting at $15.00+ to re-establish strict positive expectancy and eliminate oversized outlier losses."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:36:48.836213+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to immediate micro-volatility, allowing a major adverse price displacement before trigger, while subsequent trades showed clustering and premature capping of gains.",
+        "risk_asymmetry_flaw": "Losses heavily outweighed wins due to a single uncontained outlier loss (-$20.56) breaking the target $4-$6 loss ceiling, combined with micro-scalp wins failing to reach the $15-$30 target envelope.",
+        "market_regime_mismatch": "High-velocity momentum wicks during London/New York session overlaps breached arbitrary fixed-pip stops without respecting order-book liquidity nodes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against pyramiding or adding sequential orders into an active adverse price excursion or falling/rising knife.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a localized order-block sweep confirmation plus a 3-bar volume delta divergence check before any XAUUSD order execution is authorized.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit locks the moment an open position crosses +$12.00 to ensure run extension up to +$30.00."
+      },
+      "synthesis_directive": "Enforce absolute hard stops at $5.00 max on Gold and strictly prohibit unhedged scaling into adverse price momentum."
     }
   ]
 }
