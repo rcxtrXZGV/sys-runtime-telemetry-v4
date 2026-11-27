@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit concurrent order execution within the same 60-second window; require minimum +$5.00 unrealized profit buffer on initial position before authorizing any secondary scale-in.",
+  "pyramiding_rule": "STRICT_BAN on simultaneous multi-orders; dynamic pyramiding authorized only after primary position reaches +1.5x ATR and stop-loss is moved to break-even.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Reject any execution request where calculated distance to hard SL exceeds $5.00 per 0.01 lot or where high-impact economic news releases fall within +/- 15 minutes.",
-  "profit_harvest_threshold": "Lock breakeven at +$4.00 unrealized profit; harvest 50% lot size at +$10.00 and trailing-stop the remainder targeting $20.00+ runs."
+  "new_mandatory_entry_filter": "Block trade execution if 14-period M5 ATR exceeds $4.50 or if duplicate position was initiated on XAUUSD within the last 300 seconds.",
+  "profit_harvest_threshold": "Secure 50% profit harvest at +$5.00 per 0.01 lot and activate a trailing ATR sentinel once floating gain crosses +$8.00."
 }
