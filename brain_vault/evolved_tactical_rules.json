@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions (no scaling in) within 30 minutes of a prior stopped-out order on the same instrument.",
+  "pyramiding_rule": "Enforce a mandatory 180-second execution cooldown between tickets on XAUUSD; prohibit same-timestamp cloning; additions are only permitted when existing position is secured at +1.5 ATR breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Order execution strictly blocked unless ATR-normalized volume confirms trend exhaustion and order-book imbalance exceeds 1.5 standard deviations.",
-  "profit_harvest_threshold": "Immediate partial harvest triggered upon reaching +$5.00 unrealized, with trailing stop locked to breakeven + spread."
+  "new_mandatory_entry_filter": "Reject trade authorization if XAUUSD 5-minute ATR > $3.50 or if open risk exceeds $5.00 per 0.01 lot micro-contract.",
+  "profit_harvest_threshold": "Lock 50% profit at +$6.00 gain and activate dynamic trailing sentinel step to secure minimum +$3.00 run profit on remaining volume."
 }

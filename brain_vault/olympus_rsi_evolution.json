@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:39:25.372279+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution entry overlapping with high-volatility liquidity wicks and unoptimized stop-loss distances, notably ticket 1705772492 experiencing a severe -$20.56 drawdown due to a miscalculated structural stop placement.",
-        "risk_asymmetry_flaw": "Maximum losses (-$20.56) severely outpaced maximum wins (+$5.34), violating the asymmetric return target where losses must stay capped under $6 while winners expand past $15.",
-        "market_regime_mismatch": "Entering during frantic high-impact session transitions where micro-structure price swings easily breached tight stop-losses before momentum could materialize."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of secondary entries or pyramiding within 60 seconds of a primary fill or inside high-volatility micro-ranges to prevent compounding losses into whipsaws.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero order placement allowed during high-impact spread expansion intervals; require verified order-book imbalance and ATR-normalized volatility confirmation.",
-        "profit_harvest_threshold": "Aggressively secure trailing profits via SENTINEL_PEAK_HARVEST once unrealized gain touches +$12.00 to prevent floating profits from evaporating."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD while mandating aggressive trailing harvests on all moves exceeding +$12.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:40:55.877778+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly clustered orders during high-velocity volatility wicks in XAUUSD, leading to consecutive stop-outs and a catastrophic -$20.56 outlier loss due to an unhedged widening stop.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Immediate partial harvest triggered upon reaching +$5.00 unrealized, with trailing stop locked to breakeven + spread."
       },
       "synthesis_directive": "Enforce a hard absolute loss cap of $5.00 per ticket across all asset classes with zero manual override or holding past stop boundaries."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T10:10:29.592008+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped single-trade catastrophic tail risk (-$20.56 on ticket 1705772492) paired with simultaneous duplicate order execution at identical timestamps (tickets 1707578236 and 1707578239 at 21:14:10).",
+        "risk_asymmetry_flaw": "Negative R:R asymmetry where winning trades were micro-harvested prematurely (+$0.39, +$0.49) while bad entries were allowed to bleed beyond the $5.00 systemic threshold, wiping out 9 cumulative wins with 1-2 unchecked losses.",
+        "market_regime_mismatch": "Attempting counter-trend or high-frequency re-entries during volatile late-session expansion wicks without dynamic volatility-adjusted ATR buffers."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Enforce a mandatory 180-second execution cooldown between tickets on XAUUSD; prohibit same-timestamp cloning; additions are only permitted when existing position is secured at +1.5 ATR breakeven.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Reject trade authorization if XAUUSD 5-minute ATR > $3.50 or if open risk exceeds $5.00 per 0.01 lot micro-contract.",
+        "profit_harvest_threshold": "Lock 50% profit at +$6.00 gain and activate dynamic trailing sentinel step to secure minimum +$3.00 run profit on remaining volume."
+      },
+      "synthesis_directive": "Hard-cap maximum risk to $5.00 per 0.01 lot with zero dual-order cloning, letting profitable runs reach $15-$30 via trailing ATR step."
     }
   ]
 }
