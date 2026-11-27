@@ -1,17 +1,6 @@
 {
-  "total_closed_analyzed": 18,
+  "total_closed_analyzed": 17,
   "deals": [
-    {
-      "ticket": 1704811470,
-      "order": 2119715527,
-      "symbol": "EURUSD",
-      "time": "2026-11-25T05:43:02+00:00",
-      "volume": 0.01,
-      "price": 1.09473,
-      "profit": 0.54,
-      "commission": -0.04,
-      "comment": "[sl 1.09469]"
-    },
     {
       "ticket": 1704818950,
       "order": 2119725236,
