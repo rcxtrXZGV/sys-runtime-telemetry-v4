@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T14:08:41.294058+00:00",
+  "timestamp": "2026-11-27T14:12:33.461411+00:00",
   "verdict": "SELL",
   "symbol": "XAUUSD",
   "confidence_score": 84,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3627.5,
-  "tp_price": 3605.0,
+  "sl_price": 3628.5,
+  "tp_price": 3604.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active on broker. Reversal Sentinel actively monitoring for post-execution momentum changes.",
-  "trade_thesis": "XAUUSD exhibited a clear lower-high top wick rejection at $3626.70 following an aggressive liquidity sweep up to $3634.70. The latest 15m candle closed near the low of the range on high volume (1893), signaling institutional selling defense. Concurrently, US10Y yields breaking to intraday highs of 4.848% and DXY advancing to 103.81 create a strong macroeconomic tailwind for a downside move toward the $3605.00 liquidity target."
+  "reversal_sentinel_assessment": "No open positions currently active. Reversal Sentinel is standing by to manage trailing stops once order executes.",
+  "trade_thesis": "XAUUSD printed a clear top wick rejection at 3634.70 followed by an exhausted relief bounce to 3626.70. The current 15m candle exhibits sharp selling pressure closing at 3620.40. Concurrently, DXY is expanding upward to 103.81 and US10Y yields are rising to 4.848%, creating strong fundamental and technical alignment for a bearish move down toward the 3604.00 liquidity zone."
 }

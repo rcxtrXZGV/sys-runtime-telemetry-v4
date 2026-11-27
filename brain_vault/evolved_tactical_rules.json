@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict zero-stacking policy: No second entry permitted until primary deal achieves Breakeven (+1.0 USD net buffer) and minimum 15-minute time decay.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries must only trigger on confirmed momentum acceleration with a minimum 1.5 ATR buffer distance.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require dynamic ATR volatility buffer verification (ATR > 2.5 on M5) and enforce minimum 3-bar structural reversal before order authorization.",
-  "profit_harvest_threshold": "Lock dynamic trail only when trade profit exceeds +$6.00, allowing max 25% peak profit retracement before closing."
+  "new_mandatory_entry_filter": "Require volume profile delta confirmation and a minimum 3-candle structural sweep filter before any XAUUSD market order is dispatched.",
+  "profit_harvest_threshold": "Initiate aggressive trailing and partial profit capture once the position reaches +$12.00 to lock in gains before mean-reversion pullbacks."
 }
