@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:46:16.908808+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide static stop-loss intersecting a high-volatility liquidity sweep wick, compounded by rapid-fire entry clustering during micro-trend exhaustion.",
-        "risk_asymmetry_flaw": "Loss magnitude ($33.22 total) heavily outweighed win magnitude ($11.24 total) because trailing and manual harvest triggers failed to lock in micro-profits before structural counter-trend reversals.",
-        "market_regime_mismatch": "Executing fixed-pip stop parameters during erratic XAUUSD intraday liquidity expansions without accounting for local ATR spikes."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding positions within 15 points of an existing trade cluster or during accelerated velocity wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require mandatory multi-timeframe order book imbalance confirmation and 5-period EMA slope alignment prior to execution.",
-        "profit_harvest_threshold": "Aggressively trigger dynamic breakeven locks and partial harvesting at +$4.00 to guarantee net positive skew."
-      },
-      "synthesis_directive": "Hard cap all individual trade risk strictly between $4.00 and $6.00 while forcing immediate profit-locking mechanisms once trades cross +$5.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:47:59.746270+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and structural stop-loss placement on ticket 1705772492 resulting in a -$20.56 drawdown, combined with premature entry clustering in high-volatility XAUUSD zones.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate tranches of aggressive peak harvesting the moment floating profit hits +$12.00 to lock in gains before mean-reversion wicks occur."
       },
       "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD while scaling winning execution targets to a minimum of +$15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:18:21.605799+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, combined with failure to exit during high-impact liquidity sweeps. Additionally, clustered entries on 2026-11-25 (tickets 1707575809, 1707578236, 1707578239) exposed the account to unhedged directional concentration into a localized reversal wick.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to an inverted risk-to-reward profile where stop-losses exceeded the $4-$6 target ceiling while winners were truncated prematurely by micro-trailing stops.",
+        "market_regime_mismatch": "The engine initiated multiple entries during choppy, low-liquidity transition sessions in XAUUSD where spread expansion and algorithmic stop-hunting triggered premature liquidations."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding positions within 15 minutes or 2.0 points of an existing losing trade; zero pyramiding into falling/rising momentum wicks.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a confirmed multi-timeframe volume-weighted average price (VWAP) cross and an ATR-normalized volatility filter before any XAUUSD order is executed.",
+        "profit_harvest_threshold": "Aggressively trigger partial profit locks at +$10.00 and full structural harvest at +$20.00 to prevent floating profits from evaporating."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade on XAUUSD, completely eliminate correlated position stacking, and mandate immediate capital preservation whenever volatility expands."
     }
   ]
 }
