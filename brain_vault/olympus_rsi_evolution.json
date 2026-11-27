@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:23:35.858429+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by a wide stop-loss placement combined with adverse volatility expansion on XAUUSD, completely violating the capital preservation constraint of -$4 to -$6 max loss.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 total across 6 deals) heavily outweighed wins (+$38.51 total across 9 deals) due to an inverted risk-reward ratio on failed trades where stops were positioned outside safe structural boundaries.",
-        "market_regime_mismatch": "Clustered entries during high-velocity directional pushes in Gold resulted in cascading stop-outs and micro-scalp exits that failed to capture extended asymmetric runs."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against multiple entries or averaging down in close succession when market volatility exceeds the 20-period Average True Range threshold.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe liquidity sweep and volume-weighted confirmation before executing any XAUUSD order.",
-        "profit_harvest_threshold": "Aggressively trigger trailing stop activation or partial profit capture the moment floating profit hits +$12.00 to prevent evaporation."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate profit harvesting when trades reach positive velocity."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:25:11.361120+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD during the 13:36 session caused a severe -$20.56 drawdown because the stop-loss distance expanded beyond acceptable risk thresholds, coupled with clustered micro-entries (tickets 2123013996 and 2123016852) that acted as premature scaling into high-frequency retracements.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively harvest via SENTINEL_PEAK_HARVEST when floating profit reaches $15.00 to prevent evaporation back to break-even or negative."
       },
       "synthesis_directive": "Enforce a hard maximum risk boundary of $5.00 per trade on XAUUSD and immediately lock in profits when the $15.00 threshold is breached to restore absolute asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:48:43.944892+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked accumulation of positions near volatile inflection points and wide initial stops on XAUUSD, peaking in a -$20.56 single-order catastrophic drawdown.",
+        "risk_asymmetry_flaw": "Losses (-$40.94 across 6 deals) heavily outweighed wins (+$38.51 across 9 deals), proving that stop-losses are being breached before asymmetrical reward targets can be reached.",
+        "market_regime_mismatch": "Entering during high-velocity breakout spikes without filtering for micro-retest confirmations, causing immediate stop-hunts and premature liquidation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding consecutive volume (anti-martingale) within a 5-pip window of an existing open position in high-volatility XAUUSD regimes.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero order execution allowed during high-impact expansion wicks; require order-book imbalance confirmation and a 5-second tick-volume cooldown.",
+        "profit_harvest_threshold": "Secure 50% of floating profits instantly upon reaching +$8.00, trailing the remaining position dynamically to capture asymmetric runs up to +$30.00."
+      },
+      "synthesis_directive": "Enforce a hard $5.00 absolute loss ceiling per trade and ban correlated clustering to eliminate outlier drawdowns instantly."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute prohibition on adding to losing positions; multi-ticket entries (e.g., 2123016852 and 2123016855) are restricted to single non-correlated triggers per impulse vector.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution permitted during high-impact volume expansion wicks; ATR volatility expansion multiplier must be below 1.8x baseline before entry authorization.",
-  "profit_harvest_threshold": "Aggressively harvest via SENTINEL_PEAK_HARVEST when floating profit reaches $15.00 to prevent evaporation back to break-even or negative."
+  "pyramiding_rule": "Strict prohibition against adding consecutive volume (anti-martingale) within a 5-pip window of an existing open position in high-volatility XAUUSD regimes.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero order execution allowed during high-impact expansion wicks; require order-book imbalance confirmation and a 5-second tick-volume cooldown.",
+  "profit_harvest_threshold": "Secure 50% of floating profits instantly upon reaching +$8.00, trailing the remaining position dynamically to capture asymmetric runs up to +$30.00."
 }
