@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding positions within 15 seconds or 2.0 dollars of an existing struggling trade; zero tolerance for averaging down into wicks.",
+  "pyramiding_rule": "Strictly forbid adding positions within 60 seconds of a prior entry or during high-volatility spread expansion wicks to prevent cascading losses.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated ATR volatility contraction breakout filter and absolute confirmation that spread + ATR do not exceed the $5 risk envelope before order placement.",
-  "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once floating profit hits +$15.00 to prevent erosion back to breakeven."
+  "new_mandatory_entry_filter": "Require dynamic ATR volatility confirmation and zero high-impact macroeconomic news window within +/- 15 minutes before executing any order.",
+  "profit_harvest_threshold": "Aggressively lock in scaling profits starting at +$10.00 while trailing stops tightly to ensure wins run toward the $15-$30 target envelope."
 }
