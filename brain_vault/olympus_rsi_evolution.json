@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T16:35:55.745958+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Un-hedged micro-scalping during high-volatility XAUUSD expansions resulting in stop-loss cascades (-$20.56 outlier) and premature stop-outs on tight institutional wicks.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile where numerous trades were clipped for micro-pennies ($0.39 to $0.55) while tail losses breached the target risk boundary up to -$20.56.",
-        "market_regime_mismatch": "Executing mean-reversion entries during directional momentum shifts, causing consecutive stop-losses when price trended continuously without pulling back."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of grid or martingale scaling into losing positions; additions only permitted on confirmed breakout momentum with positive floating equity.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order entry allowed within 5 minutes of high-impact macro news wicks and without an explicit ATR-based multi-timeframe confirmation filter.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit sweeps the moment open trade equity hits +$15.00 to guarantee asymmetric +$15 to +$30 runs."
-      },
-      "synthesis_directive": "Enforce a rigid $4-$6 max stop-loss cap on all XAUUSD transactions while forcing green runs to scale freely past $15.00 via dynamic trailing stops."
-    },
-    {
       "evolution_timestamp": "2026-11-26T16:37:43.928675+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked volatility expansion during London-NY transition caused stop-loss hunting on XAUUSD, resulting in an outlier loss of -$20.56.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger partial scaling at +$10 and enforce trailing structural stops to capture the full $15-$30 asymmetric return profile."
       },
       "synthesis_directive": "Hard-cap individual trade risk at $5.00 max, eliminate all unhedged counter-trend scaling, and strictly enforce trailing profit capture for moves exceeding +$10.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T04:29:07.131036+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped dynamic stop-loss distance allowing a single 0.01 lot Gold trade to lose $20.56 (205+ pips), paired with rapid multi-position entry cluster execution at 21:14:10 UTC into adverse momentum.",
+        "risk_asymmetry_flaw": "Winning trades were aggressively micro-scalped for tiny gains ($0.39-$0.55) while losing trades were allowed excessive room ($7.72 and $20.56), completely inverting the target risk-reward asymmetry.",
+        "market_regime_mismatch": "Executing trend-following breakwick entries during high-volatility session expansion without spread/ATR expansion guards or strict hard dollar cap stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on opening secondary positions within 300 seconds of an existing open position unless existing trade is at least +$5.00 in floating profit with stop moved to Breakeven.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Pre-trade hard rejection if calculated stop-loss distance exceeds 50 pips ($5.00 per 0.01 lot XAUUSD) or if 1-minute ATR is > 3.0 USD.",
+        "profit_harvest_threshold": "Activate aggressive trailing stop at +$3.00 unrealized profit to secure 60% of peak float; auto-close 100% on reversal sentinel trigger at +$10.00+."
+      },
+      "synthesis_directive": "Enforce a absolute non-negotiable $5.00 max risk stop per 0.01 lot on XAUUSD and ban simultaneous cluster entries."
     }
   ]
 }
