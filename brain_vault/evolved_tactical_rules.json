@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding consecutive volume (scaling in) within a 5-minute window or near key liquidity nodes to prevent cascading multi-ticket losses like tickets 2123016852 and 2123016855.",
+  "pyramiding_rule": "Strictly prohibit opening secondary positions within 60 seconds of an existing entry; base position must hold at least +$3.00 unrealized profit before scaling in.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic data releases; entry requires confluence of structural micro-breakout and multi-timeframe order book imbalance.",
-  "profit_harvest_threshold": "Initiate automated trailing profit locks or Sentinel Peak Harvesting the moment a position reaches +$15.00 to prevent unrealized gains from fully evaporating."
+  "new_mandatory_entry_filter": "Hard Cap Loss Filter: Reject any entry where maximum calculated risk exceeds $5.00 per 0.01 lot, and enforce a 15-minute execution pause post high-impact volatility spike.",
+  "profit_harvest_threshold": "Lock trailing stop to lock in 50% of unrealized gains once trade hits +$5.00 profit, letting remaining volume run toward a minimum +$15.00 target."
 }
