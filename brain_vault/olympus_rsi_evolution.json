@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:15:13.723899+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the initial stop-loss was placed too wide relative to tick volatility, failing to cut a severe adverse continuation early. Additionally, cluster execution in quick succession (tickets 1707575809 and 1707578236/9) indicated dangerous pyramiding into a localized volatility pocket.",
-        "risk_asymmetry_flaw": "Losses exceeded winning profits because adverse trades were allowed to drift into a massive -$20.56 hole, whereas winning positions were prematurely capped between +$0.39 and +$5.34, completely inverting the target $4-$6 loss to $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "The trading engine entered high-velocity XAUUSD liquidity zones without filtering for high-impact order-book sweeps, resulting in instant stop-hunting activations followed by premature reversion."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 5 minutes of a prior entry; no averaging down or scaling into moving knives.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require minimum institutional volume delta confirmation and a localized order-book imbalance check before routing any XAUUSD order.",
-        "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in once floating profit hits +$12.00 to force the realization of the targeted $15-$30+ winning profile."
-      },
-      "synthesis_directive": "Hard-cap all individual trade risk strictly under $5.00 while expanding profit targets via dynamic trailing stops to force asymmetrical +$15.00+ outcomes."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:16:51.039312+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by entering directly into high-volatility liquidity sweeps without adequate stop buffers, combined with clustered micro-losses (-$3.96, -$1.86) from premature pyramiding into tight consolidation wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit crosses +$4.00 to protect upside toward the $15.00-$30.00 target window."
       },
       "synthesis_directive": "Enforce strict anti-clustering filters on XAUUSD and lock in asymmetrical runners by scaling trailing stops dynamically at +$4.00 profit."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:53:34.630150+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of duplicate concurrent entries at 21:14:10 UTC combined with delayed SENTINEL_PEAK_HARVEST trailing exits that allowed floating gains to reverse into a -$4.53 draw.",
+        "risk_asymmetry_flaw": "Wins averaged $3.62 with a tiny gain of $0.49 offsetting momentum, while maximum loss reached -$4.53, destroying the required 1:3 asymmetric return structure.",
+        "market_regime_mismatch": "Operating during low-liquidity late US session (21:00-23:00 UTC) where spread widening and mean-reverting chop triggered tight stop-losses."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict anti-clustering protocol: enforce a minimum 300-second cooldown between orders and prohibit multi-position entries within the same M5 candle.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 23:00 UTC and require M5 ATR expansion > 1.2x prior to trade authorization.",
+        "profit_harvest_threshold": "Move SL to breakeven +$1.00 at +$4.00 profit; aggressively lock trailing peak harvest at 50% peak drawdown once profit exceeds +$8.00."
+      },
+      "synthesis_directive": "Eliminate multi-ticket order stacking, enforce hard temporal filters for low-liquidity hours, and guarantee minimum $5.00 risk ceiling per micro-lot."
     }
   ]
 }

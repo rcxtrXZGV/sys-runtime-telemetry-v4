@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries are capped at 1 per 15-minute directional momentum block.",
+  "pyramiding_rule": "Strict anti-clustering protocol: enforce a minimum 300-second cooldown between orders and prohibit multi-position entries within the same M5 candle.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume delta and order book imbalance must confirm breakout direction by at least 1.5 standard deviations before order routing.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit crosses +$4.00 to protect upside toward the $15.00-$30.00 target window."
+  "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 23:00 UTC and require M5 ATR expansion > 1.2x prior to trade authorization.",
+  "profit_harvest_threshold": "Move SL to breakeven +$1.00 at +$4.00 profit; aggressively lock trailing peak harvest at 50% peak drawdown once profit exceeds +$8.00."
 }
