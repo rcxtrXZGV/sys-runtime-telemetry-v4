@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of secondary entries unless existing positions carry locked floating profits of at least +1.5x ATR; zero concurrent duplicate orders allowed within a 60-second window.",
+  "pyramiding_rule": "Strictly prohibit sequential scaling into the same directional leg within a 60-second window (preventing clustered losses seen in tickets 1707575809, 1707578236, and 1707578239).",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory order validation enforcing maximum dollar risk under $5.00 per 0.01 lot and verifying volatility normalization prior to signal trigger.",
-  "profit_harvest_threshold": "Initiate dynamic ratchet stop at +$6.00 unrealized gain, trailing by 1.2x ATR to harvest trend moves up to $15-$30 while locking green runs."
+  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 3-pip spread buffer away from recent liquidity pools before executing any XAUUSD order.",
+  "profit_harvest_threshold": "Aggressively trigger SENTINEL_PEAK_HARVEST at +$15.00 floating profit to lock in asymmetric risk-reward ratios."
 }
