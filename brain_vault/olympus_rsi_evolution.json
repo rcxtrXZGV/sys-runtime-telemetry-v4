@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:43:10.339100+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and stop-loss hunting on XAUUSD high-velocity wicks, exemplified by ticket 1705772492 resulting in a -$20.56 drawdown due to an untamed volatility burst.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) because the strategy failed to cut losses cleanly at the $5 limit while premature exits clipped winning momentum.",
-        "market_regime_mismatch": "Clustering of short-interval entries around 21:13-21:14 (tickets 1707575809, 1707578236, 1707578239) indicates over-trading into low-liquidity session closes where erratic price spikes trigger tight stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); allow scaling into winners only after a verified 1:1 R:R structural break.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero execution allowed during high-impact news windows and within 30 minutes of daily session closes; require an ATR volatility normalization threshold before entry.",
-        "profit_harvest_threshold": "Initiate aggressive trailing or partial profit harvesting once floating profit hits +$15.00 to prevent unrealized gains from evaporating."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD, ban session-close clustering, and mandate multi-tier profit harvesting to keep winning payouts between $15.00 and $30.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:44:39.392683+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, and multiple entries (Tickets 1707575809 and 1707578236) clustered into adverse high-velocity wicks without rapid profit protection.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger trailing stop lock-in immediately upon crossing +$12.00 unrealized profit to allow full extension toward the $15-$30+ target zone."
       },
       "synthesis_directive": "Enforce strict risk symmetry by strictly capping downside risk at $5.00 while expanding profit targets to capture $15-$30+ runs using momentum filters."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:47:54.427078+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight stop losses placed directly on major micro-structural liquidity nodes resulted in immediate stop-hunting wicks, while premature exits on small wins truncated asymmetrical payoff potentials.",
+        "risk_asymmetry_flaw": "Average loss size (-$3.16) exceeded average win size of traditional exits due to sudden volatility spikes breaching tight brackets before trailing triggers could activate.",
+        "market_regime_mismatch": "High-frequency mean-reversion entries initiated during explosive momentum continuation windows, causing quick reversals straight into stop-loss clusters."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a prior execution or during elevated high-impact ATR expansion candles to prevent compounding into falling/rising wicks.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require institutional order-flow imbalance confirmation combined with a minimum 3-ATR buffer away from immediate structural liquidity pools prior to order entry.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit locks at +$10.00 floating profit to ensure winners consistently scale into the +$15.00 to +$30.00 target bracket."
+      },
+      "synthesis_directive": "Enforce structural distance filters on all XAUUSD entries to keep hard risk strictly capped below $5.00 while expanding trailing harvest triggers to capture $15-$30 payouts."
     }
   ]
 }
