@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions (anti-martingale/averaging down) within a 60-second window of prior stopped-out orders.",
+  "pyramiding_rule": "Absolute ban on adding positions within 300 seconds of an existing order or while any open position remains in negative floating PnL.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require order book imbalance confirmation and a minimum 3-ATR volatility cooldown check before any XAUUSD execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation the instant floating profit crosses +$10.00 to prevent evaporation of winners."
+  "new_mandatory_entry_filter": "Mandatory pre-execution validation ensuring hard stop distance <= 50 pips ($5.00 risk per 0.01 lot) combined with 5-minute ATR volatility confirmation.",
+  "profit_harvest_threshold": "Move stop to breakeven + commission at +$3.00 floating profit; activate aggressive peak trailing harvest once floating PnL exceeds +$10.00 to target $15-$30 expansions."
 }
