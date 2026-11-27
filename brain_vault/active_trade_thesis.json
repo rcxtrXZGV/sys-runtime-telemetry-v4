@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T12:23:37.563620+00:00",
+  "timestamp": "2026-11-27T12:25:06.877309+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 45,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3610.0,
   "tp_price": 3645.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on the broker account. Sentinel standing by for active trade management.",
-  "trade_thesis": "Gold (XAUUSD) has retreated slightly from its recent intraday high of 3634.70, consolidating around the 3620.39 level with decreasing volume on the most recent 15-minute candles. DXY is showing minor upward strength at 103.81 while US10Y yields press higher toward 4.848. Due to the lack of clear asymmetric breakout momentum and ongoing range-bound chop following the morning peak harvest, the desks advise patience and a WAIT stance until a cleaner liquidity sweep or structural break occurs."
+  "reversal_sentinel_assessment": "No open positions currently active on the broker account. Sentinel standing by for next deployment.",
+  "trade_thesis": "Gold (XAUUSD) has pulled back from its intraday highs near 3634.70 to the 3620.40 region, forming a short-term consolidation inside the latest 15-minute candles. Volume is tapering off compared to the aggressive push earlier in the session. A neutral 'WAIT' stance is warranted until price either sweeps local liquidity toward the intraday high or tests support cleanly."
 }
