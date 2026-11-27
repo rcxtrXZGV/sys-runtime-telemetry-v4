@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of scaling into losing positions; incremental adds only permitted after the primary trade achieves +$10.00 floating profit with a breakeven stop locked.",
+  "pyramiding_rule": "Strict prohibition of multiple entries within a 5-point range; zero averaging down or adding to correlated positions during high-velocity spikes.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order execution within 15 minutes of high-impact tier-1 USD macro data releases, verified via tick-volume volatility dampening checks.",
-  "profit_harvest_threshold": "Initiate automated partial profit locking when positions hit +$12.00 to prevent unrealized gains from evaporating."
+  "new_mandatory_entry_filter": "Mandatory order block validation and ATR-based volatility cap; block entries if spread exceeds 0.40 on XAUUSD or if price is within 3 pips of a major liquidity node.",
+  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 and execute hard profit sweeps at +$15.00 to +$30.00."
 }
