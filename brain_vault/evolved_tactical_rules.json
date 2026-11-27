@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into losing positions or micro-retracements; mandatory confirmation of high-frequency order-flow momentum before scaling.",
+  "pyramiding_rule": "Strict prohibition on sequential order stacking within 5 minutes on the same instrument unless floating profit exceeds 2.0x target stop-loss distance.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict volatility-adjusted entry filter requiring 3-period ATR contraction and volume confirmation prior to order execution on XAUUSD.",
-  "profit_harvest_threshold": "Aggressively lock in gains when floating profit reaches $15.00-$30.00 using trailing sentinel peaks to prevent evaporation."
+  "new_mandatory_entry_filter": "Mandatory Order Book Imbalance and ATR volatility normalization check; block entries if spread exceeds 0.35x current 14-period ATR.",
+  "profit_harvest_threshold": "Aggressive scaling trigger at +$5.00 to +$8.00 profit to lock gains before mean-reversion wicks occur."
 }
