@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T19:10:39.394175+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked expansion of stop-losses during high-volatility XAUUSD momentum pushes (e.g., ticket 1705772492 resulting in -$20.56 loss), coupled with premature profit clipping on winning positions.",
-        "risk_asymmetry_flaw": "Losses exceeded maximum risk thresholds because stop-losses were placed too wide or adjusted sluggishly during adverse spread widening and market wicks.",
-        "market_regime_mismatch": "Entering late-stage momentum moves without recognizing micro-exhaustion zones, leading to immediate stop-outs on mean-reversion wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to positions within 5 pips of an existing entry; pyramid only on confirmed structural breakouts with positive open trade equity.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter: block entries when 1-minute ATR exceeds 3x the 20-period moving average to avoid high-impact noise wicks.",
-        "profit_harvest_threshold": "Trigger aggressive trailing stops or partial profit-taking as soon as floating profit hits +$15.00 to guarantee asymmetric win-to-loss ratios ($15-$30+ wins vs $4-$6 max losses)."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses while mandating that winning trades run past $15.00 through dynamic trailing stop triggers."
-    },
-    {
       "evolution_timestamp": "2026-11-26T19:12:05.141098+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) combined with tight noise-level exits on winning micro-scalps (+0.39 to +0.55) created an inverted payoff matrix where a single loss wiped out over 30 wins.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 to prevent floating gains from eroding into sub-dollar or negative outcomes."
       },
       "synthesis_directive": "Enforce absolute hard risk caps at $5.00 per trade on XAUUSD and accelerate profit harvesting to guarantee asymmetric $15-$30+ return profiles."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:32:52.750883+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked slippage and structural stop-loss trapping during high-volatility XAUUSD liquidity sweeps, exemplified by ticket 1705772492 which resulted in an outsized -$20.56 loss.",
+        "risk_asymmetry_flaw": "Stop-losses were positioned too wide relative to immediate micro-structure invalidation points while profit targets were cut short, creating an inverted risk-reward skew where single losses wiped out multiple wins.",
+        "market_regime_mismatch": "Executing trades into expanding intraday breakout wicks without verifying multi-timeframe structural exhaustion, leading to immediate trend-continuation stop-outs and micro-scalp failures."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into unconfirmed momentum vectors; new positions can only be added if the existing trade has secured at least +$10 in floating profit and moved past breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory order block and volume-delta confirmation on the M5 chart; no entry allowed within 15 minutes of high-impact tier-1 USD/XAU macro news releases.",
+        "profit_harvest_threshold": "Aggressively trigger trailing stop activation or partial harvest once a position crosses +$15.00 floating profit to ensure wins securely hit the +$15 to +$30 band."
+      },
+      "synthesis_directive": "Enforce a strict maximum dollar loss ceiling of $5.00 per trade on XAUUSD, utilize high-sensitivity structural confirmation filters, and never let winning positions revert into losses."
     }
   ]
 }
