@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window (no micro-stacking into localized volatility wicks as seen in tickets 1707575809 through 1707578239).",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order block validation combined with a zero-tick news blackout window (T-2 to T+5 minutes around high-impact tier-1 releases).",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvest immediately upon hitting +$10.00 floating profit to lock in asymmetry toward the $15-$30 target band."
+  "pyramiding_rule": "Strict prohibition against adding to positions when floating profit is negative or within 30 seconds of a prior stop-out sequence.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum before the 0.01 lot order is dispatched.",
+  "profit_harvest_threshold": "Aggressively harvest profits at +$5.00 to +$10.00 via trailing micro-stops to prevent peak evaporation."
 }
