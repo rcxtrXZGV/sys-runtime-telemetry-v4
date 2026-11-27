@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:07:29.220485+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and lagging exit execution during high-momentum Gold breakouts, specifically highlighted by ticket 1705772492 resulting in a -$20.56 drawdown due to a delayed stop-loss structure.",
-        "risk_asymmetry_flaw": "Losses heavily outweighed wins because small winning trades were cut too early (averaging ~$2.33) while the largest loss reached -$20.56, completely destroying the desired $4-$6 loss versus $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "The trading engine entered consecutive counter-trend or late-stage breakout positions during high-volatility XAUUSD liquidity sweeps, triggering tight stop-losses repeatedly within minutes (e.g., tickets 1707575809, 1707578236, 1707578239)."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions (no pyramiding) within 30 minutes of a prior stop-out or during expanding Average True Range (ATR) spike regimes on XAUUSD.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a multi-timeframe volume-weighted momentum confirmation and a maximum allowable spread filter before any order execution is authorized.",
-        "profit_harvest_threshold": "Aggressively trigger trailing profit secures and partial scaling once unrealized profit reaches +$12.00 to prevent floating gains from evaporating into minor wins or losses."
-      },
-      "synthesis_directive": "Enforce an absolute hard cap of $5.00 on all XAUUSD stop-losses while mandating strict asymmetry where profit harvests activate dynamically above +$12.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:09:01.119341+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped initial stop-loss placement on ticket 1705772492 resulting in a -$20.56 drawdown, coupled with consecutive clustering entries during high-volatility expansions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing and partial profit locks when floating profit hits +$15.00 to guarantee the $15-$30+ win distribution."
       },
       "synthesis_directive": "Hard-cap all XAUUSD risk strictly below $5.00 while enforcing a minimum +$15.00 profit harvest lock to restore mathematical asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:28:37.175089+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was placed too wide relative to tick volatility, and secondary losses resulted from rapid cluster entries (tickets 1707575809 and 1707578236/39) during high-volatility whipsaws.",
+        "risk_asymmetry_flaw": "Maximum loss reached -$20.56 while maximum wins capped around +$5.34, inverting the required $4-$6 loss to $15-$30+ win asymmetry profile.",
+        "market_regime_mismatch": "Executing micro-scalps during heavy XAUUSD momentum wicks without a volatility-adjusted circuit breaker, causing cascading stop-outs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions within 60 seconds of a prior entry or during active expansion wicks to prevent compounding losses.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a confirmed 3-bar structural liquidity sweep and ATR contraction below 1.2 before opening any XAUUSD order.",
+        "profit_harvest_threshold": "Aggressively trigger trailing profit lock-in when floating profit hits +$15.00 to prevent erosion down to micro-gains."
+      },
+      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade and mandate automatic partial profit harvesting at +$15.00 to restore mathematical asymmetry."
     }
   ]
 }

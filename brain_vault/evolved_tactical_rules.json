@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbidden to stack multiple entries within a 2-pip window; mandatory minimum spacing of 15 pips and proven positive drift on prior tranches before adding volume.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 60 seconds of a prior entry or during active expansion wicks to prevent compounding losses.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require 3-bar structural volume exhaustion confirmation and zero high-impact news window 15 minutes prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing and partial profit locks when floating profit hits +$15.00 to guarantee the $15-$30+ win distribution."
+  "new_mandatory_entry_filter": "Require a confirmed 3-bar structural liquidity sweep and ATR contraction below 1.2 before opening any XAUUSD order.",
+  "profit_harvest_threshold": "Aggressively trigger trailing profit lock-in when floating profit hits +$15.00 to prevent erosion down to micro-gains."
 }
