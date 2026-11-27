@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:49:48.419795+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped initial risk on ticket 1705772492 (-$20.56) caused by a wide structural stop-loss failing to account for immediate high-volatility momentum bursts in XAUUSD.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to micro-profit exits cutting winners prematurely at +$0.39 to +$5.34 while allowing outlier losses to expand beyond the intended $4-$6 envelope.",
-        "market_regime_mismatch": "Clustered entries on 2026-11-25 (tickets 1707575809, 1707578236, 1707578239) demonstrate destructive pyramiding into tight consolidation wicks without waiting for structural trend confirmation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding to positions within 30 minutes of a prior entry or inside the same price consolidation band; second-tranche entries require a verified structural breakout and minimum +$10 floating profit on the primary trade.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Volume-weighted average spread and localized ATR filter must confirm directional momentum before order execution; no entries allowed during 1-minute candle ranges exceeding 2.5x the 20-period average ATR.",
-        "profit_harvest_threshold": "Initiate trailing stops once a trade reaches +$8.00 and execute mandatory partial or full scale-out if momentum stalls below the +$15.00 to +$30.00 target zone."
-      },
-      "synthesis_directive": "Enforce strict $5.00 maximum hard stop-loss limits on all XAUUSD orders, eliminate premature micro-exits, and ban undisciplined pyramiding into active consolidation wicks."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:51:19.360383+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped initial positioning on ticket 1705772492 causing a disproportionate -$20.56 drawdown, combined with premature scaling into volatile XAUUSD wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing profit locks starting at +$8.00 to force wins toward the $15-$30 target zone."
       },
       "synthesis_directive": "Enforce strict anti-clustering pyramiding rules and lock in trailing harvests earlier to ensure win-to-loss asymmetry reaches the $15-$30 target."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T15:00:05.197238+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop losses placed right in dense liquidity clusters were repeatedly hunted by micro-wicks on XAUUSD, while lagging exit triggers allowed a larger drawdown (-$4.53) before cutting.",
+        "risk_asymmetry_flaw": "Losses (-$3.96 and -$4.53) significantly exceeded the modal winning profit size due to premature tiny wins (+$0.49) and trailing exits failing to protect peak unrealized gains.",
+        "market_regime_mismatch": "Executing micro-scalps during high-volatility XAUUSD momentum pushes without filtering out localized liquidity sweeps caused stop-outs immediately following entries."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition on scaling into consecutive losing trades; pyramiding is limited to profitable momentum legs with a strict trailing activation step.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated 3-period ATR micro-exhaustion filter and zero high-impact institutional spread widening detected in the order book prior to execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in once open profit crosses +$8.00 to guarantee the targeted $15-$30+ asymmetry profile."
+      },
+      "synthesis_directive": "Enforce strict asymmetry by capping risk at $4.50 while aggressively trailing winning runs toward $15-$30+ targets using volatility-adjusted exhaustion filters."
     }
   ]
 }
