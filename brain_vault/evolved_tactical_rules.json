@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions within 15 minutes of a prior loss or during high ATR expansion wicks.",
+  "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions on the same asset within a 120-second window to prevent micro-pyramiding into falling or rising volatility knives.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmation from multi-timeframe volume-weighted momentum and a verified spread filter before triggering any XAUUSD order.",
-  "profit_harvest_threshold": "Aggressively harvest profits when position reaches +$15.00 to +$30.00 to strictly enforce the $4-$6 loss / $15-$30+ win asymmetry."
+  "new_mandatory_entry_filter": "No order execution authorized unless the Order Book Imbalance ratio exceeds 1.65 and ATR(14) is below the 80th percentile, blocking high-impact news wicks.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation and partial scaling at +$15.00 floating profit, locking in wins up to +$30.00 while capping drawdowns firmly between $4.00 and $6.00."
 }
