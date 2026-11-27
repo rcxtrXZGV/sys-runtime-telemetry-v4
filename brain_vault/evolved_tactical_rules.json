@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions within 15 minutes of a prior stop-out or during high-volatility expansion wicks.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe liquidity sweep confirmation combined with an ATR-normalized volatility band filter before order placement.",
-  "profit_harvest_threshold": "Initiate trailing stop locking at +$3.50 and full scale-out execution upon reaching +$15.00."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); pyramiding is only authorized after a trade moves +$10.00 into profit and structural support/resistance is confirmed.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory execution pause of 15 minutes after any stop-out, and absolute block on entries during high-impact structural price velocity spikes unless confirmed by multi-timeframe order flow imbalance.",
+  "profit_harvest_threshold": "Aggressively secure green runs starting at +$15.00 via trailing stop activation, with a hard exit target cap at +$30.00."
 }
