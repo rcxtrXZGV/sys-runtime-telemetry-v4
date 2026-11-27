@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding positions within 15 minutes or 2.0 points of an existing losing trade; zero pyramiding into falling/rising momentum wicks.",
+  "pyramiding_rule": "Strict prohibition against opening multiple sequential orders within a 5-point range (no adding to losing positions or clustering during high volatility sweeps).",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a confirmed multi-timeframe volume-weighted average price (VWAP) cross and an ATR-normalized volatility filter before any XAUUSD order is executed.",
-  "profit_harvest_threshold": "Aggressively trigger partial profit locks at +$10.00 and full structural harvest at +$20.00 to prevent floating profits from evaporating."
+  "new_mandatory_entry_filter": "Zero order execution allowed during ATR expansion spikes exceeding 2.5x the 20-period moving average unless confirmed by a volume-weighted MACD cross.",
+  "profit_harvest_threshold": "Initiate partial profit trailing stops immediately upon reaching +$8.00 floating gain to guarantee asymmetric expansion toward the $15-$30+ target zone."
 }
