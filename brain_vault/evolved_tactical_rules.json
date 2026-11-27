@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strict prohibition on scaling into consecutive losing trades; pyramiding is limited to profitable momentum legs with a strict trailing activation step.",
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; zero pyramiding allowed until the initial trade achieves at least +$6.00 floating profit.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated 3-period ATR micro-exhaustion filter and zero high-impact institutional spread widening detected in the order book prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in once open profit crosses +$8.00 to guarantee the targeted $15-$30+ asymmetry profile."
+  "new_mandatory_entry_filter": "Require a validated 15-minute ATR volatility expansion filter and confirmation order flow imbalance before executing any XAUUSD market order.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit scaling as soon as open trades reach +$15.00 to protect upside potential up to +$30.00."
 }
