@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:00:00.000000+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and volatile market noise on high-impact wicks during London/New York cross-over, causing catastrophic single-trade loss of -$20.56 (Ticket 1705772492), breaking the maximum risk tolerance threshold of $4-$6.",
-        "risk_asymmetry_flaw": "The system allowed a rogue loss of $20.56 to eclipse multiple micro-wins, violating the mandatory asymmetric payoff structure where losses must strictly cap at $4-$6 while wins run to $15-$30+.",
-        "market_regime_mismatch": "Clustered entries (Tickets 2123013996 and 2123016852) entered during a violent liquidity sweep in XAUUSD without volatility expansion filters, triggering tight stop-losses consecutively."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions within a 15-minute window of a previous stopped-out order; no pyramiding into high-velocity liquidity wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require an ATR(14) volatility contraction confirmation and institutional volume delta alignment before order execution on XAUUSD.",
-        "profit_harvest_threshold": "Aggressively secure profits via trailing stops or partial closes once floating profit hits +$15.00 to prevent evaporation."
-      },
-      "synthesis_directive": "Enforce a hard absolute stop-loss cap of $5.00 per trade across all instruments with zero tolerance for slippage expansion."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:17:23.024804+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide stop-loss combined with a violent momentum reversal wick during high-volatility hours.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once a position achieves +$15.00, ensuring winners consistently hit the +$15 to +$30 target corridor."
       },
       "synthesis_directive": "Enforce a strict hard stop-loss ceiling of $5.00 on all XAUUSD orders and ban consecutive loss-chasing entries to guarantee positive expectancy."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:44:36.400057+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide stop-loss combined with high-impact momentum ignition wicks on XAUUSD, followed by clustered execution failures during rapid reversals.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) because the engine allowed a single rogue trade to breach the -$5.00 limit, while taking premature profits on minor green ticks.",
+        "market_regime_mismatch": "The strategy entered counter-trend or late into high-volatility expansion periods, triggering tight trailing stops on subsequent rapid retracements (tickets 2123013996 and 2123016852)."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against pyramiding or executing multiple concurrent tickets within a 30-second window during high volatility intervals to prevent clustered drawdowns.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require mandatory multi-timeframe order book imbalance confirmation and absolute avoidance of entries within 5 minutes of high-impact macroeconomic news wicks.",
+        "profit_harvest_threshold": "Aggressively lock in gains when floating profits hit the +$15.00 to +$30.00 band via dynamic trailing activations, completely eliminating premature micro-exits under +$1.00."
+      },
+      "synthesis_directive": "Enforce a hard maximum stop-loss cap of $5.00 per trade across all instruments and ban rapid multi-ticket position clustering during high-volatility XAUUSD expansions."
     }
   ]
 }

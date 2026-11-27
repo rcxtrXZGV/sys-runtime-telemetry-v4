@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of grid averaging or scaling into losing positions within a 15-minute rolling window; subsequent entries require confirmed structural breakout and positive floating PnL on prior legs.",
+  "pyramiding_rule": "Strict prohibition against pyramiding or executing multiple concurrent tickets within a 30-second window during high volatility intervals to prevent clustered drawdowns.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution permitted during high-impact spread dilation bands; require absolute volume-weighted average price (VWAP) convergence and a 3-bar structural rejection wick.",
-  "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once a position achieves +$15.00, ensuring winners consistently hit the +$15 to +$30 target corridor."
+  "new_mandatory_entry_filter": "Require mandatory multi-timeframe order book imbalance confirmation and absolute avoidance of entries within 5 minutes of high-impact macroeconomic news wicks.",
+  "profit_harvest_threshold": "Aggressively lock in gains when floating profits hit the +$15.00 to +$30.00 band via dynamic trailing activations, completely eliminating premature micro-exits under +$1.00."
 }
