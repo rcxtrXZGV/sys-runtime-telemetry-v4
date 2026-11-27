@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding positions within 15 minutes or $2.00 of a previous losing entry; absolute cap of 1 concurrent trade per directional node unless unrealized profit exceeds +$10.00.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated multi-timeframe liquidity sweep and volume exhaustion confirmation before order authorization; completely block entries during Tier-1 macro news release windows.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop-lock or partial harvest once floating profit reaches +$12.00 to prevent erosion back to breakeven or minor gains."
+  "pyramiding_rule": "Strict prohibition against adding positions (no pyramiding) within 60 seconds of a prior stop-out or during ATR expansion spikes exceeding 2.5x the 20-period moving average.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require Order Flow Imbalance (OFI) confirmation and a zero-spread tick validation before entry execution to filter out fakeout wicks.",
+  "profit_harvest_threshold": "Trigger immediate partial or full scale-out (SENTINEL_PEAK_HARVEST) when floating profit reaches +$15.00 to strictly enforce the $15-$30 asymmetric win profile."
 }

@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:04:07.220172+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked volatility expansion during session rollovers triggered tight scalping stops while one major outlier loss (-$20.56) severely skewed the loss-to-win dollar ratio.",
-        "risk_asymmetry_flaw": "Stop-losses were allowed to drift or widen dynamically on high-conviction trades (-$20.56), while profit targets and harvest triggers cut winners too early (+<$5.50 average wins).",
-        "market_regime_mismatch": "Executing micro-scalps during high-velocity momentum wicks without a macro structural liquidity filter caused multiple consecutive stop-outs in tight price clusters."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential order stacking within 60 seconds or 2 points of prior entries to prevent compounding into falling/rising micro-wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require minimum 3-bar structural volume divergence and 14-period ATR volatility normalization before ticket execution.",
-        "profit_harvest_threshold": "Initiate trailing stop protection at +$4.00 profit and force manual/algorithmic partial close when profit reaches +$12.00 to lock in asymmetrical payout distributions."
-      },
-      "synthesis_directive": "Hard-cap absolute single-trade risk at $5.00 while enforcing strict trailing take-profits to ensure winners reliably achieve a $15-$30+ distribution."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:05:52.412660+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution timing during high-volatility liquidity sweeps caused catastrophic stop-loss breaches, notably ticket 1705772492 losing -$20.56 due to a lagging stop placement and wide spread slippage.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-lock or partial harvest once floating profit reaches +$12.00 to prevent erosion back to breakeven or minor gains."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade while aggressively trailing profits at +$12.00 to restore asymmetric return distribution."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:35:11.619009+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive slippage and volatile liquidity wicks on XAUUSD during high-frequency micro-reversals, highlighted by ticket 1705772492 resulting in a -$20.56 drawdown due to a delayed trailing stop execution in a fast market.",
+        "risk_asymmetry_flaw": "Losses heavily outpaced wins because micro-scalp entries allowed consecutive negative trades (-$3.96 and -$1.86) to stack rapidly in tight ranges without yielding asymmetric $15-$30 payouts.",
+        "market_regime_mismatch": "Executing fixed tight stop-losses during high-spread expansion phases caused premature hunting and stopping out before mean-reversion could materialize."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions (no pyramiding) within 60 seconds of a prior stop-out or during ATR expansion spikes exceeding 2.5x the 20-period moving average.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require Order Flow Imbalance (OFI) confirmation and a zero-spread tick validation before entry execution to filter out fakeout wicks.",
+        "profit_harvest_threshold": "Trigger immediate partial or full scale-out (SENTINEL_PEAK_HARVEST) when floating profit reaches +$15.00 to strictly enforce the $15-$30 asymmetric win profile."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk cap of $5.00 per trade on XAUUSD and mandate algorithmic profit harvesting at $15.00+ to re-establish strict positive expectancy and eliminate oversized outlier losses."
     }
   ]
 }
