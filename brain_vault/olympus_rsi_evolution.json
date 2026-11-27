@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:20:04.677714+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide static stop-loss interacting with volatile XAUUSD liquidity sweeps, alongside premature micro-profit closing.",
-        "risk_asymmetry_flaw": "Losses exceeded wins because max drawdown reached -$20.56 while max wins were capped at +$5.34, completely inverting the target $4-$6 loss vs $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "Entering during high-momentum session opens without structural volatility checks, resulting in stop-losses being breached or trailing stops choking out profitable runs."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against multi-entry scaling within a 2-pip window (preventing clustered losses like tickets 2123013996 and 2123016852); pyramiding only allowed after a confirmed 15-pip structural breakout with break-even lock.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero entry allowed during top-tier high-impact USD/Gold news windows; mandatory ATR expansion filter and order-book imbalance confirmation required prior to execution.",
-        "profit_harvest_threshold": "Dynamic scaling trigger at +$10.00 floating profit with trailing lock, forcing wins to run toward the $15-$30+ target zone rather than premature closure."
-      },
-      "synthesis_directive": "Hard-cap all individual losses at exactly $5.00 via strict ATR-bounded stops and enforce asymmetric target expansion to let winners reach $15-$30+ without manual interference."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:21:51.700163+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and structural stop hunting during high-volatility XAUUSD momentum pushes, evidenced by ticket 1705772492 losing -$20.56 due to a wide or gapped stop-loss execution.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Lock dynamic breakeven at +$2.50 floating profit; trigger aggressive peak harvest at +$6.00 to secure minimum $4.00 net return."
       },
       "synthesis_directive": "Enforce single-order concurrency locks and mandate minimum 2.5:1 reward-to-risk targets on all XAUUSD executions to guarantee positive mathematical expectancy."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:03:11.829664+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Multiple micro-entries triggered during high-volatility expansions in XAUUSD without adequate ATR padding, resulting in clustered stop-loss hits and premature harvesting on minor pullbacks.",
+        "risk_asymmetry_flaw": "Losses like ticket 1707834658 (-$4.53) approached maximum risk bounds while smaller wins failed to consistently hit the $15-$30 asymmetric return objective due to sub-optimal trailing stops.",
+        "market_regime_mismatch": "Entering counter-trend or tight consolidation ranges on XAUUSD during late-session liquidity drops where erratic price spikes hunt ultra-tight institutional stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strict prohibition of grid or martingale scaling; subsequent orders only permitted after price moves +1.5 ATR in favor and original position break-even is locked.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution within 5 minutes of high-impact macroeconomic tier-1 prints; mandatory multi-timeframe volume-weighted momentum confirmation.",
+        "profit_harvest_threshold": "Initiate dynamic trailing stop locks once profit exceeds +$5.00, allowing runners to scale unhindered toward the $15-$30 target envelope."
+      },
+      "synthesis_directive": "Enforce strict volatility-adjusted stop parameters under $4.50 and disallow clustered scalps during low-liquidity macro windows to secure pure positive risk asymmetry."
     }
   ]
 }
