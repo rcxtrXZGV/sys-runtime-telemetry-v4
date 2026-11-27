@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:52:56.379972+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped initial risk exposure on XAUUSD (ticket 1705772492 reached -$20.56 loss) combined with clustered consecutive stop-outs during high-volatility mean-reversion impulses.",
-        "risk_asymmetry_flaw": "Losses ($33.22 total) significantly outpaced wins ($11.24 total) because major drawdown tickets breached the $5.00 limit while winning trades were prematurely clipped or failed to scale past $5.34.",
-        "market_regime_mismatch": "System attempted counter-trend scalps and tightly spaced multiple entries (pyramiding into adverse liquidity wicks) during aggressive XAUUSD directional expansions."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions on the same symbol within a 120-second window unless the primary trade has achieved a +$5.00 unrealized profit and moved stop-loss to breakeven.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution allowed during ATR expansion spikes exceeding 2.5x the 20-period moving average without a confirmed multi-timeframe structural liquidity sweep.",
-        "profit_harvest_threshold": "Initiate automated trailing profit harvest steps at +$10.00 with mandatory full exit triggers if momentum stochastics drop below 80 on active green runs targeting $15-$30+."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar ceiling of $5.00 per stop-loss and ban clustered same-bar pyramiding on XAUUSD to strictly lock-in asymmetric risk-reward ratios."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:54:36.192575+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and volatile wick penetrations on XAUUSD during high-momentum bursts, resulting in a catastrophic -$20.56 outlier loss on ticket 1705772492.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once profit crosses +$10.00 to prevent floating profits from evaporating."
       },
       "synthesis_directive": "Enforce a hard absolute risk ceiling of $5.00 per trade on XAUUSD and mandate immediate trailing profit capture at +$10.00 to guarantee positive skew."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:25:02.374078+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive exposure accumulation during high-volatility expansion wicks, compounded by a catastrophic outlier loss (-$20.56) where the initial stop-loss was placed too wide without dynamic trailing protection.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to unconstrained single-trade drawdown and premature truncation of profitable runs while losers were allowed to test wider structural boundaries.",
+        "market_regime_mismatch": "Executing consecutive scale-in orders during erratic intraday XAUUSD liquidity sweeps, leading to multiple tight stop triggers and cascading slippage on clustered execution timestamps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against scaling into losing positions; scale-in entries are only permitted after a minimum +$3.00 floating profit has been locked via trailing stop activation.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory order block confirmation combined with a 5-period ATR volatility check to block entries during high-impact news wicks and low-liquidity transition sessions.",
+        "profit_harvest_threshold": "Aggressive scaling trigger at +$10.00 profit with mandatory trailing activation locking in at least +$4.00 to prevent floating profits from evaporating."
+      },
+      "synthesis_directive": "Enforce a hard absolute loss cap of $5.00 per trade while strictly prohibiting unhedged pyramiding to ensure risk-reward asymmetry consistently targets $15-$30+ wins."
     }
   ]
 }

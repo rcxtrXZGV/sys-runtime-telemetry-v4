@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against opening multiple correlated micro-lots within a 5-minute window to eliminate accidental averaging into falling or rising knives.",
+  "pyramiding_rule": "Strict prohibition against scaling into losing positions; scale-in entries are only permitted after a minimum +$3.00 floating profit has been locked via trailing stop activation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero new order execution permitted unless the ATR-adjusted volatility filter confirms divergence from high-impact liquidity wicks and spread expansion.",
-  "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once profit crosses +$10.00 to prevent floating profits from evaporating."
+  "new_mandatory_entry_filter": "Mandatory order block confirmation combined with a 5-period ATR volatility check to block entries during high-impact news wicks and low-liquidity transition sessions.",
+  "profit_harvest_threshold": "Aggressive scaling trigger at +$10.00 profit with mandatory trailing activation locking in at least +$4.00 to prevent floating profits from evaporating."
 }
