@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:55:22.287002+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic single-ticket outlier loss (-$20.56 on ticket 1705772492) caused by an unconstrained stop-loss combined with high volatility, instantly wrecking the risk-reward balance.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.68 total) because stop-losses on failed trades were allowed to breach the -$4 to -$6 threshold while winning trades were closed prematurely for microscopic gains.",
-        "market_regime_mismatch": "Entering XAUUSD during intense directional expansion without immediate trailing protection, resulting in deep adverse price excursions before hitting wide fixed stop-losses."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Zero pyramiding into losing positions or micro-retracements; mandatory confirmation of high-frequency order-flow momentum before scaling.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Strict volatility-adjusted entry filter requiring 3-period ATR contraction and volume confirmation prior to order execution on XAUUSD.",
-        "profit_harvest_threshold": "Aggressively lock in gains when floating profit reaches $15.00-$30.00 using trailing sentinel peaks to prevent evaporation."
-      },
-      "synthesis_directive": "Enforce a hard absolute ceiling of $5.00 on all stop-losses and mandate that winning positions must run to at least $15.00 before final harvest."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:57:12.321584+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped drawdown on single high-impact XAUUSD ticket 1705772492 (-$20.56) combined with cluster entries during micro-volatility expansions.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in once floating profit hits +$12.00 to force the realization of the targeted $15-$30+ winning profile."
       },
       "synthesis_directive": "Hard-cap all individual trade risk strictly under $5.00 while expanding profit targets via dynamic trailing stops to force asymmetrical +$15.00+ outcomes."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:16:51.039312+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by entering directly into high-volatility liquidity sweeps without adequate stop buffers, combined with clustered micro-losses (-$3.96, -$1.86) from premature pyramiding into tight consolidation wicks.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily dwarfed wins (+$11.24 total) due to an inverted risk-reward ratio, where stop-losses exceeded profit harvest triggers on negative outcomes.",
+        "market_regime_mismatch": "System entered aggressively during active XAUUSD session transitions where algorithmic stop-hunting sweeps easily clipped tight static stops placed inside institutional volatility bands."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions within 5 minutes or 2 points of a prior losing entry to prevent cascading drawdowns on falling knives.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic data releases; entries require confirmation via an ATR-weighted volume breakout filter.",
+        "profit_harvest_threshold": "Instantly lock in floating profits via trailing stops once gains reach +$15.00 to eliminate premature profit evaporation."
+      },
+      "synthesis_directive": "Enforce strict asymmetric risk parameters capping maximum loss per trade at $5.00 while expanding winning targets to a minimum of $15.00 through dynamic ATR trailing stops."
     }
   ]
 }
