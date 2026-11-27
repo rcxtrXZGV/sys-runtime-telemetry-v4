@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:02:49.614182+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked noise-band entry clustering and structural stop-hunting sweeps on XAUUSD, highlighted by ticket 1705772492 leaking a severe -$20.56 loss due to an over-extended stop loss reacting to structural liquidation zones.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) consistently exceeded average win magnitudes due to static stop-loss placement allowing adverse price drift beyond volatility expansion thresholds.",
-        "market_regime_mismatch": "Entering high-velocity breakout candles without filtering for local micro-structure liquidity grabs, causing the engine to get trapped in sudden spread wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit sequential scaling or adding positions within a 10-pip range of an existing active trade to eliminate compounding drawdown on false breakouts.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe volume-weighted average price (VWAP) cross combined with an institutional order book imbalance confirmation prior to order execution.",
-        "profit_harvest_threshold": "Aggressively trigger trailing locks as soon as floating profits hit +$12.00 to guarantee terminal capture within the $15-$30+ target bracket."
-      },
-      "synthesis_directive": "Enforce strict $5.00 maximum stop-loss boundaries on all XAUUSD positions and execute immediate partial harvests upon crossing the +$12.00 profit threshold."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:04:21.674725+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked compounding into high-volatility liquidity sweeps and over-tight structural stop placements (e.g., ticket 1705772492 losing -$20.56 due to excessive slippage against micro-stops during high-velocity directional runs).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit locking once floating profit crosses the +$12.00 threshold to secure $15-$30+ outcomes."
       },
       "synthesis_directive": "Enforce a strict maximum loss ceiling of $5.00 per trade while widening structural profit targets to force an asymmetric $15-$30+ payout ratio."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:23:03.672046+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution drift during high-volatility XAUUSD momentum shifts caused stop-losses to absorb excessive slippage up to -$20.56, while correlated entries on the same timestamp led to compounding localized drawdowns.",
+        "risk_asymmetry_flaw": "The largest loss (-$20.56) severely violated the risk containment protocol, dwarfing the target win size of $15-$30 due to an unhedged widening stop under aggressive breakout conditions.",
+        "market_regime_mismatch": "Entering breakout positions during low-liquidity or high-impact news wicks without volatility-adjusted buffer constraints resulted in immediate stop-hunting and premature whipsaws."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit sequential entries within 10 minutes or 2 points of an existing position to prevent correlated cascading liquidation (no falling knife or cluster stacking).",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require an ATR-normalized multi-timeframe volume confirmation and zero high-impact macroeconomic news release within +/- 15 minutes before executing any trade.",
+        "profit_harvest_threshold": "Instantly execute trailing micro-harvest locks via Sentinel Peak once unrealized profit hits +$5.00 to prevent evaporation of floating gains."
+      },
+      "synthesis_directive": "Hard-cap all individual XAUUSD stop-losses strictly at $5.00 maximum drawdown and enforce multi-timeframe volume confirmation filters to eliminate catastrophic outlier losses."
     }
   ]
 }
