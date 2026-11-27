@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into falling knives or high-velocity counter-trend spikes; require confirmed structural breakout before scaling volume.",
+  "pyramiding_rule": "Strict prohibition of consecutive grid entries or pyramiding within 120 seconds of a stopped-out order on the same instrument.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated 3-period volume delta confirmation alongside an institutional liquidity sweep filter before order execution.",
-  "profit_harvest_threshold": "Aggressively secure partial profits at +$10.00 and lock remaining exposure at breakeven to ensure wins scale cleanly to the +$15 to +$30 bracket."
+  "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter and order-book imbalance check to ensure entries do not coincide with macro news candle wicks.",
+  "profit_harvest_threshold": "Aggressively lock in green positions via trailing stops as soon as floating profit hits +$15.00 to guarantee the $15-$30+ asymmetry target."
 }

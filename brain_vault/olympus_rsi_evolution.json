@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T11:14:15.212736+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by unconstrained volatility expansion and inadequate initial stop-loss enforcement during high-momentum XAUUSD breakout waves.",
-        "risk_asymmetry_flaw": "Risk-reward profile inverted because average losses (-$6.64) heavily outweighed average wins (+$2.34), driven by premature profit harvesting on marginal gains while allowing bad trades to breach the optimal -$5.00 threshold.",
-        "market_regime_mismatch": "System entered during high-impact liquidity sweeps and momentum wicks, leading to immediate stop-hunting and consecutive clustered entries that exacerbated drawdowns."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 180 seconds or 2.0 ATR of a previous loss or in the direction of a liquidity wick.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory multi-timeframe volume-weighted spread and order-book imbalance confirmation; reject all trades if ATR exceeds the 20-period median by >1.8x.",
-        "profit_harvest_threshold": "Aggressively trigger trailing stop-locks once floating profit hits +$15.00 to guarantee asymmetric retention toward the +$30.00 target window."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 on all XAUUSD stop-losses and lock in trailing mechanics at +$15.00 to permanently eliminate outlier losses and enforce positive risk asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:15:53.186047+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncapped initial stop-loss placement on ticket 1705772492 leading to a severe -$20.56 drawdown, completely violating the $4-$6 risk parameters.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively secure partial profits at +$10.00 and lock remaining exposure at breakeven to ensure wins scale cleanly to the +$15 to +$30 bracket."
       },
       "synthesis_directive": "Strictly cap all XAUUSD stop-losses at $5.00 maximum risk and enforce rapid profit harvesting at +$10.00+ to guarantee asymmetric return profiles."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:34:42.147925+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 caused by an excessively wide stop-loss that absorbed a major adverse liquidity sweep during high-volatility hours, combined with immediate sequential re-entries into a failing directional bias.",
+        "risk_asymmetry_flaw": "Loss magnitude ($20.56 max loss) significantly breached the target risk boundary of $4-$6, while winning trades were prematurely harvested at small increments ($0.39 to $5.34), creating a negative expectancy ratio.",
+        "market_regime_mismatch": "Operating during high-impact structural expansion wicks in XAUUSD without volatility-adjusted stop-loss buffers, leading to micro-stop triggers followed by runaway slippage on the primary catastrophic ticket."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of consecutive grid entries or pyramiding within 120 seconds of a stopped-out order on the same instrument.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter and order-book imbalance check to ensure entries do not coincide with macro news candle wicks.",
+        "profit_harvest_threshold": "Aggressively lock in green positions via trailing stops as soon as floating profit hits +$15.00 to guarantee the $15-$30+ asymmetry target."
+      },
+      "synthesis_directive": "Hard-cap absolute stop-loss risk strictly under $5.00 per trade and enforce parabolic profit-trailing triggers to ensure winners expand toward the $15-$30+ target."
     }
   ]
 }
