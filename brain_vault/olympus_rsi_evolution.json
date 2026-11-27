@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T18:34:58.233168+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unbounded stop-losses during volatile XAUUSD expansions (e.g., ticket 1705772492 resulting in -$20.56) and clustering entries without proper multi-timeframe confirmation.",
-        "risk_asymmetry_flaw": "Losses (-$20.56) severely breached the optimal -$4 to -$6 risk ceiling, while multiple wins were cut off prematurely for fractional cents or micro-profits (+$$0.39 to +$$0.55), inverting the desired risk-to-reward ratio.",
-        "market_regime_mismatch": "Entering during late-session mean-reversion impulses and high-frequency noise wicks without factoring in immediate micro-structural order-book liquidity gaps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing positions within a 1.00 ATR window; pyramiding is exclusively permitted after the primary trade achieves a +$10.00 unrealized profit buffer and breaks even.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a confirmed 3-period volume spike and an order-flow imbalance ratio > 1.6 in the direction of the trade on the M1 timeframe before order execution.",
-        "profit_harvest_threshold": "Trigger trailing micro-harvest locks at +$12.00 profit and enforce hard profit scaling targets starting at +$15.00 up to +$30.00."
-      },
-      "synthesis_directive": "Enforce a non-negotiable $5 hard risk ceiling on all Gold orders and mandate asymmetric profit-letting where no winning trade is closed under $15 unless a hard structural reversal signal triggers."
-    },
-    {
       "evolution_timestamp": "2026-11-26T18:36:27.993824+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled slippage and outlier volatility events on XAUUSD, evidenced by ticket 1705772492 resulting in a -$20.56 loss due to a lagging or bypassed stop-loss threshold.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once floating profit hits +$10.00 to guarantee asymmetric $15-$30+ payouts."
       },
       "synthesis_directive": "Enforce a hard max $5.00 stop-loss ceiling per trade on XAUUSD and mandate immediate trailing profit lock-ins to ensure winners exceed losses by at least 3x."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:12:32.671179+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled slippage and widened structural stops during high-volatility XAUUSD momentum wicks, peaking with a -$20.56 loss on ticket 1705772492.",
+        "risk_asymmetry_flaw": "The engine allowed a single catastrophic loss (-$20.56) to wipe out the cumulative gain of multiple winning trades because the stop-loss was placed too far outside the micro-structural noise band.",
+        "market_regime_mismatch": "Entering during aggressive institutional liquidity sweeps without checking for localized order-book imbalances, causing rapid stop-loss execution before mean reversion could occur."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of secondary entries or scaling into losing positions within a 15-minute execution window; pyramiding is only authorized after the primary order has achieved a trailing profit of +$10.00.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero entry authorized during periods where ATR(14) on the 1-minute chart exceeds 3.5x the historical hourly median, and mandatory structural confirmation via order-flow delta imbalance.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$4.00 profit to completely eradicate the vulnerability of floating profits evaporating into losses."
+      },
+      "synthesis_directive": "Enforce a hard maximum dollar loss cap of $5.00 per trade on XAUUSD and instantly trigger automated profit harvesting once green runs cross +$4.00."
     }
   ]
 }
