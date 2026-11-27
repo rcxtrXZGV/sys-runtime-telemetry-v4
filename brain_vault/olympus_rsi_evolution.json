@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:23:05.944967+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by entering directly into high-volatility news wicks with stop-losses set too far wide in a turbulent liquidity vacuum.",
-        "risk_asymmetry_flaw": "The largest loss (-$20.56) completely dwarfed the average win (~$4.28), violating the strict $4-$6 loss cap mandate and destroying the positive risk-reward skew.",
-        "market_regime_mismatch": "Rapid multi-ticket compounding (tickets 1707575809 and 1707578236/9) during compressed ranges led to whipsaw stop hits and micro-losses."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions or placing multiple correlated tickets within a 10-pip range during high-frequency volatility regimes.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution allowed within 5 minutes prior to and following tier-1 macro news releases; volume-weighted momentum confirmation required on the 1M chart.",
-        "profit_harvest_threshold": "Trigger immediate partial or full SENTINEL_PEAK_HARVEST when floating profit hits the +$15 to +$30 band to prevent profit evaporation."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade on XAUUSD, completely vetoing news-window entries and locking in profits instantly upon reaching the +$15 target band."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:24:50.147152+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "A single catastrophic outlier loss (-$20.56 on ticket 1705772492) dwarfed all gains, caused by a catastrophic stop-loss placement failure relative to localized volatility, combined with consecutive micro-scalp stops taken during tight ranging consolidation.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressive trailing activation once floating profit hits +$8.00 to lock in wins and systematically prevent degradation into sub-$1 closures."
       },
       "synthesis_directive": "Enforce a hard absolute dollar stop-loss ceiling of $5.00 on every individual ticket while locking in trailing profits dynamically to ensure asymmetric $15-$30+ win outcomes."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:51:12.379023+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Catastrophic outlier loss of -$20.56 on ticket 1705772492 due to an unconstrained stop-loss width combined with rapid price velocity against the position during high-impact liquidity sweeps.",
+        "risk_asymmetry_flaw": "Losses ($33.22 total) significantly outpaced wins ($11.24 total) because major drawdown tickets lacked hard bracket limits, allowing adverse price extensions to breach the targeted $4-$6 maximum loss bound.",
+        "market_regime_mismatch": "Clustered entries around timestamps 21:13 to 21:14 indicate over-trading and reactive scaling into volatile XAUUSD counter-trend wicks without sufficient volatility-adjusted structural filters."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing positions or executing multiple consecutive entries within a 5-minute rolling window.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter and order-flow momentum confirmation before market execution to eliminate false breakout wicks.",
+        "profit_harvest_threshold": "Aggressively secure floating profits when gains reach the $15-$30 asymmetric band by utilizing trailing stop automation."
+      },
+      "synthesis_directive": "Enforce absolute hard caps of $5.00 maximum dollar risk per trade and mandate immediate profit harvesting at $15+ to correct the current risk-reward asymmetry."
     }
   ]
 }
