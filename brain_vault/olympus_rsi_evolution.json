@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:00:00.000000+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by a wide stop-loss execution during high volatility wick expansion, coupled with consecutive rapid-fire entries into unstable micro-pullbacks.",
-        "risk_asymmetry_flaw": "Losses heavily outweighed wins because outlier stops reached -$20.56 while profit targets were prematurely capped or micro-clipped below +$5.50, inverting the required $4-$6 loss to $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "System attempted multiple tightly-clustered entries during rapid XAUUSD liquidity sweeps, getting caught in momentum wicks before trend confirmation materialized."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding positions within 60 seconds of a prior entry; pyramiding is limited to strictly verified trend continuations where the initial position is already at breakeven + trailing.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a minimum 3-bar structural volume expansion and ATR-normalized breakout confirmation before order execution.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop-lock whenever floating profit crosses +$12.00 to guarantee terminal exit between $15.00 and $30.00."
-      },
-      "synthesis_directive": "Enforce a hard stop-loss ceiling of $5.00 on all XAUUSD orders while expanding profit harvest triggers to capture asymmetric $15-$30+ runners."
-    },
-    {
       "evolution_timestamp": "2026-11-27T11:40:03.902179+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and over-leveraged volatility exposure during high-velocity breakout wicks on XAUUSD, highlighted by a single -$20.56 catastrophe that wiped out multiple gains.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively secure profits when open trade equity hits +$15.00 using trailing micro-steps, strictly preventing wins from decaying back to breakeven or minor losses."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade while mandating profit harvest triggers between $15.00 and $30.00 to permanently correct the negative risk-reward skew."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:59:49.581431+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to volatility, allowing adverse price excursions to inflict 4x maximum acceptable risk before exit execution.",
+        "risk_asymmetry_flaw": "Losses ($33.22 across 5 trades) substantially outweighed wins ($11.24 across 4 trades) due to failure in cutting losers early and premature micro-scaling out of winning positions.",
+        "market_regime_mismatch": "Rapid clustering of multiple entries around 3549-3551 (Tickets 1707575809, 1707578236, 1707578239) proved a dangerous pyramiding into micro-reversal noise during high-frequency XAUUSD liquidity sweeps."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to losing or flat positions within a 5-pip band; stacking is only permitted after existing position reaches +$10.00 floating profit with breakeven stop-loss locked.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero-tolerance rule requiring a multi-timeframe structural volume-imbalance confirmation and ATR filter before executing any XAUUSD order.",
+        "profit_harvest_threshold": "Aggressively harvest 50% of position size at +$10.00 floating profit and trail remaining size with a strict dynamic chandelier stop to guarantee $15-$30+ asymmetry."
+      },
+      "synthesis_directive": "Hard-cap maximum loss per trade at $5.00 via tight structural stops and enforce aggressive multi-tier profit harvesting once wins cross +$10.00."
     }
   ]
 }
