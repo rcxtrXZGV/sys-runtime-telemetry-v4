@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:53:00.652638+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by a wide stop-loss reacting poorly to an explosive liquidity sweep, compounded by rapid-fire entry clustering (tickets 1707575809, 1707578236, 1707578239) entering the exact same choppy Gold price zone within seconds.",
-        "risk_asymmetry_flaw": "Losses averaged -$6.64 while wins averaged +$2.81, completely inverting the required $15-$30 target profile due to premature cutting of micro-profits and runaway outlier stop-losses.",
-        "market_regime_mismatch": "Executing micro-scalp entries during high-velocity institutional price discovery phases in XAUUSD without volatility expansion filters, leading to immediate stop-hunting and whipsaws."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential order stacking within 60 seconds or within a $1.00 price band to eliminate correlated cluster losses.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require Volume Delta confirmation and an ATR-based volatility threshold check before order execution to avoid thin liquidity wicks.",
-        "profit_harvest_threshold": "Trigger trailing stops or aggressive scale-out protocols once unrealized profit hits +$15.00 to guarantee asymmetric outcomes."
-      },
-      "synthesis_directive": "Enforce a strict $5.00 max risk cap per trade with zero clustering, ensuring winners expand past $15.00 through dynamic trailing while aborting low-conviction micro-entries."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:54:44.984959+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by a lagging stop-loss execution during aggressive expansion wicks, combined with micro-lot pyramiding into rapid counter-trend spikes (-$3.96 and -$1.86).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops and partial profit scaling as soon as open trades reach +$15.00 to protect upside potential up to +$30.00."
       },
       "synthesis_directive": "Enforce strict asymmetry constraints: never let a loss exceed $5.00 while dynamically scaling winners to target a $15-$30+ payoff matrix."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T15:16:11.432330+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight structural stop losses on high-volatility XAUUSD wicks caused premature execution of stops, while failure to secure fast-moving profits led to evaporation and negative outcomes (-$4.53 peak harvest failure).",
+        "risk_asymmetry_flaw": "Losses ($4.53 max) exceeded optimal wins due to execution slippage and delayed trailing stop engagement during rapid momentum shifts.",
+        "market_regime_mismatch": "Entering during tight consolidation ranges in XAUUSD without filtering out micro-structural noise wicks, resulting in multiple consecutive tick-level stop outs."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of consecutive scaling into the same price node within a 120-second window to prevent correlated cluster liquidations.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation candle on the 1-minute chart plus zero high-impact calendar events in the current 15-minute window before order submission.",
+        "profit_harvest_threshold": "Initiate aggressive partial or full trailing lock-in the instant floating profit reaches $3.50 to guarantee positive expectancy before reversal wicks occur."
+      },
+      "synthesis_directive": "Enforce strict ATR-based stop expansion to survive micro-wicks while locking in harvests immediately upon touching $3.50+ profit."
     }
   ]
 }
