@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:10:33.328952+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution timing during high-volatility XAUUSD momentum shifts caused severe slippage past tight stop-losses, notably on ticket 1705772492 resulting in a -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses exceeded winning profits due to letting bad trades breach normal risk bounds (-$20.56 single loss) while cutting winning runs too early (+0.39, +0.49).",
-        "market_regime_mismatch": "Entering positions during overlapping high-impact liquidity sweeps where micro-wicks easily clipped tight $0.10-$0.50 stop-losses or triggered premature trailing stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential averaging or adding positions within 5 minutes of a previous loss or inside a 10-pip tight consolidation channel.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require confirmed volume expansion and a 3-bar structural close outside the opening range before submitting any XAUUSD order.",
-        "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling the moment floating profit reaches +$12.00 to guarantee asymmetric $15-$30 outcomes."
-      },
-      "synthesis_directive": "Enforce a hard absolute maximum risk ceiling of $5.00 per trade on XAUUSD and lock in aggressive profit harvesting once trades cross +$12.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:12:07.448191+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution of tightly clustered scalps during high-volatility XAUUSD expansion regimes resulting in stop-loss cascades and a severe outlier loss (-$20.56) due to an improperly sized structural stop.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit reaches +$8.00 to guarantee minimum capture of the $15-$30 target vector."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum risk per trade on XAUUSD and mandate immediate trailing profit lock-in when trades breach +$8.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T10:48:48.122711+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive slippage and stop-loss placement during volatile XAUUSD liquidity sweeps, highlighted by ticket 1705772492 resulting in a -$20.56 loss which single-handedly corrupted the portfolio's risk-reward balance.",
+        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily dwarfed total wins (+$12.69) because major stop-losses were set far too wide relative to small quick wins, violating the $4-$6 loss ceiling mandate.",
+        "market_regime_mismatch": "Executing sequential entries into high-velocity momentum spikes without confirming localized consolidation ranges, causing multiple tight stops to trigger consecutively within seconds."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding positions (pyramiding) into an ongoing directional wick; subsequent entries require at least a 15-pip pullback and established 5-minute consolidation.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory ATR-based volatility filter and order-book spread check; no trades allowed within 5 minutes of high-impact macroeconomic print windows or when spread exceeds 3.0 pips on XAUUSD.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops or partial profit locks the exact moment open positions reach +$10.00 to guarantee net-positive outcomes toward the $15-$30 target range."
+      },
+      "synthesis_directive": "Enforce a strict $5.00 hard stop-loss ceiling on all XAUUSD orders and immediately terminate any pyramiding sequences during high-velocity price discovery."
     }
   ]
 }
