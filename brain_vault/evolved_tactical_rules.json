@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding allowed within 3 pips of an existing active entry; subsequent orders require a validated structural breakout confirmation and independent volatility-adjusted stop losses.",
+  "pyramiding_rule": "Strictly forbid opening concurrent or multi-ticket positions on XAUUSD within a 30-minute window; zero adding to unrealized negative float.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Strict ATR(14) expansion filter: forbid entries when current bar range exceeds 2.5x the 20-period moving average of ranges, eliminating high-impact news wick entries.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once floating profit hits +$10.00 to guarantee minimum +$5.00 capture, preventing profit evaporation."
+  "new_mandatory_entry_filter": "Hard cap max risk per 0.01 lot to <= $5.00 (50 pips XAUUSD) at order placement, with automatic rejection if high-impact news event is within +/- 15 minutes.",
+  "profit_harvest_threshold": "Initiate 50% partial close at +$5.00 floating profit and trail remaining position using a strict 1.5x ATR dynamic trailing stop."
 }

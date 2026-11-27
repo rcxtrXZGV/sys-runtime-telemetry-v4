@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T09:02:14.172744+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked expansion of stop-losses during high-volatility liquidity sweeps, specifically ticket 1705772492 resulting in a -$20.56 drawdown which completely wiped out the positive expectancy of multiple winning trades.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate) severely outweighed wins ($38.51 aggregate) because the engine allowed a single outlier loss to reach -$20.56 while capping winners prematurely between $0.39 and $5.34 instead of scaling them toward the $15-$30 target band.",
-        "market_regime_mismatch": "Entering breakout orders directly into dense liquidity clusters on XAUUSD without filtering out high-impact wick zones, causing immediate stop-hunting hits before structural trend momentum could establish."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential averaging or adding positions within 2 points of prior entries during high-velocity moves to eliminate clustered stop-outs like tickets 2123016852 and 2123016855.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of major macroeconomic news releases or when 1-minute ATR expands by more than 300 percent above the 20-period moving average.",
-        "profit_harvest_threshold": "Initiate trailing structural stops or trigger partial harvesting the moment floating profit crosses $10.00 to prevent unrealized gains from evaporating back to breakeven or micro-losses."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and immediately lock in partial profits once trades exceed $10.00 to guarantee net positive expectancy."
-    },
-    {
       "evolution_timestamp": "2026-11-27T09:04:14.105811+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Unchecked volatility expansion in XAUUSD caused stop-loss hunting, highlighted by ticket 1705772492 incurring a severe -$20.56 loss due to an overly wide, unmanaged stop relative to normal structural parameters.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation once floating profit hits +$10.00 to guarantee minimum +$5.00 capture, preventing profit evaporation."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade across all instruments with instant trailing profit locks once unrealized gains exceed $10.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T10:36:02.297998+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncapped stop-loss expansion on ticket 1705772492 causing an isolated -$20.56 loss (61.8% of total loss sum) combined with simultaneous order stacking/pyramiding into adverse motion at 21:14:10.",
+        "risk_asymmetry_flaw": "Negative expectancy caused by premature profit-cutting (micro-wins of +$0.39 and +$0.49) while permitting single trade drawdowns to reach -$20.56 on 0.01 lot sizes.",
+        "market_regime_mismatch": "Executing breakouts during high-volatility expansion spikes (XAUUSD $3514\u2013$3575 range) without spread/ATR expansion buffers, leading to execution slippage and reverse stop-hunts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly forbid opening concurrent or multi-ticket positions on XAUUSD within a 30-minute window; zero adding to unrealized negative float.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Hard cap max risk per 0.01 lot to <= $5.00 (50 pips XAUUSD) at order placement, with automatic rejection if high-impact news event is within +/- 15 minutes.",
+        "profit_harvest_threshold": "Initiate 50% partial close at +$5.00 floating profit and trail remaining position using a strict 1.5x ATR dynamic trailing stop."
+      },
+      "synthesis_directive": "Enforce a hard hard-stop limit of $5.00 per trade and ban multi-ticket entry stacking to guarantee minimum 1:3 risk-to-reward asymmetry."
     }
   ]
 }
