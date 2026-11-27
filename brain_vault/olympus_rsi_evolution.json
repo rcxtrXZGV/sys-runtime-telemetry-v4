@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:21:51.700163+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Excessive slippage and structural stop hunting during high-volatility XAUUSD momentum pushes, evidenced by ticket 1705772492 losing -$20.56 due to a wide or gapped stop-loss execution.",
-        "risk_asymmetry_flaw": "Losses heavily outweighed wins ($33.22 total loss vs $11.24 total win) because of premature profit harvesting on winning positions and failing to cap catastrophic tail-risk stops on volatile gold swings.",
-        "market_regime_mismatch": "Entering during aggressive liquidity sweeps without accounting for sudden macro wicks, causing repetitive small stops followed by a single outsized outlier loss."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of adding to positions (anti-martingale/no pyramiding into falling knives) until primary position achieves +$10.00 floating profit.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero execution within 15 minutes of Tier-1 macro news events; mandatory volume-weighted average price (VWAP) confirmation alongside a 3-bar volatility contraction index check.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop and partial profit locks as soon as open trade profit hits +$15.00, ensuring maximum capture up to +$30.00."
-      },
-      "synthesis_directive": "Enforce a hard maximum dollar loss of $5.00 per trade across all instruments while forcing profit targets to run cleanly to the $15.00-$30.00 band."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:23:32.283698+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) driven by an unconstrained stop-loss during high volatility, alongside rapid-fire consecutive entry failures during high-impact structural wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic trailing stop locks once profit exceeds +$5.00, allowing runners to scale unhindered toward the $15-$30 target envelope."
       },
       "synthesis_directive": "Enforce strict volatility-adjusted stop parameters under $4.50 and disallow clustered scalps during low-liquidity macro windows to secure pure positive risk asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:05:09.849168+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight stop-losses placed at psychological or round-number price thresholds (e.g., 3550.00, 3552.00) were routinely hunted by institutional micro-wicks during high-frequency liquidity sweeps.",
+        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded optimal win outputs due to premature stop triggering combined with delayed exit harvesting on volatile XAUUSD expansions.",
+        "market_regime_mismatch": "Executing micro-lots during peak London-New York session overlaps without accounting for spread widening and instantaneous high-impact volatility spikes."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds or 1.5 ATR of a preceding stop-loss event; zero falling knife pyramiding allowed.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require confirmation of order flow imbalance via tick volume delta and structural rejection of round-number liquidity pools prior to execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or Sentinel Peak Harvest as soon as floating profit crosses +$5.00 to lock in positive asymmetry."
+      },
+      "synthesis_directive": "Never place stop-losses on exact round numbers and lock in profit aggressively at +$5.00 to ensure asymmetric $4 risk vs $15+ reward profiles."
     }
   ]
 }
