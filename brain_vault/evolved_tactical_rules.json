@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding authorized unless the foundational position has already locked in +$10.00 realized profit with a trailing stop at breakeven.",
+  "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 2 points of an existing trade; all pyramiding must require a confirmed 1.5 ATR continuation break.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Multi-timeframe volume and order book imbalance check blocking entries within 15 minutes of tier-1 macroeconomic high-impact releases.",
-  "profit_harvest_threshold": "Aggressively scale out or hard close when floating profit hits +$15.00 to +$30.00, preventing premature micro-exits while capping downside rigidly at $5.00."
+  "new_mandatory_entry_filter": "No XAUUSD order execution allowed during periods where the 5-minute ATR exceeds 3.5 times the 20-period moving average, preventing entry into high-impact expansion wicks.",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvest immediately when floating profit hits +$15.00 to lock in asymmetric gains and prevent profit evaporation."
 }
