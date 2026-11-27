@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on sequential averaging or adding positions within 5 minutes of a previous loss or inside a 10-pip tight consolidation channel.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmed volume expansion and a 3-bar structural close outside the opening range before submitting any XAUUSD order.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling the moment floating profit reaches +$12.00 to guarantee asymmetric $15-$30 outcomes."
+  "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window (no micro-stacking into localized volatility wicks as seen in tickets 1707575809 through 1707578239).",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory order block validation combined with a zero-tick news blackout window (T-2 to T+5 minutes around high-impact tier-1 releases).",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvest immediately upon hitting +$10.00 floating profit to lock in asymmetry toward the $15-$30 target band."
 }

@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T03:02:40.961591+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Unchecked volatility expansion during London-NY crossover and late-session sweeps, causing stops to be breached by up to -$20.56 due to fixed pip-based stops that failed to adapt to high-ATR XAUUSD micro-spikes.",
-        "risk_asymmetry_flaw": "Inverted risk-reward profile where premature micro-profit closures (+0.39 to +5.02) contrasted with large, unmanaged tail-risk drawdowns (-20.56), failing the strict $4-$6 loss ceiling.",
-        "market_regime_mismatch": "Entering mean-reversion short/long structures during high-momentum breakout wicks and aggressive clustered entries (ticket 1707578236/2123016855) that acted as self-inflicted pyramiding into falling knives."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Absolute ban on multi-ticket clustering within a 30-second window; subsequent scale-in orders require a confirmed 15-pip structural breakout and positive floating profit on the primary tranche.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macroeconomic news wicks, verified via instantaneous ATR expansion filters exceeding 2.5x standard deviation.",
-        "profit_harvest_threshold": "Dynamic trailing stop activation at +$5.00 profit, forcing partial liquidation at +$15.00 and full runner trailing at +$30.00 to guarantee asymmetric win capture."
-      },
-      "synthesis_directive": "Enforce a hard $5.00 maximum stop-loss limit on all XAUUSD positions and activate aggressive trailing profit locks to guarantee asymmetrical $15-$30 returns."
-    },
-    {
       "evolution_timestamp": "2026-11-27T03:09:08.742383+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution lag and over-leveraged stop distances during high-volatility momentum bursts, resulting in a single catastrophic loss of -$20.56.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling the moment floating profit reaches +$12.00 to guarantee asymmetric $15-$30 outcomes."
       },
       "synthesis_directive": "Enforce a hard absolute maximum risk ceiling of $5.00 per trade on XAUUSD and lock in aggressive profit harvesting once trades cross +$12.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:12:07.448191+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution of tightly clustered scalps during high-volatility XAUUSD expansion regimes resulting in stop-loss cascades and a severe outlier loss (-$20.56) due to an improperly sized structural stop.",
+        "risk_asymmetry_flaw": "Losses exceeded winning trades due to premature exit of small green positions (+$0.39, +$0.49) while letting adverse momentum test wider threshold stops up to -$20.56, violating the $4-$6 loss capping mandate.",
+        "market_regime_mismatch": "Attempting mean-reversion filters and tight structural scalps during aggressive directional trend wicks without volatility-adjustedATR stop buffers."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of multiple entries within a 5-minute window (no micro-stacking into localized volatility wicks as seen in tickets 1707575809 through 1707578239).",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Mandatory order block validation combined with a zero-tick news blackout window (T-2 to T+5 minutes around high-impact tier-1 releases).",
+        "profit_harvest_threshold": "Trigger trailing sentinel harvest immediately upon hitting +$10.00 floating profit to lock in asymmetry toward the $15-$30 target band."
+      },
+      "synthesis_directive": "Enforce absolute hard caps on individual gold loss tickets at $5.00 maximum while widening profitable trailing horizons to capture $15-$30 expansions."
     }
   ]
 }
