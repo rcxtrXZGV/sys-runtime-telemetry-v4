@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:53:42.798127+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to tick volatility, and rapid cluster execution (tickets 1707575809 and 1707578236) demonstrated dangerous over-leveraged pyramiding into counter-trend micro-wicks.",
-        "risk_asymmetry_flaw": "Losses ($33.22 total) heavily outweighed wins ($11.68 total) because trailing and manual interventions failed to truncate outlier negative excursions while premature exits clipped positive floats.",
-        "market_regime_mismatch": "High-frequency high-impact liquidity sweeps during late-session XAUUSD price expansion breached tight stop clusters, causing compounding slippage."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding positions within 60 seconds of a previous fill; zero compounding into negative floating drawdowns.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe structural volatility contraction check and zero Tier-1 macroeconomic news release in the immediate 15-minute window.",
-        "profit_harvest_threshold": "Trigger immediate mechanical scale-out or trailing hard stop lock once unrealized gain touches +$15.00 to guarantee asymmetric win-to-loss ratios."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum dollar risk per trade on XAUUSD, abolish unconstrained pyramiding, and mandate automated profit harvesting between $15.00 and $30.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T10:55:22.287002+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic single-ticket outlier loss (-$20.56 on ticket 1705772492) caused by an unconstrained stop-loss combined with high volatility, instantly wrecking the risk-reward balance.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation the exact millisecond floating profit hits +$8.00 to lock in $15-$30+ runners."
       },
       "synthesis_directive": "Strictly cap maximum risk per trade at $5.00 while enforcing aggressive trailing stops to allow winners to scale past $15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T12:15:13.723899+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the initial stop-loss was placed too wide relative to tick volatility, failing to cut a severe adverse continuation early. Additionally, cluster execution in quick succession (tickets 1707575809 and 1707578236/9) indicated dangerous pyramiding into a localized volatility pocket.",
+        "risk_asymmetry_flaw": "Losses exceeded winning profits because adverse trades were allowed to drift into a massive -$20.56 hole, whereas winning positions were prematurely capped between +$0.39 and +$5.34, completely inverting the target $4-$6 loss to $15-$30+ win asymmetry.",
+        "market_regime_mismatch": "The trading engine entered high-velocity XAUUSD liquidity zones without filtering for high-impact order-book sweeps, resulting in instant stop-hunting activations followed by premature reversion."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening secondary or tertiary positions within 5 minutes of a prior entry; no averaging down or scaling into moving knives.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require minimum institutional volume delta confirmation and a localized order-book imbalance check before routing any XAUUSD order.",
+        "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in once floating profit hits +$12.00 to force the realization of the targeted $15-$30+ winning profile."
+      },
+      "synthesis_directive": "Hard-cap all individual trade risk strictly under $5.00 while expanding profit targets via dynamic trailing stops to force asymmetrical +$15.00+ outcomes."
     }
   ]
 }
