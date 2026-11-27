@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "PROHIBIT adding new positions within 60 seconds of an active signal or when floating unrealized profit is negative.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a previous stop-out; no pyramiding into falling knives or volatile wicks.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 15-minute ATR volatility confirmation and zero high-impact news window within 15 minutes prior to trade execution.",
-  "profit_harvest_threshold": "Lock dynamic trailing stop at +$3.00 unrealized profit and force full SENTINEL exit upon a 25% giveback from peak unrealized high."
+  "new_mandatory_entry_filter": "Require a 3-bar order-flow confirmation and a minimum 1.5 ATR buffer away from psychological round-number liquidity pools before opening any XAUUSD order.",
+  "profit_harvest_threshold": "Aggressively trigger partial or full closes via SENTINEL_PEAK_HARVEST once unrealized gains cross +$12.00 to protect profits from evaporating."
 }
