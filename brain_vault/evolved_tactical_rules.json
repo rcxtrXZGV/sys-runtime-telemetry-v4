@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit entering multiple sequential orders (pyramiding) within a 60-second window on XAUUSD; maximum 1 active position per directional impulse.",
+  "pyramiding_rule": "Strictly prohibit adding positions within 60 seconds of a previous fill; zero compounding into negative floating drawdowns.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a confirmed 5-minute ATR breakout candle closing past the micro-structure key level before triggering market orders, avoiding fakeouts.",
-  "profit_harvest_threshold": "Aggressively trigger trailing stop-lock or partial harvesting when floating profit crosses +$8.00 to prevent positive runs from evaporating."
+  "new_mandatory_entry_filter": "Require a validated multi-timeframe structural volatility contraction check and zero Tier-1 macroeconomic news release in the immediate 15-minute window.",
+  "profit_harvest_threshold": "Trigger immediate mechanical scale-out or trailing hard stop lock once unrealized gain touches +$15.00 to guarantee asymmetric win-to-loss ratios."
 }
