@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into falling knives or consolidation wicks; subsequent scaling entries are strictly forbidden until the primary position achieves a +$10 minimum floating profit and moves stop-loss to breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory order block confirmation combined with an ATR-normalized volatility filter; entries are prohibited within 15 minutes of Tier-1 macro news releases or during abnormal spread expansion.",
-  "profit_harvest_threshold": "Initiate aggressive trailing and partial profit-taking once open profit crosses +$12.00, ensuring runners expand into the $15-$30+ asymmetrical band."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions (no averaging down); allow scaling into winners only after a verified 1:1 R:R structural break.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero execution allowed during high-impact news windows and within 30 minutes of daily session closes; require an ATR volatility normalization threshold before entry.",
+  "profit_harvest_threshold": "Initiate aggressive trailing or partial profit harvesting once floating profit hits +$15.00 to prevent unrealized gains from evaporating."
 }
