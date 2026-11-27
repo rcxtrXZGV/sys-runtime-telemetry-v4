@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:30:10.408342+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution entry during high-volatility XAUUSD momentum extensions resulted in severe slippage and catastrophic stop-loss breaches (-$20.56 single ticket loss), completely wiping out minor winning runs.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$11.24 total) due to a failure to cap maximum allowable drawdowns per ticket and entering correlated multiple positions (pyramiding into adverse wicks).",
-        "market_regime_mismatch": "The trading engine attempted mean-reversion and rigid scalping during high-velocity directional breakouts, triggering stop-losses right before price continuation or suffering deep adverse excursions."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to losing positions or opening multiple tickets within a 5-pip range; zero tolerance for scaling into active momentum wicks.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a validated multi-timeframe liquidity sweep and order-block confirmation combined with an ATR filter before placing any 0.01 lot order on XAUUSD.",
-        "profit_harvest_threshold": "Instantly lock in partials or trigger trailing stops once floating profit reaches +$5.00 to prevent gains from evaporating back to zero."
-      },
-      "synthesis_directive": "Enforce a strict hard cap of $5.00 maximum stop-loss on all XAUUSD orders and immediately terminate any multi-ticket pyramiding when volatility expands."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:31:39.093383+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was misplaced and allowed adverse price migration far beyond institutional risk thresholds. Furthermore, multiple entries (Tickets 1707575809, 1707578236, 1707578239) within minutes of each other indicate unauthorized pyramiding/grid stacking into high-volatility XAUUSD momentum wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing and partial profit capture once the position reaches +$12.00 to lock in gains before mean-reversion pullbacks."
       },
       "synthesis_directive": "Enforce a mandatory ATR-based stop buffer of at least $3.50 on XAUUSD to eliminate premature micro-stop hunting and guarantee asymmetric $15-$30 reward capture."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:19:03.808788+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Consecutive micro-scalp executions on XAUUSD placed stop-losses too close to immediate noise wicks, resulting in repeated clustering stops followed by adverse drift.",
+        "risk_asymmetry_flaw": "Losses (-$4.53 max) frequently outstripped average wins (+$0.49 to +$5.34), violating the asymmetric return objective due to premature profit-taking and late-stage trailing slippage.",
+        "market_regime_mismatch": "Executing fixed-pip stop distances during high-volatility liquidity sweeps around 21:13-22:55 UTC caused predictable stop-hunting."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against opening correlated micro-lots within 60 seconds of a prior stop-out; no averaging down into falling momentum.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require confirmed multi-timeframe ATR expansion and order-flow imbalance before dispatching market orders on XAUUSD.",
+        "profit_harvest_threshold": "Initiate aggressive trailing harvest on XAUUSD once floating profit crosses +$10.00 to guarantee minimum +$15.00 stretches."
+      },
+      "synthesis_directive": "Enforce strict volatility-adjusted stop-loss buffers and eliminate overlapping rapid-fire entries during high-impact liquidity windows to keep max loss under $5.00."
     }
   ]
 }
