@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:31:39.093383+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was misplaced and allowed adverse price migration far beyond institutional risk thresholds. Furthermore, multiple entries (Tickets 1707575809, 1707578236, 1707578239) within minutes of each other indicate unauthorized pyramiding/grid stacking into high-volatility XAUUSD momentum wicks.",
-        "risk_asymmetry_flaw": "Total loss sum (-$33.22) vastly outweighed total win sum (+$11.24) due to a catastrophic failure in risk-reward enforcement; large outsized losses were combined with premature micro-profits exiting between +$0.39 and +$5.34.",
-        "market_regime_mismatch": "The engine triggered entries during high-frequency retail liquidity sweeps and news-driven price expansion phases without confirming institutional order-flow continuation, causing stop-losses to be hunted repeatedly."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to losing positions or opening multiple tickets within a 15-minute window; maximum 1 active trade per instrument unless the existing position has already locked in trailing profits.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a 3-standard-deviation volume-weighted momentum confirmation combined with an institutional spread filter before any XAUUSD order is executed.",
-        "profit_harvest_threshold": "Aggressively trigger trailing locks as soon as open profit hits +$10.00, ensuring winners naturally stretch toward the $15-$30+ asymmetry target."
-      },
-      "synthesis_directive": "Hard-cap every individual trade risk strictly below $5.00 while disabling rapid-fire position stacking to enforce absolute mathematical asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:33:09.346082+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive stop-loss width on high-impact XAUUSD volatility spikes, culminating in a severe -$20.56 single-deal drawdown due to failure to exit before trend inversion.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing harvest on XAUUSD once floating profit crosses +$10.00 to guarantee minimum +$15.00 stretches."
       },
       "synthesis_directive": "Enforce strict volatility-adjusted stop-loss buffers and eliminate overlapping rapid-fire entries during high-impact liquidity windows to keep max loss under $5.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:23:12.250364+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Clustered simultaneous entries at identical timestamps (21:14:10 UTC) leading to double-risk exposure during low-liquidity spreads, combined with delayed Sentinel Peak Harvest execution resulting in negative profit realized on exit.",
+        "risk_asymmetry_flaw": "Average win size ($3.62) failed to outweigh combined multi-position drawdown events ($5.82 total lost at 21:14:10 UTC), violating the mandatory 3:1 reward-to-risk asymmetry target.",
+        "market_regime_mismatch": "Execution during the post-US session illiquid rollover window (21:00-23:00 UTC) where wider spreads and whip-saw wicks triggered tight stop-losses prematurely."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict block on opening simultaneous or sub-minute secondary orders; pyramiding permitted only when position 1 is secured at break-even or higher with +1.5x ATR floating profit.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Blackout all trade entries between 21:00 UTC and 22:30 UTC; require M5 ATR volatility expansion check before authorizing XAUUSD orders.",
+        "profit_harvest_threshold": "Lock in +50% of peak unrealized profit once floating gain reaches $5.00, escalating trail to target $15.00-$30.00 extension runs."
+      },
+      "synthesis_directive": "Enforce strict single-order execution per signal cycle with mandatory blackout period during market rollover to preserve capital for high-volume directional moves."
     }
   ]
 }
