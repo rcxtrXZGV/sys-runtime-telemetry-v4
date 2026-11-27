@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of secondary entries within 30 seconds or 1.0 ATR of an existing open position to prevent accidental cascading into falling/rising micro-knives.",
+  "pyramiding_rule": "Strict 120-second order cooldown; zero secondary entries allowed until primary trade reaches minimum +1.5R profit and breakeven lock.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume-weighted order block confirmation combined with a mandatory spread-adjusted buffer before firing market orders on XAUUSD.",
-  "profit_harvest_threshold": "Initiate trailing stop-lock or partial harvest once floating profit crosses +$10.00 to guarantee asymmetric $15-$30 outcomes."
+  "new_mandatory_entry_filter": "Block all XAUUSD entries between 21:00-22:30 UTC liquidity gap and mandate 5M ATR threshold < $3.20.",
+  "profit_harvest_threshold": "Lock dynamic breakeven at +$2.50 floating profit; trigger aggressive peak harvest at +$6.00 to secure minimum $4.00 net return."
 }

@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:18:26.042896+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56) caused by a massive high-impact news wick on XAUUSD that plowed through an insufficient local stop-loss, alongside clustered failed breakout re-entries.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily dwarfed wins (+$11.24 total) due to holding losing positions into aggressive volatility expansions while prematurely cutting or micro-closing winning runs.",
-        "market_regime_mismatch": "System entered counter-trend and breakout traps during high-velocity liquidity sweeps on XAUUSD, where tight initial stops triggered instantly and wider stops absorbed oversized losses."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to losing positions; pyramiding only authorized in the direction of the primary trend after a minimum +$10.00 floating profit cushion is locked via trailing stop.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution within a 15-minute window before or after high-impact USD/XAU macroeconomic data releases, combined with a mandatory multi-timeframe ATR volatility filter.",
-        "profit_harvest_threshold": "Initiate aggressive trailing and partial profit-taking once floating profits hit +$15.00 to prevent evaporation, allowing the remaining runner to target +$30.00+."
-      },
-      "synthesis_directive": "Enforce strict risk caps under $5.00 per trade, completely ban averaging down into losing XAUUSD wicks, and mandate aggressive profit protection once trades turn green."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:20:04.677714+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by an overly wide static stop-loss interacting with volatile XAUUSD liquidity sweeps, alongside premature micro-profit closing.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stop-lock or partial harvest once floating profit crosses +$10.00 to guarantee asymmetric $15-$30 outcomes."
       },
       "synthesis_directive": "Enforce strict anti-pyramiding spacing and widen structural stop-losses beyond high-frequency liquidity pools while dynamically scaling profit targets to achieve $15-$30 asymmetric payoffs."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T14:01:05.038434+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Duplicate sub-second order placement at 21:14:10 compounded drawdown on a single level break, combined with delayed peak-harvest execution allowing floating gains to turn into -$4.53 losses.",
+        "risk_asymmetry_flaw": "Negative profit factor caused by premature profit-taking on wins (+$0.49 to +$5.34) while allowing individual trailing stop-outs to hit -$4.53.",
+        "market_regime_mismatch": "Late-session US illiquidity window (21:00-23:00 UTC) characterized by low depth, high slippage, and aggressive mean-reversion stop hunts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict 120-second order cooldown; zero secondary entries allowed until primary trade reaches minimum +1.5R profit and breakeven lock.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Block all XAUUSD entries between 21:00-22:30 UTC liquidity gap and mandate 5M ATR threshold < $3.20.",
+        "profit_harvest_threshold": "Lock dynamic breakeven at +$2.50 floating profit; trigger aggressive peak harvest at +$6.00 to secure minimum $4.00 net return."
+      },
+      "synthesis_directive": "Enforce single-order concurrency locks and mandate minimum 2.5:1 reward-to-risk targets on all XAUUSD executions to guarantee positive mathematical expectancy."
     }
   ]
 }
