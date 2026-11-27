@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of consecutive multi-ticket entries in the same direction within a 60-second window to prevent illegal scaling into falling or rising knives.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe Order Book Imbalance and ATR-normalized micro-breakout confirmation required before executing any XAUUSD volume.",
-  "profit_harvest_threshold": "Instant scale-out or breakeven lock once unrealized PnL hits +$10.00 to prevent floating profits from evaporating below +$5.00."
+  "pyramiding_rule": "Strict prohibition of scaling into positions within 15 pips of a prior entry; require a verified 1R favorable excursion and structural break before adding risk.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Zero order execution during high-impact volume spikes unless order-flow imbalance exceeds 75% delta and price clears the 5-period ATR envelope.",
+  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 profit to ensure wins achieve the mandatory $15-$30+ target asymmetric skew."
 }
