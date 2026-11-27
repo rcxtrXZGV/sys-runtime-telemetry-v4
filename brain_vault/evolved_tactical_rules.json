@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on sequential order stacking within 60 seconds or 2 points of prior entries to prevent compounding into falling/rising micro-wicks.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 3-bar structural volume divergence and 14-period ATR volatility normalization before ticket execution.",
-  "profit_harvest_threshold": "Initiate trailing stop protection at +$4.00 profit and force manual/algorithmic partial close when profit reaches +$12.00 to lock in asymmetrical payout distributions."
+  "pyramiding_rule": "Strict prohibition on sequential order stacking within 5 pips of a prior loss; zero averaging down or adding to floating negative positions.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Volume and spread velocity must remain below 1.5x the 20-period moving average; zero entries permitted during high-impact news candle wicks.",
+  "profit_harvest_threshold": "Initiate aggressive trailing harvest when floating profit crosses +$12.00 to lock gains before retracements trigger."
 }
