@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-26T18:48:27.491560+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped drawdown on ticket 1705772492 (-$20.56) combined with premature micro-profit closures and multiple tight-stop re-entries clustering near volatility nodes.",
-        "risk_asymmetry_flaw": "Inverted risk profile where average losses exceeded average wins due to holding losing positions past structural invalidation while cutting winners at sub-dollar or minimal ticks.",
-        "market_regime_mismatch": "Executing micro-lots inside aggressive high-frequency XAUUSD session overlap wicks, causing premature stop-outs followed by immediate trend continuation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against averaging down or scaling into losing nodes; pyramiding is limited strictly to momentum expansion phase after trade has achieved +$10.00 floating profit.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero order execution during 5-minute ATR expansion spikes exceeding 3x the 20-period moving average unless confirmed by a volume-weighted order block retest.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop locking once profit reaches +$12.00, ensuring absolute floor at +$6.00 to prevent positive drift evaporation."
-      },
-      "synthesis_directive": "Enforce a hard absolute dollar stop-loss cap of $5.00 per trade on all XAUUSD executions while scaling winners to a minimum target range of $15.00 to $30.00."
-    },
-    {
       "evolution_timestamp": "2026-11-26T18:51:46.073074+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Execution stops placed too close to high-volatility liquidity pools on XAUUSD, causing premature stop-outs followed by immediate trend continuation, compounded by holding a catastrophic -$20.56 loss due to an unadjusted trailing stop.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing stop activation or partial profit capture the moment floating profit hits +$12.00 to prevent evaporation."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate profit harvesting when trades reach positive velocity."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T08:25:11.361120+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncontrolled volatility expansion on XAUUSD during the 13:36 session caused a severe -$20.56 drawdown because the stop-loss distance expanded beyond acceptable risk thresholds, coupled with clustered micro-entries (tickets 2123013996 and 2123016852) that acted as premature scaling into high-frequency retracements.",
+        "risk_asymmetry_flaw": "The largest single loss (-$20.56) completely wiped out the positive expectancy accumulated across multiple wins due to a failure to clamp down maximum dollar risk per trade, violating the $4-$6 absolute risk ceiling.",
+        "market_regime_mismatch": "Executing trades into erratic high-velocity momentum wicks without a macro volatility dampener, causing stop-losses to be clipped on standard market noise."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition against adding consecutive volume on the same asset within a 60-second window to prevent inadvertent averaging into falling or rising knives.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated multi-timeframe order block confirmation and ATR-based volatility filter before order authorization, absolutely forbidding entries during sub-minute expansion wicks.",
+        "profit_harvest_threshold": "Instantly lock in trailing profits via Sentinel Peak Harvest once a position achieves +$10.00 floating profit to ensure the $15-$30+ asymmetric win profile."
+      },
+      "synthesis_directive": "Enforce a rigid $5.00 maximum dollar risk per trade across all assets and trigger aggressive Sentinel Peak Harvest on all winning legs at +$10.00 to eliminate outsized tail losses."
     }
   ]
 }
