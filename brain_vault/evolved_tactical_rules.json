@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding positions within 15 points of an existing trade cluster or during accelerated velocity wicks.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require mandatory multi-timeframe order book imbalance confirmation and 5-period EMA slope alignment prior to execution.",
-  "profit_harvest_threshold": "Aggressively trigger dynamic breakeven locks and partial harvesting at +$4.00 to guarantee net positive skew."
+  "pyramiding_rule": "Strict prohibition of adding positions within 10 ticks of an existing active order to eliminate falling knife pyramiding.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a 3-bar structural volume confirmation and an absolute spread filter below 30 points prior to order execution.",
+  "profit_harvest_threshold": "Initiate partial profit harvesting and trail stops to break-even immediately upon reaching a floating gain of $12.00."
 }
