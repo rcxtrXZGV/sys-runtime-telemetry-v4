@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into active pullbacks; add new volume only after the primary position registers a minimum +$8.00 floating profit and breaks structure.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR(14) expansion filter combined with order-flow imbalance confirmation to prevent entry into low-liquidity chop and high-impact wicks.",
-  "profit_harvest_threshold": "Initiate trailing stop automation at +$10.00 and execute hard profit harvests at +$15.00 to +$30.00 targets."
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Strict prohibition of multiple entries within the same 5-minute liquidity window to prevent compounding drawdowns on a single wick.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory 14-period ATR volatility check and order-flow momentum confirmation across dual timeframes prior to order execution.",
+  "profit_harvest_threshold": "Aggressively secure profits via trailing dynamic stops once floating returns reach +$10.00 to guarantee the $15-$30 asymmetric win profile."
 }
