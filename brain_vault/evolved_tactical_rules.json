@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Absolute ban on entering multiple correlated tickets within a 2-minute window (no clustering like tickets 1707578236 and 1707578239); subsequent additions require a confirmed 15-pip structural breakout and minimum +$5.00 floating profit on the primary leg.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries are capped at 1 per 15-minute directional momentum block.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order execution within 15 pips of unmitigated round numbers or major liquidity voids; require a 5-second volume-weighted order flow confirmation delta greater than +1.5 standard deviations.",
-  "profit_harvest_threshold": "Initiate dynamic partial profit locks at +$6.00 with trailing activation, disabling fixed tight micro-stops that choke trades yielding sub-$1 outcomes."
+  "new_mandatory_entry_filter": "Volume delta and order book imbalance must confirm breakout direction by at least 1.5 standard deviations before order routing.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once unrealized profit crosses +$4.00 to protect upside toward the $15.00-$30.00 target window."
 }
