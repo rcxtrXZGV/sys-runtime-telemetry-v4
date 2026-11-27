@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27T13:36:41.926706+00:00",
+  "timestamp": "2026-11-27T13:38:49.199370+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
   "confidence_score": 50,
@@ -8,6 +8,6 @@
   "sl_price": 3610.0,
   "tp_price": 3645.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No active open positions on broker. Reversal sentinel monitoring mode engaged.",
-  "trade_thesis": "Gold (XAUUSD) has pulled back from the intraday high of 3634.7 down to 3620.39. The recent 15m candles show a minor rejection from the highs (candle close lower than open at 3620.39 after peaking at 3626.7). While the broader upward structure remains intact, current short-term momentum is consolidating and lacking a definitive sweep and breakout trigger. We stand on the sidelines in WAIT mode until price approaches key intraday liquidity boundaries."
+  "reversal_sentinel_assessment": "No open positions active on broker. Reversal sentinel monitoring sideline state.",
+  "trade_thesis": "XAUUSD is currently pulling back from the intraday high of 3634.7 toward the 3620.4 region. Recent candles show high volatility with a minor upper wick rejection on the 15-minute timeframe. Awaiting clearer momentum alignment and liquidity sweep confirmation before deploying capital."
 }

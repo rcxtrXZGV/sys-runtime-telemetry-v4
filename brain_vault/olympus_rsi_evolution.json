@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:02:33.387300+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the stop-loss was placed too wide (0.42 dollars away on XAUUSD scale translated to an outsized cash loss), while subsequent tickets showed clustering during high-volatility wicks.",
-        "risk_asymmetry_flaw": "The loss-to-win ratio was inverted; average losses were weighed down by a severe outlier (-$20.56) while wins capped out prematurely around +$5.00 to +$5.34, failing to reach the mandatory $15-$30 asymmetric return profile.",
-        "market_regime_mismatch": "Entering positions during rapid XAUUSD high-impact news wicks without volatility-adjusted structural stops resulted in immediate stop-hunting and premature capital erosion."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strict prohibition on sequential order stacking (ticket clusters like 2123016852 and 2123016855) within a 5-second window to prevent falling knife over-exposure.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a 3-bar structural volume divergence confirmation and zero high-impact tier-1 macro news releases within a +/- 15-minute window prior to order execution.",
-        "profit_harvest_threshold": "Aggressively trigger trailing locks once floating profit hits +$12.00 to force wins into the $15-$30+ asymmetry band."
-      },
-      "synthesis_directive": "Enforce absolute $4.50 hard dollar loss caps on every XAUUSD ticket and require multi-tier profit trailing to scale winners toward the $30 asymmetric target."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:04:02.018831+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was placed too loose or lagged behind volatility expansion during a high-velocity momentum thrust, while duplicate entries at 2123016852 and 2123016855 proved that the engine engaged in toxic pyramiding into a falling/rising knife.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing or hard close when unrealized profit hits +$15.00 to guarantee asymmetric $15-$30+ paydays."
       },
       "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD and mandate immediate profit locking at +$15.00 to strictly reverse the negative risk/reward asymmetry."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T13:38:44.993453+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Tight scalp stops placed directly on structural round-number liquidity pools were repeatedly hunted by high-frequency XAUUSD wicks before directional continuation.",
+        "risk_asymmetry_flaw": "Losses reached up to -$4.53 while optimal wins were capped prematurely, failing to achieve the required 3:1 reward-to-risk ratio.",
+        "market_regime_mismatch": "Entering breakout orders during high-volatility micro-consolidations without ATR-adjusted padding resulted in immediate stop-out and whipsaw degradation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of scaling into positions within 5 minutes of a prior stop-out or during high-frequency liquidity sweeps.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a 15-second multi-timeframe liquidity sweep confirmation and zero-spread confirmation prior to fill authorization.",
+        "profit_harvest_threshold": "Instantly initiate trailing stop locks once profit exceeds +$5.00 to guarantee asymmetric $15-$30 payouts."
+      },
+      "synthesis_directive": "Enforce strict ATR-based stop padding on XAUUSD to eliminate liquidity hunting, locking down losses under $5 while scaling winners past $15."
     }
   ]
 }
