@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-27T03:19:27.879419+00:00",
+  "verdict": "CLOSE_PROFIT",
+  "symbol": "XAUUSD",
+  "confidence_score": 92,
+  "trade_style": "INTRADAY",
+  "lot_size": 0.01,
+  "sl_price": 3613.5,
+  "tp_price": 3638.5,
+  "trailing_activation_profit": 5.0,
+  "reversal_sentinel_assessment": "Price on XAUUSD recently hit an intraday high of 3634.7 and has pulled back to 3620.39. The latest 15-minute candles show a rejection wick and declining volume on the push up (1893 volume on the down/consolidation candle compared to peak surges). The open position holds a current profit of $3.38 with immediate danger of giving back gains as momentum exhausts near the session highs. Sentinel harvesting engaged to lock in peak cash.",
+  "trade_thesis": "Executing Harvest Guardian sovereign prerogative to lock in open profits on XAUUSD before choppy mean-reversion takes back current gains."
+}
