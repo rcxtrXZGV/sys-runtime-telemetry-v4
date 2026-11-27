@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strict prohibition of secondary entries within 60 seconds of an initial trade to prevent localized cluster stop-outs during liquidity sweeps.",
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Absolute ban on entering multiple correlated tickets within a 2-minute window (no clustering like tickets 1707578236 and 1707578239); subsequent additions require a confirmed 15-pip structural breakout and minimum +$5.00 floating profit on the primary leg.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated 15-second multi-order flow imbalance confirmation and ATR volatility buffer before committing capital on XAUUSD.",
-  "profit_harvest_threshold": "Instantly lock in trailing stops once floating profits exceed +$5.00 to guarantee asymmetric $15-$30 target trajectories."
+  "new_mandatory_entry_filter": "Zero order execution within 15 pips of unmitigated round numbers or major liquidity voids; require a 5-second volume-weighted order flow confirmation delta greater than +1.5 standard deviations.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit locks at +$6.00 with trailing activation, disabling fixed tight micro-stops that choke trades yielding sub-$1 outcomes."
 }
