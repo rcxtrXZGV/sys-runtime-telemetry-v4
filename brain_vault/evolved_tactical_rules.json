@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "STRICT_BAN on simultaneous multi-orders; dynamic pyramiding authorized only after primary position reaches +1.5x ATR and stop-loss is moved to break-even.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Block trade execution if 14-period M5 ATR exceeds $4.50 or if duplicate position was initiated on XAUUSD within the last 300 seconds.",
-  "profit_harvest_threshold": "Secure 50% profit harvest at +$5.00 per 0.01 lot and activate a trailing ATR sentinel once floating gain crosses +$8.00."
+  "pyramiding_rule": "Strict prohibition against adding consecutive volume (no grid or averaging down) into an active drawdown; pyramiding is only authorized after existing positions have hit breakeven plus a +$5.00 trailing buffer.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory ATR-based volatility cap and volume profile imbalance check; entry is blocked if price action is within 10 pips of an unmitigated high-impact liquidity wick or if the calculated stop-loss exceeds $5.00.",
+  "profit_harvest_threshold": "Aggressively trigger partial profit locks at +$10.00 and full trailing stops at +$15.00 to guarantee asymmetric win capture between $15.00 and $30.00."
 }
