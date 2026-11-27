@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-27T15:08:31.697831+00:00",
+  "timestamp": "2026-11-27T15:21:21.651390+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 50,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 0.0,
-  "tp_price": 0.0,
+  "sl_price": 3645.0,
+  "tp_price": 3680.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "Zero active broker positions currently deployed. Capital is 100% liquid and secure at $59.86.",
-  "trade_thesis": "Gold (XAUUSD) has experienced a violent +45-point parabolic dislocation from 3620 into an intraday peak of 3672.50, driven by heavy systemic volume. However, the last two 15-minute candles display prominent upper shadow rejections (3667.70 and 3672.50) while compressing around 3665.70. Concurrently, cross-asset desks flag significant macro headwinds: the US Dollar Index (DXY) has surged to session highs of 103.92 alongside US 10-Year yields pushing upward to 4.848%, accompanied by aggressive risk-off liquidation across USTEC and BTCUSD. Chasing long positions at the upper boundary of an overextended volatility spike into macro yield pressure offers negative asymmetry. The desk mandates patience to await either: (1) a healthy liquidity sweep and retest of the prior breakout shelf at 3648-3652 with confirmed bullish absorption, or (2) a decisive structural break and close above 3673. Capital preservation is prioritized."
+  "reversal_sentinel_assessment": "No open positions active. Zero positions to monitor or harvest.",
+  "trade_thesis": "Gold (XAUUSD) recently pushed sharply toward an intraday high of 3672.5 before pulling back and consolidating near 3656.8. Volume has flattened out on the recent 15m candles following the intense expansion. While the broader structural trend shows upward momentum, the immediate price action represents a choppy consolidation zone right after a liquidity sweep. Awaiting a cleaner continuation pattern or a retest of lower support before deploying capital."
 }
