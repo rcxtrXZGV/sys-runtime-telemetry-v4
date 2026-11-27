@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit consecutive entries in a falling or rising knife market state; require at least 50% profit realization on the foundational position before micro-scaling.",
+  "pyramiding_rule": "Strictly prohibit sequential entries within 5 minutes of a previous stop-out; no scaling into high-velocity wicks.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero-entry during high-impact structural price velocity spikes unless Order Flow Imbalance and ATR expansion validate a breakout rather than a liquidity wick.",
-  "profit_harvest_threshold": "Aggressively trigger trailing stop-lock or partial harvest when open profit crosses +$4.50 to guarantee adherence to the $15-$30 target profile without giving back floating gains."
+  "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum before limit or market orders are triggered.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation as soon as unrealized profit hits +$10.00 to prevent evaporation of gains."
 }
