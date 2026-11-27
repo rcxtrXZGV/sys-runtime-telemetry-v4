@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding authorized within 50 pips or 15 minutes of a prior entry; block multi-ticket clustering to prevent correlated cascade failures.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated ATR-based volatility envelope breakout confirmation and zero high-impact calendar news within a 15-minute window before executing orders.",
-  "profit_harvest_threshold": "Aggressively lock in gains via dynamic trailing stops once floating profit crosses +$10.00 to prevent evaporation into negative closures."
+  "pyramiding_rule": "Strict prohibition of stacking positions (pyramiding) within a 60-second execution window or during unconfirmed trend acceleration phases.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory order block volume-delta confirmation and minimum 15-pip spread-to-ATR ratio clearance prior to order dispatch.",
+  "profit_harvest_threshold": "Aggressively secure profits via trailing stops once a position reaches +$12.00 floating gain to ensure capture of the $15-$30+ objective."
 }
