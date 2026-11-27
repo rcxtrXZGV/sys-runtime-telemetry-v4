@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding positions into falling or rising knives; pyramiding is only authorized after a confirmed 1R structural breakout with trailing stops locked at breakeven.",
+  "pyramiding_rule": "Strict prohibition against adding positions (no grid or averaging down) within 120 seconds of a prior entry or inside an active high-volatility range expansion candle.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a multi-timeframe ATR volatility expansion filter and zero high-impact macroeconomic news window presence within +/- 15 minutes of execution.",
-  "profit_harvest_threshold": "Aggressively secure floating profits using dynamic trailing stops once a position crosses +$6.00 to prevent erosion back to negative territory."
+  "new_mandatory_entry_filter": "Require volumetric and spread confirmation via order book imbalance metrics alongside a 3-period ATR envelope test prior to order dispatch.",
+  "profit_harvest_threshold": "Initiate aggressive trailing profit lock-in via SENTINEL_PEAK_HARVEST once unrealized gain hits +$15.00 to prevent profit evaporation."
 }
