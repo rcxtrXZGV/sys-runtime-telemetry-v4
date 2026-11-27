@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit consecutive entries within 60 seconds (no multi-ticket clustering into falling/rising wicks as seen in tickets 1707578236 and 1707578239).",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require ATR(14) volatility expansion confirmation and zero tier-1 macroeconomic news events within a +/- 15 minute window prior to order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit-locking via SENTINEL_PEAK_HARVEST once unrealized gains cross +$4.50 to prevent floating profit evaporation."
+  "pyramiding_rule": "STRICT_PROHIBITION: No secondary entries permitted within 15 minutes of an open position or until the primary position achieves at least +1.5x ATR in floating profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require M5 ATR volatility contraction below 1.2x median prior to breakout execution; auto-reject order generation during high-impact news windows.",
+  "profit_harvest_threshold": "Harvest 50% lot size upon reaching +$10.00 unrealized gain, trailing the residual position with a 1.0x ATR dynamic stop; prohibit premature scratch closures under +$2.00 unless structural reversal triggers."
 }
