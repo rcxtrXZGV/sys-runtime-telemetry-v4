@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Absolute prohibition of multi-ticket scaling into the exact same price handle within a 60-second window to prevent correlated cluster liquidations.",
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Strict prohibition of stacking positions within a 1.5 ATR window; no averaging down or adding into localized corrections.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact macro data drops; mandatory ATR volatility contraction filter required.",
-  "profit_harvest_threshold": "Aggressively trigger partial profit lock at +$4.50 and trail remaining position with a locked-in +$1.00 floor."
+  "new_mandatory_entry_filter": "Zero entry authorization during high-impact structural price velocity spikes unless order flow imbalance exceeds 3.5 standard deviations from the 20-period moving average.",
+  "profit_harvest_threshold": "Trigger partial scaling at +$10.00 and lock remaining exposure with a strict trailing stop to capture asymmetrical runs up to +$30.00."
 }

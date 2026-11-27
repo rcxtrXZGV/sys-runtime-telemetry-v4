@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T02:57:30.296909+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Uncapped stop-losses during high-volatility liquidity sweeps and cascading orders on XAUUSD, highlighted by ticket 1705772492 resulting in a -$20.56 drawdown.",
-        "risk_asymmetry_flaw": "Losses (-$58.60 total across losses, with individual drops up to -$20.56) vastly exceeded winning trade realizations (+$56.10 total, with typical wins scaling around +$0.39 to +$5.02), violating the $4-$6 loss ceiling mandate.",
-        "market_regime_mismatch": "Entering during volatile session overlaps (e.g., 13:36 UTC) without accounting for micro-structural stop-hunts, allowing noise wicks to breach widened stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of scaling into positions when price action exhibits high-frequency oscillations or counter-trend momentum wicks; zero averaging down into falling knives.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Multi-timeframe volume profile and order book imbalance check must confirm directional momentum before order placement; absolute ban on entries within 15 minutes of major high-impact news releases.",
-        "profit_harvest_threshold": "Aggressively secure open profits as soon as trade hits the +$15.00 mark via trailing activation steps to prevent green runs from evaporating."
-      },
-      "synthesis_directive": "Enforce a hard absolute stop-loss ceiling of $5.00 on every single XAUUSD trade while mandating immediate profit trailing once unrealized gains exceed $15.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T03:00:59.366499+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic stop-loss blow-out (-$20.56 on order 2120879695) caused by an overly wide wide initial SL during high-volatility expansion, compounded by rapid duplicate re-entry clustering (tickets 1707578236 & 1707578239 executed at the exact same second).",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger partial profit lock at +$4.50 and trail remaining position with a locked-in +$1.00 floor."
       },
       "synthesis_directive": "Enforce strict $4.50 hard stop ceilings on XAUUSD, ban cluster-ticket stacking on identical price handles, and auto-trail breakeven at +$4.00 to guarantee asymmetric $15-$30 win targets."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:09:02.094401+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Unchecked wider stops on high-volatility XAUUSD swings combined with micro-pyramiding into adverse localized corrections, culminating in a -$20.56 outlier loss.",
+        "risk_asymmetry_flaw": "Stop-losses were allowed to expand beyond the mandatory $4-$6 ceiling (reaching -$20.56), whereas winning exits prematurely clipped at sub-$6 levels due to low harvest friction.",
+        "market_regime_mismatch": "Entering during aggressive high-frequency liquidity wicks where tight trailing stops caused premature exits on micro-pullbacks while failing to shield against deep momentum reversals."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of stacking positions within a 1.5 ATR window; no averaging down or adding into localized corrections.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero entry authorization during high-impact structural price velocity spikes unless order flow imbalance exceeds 3.5 standard deviations from the 20-period moving average.",
+        "profit_harvest_threshold": "Trigger partial scaling at +$10.00 and lock remaining exposure with a strict trailing stop to capture asymmetrical runs up to +$30.00."
+      },
+      "synthesis_directive": "Enforce an absolute hard stop-loss cap of $5.00 on every transaction and eliminate all unhedged pyramiding to restore positive mathematical expectancy."
     }
   ]
 }
