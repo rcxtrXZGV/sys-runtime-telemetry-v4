@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to losing or flat positions in a high-velocity reversal zone; scale-ins are permitted only after an existing position has locked in +$10.00 in floating profit.",
+  "pyramiding_rule": "Strictly prohibit entering multiple orders within a 3-pip spatial band or during high-impact expansion candles to eliminate correlated cluster failures.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a volume-weighted average price (VWAP) confirmation and zero high-impact calendar window within +/- 15 minutes before any order placement.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop-lock once floating profits cross +$12.00, forcing a minimum secure harvest at +$15.00 to guarantee asymmetric outcomes."
+  "new_mandatory_entry_filter": "Require a validated structural volume delta and a 1-minute candle close outside the multi-period Bollinger Band before any market order execution is authorized.",
+  "profit_harvest_threshold": "Aggressively trail and harvest floating profits via SENTINEL_PEAK_HARVEST once unrealized gains cross +$15.00 to prevent win evaporation."
 }

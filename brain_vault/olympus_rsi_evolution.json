@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T08:06:04.693272+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Widened structural stop-losses and micro-lot stacking during high-volatility liquidity sweeps on XAUUSD, resulting in an outlier loss of -$20.56.",
-        "risk_asymmetry_flaw": "Losses (-$40.94 aggregate, with a -$20.56 max loss) substantially exceeded wins (+$38.51 aggregate, with a max win of +$5.34), inverting the required $4-$6 loss to $15-$30+ win asymmetry.",
-        "market_regime_mismatch": "Executing continuous entries into rapid mean-reverting wicks around institutional price thresholds without filtering out high-noise spread expansion periods."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of stacking positions (pyramiding) within a 60-second execution window or during unconfirmed trend acceleration phases.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandatory order block volume-delta confirmation and minimum 15-pip spread-to-ATR ratio clearance prior to order dispatch.",
-        "profit_harvest_threshold": "Aggressively secure profits via trailing stops once a position reaches +$12.00 floating gain to ensure capture of the $15-$30+ objective."
-      },
-      "synthesis_directive": "Enforce a hard dollar stop-loss ceiling of $5.00 across all assets while locking in trailing profit triggers at +$12.00 to restore asymmetric risk-reward."
-    },
-    {
       "evolution_timestamp": "2026-11-27T08:07:40.718392+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Uncontrolled slippage and widened stop-losses on XAUUSD high-volatility wicks, notably ticket 1705772492 resulting in a -$20.56 drawdown which completely wiped out multiple concurrent wins.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop-lock once floating profits cross +$12.00, forcing a minimum secure harvest at +$15.00 to guarantee asymmetric outcomes."
       },
       "synthesis_directive": "Enforce a strict hard cap of $5.00 on all individual stop-losses while mandating that winning trades expand to a minimum $15.00 profit target via dynamic trailing locks."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T09:26:13.638565+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Execution during high-volatility liquidity sweeps caused massive slippage, breaching the intended stop-loss threshold on ticket 1705772492 (-$20.56), while secondary entries at the exact same liquidity nodes suffered from premature clustering and rapid stop-outs.",
+        "risk_asymmetry_flaw": "The largest loss (-$20.56) exceeded the upper win target ($5.34) by nearly 4x, directly violating the target asymmetric risk-reward ratio due to an unconstrained holding period during a macro impulse wick.",
+        "market_regime_mismatch": "The engine attempted mean-reversion strategies during a violent directional expansion phase in XAUUSD, triggering cascading stop-losses across clustered orders placed within a 2-pip range."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit entering multiple orders within a 3-pip spatial band or during high-impact expansion candles to eliminate correlated cluster failures.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a validated structural volume delta and a 1-minute candle close outside the multi-period Bollinger Band before any market order execution is authorized.",
+        "profit_harvest_threshold": "Aggressively trail and harvest floating profits via SENTINEL_PEAK_HARVEST once unrealized gains cross +$15.00 to prevent win evaporation."
+      },
+      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade on XAUUSD, ban clustered order entry during volatility expansions, and mandate aggressive profit harvesting at +$15.00."
     }
   ]
 }
