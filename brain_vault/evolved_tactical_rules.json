@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Absolute ban on multi-ticket entries within the same 5-minute liquidity window to prevent correlated simultaneous stop-outs.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require institutional volume-weighted average price (VWAP) confirmation and zero high-impact news impulses within 15 minutes before order generation.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 floating profit to ensure payouts reach the $15-$30+ target matrix."
+  "pyramiding_rule": "Prohibit duplicate concurrent orders within a 300-second window; pyramiding only authorized if existing position floating profit exceeds 2.0x ATR.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require dynamic ATR volatility buffer verification and confirm no high-spread liquidity vacuum before authorization.",
+  "profit_harvest_threshold": "Activate break-even stop at +$3.00 floating gain, trigger aggressive trailing stop at +$8.00, and fully target $15.00-$30.00 expansion runs."
 }

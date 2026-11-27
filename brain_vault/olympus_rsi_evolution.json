@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T12:59:49.581431+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to volatility, allowing adverse price excursions to inflict 4x maximum acceptable risk before exit execution.",
-        "risk_asymmetry_flaw": "Losses ($33.22 across 5 trades) substantially outweighed wins ($11.24 across 4 trades) due to failure in cutting losers early and premature micro-scaling out of winning positions.",
-        "market_regime_mismatch": "Rapid clustering of multiple entries around 3549-3551 (Tickets 1707575809, 1707578236, 1707578239) proved a dangerous pyramiding into micro-reversal noise during high-frequency XAUUSD liquidity sweeps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on adding to losing or flat positions within a 5-pip band; stacking is only permitted after existing position reaches +$10.00 floating profit with breakeven stop-loss locked.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Zero-tolerance rule requiring a multi-timeframe structural volume-imbalance confirmation and ATR filter before executing any XAUUSD order.",
-        "profit_harvest_threshold": "Aggressively harvest 50% of position size at +$10.00 floating profit and trail remaining size with a strict dynamic chandelier stop to guarantee $15-$30+ asymmetry."
-      },
-      "synthesis_directive": "Hard-cap maximum loss per trade at $5.00 via tight structural stops and enforce aggressive multi-tier profit harvesting once wins cross +$10.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T13:01:38.412106+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Single catastrophic loss of -$20.56 on ticket 1705772492 due to an unconstrained, wide initial stop-loss combined with lack of adaptive volatility tightening during high-velocity momentum wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 floating profit to ensure payouts reach the $15-$30+ target matrix."
       },
       "synthesis_directive": "Enforce strict volatility-adjusted entry gating on XAUUSD to cap risk at $4.00 while forcing winning trajectories past $15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T15:50:08.093961+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Uncoordinated multi-order cluster execution at identical timestamps (tickets 1707578236 & 1707578239 at 21:14:10) compounding losses, alongside SENTINEL_PEAK_HARVEST closing positions during adverse wicks.",
+        "risk_asymmetry_flaw": "Average win ($3.62) failed to outpace average loss ($3.16), driven by tight take-profit caps ($5.02) and premature peak harvesting (+0.49) while absorbing max stop losses up to -$4.53.",
+        "market_regime_mismatch": "Late US-session liquidity drain and expansion wicks on XAUUSD, where tight static price stops were repeatedly swept prior to direction continuation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 4.5,
+        "pyramiding_rule": "Prohibit duplicate concurrent orders within a 300-second window; pyramiding only authorized if existing position floating profit exceeds 2.0x ATR.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require dynamic ATR volatility buffer verification and confirm no high-spread liquidity vacuum before authorization.",
+        "profit_harvest_threshold": "Activate break-even stop at +$3.00 floating gain, trigger aggressive trailing stop at +$8.00, and fully target $15.00-$30.00 expansion runs."
+      },
+      "synthesis_directive": "Enforce strict single-order execution concurrency with a hard $4.50 stop cap while forcing win trails to target minimum $15 gains."
     }
   ]
 }
