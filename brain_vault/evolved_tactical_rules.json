@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit opening secondary positions within 60 seconds of an existing entry; base position must hold at least +$3.00 unrealized profit before scaling in.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Hard Cap Loss Filter: Reject any entry where maximum calculated risk exceeds $5.00 per 0.01 lot, and enforce a 15-minute execution pause post high-impact volatility spike.",
-  "profit_harvest_threshold": "Lock trailing stop to lock in 50% of unrealized gains once trade hits +$5.00 profit, letting remaining volume run toward a minimum +$15.00 target."
+  "pyramiding_rule": "Strict prohibition against opening sequential orders within 5 points of a recent stop-out; no averaging down into falling or rising momentum wicks.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Volume-weighted average spread check and mandatory ATR-based volatility boundary confirmation prior to order dispatch.",
+  "profit_harvest_threshold": "Secure 50% of floating profits automatically upon reaching +$10, trailing the remainder tightly to capture extended +$15 to +$30 tails."
 }
