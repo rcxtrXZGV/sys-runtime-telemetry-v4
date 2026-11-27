@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T10:14:10.552377+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a catastrophic -$20.56 drawdown because the stop-loss was placed too wide relative to structural volatility, combined with failure to exit during early adverse price velocity.",
-        "risk_asymmetry_flaw": "The largest loss (-$20.56) severely outweighed the typical winner (+~$5.00), inverting the required $15-$30 target profile due to holding losing trades past optimal micro-structural thresholds.",
-        "market_regime_mismatch": "Clustered short-sell-stop executions (Tickets 1707575809, 1707578236, 1707578239) proved vulnerability to liquidity hunting wicks during high-frequency XAUUSD session transitions."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition on sequential micro-entries within 120 seconds of a prior stop-out to prevent cascading executions into volatile wicks.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require institutional order-flow imbalance confirmation via volume-weighted average price (VWAP) deviation before market entry.",
-        "profit_harvest_threshold": "Aggressively trigger trailing locks at +$10.00 to guarantee expansion toward the $15-$30 target profile without risking reversal back to breakeven."
-      },
-      "synthesis_directive": "Hard-cap absolute maximum loss per transaction at $5.00 while aggressively trailing floating profits toward the $15-$30 asymmetry target."
-    },
-    {
       "evolution_timestamp": "2026-11-27T12:00:00.000000+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Excessive slippage and volatile market noise on high-impact wicks during London/New York cross-over, causing catastrophic single-trade loss of -$20.56 (Ticket 1705772492), breaking the maximum risk tolerance threshold of $4-$6.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Instantly lock trailing stops or execute partial harvests when floating profits cross +$15.00 to prevent positive runs from evaporating into flat or negative closes."
       },
       "synthesis_directive": "Enforce absolute hard risk caps at $5.00 per trade, eradicate clustered multi-entry sequencing, and force aggressive profit locking on all winning runs between $15 and $30."
+    },
+    {
+      "evolution_timestamp": "2026-11-27T11:43:04.912322+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Excessive slippage and poorly bracketed structural stop-losses during high-momentum volatility wicks on XAUUSD, highlighted by a single catastrophic -$20.56 loss dwarfing the average win.",
+        "risk_asymmetry_flaw": "Inverted risk-to-reward profile caused by entering consecutive positions into declining structural liquidity without hard-capped downside caps, allowing losses to breach the -$4 to -$6 ceiling while wins capped out at +$5.34.",
+        "market_regime_mismatch": "Engaging in clustered micro-scalping during chaotic session transition wicks where spread expansion and liquidity voids easily trigger tight manual or programmatic stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition of grid averaging or scaling into losing positions within a 15-minute rolling window; subsequent entries require confirmed structural breakout and positive floating PnL on prior legs.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Zero order execution permitted during high-impact spread dilation bands; require absolute volume-weighted average price (VWAP) convergence and a 3-bar structural rejection wick.",
+        "profit_harvest_threshold": "Aggressively lock in gains via trailing stops once a position achieves +$15.00, ensuring winners consistently hit the +$15 to +$30 target corridor."
+      },
+      "synthesis_directive": "Enforce a strict hard stop-loss ceiling of $5.00 on all XAUUSD orders and ban consecutive loss-chasing entries to guarantee positive expectancy."
     }
   ]
 }
