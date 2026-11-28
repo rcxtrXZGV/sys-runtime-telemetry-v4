@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit all secondary entries unless the primary position has traversed at least +$10 in open profit and trailing stop is at breakeven.",
+  "pyramiding_rule": "Strict prohibition against adding to positions during localized liquidity pullbacks or falling knife dynamics; pyramiding is authorized only after a minimum of +$8.00 open profit and confirmed structural continuation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation on the 5-minute timeframe with volume expansion before order execution.",
-  "profit_harvest_threshold": "Scale out 50% at +$10, trail remaining position with an aggressive parabolic SAR until $15-$30+ targets are achieved."
+  "new_mandatory_entry_filter": "Require a validated ATR-based volatility buffer (minimum 1.5x 14-period ATR) away from apparent swing highs/lows before initializing stop-loss placement.",
+  "profit_harvest_threshold": "Initiate trailing activation immediately at +$5.00 and enforce hard scaling to let winners run between $15.00 and $30.00."
 }
