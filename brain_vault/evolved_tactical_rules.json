@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions already showing a minimum of +$5.00 floating profit.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions or unconfirmed wick breakouts; pyramid only when primary position exceeds +1.5R floating profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 3-bar momentum confirmation and order-flow imbalance score > 0.65 prior to trade authorization.",
-  "profit_harvest_threshold": "Initiate trailing stop protection at +$10.00 profit to lock in gains while allowing runners to reach the $15-$30 bracket."
+  "new_mandatory_entry_filter": "Require 15-minute ATR expansion check (>1.5x median) and minimum volume threshold prior to authorizing XAUUSD market orders post-19:00 UTC.",
+  "profit_harvest_threshold": "Activate dynamic trailing lock at +$5.00 unrealized profit to secure at least 60% of peak movement while letting tail run to target $15-$30."
 }
