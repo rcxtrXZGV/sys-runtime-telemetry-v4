@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero averaging down; only add to winning positions when price crosses a 1.5 ATR threshold in favor with trailing stops locked to breakeven.",
+  "pyramiding_rule": "Pyramiding is strictly forbidden unless the primary position is secured at +1.5x ATR unrealized profit with stop locked in positive territory.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a volume delta confirmation and a 5-period EMA slope alignment before executing any market order to filter out false breakout wicks.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits $8.00 to force capture toward the $15-$30 asymmetric target band."
+  "new_mandatory_entry_filter": "Block all new entries between 20:00 and 21:00 UTC and mandate a minimum 5-minute ATR expansion threshold prior to order execution.",
+  "profit_harvest_threshold": "Trigger Sentinel peak harvest lock at +$3.00 floating gain, maintaining a dynamic trail to capture high-confluence extensions."
 }
