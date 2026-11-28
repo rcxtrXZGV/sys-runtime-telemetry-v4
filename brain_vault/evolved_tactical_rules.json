@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 1.5 ATR of known liquidity nodes to avoid falling-knife trapping.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions already showing a minimum of +$5.00 floating profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require multi-timeframe order book imbalance confirmation and a minimum 2.5 ATR structural stop distance before order authorization.",
-  "profit_harvest_threshold": "Aggressively trigger trailing stop activation once unrealized profit crosses $12.00 to lock in $15-$30+ targets."
+  "new_mandatory_entry_filter": "Require a 3-bar momentum confirmation and order-flow imbalance score > 0.65 prior to trade authorization.",
+  "profit_harvest_threshold": "Initiate trailing stop protection at +$10.00 profit to lock in gains while allowing runners to reach the $15-$30 bracket."
 }
