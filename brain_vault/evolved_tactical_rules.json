@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the primary trade has achieved a minimum floating profit of +$10.00 and stop-loss is locked at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to positions during high-velocity momentum wicks; only pyramid upon structural higher-low retests with a minimum 1.5 ATR trailing distance.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer: initial stop-loss must be set at least 1.5x the current 5-period ATR away from entry to prevent micro-wick stop hunts.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$15.00, trail remaining runner aggressively to target +$30.00."
+  "new_mandatory_entry_filter": "Require institutional volume-delta confirmation and a 14-period ATR volatility buffer before allowing any order authorization on XAUUSD.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit harvesting only after reaching a minimum threshold of $15.00, allowing the remaining runner to target up to $30.00."
 }
