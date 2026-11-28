@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions until the primary trade achieves a minimum unhedged floating profit of +$10.00.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require an ATR(14) volatility expansion filter confirmation combined with order-book imbalance metrics before entry authorization.",
-  "profit_harvest_threshold": "Aggressively trail stops using a 3-tick parabolic SAR step once floating profit exceeds +$10.00 to guarantee a secure runway to the $15-$30+ zone."
+  "pyramiding_rule": "Prohibit all secondary additions within 30 seconds of an initial fill; require a minimum +$4.00 floating profit confirmation on the primary lot before scaling size.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Zero entry execution permitted unless the localized Average True Range (ATR 14) exceeds 1.5x the median spread and order book depth confirms directional delta bias > 65%.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trailing the remainder via parabolic SAR to secure terminal exits between $15.00 and $30.00."
 }
