@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T13:32:55.940662+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1705772492 suffered a massive -$20.56 drawdown because the initial stop-loss was set too wide without volatility-adaptive trailing, and subsequent rapid entries clustered tightly around high-volatility zones.",
-        "risk_asymmetry_flaw": "Losses (-$33.22 total) heavily outweighed wins (+$10.85 total) due to unmanaged floating profits evaporating and oversized stop losses on outlier candles.",
-        "market_regime_mismatch": "High-impact session wicks in XAUUSD triggered premature entries during liquidity sweeps, violating the core asymmetry constraint of keeping losses strictly bounded below $5."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions; multi-ticket entries are only allowed in sequence when the prior ticket has secured a minimum trailing profit lock.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory order-flow imbalance filter and ATR-based volatility cap to block entries within 15 minutes of major macroeconomic news wicks.",
-        "profit_harvest_threshold": "Instantly harvest or lock breakeven + trailing stop the moment open profit reaches +$5.00 to guarantee a $15-$30 target trajectory."
-      },
-      "synthesis_directive": "Enforce a hard maximum risk ceiling of $5.00 per trade across all instruments and immediately activate aggressive trailing stops once floating profit hits +$5.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T13:36:36.539703+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Catastrophic outlier loss (-$20.56 on ticket 1705772492) caused by a rigid stop-loss placed right into high-liquidity volatility wicks, compounded by micro-lot pyramiding into falling/rising momentum without structural confirmation.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic partial profit harvesting once unrealized gains exceed +$3.00, allowing remaining volume to run to the +$15.00-$30.00 target bracket."
       },
       "synthesis_directive": "Enforce structural volatility buffers on all initial stop-loss placements in XAUUSD to eliminate noise-driven premature exits while maintaining strict $4-$6 risk limits."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T05:07:47.680179+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market noise, resulting in premature termination on a standard micro-retracement wick before trend continuation.",
+        "risk_asymmetry_flaw": "Losses relative to volatility were capped within acceptable parameters (-$0.69), but failure to leverage broader swing structures limited win extension on secondary profitable trades.",
+        "market_regime_mismatch": "XAUUSD high-frequency mean reversion sweeps during late US sessions triggered structural stop-outs due to insufficient ATR-based buffer allocation."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strict prohibition on adding to positions unless the primary order has achieved at least +$3.00 floating profit and breaks the local 15-minute high/low.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a 3-bar volume confirmation and a 5-period EMA slope alignment before market entry to filter out low-conviction consolidation noise.",
+        "profit_harvest_threshold": "Aggressively trail stops using a 3-candle low/high structural offset once floating profit exceeds +$4.00 to protect gains from rapid evaporation."
+      },
+      "synthesis_directive": "Enforce mandatory ATR-derived stop-loss buffers and lock in trailing protections at +$4.00 to guarantee asymmetric $15-$30 payouts without expanding risk beyond $5.00."
     }
   ]
 }
