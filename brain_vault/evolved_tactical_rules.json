@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions showing an immediate unrealized profit delta of at least +$1.50.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation before order placement on XAUUSD.",
-  "profit_harvest_threshold": "Trigger aggressive trailing profit lock at +$10.00 to ensure asymmetry hits the +$15.00 to +$30.00 target window."
+  "pyramiding_rule": "Strictly prohibit adding to positions inside high-frequency chop zones; pyramid only after a confirmed 100% ATR breakout validation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a minimum 3-tick volatility expansion buffer beyond the immediate swing high/low before executing XAUUSD orders.",
+  "profit_harvest_threshold": "Trail stops aggressively once profit exceeds +$5.00, unlocking the runner to scale toward the +$15.00 to +$30.00 asymmetric payout window."
 }
