@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-28T11:16:58.549765+00:00",
+  "timestamp": "2026-11-28T11:18:23.950589+00:00",
   "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 50,
+  "confidence_score": 45,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3655.0,
-  "tp_price": 3695.0,
+  "sl_price": 3662.0,
+  "tp_price": 3690.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active on broker. Reversal sentinel standing by.",
-  "trade_thesis": "XAUUSD has surged toward intraday highs near 3682.3 after a strong bullish expansion candle, but the latest 15m candles show minor wick rejection and slowing volume. A pullback or consolidation phase is likely before the next directional impulse. We maintain a WAIT stance until a clearer liquidity sweep or breakout confirmation manifests."
+  "reversal_sentinel_assessment": "No open positions active. Monitoring market conditions for liquidity sweeps.",
+  "trade_thesis": "Gold (XAUUSD) has pushed up aggressively toward intraday highs around 3682.3, showing strong momentum in the prior candles. However, the latest 15m candle exhibits minor rejection at the highs (wick to 3682.3 closing at 3674.2). Given the proximity to the intraday high and recent stop-out volatility on similar expansion plays, the desks advise a WAIT stance until a clean consolidation breakout or a deeper liquidity sweep occurs."
 }
