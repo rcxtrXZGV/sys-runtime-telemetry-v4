@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to existing positions unless initial trade is in floating profit of at least +1.5x ATR and stop-loss is locked at breakeven+.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum structural stop distance of 25 pips ($2.50 Gold price delta) to prevent spread-wipeouts, backed by a minimum projected 1:3 R:R setup.",
-  "profit_harvest_threshold": "Activate dynamic trailing lock-in only after floating profit exceeds +$5.00, allowing core position to target $15-$30 expansions."
+  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a prior stop-out or during high-volatility liquidity sweeps.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation away from key liquidity nodes prior to order execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining half run with a structural trailing stop to target +$25.00+."
 }
