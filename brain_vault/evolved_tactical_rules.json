@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into falling knives; only add to positions when existing trade is in +$3.00 profit and trailing stop locks break-even.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning positions when unrealized profit exceeds +$3.00 with confirmed momentum expansion.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and zero high-impact news window overlap (plus/minus 15 minutes) before order authorization.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00, trail remainder aggressively to capture +$25.00+ terminal targets."
+  "new_mandatory_entry_filter": "Require multi-timeframe order book imbalance confirmation and ATR-normalized volatility buffer before market order execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops only after +$10.00 floating profit is achieved, allowing runner targets to scale to +$15.00-$30.00."
 }
