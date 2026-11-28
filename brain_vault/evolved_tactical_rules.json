@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into falling knives; incremental volume additions are strictly prohibited until initial position achieves +$10.00 floating profit.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "ATR-based volatility expansion filter requiring breakout candles to exceed the 20-period average true range by at least 1.5x before execution.",
-  "profit_harvest_threshold": "Implement trailing step-locks; once floating profit hits +$5.00, hard stop locks in at breakeven +$1.00, allowing asymmetry to scale toward +$15.00 to +$30.00 targets."
+  "pyramiding_rule": "No pyramiding into micro-pullbacks; only scale into positions after a confirmed 15-minute structural breakout with positive drift.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer of at least 1.5x the 14-period average noise band before placing stop-loss limits.",
+  "profit_harvest_threshold": "Initiate partial profit harvesting and move stop to break-even once open profit crosses +$5.00, allowing runners to stretch to +$15.00-$30.00."
 }
