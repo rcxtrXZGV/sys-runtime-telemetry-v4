@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding positions within 1.5 ATR of a recent stop-loss sweep or during consolidated chop.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require minimum 3-tick directional momentum confirmation combined with institutional volume delta before order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop locking at +$3.00 profit to protect gains and ensure runs expand toward $15.00-$30.00 targets."
+  "pyramiding_rule": "Strict prohibition against averaging or pyramiding into trades exhibiting high-frequency retracement wicks; scaling allowed only after 3R unrealized structural confirmation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandate a minimum 22-pip structural volatility buffer below local order-block extremes before initial market placement to prevent session-close wick hunting.",
+  "profit_harvest_threshold": "Scale out 50% of volume upon reaching $7.50 profit, leaving the remainder on a dynamic trailing stop to capture extended $15-$30+ runs."
 }
