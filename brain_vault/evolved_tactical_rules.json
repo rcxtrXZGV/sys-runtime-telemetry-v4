@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging or pyramiding into positions unless the initial trade is in-the-money by at least 1.5x the initial stop-loss distance.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require volume delta confirmation and a minimum 3-pip clearance beyond structural swing highs/lows before executing order entry.",
-  "profit_harvest_threshold": "Initiate dynamic partial profit harvesting at +$10.00 and trail remaining volume with a volatility-adjusted ATR stop to capture +$15.00 to +$30.00 runs."
+  "pyramiding_rule": "Strictly prohibit adding to positions unless existing trade has moved at least +$10.00 in profit and structural support/resistance is re-tested.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require 15-minute ATR expansion confirmation and zero high-impact news release within a +/- 15 minute window prior to order execution.",
+  "profit_harvest_threshold": "Trail stops dynamically via Sentinel Peak Harvest once profit exceeds +$5.00, forcing the engine to let winners run to the $15-$30+ bracket."
 }

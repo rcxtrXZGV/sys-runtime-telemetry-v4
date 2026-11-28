@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T09:20:16.903344+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Micro-stop placement at 3654.00 triggered by late-session spread widening at 20:06 UTC, leading to immediate slippage liquidation.",
-        "risk_asymmetry_flaw": "Premature profit taking ($0.49 and $1.40 wins) cuts runups short, failing to achieve the required $15-$30 asymmetric return profile.",
-        "market_regime_mismatch": "Execution during the low-liquidity market transition regime without dynamic volatility-adjusted stop padding."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Pyramiding is strictly forbidden unless the primary position is secured at +1.5x ATR unrealized profit with stop locked in positive territory.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Block all new entries between 20:00 and 21:00 UTC and mandate a minimum 5-minute ATR expansion threshold prior to order execution.",
-        "profit_harvest_threshold": "Trigger Sentinel peak harvest lock at +$3.00 floating gain, maintaining a dynamic trail to capture high-confluence extensions."
-      },
-      "synthesis_directive": "Enforce mandatory late-session entry blackouts and reject any trade setup offering less than a 1:3 asymmetric reward-to-risk ratio."
-    },
-    {
       "evolution_timestamp": "2026-11-28T09:22:50.318749+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Tight structural noise-hunting stop-loss placement on XAUUSD resulted in premature micro-stop triggering before trend continuation.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic partial profit harvesting at +$10.00 and trail remaining volume with a volatility-adjusted ATR stop to capture +$15.00 to +$30.00 runs."
       },
       "synthesis_directive": "Enforce a strict 5-dollar max stop-loss floor with volatility-buffered entry filters to eliminate micro-noise stop-outs and force asymmetric $15-$30+ profit captures."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T10:43:30.508009+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, causing premature truncation of potential upside during normal XAUUSD retracement wicks.",
+        "risk_asymmetry_flaw": "Losses were constrained, but profit taking on wins (e.g., +$0.49 and +$1.40) occurred far too early before reaching the $15-$30 target asymmetry.",
+        "market_regime_mismatch": "Entered during low-liquidity volatility expansions where standard tight stops act as liquidity magnets."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions unless existing trade has moved at least +$10.00 in profit and structural support/resistance is re-tested.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require 15-minute ATR expansion confirmation and zero high-impact news release within a +/- 15 minute window prior to order execution.",
+        "profit_harvest_threshold": "Trail stops dynamically via Sentinel Peak Harvest once profit exceeds +$5.00, forcing the engine to let winners run to the $15-$30+ bracket."
+      },
+      "synthesis_directive": "Enforce wider micro-volatility buffers on stops while strictly locking in trailing profit harvests to ensure winners achieve $15-$30+ asymmetry."
     }
   ]
 }
