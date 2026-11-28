@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T12:40:45.551568+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (12 cents away on XAUUSD entry at 3653.88 with SL at 3654.00), resulting in premature tick-hunting stop-outs.",
-        "risk_asymmetry_flaw": "The single loss of -$0.69 erased a disproportionate share of the concurrent micro-win ($0.49), failing the objective of keeping risk strictly bounded while allowing runners to expand.",
-        "market_regime_mismatch": "Execution occurred during high-frequency spread widening near session inflection hours where tight structural stops are overly vulnerable to standard market maker liquidity sweeps."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strict prohibition on adding to positions unless the primary trade has achieved a minimum floating profit equal to 1.5x the initial risk threshold.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Enforce a minimum ATR buffer of $0.80 away from high-density liquidity nodes before order routing to prevent micro-wick stop-hunts.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial harvest once floating profits hit +$15.00, targeting a final runner exit up to +$30.00."
-      },
-      "synthesis_directive": "Widen structural stop-losses beyond immediate micro-noise bands while strictly enforcing asymmetrical profit harvesting from $15 to $30."
-    },
-    {
       "evolution_timestamp": "2026-11-28T12:42:25.956689+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Sub-optimal stop-loss placement near tight round-number resistance (3654.00) causing premature stop-out on minor late-session noise.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trigger aggressive trailing stops upon reaching +$15.00 unrealized, forcing execution up to +$30.00."
       },
       "synthesis_directive": "Enforce structural volatility buffers for all stop-losses and lock in asymmetrical profit runs targeting $15-$30+ without premature micro-exits."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T15:10:28.748711+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Ticket 1712539926 on XAUUSD suffered a micro-stop out (-$0.69) because the entry price of 3653.88 was placed directly into immediate high-frequency noise with a structural stop too tight at 3654.00 (only 12 cents away), failing to account for normal intraday market microstructure variance.",
+        "risk_asymmetry_flaw": "While the absolute dollar loss was small (-$0.69), premature stop-outs prevent trades from maturing into asymmetric $15-$30+ profiles, and recent wins (e.g., +$0.49) were clipped too early by trailing stops instead of allowing macro momentum expansion.",
+        "market_regime_mismatch": "The stop-loss was triggered during high-volatility session transition hours where institutional liquidity sweeps target micro-structural levels clustered too closely to the execution price."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions within 1.5 ATR of a recent liquidity swing high/low; only pyramid when existing position is at least +$10 in profit and trailing stop locks in breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Mandatory ATR-based buffer: Initial stop-loss for XAUUSD must never be set closer than 1.2 * 14-period ATR from the execution price to filter out micro-noise wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing harvest protocols only after floating profit crosses +$15.00, targeting a minimum R-multiple expansion of 4:1."
+      },
+      "synthesis_directive": "Enforce a mandatory minimum 1.2 ATR distance for all initial stop-losses on XAUUSD to eliminate micro-wick stop-outs while strictly maintaining risk within the $4-$6 envelope."
     }
   ]
 }

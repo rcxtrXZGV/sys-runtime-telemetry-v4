@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into unconfirmed micro-wicks; scale-ins strictly prohibited unless momentum delta exceeds 2.5 standard deviations.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 1.5 ATR of a recent liquidity swing high/low; only pyramid when existing position is at least +$10 in profit and trailing stop locks in breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 15-second volume delta confirmation and minimum 1.5 ATR buffer beyond local liquidity pools before execution.",
-  "profit_harvest_threshold": "Trigger aggressive trailing stops upon reaching +$15.00 unrealized, forcing execution up to +$30.00."
+  "new_mandatory_entry_filter": "Mandatory ATR-based buffer: Initial stop-loss for XAUUSD must never be set closer than 1.2 * 14-period ATR from the execution price to filter out micro-noise wicks.",
+  "profit_harvest_threshold": "Initiate aggressive trailing harvest protocols only after floating profit crosses +$15.00, targeting a minimum R-multiple expansion of 4:1."
 }
