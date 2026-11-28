@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless existing trade has locked in breakeven plus commission via trailing stop.",
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved in-the-money by at least $10.00 and trailing stops are locked at breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require confirmed volume delta and order book imbalance outside of high-impact spread-widening windows before order dispatch.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest when unrealized profit crosses +$15.00, targeting asymmetric runs up to +$30.00."
+  "new_mandatory_entry_filter": "Zero execution allowed during sub-minute volatility spikes; require a validated 3-bar structural volume confirmation away from institutional liquidity pools.",
+  "profit_harvest_threshold": "Scale out 50% at +$15.00, trailing the remaining position dynamically via Sentinel Peak Harvest to capture the $30.00 asymmetric objective."
 }
