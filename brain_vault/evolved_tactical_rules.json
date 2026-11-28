@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions unless the initial trade has moved at least 2.5x ATR in profit and trailing stop is locked at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless floating profit on the base tranche exceeds +$10.00 and trailing stop is locked at break-even.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a multi-timeframe liquidity sweep confirmation and an explicit 14-period ATR volatility expansion filter before order transmission.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and let the remaining runner target $25.00+ using an aggressive parabolic SAR trail."
+  "new_mandatory_entry_filter": "XAUUSD entries must incorporate an ATR-based buffer minimum of 1.5x the current 1-minute spread to prevent immediate noise-stopouts.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation once profit crosses +$15.00 to ensure asymmetry targets of $15-$30+ are reliably secured."
 }
