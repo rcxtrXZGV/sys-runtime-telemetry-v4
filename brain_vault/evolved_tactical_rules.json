@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless existing floating profit exceeds 2.5x the current ATR risk parameter.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate a minimum 15-pip buffer beyond key structural liquidity pools and zero high-impact news windows within 15 minutes of execution.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail the remainder with a dynamic volatility band to capture the $15.00-$30.00 asymmetry target."
+  "pyramiding_rule": "Prohibit adding to positions unless the primary trade has achieved a minimum floating profit equal to 1.5x the initial risk threshold.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Enforce a minimum volatility buffer of at least 1.5 ATR for initial stop-loss placement, completely banning micro-stops under $1.00 on XAUUSD.",
+  "profit_harvest_threshold": "Initiate aggressive trailing profit harvest once floating profit reaches $15.00 to lock in wins toward the $30.00 ceiling."
 }
