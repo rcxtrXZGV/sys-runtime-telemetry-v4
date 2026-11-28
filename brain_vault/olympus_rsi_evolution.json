@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T16:56:34.033000+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Consecutive micro-scalp executions on XAUUSD during high-volatility sessions triggered tight stop-losses, compounded by duplicate entries (tickets 1707578236 and 1707578239) acting as unauthorized pyramiding into falling momentum.",
-        "risk_asymmetry_flaw": "The average loss of -$3.17 exceeded the median win size due to premature profit-taking on micro-wins while letting losing trades hit fixed dollar-value stop-loss ceilings or harsh negative slippage.",
-        "market_regime_mismatch": "Executing mean-reversion entries during directional breakout wicks on XAUUSD, where volatility expansion rapidly invalidated tight absolute dollar stops."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.0,
-        "pyramiding_rule": "Strictly prohibit opening multiple orders on the same asset within a 60-second window to prevent accidental scaling into a collapsing price wick.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and zero high-impact calendar events within +/- 15 minutes before executing any market order.",
-        "profit_harvest_threshold": "Initiate trailing stops once floating profit hits +$4.00 to guarantee wins lock in between $5.00 and $30.00."
-      },
-      "synthesis_directive": "Enforce strict anti-clustering execution limits and cap max risk per trade at exactly $4.00 while letting winning momentum run past +$5.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T16:58:21.427838+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Tight structural stop-losses placed immediately around psychological round numbers (e.g., 3550.00) combined with split-ticket duplicate executions during high-frequency volatility wicks.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remainder dynamically using parabolic SAR to capture $15-$30+ runs."
       },
       "synthesis_directive": "Enforce wider structural stops with reduced position sizing to eliminate micro-wick exits and force winners to run past the $15 threshold."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:04:17.307349+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, triggering an unnecessary early exit before continuation.",
+        "risk_asymmetry_flaw": "Losses relative to wins show adequate containment, but premature stop placement caps potential reward expansion during high-volatility regimes.",
+        "market_regime_mismatch": "Entered XAUUSD during a localized liquidity sweep, causing a premature stop-out before the directional move materialized."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit adding to positions unless the primary trade is in profit by at least 1.5x the initial risk threshold.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require volumetric delta confirmation and a 5-pip buffer beyond local liquidity pools before order execution.",
+        "profit_harvest_threshold": "Secure 50% of the position at $15 profit and trail the remainder dynamically to target $30+."
+      },
+      "synthesis_directive": "Widen micro-stops on XAUUSD beyond immediate liquidity wicks while strictly enforcing asymmetric profit capture targeting $15-$30+."
     }
   ]
 }
