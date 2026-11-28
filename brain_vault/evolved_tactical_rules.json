@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding positions into adverse local wicks; only pyramid on confirmed breakout continuation with an existing floating profit buffer >= $3.00.",
+  "pyramiding_rule": "Strict prohibition against adding position size during consecutive high-volatility tick clusters; scale-ins require a minimum 3-candle consolidation hold.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-ATR volatility expansion confirmation and zero tier-1 high-impact macroeconomic release within a +/- 15-minute window prior to execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial scale-out once the position crosses the +$10.00 profit mark to guarantee asymmetrical $15-$30+ outcomes."
+  "new_mandatory_entry_filter": "Mandatory structural liquidity sweep verification via volume profile node confirmation prior to order execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$5.00 profit to lock in asymmetric payouts targeting +$15.00 to +$30.00."
 }
