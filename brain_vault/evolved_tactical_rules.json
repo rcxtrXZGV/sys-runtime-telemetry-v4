@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against pyramiding into positions showing less than +$5.00 unrealized gain; zero scaling into micro-consolidations.",
+  "pyramiding_rule": "No pyramiding into counter-trend retracements; only scale into positions showing confirmed momentum exceeding 2.5 ATR.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate an ATR-based buffer of at least $1.50 away from psychological rounding levels and high-impact liquidity pools before entry execution.",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvest mode instantly once floating profit breaches +$10.00 to prevent degradation back to break-even."
+  "new_mandatory_entry_filter": "Require minimum 1.5 ATR buffer from current price action to structural liquidity nodes before order execution.",
+  "profit_harvest_threshold": "Secure 50% of position at +$10.00, trailing the remainder via parabolic SAR until reaching the +$20.00-$30.00 harvest zone."
 }
