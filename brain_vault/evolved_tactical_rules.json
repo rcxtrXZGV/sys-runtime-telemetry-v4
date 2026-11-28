@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless existing trade has moved at least +$10.00 in profit and structural support/resistance is re-tested.",
+  "pyramiding_rule": "Prohibit compounding positions into micro-pullbacks; require confirmed multi-timeframe directional momentum before scaling volume.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require 15-minute ATR expansion confirmation and zero high-impact news release within a +/- 15 minute window prior to order execution.",
-  "profit_harvest_threshold": "Trail stops dynamically via Sentinel Peak Harvest once profit exceeds +$5.00, forcing the engine to let winners run to the $15-$30+ bracket."
+  "new_mandatory_entry_filter": "Mandate an institutional spread and volatility threshold check, blocking entries when ATR is compressed below the 14-period moving average.",
+  "profit_harvest_threshold": "Aggressively trail stop-loss to breakeven + commission costs upon reaching $4.00 floating profit, unlocking extensions to $15-$30 targets."
 }
