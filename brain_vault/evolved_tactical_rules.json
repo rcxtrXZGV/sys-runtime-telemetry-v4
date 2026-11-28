@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a failed micro-stop or during active liquidity sweep wicks.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandate a minimum ATR-based stop-loss buffer of at least $1.50 on XAUUSD to prevent premature noise-whip exits.",
-  "profit_harvest_threshold": "Secure 50% of the position at +$10.00 and let the remaining half run toward the +$25.00 to +$30.00 Sentinel Peak target."
+  "pyramiding_rule": "No pyramiding into negative positions; only add volume when floating profit exceeds +$10.00 and price structure confirms trend continuation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a 3-bar volume-weighted price confirmation away from psychological round numbers before executing XAUUSD orders.",
+  "profit_harvest_threshold": "Secure 50% of the position upon reaching +$15.00, trailing the remainder dynamically to capture structural runs up to +$30.00."
 }
