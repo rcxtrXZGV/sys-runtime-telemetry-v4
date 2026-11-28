@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into retracements; only scale into positions when momentum velocity exceeds 2 standard deviations and existing inventory is trailing-stopped in profit.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Enforce a 15-second volatility buffer and require order flow imbalance to exceed +65% in the direction of the trade before execution.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00 profit, lock breakeven + commission, and let the remaining half run freely toward the $25-$30 asymmetric target."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions showing at least +$3.00 unrealized profit.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require volatility-adjusted ATR buffer before setting stops to prevent micro-wick stop-hunting.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation once profit crosses +$5.00 to capture $15-$30 asymmetric runs."
 }
