@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into micro-pullbacks; subsequent entries only authorized upon a confirmed 15-minute structural break with zero overlap of prior swing highs/lows.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning XAUUSD trades when unrealized profit exceeds +$10.00 and trailing stop locks break-even.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict ATR expansion filter and order-book imbalance confirmation required prior to order dispatch.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00, trailing the remainder via dynamic ATR multipliers to capture extended asymmetric runs up to +$30.00."
+  "new_mandatory_entry_filter": "Mandate a 14-period ATR volatility filter and order-book liquidity check to ensure initial stop-loss is placed at least 1.5 ATR away from execution price, bypassing micro-wicks.",
+  "profit_harvest_threshold": "Trigger aggressive partial profit harvesting when XAUUSD reaches +$15.00, trailing the remaining position to secure a guaranteed +$8.00 minimum payout."
 }
