@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 1.5 ATR of a recent high-impact liquidity node to avoid falling-knife accumulation.",
+  "pyramiding_rule": "Prohibit scale-ins until the primary position reaches +$10.00 floating profit and stop is moved to breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandate a multi-timeframe micro-structure confirmation and a minimum 3.0 ATR volatility buffer before initial order placement on XAUUSD.",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvests immediately upon reaching +$15.00 unrealized profit to protect gains from evaporating."
+  "new_mandatory_entry_filter": "Require a minimum 3-pip volumetric confirmation candle break past key liquidity nodes before execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop compression once profit crosses +$15.00 to guarantee asymmetric $15-$30+ outcomes."
 }
