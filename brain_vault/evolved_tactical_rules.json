@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to losing or flat positions; scale-ins permitted only after the primary trade achieves +$10.00 unrealized profit and breaks even.",
+  "pyramiding_rule": "Strictly prohibit adding positions into adverse local wicks; only pyramid on confirmed breakout continuation with an existing floating profit buffer >= $3.00.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory structural liquidity sweep confirmation plus minimum 14-period ATR volatility threshold clearance prior to order dispatch.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit harvest only when unrealized gains reach +$15.00 to force execution toward the $30 asymmetric payout ceiling."
+  "new_mandatory_entry_filter": "Require a minimum 3-ATR volatility expansion confirmation and zero tier-1 high-impact macroeconomic release within a +/- 15-minute window prior to execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial scale-out once the position crosses the +$10.00 profit mark to guarantee asymmetrical $15-$30+ outcomes."
 }
