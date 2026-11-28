@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the initial trade has moved at least +$8.00 in profit and volatility bands expand.",
+  "pyramiding_rule": "Strictly prohibit adding positions within 30 minutes of a prior stopped-out order on the same instrument; require confirmed momentum expansion of at least 3x ATR before scaling.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmation via a 3-period volume delta spike and an ATR-based buffer exceeding local micro-wicks before order execution.",
-  "profit_harvest_threshold": "Scale out 50% at +$15.00 profit and trail the remaining position with a dynamic ATR stop until reaching +$30.00."
+  "new_mandatory_entry_filter": "Require order book delta and volume profile confirmation showing zero resting liquidity traps within 1.5 standard deviations before execution.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds $3.00 and execute full harvest on the first structural momentum deceleration."
 }
