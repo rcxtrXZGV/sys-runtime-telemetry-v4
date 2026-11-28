@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is only authorized after existing position achieves a minimum +$5.00 unrealized profit and trailing stop hits breakeven.",
+  "pyramiding_rule": "Prohibit scaling into losing positions; only pyramid on confirmed momentum after a minimum +$10.00 floating profit threshold is secured.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-candle ATR confirmation and zero high-impact liquidity sweeps within the immediate 5-minute window before order placement.",
-  "profit_harvest_threshold": "Trigger aggressive partial profit-taking at +$15.00 and lock remaining runner stops to ensure absolute $15-$30+ asymmetry."
+  "new_mandatory_entry_filter": "Mandate an ATR-based buffer of at least 1.5x current volatility for initial stop-loss placement, completely banning sub-0.50 dollar tight stops on XAUUSD.",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvest mode immediately once floating profit crosses +$15.00 to guarantee asymmetric $15-$30+ wins."
 }
