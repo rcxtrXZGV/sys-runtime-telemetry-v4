@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary order has achieved a minimum +$5.00 unrealized profit buffer.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum for at least two consecutive 1-minute closes before order execution.",
-  "profit_harvest_threshold": "Trigger aggressive trailing stops or partial scaling the moment profit crosses +$15.00, allowing runners to push to +$30.00."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale in when initial position achieves +$3.00 unrealized profit and ATR contraction confirms trend continuation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require order flow imbalance confirmation via tick volume delta exceeding 2.5x the 20-period moving average prior to execution.",
+  "profit_harvest_threshold": "Initiate trailing stop activation at +$5.00 profit, locking in a minimum of +$3.00 while allowing runners to target +$15.00-$30.00."
 }
