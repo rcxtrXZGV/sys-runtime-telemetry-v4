@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning trajectories after a minimum +$3.00 floating profit cushion is locked via trailing stops.",
+  "pyramiding_rule": "Strictly forbid adding to positions during low-volume consolidation wicks; pyramid only after a confirmed 100% ATR breakout candle closure.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Multi-timeframe liquidity sweep confirmation combined with zero high-impact macroeconomic news releases in a +/- 15 minute window.",
-  "profit_harvest_threshold": "Initiate dynamic trailing locks once profit reaches +$5.00 to prevent profit evaporation and drive returns toward the $15.00-$30.00 target window."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR impulse distance from key liquidity nodes before committing volume, rejecting any setup with a stop-loss distance under $1.50.",
+  "profit_harvest_threshold": "Disable micro-trailing stops under $5.00; allow positions to develop unhindered toward the $15.00-$30.00 asymmetric target zone."
 }
