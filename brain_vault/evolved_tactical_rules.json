@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 30 minutes of any structural volatility wick; only pyramid on confirmed momentum continuation with locked-in trailing stops.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer from structural micro-highs/lows and filter out execution during high-impact spread-widening windows.",
-  "profit_harvest_threshold": "Initiate dynamic trailing harvest at +$8.00 and force full exit execution only when the asymmetric upside band reaches the $15-$30+ zone."
+  "pyramiding_rule": "Prohibit scaling into losing positions; only permit pyramiding when existing open positions have achieved at least +$5.00 in floating profit and structural breakout confirmation is validated.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer from current swing highs/lows for initial stop-loss placement, completely banning sub-0.5 dollar stops to eliminate noise-hunting.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$5.00 to protect gains and ensure asymmetrical runs extend toward the $15-$30 target window."
 }

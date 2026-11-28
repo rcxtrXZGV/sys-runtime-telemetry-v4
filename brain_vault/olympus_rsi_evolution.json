@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T14:19:03.808788+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Consecutive micro-scalp executions on XAUUSD placed stop-losses too close to immediate noise wicks, resulting in repeated clustering stops followed by adverse drift.",
-        "risk_asymmetry_flaw": "Losses (-$4.53 max) frequently outstripped average wins (+$0.49 to +$5.34), violating the asymmetric return objective due to premature profit-taking and late-stage trailing slippage.",
-        "market_regime_mismatch": "Executing fixed-pip stop distances during high-volatility liquidity sweeps around 21:13-22:55 UTC caused predictable stop-hunting."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against opening correlated micro-lots within 60 seconds of a prior stop-out; no averaging down into falling momentum.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require confirmed multi-timeframe ATR expansion and order-flow imbalance before dispatching market orders on XAUUSD.",
-        "profit_harvest_threshold": "Initiate aggressive trailing harvest on XAUUSD once floating profit crosses +$10.00 to guarantee minimum +$15.00 stretches."
-      },
-      "synthesis_directive": "Enforce strict volatility-adjusted stop-loss buffers and eliminate overlapping rapid-fire entries during high-impact liquidity windows to keep max loss under $5.00."
-    },
-    {
       "evolution_timestamp": "2026-11-27T14:23:12.250364+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Clustered simultaneous entries at identical timestamps (21:14:10 UTC) leading to double-risk exposure during low-liquidity spreads, combined with delayed Sentinel Peak Harvest execution resulting in negative profit realized on exit.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate dynamic trailing harvest at +$8.00 and force full exit execution only when the asymmetric upside band reaches the $15-$30+ zone."
       },
       "synthesis_directive": "Enforce a strict minimum 2 ATR stop-loss buffer on XAUUSD to eliminate noise-whip while mandating aggressive trailing take-profits to force winners into the $15-$30+ asymmetry window."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T08:28:31.587780+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement was positioned within immediate market micro-noise (0.12 pts away), triggering an instant stop-out before the thesis could play out.",
+        "risk_asymmetry_flaw": "Loss magnitude of -$0.69 was misaligned against smaller micro-scalp wins due to premature breakeven trailing, preventing winners from hitting the $15-$30+ asymmetric target.",
+        "market_regime_mismatch": "Entered during low-liquidity consolidation where tight stops act as immediate liquidity magnets for algorithmic sweep wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit scaling into losing positions; only permit pyramiding when existing open positions have achieved at least +$5.00 in floating profit and structural breakout confirmation is validated.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer from current swing highs/lows for initial stop-loss placement, completely banning sub-0.5 dollar stops to eliminate noise-hunting.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$5.00 to protect gains and ensure asymmetrical runs extend toward the $15-$30 target window."
+      },
+      "synthesis_directive": "Enforce a strict minimum stop-loss distance of $2.00 on XAUUSD to eliminate noise-based stop hunts, while forcing winners to run past +$5.00 before aggressive profit harvesting."
     }
   ]
 }
