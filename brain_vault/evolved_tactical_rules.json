@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition of averaging down into declining momentum; additive execution only permitted after a verified 1R structural continuation with trailing lock-step activation.",
+  "pyramiding_rule": "Strict prohibition against adding to losing positions; multi-tier entries authorized only when existing open position has achieved at least +$2.50 floating profit and moved past the initial breakeven volatility buffer.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR volatility band filter ensuring initial stop-loss is placed outside the 14-period 1-minute high-low wick range to eliminate noise-driven stop hunts.",
-  "profit_harvest_threshold": "Aggressive scaling trigger activated upon reaching +$15.00 unrealized, securing 50% position size and trailing the remainder to a guaranteed +$5.00 floor."
+  "new_mandatory_entry_filter": "Mandatory integration of a 5-period ATR volatility envelope check; no order execution permitted if current spread plus ATR noise exceeds 15% of the intended risk boundary.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop-loss activation once positions reach +$3.00, locking in baseline gains while letting asymmetric runners scale toward +$15.00-$30.00."
 }
