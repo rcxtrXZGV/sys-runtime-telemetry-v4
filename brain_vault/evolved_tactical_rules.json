@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions within 2.0 dollars of high-volume nodes; scaling permitted only after a minimum of +$10.00 unrealized profit cushion is locked.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "All XAUUSD entries must incorporate an ATR-based volatility buffer of at least $1.50 beyond local structural wicks to prevent noise-based stop-outs.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once profit reaches +$15.00, fully securing positions upon touching the $30.00 target ceiling."
+  "pyramiding_rule": "Never pyramid into falling knives; only scale into positions showing an established momentum slope greater than 3 ticks per second with zero negative tick feedback.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Mandatory ATR-based buffer zone of at least 1.5x the 5-period noise candle applied to all initial stop-losses to prevent micro-wick hunting.",
+  "profit_harvest_threshold": "Initiate aggressive trailing or partial harvest whenever unrealized profit crosses the +$12.00 threshold to protect against evaporation."
 }
