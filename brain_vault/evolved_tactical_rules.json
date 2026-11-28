@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions unless the primary trade has achieved at least +$10.00 in floating profit and volatility contraction is confirmed.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require confirmed multi-timeframe volume delta divergence and a 14-period ATR volatility expansion filter prior to order dispatch.",
-  "profit_harvest_threshold": "Initiate trailing profit locks at +$10.00 and allow winners to scale freely up to +$30.00 via dynamic ATR trailing stops."
+  "pyramiding_rule": "No scaling into positions until existing trades have moved at least +$6.00 in profit and stop-losses are locked at breakeven.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory ATR volatility buffer of at least 1.5x the current spread applied to all initial stop-loss placements to prevent noise-wick premature exits.",
+  "profit_harvest_threshold": "Aggressively trigger trailing locks when floating profit hits +$15.00 to ensure full capture of $15-$30+ asymmetric runs."
 }
