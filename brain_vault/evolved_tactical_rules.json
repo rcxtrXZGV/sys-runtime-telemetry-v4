@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to positions unless the primary order has achieved at least +$3.00 floating profit and breaks the local 15-minute high/low.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; secondary entries on XAUUSD require confirmed micro-breakouts backed by volume delta exceeding 2.5 standard deviations.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 3-bar volume confirmation and a 5-period EMA slope alignment before market entry to filter out low-conviction consolidation noise.",
-  "profit_harvest_threshold": "Aggressively trail stops using a 3-candle low/high structural offset once floating profit exceeds +$4.00 to protect gains from rapid evaporation."
+  "new_mandatory_entry_filter": "Require a minimum 50-pip structural buffer from known high-frequency algorithmic liquidity clusters and zero high-impact macroeconomic news releases within +/- 15 minutes.",
+  "profit_harvest_threshold": "Initiate trailing sentinel harvest dynamically when floating profit surpasses +$3.00 to prevent evaporation of gains while permitting target runs to $15-$30+."
 }
