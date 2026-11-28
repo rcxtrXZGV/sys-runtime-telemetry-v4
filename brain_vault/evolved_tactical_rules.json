@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit scale-ins during high-velocity local exhaustion wicks; require at least 2 consecutive confirming closes on the 5-minute timeframe.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning XAUUSD breakouts when unrealized profit exceeds +$3.00.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer (minimum 1.2x 14-period ATR) before order commitment to bypass sub-dollar liquidity hunts.",
-  "profit_harvest_threshold": "Initiate trailing stop protection immediately when floating profit reaches $3.00, targeting asymmetrical runway toward $15.00-$30.00."
+  "new_mandatory_entry_filter": "Require a validated multi-timeframe order block confirmation and ATR expansion filter before any new execution is authorized.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops via SENTINEL_PEAK_HARVEST once unrealized profit crosses +$4.00 to lock in $15-$30 targets."
 }
