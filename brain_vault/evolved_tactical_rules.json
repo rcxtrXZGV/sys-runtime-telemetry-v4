@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into negative floating positions; only scale into positions showing a minimum +$2.00 unrealized profit cushion.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer on initial stop-loss placement, banning absolute micro-stops under $1.50 on XAUUSD to prevent noise-wick hunting.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$5.00 and trail remaining position dynamically via Sentinel Peak Harvest protocol to target +$15.00 to +$30.00."
+  "pyramiding_rule": "Strict prohibition of averaging down into a falling knife; scale-ins authorized only after a confirmed 15-pip structural breakout and volume validation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory multi-timeframe ATR volatility buffer check to prevent stop-loss placement inside active market noise bands.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops upon reaching +$8.00 floating profit to lock in asymmetry targeting the $15.00-$30.00 objective."
 }
