@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when floating profit exceeds 1.5x current ATR.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require multi-timeframe micro-structure confirmation and ATR-based volatility expansion checks prior to execution.",
-  "profit_harvest_threshold": "Secure 50% of position at +$10.00, trail remainder dynamically to capture $15-$30 asymmetric runs."
+  "pyramiding_rule": "Strict zero-pyramiding unless the primary position is floating at least +2.0x ATR in profit with stop-loss locked at breakeven plus commission.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require 15-minute ATR expansion above 1.5x baseline and minimum 3.0x Risk-to-Reward clearance to nearest major structural liquidity zone before entry authorization.",
+  "profit_harvest_threshold": "Activate dynamic trailing step at +$8.00 floating gain, enforcing mandatory 50% partial harvest at +$15.00."
 }
