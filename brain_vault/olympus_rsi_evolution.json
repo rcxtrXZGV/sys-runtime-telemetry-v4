@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T14:05:09.849168+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight stop-losses placed at psychological or round-number price thresholds (e.g., 3550.00, 3552.00) were routinely hunted by institutional micro-wicks during high-frequency liquidity sweeps.",
-        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded optimal win outputs due to premature stop triggering combined with delayed exit harvesting on volatile XAUUSD expansions.",
-        "market_regime_mismatch": "Executing micro-lots during peak London-New York session overlaps without accounting for spread widening and instantaneous high-impact volatility spikes."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strictly prohibit adding to positions within 30 seconds or 1.5 ATR of a preceding stop-loss event; zero falling knife pyramiding allowed.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require confirmation of order flow imbalance via tick volume delta and structural rejection of round-number liquidity pools prior to execution.",
-        "profit_harvest_threshold": "Initiate aggressive trailing stop activation or Sentinel Peak Harvest as soon as floating profit crosses +$5.00 to lock in positive asymmetry."
-      },
-      "synthesis_directive": "Never place stop-losses on exact round numbers and lock in profit aggressively at +$5.00 to ensure asymmetric $4 risk vs $15+ reward profiles."
-    },
-    {
       "evolution_timestamp": "2026-11-27T14:07:03.904355+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Multiple concurrent entries (tickets 1707578236 and 1707578239) executed at identical price points indicating undisciplined pyramiding into micro-volatility wicks, compounded by a wide trailing stop failure resulting in a -$4.53 loss on ticket 1707834658.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining runner target asymmetric +$25.00+ expansion zones."
       },
       "synthesis_directive": "Enforce a strict minimum stop-loss distance buffer of $4.00 on XAUUSD to bypass market maker liquidity sweeps and mandate trailing locks for $15-$30+ runs."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T08:20:53.895569+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, triggering an unnecessary -0.69 loss during standard intraday mean-reversion chop.",
+        "risk_asymmetry_flaw": "Risk-to-reward ratio degraded because premature micro-stopouts cut off structural runouts before exponential tail expansion ($15-$30+).",
+        "market_regime_mismatch": "Attempting low-volatility continuation entries during range-bound liquidity voids caused immediate stop hunts."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into unconfirmed breakouts; scale-ins are strictly forbidden until price clears the 15-minute structural liquidity band with expanding volume.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 1.5x ATR buffer from known structural liquidity nodes and mandatory zero-spread confirmation on XAUUSD before execution.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit reaches $15.00 to force execution into the $15-$30+ asymmetry tier."
+      },
+      "synthesis_directive": "Enforce a strict minimum structural buffer for all stop-losses and lock in trailing mechanics only after hitting the $15 asymmetric target."
     }
   ]
 }
