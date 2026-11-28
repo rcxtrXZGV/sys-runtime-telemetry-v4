@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved in-the-money by at least $10.00 and trailing stops are locked at breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Zero execution allowed during sub-minute volatility spikes; require a validated 3-bar structural volume confirmation away from institutional liquidity pools.",
-  "profit_harvest_threshold": "Scale out 50% at +$15.00, trailing the remaining position dynamically via Sentinel Peak Harvest to capture the $30.00 asymmetric objective."
+  "pyramiding_rule": "Prohibit averaging down into falling knives; only scale into winning momentum when floating profit exceeds +$3.00.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Enforce a 3-tier volatility band filter and block entries within 5 minutes of high-impact news wicks.",
+  "profit_harvest_threshold": "Trigger aggressive trailing stops once open profit hits +$10.00 to capture $15-$30+ runs."
 }

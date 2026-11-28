@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T15:28:52.762504+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight stop-losses placed directly at psychological round numbers (e.g., 3550.00, 3552.00) triggered immediate micro-whips and stop-hunting before trend resumption.",
-        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded average target wins due to premature profit capping and slippage on volatile spikes.",
-        "market_regime_mismatch": "High-frequency entries during low-liquidity rollover hours caused excessive spread-crossing and erratic wick stops on XAUUSD."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strict prohibition of scaling into positions within 1.5 ATR of a major round psychological handle or during high-impact news windows.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Require a confirmed 15-minute close outside the local volatility band plus order book imbalance confirmation before placing any XAUUSD order.",
-        "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trail remainder dynamically to ensure total run reaches $15.00-$30.00 range."
-      },
-      "synthesis_directive": "Enforce strict volatility-adjusted stop buffers away from round numbers and mandate asymmetric risk-reward scaling to keep max losses under $4.50 while letting winners expand to $15+."
-    },
-    {
       "evolution_timestamp": "2026-11-27T15:41:36.106484+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Consecutive micro-scalp executions and tight stop-loss placement during high-velocity XAUUSD liquidity sweeps, resulting in immediate stop-outs followed by adverse slippage.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% at +$15.00, trailing the remaining position dynamically via Sentinel Peak Harvest to capture the $30.00 asymmetric objective."
       },
       "synthesis_directive": "Enforce a strict minimum structural stop-loss distance of $4.00 to eliminate noise-hunting while letting asymmetric winning distributions run past $15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T08:53:23.673881+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against micro-volatility noise, resulting in premature truncation of the position before structural continuation.",
+        "risk_asymmetry_flaw": "Risk-to-reward ratio compressed on micro-stops, preventing winners from outscaling losses while commissions heavily eroded fractional gains.",
+        "market_regime_mismatch": "High-frequency mean-reversion filters triggered entries during localized liquidity sweeps, exposing the book to unnecessary noise wicks."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit averaging down into falling knives; only scale into winning momentum when floating profit exceeds +$3.00.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Enforce a 3-tier volatility band filter and block entries within 5 minutes of high-impact news wicks.",
+        "profit_harvest_threshold": "Trigger aggressive trailing stops once open profit hits +$10.00 to capture $15-$30+ runs."
+      },
+      "synthesis_directive": "Expand stop-loss buffers beyond micro-noise thresholds and strictly enforce asymmetric profit-trailing to achieve $15-$30+ wins."
     }
   ]
 }
