@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until the primary trade achieves a minimum of +$10.00 in floating profit and moves the active stop-loss to break-even.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary order has achieved a minimum +$5.00 unrealized profit buffer.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR volatility expansion check: Do not enter XAUUSD unless current 5-period ATR exceeds the 20-period moving average of ATR by at least 15%.",
-  "profit_harvest_threshold": "Initiate trailing stop protocol or scale out 50% of volume once profit hits +$15.00, letting the remaining size run toward the +$30.00 target."
+  "new_mandatory_entry_filter": "Volume delta and order-book imbalance must confirm directional momentum for at least two consecutive 1-minute closes before order execution.",
+  "profit_harvest_threshold": "Trigger aggressive trailing stops or partial scaling the moment profit crosses +$15.00, allowing runners to push to +$30.00."
 }
