@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when open profit exceeds +$5.00 with verified momentum confirmation.",
+  "pyramiding_rule": "Prohibit adding to positions until price moves at least +$10.00 in favor of the primary trend, using trailing structural lows only.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer for initial stop-loss placement on XAUUSD to prevent premature micro-noise stop-outs.",
-  "profit_harvest_threshold": "Initiate trailing stop protection once profit hits +$10.00 and execute full harvest protocol between $15.00 and $30.00."
+  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility expansion check combined with order-book imbalance confirmation prior to breakout execution.",
+  "profit_harvest_threshold": "Trail stops aggressively using ATR multiples only after achieving a minimum +$15.00 floating gain to force asymmetric outcomes."
 }
