@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning XAUUSD breakouts when unrealized profit exceeds +$3.00.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a validated multi-timeframe order block confirmation and ATR expansion filter before any new execution is authorized.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops via SENTINEL_PEAK_HARVEST once unrealized profit crosses +$4.00 to lock in $15-$30 targets."
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has locked in a trailing profit equal to 1.5x the initial risk envelope.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandate an ATR(14) buffer of at least $1.50 away from recent consolidation extremes to prevent micro-wick stop-outs.",
+  "profit_harvest_threshold": "Aggressively secure partials when profit reaches +$15.00 and trail remaining balance using a volatility-adjusted parabolic stop."
 }
