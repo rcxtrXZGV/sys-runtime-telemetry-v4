@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10 in profit and volatility compression confirms a continuation breakout.",
+  "pyramiding_rule": "Prohibit scale-ins during compressed consolidation ranges; only pyramid upon validated structural breakouts with a minimum 2R cushion on the initial tranche.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 3-standard-deviation volume spike combined with an order-book imbalance confirmation before executing entry on XAUUSD.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$15, trail remaining with a wide ATR-based stop to capture multi-dollar macro runs up to $30+."
+  "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation before order execution to avoid high-impact noise wicks.",
+  "profit_harvest_threshold": "Initiate trailing stop protection immediately upon reaching +$3.00, securing asymmetric expansion toward the $15.00-$30.00 target window."
 }
