@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless floating profit on the base tranche exceeds 2x the current ATR and local volatility expansion is confirmed.",
+  "pyramiding_rule": "No scaling into positions unless existing floating profit exceeds 2x the current ATR threshold.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 3-bar order flow momentum alignment and spread filter below 35% of ATR prior to order execution.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 profit and trail remainder using a 5-period EMA envelope to force runs toward +$20.00 to +$30.00."
+  "new_mandatory_entry_filter": "Enforce a minimum buffer of 1.50 ATR away from immediate high-frequency consolidation nodes to avoid microscopic wick hunting.",
+  "profit_harvest_threshold": "Aggressively trigger Sentinel Peak Harvest when floating profit exceeds $15.00 to capture asymmetric tails up to $30.00."
 }
