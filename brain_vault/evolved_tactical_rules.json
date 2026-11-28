@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10 in open profit and volatility contraction is confirmed.",
+  "pyramiding_rule": "Prohibit adding to positions unless floating profit on the base tranche exceeds 2x the current ATR and local volatility expansion is confirmed.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate an ATR-based buffer for initial stop-loss placement to prevent wick hunting while keeping risk strictly capped between $4 and $6.",
-  "profit_harvest_threshold": "Aggressively trail stops once profit hits +$15 and scale out partially before reaching +$30."
+  "new_mandatory_entry_filter": "Require minimum 3-bar order flow momentum alignment and spread filter below 35% of ATR prior to order execution.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 profit and trail remainder using a 5-period EMA envelope to force runs toward +$20.00 to +$30.00."
 }
