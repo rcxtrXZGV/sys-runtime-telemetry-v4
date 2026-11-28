@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when floating profit exceeds +$8.00 and momentum confirms continuation.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 3.5x 14-period ATR breakout confirmation and zero high-impact liquidity sweeps within the immediate 5-minute candle history before execution.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position tightly to capture extended +$15.00 to +$30.00 macro impulses."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when open profit exceeds +$10.00 and momentum confirms continuation.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a minimum 3-candle ATR expansion break outside of the immediate consolidation range prior to order execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or scale-out execution once floating profit reaches +$15.00 to guarantee asymmetric $15-$30+ returns."
 }
