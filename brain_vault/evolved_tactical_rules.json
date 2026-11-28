@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit stacking or averaging into positions unless momentum confirms a 3x ATR breakout extension with zero micro-pullback signatures.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 1.5 ATR of known liquidity nodes to avoid falling-knife trapping.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer (at least 1.5x 14-period ATR) for stop placement to prevent noise-based premature exits.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remainder run using a parabolic SAR trailing stop targeting +$20.00 to +$30.00."
+  "new_mandatory_entry_filter": "Require multi-timeframe order book imbalance confirmation and a minimum 2.5 ATR structural stop distance before order authorization.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation once unrealized profit crosses $12.00 to lock in $15-$30+ targets."
 }
