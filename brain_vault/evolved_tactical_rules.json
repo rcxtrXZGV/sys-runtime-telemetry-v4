@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid adding to positions inside local consolidation wicks; pyramid only after a confirmed 15-pip structural breakout with trailing activation.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade is in profit by at least 2.5x the initial risk unit.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 1.5 ATR buffer beyond local liquidity pools before order submission.",
-  "profit_harvest_threshold": "Scale out 50% at $5.00 profit, trailing the remaining position dynamically to capture $15.00 to $30.00+ expansion."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond recent structural swing highs/lows for all initial stop-loss placements.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds $3.00 and execute full Sentinel Peak Harvest at $15.00-$30.00."
 }
