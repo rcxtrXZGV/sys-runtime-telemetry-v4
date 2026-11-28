@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is authorized only after the initial position has moved at least +$3.00 in profit with breakeven stop-loss locked.",
+  "pyramiding_rule": "Prohibit stacking or averaging into positions unless momentum confirms a 3x ATR breakout extension with zero micro-pullback signatures.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "No XAUUSD order execution without a multi-timeframe ATR volatility filter confirming minimum range expansion and clearing major session opening wicks.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$4.00, targeting runner exhaustion windows up to +$30.00."
+  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer (at least 1.5x 14-period ATR) for stop placement to prevent noise-based premature exits.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remainder run using a parabolic SAR trailing stop targeting +$20.00 to +$30.00."
 }
