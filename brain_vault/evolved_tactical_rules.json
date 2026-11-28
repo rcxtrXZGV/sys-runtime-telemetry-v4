@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is exclusively permitted only after the primary trade achieves +$10.00 in floating profit with stop-loss locked at breakeven.",
+  "pyramiding_rule": "Zero pyramiding permitted into unconfirmed floating losses; additions authorized only after primary order reaches +1.5 ATR in unrealized gain.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce a 3-ATR buffer zone for initial stop-loss placement on XAUUSD to eliminate sub-dollar noise clipping, combined with volume-weighted momentum confirmation.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest when profit reaches +$15.00, targeting a final window of $15.00 to $30.00."
+  "new_mandatory_entry_filter": "Require dynamic ATR expansion alignment and minimum 3:1 mathematical R:R structure prior to order submission.",
+  "profit_harvest_threshold": "Activate dynamic trailing lock at +$5.00 unrealized gain, letting 50% runner target $15.00+ expansion."
 }
