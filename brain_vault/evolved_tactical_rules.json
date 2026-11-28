@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions during localized liquidity pullbacks or falling knife dynamics; pyramiding is authorized only after a minimum of +$8.00 open profit and confirmed structural continuation.",
+  "pyramiding_rule": "Prohibit averaging down; only pyramid on confirmed momentum breakouts when floating profit exceeds $3.00.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a validated ATR-based volatility buffer (minimum 1.5x 14-period ATR) away from apparent swing highs/lows before initializing stop-loss placement.",
-  "profit_harvest_threshold": "Initiate trailing activation immediately at +$5.00 and enforce hard scaling to let winners run between $15.00 and $30.00."
+  "new_mandatory_entry_filter": "Mandate ATR-based dynamic buffer of at least $1.80 away from local micro-pivots to avoid wick hunting.",
+  "profit_harvest_threshold": "Secure partials at $5.00 and let runner target $15.00-$30.00 asymmetric expansion."
 }
