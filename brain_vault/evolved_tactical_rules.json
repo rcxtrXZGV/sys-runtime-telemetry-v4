@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless floating profit in primary trade exceeds +$10.00 and ATR confirms directional momentum expansion.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require minimum 1.5x ATR distance for initial stop-loss placement on XAUUSD to prevent premature noise termination.",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvest immediately when floating profit breaches +$15.00 to lock in asymmetric return profiles."
+  "pyramiding_rule": "Zero pyramiding into moves showing decelerating volume; only scale into positions when momentum z-score exceeds 2.0.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandate an Average True Range (ATR) expansion filter and spread-check barrier before executing order placement to bypass low-liquidity noise wicks.",
+  "profit_harvest_threshold": "Trigger trailing stops aggressively once floating profit crosses +mathrm{$3.00} to lock in asymmetric payouts up to +mathrm{$30.00}."
 }
