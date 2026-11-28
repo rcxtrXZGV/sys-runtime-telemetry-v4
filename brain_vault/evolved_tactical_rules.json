@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until floating profit on the primary tranche exceeds +$8.00 with verified momentum continuation.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require institutional volume delta confirmation and 5-minute ATR expansion before firing any breakout order.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest only after reaching +$15.00, allowing runners to push toward +$30.00."
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10.00 in profit and trailing stop is locked at breakeven.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require Volume Delta confirmation and ATR expansion threshold > 1.5 before authorizing breakout entries on XAUUSD.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$15.00, trail remainder dynamically to capture asymmetrical runs up to +$30.00."
 }
