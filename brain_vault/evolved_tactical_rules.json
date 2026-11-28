@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless floating profit on the base tranche exceeds +$10.00 and price breaks structural liquidity thresholds.",
+  "pyramiding_rule": "Strictly prohibit adding to positions until the primary trade achieves a +$10.00 floating profit cushion.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond immediate local swing extremes to prevent tight-stop hunting by market makers.",
-  "profit_harvest_threshold": "Aggressively trail stops using SENTINEL_PEAK_HARVEST once floating profit reaches +$12.00 to lock in asymmetric gains."
+  "new_mandatory_entry_filter": "Require a validated 3-bar structural volume expansion and ATR-based volatility buffer before executing XAUUSD orders.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops only after hitting a minimum of +$15.00 to allow runners to reach +$30.00."
 }
