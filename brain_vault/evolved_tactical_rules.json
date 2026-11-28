@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict zero pyramiding on floating losses; secondary positions permitted only when primary trade is at +1.5x ATR profit with SL at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 1 hour of a prior stop-out; only pyramid when existing position is at least +$10 in profit and trailing stop is at break-even.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Block all new XAUUSD market orders between 20:00 and 22:00 UTC and mandate dynamic ATR padding on SL to avoid spread noise.",
-  "profit_harvest_threshold": "Activate Sentinel trailing harvest at +$3.00 unrealized gain to lock in minimum 70% of peak profit run."
+  "new_mandatory_entry_filter": "Require minimum 3-candle momentum confirmation and volume delta alignment away from known institutional liquidity pools before order execution.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and let the remaining run with an aggressive trailing stop to achieve asymmetric +$15 to +$30 outcomes."
 }
