@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into micro-pullbacks; subsequent entries only allowed upon structural higher-low confirmation exceeding a 1.5 ATR threshold.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 3-pip clearance from visible local liquidity pools prior to order submission.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00 and trail the remainder with a dynamic volatility stop to target the $15.00-$30.00 asymmetry band."
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has secured at least +$3.00 in floating profit and volatility contraction is verified.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require an ATR(14) volatility expansion multiplier > 1.2 and order-book imbalance confirmation before execution authorization.",
+  "profit_harvest_threshold": "Scale out 50% of position size upon hitting +$10.00 and trail remaining volume using a tight parabolic SAR until exhaustion."
 }
