@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit position additions until primary leg reaches +1.5x ATR unrealized profit with trailing stop at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is authorized only after a minimum of +$10.00 unrealized profit is locked and moving averages align.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require 15-minute ATR expansion confirmation and minimum 10-pip buffer away from key psychological round numbers.",
-  "profit_harvest_threshold": "Lock 50% floating gains at +$5.00 and fully hand off exit management to SENTINEL_PEAK_HARVEST above +$15.00."
+  "new_mandatory_entry_filter": "No XAUUSD order execution is permitted without a minimum ATR(14) buffer of $1.50 spacing between entry price and the initial stop-loss to absorb microstructure wicks.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops once profit exceeds +$8.00 to ensure run targets scale toward the $15-$30+ asymmetry bracket."
 }
