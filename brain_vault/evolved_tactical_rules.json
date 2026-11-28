@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the primary order has achieved at least +$3.00 in floating profit and volatility contraction is confirmed.",
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10.00 in profit and structural market liquidity supports continuation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 1.5 ATR buffer for initial stop-loss placement on XAUUSD to prevent high-impact wick hunting.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks once profits exceed +$10.00 to ensure asymmetry targets of $15-$30+ are met."
+  "new_mandatory_entry_filter": "Zero executions allowed during micro-spread expansions or low-liquidity transition windows; require an institutional volume confirmation candle.",
+  "profit_harvest_threshold": "Aggressively trail stops once profit hits +$5.00 to lock in a floor, forcing winners to stretch toward the $15-$30+ asymmetry target."
 }
