@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T08:42:24.021893+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement was positioned directly within normal high-frequency microstructure noise, causing premature ejection before trend continuation.",
-        "risk_asymmetry_flaw": "Winning profits evaporated or were capped prematurely via rigid low-threshold take-profits, while losses were tightly clipped into micro-negatives.",
-        "market_regime_mismatch": "Entered during evening liquidity contraction where wider spreads and mean-reverting wicks easily clipped the $0.69 loss."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to losing positions; only pyramid into momentum when floating profit exceeds +$10.00.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require volatility-adjusted ATR breakout confirmation and zero high-impact macro news releases within a +/- 15-minute window.",
-        "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, allowing runners to stretch unhindered up to +$30.00."
-      },
-      "synthesis_directive": "Enforce wider structural stop-losses combined with aggressive trailing profit harvesting to strictly capture asymmetric $15-$30+ gains while capping max risk at $5."
-    },
-    {
       "evolution_timestamp": "2026-11-28T08:43:56.827259+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (12 cents from entry on ticket 1710671360, and a tight 12-pip stop on ticket 1712539926), causing premature truncation of trades before structural price expansion occurred.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop locking only after profit surpasses $12.00, allowing core runners to stretch unimpeded toward the $15-$30 bracket."
       },
       "synthesis_directive": "Enforce a strict minimum 5:1 reward-to-risk boundary by widening structural stop-losses outside micro-noise bands while prohibiting premature profit truncation on winning XAUUSD trajectories."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T10:11:47.869985+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 on ticket 1712539926 was too tight, resulting in a micro-whip chop out before directional continuation.",
+        "risk_asymmetry_flaw": "Floating profit evaporation observed in prior micro-scalps where trailing stops cut winners prematurely before reaching the $15-$30 asymmetric return target.",
+        "market_regime_mismatch": "Late-session XAUUSD liquidity thinning around 20:06 UTC triggered a localized volatility spike that swept tight structural stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit adding to positions unless the primary trade is in-the-money by at least $3.00 with stop-loss locked at breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Strict volatility-band exclusion during low-liquidity rollover windows and mandatory ATR-based buffer expansion for gold stop placements.",
+        "profit_harvest_threshold": "Aggressively secure partials at $10 and trail remaining volume dynamically to force run-ups toward the $15-$30 target band."
+      },
+      "synthesis_directive": "Expand structural stop-loss buffers beyond immediate micro-wicks on XAUUSD and enforce strict asymmetric profit harvesting for runs up to $30."
     }
   ]
 }
