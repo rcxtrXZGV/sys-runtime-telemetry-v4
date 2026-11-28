@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding positions until trade shows a minimum unhedged floating profit equal to 2x the average true range.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require liquidity sweep confirmation and micro-structure imbalance signature before order execution.",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvests dynamically once open profit crosses $15.00 to lock in asymmetric outcomes."
+  "pyramiding_rule": "Prohibit all secondary order additions until the primary position has traversed at least +$15.00 in unhedged profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require dynamic ATR buffer of at least 1.5x the 14-period noise band before placing stop-losses on XAUUSD.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$15.00 to ensure exits target the $15-$30+ asymmetry band."
 }
