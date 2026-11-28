@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the primary trade is in-the-money by at least $3.00 with stop-loss locked at breakeven.",
+  "pyramiding_rule": "Zero pyramiding into moves showing high-frequency reversal wicks; scale only on confirmed structural higher-low closes.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Strict volatility-band exclusion during low-liquidity rollover windows and mandatory ATR-based buffer expansion for gold stop placements.",
-  "profit_harvest_threshold": "Aggressively secure partials at $10 and trail remaining volume dynamically to force run-ups toward the $15-$30 target band."
+  "new_mandatory_entry_filter": "Require minimum 14-period ATR volatility cushion beyond the initial stop-loss to prevent noise-based wick invalidation.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit exceeds $4.00 to protect upside toward $15-$30+."
 }
