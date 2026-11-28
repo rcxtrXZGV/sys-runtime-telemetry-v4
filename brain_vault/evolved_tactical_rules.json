@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into tight consolidation ranges; only add on confirmed momentum expansion exceeding 1.5 ATR with minimum $4 floating cushion.",
+  "pyramiding_rule": "Zero pyramiding into moves exceeding 1.5 ATR without a confirmed structural liquidity shift.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR-based volatility buffer: Stop-losses must be placed at least 1.5 * ATR(14) away from entry to survive liquidity wicks.",
-  "profit_harvest_threshold": "Trail stops aggressively but do not take fixed micro-profits below $10 unless a confirmed divergence sentinel triggers."
+  "new_mandatory_entry_filter": "Mandatory order-flow imbalance confirmation combined with minimum 3-pip spread cushion below entry price before trigger execution.",
+  "profit_harvest_threshold": "Initiate dynamic trailing stop at +$3.00 profit to lock in green runs while scaling out towards the +$15.00-$30.00 target window."
 }
