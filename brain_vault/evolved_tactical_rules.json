@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into counter-trend impulses; only scale into positions when primary trend velocity exceeds 2 standard deviations with a minimum trailing gap of $2.00.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require Order Flow Imbalance > 65% and ATR(14) expansion confirmation prior to market execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop locking once floating profit surpasses $3.00 to guarantee a minimum $1.50 net gain, allowing runners to push toward $15.00-$30.00."
+  "pyramiding_rule": "Strict prohibition against scaling into positions within 1.5 ATR of a recognized liquidity wick or unmitigated institutional order block.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require confirmed volume-weighted spread expansion and 15M closing break past micro-range boundaries prior to order dispatch.",
+  "profit_harvest_threshold": "Initiate multi-stage trailing stops immediately upon crossing +$10 floating profit to enforce a strict $15-$30+ asymmetry target."
 }
