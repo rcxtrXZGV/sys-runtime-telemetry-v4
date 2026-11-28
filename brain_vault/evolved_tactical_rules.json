@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions until price has traversed a minimum of +$10.00 in unhedged floating profit.",
+  "pyramiding_rule": "Forbid position layering unless floating trade profit exceeds 1.5x ATR and original SL is locked in profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require ATR-based volatility buffer (at least 1.5x 14-period ATR) below local structural liquidity pools prior to order submission.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation as soon as floating profit hits +$15.00 to guarantee $4-$6 absolute floor while scaling toward +$30.00."
+  "new_mandatory_entry_filter": "Require minimum 15-minute ATR volatility filter and volume spike confirmation; auto-reject entries between 20:00-21:50 UTC.",
+  "profit_harvest_threshold": "Harvest 30% position at $5.00 float, auto-trail remaining volume with dynamic ATR sentinel to target $15.00-$30.00 scale-outs."
 }
