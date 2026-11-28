@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into micro-pullbacks; only scale into positions after a confirmed 15-minute structural breakout with positive drift.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer of at least 1.5x the 14-period average noise band before placing stop-loss limits.",
-  "profit_harvest_threshold": "Initiate partial profit harvesting and move stop to break-even once open profit crosses +$5.00, allowing runners to stretch to +$15.00-$30.00."
+  "pyramiding_rule": "Zero pyramiding into negative floating positions; only scale into positions showing a minimum +$2.00 unrealized profit cushion.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer on initial stop-loss placement, banning absolute micro-stops under $1.50 on XAUUSD to prevent noise-wick hunting.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$5.00 and trail remaining position dynamically via Sentinel Peak Harvest protocol to target +$15.00 to +$30.00."
 }

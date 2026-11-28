@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T12:34:24.869835+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Ticket 1712539926 on XAUUSD closed at -$0.69 due to a hyper-tight stop-loss of $0.12 price distance (sl 3654.00 entered at 3653.88), triggering premature stop-hunting noise extraction.",
-        "risk_asymmetry_flaw": "Stops placed within normal micro-volatility noise bands while profit targets lack proportional distance, capping upside runs compared to sudden structural pin-outs.",
-        "market_regime_mismatch": "Execution occurred during late-session liquidity thinning where micro-spread widening and standard noise wicks easily breach sub-$1.00 stop boundaries."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has locked in a trailing profit equal to 1.5x the initial risk envelope.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandate an ATR(14) buffer of at least $1.50 away from recent consolidation extremes to prevent micro-wick stop-outs.",
-        "profit_harvest_threshold": "Aggressively secure partials when profit reaches +$15.00 and trail remaining balance using a volatility-adjusted parabolic stop."
-      },
-      "synthesis_directive": "Widen initial stop-losses beyond immediate micro-noise wicks while aggressively scaling profit targets toward the $15-$30 asymmetric return threshold."
-    },
-    {
       "evolution_timestamp": "2026-11-28T12:35:56.575114+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned within normal market noise/micro-volatility bands, getting clipped by a 0.12 pips adverse excursion before price could move in the intended direction.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate partial profit harvesting and move stop to break-even once open profit crosses +$5.00, allowing runners to stretch to +$15.00-$30.00."
       },
       "synthesis_directive": "Widen initial structural stop-losses beyond standard noise bands using ATR volatility buffers while aggressively trailing winners to capture +$15 to +$30 targets."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T15:04:12.962331+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement was positioned too tight relative to micro-volatility noise, resulting in premature exit via ticket 1712539926 before the broader directional impulse could manifest.",
+        "risk_asymmetry_flaw": "Micro-stops of $0.69 are being clipped by high-frequency spread expansion and noise wicks while successful runners like SENTINEL_PEAK_HARVEST ($5.34) prove that allowing wider breathing room captures asymmetric upside.",
+        "market_regime_mismatch": "XAUUSD entered a liquidity vacuum zone during late US session closing hours, triggering a standard noise wick that breached the 12-cent stop structure."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero pyramiding into negative floating positions; only scale into positions showing a minimum +$2.00 unrealized profit cushion.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer on initial stop-loss placement, banning absolute micro-stops under $1.50 on XAUUSD to prevent noise-wick hunting.",
+        "profit_harvest_threshold": "Scale out 50% of volume at +$5.00 and trail remaining position dynamically via Sentinel Peak Harvest protocol to target +$15.00 to +$30.00."
+      },
+      "synthesis_directive": "Abolish micro-stops below $1.50 on XAUUSD to prevent noise-wick attrition and force adherence to wide asymmetric profit runs."
     }
   ]
 }
