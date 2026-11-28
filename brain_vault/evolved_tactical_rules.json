@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only pyramid into momentum when floating profit exceeds +$10.00.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volatility-adjusted ATR breakout confirmation and zero high-impact macro news releases within a +/- 15-minute window.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, allowing runners to stretch unhindered up to +$30.00."
+  "pyramiding_rule": "Strictly forbid adding to positions (no scaling into falling knives); scale-ins only authorized after the primary position is in +$10 profit and structural breakout confirmation occurs.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require minimum 14-period ATR volatility expansion and multi-timeframe order block alignment before order execution; block entries during sub-optimal session overlap chop.",
+  "profit_harvest_threshold": "Initiate trailing structural stops once floating profit hits $8.00, allowing runners to stretch cleanly toward the $15-$30 target band without premature clipping."
 }

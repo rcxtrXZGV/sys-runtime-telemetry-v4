@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T14:54:48.079565+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight structural stop-losses placed directly at round-number psychological resistance zones triggered rapid stop-hunting wicks, followed by high negative slippage on exit.",
-        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded optimal wins due to premature trailing stop triggers on winning positions combined with unhedged duplicate entries during volatile spikes.",
-        "market_regime_mismatch": "Entering XAUUSD during high-velocity momentum spikes without accounting for localized spread expansion and micro-volatility wicks."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Prohibit duplicate ticket entries within a 1.0-point price band; sequential scaling requires a verified 3.0 ATR price displacement in favor of the trade.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require order execution only when the 5-period Exponential Moving Average aligns with the micro-structural liquidity sweep and the current spread is below 0.35 points.",
-        "profit_harvest_threshold": "Initiate aggressive trailing harvest lock-ins immediately upon reaching +$4.00 floating profit to ensure net captures consistently clear the $15-$30 asymmetric return target."
-      },
-      "synthesis_directive": "Enforce strict spatial separation between concurrent orders, widen stop-losses past round-number liquidity pools, and lock in tactical profits at $4.00 minimums."
-    },
-    {
       "evolution_timestamp": "2026-11-27T15:00:00.000000+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Multiple concurrent scalps clustered around identical price levels (e.g., ticket 1707578236 and 1707578239), acting as unauthorized pyramiding into high-volatility reversal points, amplified by the SENTINEL_PEAK_HARVEST failing to capture floating momentum before trailing stops triggered at -$4.53.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, allowing runners to stretch unhindered up to +$30.00."
       },
       "synthesis_directive": "Enforce wider structural stop-losses combined with aggressive trailing profit harvesting to strictly capture asymmetric $15-$30+ gains while capping max risk at $5."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T08:43:56.827259+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (12 cents from entry on ticket 1710671360, and a tight 12-pip stop on ticket 1712539926), causing premature truncation of trades before structural price expansion occurred.",
+        "risk_asymmetry_flaw": "The average win size ($2.41) fell far short of the target $15-$30 asymmetric return profile, while wins were closed prematurely by tight manual/trailing stops instead of letting high-conviction moves run to the SENTINEL_PEAK_HARVEST threshold.",
+        "market_regime_mismatch": "XAUUSD entered high-frequency chop zones during off-peak session liquidity shifts, causing erratic wicks to trigger stop-losses before trend continuation materialized."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly forbid adding to positions (no scaling into falling knives); scale-ins only authorized after the primary position is in +$10 profit and structural breakout confirmation occurs.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require minimum 14-period ATR volatility expansion and multi-timeframe order block alignment before order execution; block entries during sub-optimal session overlap chop.",
+        "profit_harvest_threshold": "Initiate trailing structural stops once floating profit hits $8.00, allowing runners to stretch cleanly toward the $15-$30 target band without premature clipping."
+      },
+      "synthesis_directive": "Enforce a strict minimum structural distance for stop-losses to eliminate noise-sweeps while forcing profit runners to target $15-$30 asymmetry."
     }
   ]
 }
