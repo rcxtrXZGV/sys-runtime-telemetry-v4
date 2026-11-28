@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning positions when price crosses at least 1.5 ATR in favor and volatility contracts.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 1.0 ATR of recent high-impact wicks; require confirmed structural breakout before scaling volume.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmation via a multi-timeframe structural volume imbalance break before opening any position, avoiding raw tick-level counter-trend entries.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trailing the remainder with a volatility-adjusted ATR stop to capture asymmetric runs up to +$30.00."
+  "new_mandatory_entry_filter": "Enforce a minimum volatility-adjusted buffer of 1.5 ATR for initial stop-loss placement, banning sub-0.5 point micro-stops.",
+  "profit_harvest_threshold": "Trail stops aggressively via SENTINEL_PEAK_HARVEST once floating profit exceeds $5.00, letting runners expand to the $15-$30+ asymmetric tier."
 }
