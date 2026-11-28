@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade is in profit by at least 2.5x the initial risk unit.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond recent structural swing highs/lows for all initial stop-loss placements.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds $3.00 and execute full Sentinel Peak Harvest at $15.00-$30.00."
+  "pyramiding_rule": "Prohibit averaging down or scaling into trades experiencing adverse immediate tick motion; only pyramid into momentum when open positions achieve a minimum +$3.00 floating profit.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandate that the initial stop-loss distance for XAUUSD must never be set below $1.50 from the entry price to insulate against standard bid-ask spread and noise wicks.",
+  "profit_harvest_threshold": "Aggressively trail stops or trigger partial harvesting via SENTINEL_PEAK_HARVEST once unrealized gains surpass +$10.00 to prevent profit evaporation."
 }
