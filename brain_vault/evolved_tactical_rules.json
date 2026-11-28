@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into consolidating nodes; subsequent additions strictly prohibited until the primary position achieves at least +$10.00 floating profit.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR volatility expansion confirmation and zero-spread-wick validation prior to order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop-locks as soon as open trade profit crosses +$10.00 to force outcomes toward the $15-$30+ asymmetry target."
+  "pyramiding_rule": "No pyramiding into falling knives; only add to positions when existing trade is in +$3.00 profit and trailing stop locks break-even.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and zero high-impact news window overlap (plus/minus 15 minutes) before order authorization.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00, trail remainder aggressively to capture +$25.00+ terminal targets."
 }
