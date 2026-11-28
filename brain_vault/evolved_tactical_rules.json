@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit scaling into counter-trend retracements; only pyramid when existing position is at least +$5.00 in profit with stop-loss moved to break-even.",
+  "pyramiding_rule": "Strictly prohibit adding to positions until floating profit on the primary tranche exceeds +$10.00 and trailing stop locks in breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require an ATR-normalized breakout confirmation candle closing beyond the 20-period Donchian channel before authorizing market execution.",
-  "profit_harvest_threshold": "Initiate partial profit scaling at +$10.00 and lock remaining exposure to trail via a tight parabolic SAR until the +$25.00-$30.00 objective is reached."
+  "new_mandatory_entry_filter": "Require a minimum 3-point structural clearance and zero high-impact liquidity wicks on the 5-minute timeframe prior to execution.",
+  "profit_harvest_threshold": "Aggressively trigger partial scaling at +$15.00 and lock trailing stops to guarantee runners reach the $30.00 target."
 }
