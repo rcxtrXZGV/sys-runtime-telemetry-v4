@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into positions unless the initial trade has moved at least 1.5x the ATR in profit and trailing stop is locked at break-even.",
+  "pyramiding_rule": "Prohibit adding to positions unless unrealized profit on base tranche exceeds +$8.00 and volatility expansion confirms directional momentum.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and spread validation to ensure entry is outside immediate high-frequency stop-hunting bands.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail the remainder dynamically using parabolic SAR or 5-period EMA."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond recent swing extremes for stop-loss placement and a 5-tick momentum confirmation filter before execution.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trailing the remainder via parabolic SAR to capture extended $15-$30+ runs."
 }
