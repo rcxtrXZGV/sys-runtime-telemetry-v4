@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict freeze on position additions unless base order is floating at >= +2.0 ATR profit with stop-loss locked at Breakeven+1.",
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has locked in a trailing profit equal to 1x the average true range.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "XAUUSD orders require M5 ATR(14) > $1.80 and entry price distance >= $2.50 away from key session high/low boundaries.",
-  "profit_harvest_threshold": "Harvest 40% partial profit at +1.5R ($3.00+ profit per 0.01 lot) and trail remaining volume via 1.2x ATR dynamic trailing stop."
+  "new_mandatory_entry_filter": "Enforce a minimum 1.5 ATR buffer for initial stop-loss placement and verify zero high-impact liquidity wicks in the preceding 15-minute candle.",
+  "profit_harvest_threshold": "Aggressively trigger Sentinel Peak Harvest once open profit crosses +$15.00 to prevent evaporation of floating gains."
 }
