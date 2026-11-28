@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has secured at least +$3.00 in floating profit and volatility contraction is verified.",
+  "pyramiding_rule": "Strict prohibition on adding to positions unless floating profit exceeds 2.0x ATR and the stop-loss is locked at break-even plus commission.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require an ATR(14) volatility expansion multiplier > 1.2 and order-book imbalance confirmation before execution authorization.",
-  "profit_harvest_threshold": "Scale out 50% of position size upon hitting +$10.00 and trail remaining volume using a tight parabolic SAR until exhaustion."
+  "new_mandatory_entry_filter": "Require 15-minute ATR to sit above its 20-period median and real-time spread to be under 1.5 pips prior to order authorization.",
+  "profit_harvest_threshold": "Secure 50% position scale-out at +$5.00 float; trail remaining volume with dynamic Parabolic SAR (step 0.02, max 0.2)."
 }
