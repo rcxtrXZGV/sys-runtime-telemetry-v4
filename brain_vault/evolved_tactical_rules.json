@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down into falling knives; only scale into winning momentum when floating profit exceeds +$3.00.",
+  "pyramiding_rule": "Prohibit averaging down or scaling into losing positions; only permit pyramiding in the direction of confirmed momentum after the initial position has achieved +$10 in floating profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce a 3-tier volatility band filter and block entries within 5 minutes of high-impact news wicks.",
-  "profit_harvest_threshold": "Trigger aggressive trailing stops once open profit hits +$10.00 to capture $15-$30+ runs."
+  "new_mandatory_entry_filter": "Require order-flow imbalance confirmation and a minimum 3-pip clearance beyond local swing extremes before triggering XAUUSD entries.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trail remainder aggressively via structural ATR stops to capture the $15.00-$30.00 asymmetric objective."
 }
