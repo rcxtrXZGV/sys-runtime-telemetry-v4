@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial position has achieved a minimum floating profit of +$4.00, securing breakeven stops first.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 3-bar ATR expansion confirmation and an order-book imbalance filter before signal execution to prevent entry inside mean-reverting chop zones.",
-  "profit_harvest_threshold": "Trigger scale-out execution when floating profit hits +$15.00, letting the remaining tranche run to +$30.00 using a trailing parabolic SAR."
+  "pyramiding_rule": "Strict prohibition on adding to positions during retracements; scale-ins only permitted after a confirmed 2R structural expansion.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Mandatory ATR expansion multiplier > 1.5 and zero high-impact news flags within a 15-minute window prior to execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10, trail the remainder aggressively using 3-period EMA to capture extended $15-$30 runs."
 }
