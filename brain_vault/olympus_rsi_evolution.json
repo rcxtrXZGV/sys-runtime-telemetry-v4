@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T13:53:34.630150+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Execution of duplicate concurrent entries at 21:14:10 UTC combined with delayed SENTINEL_PEAK_HARVEST trailing exits that allowed floating gains to reverse into a -$4.53 draw.",
-        "risk_asymmetry_flaw": "Wins averaged $3.62 with a tiny gain of $0.49 offsetting momentum, while maximum loss reached -$4.53, destroying the required 1:3 asymmetric return structure.",
-        "market_regime_mismatch": "Operating during low-liquidity late US session (21:00-23:00 UTC) where spread widening and mean-reverting chop triggered tight stop-losses."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict anti-clustering protocol: enforce a minimum 300-second cooldown between orders and prohibit multi-position entries within the same M5 candle.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Block all new entry triggers between 21:00 and 23:00 UTC and require M5 ATR expansion > 1.2x prior to trade authorization.",
-        "profit_harvest_threshold": "Move SL to breakeven +$1.00 at +$4.00 profit; aggressively lock trailing peak harvest at 50% peak drawdown once profit exceeds +$8.00."
-      },
-      "synthesis_directive": "Eliminate multi-ticket order stacking, enforce hard temporal filters for low-liquidity hours, and guarantee minimum $5.00 risk ceiling per micro-lot."
-    },
-    {
       "evolution_timestamp": "2026-11-27T13:57:32.156080+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Tight structural stop-losses placed precisely at liquidity sweep zones on XAUUSD, coupled with multiple executions (tickets 1707578236 and 1707578239) triggering a pseudo-pyramiding trap into local volatility spikes.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trail stops or execute partial harvests when floating profits hit the +$10.00 to +$25.00 band to prevent evaporation."
       },
       "synthesis_directive": "Enforce a wider micro-volatility buffer on all XAUUSD stop-losses to eliminate noise-driven exits while keeping risk capped between $4 and $6."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T08:14:48.310338+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight during high-volatility microstructure noise on XAUUSD, triggering a premature shakeout before continuation.",
+        "risk_asymmetry_flaw": "Losses (-$0.69) incorrectly rivaled smaller winning trades (+-$0.49), violating the asymmetrical reward-to-risk ratio mandate of $15-$30+ wins versus $4-$6 max losses.",
+        "market_regime_mismatch": "Entered during evening liquidity contraction where micro-wicks hunting stops cleanly clipped the tight protective barrier."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions unless floating profit on the base tranche exceeds +$10.00 and price breaks structural liquidity thresholds.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond immediate local swing extremes to prevent tight-stop hunting by market makers.",
+        "profit_harvest_threshold": "Aggressively trail stops using SENTINEL_PEAK_HARVEST once floating profit reaches +$12.00 to lock in asymmetric gains."
+      },
+      "synthesis_directive": "Enforce wider structural stops with a hard maximum cap of $5.00 on XAUUSD while letting profitable runs expand unimpeded toward the $15-$30+ target zone."
     }
   ]
 }

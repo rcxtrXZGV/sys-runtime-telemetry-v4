@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning XAUUSD momentum nodes when unrealized profit exceeds +$3.00.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless floating profit on the base tranche exceeds +$10.00 and price breaks structural liquidity thresholds.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum ATR(14) buffer of at least $1.50 from the current market price before setting stop-losses to eliminate micro-wick hunts.",
-  "profit_harvest_threshold": "Aggressively trail stops or execute partial harvests when floating profits hit the +$10.00 to +$25.00 band to prevent evaporation."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer beyond immediate local swing extremes to prevent tight-stop hunting by market makers.",
+  "profit_harvest_threshold": "Aggressively trail stops using SENTINEL_PEAK_HARVEST once floating profit reaches +$12.00 to lock in asymmetric gains."
 }
