@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning positions when the primary order reaches +$5.00 floating profit.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 3-bar volatility expansion confirmation and zero high-impact spread anomalies before order placement.",
-  "profit_harvest_threshold": "Aggressively secure partial profits at +$10.00 and trail the remainder dynamically using ATR multiples to capture $15-$30+ runs."
+  "pyramiding_rule": "No pyramiding into counter-trend impulses; only scale into positions when primary trend velocity exceeds 2 standard deviations with a minimum trailing gap of $2.00.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require Order Flow Imbalance > 65% and ATR(14) expansion confirmation prior to market execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop locking once floating profit surpasses $3.00 to guarantee a minimum $1.50 net gain, allowing runners to push toward $15.00-$30.00."
 }
