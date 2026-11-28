@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until the primary position reaches a minimum +$10.00 floating profit threshold and volatility contraction is confirmed.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 30-pip buffer from institutional liquidity nodes prior to order submission.",
-  "profit_harvest_threshold": "Initiate aggressive trailing profit locking once gains exceed +$15.00, ensuring complete capture of structural breakouts up to +$30.00."
+  "pyramiding_rule": "Prohibit averaging or pyramiding into positions unless the initial trade is in-the-money by at least 1.5x the initial stop-loss distance.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require volume delta confirmation and a minimum 3-pip clearance beyond structural swing highs/lows before executing order entry.",
+  "profit_harvest_threshold": "Initiate dynamic partial profit harvesting at +$10.00 and trail remaining volume with a volatility-adjusted ATR stop to capture +$15.00 to +$30.00 runs."
 }
