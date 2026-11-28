@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has achieved a minimum of +$10.00 in floating profit and trailing stop is at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to positions inside high-frequency consolidation bands; pyramid only after a confirmed 15-minute structural breakout with expanding volume.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta expansion and structural break of the 15-minute high/low before order execution to avoid noise wicks.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining position run via ATR trailing stop until $15-$30 target is secured."
+  "new_mandatory_entry_filter": "Require order book imbalance > 65% and ATR(14) expansion above baseline prior to market execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10, trail remaining position with an adaptive volatility stop to capture +$15 to +$30 runs."
 }
