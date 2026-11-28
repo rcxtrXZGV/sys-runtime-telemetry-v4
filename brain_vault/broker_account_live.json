@@ -1,7 +1,7 @@
 {
   "balance": 60.41,
-  "equity": 60.39,
-  "free_margin": 59.21,
+  "equity": 60.46,
+  "free_margin": 59.28,
   "open_positions": [
     {
       "ticket": 2129606237,
@@ -9,7 +9,7 @@
       "volume": 0.01,
       "sl": 0.0,
       "tp": 0.0,
-      "profit": -0.02
+      "profit": 0.05
     }
   ]
 }

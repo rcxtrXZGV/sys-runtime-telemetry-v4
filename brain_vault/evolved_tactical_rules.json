@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into micro-pullbacks; add only on confirmed structural breakouts with volume expansion and an established trailing profit cushion.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR-based volatility buffer: Initial Stop-Loss must be placed at least 1.5x the 14-period ATR away from entry price to prevent structural noise termination.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10, trail remaining 50% with a dynamic parabolic SAR to capture asymmetric runs up to +$30."
+  "pyramiding_rule": "Zero pyramiding into retracements; only scale into positions when momentum confirms an existing breakout by at least 2 ATR.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require an order flow imbalance confirmation and 5-period EMA slope alignment prior to execution.",
+  "profit_harvest_threshold": "Trigger trailing Sentinel Peak Harvest strictly after a +$10 unrealized gain is secured to capture $15-$30 runs."
 }
