@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions inside high-frequency consolidation bands; pyramid only after a confirmed 15-minute structural breakout with expanding volume.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require order book imbalance > 65% and ATR(14) expansion above baseline prior to market execution.",
-  "profit_harvest_threshold": "Scale out 50% at +$10, trail remaining position with an adaptive volatility stop to capture +$15 to +$30 runs."
+  "pyramiding_rule": "Prohibit adding to positions until initial price action moves at least +$8.00 in favorable direction with decreasing volume divergence.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require minimum 3-ATR volatility expansion confirmation and zero spread spikes before order execution on XAUUSD.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, targeting a final exit window between +$20.00 and +$30.00."
 }
