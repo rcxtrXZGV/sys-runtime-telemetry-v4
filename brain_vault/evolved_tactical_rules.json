@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Never pyramid into falling knives; only scale into positions showing an established momentum slope greater than 3 ticks per second with zero negative tick feedback.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning trajectories after a minimum +$3.00 floating profit cushion is locked via trailing stops.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandatory ATR-based buffer zone of at least 1.5x the 5-period noise candle applied to all initial stop-losses to prevent micro-wick hunting.",
-  "profit_harvest_threshold": "Initiate aggressive trailing or partial harvest whenever unrealized profit crosses the +$12.00 threshold to protect against evaporation."
+  "new_mandatory_entry_filter": "Multi-timeframe liquidity sweep confirmation combined with zero high-impact macroeconomic news releases in a +/- 15 minute window.",
+  "profit_harvest_threshold": "Initiate dynamic trailing locks once profit reaches +$5.00 to prevent profit evaporation and drive returns toward the $15.00-$30.00 target window."
 }
