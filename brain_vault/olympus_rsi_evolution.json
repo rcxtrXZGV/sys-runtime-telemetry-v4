@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T08:25:29.162187+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement was positioned within standard structural noise at 3654.00, allowing minor market agitation to prematurely clip the position before the broader directional impulse could manifest.",
-        "risk_asymmetry_flaw": "Losses were cut at micro-levels (-$0.69) but the upside on comparable trades was truncated prematurely by fixed take-profits instead of letting asymmetric runners achieve the target $15-$30+ zone.",
-        "market_regime_mismatch": "The XAUUSD entry occurred during a high-frequency volatility expansion window where algorithmic sweep wicks hunted tight liquidity clusters."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition against adding to positions during active price retracements; pyramiding is limited to confirmed momentum expansions exceeding 2 standard deviations.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a localized order-block retest combined with an annualized volume delta spike before authorizing any new market entry.",
-        "profit_harvest_threshold": "Initiate trailing stops once unrealized profit hits +$5.00 to protect capital, while scaling out increments to allow the core to run toward the $15-$30 target."
-      },
-      "synthesis_directive": "Enforce structural stop-loss buffers outside immediate noise wicks and mandate dynamic trailing parameters to force winners into the $15-$30 asymmetry target."
-    },
-    {
       "evolution_timestamp": "2026-11-28T08:27:01.957288+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against local market noise on XAUUSD, resulting in a premature knockout before trend continuation.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Scale out 50% of volume upon reaching $7.50 profit, leaving the remainder on a dynamic trailing stop to capture extended $15-$30+ runs."
       },
       "synthesis_directive": "Enforce absolute structural distance floors on all initial stops to bypass micro-noise wicks, and let winning gold positions run unhindered toward the $15-$30 threshold via tiered partial harvesting."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:54:28.957192+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (12 cents from entry on XAUUSD), causing premature trapping by normal spread and tick oscillation.",
+        "risk_asymmetry_flaw": "Winning trades like ticket 1710777733 scaled successfully to +$5.34 using dynamic harvesting, whereas the loss (-$0.69) was truncated instantly before structural trend confirmation could validate the position.",
+        "market_regime_mismatch": "Entered XAUUSD at 3653.88 during high liquidity friction where micro-pullbacks tested tight structural stops before the primary directional expansion could manifest."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding volume to a position until the base trade achieves a minimum +$2.50 floating profit and structural trailing stop covers execution commission.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a minimum 30-second multi-orderbook imbalance confirmation and structural ATR buffer (> $0.75 away from current tick) before assigning stop-loss orders.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops or partial lock-ins as soon as profit crosses +$3.00 to guarantee asymmetric outcomes targeting $15-$30+ runners."
+      },
+      "synthesis_directive": "Enforce a strict minimum stop-loss distance of $0.75 on XAUUSD to eliminate noise-driven stop outs while rigidly adhering to the $4-$6 loss cap and $15-$30+ profit target asymmetry."
     }
   ]
 }
