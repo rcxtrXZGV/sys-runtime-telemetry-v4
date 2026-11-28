@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid adding to positions (no scaling into falling knives); scale-ins only authorized after the primary position is in +$10 profit and structural breakout confirmation occurs.",
+  "pyramiding_rule": "Strictly prohibit adding to losing micro-brackets; only scale into positions verified by volume-weighted momentum confirmation.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require minimum 14-period ATR volatility expansion and multi-timeframe order block alignment before order execution; block entries during sub-optimal session overlap chop.",
-  "profit_harvest_threshold": "Initiate trailing structural stops once floating profit hits $8.00, allowing runners to stretch cleanly toward the $15-$30 target band without premature clipping."
+  "new_mandatory_entry_filter": "Mandate a minimum ATR(14) volatility filter and order-flow imbalance confirmation prior to executing any XAUUSD order.",
+  "profit_harvest_threshold": "Secure partials automatically at +$10.00 and let runners target +$25.00 to +$30.00 asymmetric expansion."
 }
