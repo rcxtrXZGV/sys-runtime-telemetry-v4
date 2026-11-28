@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding only authorized when active trade unrealized profit exceeds +$5.00 with stop loss locked in profit.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when floating profit exceeds 1.5x current ATR.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Block all new entry signals between 19:30 UTC and 22:00 UTC; mandate 15m ATR > 2.5 and volume > 1.2x 20-period SMA prior to authorization.",
-  "profit_harvest_threshold": "Trigger partial harvest (50%) at +$5.00 floating gain, trail remaining 50% via Sentinel Peak Harvest targeting $15.00-$30.00 runs."
+  "new_mandatory_entry_filter": "Require multi-timeframe micro-structure confirmation and ATR-based volatility expansion checks prior to execution.",
+  "profit_harvest_threshold": "Secure 50% of position at +$10.00, trail remainder dynamically to capture $15-$30 asymmetric runs."
 }
