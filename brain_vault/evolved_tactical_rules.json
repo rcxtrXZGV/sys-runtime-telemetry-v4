@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until existing trades show a minimum unrealized profit of +$10.00 and price breaks structural volatility bands.",
+  "pyramiding_rule": "No pyramiding into unconfirmed breakouts; scale-ins strictly prohibited unless existing position has locked in at least +$3.00 trailing profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 15-minute ATR breakout confirmation filter and zero high-impact liquidity sweeps in the immediate 3 candles prior to execution.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining half run via trailing sentinel stop to achieve $15-$30+ asymmetry."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer for initial stop-loss placement on XAUUSD to prevent noise wicks from prematurely closing trades.",
+  "profit_harvest_threshold": "Aggressively trail stop-loss to breakeven once floating profit hits +$2.50, and execute partial harvest scaling at +$15.00 while letting the remainder run to +$30.00."
 }
