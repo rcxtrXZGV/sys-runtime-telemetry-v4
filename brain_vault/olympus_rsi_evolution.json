@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T16:58:21.427838+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight structural stop-losses placed immediately around psychological round numbers (e.g., 3550.00) combined with split-ticket duplicate executions during high-frequency volatility wicks.",
-        "risk_asymmetry_flaw": "Simultaneous multiple entries (tickets 1707578236 and 1707578239) effectively doubled risk exposure on a single directional breakdown, causing cumulative loss (-$5.82 combined) to exceed standard single-win distributions.",
-        "market_regime_mismatch": "Entering short-term mean-reversion trades during strong momentum expansion phases in XAUUSD, resulting in premature stop-outs followed by uncaptured continuation moves."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strictly prohibit simultaneous duplicate order entry within 60 seconds; secondary scaling into an active position is only authorized after a minimum +$4.00 unrealized profit cushion and a confirmed structural higher-low/lower-high.",
-        "reversal_sentinel_sensitivity": "AGGRESSIVE",
-        "new_mandatory_entry_filter": "Mandate a multi-timeframe ATR volatility filter and order-flow imbalance check; block execution if spread exceeds 0.35 and enforce a mandatory 5-pip buffer away from exact integer psychological handle levels for stop placement.",
-        "profit_harvest_threshold": "Aggressively trigger trailing sentinel harvests once floating profit crosses +$5.00 to prevent erosion back to breakeven or minor loss."
-      },
-      "synthesis_directive": "Enforce strict single-ticket execution limits per directional bias and eliminate stop placements directly on round-number psychological handles to completely eradicate clustered stop-run losses."
-    },
-    {
       "evolution_timestamp": "2026-11-27T17:06:29.654607+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Tight structural stop-losses placed immediately around micro-pivot wicks during high-frequency XAUUSD liquidity sweeps, compounded by premature manual intervention.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Secure 50% of the position at $15 profit and trail the remainder dynamically to target $30+."
       },
       "synthesis_directive": "Widen micro-stops on XAUUSD beyond immediate liquidity wicks while strictly enforcing asymmetric profit capture targeting $15-$30+."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:05:51.359541+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, causing premature truncation of a valid structural setup before the intended expansion.",
+        "risk_asymmetry_flaw": "Risk-to-reward parameters on early trades suffered from micro-stop hunting where random volatility sweeps triggered stops before momentum could materialize.",
+        "market_regime_mismatch": "High-frequency mean-reversion noise in XAUUSD during late-session hours pierced tight mechanical stops despite correct directional thesis."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit adding to positions until price has traversed a minimum of +$10.00 in unhedged floating profit.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require ATR-based volatility buffer (at least 1.5x 14-period ATR) below local structural liquidity pools prior to order submission.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stop activation as soon as floating profit hits +$15.00 to guarantee $4-$6 absolute floor while scaling toward +$30.00."
+      },
+      "synthesis_directive": "Enforce wider structural stop-losses combined with aggressive volatility buffer filters to eliminate micro-stop hunting and force winning trades to scale up to the $15-$30 target bracket."
     }
   ]
 }
