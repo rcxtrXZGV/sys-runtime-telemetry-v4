@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions inside high-frequency chop zones; pyramid only after a confirmed 100% ATR breakout validation.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding only authorized when active trade unrealized profit exceeds +$5.00 with stop loss locked in profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-tick volatility expansion buffer beyond the immediate swing high/low before executing XAUUSD orders.",
-  "profit_harvest_threshold": "Trail stops aggressively once profit exceeds +$5.00, unlocking the runner to scale toward the +$15.00 to +$30.00 asymmetric payout window."
+  "new_mandatory_entry_filter": "Block all new entry signals between 19:30 UTC and 22:00 UTC; mandate 15m ATR > 2.5 and volume > 1.2x 20-period SMA prior to authorization.",
+  "profit_harvest_threshold": "Trigger partial harvest (50%) at +$5.00 floating gain, trail remaining 50% via Sentinel Peak Harvest targeting $15.00-$30.00 runs."
 }
