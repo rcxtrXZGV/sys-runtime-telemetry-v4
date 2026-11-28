@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions unless existing trades are running in a minimum +$5.00 profit with break-even stop locked.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a volatility expansion filter (ATR breakout confirmation) prior to order execution to avoid tight-range noise whipsaws.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position with a dynamic ATR step-stop to capture +$15 to +$30 runs."
+  "pyramiding_rule": "Zero pyramiding into impulsive counter-trend moves; only scale into positions when momentum matches the 4-hour structural vector.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require an ATR-based buffer of at least $1.50 away from immediate structural liquidity pools before order submission.",
+  "profit_harvest_threshold": "Initiate trailing profit locks only after floating profit exceeds $10.00 to ensure wins run toward the $15-$30 objective."
 }
