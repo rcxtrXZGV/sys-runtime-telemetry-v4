@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No scaling into positions unless the initial entry has traveled at least +$10.00 in profit and stop-loss is locked at breakeven plus commission.",
+  "pyramiding_rule": "Strict prohibition on adding to positions unless the initial trade achieves +$10 in floating profit and confirms institutional volume expansion.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce a minimum 25-pip initial stop distance on XAUUSD combined with an ATR volatility filter to prevent micro-noise stop hunts.",
-  "profit_harvest_threshold": "Aggressively trigger trailing stops or scale-outs once floating profit crosses +$15.00 to prevent evaporation down to sub-dollar outcomes."
+  "new_mandatory_entry_filter": "Require minimum 15-tick order-flow imbalance confirmation and zero high-impact macro news prints within a +/- 15-minute window.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops once position reaches +$15.00 to force execution toward the $30 target window."
 }
