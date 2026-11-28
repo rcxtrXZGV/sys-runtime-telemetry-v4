@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10.00 in profit and structural market liquidity supports continuation.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero executions allowed during micro-spread expansions or low-liquidity transition windows; require an institutional volume confirmation candle.",
-  "profit_harvest_threshold": "Aggressively trail stops once profit hits +$5.00 to lock in a floor, forcing winners to stretch toward the $15-$30+ asymmetry target."
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning positions when the primary order reaches +$5.00 floating profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require a minimum 3-bar volatility expansion confirmation and zero high-impact spread anomalies before order placement.",
+  "profit_harvest_threshold": "Aggressively secure partial profits at +$10.00 and trail the remainder dynamically using ATR multiples to capture $15-$30+ runs."
 }
