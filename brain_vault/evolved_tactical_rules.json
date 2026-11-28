@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit scale-in additions unless the primary position has traversed at least +$10.00 in unrealized floating profit.",
+  "pyramiding_rule": "Prohibit all secondary entries unless the primary position has traversed at least +$10 in open profit and trailing stop is at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero-entry authorization during sub-minute volatility spikes; require a confirmed 5-period ATR expansion and volume confirmation.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$15.00 to guarantee asymmetric $15-$30+ distribution."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation on the 5-minute timeframe with volume expansion before order execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10, trail remaining position with an aggressive parabolic SAR until $15-$30+ targets are achieved."
 }
