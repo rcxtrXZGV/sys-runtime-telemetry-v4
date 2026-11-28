@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T08:08:20.515620+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement was too tight relative to micro-volatility noise, resulting in immediate premature triggering on normal liquidity sweeps.",
-        "risk_asymmetry_flaw": "Initial position sizing and stop distance permitted minor noise to clip capital before asymmetric upside targets ($15-$30+) could be reached.",
-        "market_regime_mismatch": "Entry executed during a high-frequency volatility expansion node without sufficient buffer for local order book friction."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly prohibit adding positions until trade shows a minimum unhedged floating profit equal to 2x the average true range.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require liquidity sweep confirmation and micro-structure imbalance signature before order execution.",
-        "profit_harvest_threshold": "Trigger trailing sentinel harvests dynamically once open profit crosses $15.00 to lock in asymmetric outcomes."
-      },
-      "synthesis_directive": "Enforce wider structural stop buffers combined with aggressive multi-tier profit harvesting to keep losses bounded under $5 while letting winners run past $15."
-    },
-    {
       "evolution_timestamp": "2026-11-28T08:09:57.792209+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned too tight right inside natural market micro-noise, causing premature triggering by 0.12 points.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, targeting a final exit window between +$20.00 and +$30.00."
       },
       "synthesis_directive": "Widen structural stop-losses beyond the immediate noise threshold to prevent micro-hunting while strictly enforcing the $15-$30+ profit asymmetry rule."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:34:21.637885+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, triggering an immediate shakeout before the directional move could materialize.",
+        "risk_asymmetry_flaw": "Loss magnitude relative to standard wins was well controlled, but premature stop-outs clipped potential upside runs.",
+        "market_regime_mismatch": "Entered during low-liquidity institutional transition hours where wide spreads and high-frequency algorithmic wicks hunt tight structural stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to losing positions; allow scaling into winners only after a verified 1R structural break-even shift.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Zero order placement within 15 minutes of high-impact macro data windows; require ATR-based volatility buffer exceeding 1.5x current spread.",
+        "profit_harvest_threshold": "Trigger trailing sentinel harvest on any position exceeding +$10.00 floating profit to lock in asymmetry."
+      },
+      "synthesis_directive": "Enforce wider structural stops combined with dynamic volatility filters to prevent micro-noise shakeouts while strictly capping max loss exposure at $5.00."
     }
   ]
 }

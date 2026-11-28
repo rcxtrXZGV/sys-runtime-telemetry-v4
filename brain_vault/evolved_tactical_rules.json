@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions until initial price action moves at least +$8.00 in favorable direction with decreasing volume divergence.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; allow scaling into winners only after a verified 1R structural break-even shift.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require minimum 3-ATR volatility expansion confirmation and zero spread spikes before order execution on XAUUSD.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit reaches +$15.00, targeting a final exit window between +$20.00 and +$30.00."
+  "new_mandatory_entry_filter": "Zero order placement within 15 minutes of high-impact macro data windows; require ATR-based volatility buffer exceeding 1.5x current spread.",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvest on any position exceeding +$10.00 floating profit to lock in asymmetry."
 }
