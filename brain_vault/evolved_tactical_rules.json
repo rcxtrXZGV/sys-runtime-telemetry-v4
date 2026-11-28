@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down into falling knives; only scale into positions when open trade is in +$3.00 profit and volatility expansion is confirmed.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 3-tick structural momentum confirmation and zero high-impact news spikes within a +/- 15 minute window prior to execution.",
-  "profit_harvest_threshold": "Trigger trailing stop activation immediately at +$5.00 profit, forcing partial exits and letting runners target the $15-$30+ asymmetry band."
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the initial trade has moved at least +$10.00 in profit and breakeven stop is locked.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "No XAUUSD order execution without a minimum ATR-based volatility buffer of $2.00 to prevent micro-stop hunting.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop protocol once profit crosses +$15.00 to capture targets up to +$30.00."
 }
