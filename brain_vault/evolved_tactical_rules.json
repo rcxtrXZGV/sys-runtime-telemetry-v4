@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down into failing positions; strictly permit adding to winners only after a verified 1R structural extension with trailing stops locked at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions when floating profit exceeds +$8.00 and momentum confirms continuation.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require multi-timeframe ATR volatility expansion validation and zero high-impact liquidity sweeps within a 5-minute window prior to execution.",
-  "profit_harvest_threshold": "Scale out partials at +$10 while trailing the remaining position dynamically via parabolic SAR or 3-period EMA to capture full $15-$30+ asymmetry."
+  "new_mandatory_entry_filter": "Require a minimum 3.5x 14-period ATR breakout confirmation and zero high-impact liquidity sweeps within the immediate 5-minute candle history before execution.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position tightly to capture extended +$15.00 to +$30.00 macro impulses."
 }
