@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-28T12:24:53.665957+00:00",
-  "verdict": "BUY",
+  "timestamp": "2026-11-28T12:26:31.517894+00:00",
+  "verdict": "WAIT",
   "symbol": "XAUUSD",
-  "confidence_score": 88,
+  "confidence_score": 55,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
-  "sl_price": 3662.0,
-  "tp_price": 3698.0,
+  "sl_price": 3660.0,
+  "tp_price": 3700.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions currently active. Zero risk of drawdown; clean slate for deployment.",
-  "trade_thesis": "Gold (XAUUSD) has shown powerful bullish expansion off the intraday low of 3601.39, establishing a strong upward trajectory breaking past 3674. The latest 15m candles display aggressive impulse buying with a test of 3682.3 high, followed by a minor consolidation flag forming a high-asymmetric momentum continuation setup. Buying pressure remains dominant with volume expansion on green candles."
+  "reversal_sentinel_assessment": "No open positions active. Zero exposure currently.",
+  "trade_thesis": "Gold (XAUUSD) has pushed up aggressively into the 3674-3682 range with a recent high volume spike on the 15-minute candle matrix, but current price action shows consolidation right near the highs (3674.2). Given recent volatility resulting in minor stop-outs and the lack of a clean pullback or liquidity sweep entry, the desks advise maintaining discipline and waiting for a clearer continuation or reversal confirmation before deploying capital."
 }

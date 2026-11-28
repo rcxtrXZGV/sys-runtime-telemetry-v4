@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions unless the initial entry is in profit by at least 3x the ATR with a locked breakeven stop.",
+  "pyramiding_rule": "Strict prohibition against adding to positions unless the initial trade has moved at least 2.5x ATR in profit and trailing stop is locked at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 15-second volume delta confirmation and order-book imbalance threshold before executing any breakout entry on XAUUSD.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance aggressively to capture up to +$30.00."
+  "new_mandatory_entry_filter": "Require a multi-timeframe liquidity sweep confirmation and an explicit 14-period ATR volatility expansion filter before order transmission.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and let the remaining runner target $25.00+ using an aggressive parabolic SAR trail."
 }
