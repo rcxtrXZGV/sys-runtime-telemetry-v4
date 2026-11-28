@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into moves showing decelerating volume; only scale into positions when momentum z-score exceeds 2.0.",
+  "pyramiding_rule": "Prohibit adding to positions unless existing floating profit exceeds 2.5x the current ATR risk parameter.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate an Average True Range (ATR) expansion filter and spread-check barrier before executing order placement to bypass low-liquidity noise wicks.",
-  "profit_harvest_threshold": "Trigger trailing stops aggressively once floating profit crosses +mathrm{$3.00} to lock in asymmetric payouts up to +mathrm{$30.00}."
+  "new_mandatory_entry_filter": "Mandate a minimum 15-pip buffer beyond key structural liquidity pools and zero high-impact news windows within 15 minutes of execution.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00 and trail the remainder with a dynamic volatility band to capture the $15.00-$30.00 asymmetry target."
 }
