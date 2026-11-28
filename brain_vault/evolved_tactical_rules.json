@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into trades until price moves at least $10.00 in favor of the primary position with confirmed volume expansion.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into profitable tranches when price moves +$3 in favor of the primary direction.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-bar volatility contraction pattern followed by an impulse breakout confirmation before order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits $15.00 to capture runs up to $30.00+"
+  "new_mandatory_entry_filter": "Zero order execution within 15 minutes before and after high-impact liquidity windows, utilizing an ATR-based volatility buffer for stop distances.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops only after floating profit exceeds $10, letting runners expand to the $15-$30 bracket."
 }
