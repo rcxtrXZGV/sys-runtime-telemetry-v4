@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into profitable tranches when price moves +$3 in favor of the primary direction.",
+  "pyramiding_rule": "No pyramiding into micro-pullbacks; add only on confirmed structural breakouts with volume expansion and an established trailing profit cushion.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution within 15 minutes before and after high-impact liquidity windows, utilizing an ATR-based volatility buffer for stop distances.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops only after floating profit exceeds $10, letting runners expand to the $15-$30 bracket."
+  "new_mandatory_entry_filter": "Mandatory ATR-based volatility buffer: Initial Stop-Loss must be placed at least 1.5x the 14-period ATR away from entry price to prevent structural noise termination.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10, trail remaining 50% with a dynamic parabolic SAR to capture asymmetric runs up to +$30."
 }
