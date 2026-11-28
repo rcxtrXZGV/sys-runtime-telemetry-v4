@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into moves showing high-frequency reversal wicks; scale only on confirmed structural higher-low closes.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require minimum 14-period ATR volatility cushion beyond the initial stop-loss to prevent noise-based wick invalidation.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit exceeds $4.00 to protect upside toward $15-$30+."
+  "pyramiding_rule": "Strict prohibition of averaging down or tight re-entry clustering; only pyramid on verified momentum continuation after a minimum $10 excursion.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "ATR-based volatility buffer: mandatory minimum stop-loss distance of 1.5x current 14-period ATR on XAUUSD to prevent noise wicks from tripping orders.",
+  "profit_harvest_threshold": "Scale out 50% at +$10, trail remaining position aggressively using parabolic SAR until $15-$30 target is reached."
 }
