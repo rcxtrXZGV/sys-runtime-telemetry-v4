@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 4.5,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade is in-the-money by at least 2.5x the initial risk threshold and volatility confirms a directional breakout.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-candle momentum confirmation and volume delta spike before authorizing execution, filtering out low-liquidity micro-wicks.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00, trail remaining position with an aggressive volatility envelope to capture extended runs to +$25.00+."
+  "gold_max_allowed_sl_dollars": 5.0,
+  "pyramiding_rule": "Strict prohibition of averaging down; pyramiding authorized only on confirmed localized momentum breakouts with a minimum 2.0 ATR trailing buffer.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation before order execution on XAUUSD.",
+  "profit_harvest_threshold": "Initiate scaling out and trailing activation only after unrealized profit crosses $15.00 to capture $15-$30+ asymmetric runs."
 }
