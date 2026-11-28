@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T10:07:09.191508+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement at 3654.00 on XAUUSD was too tight relative to local micro-volatility, causing premature triggering by a standard liquidity sweep wick before continuation.",
-        "risk_asymmetry_flaw": "Risk-to-reward ratio degraded on micro-scalps where trailing or fixed stops terminated trades before asymmetric $15-$30 targets could be realized.",
-        "market_regime_mismatch": "Entry occurred during high localized order book friction without sufficient volatility expansion confirmation, leading to immediate noise truncation."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Prohibit scaling into counter-trend retracements; only pyramid when existing position is at least +$5.00 in profit with stop-loss moved to break-even.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require an ATR-normalized breakout confirmation candle closing beyond the 20-period Donchian channel before authorizing market execution.",
-        "profit_harvest_threshold": "Initiate partial profit scaling at +$10.00 and lock remaining exposure to trail via a tight parabolic SAR until the +$25.00-$30.00 objective is reached."
-      },
-      "synthesis_directive": "Enforce wider structural stops combined with rigorous ATR volatility filters to eliminate noise-induced stop-outs and allow winning XAUUSD positions to expand to target."
-    },
-    {
       "evolution_timestamp": "2026-11-28T10:08:42.871558+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned within standard structural micro-noise (0.12 pts away on XAUUSD), triggering a premature shakeout before the macro continuation.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Trail stops aggressively using ATR multiples only after achieving a minimum +$15.00 floating gain to force asymmetric outcomes."
       },
       "synthesis_directive": "Enforce a absolute minimum profit target threshold of $15.00 on winning trades while expanding XAUUSD micro-stops to survive localized noise wicks."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T11:26:11.255100+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement was positioned directly within tight local noise bands, causing premature triggering on a minor 12-cent adverse price fluctuation.",
+        "risk_asymmetry_flaw": "Risk-to-reward ratio compressed due to overly tight micro-stops while holding winning trades sub-optimally relative to the $15-$30+ asymmetry target.",
+        "market_regime_mismatch": "Executed during a low-volatility liquidity vacuum where standard mean-reversion noise triggered algorithmic protective stops."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has achieved a minimum +$8.00 floating profit and structural continuation is confirmed by order flow delta.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require an ATR-adjusted buffer (minimum 1.5x 1-minute ATR) away from immediate liquidity pools before confirming entry.",
+        "profit_harvest_threshold": "Initiate trailing profit locks at +$10.00 and execute full Sentinel Peak Harvest when momentum oscillators diverge at key structural resistance."
+      },
+      "synthesis_directive": "Widen micro-stops beyond immediate liquidity noise bands while strictly enforcing asymmetrical profit runs of $15 to $30+."
     }
   ]
 }

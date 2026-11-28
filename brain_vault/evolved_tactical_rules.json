@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions until price moves at least +$10.00 in favor of the primary trend, using trailing structural lows only.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has achieved a minimum +$8.00 floating profit and structural continuation is confirmed by order flow delta.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Multi-timeframe ATR volatility expansion check combined with order-book imbalance confirmation prior to breakout execution.",
-  "profit_harvest_threshold": "Trail stops aggressively using ATR multiples only after achieving a minimum +$15.00 floating gain to force asymmetric outcomes."
+  "new_mandatory_entry_filter": "Require an ATR-adjusted buffer (minimum 1.5x 1-minute ATR) away from immediate liquidity pools before confirming entry.",
+  "profit_harvest_threshold": "Initiate trailing profit locks at +$10.00 and execute full Sentinel Peak Harvest when momentum oscillators diverge at key structural resistance."
 }
