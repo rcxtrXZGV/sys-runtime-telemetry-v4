@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has locked in a trailing profit equal to 1.5x the initial risk envelope.",
+  "pyramiding_rule": "Prohibit adding to positions unless existing trade has locked in at least +$5.00 profit via trailing stop.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate an ATR(14) buffer of at least $1.50 away from recent consolidation extremes to prevent micro-wick stop-outs.",
-  "profit_harvest_threshold": "Aggressively secure partials when profit reaches +$15.00 and trail remaining balance using a volatility-adjusted parabolic stop."
+  "new_mandatory_entry_filter": "Enforce a mandatory ATR-based buffer zone of at least $1.50 away from recent swing highs/lows for initial stop placement to prevent noise hunting.",
+  "profit_harvest_threshold": "Aggressively scale out or lock trailing stops when floating profit crosses +$10.00 to ensure asymmetry hits the $15-$30+ target."
 }
