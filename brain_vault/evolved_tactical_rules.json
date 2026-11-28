@@ -1,7 +1,7 @@
 {
-  "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions during high-velocity momentum wicks; only pyramid upon structural higher-low retests with a minimum 1.5 ATR trailing distance.",
+  "gold_max_allowed_sl_dollars": 4.5,
+  "pyramiding_rule": "Strict prohibition on adding to positions unless the primary trade has achieved a minimum floating profit equal to 1.5x the initial risk threshold.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require institutional volume-delta confirmation and a 14-period ATR volatility buffer before allowing any order authorization on XAUUSD.",
-  "profit_harvest_threshold": "Initiate dynamic partial profit harvesting only after reaching a minimum threshold of $15.00, allowing the remaining runner to target up to $30.00."
+  "new_mandatory_entry_filter": "Enforce a minimum ATR buffer of $0.80 away from high-density liquidity nodes before order routing to prevent micro-wick stop-hunts.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation or partial harvest once floating profits hit +$15.00, targeting a final runner exit up to +$30.00."
 }
