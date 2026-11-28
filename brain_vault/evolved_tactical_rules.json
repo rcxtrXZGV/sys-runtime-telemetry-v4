@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has locked in a minimum of 1R trailing profit.",
+  "pyramiding_rule": "Strict prohibition against adding to losing or flat positions; scale-ins only permitted after an existing position has cleared +$8.00 in floating profit and confirmed via momentum divergence.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a 15-period ATR buffer before placing structural stops on XAUUSD.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profits exceed $15.00 to guarantee asymmetrical outcomes ($15-$30+)."
+  "new_mandatory_entry_filter": "Zero order execution allowed within 15 minutes of high-impact tier-1 news events; mandatory ATR-based volatility expansion confirmation on the 5-minute timeframe.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$10.00, targeting asymmetric runs to +$25.00+."
 }
