@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is authorized only after the primary trade achieves +$3.00 unrealized profit and volatility contraction is confirmed.",
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10 in open profit and volatility contraction is confirmed.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR buffer from local high-frequency micro-pivots before deploying stops to prevent noise-hunting wicks.",
-  "profit_harvest_threshold": "Initiate aggressive trailing harvest when floating profit crosses +$15.00, securing minimum $10.00 floor while leaving a runner for the $30.00 target."
+  "new_mandatory_entry_filter": "Mandate an ATR-based buffer for initial stop-loss placement to prevent wick hunting while keeping risk strictly capped between $4 and $6.",
+  "profit_harvest_threshold": "Aggressively trail stops once profit hits +$15 and scale out partially before reaching +$30."
 }
