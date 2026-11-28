@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit scale-ins during compressed consolidation ranges; only pyramid upon validated structural breakouts with a minimum 2R cushion on the initial tranche.",
+  "pyramiding_rule": "Strictly prohibit adding to positions until existing trades show a minimum unrealized profit of +$10.00 and price breaks structural volatility bands.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation before order execution to avoid high-impact noise wicks.",
-  "profit_harvest_threshold": "Initiate trailing stop protection immediately upon reaching +$3.00, securing asymmetric expansion toward the $15.00-$30.00 target window."
+  "new_mandatory_entry_filter": "Require a 15-minute ATR breakout confirmation filter and zero high-impact liquidity sweeps in the immediate 3 candles prior to execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining half run via trailing sentinel stop to achieve $15-$30+ asymmetry."
 }
