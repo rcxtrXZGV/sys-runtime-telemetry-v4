@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to floating losses; pyramid only when primary position exceeds +1.5R with stop-loss moved to breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade has achieved a minimum of +$10.00 in floating profit and trailing stop is at breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require 15-minute ATR > $2.50 and price confirmation aligned with H1 EMA20 slope before authorizing any XAUUSD order.",
-  "profit_harvest_threshold": "Lock trailing stop at +1.0R upon reaching +2.0R floating gain; allow 70% of position to run toward target $15-$30 reward window."
+  "new_mandatory_entry_filter": "Require volumetric delta expansion and structural break of the 15-minute high/low before order execution to avoid noise wicks.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining position run via ATR trailing stop until $15-$30 target is secured."
 }
