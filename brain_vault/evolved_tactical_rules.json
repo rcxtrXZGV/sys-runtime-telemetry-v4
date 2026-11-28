@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to floating negative positions; only pyramid into momentum nodes when current open trade is at +$3.00 unrealized profit.",
+  "pyramiding_rule": "Zero pyramiding into unconfirmed breakouts; scale-ins only permitted after a verified 1R structural continuation and trailing stop lock-in.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-tick volume imbalance confirmation and zero-spread divergence before order placement on XAUUSD.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits +$15.00, targeting a final exit window between $15.00 and $30.00."
+  "new_mandatory_entry_filter": "Require volumetric order-flow imbalance confirmation and a minimum 3-pip buffer beyond local liquidity pools before execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 and let the remaining runner target asymmetric +$25.00+ expansion zones."
 }
