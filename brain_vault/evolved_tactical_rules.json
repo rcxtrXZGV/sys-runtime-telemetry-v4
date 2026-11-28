@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down; only pyramid in the direction of the macro trend when open position is at least +$8 in profit and volatility bands expand.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a 15-minute ATR breakout confirmation and zero high-impact Tier-1 news releases within a +/- 30-minute window before order execution.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10, trail remaining position with an institutional ATR multiplier to force runs to target $15-$30+."
+  "pyramiding_rule": "Prohibit adding to positions until the primary trade achieves a minimum +$8.00 floating profit cushion and breaks structural pivot.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Enforce an ATR(14) multiplier filter of 1.5x on XAUUSD to prevent entries during micro-consolidation wicks and ensure directional momentum.",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvest at +$10.00 profit to lock in asymmetric gains while scaling remaining runners to $25.00+ targets."
 }
