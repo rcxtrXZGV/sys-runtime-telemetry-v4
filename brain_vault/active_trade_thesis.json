@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-28T09:44:56.498522+00:00",
+  "timestamp": "2026-11-28T09:46:39.006057+00:00",
   "verdict": "BUY",
   "symbol": "XAUUSD",
-  "confidence_score": 92,
+  "confidence_score": 88,
   "trade_style": "INTRADAY",
   "lot_size": 0.01,
   "sl_price": 3662.0,
   "tp_price": 3710.0,
   "trailing_activation_profit": 5.0,
-  "reversal_sentinel_assessment": "No open positions active. Zero portfolio drag. Sovereign posture clear for aggressive compound scaling.",
-  "trade_thesis": "Gold (XAUUSD) has formed a robust expansion sweep above $3674, printing strong momentum candles with volume absorption at the lows of $3655. The pullback was aggressively bought up, and price is pressing near the intraday high of $3682. Asymmetric upside targets $3,710 with tight risk control below the local breakout shelf."
+  "reversal_sentinel_assessment": "No open positions on broker. Reversal sentinel stands ready to protect future capital upon active trade deployment.",
+  "trade_thesis": "Gold (XAUUSD) has printed a strong bullish impulse sweep from the 3655 low up toward the 3682 intraday high, demonstrating robust buying volume on the 15m timeframe matrix (3489 and 1817 volume nodes). Price is consolidating right near highs, setting up for a high-asymmetric momentum breakout toward compounding targets."
 }
