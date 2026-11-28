@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down or scaling into a position unless the initial trade demonstrates a minimum of +$3.00 floating profit.",
+  "pyramiding_rule": "Strictly prohibit adding to positions until the primary trade achieves a minimum unhedged floating profit of +$6.00 and stop-loss is moved to breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 3-tick volatility buffer beyond the current micro-support/resistance band before market execution to bypass spread/noise triggers.",
-  "profit_harvest_threshold": "Initiate trailing structural stops once floating profit crosses +$5.00 to guarantee asymmetric $15-$30+ upside capture."
+  "new_mandatory_entry_filter": "Require confirmation of liquidity sweep and volume delta divergence on the 1-minute chart prior to order execution.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position with an aggressive parabolic stop-loss to capture +$25.00+ runs."
 }
