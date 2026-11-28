@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid adding to positions during low-volume consolidation wicks; pyramid only after a confirmed 100% ATR breakout candle closure.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR impulse distance from key liquidity nodes before committing volume, rejecting any setup with a stop-loss distance under $1.50.",
-  "profit_harvest_threshold": "Disable micro-trailing stops under $5.00; allow positions to develop unhindered toward the $15.00-$30.00 asymmetric target zone."
+  "pyramiding_rule": "Zero pyramiding into micro-pullbacks; subsequent entries only authorized upon a confirmed 15-minute structural break with zero overlap of prior swing highs/lows.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Strict ATR expansion filter and order-book imbalance confirmation required prior to order dispatch.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00, trailing the remainder via dynamic ATR multipliers to capture extended asymmetric runs up to +$30.00."
 }
