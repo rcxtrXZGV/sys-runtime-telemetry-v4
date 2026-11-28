@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on averaging down or pyramiding into falling knives; incremental scaling is authorized only after the initial position reaches +$10.00 floating profit.",
+  "pyramiding_rule": "Strictly forbid adding positions within 0.5 ATR of previous structural wicks to prevent falling knife over-leverage.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory volume profile and ATR confirmation check to bypass low-liquidity noise wicks and ensure entry candles exhibit directional momentum exceeding 1.5x ATR.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00, trailing the remaining position dynamically via Sentinel Peak Harvest rules to capture the +$15.00 to +$30.00 asymmetry target."
+  "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation past the local liquidity pool before executing order entry.",
+  "profit_harvest_threshold": "Initiate trailing stop protection once floating profit crosses +$5.00, targeting asymmetric expansion to +$15.00-$30.00."
 }
