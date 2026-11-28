@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions until the primary trade achieves a minimum +$8.00 floating profit cushion and breaks structural pivot.",
+  "pyramiding_rule": "Zero pyramiding into consolidating nodes; subsequent additions strictly prohibited until the primary position achieves at least +$10.00 floating profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce an ATR(14) multiplier filter of 1.5x on XAUUSD to prevent entries during micro-consolidation wicks and ensure directional momentum.",
-  "profit_harvest_threshold": "Trigger trailing sentinel harvest at +$10.00 profit to lock in asymmetric gains while scaling remaining runners to $25.00+ targets."
+  "new_mandatory_entry_filter": "Mandatory ATR volatility expansion confirmation and zero-spread-wick validation prior to order execution.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop-locks as soon as open trade profit crosses +$10.00 to force outcomes toward the $15-$30+ asymmetry target."
 }
