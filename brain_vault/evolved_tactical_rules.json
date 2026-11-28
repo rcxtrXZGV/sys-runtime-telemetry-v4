@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has secured at least +$3.00 in floating profit and local volatility compresses.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning XAUUSD positions after a confirmed 10-pip structural break.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 15-minute ATR envelope confirmation and zero high-impact liquidity sweeps detected in the prior 2 candles before execution.",
-  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remainder via Sentinel Peak Harvest protocol to target +$20.00 to +$30.00."
+  "new_mandatory_entry_filter": "Mandate 14-period ATR volatility normalization before order placement to avoid entry inside low-liquidity whipsaw zones.",
+  "profit_harvest_threshold": "Aggressively trigger trailing stop activation once floating profit hits $15.00 to protect gains from evaporating."
 }
