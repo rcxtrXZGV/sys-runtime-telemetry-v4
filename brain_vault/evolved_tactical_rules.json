@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into unconfirmed breakouts; scale-ins are strictly forbidden until price clears the 15-minute structural liquidity band with expanding volume.",
+  "pyramiding_rule": "Strictly prohibit adding to positions unless the primary trade is in profit by at least 2.5x the initial risk threshold.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 1.5x ATR buffer from known structural liquidity nodes and mandatory zero-spread confirmation on XAUUSD before execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit reaches $15.00 to force execution into the $15-$30+ asymmetry tier."
+  "new_mandatory_entry_filter": "Mandate a multi-timeframe ATR-based noise filter and volume confirmation before order submission to avoid wick traps.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stops only after hitting $15.00 unrealized profit to allow full expansion to the $30.00 target."
 }
