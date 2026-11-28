@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-27T16:27:43.746406+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Tight structural stop-losses placed directly on round-number psychological thresholds (e.g., 3550.00, 3552.00) resulting in immediate liquidity sweeps and premature exit before directional continuation.",
-        "risk_asymmetry_flaw": "Losses (-$4.53, -$3.96) exceeded average wins due to holding losing positions into volatility spikes while cutting winning run potentials early.",
-        "market_regime_mismatch": "Executing micro-scalps into high-frequency liquidity voids around high-impact news wicks without incorporating an ATR-based buffer filter."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 4.5,
-        "pyramiding_rule": "Strict prohibition of multiple entries within the same 5-minute interval; exactly one position per structural node until profit crosses +$5.00 and trailing stop is activated.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require minimum 14-period ATR expansion confirmation and zero proximity to round psychological handles (+/- 1.50 buffer) before order execution.",
-        "profit_harvest_threshold": "Initiate aggressive trailing or partial harvest at +$5.00 to guarantee risk-free asymmetric skew targeting +$15.00 to +$30.00."
-      },
-      "synthesis_directive": "Enforce mandatory ATR buffer zones away from round psychological handles and cap all initial Gold stop-losses strictly under $4.50 to guarantee true positive risk asymmetry."
-    },
-    {
       "evolution_timestamp": "2026-11-27T16:49:44.089518+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Multiple micro-lot executions during high-frequency volatility spikes resulted in clustered stop-loss hits and premature evaporation of unrealized gains.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Initiate aggressive trailing stop activation at +$5.00 profit to lock in asymmetric payouts targeting +$15.00 to +$30.00."
       },
       "synthesis_directive": "Enforce strict volatility-adjusted stop buffers and dynamic trailing triggers to prevent premature clipping while locking asymmetric alpha."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:01:16.066741+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against market micro-noise, resulting in a premature trigger of -$0.69 before structural continuation.",
+        "risk_asymmetry_flaw": "Current win-to-loss asymmetry is skewed by premature manual or trailing micro-stops that cut winners too early (e.g., +$0.49) while suffering from friction-heavy stop-outs.",
+        "market_regime_mismatch": "Entry on XAUUSD at 3653.88 occurred during localized high-volatility liquidity sweeps without adequate structural buffer zones."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Prohibit averaging down or pyramiding into high-volatility wicks; only scale in upon verified structural breakout confirmation.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Enforce ATR-based dynamic buffer zones of at least 1.5x 14-period ATR away from localized liquidity nodes before committing volume.",
+        "profit_harvest_threshold": "Aggressively lock in scaling partials when floating profit crosses +$5.00 to prevent erosion into breakeven or loss."
+      },
+      "synthesis_directive": "Expand stop-loss buffers beyond micro-noise thresholds and strictly enforce asymmetric profit harvesting for all XAUUSD trades."
     }
   ]
 }
