@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; secondary position scaling authorized only after primary trade reaches +1.5x ATR profit and SL is moved to Breakeven.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require 15-minute ATR volatility expansion filter and candle close confirmation beyond key session highs/lows prior to order execution.",
-  "profit_harvest_threshold": "Initiate dynamic sentinel trailing harvest at +$3.00 unrealized gain, securing at least 60% of peak float."
+  "pyramiding_rule": "No pyramiding into retracements; only scale-in on confirmed momentum continuation past structural nodes.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a 15-second volume delta confirmation exceeding 2.5x the rolling average prior to order execution.",
+  "profit_harvest_threshold": "Aggressively trigger trailing locks once floating profit hits +$10.00 to guarantee asymmetric wins."
 }
