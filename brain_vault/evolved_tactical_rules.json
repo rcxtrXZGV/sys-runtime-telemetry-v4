@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding volume to a position until the base trade achieves a minimum +$2.50 floating profit and structural trailing stop covers execution commission.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is only authorized after existing position achieves a minimum +$5.00 unrealized profit and trailing stop hits breakeven.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a minimum 30-second multi-orderbook imbalance confirmation and structural ATR buffer (> $0.75 away from current tick) before assigning stop-loss orders.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops or partial lock-ins as soon as profit crosses +$3.00 to guarantee asymmetric outcomes targeting $15-$30+ runners."
+  "new_mandatory_entry_filter": "Require a minimum 3-candle ATR confirmation and zero high-impact liquidity sweeps within the immediate 5-minute window before order placement.",
+  "profit_harvest_threshold": "Trigger aggressive partial profit-taking at +$15.00 and lock remaining runner stops to ensure absolute $15-$30+ asymmetry."
 }
