@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No pyramiding into retracements; only scale-in on confirmed momentum continuation past structural nodes.",
+  "pyramiding_rule": "Strictly prohibit adding positions unless floating profit exceeds +1.5x ATR and stop-loss is locked at break-even or better.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 15-second volume delta confirmation exceeding 2.5x the rolling average prior to order execution.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks once floating profit hits +$10.00 to guarantee asymmetric wins."
+  "new_mandatory_entry_filter": "Block all entries between 19:30 UTC and 22:00 UTC; require minimum 5-minute Volatility Ratio > 1.2 prior to execution.",
+  "profit_harvest_threshold": "Activate trailing Sentinel harvest once unrealized gains cross +$3.50 per 0.01 lot."
 }
