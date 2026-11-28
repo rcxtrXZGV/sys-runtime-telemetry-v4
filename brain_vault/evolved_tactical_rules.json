@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing micro-brackets; only scale into positions verified by volume-weighted momentum confirmation.",
+  "pyramiding_rule": "Prohibit averaging down into falling knives; only pyramid on confirmed momentum breakouts with a minimum +$5.00 unrealized cushion on the parent position.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Mandate a minimum ATR(14) volatility filter and order-flow imbalance confirmation prior to executing any XAUUSD order.",
-  "profit_harvest_threshold": "Secure partials automatically at +$10.00 and let runners target +$25.00 to +$30.00 asymmetric expansion."
+  "new_mandatory_entry_filter": "Require a multi-timeframe ATR-normalized volatility expansion confirmation and zero high-impact liquidity sweeps within a 15-minute window prior to execution.",
+  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds +$5.00 and execute aggressive partial harvests at +$15.00 to ensure runners target the $30+ asymmetric cap."
 }
