@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T10:53:34.029403+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placed too tight at 3654.00 on XAUUSD, getting easily clipped by minor high-frequency market noise and wick volatility.",
-        "risk_asymmetry_flaw": "Losses were cut at -$0.69 while wins like ticket 1710777733 ran up to +$5.34, though overall reward-to-risk needs stretching further toward the $15-$30 target band.",
-        "market_regime_mismatch": "Entered during a consolidation micro-volatility expansion where tight stops act as immediate liquidity magnets."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strictly forbid adding positions within 0.5 ATR of previous structural wicks to prevent falling knife over-leverage.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Require a minimum 1.5 ATR breakout confirmation past the local liquidity pool before executing order entry.",
-        "profit_harvest_threshold": "Initiate trailing stop protection once floating profit crosses +$5.00, targeting asymmetric expansion to +$15.00-$30.00."
-      },
-      "synthesis_directive": "Widen stop-losses beyond immediate noise wicks and strictly enforce trailing harvest rules to drive winning trades into the $15-$30 reward bracket."
-    },
-    {
       "evolution_timestamp": "2026-11-28T10:55:09.872007+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned within immediate market noise (0.12 points delta on XAUUSD), causing premature triggering on standard micro-volatility before directional expansion.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trigger trailing stop activation once floating profit hits $15.00 to protect gains from evaporating."
       },
       "synthesis_directive": "Enforce a strict minimum stop-loss distance of $4.00 on XAUUSD to eliminate noise wicks and mandate trailing harvest triggers for wins exceeding $15.00."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T12:12:33.154256+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was too tight relative to XAUUSD micro-volatility, causing a premature shakeout before directional continuation.",
+        "risk_asymmetry_flaw": "Losses relative to wins showed a tight stop prematurely clipping trades, whereas winners like ticket 1710777733 scaled successfully to +$5.34 under wider structural room.",
+        "market_regime_mismatch": "Entered during localized noise without confirming structural order-flow exhaustion, resulting in the stop-loss wick absorbing the adverse tick."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Strictly prohibit adding to losing micro-brackets; only scale into positions showing an immediate +$1.50 unrealized delta with a confirmed trailing stop.",
+        "reversal_sentinel_sensitivity": "AGGRESSIVE",
+        "new_mandatory_entry_filter": "Require a dual-timeframe liquidity sweep confirmation before any XAUUSD order execution to filter out high-impact noise wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing or partial scaling when floating profits reach the +$3.00 to +$5.00 bracket to safeguard against evaporation."
+      },
+      "synthesis_directive": "Enforce strict structural distance on XAUUSD stop-losses to eliminate micro-wicks while scaling winning asymmetric runs toward the +$15-$30 target envelope."
     }
   ]
 }
