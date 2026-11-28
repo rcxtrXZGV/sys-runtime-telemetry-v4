@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit all averaging down or pyramiding into negative floating positions; only scale into winning trajectories exceeding +$2.50.",
+  "pyramiding_rule": "Zero pyramiding into falling knives; incremental volume additions are strictly prohibited until initial position achieves +$10.00 floating profit.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require confirmation via multi-timeframe order book imbalance and minimum ATR spread buffer before committing 0.01 volume on XAUUSD.",
-  "profit_harvest_threshold": "Aggressively trigger Sentinel Peak Harvest protocols once floating profit crosses +$15.00 to prevent evaporation."
+  "new_mandatory_entry_filter": "ATR-based volatility expansion filter requiring breakout candles to exceed the 20-period average true range by at least 1.5x before execution.",
+  "profit_harvest_threshold": "Implement trailing step-locks; once floating profit hits +$5.00, hard stop locks in at breakeven +$1.00, allowing asymmetry to scale toward +$15.00 to +$30.00 targets."
 }
