@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition on adding to positions unless floating profit exceeds 2.5x current risk ATR.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require micro-structural liquidity sweep confirmation via order book imbalance prior to fill authorization.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once open profit crosses +$4.00 to force runners to the $15-$30+ zone."
+  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10 in profit and volatility compression confirms a continuation breakout.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require a 3-standard-deviation volume spike combined with an order-book imbalance confirmation before executing entry on XAUUSD.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$15, trail remaining with a wide ATR-based stop to capture multi-dollar macro runs up to $30+."
 }
