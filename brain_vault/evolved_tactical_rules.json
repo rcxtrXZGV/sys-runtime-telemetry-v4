@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into winning positions when the primary trade exhibits a minimum unrealized profit of +$10.00.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require a 3-bar volatility expansion confirmation and zero high-impact liquidity sweeps within a 5-minute window prior to order placement.",
-  "profit_harvest_threshold": "Initiate trailing stops once profit exceeds +$10.00 and execute full harvest dynamically upon hitting the $15-$30 target band."
+  "pyramiding_rule": "Strictly forbid adding to positions inside local consolidation wicks; pyramid only after a confirmed 15-pip structural breakout with trailing activation.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require volumetric delta confirmation and a minimum 1.5 ATR buffer beyond local liquidity pools before order submission.",
+  "profit_harvest_threshold": "Scale out 50% at $5.00 profit, trailing the remaining position dynamically to capture $15.00 to $30.00+ expansion."
 }
