@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 1.0 ATR of recent high-impact wicks; require confirmed structural breakout before scaling volume.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce a minimum volatility-adjusted buffer of 1.5 ATR for initial stop-loss placement, banning sub-0.5 point micro-stops.",
-  "profit_harvest_threshold": "Trail stops aggressively via SENTINEL_PEAK_HARVEST once floating profit exceeds $5.00, letting runners expand to the $15-$30+ asymmetric tier."
+  "pyramiding_rule": "Strictly prohibit adding to positions until floating profit on the primary tranche exceeds +$8.00 with verified momentum continuation.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require institutional volume delta confirmation and 5-minute ATR expansion before firing any breakout order.",
+  "profit_harvest_threshold": "Initiate aggressive trailing harvest only after reaching +$15.00, allowing runners to push toward +$30.00."
 }
