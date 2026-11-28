@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 30 minutes of prior stop hunts; require ATR expansion before scaling.",
+  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a previous stop-out to prevent falling-knife aggregation.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate a minimum buffer of 1.5x average 1-minute ATR for initial stop-loss placement on XAUUSD to prevent noise-based shakeouts.",
-  "profit_harvest_threshold": "Aggressively trigger trailing locks as soon as floating profit exceeds $15.00 to guarantee asymmetric outcomes."
+  "new_mandatory_entry_filter": "Require ATR(14) multiplier confirmation and a zero-cross on momentum oscillators before opening orders to filter out low-conviction noise wicks.",
+  "profit_harvest_threshold": "Initiate trailing profit locks dynamically once unrealized gains exceed $10.00 to guarantee a minimum $15-$30 target profile."
 }
