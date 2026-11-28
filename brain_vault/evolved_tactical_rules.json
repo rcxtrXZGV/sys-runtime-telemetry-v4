@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Never add to positions within 1.5 ATR of a recent liquidity sweep; only pyramid after confirmation of structural breakout with trailing stops.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandate volume-weighted impulse validation and ATR-based volatility expansion checks before executing any XAUUSD order.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit reaches +$4.00 to lock in asymmetric gains targeting +$15.00 to +$30.00+."
+  "pyramiding_rule": "Prohibit scale-ins during high-velocity local exhaustion wicks; require at least 2 consecutive confirming closes on the 5-minute timeframe.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Enforce ATR-based volatility buffer (minimum 1.2x 14-period ATR) before order commitment to bypass sub-dollar liquidity hunts.",
+  "profit_harvest_threshold": "Initiate trailing stop protection immediately when floating profit reaches $3.00, targeting asymmetrical runway toward $15.00-$30.00."
 }
