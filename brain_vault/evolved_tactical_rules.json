@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of a previous stop-out to prevent falling-knife aggregation.",
+  "pyramiding_rule": "Strict prohibition against adding to positions unless the initial entry is in profit by at least 3x the ATR with a locked breakeven stop.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require ATR(14) multiplier confirmation and a zero-cross on momentum oscillators before opening orders to filter out low-conviction noise wicks.",
-  "profit_harvest_threshold": "Initiate trailing profit locks dynamically once unrealized gains exceed $10.00 to guarantee a minimum $15-$30 target profile."
+  "new_mandatory_entry_filter": "Require a 15-second volume delta confirmation and order-book imbalance threshold before executing any breakout entry on XAUUSD.",
+  "profit_harvest_threshold": "Scale out 50% of position at +$10.00, trailing the remaining balance aggressively to capture up to +$30.00."
 }
