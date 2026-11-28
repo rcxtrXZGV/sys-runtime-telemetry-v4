@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down into falling knives; only pyramid on confirmed momentum continuation breakouts exceeding 1.5 ATR with volume expansion.",
-  "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Block all entries during low-liquidity session rollovers (20:00-22:00 UTC) and require 3-tier volatility confirmation via Bollinger Band width and order book imbalance.",
-  "profit_harvest_threshold": "Scale out 50% at +$10.00, trail remaining position with an aggressive dynamic ATR stop to force runners toward the $15-$30+ target zone."
+  "pyramiding_rule": "Prohibit scaling into counter-trend retracements; only pyramid when existing position is at least +$5.00 in profit with stop-loss moved to break-even.",
+  "reversal_sentinel_sensitivity": "HIGH",
+  "new_mandatory_entry_filter": "Require an ATR-normalized breakout confirmation candle closing beyond the 20-period Donchian channel before authorizing market execution.",
+  "profit_harvest_threshold": "Initiate partial profit scaling at +$10.00 and lock remaining exposure to trail via a tight parabolic SAR until the +$25.00-$30.00 objective is reached."
 }
