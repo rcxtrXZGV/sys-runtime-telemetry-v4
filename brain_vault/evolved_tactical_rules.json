@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit adding to positions unless the initial trade has moved at least +$10 in profit and trailing stop is locked at breakeven.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; pyramiding is only authorized after initial position achieves +$10 in floating profit with a trailing breakeven stop.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require dynamic ATR buffer of at least 1.5x on initial stop-loss placement to prevent premature micro-wick termination.",
-  "profit_harvest_threshold": "Scale out 50% at +$15.00, trail remainder dynamically to capture structural runs up to +$30.00."
+  "new_mandatory_entry_filter": "Mandate an ATR-based minimum stop-loss distance of at least $1.50 on XAUUSD to prevent normal market noise from triggering premature stop-outs.",
+  "profit_harvest_threshold": "Aggressively scale out or trail stops dynamically once floating profit reaches +$15.00 to capture extended runs up to +$30.00."
 }
