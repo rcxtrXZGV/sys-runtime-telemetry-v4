@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "No scaling into positions unless the initial trade demonstrates a minimum of +$3.00 floating profit and structural break of the prior candle high.",
+  "pyramiding_rule": "Prohibit scale-in additions unless the primary position has traversed at least +$10.00 in unrealized floating profit.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmation via volume delta expansion and 3-period ATR volatility band rejection prior to market order execution.",
-  "profit_harvest_threshold": "Initiate aggressive trailing stops once profit exceeds +$10.00 to capture tail runs up to +$30.00."
+  "new_mandatory_entry_filter": "Zero-entry authorization during sub-minute volatility spikes; require a confirmed 5-period ATR expansion and volume confirmation.",
+  "profit_harvest_threshold": "Initiate aggressive trailing stop activation once profit crosses +$15.00 to guarantee asymmetric $15-$30+ distribution."
 }
