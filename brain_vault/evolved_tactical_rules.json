@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Zero pyramiding into retracements; only scale into positions when momentum confirms an existing breakout by at least 2 ATR.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; only scale into positions showing an immediate unrealized profit delta of at least +$1.50.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Require an order flow imbalance confirmation and 5-period EMA slope alignment prior to execution.",
-  "profit_harvest_threshold": "Trigger trailing Sentinel Peak Harvest strictly after a +$10 unrealized gain is secured to capture $15-$30 runs."
+  "new_mandatory_entry_filter": "Require volumetric delta confirmation and structural liquidity sweep validation before order placement on XAUUSD.",
+  "profit_harvest_threshold": "Trigger aggressive trailing profit lock at +$10.00 to ensure asymmetry hits the +$15.00 to +$30.00 target window."
 }
