@@ -2,22 +2,6 @@
   "total_cycles": 50,
   "cycles": [
     {
-      "evolution_timestamp": "2026-11-28T00:12:52.736271+00:00",
-      "agent_1_forensic_audit": {
-        "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (ticket 1712539926 at 3654.00), resulting in premature truncation of a valid structural entry due to an overly tight threshold.",
-        "risk_asymmetry_flaw": "Risk-to-reward ratio degraded on marginal scalping exits (ticket 1710671360 for +$0.49) where execution drifted too close to break-even before structural expansion materialized.",
-        "market_regime_mismatch": "Late-session XAUUSD liquidity thinning caused erratic spread widening, sweeping tightly bound trailing stops right before directional expansion occurred."
-      },
-      "agent_2_evolved_tactical_rules": {
-        "gold_max_allowed_sl_dollars": 5.0,
-        "pyramiding_rule": "Strict prohibition of averaging down into declining momentum; additive execution only permitted after a verified 1R structural continuation with trailing lock-step activation.",
-        "reversal_sentinel_sensitivity": "HIGH",
-        "new_mandatory_entry_filter": "Mandatory ATR volatility band filter ensuring initial stop-loss is placed outside the 14-period 1-minute high-low wick range to eliminate noise-driven stop hunts.",
-        "profit_harvest_threshold": "Aggressive scaling trigger activated upon reaching +$15.00 unrealized, securing 50% position size and trailing the remainder to a guaranteed +$5.00 floor."
-      },
-      "synthesis_directive": "Enforce wider micro-volatility buffers on initial stop-loss placements to eliminate noise-based stop-outs while strictly preserving the asymmetric profit horizon."
-    },
-    {
       "evolution_timestamp": "2026-11-28T02:24:02.563497+00:00",
       "agent_1_forensic_audit": {
         "primary_failure_mechanism": "Stop-loss placement was positioned within immediate micro-volatility noise (ticket 1712539926 at price 3654.00), resulting in premature stop-hunting activation before directional momentum could materialize.",
@@ -800,6 +784,22 @@
         "profit_harvest_threshold": "Aggressively trail stops once profit hits +$5.00 and scale out 50% at +$15.00, letting the remainder run to +$30.00."
       },
       "synthesis_directive": "Enforce a strict minimum stop-loss distance of $4.00 and require explicit volatility expansion filters to prevent micro-noise stop hunts on XAUUSD."
+    },
+    {
+      "evolution_timestamp": "2026-11-28T09:17:27.420207+00:00",
+      "agent_1_forensic_audit": {
+        "primary_failure_mechanism": "Stop-loss placement at 3654.00 was excessively tight against local market noise on XAUUSD, resulting in a premature knockout by a micro-wick before the primary trend continuation.",
+        "risk_asymmetry_flaw": "Win-to-loss distribution shows instances of clipping winners too early (+0.49) while letting stop-outs trigger at arbitrary technical boundaries rather than true structural invalidation levels.",
+        "market_regime_mismatch": "High-frequency volatility spikes during late-session hours caused micro-retracements that breached ultra-tight stops placed within 12 pips of the entry price."
+      },
+      "agent_2_evolved_tactical_rules": {
+        "gold_max_allowed_sl_dollars": 5.0,
+        "pyramiding_rule": "Zero averaging down; only add to winning positions when price crosses a 1.5 ATR threshold in favor with trailing stops locked to breakeven.",
+        "reversal_sentinel_sensitivity": "HIGH",
+        "new_mandatory_entry_filter": "Require a volume delta confirmation and a 5-period EMA slope alignment before executing any market order to filter out false breakout wicks.",
+        "profit_harvest_threshold": "Initiate aggressive trailing stops once floating profit hits $8.00 to force capture toward the $15-$30 asymmetric target band."
+      },
+      "synthesis_directive": "Enforce structural stop-losses wider than local noise thresholds and mandate multi-tier profit harvesting to capture asymmetric $15-$30 runs."
     }
   ]
 }
