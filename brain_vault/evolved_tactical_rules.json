@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until initial order hits +$10.00 floating profit and structure confirms break-and-retest.",
+  "pyramiding_rule": "Strictly prohibit adding positions until trade shows a minimum unhedged floating profit equal to 2x the average true range.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Mandatory ATR volatility band buffer: stop-losses must be set at least 1.5x ATR away from local liquidity pools to avoid noise wicks.",
-  "profit_harvest_threshold": "Trigger aggressive trailing stops once profit crosses +$15.00 to force capture toward the $30.00 target window."
+  "new_mandatory_entry_filter": "Require liquidity sweep confirmation and micro-structure imbalance signature before order execution.",
+  "profit_harvest_threshold": "Trigger trailing sentinel harvests dynamically once open profit crosses $15.00 to lock in asymmetric outcomes."
 }
