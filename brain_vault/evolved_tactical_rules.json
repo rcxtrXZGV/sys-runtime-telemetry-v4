@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly forbid adding volume to open positions unless initial deal float is >= 2.0x ATR in profit with SL trailing at break-even.",
+  "pyramiding_rule": "Strictly prohibit adding to losing positions; secondary position scaling authorized only after primary trade reaches +1.5x ATR profit and SL is moved to Breakeven.",
   "reversal_sentinel_sensitivity": "AGGRESSIVE",
-  "new_mandatory_entry_filter": "Block all new entry triggers on XAUUSD between 19:30 UTC and 22:00 UTC unless 14-period ATR expands by >40% above session mean.",
-  "profit_harvest_threshold": "Activate aggressive dynamic profit trailing once floating gain reaches +$3.00, securing minimum +$1.50 lock."
+  "new_mandatory_entry_filter": "Require 15-minute ATR volatility expansion filter and candle close confirmation beyond key session highs/lows prior to order execution.",
+  "profit_harvest_threshold": "Initiate dynamic sentinel trailing harvest at +$3.00 unrealized gain, securing at least 60% of peak float."
 }
