@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strictly prohibit adding to positions until the primary trade achieves a minimum unhedged floating profit of +$6.00 and stop-loss is moved to breakeven.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Require confirmation of liquidity sweep and volume delta divergence on the 1-minute chart prior to order execution.",
-  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remaining position with an aggressive parabolic stop-loss to capture +$25.00+ runs."
+  "pyramiding_rule": "Zero pyramiding into retracements; only scale into positions when momentum velocity exceeds 2 standard deviations and existing inventory is trailing-stopped in profit.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Enforce a 15-second volatility buffer and require order flow imbalance to exceed +65% in the direction of the trade before execution.",
+  "profit_harvest_threshold": "Scale out 50% at +$10.00 profit, lock breakeven + commission, and let the remaining half run freely toward the $25-$30 asymmetric target."
 }
