@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Strict prohibition against adding to positions within 30 minutes of a stopped-out wick; pyramiding is exclusively unlocked after a confirmed 1x Average True Range expansion in the direction of the trade.",
+  "pyramiding_rule": "Strict prohibition of adding to positions unless floating profit on the base tranche exceeds +$10.00 and trailing stop locks break-even.",
   "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Zero order execution unless the real-time volatility-adjusted ATR buffer exceeds the broker spread plus noise threshold by at least 300 percent.",
-  "profit_harvest_threshold": "Disable micro-trailing stops below $5.00 profit; let positions run unrestricted via SENTINEL_PEAK_HARVEST until asymmetric milestones between $15.00 and $30.00 are systematically unlocked."
+  "new_mandatory_entry_filter": "Require minimum 3-ATR volatility expansion and order book imbalance confirmation prior to order execution to avoid wicks.",
+  "profit_harvest_threshold": "Aggressively trail stops once profit hits +$5.00 and scale out 50% at +$15.00, letting the remainder run to +$30.00."
 }
