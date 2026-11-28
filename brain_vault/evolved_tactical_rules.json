@@ -1,7 +1,7 @@
 {
   "gold_max_allowed_sl_dollars": 5.0,
-  "pyramiding_rule": "Prohibit averaging down or pyramiding into high-volatility wicks; only scale in upon verified structural breakout confirmation.",
-  "reversal_sentinel_sensitivity": "HIGH",
-  "new_mandatory_entry_filter": "Enforce ATR-based dynamic buffer zones of at least 1.5x 14-period ATR away from localized liquidity nodes before committing volume.",
-  "profit_harvest_threshold": "Aggressively lock in scaling partials when floating profit crosses +$5.00 to prevent erosion into breakeven or loss."
+  "pyramiding_rule": "Strictly prohibit adding to positions within 15 minutes of an expanded volatility wick or breakout failure.",
+  "reversal_sentinel_sensitivity": "AGGRESSIVE",
+  "new_mandatory_entry_filter": "Require institutional volume-weighted delta confirmation and a minimum 3.0 ATR buffer for initial physical stop-loss placement.",
+  "profit_harvest_threshold": "Scale out 50% of volume at +$10.00 and trail the remainder dynamically using parabolic SAR to capture $15-$30+ runs."
 }
